@@ -1,0 +1,7 @@
+= Multiple Connections to the Same Salesforce Instance
+
+You
+
+By default, when you log into MuleSoft Composer through Salesforce for the first time, MuleSoft Composer creates connections to the Salesforce instance that you have access to through your Salesforce login credentials. MuleSoft recommends that you do not create any additional connections, using the same credentials, to these instances.
+
+If you create connections to other Salesforce instances, MuleSoft recommends that you create only one connection to a particular Salesforce instance with a particular set of credentials.

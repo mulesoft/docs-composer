@@ -1,6 +1,11 @@
 = Multiple Connections to the Same Salesforce Instance
 
-You
+It is possible, but not recommended, to create multiple connections, each using the same authentication credentials, to a single Salesforce instance. For example, you could create connection My Salesforce Connection 1 to Salesforce instance A using your Salesforce login credentials, and you could subsequently create My Salesforce Connection 2 to the same instance using the same credentials.
+
+In MuleSoft Composer, these identical connections are separate connections.
+
+If you use both in your flows indiscriminately and ever need to delete one, it could be difficult for you to find out which flow uses which connection.
+(Are we allowing users to delete connections? Yes.)
 
 By default, when you log into MuleSoft Composer through Salesforce for the first time, MuleSoft Composer creates connections to the Salesforce instance that you have access to through your Salesforce login credentials. MuleSoft recommends that you do not create any additional connections, using the same credentials, to these instances.
 

@@ -8,3 +8,4 @@
 * xref:6.adoc[Recriminations]
 * xref:7.adoc[Exhalations]
 * xref:troubleshooting-multi-conn-same-system.adoc[Multiple Connections to the Same Salesforce Instance]
+* xref:glossary.adoc[Glossary]

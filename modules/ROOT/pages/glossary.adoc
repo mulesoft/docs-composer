@@ -1,0 +1,75 @@
+= Glossary
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords:
+
+== Action
+
+Any activity that a flow directs a connector to do.
+
+A flow can direct a connector either to modify somehow data on a system or to manipulate data, depending on the connector. An action is a step in a flow and is represented by a card on the canvas.
+
+== Branch
+A diversion of a flow that results when data meets the conditions that are set in a conditional.
+
+A branch contains one or more actions. After the actions are taken, the branch rejoins the main structure of the flow at a point immediately after the conditional.
+
+== Canvas
+The space in which Citizen Builder displays a flow that is being created, edited, or tested.
+
+== Card
+A location in the canvas where you specify the trigger that you want to start a flow, an action that you want a connector to take, or a condition that you want to change the course of the flow.
+
+Cards for actions and conditionals represent steps in a flow.
+
+== Connection
+
+A collection of information that a connector uses to connect to a system. The information always includes the name of the connection. However, the rest of the information varies according to the system.
+
+For example, a connection to Salesforce consists of the following information:
+* The name given to the connection
+* The location of a system
+* The credentials for authorized access to that system.
+
+To take another example, a connection to Tableau consists of this information:
+* The name given to the connection
+* A Tableau Server URL
+* A token name
+* A token secret
+* The name of a site
+
+== Connector
+
+An application that is used by a flow for a particular step to perform a task.
+Most connectors connect to a system, such as Salesforce or Zendesk, to check for triggers or to manipulate or retrieve data. Other connectors, such as the Scheduler connector, do not require a connection to a system.
+
+== Decision
+
+A decision point in a flow, in which data are evaluated against one or more conditions.
+
+If the data meet the condition or conditions, a decision creates a branch in the flow. The flow then initiates one or more actions on that branch. After those actions are completed, the data proceed through the remaining steps in the flow.
+
+If the data do not meet the condition or conditions, the flow does not route them through the branch.
+
+== Flow
+A sequence of actions that you compose with cards to manipulate data for a particular outcome. Each action card represents a step in a flow.
+
+A flow is initiated by a trigger and can contain decision branches for manipulating subsets of data.
+
+== Step
+
+Anything in a flow that comes after the trigger, such as an action or a conditional.
+
+== System
+
+Where triggers happen and where connectors perform actions on behalf of flows.
+Examples of systems are Salesforce, Zendesk, Slack, and Gmail.
+
+== Trigger
+
+Anything that starts a flow.
+
+One type of trigger takes place on a system and passes data into a flow. The other type of trigger is the elapse of a period of time.
+
+A trigger is not a step in a flow; rather, it is the initiator of a flow. A trigger is always represented as the first card on the canvas.

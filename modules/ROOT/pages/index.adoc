@@ -1,4 +1,4 @@
-= MIND STEALERS OF PLUTO by Joseph Farrell
+= MuleSoft Composer
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

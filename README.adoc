@@ -18,7 +18,7 @@ It follows a less complex structure than antora projects.
 |Share only content
 |`src/docs/includes`
 
-There's no need to create a playbook.
+At this point in time, there is no need to create a playbook, but that could change.
 
 == Notes
 * The table of contents design isn't complete; suggested in the meantime to create nav.adoc as for antora projects

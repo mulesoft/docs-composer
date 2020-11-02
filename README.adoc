@@ -17,6 +17,7 @@ It follows a less complex structure than antora projects.
 
 |Share only content
 |`src/docs/includes`
+|===
 
 At this point in time, there is no need to create a playbook, but that could change.
 

@@ -1,0 +1,8 @@
+= What is MuleSoft Composer?
+
+When you connect data between apps and services, you build a real-time, integrated view of your customers and your business.
+MuleSoft Composer helps you build those connections with clicks instead of code from within your Salesforce org.
+
+== Example
+
+

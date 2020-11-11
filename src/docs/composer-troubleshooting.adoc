@@ -1,0 +1,15 @@
+= Troubleshooting MuleSoft Composer
+
+== I Can't Find MuleSoft Composer in My Salesforce Org
+
+== A Connection Disappeared
+
+Is it really possible to delete a connection used in a flow?
+
+== Why Doesn't The Sample Output Match My Test Record?
+
+Sample output is taken from a random record, and is just an example of the fields returned,
+so you know how to create your flow logic. You won't change any data in your org until you activate the flow.
+
+== See Also
+

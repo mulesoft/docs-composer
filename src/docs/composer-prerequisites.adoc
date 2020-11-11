@@ -1,0 +1,20 @@
+= MuleSoft Composer Prerequisites
+
+To use MuleSoft Composer, verify that you have access to the MuleSoft Composer app:
+
+. In your Salesforce org, open the app launcher.
+. Enter *Composer* in the search bar.
+. When MuleSoft Composer appears in the list of apps, select it.
+. If you see the *Flows* tab in the MuleSoft Composer welcome page, you're ready to get started.
+
+== What's Next?
+
+Before you start, you can learn more about how to connect systems and data:
+
+* xref:composer-intro.adoc[MuleSoft Composer Overview]
+* Trailhead module 1<<link to come>>
+* Trailhead module 2<<link to come>>
+
+
+
+

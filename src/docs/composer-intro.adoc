@@ -1,8 +1,46 @@
-= What is MuleSoft Composer?
+= MuleSoft Composer Overview
 
 When you connect data between apps and services, you build a real-time, integrated view of your customers and your business.
 MuleSoft Composer helps you build those connections with clicks instead of code from within your Salesforce org.
 
-== Example
+== How It Works
 
+MuleSoft Composer provides the point-and-click tools you need to flow data between different systems.
 
+When you create a flow, you define:
+
+. The source of data you extract, by specifying a connection to the source.
+. When to extract the data, using a trigger statement like "for every new record."
+. Which data to extract, using conditional logic.
+. What do do with the data: transform it, deliver it to another system, (what else?).
+
+Then, you:
+
+. Test your flow to make sure it does what you expect it to do.
+. Activate your flow--now it will run every time the trigger condition is met.
+
+<<conceptual image here mapping the words/tasks in a flow with icons for source & target>>
+
+Let's look at each step of the flow, using the example of <<PICK-A-USE-CASE>>.
+
+Saura needs to X, with y and z.
+
+=== Define the Connection
+
+Saura chooses the username, password, and URL for the source where she wishes to extract data:
+
+URL: salesforce.login.com
+username: Saura@org-name.com
+
+<<can you create a connection ahead of time? Or do you have to wait until you are in the trigger first step?>>
+
+=== Choose a Trigger
+
+A flow happens automatically whenever a particular trigger is pulled:
+
+<<triggers available depend on the connector so might not be able to get this detailed>>
+
+* a new record is created
+* ...
+
+===

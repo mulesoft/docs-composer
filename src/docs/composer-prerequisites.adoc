@@ -1,6 +1,14 @@
 = MuleSoft Composer Prerequisites
 
-To use MuleSoft Composer, verify that you have access to the MuleSoft Composer app:
+You must have the correct Salesforce edition and have access to MuleSoft Composer in your Salesforce org.
+
+== Salesforce Editions
+
+MuleSoft Composer (Composer) is available for Salesforce Unlimited or Enterprise editions.
+
+== Access to Composer
+
+To use Composer in your Salesforce org, verify that you have access to the Composer app:
 
 . In your Salesforce org, open the app launcher.
 . Enter *Composer* in the search bar.

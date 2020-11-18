@@ -1,0 +1,5 @@
+= MuleSoft Composer
+
+This is the parent file for all child nodes, none of which have been checked in yet, so can't be referenced by nav.adoc.
+
+Question for SteveO: do we need this index file in help.salesforce.com?

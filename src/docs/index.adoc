@@ -1,5 +1,28 @@
 = MuleSoft Composer
 
-This is the parent file for all child nodes, none of which have been checked in yet, so can't be referenced by nav.adoc.
+When you connect data between apps and services, you build a real-time, integrated view of your customers and your business.
+MuleSoft Composer (Composer) helps you build those connections with clicks instead of code from within your Salesforce org.
 
-Question for SteveO: do we need this index file in help.salesforce.com?
+MuleSoft Composer is available from within your Salesforce org, and you can connect it to several data sources, including:
+
+* Another Salesforce org
+* A Tableau server
+* A Google sheet
+* A NetSuite account
+* A Workday account
+
+image::images/overview1.png
+
+To create a functioning, real-time integration, you simply define a connection, define the actions you want to
+be done and under what circumstances you want them done, then test, and finally activate the integration.
+
+All the steps and definitions related to one integration are contained in a flow:
+
+* One or more connections, which can be used by any flow, once defined
+* A trigger--the condition or event that triggers your flow to start working on data
+* The data to be retrieved
+* The conditions you apply to each piece of data to determine whether or not to take action
+* The action you wish to take if the conditions are satisfied
+
+You can do something as simple as "copy the name field from each new User record to my ???" or as complicated
+as ???

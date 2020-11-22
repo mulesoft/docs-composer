@@ -1,7 +1,0 @@
-= Title
-
-Hiya!  You should delete this file.  But first
-
-[#img-bunny]
-.My cat!
-image::images/bunny.png[My cat!]

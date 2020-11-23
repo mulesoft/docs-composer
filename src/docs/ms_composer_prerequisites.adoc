@@ -5,17 +5,23 @@ You must have the correct Salesforce edition and have access to MuleSoft Compose
 == Salesforce Requirements
 
 The Salesforce org where you access Composer:
+
 * Must be a Salesforce Unlimited or Enterprise edition.
 * Must have Lightning enabled.
+* Must have purchased MuleSoft Composer for your Salesforce org.
 
 == Access to Composer
 
 To use Composer in your Salesforce org, verify that you have access to the Composer app:
 
-. In your Salesforce org, open the app launcher.
+. In your Salesforce org, open the App Launcher.
 . Enter *Composer* in the search bar.
-. When MuleSoft Composer appears in the list of apps, select it.
-. If you see the *Flows* tab in the MuleSoft Composer welcome page, you're ready to get started.
+. Select *MuleSoft Composer* from the search results.
++
+If you don't see *MuleSoft Composer* in the search results,
+it's likely that you need to purchase Composer for your Salesforce org.
+
+When the Composer page displays, you're ready to get started.
 
 == Next Steps
 

@@ -1,1 +1,1 @@
-.xref:index.adoc[MuleSoft Composer]
+.xref:ms_composer_overview.adoc[MuleSoft Composer]

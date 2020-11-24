@@ -14,10 +14,13 @@ MuleSoft Composer is available from within your Salesforce org, and you can conn
 
 image::images/overview1.png
 
-To create a functioning, real-time integration, you simply define a connection, define the actions you want to
-be done and under what circumstances you want them done, then test, and finally activate the integration.
+_We need a better image, but are these the concepts we should be showing first?_
 
-All the steps and definitions related to one integration are contained in a flow:
+To create a functioning, real-time integration, you simply define a connection, define the actions you want to
+be done and under what circumstances you want them done. Then you test, and when satisified that the flow is
+behaving as you expect, click a button to activate the integration.
+
+You define all the steps and definitions related to an integration in a flow:
 
 * One or more connections, which can be used by any flow, once defined
 * A trigger--the condition or event that triggers your flow to start working on data
@@ -45,7 +48,11 @@ After you create a flow, you can test and activate it:
 
 _conceptual image here mapping the words/tasks in a flow with icons for source & target_
 
-Let's look at each step of the process for Saura, a Salesforce admin who needs to quickly connect two different data sources to improve efficiency for her sales team.
+== Next Steps
+
+Let's look at an example. Saura, a Salesforce admin, needs to quickly connect two different data sources to improve efficiency for her sales team.
+
+xref:ms_composer_first_example.adoc[Composer Example]
 
 
 

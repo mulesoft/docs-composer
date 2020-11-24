@@ -1,0 +1,26 @@
+= Example: Check Inventory Before Filling an Order
+
+Saura needs to verify that inventory is available for each customer order--but the order information is in Salesforce Org Order, and the inventory information is in Salesforc Org Inventory.
+
+== 1. Log into Salesforce and Start Creating a Flow
+
+Saura logs into the Salesforce org that holds order information, and opens MuleSoft Composer.
+She selects *Start Flow* and provides a name that will help her recognize that connection in the future.
+
+== 2. Define a Connection
+
+Saura chooses the username, password, and URL for the source where she wishes to extract data, in this case the Salesforce inventory org:
+
+URL: salesforce.login.com
+username: Saura@org-name.com
+password: _*********_
+
+When Saura saves the information, Composer creates a new connection which is automatically associated with the flow she's creating.
+
+== 3. Choose a Trigger
+
+A flow starts automatically each time a triggering event happens.
+Saura chooses which kind of event acts as a trigger for her flow:
+
+* Records or tables created or changed in a specified way
+* A schedule is set and the scheduled time is met.

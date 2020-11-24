@@ -1,0 +1,58 @@
+= MuleSoft Composer Overview
+
+
+When you connect data between apps and services, you build a real-time, integrated view of your customers and your business.
+MuleSoft Composer (Composer) helps you build those connections with clicks instead of code from within your Salesforce org.
+
+MuleSoft Composer is available from within your Salesforce org, and you can connect it to several data sources, including:
+
+* Another Salesforce org
+* A Tableau server
+* A Google sheet
+* A NetSuite account
+* A Workday account
+
+image::images/overview1.png
+
+_We need a better image, but are these the concepts we should be showing first?_
+
+To create a functioning, real-time integration, you simply define a connection, define the actions you want to
+be done and under what circumstances you want them done. Then you test, and when satisified that the flow is
+behaving as you expect, click a button to activate the integration.
+
+You define all the steps and definitions related to an integration in a flow:
+
+* One or more connections, which can be used by any flow, once defined
+* A trigger--the condition or event that triggers your flow to start working on data
+* The data to be retrieved
+* The conditions you apply to each piece of data to determine whether or not to take action
+* The action you wish to take if the conditions are satisfied
+
+You can do something as simple as "copy the name field from each new User record to my ???" or as complicated
+as ???
+
+== How It Works
+
+MuleSoft Composer provides the point-and-click tools you need to flow data between different systems.
+
+Before you create a flow, you should know:
+
+* The source of data you want to extract. You'll use this information when you define a connection.
+* The circumstances under which you want to extract the data. For example, you might want to do soemthing every time a Salesforce Profile record is created or updated, or you might want to export every new row in your Tableau table. You'll use this information to create a trigger statement such as "for every new record."
+* The specific data to extract, and its structure, and what you want to do with the data. what you do with the data you extract--perhaps transforming it, or moving it to a new data store, or checking the data to trigger action elsewhere.
+
+After you create a flow, you can test and activate it:
+
+. Test your flow to make sure it does what you expect it to do. Tests are performed on a single actual record.
+. Activate your flow--now it will run every time the trigger condition is met. You may have chosen to trigger the flow at specified time intervals, or when a certain action is performed.
+
+_conceptual image here mapping the words/tasks in a flow with icons for source & target_
+
+== Next Steps
+
+Let's look at an example. Saura, a Salesforce admin, needs to quickly connect two different data sources to improve efficiency for her sales team.
+
+xref:ms_composer_first_example.adoc[Composer Example]
+
+
+

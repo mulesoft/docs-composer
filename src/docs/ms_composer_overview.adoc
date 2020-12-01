@@ -12,9 +12,16 @@ MuleSoft Composer is available from within your Salesforce org, and you can conn
 * A NetSuite account
 * A Workday account
 
-image::images/overview1.png
+Most data integrations involve selecting data from a data source and mapping it to a data target, and transferring the data.
+Integrations can be triggered whenever a specified action occurs, or at specified intervals of time.
 
-_We need a better image, but are these the concepts we should be showing first?_
+For example, if you needed to check inventory in one Salesforce org before continuing
+to process a customer order in another Salesforce org, data would flow between the two orgs:
+
+image::images/overview1.png[The integration of data from a data source, through the Composer flow, to a data target]
+.Flow of data from source to target
+
+*We need a better image, but is this the right concept to show first?*
 
 To create a functioning, real-time integration, you simply define a connection, define the actions you want to
 be done and under what circumstances you want them done. Then you test, and when satisified that the flow is

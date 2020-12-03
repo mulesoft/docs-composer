@@ -41,8 +41,8 @@ MuleSoft Composer provides the point-and-click tools you need to flow data betwe
 Before you create a flow, you should know:
 
 * The source of data you want to extract. You'll use this information when you define a connection.
-* The circumstances under which you want to extract the data. For example, you might want to do something every time a Salesforce Profile record is created or updated, or you might want to export every new row in your Tableau table. You'll use this information to create a trigger statement such as "for every new record."
-* The specific data to extract, and its structure, and what you want to do with the data. what you do with the data you extract--perhaps transforming it, or moving it to a new data store, or checking the data to trigger action elsewhere.
+* The circumstances under which you want to extract the data. For example, you might want to copy the changes every time a Salesforce user's phone number is changed, or you might want to export every new row in your Tableau table. You'll use this information to create a trigger statement such as "for every new record."
+* The specific data to extract, and its structure.
 * What you want to do with the data: map it to data in another data store (data target), transform it, or use it to trigger some other action.
 If you can, use a sandbox for your data target until all testing is complete.
 After you create a flow, you can test, activate, and monitor it:

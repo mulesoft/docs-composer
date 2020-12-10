@@ -2,11 +2,13 @@
 
 I can't find MuleSoft Composer in my Salesforce org:: You need to purchase MuleSoft Composer as an add-on product for your Salesforce org,
 and you need to be an administrator to configure it. If you have the correct permissions, but don't see it in the App Launcher, it's likely you haven't purchased it.
-If you know it is installed in your org, you may need either admin or standard user permissions: add-perm-names-here
+If you know it is installed in your org, you may need the permission set TODO: *add-perm-set-name-here*
 
-Why did my connection disappear?:: Someone may have deleted it. Try recreating the connection and adding it back to your flow.
-
-Why doesn't Sample Output match my test record?:: Sample output is taken from a random record, and is just an example of the fields returned,
+Why doesn't the Sample Output match my test record?:: Sample output is taken from a random record, and is just an example of the fields returned,
 so you know how to create your flow logic. You won't change any data in your org until you activate the flow.
 
-== See Also
+Where do I create new connections?::
+
+You must be in a flow to create a new connection.
+
+TODO: **add more troubleshooting tips**

@@ -1,0 +1,21 @@
+= Checklist for MuleSoft Composer for Salesforce
+
+Before you build a flow, assemble the information you need:
+
+* Username, password, and the URL where you send these credentials for every data source or data target.
+This user should have access to the data you will work with. +
+(TODO: *does this need to be said? Any details needed?*)
+
+* Choose the trigger for your flow: an event like "a Google Sheet row is deleted from spreadsheet MyData,"
+or a time period like "every weekday morning at 9:00 AM PDT."
+
+* An ordered list of all the steps and all the logic required to move and transform your data:
+
+    ** Which records or rows do you need to access?
+    ** What are you trying to do (pull changes and copy them? Add information from one source to information in another?)
+    ** Will you need to filter out some records based on criteria like "owned by," or "updated after"?
+
+Of course, if you aren't certain of some of this information, feel free to create experimental flows.
+Flows don't start working until you activate them, and you can change them as you wish while you are building them.
+
+TODO: *Format as a checklist? Add more things to think about beforehand?*

@@ -1,0 +1,16 @@
+= MuleSoft Composer for Salesforce Glossary
+
+connection::
+
+The credentials that give you access to a system where you want to access data: the username, password,
+and URL where you send these credentials to gain access. A connection is specified for every step in a flow.
+
+flow::
+
+All of the steps (actions?) needed to complete an automated process on data, including the conditional logic, connections, and actions taken.
+
+* trigger: The event or time that, when it occurs, tells the flow to start doing its work.
+* action: something you do with or to data. Most processes require a number of actions.
+* conditional logic: the circumstances or requirements that must be met before an action is taken.
+
+**As far as the user is concerned, what is a step? A single action/connection combo? Do we need the concept of step?**

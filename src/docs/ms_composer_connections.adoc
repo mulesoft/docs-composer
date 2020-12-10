@@ -1,0 +1,25 @@
+= Add a Connection
+
+Before you create a flow, know the source of data you want, and the credentials you need to access that data.
+
+To create your first connection:
+
+. Open up a flow or start a new one.+
++
+image:images/create-connection.png[Flow dialog showing connector controls, 300]
+. Click *Add new connection*, and add the username, password, and URL where you usually type in these credentials.+
++
+    * For NetSuite (special instructions? ask Stephen James)
+    * **Any other connectors that special instructions?**
+
+To select an existing connection, open or start a flow, and then choose *Add new connection*.
+
+To change the name of an existing connection or delete it, choose *Manage*.
+
+== More About Defining Connections
+
+* Only you can see the connections you create.
+* The credentials are never exposed or accessible after you create the connection.
+* You can't remove a connection until you've removed every reference from it from every flow.
+* You can't change the name of a connection after it is used in a flow that is deployed.
+

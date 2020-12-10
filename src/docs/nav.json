@@ -1,0 +1,41 @@
+{
+  "description" : "MuleSoft Composer for Salesforce documentation set",
+  "topics" : [
+    {
+      "file" : "ms_composer_overview.adoc",
+      "title": "MuleSoft Composer for Salesforce",
+      "topics" : [
+        {
+          "file" : "ms_composer_prerequisites.adoc"
+        },
+        {
+          "file" : "ms_composer_first_example.adoc"
+        },
+        {
+          "file" : "ms_composer_checklist.adoc"
+        },
+        {
+          "file" : "ms_composer_connections.adoc"
+        },
+        {
+          "file" : "ms_composer_flows.adoc"
+        },
+        {
+          "file" : "ms_composer_testing.adoc"
+        },
+        {
+          "file" : "ms_composer_activation.adoc"
+        },
+        {
+          "file" : "ms_composer_monitoring.adoc"
+        },
+        {
+          "file" : "ms_composer_troubleshooting.adoc"
+        },
+        {
+          "file" : "ms_composer_glossary.adoc"
+        }
+      ]
+    }
+  ]
+}

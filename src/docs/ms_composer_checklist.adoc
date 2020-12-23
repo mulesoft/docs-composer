@@ -19,6 +19,6 @@ or a time period like "every weekday morning at 9:00 AM PDT."
     ** Will you filter out some records based on criteria like "owned by," or "updated after"?
 
 Of course, if you aren't certain of some of this information, create some experimental flows.
-Flows don't start working until you activate them, and you can change them as you wish while you are building them.
+Flows don't start working until you activate them, and you can change them while you are building them.
 
 TODO: *Format as a checklist? Add more things to think about beforehand?*

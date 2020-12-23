@@ -38,7 +38,7 @@ Composer never exposes your credentials, and the connections are available only 
 Step Two: Choose a trigger::
 
 Every flow stars with a trigger--an event such as "a record or row is created," or a time interval to automatically launched the flow.
-For example, whenever a User record is created or updated in Salesforce, the flow wakes up and get to work on that record.
+For example, whenever a User record is created or updated in Salesforce, the flow wakes up and starts to work on that record.
 Or perhaps the flow wakes up every night and looks for new or changed records to copy.
 
 Step Three: Define the actions you want to take::

@@ -1,25 +1,41 @@
 = Add a Connection
 
 Before you create a flow, know the source of data you want, and the credentials you need to access that data.
+With this information, you'll create a connection that can be used at any point in your flow.
 
-To create your first connection:
-
-. Open up a flow or start a new one.+
-+
-image:images/create-connection.png[Flow dialog showing connector controls, 300]
-. Click *Add new connection*, and add the username, password, and URL where you usually type in these credentials.+
-+
-    * For NetSuite (special instructions? ask Stephen James)
-    * **Any other connectors that special instructions?**
-
-To select an existing connection, open or start a flow, and then choose *Add new connection*.
-
-To change the name of an existing connection or delete it, choose *Manage*.
-
-== More About Defining Connections
+Connections protect your login credentials while giving easy acccess to data sources:
 
 * Only you can see the connections you create.
 * The credentials are never exposed or accessible after you create the connection.
 * You can't remove a connection until you've removed every reference from it from every flow.
 * You can't change the name of a connection after it is used in a flow that is deployed.
+
+== Create and Add a New Connection
+
+To create your first connection:
+
+. Open up a flow or start a new one.
++
+image:images/create-connection.png[Flow dialog showing connector controls, 300]
+. Click *Add new connection*, and add the username, password, and URL where you usually type in these credentials.
++
+For Tableau, additional information is required:
+
+        ** The Tableau URL, for example: \https://us-west-2b.online.tableau.com
+
+        ** The External testing token, which you can retrieve from the Tableau admin profile
+
+        ** A random string which is generated **(where? how?)**
+
+        ** The subfolder name **(where do they find this or is it always mulesoftconnectivity?)**
++
+**Any other connectors that need special instructions?**
+
+== Add an Existing Connection
+
+To select an existing connection, open or start a flow, and then choose *Add new connection*.
+
+== Change a Connection Name
+
+To change the name of an existing connection that isn't in a deployed flow, choose *Manage*.
 

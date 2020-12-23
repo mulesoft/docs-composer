@@ -1,3 +1,3 @@
-= Building Composer Flows
+= Build Composer Flows
 
 TODO: **develop topic**

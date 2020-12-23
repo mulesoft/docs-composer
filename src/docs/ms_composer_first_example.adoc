@@ -1,16 +1,17 @@
 = Composer Example: Check Inventory Before Filling an Order
 
-Saura needs to verify that inventory is available for each customer order--but the order information is in Salesforce Org Order, and the inventory information is in Salesforce Org Inventory.
+Saura needs to verify that inventory is available for each customer order.
+However, the order information is in Salesforce Org Order, and the inventory information is in Salesforce Org Inventory.
 
 TODO: **Is this the best example use case**?
 
-== 1. Log into Salesforce and start creating a flow
+== 1. Log in to Salesforce and start creating a flow
 
 Saura logs into the Salesforce org that holds order information, and opens MuleSoft Composer.
 She selects *Start Flow* and provides a name that helps her recognize that connection in the future.
 
 She sees information about connections and details about what will trigger this flow.
-Saura starts with the connection--the location of the data she wants to feed into the flow.
+Saura starts with the connection, which is the location of the data she wants to feed into the flow.
 
 == 2. Define a connection for the trigger
 
@@ -20,14 +21,15 @@ Saura chooses the username, password, and URL for the source where she wishes to
 * *username*: Saura@org-name.com
 * *password*: _*********_
 
-When Saura saves the information, Composer creates a new connection which is automatically associated with the trigger she's creating.
+When Saura saves the information, Composer creates a new connection.
+This connection is automatically associated with the trigger she's creating.
 
 == 3. Define the trigger
 
 A flow starts automatically each time a triggering event happens.
 Saura chooses which kind of event or time period acts as a trigger for her flow:
 
-* Records or tables created or changed in a specified way
-* A schedule is set, and the scheduled time is met.
+* An event such as "a record is updated."
+* A time interval such as "every ten minutes."
 
 TODO: **Finish this topic after confirmation this is the best use case**

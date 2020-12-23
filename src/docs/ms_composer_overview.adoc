@@ -14,7 +14,7 @@ data with clicks instead of code from within your Salesforce org.
 When you create a process to connect information stored in different apps or services, you build a real-time,
 integrated view of your customers and your business.
 
-When you use Composer, you build a process that selects information (records, fields, spreadsheet rows, etc) from a source
+When you use Composer, you build a process that selects information from a source
 such as Google Sheets, NetSuite, Tableau, or even another Salesforce org.
 Then, you map the data (and optionally transform it) for delivery to a target.
 You choose which data source is the source of record.
@@ -27,7 +27,7 @@ image::images/overview1.png[Keeping data in sync between data silos, 600]
 //.Data integrated between data source and data target
 
 To create a functioning, real-time integration in Composer, you don't need coding experience.
-Simply open Composer in your Salesforce org and create a flow, which contains all the steps you need to get data from point A to point B:
+Simply open Composer in your Salesforce org and create a flow that contains all the steps you need to get data from point A to point B:
 
 Step One: Choose or create a connection::
 
@@ -39,7 +39,7 @@ Step Two: Choose a trigger::
 
 Every flow stars with a trigger--an event such as "a record or row is created," or a time interval to automatically launched the flow.
 For example, whenever a User record is created or updated in Salesforce, the flow wakes up and get to work on that record.
-Or perhaps the flow wakes up every night does its work, looking for new or changed records to copy.
+Or perhaps the flow wakes up every night and looks for new or changed records to copy.
 
 Step Three: Define the actions you want to take::
 
@@ -58,13 +58,13 @@ Nothing else will change until you click the activate button.
 
 Step Five: Activate the flow::
 
-Once activated, the flow automatically fires up and does its work when the trigger is fired.
+Once activated, the flow automatically fires up and does its work when the conditions in the trigger are met.
 
 Step Six: Monitor the behavior of your flow::
 
 **TODO: monitoring information needed**
 
-Mapping data between silos and doing exactly the right thing at the right time sometimes feels complicated,
+Mapping data between silos and doing exactly the right thing at the right time sometimes feels complicated;
 however, using Composer helps you break down the logic into the steps required.
 You can experiment with a flow until you've got it working just right,
 and you can add complexity to it as you discover new use cases.

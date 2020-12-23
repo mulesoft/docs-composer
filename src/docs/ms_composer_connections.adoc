@@ -1,6 +1,6 @@
 = Add a Connection
 
-Before you create a flow, know the source of data you want, and the credentials you need to access that data.
+Before you create a flow, know the source of data you want and the credentials you need to access that data.
 With this information, you'll create a connection that can be used at any point in your flow.
 
 Connections protect your login credentials while giving easy acccess to data sources:
@@ -17,7 +17,7 @@ To create your first connection:
 . Open up a flow or start a new one.
 +
 image:images/create-connection.png[Flow dialog showing connector controls, 300]
-. Click *Add new connection*, and add the username, password, and URL where you usually type in these credentials.
+. Click *Add new connection* and then add the username, password, and URL where you usually type in these credentials.
 +
 For Tableau, additional information is required:
 

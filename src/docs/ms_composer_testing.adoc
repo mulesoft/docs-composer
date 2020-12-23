@@ -1,4 +1,4 @@
-= Activating a Flow
+= Test a Flow
 
 After you build and test a flow, activate it.
 

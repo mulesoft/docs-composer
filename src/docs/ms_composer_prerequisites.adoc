@@ -6,7 +6,7 @@ You must have the correct Salesforce edition and have access to MuleSoft Compose
 
 To activate MuleSoft composer in Salesforce:
 
-* Use a Salesforce Unlimited or Enterprise edition
+* Use a Salesforce Unlimited, Enterprise, or Performance edition
 * Enable Lightning
 * Purchase the separate MuleSoft Composer license
 
@@ -21,12 +21,12 @@ To use Composer, verify that you have access to the Composer app:
 If you don't see *MuleSoft Composer* in the search results,
 it's likely that you need to purchase Composer for your Salesforce org, or that you don't have permission to access it.
 
-When the Composer page displays, you're ready to create your first data or service integration.
+When the Composer page displays, you're ready to create your first flow.
 
 == Next Steps
 
 If you're not sure you are ready to start, you can learn more about how to connect your systems and data:
 
 * The other topics in this section.
-* Trailhead module 1 TODO: **link**
-* Trailhead module 2 TODO: **link**
+* Trailhead module 1 TODO: **link** JIRA created for this
+* Trailhead module 2 TODO: **link** JIRA created for this

@@ -1,6 +1,6 @@
-= MuleSoft Composer Prerequisites
+= MuleSoft Composer for Salesforce Prerequisites
 
-You must have the correct Salesforce edition and have access to MuleSoft Composer (Composer) in your Salesforce org.
+You must have the correct Salesforce edition and have access to MuleSoft Composer for Salesforce (Composer) in your Salesforce org.
 
 == Salesforce Requirements
 
@@ -27,6 +27,6 @@ When the Composer page displays, you're ready to create your first data or servi
 
 If you're not sure you are ready to start, you can learn more about how to connect your systems and data:
 
-* xref:ms_composer_overview.adoc[MuleSoft Composer Overview]
-* Trailhead module 1<<link to come>>
-* Trailhead module 2<<link to come>>
+* The other topics in this section.
+* Trailhead module 1 TODO: **link**
+* Trailhead module 2 TODO: **link**

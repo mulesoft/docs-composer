@@ -1,62 +1,81 @@
-= MuleSoft Composer Overview
+= MuleSoft Composer for Salesforce
 
+You need to make timely business decisions using the most up-to-date data.
 
-When you connect data between apps and services, you build a real-time, integrated view of your customers and your business.
-MuleSoft Composer (Composer) helps you build those connections with clicks instead of code from within your Salesforce org.
+However, the data you need is often locked up in different systems.
+Integrating these systems and data is a time-consuming, manual process,
+and one that has to be repeated each time your organization adds a new system or app to the mix.
+Many organizations need IT or line-of-business development teams to integrate systems and data and automate the whole process.
+The dependency puts a strain on IT organizations and development teams already stretched thin
+by growing business demands and shrinking IT resources.
 
-Composer is available in your Salesforce org. You can connect it to several data sources, including:
+MuleSoft Composer for Salesforce (Composer) solves this problem. Composer makes it easy to build process automation for
+data with clicks instead of code from within your Salesforce org.
+When you create a process to connect information stored in different apps or services, you build a real-time,
+integrated view of your customers and your business.
 
-* Another Salesforce org
-* A Tableau server
-* A Google sheet
-* A NetSuite account
-* A Workday account
+When you use Composer, you build a process that selects information from a source
+such as Google Sheets, NetSuite, Tableau, or even another Salesforce org.
+Then, you map the data (and optionally transform it) for delivery to a target.
+You choose which data source is the source of record.
+You also choose when the process runs: when something happens, like a change to a record or row, or at intervals of time that you specify.
 
-Most data integrations involve selecting data from a data source and mapping it to a data target, and transferring the data.
-Integrations can be triggered whenever an action occurs or at intervals of time that you specify.
+For example, imagine that a regional Slack user-group tracks its local members in a spreadsheet. The national organization
+uses Salesforce to track membership. With Composer, the national team can write membership updates directly to the regional spreadsheet with Composer.
 
-For example, a repair person needs to know where the next job is with one click on their portable device,
-even though repair requests and full customer data are stored in two different Salesforce orgs.
+image::images/overview1.png[Keeping data in sync between data silos, 600]
+//.Data integrated between data source and data target
 
-image::images/overview1.png[The integration of data from a data source, through the Composer flow, to a data target]
-.Data integrated between data source and data target
+To create a functioning, real-time integration in Composer, you don't need coding experience.
+Simply open Composer in your Salesforce org and create a flow that contains all the steps you need to get data from point A to point B:
 
-With one flow set up in MuleSoft Composer, the repair person has the address available without looking up anything, and the customer is
-automatically contacted with an arrival time.
+Step One: Choose or create a connection::
 
-To create a functioning, real-time integration in Composer:
+A connection is the username and password you'll use to access the data you want to work with.
+Once defined, you can use this connection as often as needed.
+Composer never exposes your credentials, and the connections are available only to you, even if other people are also building flows.
 
-. Define how you will connect to each data source with a specific username and password. Once defined, this connection can be used as often as needed.
-The credentials are never exposed.
-. Define the actions you want to be done and under which circumstances you want them done by choosing object types, fields, and logic like "every email address that contains ```gmail```."
-. Test your definitions until you are satisified that the integration is
-behaving as you expect.
-. Click a button to activate the integration.
-. Monitor the behavior of your integration.
+Step Two: Choose a trigger::
 
-== How It Works
+Every flow stars with a trigger--an event such as "a record or row is created," or a time interval to automatically launched the flow.
+For example, whenever a User record is created or updated in Salesforce, the flow wakes up and starts to work on that record.
+Or perhaps the flow wakes up every night and looks for new or changed records to copy.
 
-MuleSoft Composer provides the point-and-click tools you need to flow data between different systems.
+Step Three: Define the actions you want to take::
 
-Before you create a flow, you should know:
+For each step you take from data source to the final destination (data target), define what happens,
+and under what conditions. For example, perhaps you want to fetch all the records that have changed
+since a particular time--but only copy over the ones that have changed, or only the ones that are new.
+Also, perhaps you want to copy over only some information.
++
+You can make the flow as elaborate or as simple as you need.
 
-* The source of data you want to extract. You'll use this information when you define a connection.
-* The circumstances under which you want to extract the data. For example, you might want to copy the changes every time a Salesforce user's phone number is changed, or you might want to export every new row in your Tableau table. You'll use this information to create a trigger statement such as "for every new record."
-* The specific data to extract, and its structure.
-* What you want to do with the data: map it to data in another data store (data target), transform it, or use it to trigger some other action.
-If you can, use a sandbox for your data target until all testing is complete.
-After you create a flow, you can test, activate, and monitor it:
+Step Four: Test your flow on one record::
 
-. Test your flow to make sure it does what you expect it to do. Tests are performed on a single actual record.
-. Activate your flow--now it will run every time the trigger condition is met. You may have chosen to trigger the flow at specified time intervals, or when a certain action is performed.
-. Monitor the performance of your flow.
-. Optionally, if you created the flow in a sandbox org, move it to production.
+While you are defining the flow, you will see sample data that helps you know you are building the right steps.
+Once you are done building, you can test the flow on a single record to ensure it behaves as you expect.
+Nothing else will change until you click the activate button.
+
+**TODO: Should we have an image here? One image for every step?**
+
+Step Five: Activate the flow::
+
+Once activated, the flow automatically fires up and does its work when the conditions in the trigger are met.
+
+Step Six: Monitor the behavior of your flow::
+
+**TODO: monitoring information needed**
+
+Mapping data between silos and doing exactly the right thing at the right time sometimes feels complicated;
+however, using Composer helps you break down the logic into the steps required.
+You can experiment with a flow until you've got it working just right,
+and you can add complexity to it as you discover new use cases.
 
 == Next Steps
 
-Let's look at an example. Saura, a Salesforce admin, needs to quickly connect two different data sources to improve efficiency for her sales team.
-
-xref:ms_composer_first_example.adoc[Composer Example]
+* Review the other topics to understand each step of creating flows.
+* Build a plan for your first flow using the checklist.
+* Open Composer in your Salesforce org and build your first flow.
 
 == Other Resources
 

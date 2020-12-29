@@ -15,7 +15,7 @@ To activate Composer in Salesforce:
 To use Composer, verify that you have access to the Composer app:
 
 . In your Salesforce org, open the App Launcher.
-. Enter *Composer* in the search bar.
+. Enter *composer* in the search bar.
 . Select *MuleSoft Composer* from the search results.
 +
 If you don't see *MuleSoft Composer* in the search results,

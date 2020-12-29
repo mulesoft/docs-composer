@@ -15,13 +15,13 @@ When you create a process to connect information stored in different apps or ser
 integrated view of your customers and your business.
 
 When you use Composer, you build a process that selects information from a source
-such as Google Sheets, NetSuite, Tableau, or even another Salesforce org.
+such as Google Sheets, NetSuite, Tableau, Workday, or another Salesforce org.
 Then, you map the data (and optionally transform it) for delivery to a target.
 You choose which data source is the source of record.
 You also choose when the process runs: when something happens, like a change to a record or row, or at intervals of time that you specify.
 
 For example, imagine that a regional Slack user-group tracks its local members in a spreadsheet. The national organization
-uses Salesforce to track membership. With Composer, the national team can write membership updates directly to the regional spreadsheet with Composer.
+uses Salesforce to track membership. With Composer, the national team can write membership updates directly to the regional Google Sheets spreadsheet with Composer.
 
 image::images/overview1.png[Keeping data in sync between data silos, 600]
 //.Data integrated between data source and data target
@@ -53,18 +53,19 @@ You can make the flow as elaborate or as simple as you need.
 Step Four: Test your flow on one record::
 
 While you are defining the flow, you will see sample data that helps you know you are building the right steps.
-Once you are done building, you can test the flow on a single record to ensure it behaves as you expect.
+Once you are done building, you can test the flow on a single record in your sandbox org to ensure it behaves as you expect.
 Nothing else will change until you click the activate button.
 
 **TODO: Should we have an image here? One image for every step?**
 
 Step Five: Activate the flow::
 
+After testing, activate the flow in your production org.
 Once activated, the flow automatically fires up and does its work when the conditions in the trigger are met.
 
 Step Six: Monitor the behavior of your flow::
 
-**TODO: monitoring information needed**
+Use Composer tools to monitor your flow.
 
 Mapping data between silos and doing exactly the right thing at the right time sometimes feels complicated;
 however, using Composer helps you break down the logic into the steps required.

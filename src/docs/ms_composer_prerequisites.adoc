@@ -4,7 +4,7 @@ You must have the correct Salesforce edition and have access to MuleSoft Compose
 
 == Salesforce Requirements
 
-To activate MuleSoft composer in Salesforce:
+To activate Composer in Salesforce:
 
 * Use a Salesforce Unlimited, Enterprise, or Performance edition
 * Enable Lightning

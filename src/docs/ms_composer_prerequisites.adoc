@@ -19,7 +19,7 @@ To use Composer, verify that you have access to the Composer app:
 . Select *MuleSoft Composer* from the search results.
 +
 If you don't see *MuleSoft Composer* in the search results,
-it's likely that you need to purchase Composer for your Salesforce org, or that you don't have permission to access it.
+it's likely that you need to purchase Composer for your Salesforce org or that you don't have permission to access it.
 
 When the Composer page displays, you're ready to create your first flow.
 

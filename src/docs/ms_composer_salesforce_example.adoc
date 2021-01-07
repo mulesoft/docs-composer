@@ -1,16 +1,13 @@
-= Composer Example: Copy New Local User from Google Sheets to Salesforce
+= Composer Example: Check Inventory Before Filling an Order
 
-Saura is the Salesforce admin for WeBeTeachers, a national group of teachers with regional chapters.
-Whenever someone joins a regional chapter and is added to the regional Google Sheets spreadsheet,
-they must be added to Salesforce.
+Saura needs to verify that inventory is available for each customer order.
+However, the order information is in Salesforce Org Order, and the inventory information is in Salesforce Org Inventory.
 
-Saura decides that she only needs the new member's name, email,
-and the date they joined. Saura is ready to define a series of steps that controls
-the flow of data and metadata from regional spreadsheets to her Salesforce org.
+TODO: **Is this the best example use case**?
 
-== 1. Log in to Salesforce and name the flow
+== 1. Log in to Salesforce and start creating a flow
 
-Saura logs into her Salesforce org and opens MuleSoft Composer.
+Saura logs into the Salesforce org that holds order information, and opens MuleSoft Composer.
 She selects *Start Flow* and provides a name that helps her recognize that connection in the future.
 
 She sees information about connections and details about what will trigger this flow.

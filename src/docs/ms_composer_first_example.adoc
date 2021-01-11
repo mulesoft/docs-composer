@@ -4,7 +4,7 @@ Saura is the Salesforce admin for WeBeTeachers, a national group of teachers wit
 Whenever someone joins a regional chapter and is added to the regional Google Sheets spreadsheet,
 they must be added to Salesforce.
 
-Saura decides that she only needs the new member's name, email,
+Saura only needs the new member's name, email,
 and the date they joined. Saura is ready to define a series of steps that controls
 the flow of data and metadata from regional spreadsheets to her Salesforce org.
 

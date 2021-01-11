@@ -13,7 +13,7 @@ All of the work needed to complete an automated process:
 
 * *trigger*: The event or time that, when it occurs, tells the flow to start doing its work.
 * *action*: something you do with or to data. Most processes require a number of actions.
-* *conditional logic*: the circumstances or requirements that must be met before an action is taken. Conditional logic consists of if/else statements or for-each statements.
+* *logic*: the circumstances or requirements that must be met before an action is taken. Conditional logic consists of if/else statements or for-each statements.
 * *step*: A trigger or action plus the conditional logic needed to decide whether or not to take the step or skip it.
 
 system::

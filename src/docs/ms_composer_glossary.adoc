@@ -1,7 +1,5 @@
 = MuleSoft Composer for Salesforce Glossary
 
-**Note: I'm trying to suggest the architecture or boundaries of these things. Once I'm sure I've got the boundaries correct, I can remove the nesting.**
-
 connection::
 
 The credentials that give you access to a system where you want to access data: the username, password,
@@ -9,24 +7,14 @@ and URL where you send these credentials to gain access.
 
 flow::
 
-All of the work needed to complete an automated process:
+All the work and data structures needed to complete an automated process:
 
 * *trigger*: The event or time that, when it occurs, tells the flow to start doing its work.
-* *action*: something you do with or to data. Most processes require a number of actions.
-* *logic*: the circumstances or requirements that must be met before an action is taken. Conditional logic consists of if/else statements or for-each statements.
-* *step*: A trigger or action plus the conditional logic needed to decide whether or not to take the step or skip it.
+* *action*: Something you do with or to the data fetched from a connection.
+* *data structure*: The metadata or other definitions that control how your data is stored in a system. For example, Salesforce stores data in sObjects and fields, Google Sheets stores information in sheets, rows, and cells. Data or values are stored in the smallest unit of data structures.
+* *logic*: The circumstances or requirements that must be met before an action is taken. Conditional logic consists of if/else statements or for-each statements.
+* *step*: A trigger or action, and the conditional logic needed to decide whether to take the step or skip it. A step may have a connection different from the initial trigger.
 
 system::
 
 Any source of data that Composer can connect to in order to run a flow.
-
-== Questions from Doc
-
-**As far as the user is concerned, what is a step? A single action/connection combo? Do we need the concept of step?**
-
-**The word trigger never appears in the UI. Is it helpful then to use "trigger" to talk about it?**
-
-
-**The original definition of "step" but it's so broad as to not be useful?**
-
-     "Anything in a workflow that comes after the trigger, such as an action or a conditional."

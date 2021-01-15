@@ -13,7 +13,7 @@ All the work and data structures needed to complete an automated process:
 * *action*: Something you do with, or to, the data fetched from a connection.
 * *data structure*: The metadata or other definitions that control how your data is stored in a system. For example, Salesforce stores data in sObjects and fields, and Google Sheets stores information in sheets, rows, and cells. Data or values are stored in the smallest unit of data structures.
 * *logic*: The circumstances or requirements that must be met before an action is taken. Conditional logic consists of if/else statements or for-each statements.
-* *step*: A trigger or action, and the conditional logic needed to decide whether to take the step or skip it. A step may have a connection different from the initial trigger.
+* *step*: A trigger or action, and the conditional logic needed to decide whether to take the step or skip it. A step optionally includes a connection different from the initial trigger, depending on the work being done.
 
 system::
 

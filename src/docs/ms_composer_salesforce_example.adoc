@@ -1,4 +1,4 @@
-= Composer Example: Salesforce Records
+= Composer Example: Salesforce
 
 
 TODO: **Finish this topic**

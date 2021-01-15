@@ -8,21 +8,21 @@ the flow of data and metadata from regional spreadsheets to her Salesforce org.
 
 . Log in to Salesforce and name the flow.
 +
-Saura logs into her Salesforce org and opens MuleSoft Composer.
-She selects *Start Flow* and provides a name that helps her recognize that connection in the future.
+Saura logs in to the Salesforce org and opens MuleSoft Composer.
+She selects *Start Flow* and provides a name that makes the connection easy to recognize.
 +
 She sees information about connections and details about what will trigger this flow.
-Saura starts with the connection, which is the location of the data she wants to feed into the flow.
+Saura starts with the connection, which is the credentials used to access other systems in the flow.
 
 . Define a connection for the trigger
 +
-Saura chooses the username, password, and URL for the source where she wishes to extract data, in this case the Salesforce inventory org:
+Saura specifies the username, password, and URL used to access the external system, in this case the Salesforce inventory org:
 +
 * *URL*: salesforce.login.com
 * *username*: Saura@org-name.com
 * *password*: _*********_
 +
-. Saura saves the information and Composer creates a new connection.
+. Saura saves the information and Composer creates a new connection. The credentials aren't visible again.
 +
 This connection is automatically associated with the trigger she's creating.
 

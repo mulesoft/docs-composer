@@ -3,7 +3,7 @@
 Saura is the Salesforce admin for WeBeTeachers, a national group of language teachers.
 Each time someone joins a regional chapter, they are added to the regional Google Sheets spreadsheet. Saura needs to add the new member's name, email, and the date they joined to the national Salesforce org.
 
-Sure of which data she wants and what she wants to do with it, Saura is ready to define a series of steps that controls
+Sure of which data she wants and what she wants to do with it, Saura is ready to define a series of steps that control
 the flow of data and metadata from regional spreadsheets to her Salesforce org.
 
 . Log in to Salesforce and name the flow.

@@ -26,7 +26,7 @@ Saura specifies the username, password, and URL used to access the external syst
 +
 This connection is automatically associated with the trigger she's creating.
 
-. Define the trigger
+. Define the trigger.
 +
 A flow starts automatically each time a triggering event happens.
 Saura chooses which kind of event or time period acts as a trigger for her flow:

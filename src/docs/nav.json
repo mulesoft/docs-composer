@@ -30,6 +30,30 @@
           "file" : "ms_composer_monitoring.adoc"
         },
         {
+          "file" : "ms_composer_reference.adoc",
+          "title": "Composer Reference",
+          "topics" : [
+            {
+              "file" : "ms_composer_googlesheets_reference.adoc"
+            },
+            {
+              "file" : "ms_composer_netsuite_reference.adoc"
+            },
+            {
+              "file" : "ms_composer_salesforce_reference.adoc"
+            },
+            {
+              "file" : "ms_composer_slack_reference.adoc"
+            },
+            {
+              "file" : "ms_composer_tableau_reference.adoc"
+            },
+            {
+              "file" : "ms_composer_workday_reference.adoc"
+            }
+          ]
+        },
+        {
           "file" : "ms_composer_troubleshooting.adoc"
         },
         {

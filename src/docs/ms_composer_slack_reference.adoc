@@ -1,0 +1,18 @@
+= Slack Reference
+
+The systems you connect to require credentials that you store in a connection.
+These systems provide triggers and actions specific to that system.
+
+== Connection Details
+
+Username and password::
+
+The username and password you use to log into the system.
+
+TODO: complete the details
+
+== Triggers
+
+== Actions
+
+== Example

@@ -1,0 +1,59 @@
+= Salesforce Reference
+
+The systems you connect to require credentials that you store in a connection.
+These systems provide triggers and actions specific to that system.
+
+== Connection Details
+
+Username and password::
+
+The username and password you use to log into the system. It can be different from the admin username you use while in MuleSoft.
+
+URL::
+
+The URL you use to log into Salesforce, for example `myOrg.salesforce.com`.
+
+== Triggers
+
+A new record created::
+
+Checks for a new record every 10 minutes.
+
+A record is updated::
+
+Checks for updated records every 10 minutes.
+
+A record is created or updated (upsert)::
+
+
+A record is deleted::
+
+* Checks for a deleted record every 30 minutes.
+* Returns only soft-deleted records still stored in Salesforce.
++ Records are typically stored for approximately 15 days before being hard deleted and unretrievable.
+* You can't modify the soft-delete timestamp.
+
+== Actions
+
+Get one or more records::
+
+Return all the records that match specified search terms.
+
+Create a record::
+
+Create a standard or custom record.
+
+Update a record::
+
+Update any standard or custom record as specified by record ID.
+
+Upsert a record::
+
+Update any standard or custom record as specified by record ID.
+If the record ID isn't found, create the record.
+
+Delete a record::
+
+Delete a record specified by its object type and record ID.
+
+== Example

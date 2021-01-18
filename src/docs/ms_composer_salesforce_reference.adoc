@@ -62,5 +62,3 @@ If the record ID isn't found, create the record.
 Delete a record::
 
 Delete a record specified by its object type and record ID.
-
-== Example

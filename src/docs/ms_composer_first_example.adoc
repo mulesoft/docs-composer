@@ -14,7 +14,7 @@ She selects *Start Flow* and provides a name that makes the connection easy to r
 She sees information about connections and details about what will trigger this flow.
 Saura starts with the connection, which is the credentials used to access other systems in the flow.
 
-. Define a connection for the trigger
+. Define a connection for the trigger.
 +
 Saura specifies the username, password, and URL used to access the external system, in this case the Salesforce inventory org:
 +

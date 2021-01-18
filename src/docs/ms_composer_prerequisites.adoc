@@ -4,15 +4,23 @@ You must have the correct Salesforce edition and have access to MuleSoft Compose
 
 == Salesforce Requirements
 
-To activate Composer in Salesforce:
-
 * Use a Salesforce Unlimited, Enterprise, or Performance edition
 * Enable Lightning
 * Purchase the separate MuleSoft Composer license
 
-== Verify Access to Composer
+== Admin: Enable Composer
 
-To use Composer, verify that you have access to the Composer app:
+Before anyone can use Composer, set up Composer:
+
+. Log in to your Salesforce org as an admin.
+. Click the Setup gear icon and choose *Setup*.
+. Enter *composer* in the search bar.
+. Select *MuleSoft Composer* from the search results.
+. From the *Get Started* page, complete all the tasks listed.
+
+== Any User: Verify Access to Composer
+
+If you aren't the admin who installed Composer, verify that you have access to the Composer app:
 
 . In your Salesforce org, open the App Launcher.
 . Enter *composer* in the search bar.

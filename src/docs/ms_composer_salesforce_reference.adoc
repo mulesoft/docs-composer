@@ -3,6 +3,11 @@
 The systems you connect to require credentials that you store in a connection.
 These systems provide triggers and actions specific to that system.
 
+== Environments
+
+You can connect to both sandbox and production orgs.
+For the best protection, connect to a sandbox org when you build and test a flow, then connect to a production org to activate the flow.
+
 == Connection Details
 
 Username and password::
@@ -15,7 +20,7 @@ The URL you use to log into Salesforce, for example `myOrg.salesforce.com`.
 
 == Triggers
 
-A new record created::
+A new record is created::
 
 Checks for a new record every 10 minutes.
 
@@ -25,12 +30,14 @@ Checks for updated records every 10 minutes.
 
 A record is created or updated (upsert)::
 
+Checks for created or updated records of the specified object type every 10 minutes.
 
 A record is deleted::
 
 * Checks for a deleted record every 30 minutes.
 * Returns only soft-deleted records still stored in Salesforce.
-+ Records are typically stored for approximately 15 days before being hard deleted and unretrievable.
++
+Records are typically stored for approximately 15 days before being hard deleted and unretrievable.
 * You can't modify the soft-delete timestamp.
 
 == Actions

@@ -20,19 +20,19 @@ The URL you use to log into Salesforce, for example `myOrg.salesforce.com`.
 
 == Triggers
 
-A new record is created::
+On new record::
 
 Checks for a new record every 10 minutes.
 
-A record is updated::
+On updated record::
 
 Checks for updated records every 10 minutes.
 
-A record is created or updated (upsert)::
+On upserted record::
 
 Checks for created or updated records of the specified object type every 10 minutes.
 
-A record is deleted::
+On deleted record::
 
 * Checks for a deleted record every 30 minutes.
 * Returns only soft-deleted records still stored in Salesforce.
@@ -42,23 +42,23 @@ Records are typically stored for approximately 15 days before being hard deleted
 
 == Actions
 
-Get one or more records::
+Get records::
 
 Return all the records that match specified search terms.
 
-Create a record::
+Create new record::
 
 Create a standard or custom record.
 
-Update a record::
+Update record::
 
 Update any standard or custom record as specified by record ID.
 
-Upsert a record::
+Create or update record (upsert)::
 
 Update any standard or custom record as specified by record ID.
 If the record ID isn't found, create the record.
 
-Delete a record::
+Delete record::
 
 Delete a record specified by its object type and record ID.

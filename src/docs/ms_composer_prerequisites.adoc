@@ -1,29 +1,30 @@
 = MuleSoft Composer for Salesforce Prerequisites
 
 You must have the correct Salesforce edition and have access to MuleSoft Composer for Salesforce (Composer) in your Salesforce org.
+Additionally, an admin must set up Composer for use and assign the Composer permission to users.
 
-== Salesforce Requirements
+== Meet Salesforce Org Requirements
 
-* Use a Salesforce Unlimited, Enterprise, or Performance edition
-* Enable Lightning
-* Purchase the separate MuleSoft Composer license
+* Use a Salesforce Unlimited, Enterprise, or Performance edition.
+* Enable Lightning.
+* Purchase the separate MuleSoft Composer license.
 
-== Admin: Enable Composer
+== Set Up Composer
 
-Before anyone can use Composer, set up Composer:
+Before anyone can use Composer, a Salesforce admin must set up Composer:
 
 . Log in to your Salesforce org as an admin.
 . Click the Setup gear icon and choose *Setup*.
-. Enter *composer* in the search bar.
+. Enter `composer` in the search bar.
 . Select *MuleSoft Composer* from the search results.
 . From the *Get Started* page, complete all the tasks listed.
 
-== Any User: Verify Access to Composer
+== Verify Access to Composer
 
-If you aren't the admin who installed Composer, verify that you have access to the Composer app:
+If you aren't the Salesforce admin who installed Composer, verify that you have access to the Composer app:
 
 . In your Salesforce org, open the App Launcher.
-. Enter *composer* in the search bar.
+. Enter `composer` in the search bar.
 . Select *MuleSoft Composer* from the search results.
 +
 If you don't see *MuleSoft Composer* in the search results,
@@ -35,6 +36,6 @@ When the Composer page displays, you're ready to create your first flow.
 
 If you're not sure you are ready to start, you can learn more about how to connect your systems and data:
 
-* The other topics in this section.
+* The other topics in this section
 * Trailhead module 1 TODO: **link** JIRA created for this
 * Trailhead module 2 TODO: **link** JIRA created for this

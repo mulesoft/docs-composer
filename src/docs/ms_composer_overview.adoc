@@ -56,8 +56,6 @@ While you are defining the flow, you will see sample data that helps you know yo
 Once you are done building, you can test the flow on a single record in your sandbox org to ensure it behaves as you expect.
 Nothing else will change until you click the activate button.
 
-**TODO: Should we have an image here? One image for every step?**
-
 Step Five: Activate the flow::
 
 After testing, activate the flow in your production org.

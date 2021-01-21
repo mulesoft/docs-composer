@@ -1,38 +1,37 @@
-= Composer Example: Copy New Local User from Google Sheets to Salesforce
+= Composer Example for Salesforce
 
-Saura is the Salesforce admin for WeBeTeachers, a national group of teachers with regional chapters.
-Whenever someone joins a regional chapter and is added to the regional Google Sheets spreadsheet,
-they must be added to Salesforce.
+Saura is the Salesforce admin for WeBeTeachers, a national group of language teachers.
+Each time someone joins a regional chapter, they are added to the regional Google Sheets spreadsheet. Saura needs to add the new member's name, email, and the date they joined to the national Salesforce org.
 
-Saura decides that she only needs the new member's name, email,
-and the date they joined. Saura is ready to define a series of steps that controls
+Sure of which data she wants and what she wants to do with it, Saura is ready to define a series of steps that control
 the flow of data and metadata from regional spreadsheets to her Salesforce org.
 
-== 1. Log in to Salesforce and name the flow
-
-Saura logs into her Salesforce org and opens MuleSoft Composer.
-She selects *Start Flow* and provides a name that helps her recognize that connection in the future.
-
+. Log in to Salesforce and name the flow.
++
+Saura logs in to the Salesforce org and opens MuleSoft Composer.
+She selects *Start Flow* and provides a name that makes the connection easy to recognize.
++
 She sees information about connections and details about what will trigger this flow.
-Saura starts with the connection, which is the location of the data she wants to feed into the flow.
+Saura starts with the connection, which is the credentials used to access other systems in the flow.
 
-== 2. Define a connection for the trigger
-
-Saura chooses the username, password, and URL for the source where she wishes to extract data, in this case the Salesforce inventory org:
-
+. Define a connection for the trigger.
++
+Saura specifies the username, password, and URL used to access the external system, in this case the Salesforce inventory org:
++
 * *URL*: salesforce.login.com
 * *username*: Saura@org-name.com
 * *password*: _*********_
-
-When Saura saves the information, Composer creates a new connection.
++
+. Saura saves the information and Composer creates a new connection. The credentials aren't visible again.
++
 This connection is automatically associated with the trigger she's creating.
 
-== 3. Define the trigger
-
+. Define the trigger.
++
 A flow starts automatically each time a triggering event happens.
 Saura chooses which kind of event or time period acts as a trigger for her flow:
 
 * An event such as "a record is updated."
 * A time interval such as "every ten minutes."
 
-TODO: **Finish this topic after confirmation this is the best use case**
+TODO: **Finish this topic**

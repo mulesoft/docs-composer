@@ -3,14 +3,24 @@
 connection::
 
 The credentials that give you access to a system where you want to access data: the username, password,
-and URL where you send these credentials to gain access. A connection is specified for every step in a flow.
+and URL where you send these credentials to gain access.
+
+data structure:: The metadata or other definitions that control how your data is stored in a system. For example, Salesforce stores data in sObjects and fields, and Google Sheets stores information in sheets, rows, and cells. Data or values are stored in the smallest unit of data structures. Flows move data (values in a field or cell) and data structures (including fields, cells, rows, and tables).
 
 flow::
 
-All of the steps (actions?) needed to complete an automated process on data, including the conditional logic, connections, and actions taken.
+All the work and data structures needed to complete an automated process:
 
-* trigger: The event or time that, when it occurs, tells the flow to start doing its work.
-* action: something you do with or to data. Most processes require a number of actions.
-* conditional logic: the circumstances or requirements that must be met before an action is taken.
+* *action*: Something you do with, or to, the data fetched from a connection.
+* *step*: A trigger, or one or more actions. Steps include the logic needed to decide whether to perform the step or skip it. A step optionally includes a connection different from the initial trigger.
+* *trigger*: The event or time that, when it occurs, tells the flow to start doing its work.
++
+The first step of every flow is a trigger or scheduler.
 
-**As far as the user is concerned, what is a step? A single action/connection combo? Do we need the concept of step?**
+logic::
+
+The circumstances or requirements that must be met before an action is taken: if/else statements or for-each statements. Insert logic into steps as needed to ensure actions are taken only on the data that should be acted on, not on all the data returned.
+
+system::
+
+Any source of data that Composer can connect to in order to run a flow.

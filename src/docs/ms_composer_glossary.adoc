@@ -2,20 +2,21 @@
 
 connection::
 
-The credentials that give you access to a system where you want to access data: the username, password,
-and URL where you send these credentials to gain access.
+The credentials that give you access to a system where you want to access data: the username and password, and the URL where you enter them to gain access. Some systems require additional information such as a security token.
 
-data structure:: The metadata or other definitions that control how your data is stored in a system. For example, Salesforce stores data in sObjects and fields, and Google Sheets stores information in sheets, rows, and cells. Data or values are stored in the smallest unit of data structures. Flows move data (values in a field or cell) and data structures (including fields, cells, rows, and tables).
+data pill::
+
+A variable that allows you to reference a field name or other data structure from within a flow.
+
+data structure:: Structures that store data in a system. For example, Salesforce stores data in sObjects and fields, and Google Sheets stores information in sheets, rows, and cells.
 
 flow::
 
-All the work and data structures needed to complete an automated process:
+An automated process that connects to a system and then performs actions on data from that system:
 
-* *action*: Something you do with, or to, the data fetched from a connection.
+* *action*: Something you do with the data fetched from a connection, such as copying a record or row from one system to another.
 * *step*: A trigger, or one or more actions. Steps include the logic needed to decide whether to perform the step or skip it. A step optionally includes a connection different from the initial trigger.
-* *trigger*: The event or time that, when it occurs, tells the flow to start doing its work.
-+
-The first step of every flow is a trigger or scheduler.
+* *trigger*: The first step of every flow, a trigger is something that starts the automated process defined in a flow. A trigger is either an event such as "a new record is created," or a specified point in time. Time-based triggers are called schedulers. The first step of every flow is a trigger.
 
 logic::
 
@@ -23,4 +24,4 @@ The circumstances or requirements that must be met before an action is taken: if
 
 system::
 
-Any source of data that Composer can connect to in order to run a flow.
+Composer connects to systems such as Salesforce, NetSuite, and Google Sheets to execute automated processes which you build, test, and activate as flows. Connections to a system can be made during any step in a flow. Flows must connect to a system during the first step, the trigger or scheduler, even if that system is the same Salesforce org where Composer is hosted.

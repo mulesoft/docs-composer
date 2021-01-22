@@ -18,6 +18,13 @@ URL::
 
 The URL you use to log into Salesforce, for example `myOrg.salesforce.com`.
 
+Salesforce allows each user to grant access to no more than five connected apps at a time.
+Because of this limit, if you create more than five Composer connections to the same Salesforce org, Salesforce
+revokes the oldest token without notice until the number of authorized tokens returns to five.
+If possible, create only one connection per user per Salesforce org to avoid this problem.
+
+For more information, see https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm
+
 == Triggers
 
 On new record::

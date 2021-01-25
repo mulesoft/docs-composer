@@ -7,7 +7,7 @@ These systems provide triggers and actions specific to that system.
 
 Username and password::
 
-The username and password that you use to log into the system.
+The username and password that you use to log in to the system.
 
 TODO: complete the details
 
@@ -28,7 +28,5 @@ Post a direct message to the specified user
 Find a user by email address::
 
 Find a user by their email address
-
-
 
 == Example

@@ -4,4 +4,4 @@ Each system that connects to MuleSoft Composer for Salesforce (Composer) behaves
 
 The following is true for all connectors unless otherwise specified:
 
-* Triggers can't be moved or re-ordered, but they can be deleted and replaced.
+* You can't move or reorder triggers, but you can delete and replace them.

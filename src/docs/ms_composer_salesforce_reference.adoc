@@ -23,7 +23,7 @@ Because of this limit, if you create more than five Composer connections to the 
 revokes the oldest token without notice until the number of authorized tokens returns to five.
 If possible, create only one connection per user per Salesforce org to avoid this problem.
 
-For more about Salesforce connected apps and authorization, see https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm
+For more about Salesforce connected apps and authorization, see https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm.
 
 == Triggers
 

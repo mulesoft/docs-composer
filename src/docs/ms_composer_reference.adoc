@@ -1,7 +1,7 @@
 = Composer Reference
 
-Each system that connects to MuleSoft Composer for Salesforce (Composer) behaves in slightly different ways, depending on how the system stores the information you wish to retrieve and manipulate.
+Each system that connects to MuleSoft Composer for Salesforce (Composer) behaves in slightly different ways depending on how the system stores the information you want to retrieve and manipulate.
 
 The following is true for all connectors unless otherwise specified:
 
-* Triggers can't be moved or re-ordered, but they can be deleted and replaced.
+* You can't move or reorder triggers, but you can delete and replace them.

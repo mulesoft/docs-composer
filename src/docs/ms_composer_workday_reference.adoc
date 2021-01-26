@@ -20,31 +20,31 @@ The username and password that you used to log in to the system.
 
 == Triggers
 
-New/Updated Record (Workers)::
+New or updated object::
 
-//TODO: Description
+Checks for a new or updated object.
+You specify the object type:
 
-New/Updated Record (Job Requisitions)::
-
-//TODO: Description
+* *JOB_REQUISITIONS*
+* *WORKER*
 
 == Actions
 
 Get Worker Details by ID::
 
-//TODO: Description
+Return the worker details corresponding to the ID that you supply.
 
 Create Worker::
 
-//TODO: Description
+Create a new worker.
 
 Update Job Requisition::
 
-//TODO: Description
+Update details on a job requisition.
 
 Get Customer::
 
-//TODO: Description
+//TODO: Description--how does flow know which customers to return? or does it return all?
 
 
 == Example

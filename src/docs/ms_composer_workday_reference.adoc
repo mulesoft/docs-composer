@@ -16,7 +16,11 @@ Tenant Name::
 
 The name or ID of your Workday tenant
 
+<<<<<<< HEAD
 User Name and Password::
+=======
+Username and Password::
+>>>>>>> ea372a72aa4e6e7708f07d934c41bc8a7d4ac3e9
 
 The username and password that you used to log in to the system
 

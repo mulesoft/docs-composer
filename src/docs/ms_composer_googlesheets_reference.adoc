@@ -21,18 +21,17 @@ This trigger fires when a new spreadsheet is created in the Google drive associa
 New row in sheet::
 
 This trigger fires when a new row is added to the end of one sheet within a spreadsheet identified in the connection.
-
-The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
-Each time the flow is triggered after the first, new rows added to the sheet are picked up every five minutes.
++
+* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
+* Each time the flow is triggered after the first, new rows added to the sheet are picked up every five minutes.
 //TODO: post-GA webhook allows for actual real-time pickup
 
 New or updated row in sheet::
 
 This trigger fires when a sheet is created or updated.
-
-The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
-
-Each time the flow is triggered after the first, new rows added at the end of the sheet are picked up every five minutes.
++
+* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
+* Each time the flow is triggered after the first, new rows added at the end of the sheet are picked up every five minutes.
 
 === Limits
 
@@ -45,16 +44,18 @@ Each time the flow is triggered after the first, new rows added at the end of th
 
 Create a spreadsheet row::
 
-Adds a new row at the end of the sheet named in the connection.
+This action adds a new row at the end of the sheet named in the connection.
 
 Update a spreadsheet row::
 
-Update a row in a sheet.
+This action update a row in a sheet.
 
 //TODO: How does this work if "search rows" is post-GA?
 
 === Limits
 
 * Sheet must have a header row. If data is stored in row #1, the action fails.
+
+//TODO: More limits expected. If none materialize, will change to not-a-bullet.
 
 == Example

@@ -15,12 +15,12 @@ If you are already logged in to a Google account, you'll be asked to approve acc
 
 New spreadsheet::
 
-Trigger fires when a new spreadsheet is created in the Google drive associated with the connection.
+This trigger fires when a new spreadsheet is created in the Google drive associated with the connection.
 //TODO: What about a new sheet? Use case is send a slack message each time.
 
 New row in sheet::
 
-Trigger fires when a new row is added to the end of one sheet within a spreadsheet identified in the connection.
+This trigger fires when a new row is added to the end of one sheet within a spreadsheet identified in the connection.
 
 The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
 Each time the flow is triggered after the first, new rows added at the end of the sheet are picked up every five minutes.
@@ -28,7 +28,7 @@ Each time the flow is triggered after the first, new rows added at the end of th
 
 New or updated row in sheet::
 
-Trigger fires when a sheet is created or updated.
+This trigger fires when a sheet is created or updated.
 
 The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
 
@@ -45,7 +45,7 @@ Each time the flow is triggered after the first, new rows added at the end of th
 
 Create a spreadsheet row::
 
-Adds a new row at the bottom of the sheet named in the connection.
+Adds a new row at the end of the sheet named in the connection.
 
 Update a spreadsheet row::
 

@@ -19,7 +19,7 @@ You can't trigger a flow using a connection to Slack.
 
 Post message to a channel::
 
-Post a new message to a specific private or public channel (#channel) you select.
+Post a new message to a specific private or public channel (#channel) you select
 
 Send a direct message::
 

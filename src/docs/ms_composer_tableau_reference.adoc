@@ -7,7 +7,7 @@ These systems provide triggers and actions specific to that system.
 
 Tableau server URI::
 
-The URL where you usually log in, for example: `http://MyServer/api/3.8/auth/signin`
+The URL where you usually log in, for example, `http://MyServer/api/3.8/auth/signin`
 
 Token name::
 

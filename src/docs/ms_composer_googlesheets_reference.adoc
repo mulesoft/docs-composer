@@ -23,7 +23,7 @@ New row in sheet::
 This trigger fires when a new row is added to the end of one sheet within a spreadsheet identified in the connection.
 
 The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
-Each time the flow is triggered after the first, new rows added at the end of the sheet are picked up every five minutes.
+Each time the flow is triggered after the first, new rows added to the sheet are picked up every five minutes.
 //TODO: post-GA webhook allows for actual real-time pickup
 
 New or updated row in sheet::

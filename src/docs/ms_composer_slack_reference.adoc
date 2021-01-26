@@ -13,6 +13,20 @@ TODO: complete the details
 
 == Triggers
 
+You can't trigger a flow using a connection to Slack.
+
 == Actions
+
+Post message to a channel::
+
+Post a new message to a specific private or public channel (#channel) you select
+
+Send a direct message::
+
+Post a direct message to the specified user
+
+Find a user by email address::
+
+Find a user by their email address
 
 == Example

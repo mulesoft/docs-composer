@@ -11,7 +11,7 @@ The URI where you usually log in, for example: `http://MyServer/api/3.8/auth/sig
 
 Token name::
 
-The personal access token that you created in Tableau's Account Settings page
+The personal access token that you created in the Tableau Account Settings page
 
 Token secret::
 

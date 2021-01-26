@@ -7,7 +7,7 @@ These systems provide triggers and actions specific to that system.
 
 Tableau server URI::
 
-The URI where you usually log in, for example: `http://MyServer/api/3.8/auth/signin`
+The URI where you usually log in, for example, `http://MyServer/api/3.8/auth/signin`
 
 Token name::
 
@@ -20,9 +20,8 @@ The secret corresponding to your *Token name*
 Site::
 
 The site attribute, also called a Site ID
-
++
 This is the first portion of the URL that appears after `/site` in the browser URL bar after you log in. If you are connecting to Tableau Online, you must supply the site attribute.
-
 For example, if you see `https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks` in your browser URL, the *Site* value is `MarketingTeam`.
 
 For more information about authentication in Tableau, see `https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`.
@@ -40,14 +39,16 @@ Tableau has limits on personal access tokens that affect your connection:
 
 You must use a scheduler for Tableau. Event triggers are not available.
 
+//TODO: What is there to say about scheduler in ref docs?
+
 == Actions
 
 Add Data to Data Source::
 
 Add new data to an existing Tableau data source instead of creating a new data source.
-
++
 Valid data source choices:
-
++
 * Project
 * Data source
 

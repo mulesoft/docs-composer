@@ -7,13 +7,16 @@ These systems provide triggers and actions specific to that system.
 
 Connection Name::
 
-Give your connection a name that will help you recognize it later on.
+The name you assign to this connection
++
+Give your connection a name that will help you recognize it later on,
+since none of the details except the name will be visible after you create it.
 
 Tenant Name::
 
 The name or ID of your Workday tenant
 
-Username and password::
+User Name and Password::
 
 The username and password that you used to log in to the system
 
@@ -44,7 +47,7 @@ This action updates the details on a job requisition.
 
 Get Customer::
 
-//TODO: Description--how does flow know which customers to return? or does it return all?
+//TODO: Description--how does the flow know which customers to return? or does it return all?
 
 
 == Example

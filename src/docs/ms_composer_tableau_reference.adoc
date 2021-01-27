@@ -5,14 +5,54 @@ These systems provide triggers and actions specific to that system.
 
 == Connection Details
 
-Username and password::
+Tableau server URI::
 
-The username and password that you use to log in to the system.
+The URI where you usually log in, for example, `http://MyServer/api/3.8/auth/signin`
 
-TODO: complete the details
+Token name::
+
+The personal access token that you created in the Tableau Account Settings page
+
+Token secret::
+
+The secret corresponding to your *Token name*
+
+Site::
+
+The site attribute, also called a Site ID
++
+This is the first portion of the URL that appears after `/site` in the browser URL bar after you log in. If you are connecting to Tableau Online, you must supply the site attribute.
+For example, if you see `https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks` in your browser URL, the *Site* value is `MarketingTeam`.
+
+For more information about authentication in Tableau, see `https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`.
+
+=== Duration of Tokens
+
+Tableau has limits on personal access tokens that affect your connection:
+
+* Any token not used in 15 days is revoked. If you fail to exercise a connection in 15 days, you'll need to create a new token.
+* All personal access tokens are revoked after one year. You can add an expression to account for this.
+
+//TODO Get details on "expression-to-stop-revocation" from Gaston
 
 == Triggers
 
+You must use a scheduler for Tableau. Event triggers are not available.
+
+//TODO: What is there to say about scheduler in ref docs?
+
 == Actions
+
+Add Data to Data Source::
+
+Add new data to an existing Tableau data source instead of creating a new data source.
++
+Valid data source choices:
++
+* Project
+* Data source
+
+//TODO: Need to clarify what this means: "The data structure and optional fields, if specified previously (TODO: Where?), are listed and cannot be changed"
+//TODO: What does it mean "they can be deleted to hide them in the form, and this won't change structure of data source"?
 
 == Example

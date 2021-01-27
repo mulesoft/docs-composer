@@ -5,14 +5,49 @@ These systems provide triggers and actions specific to that system.
 
 == Connection Details
 
-Username and password::
+Connection Name::
 
-The username and password that you use to log in to the system.
+The name you assign to this connection
++
+Give your connection a name that will help you recognize it later on,
+since none of the details except the name will be visible after you create it.
 
-TODO: complete the details
+Tenant Name::
+
+The name or ID of your Workday tenant
+
+User Name and Password::
+
+The username and password that you use to log in to the system
 
 == Triggers
 
+New or updated object::
+
+This trigger checks for a new or updated object.
+
+You specify the object type:
+
+* *JOB_REQUISITIONS*
+* *WORKER*
+
 == Actions
+
+Get Worker Details by ID::
+
+This action returns the worker details corresponding to the ID that you supply.
+
+Create Worker::
+
+This action creates a new worker.
+
+Update Job Requisition::
+
+This action updates the details on a job requisition.
+
+Get Customer::
+
+//TODO: Description--how does the flow know which customers to return? or does it return all?
+
 
 == Example

@@ -32,11 +32,12 @@ it's likely that you need to purchase Composer for your Salesforce org or that y
 
 When the Composer page displays, you're ready to create your first flow.
 
-== Next Steps
+// == Next Steps
 
-If you're not sure you are ready to start, you can learn more about how to connect your systems and data:
+// If you're not sure you are ready to start, you can learn more about how to connect your systems and data:
 
-* The other topics in this section
-* Trailhead modules:
-     ** xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[MuleSoft Composer Installation and Configuration]
-     ** xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[MuleSoft Composer Basics]
+//* The other topics in this section
+
+//* Trailhead modules:
+//     ** xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[MuleSoft Composer Installation and Configuration]
+//     ** xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[MuleSoft Composer Basics]

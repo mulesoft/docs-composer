@@ -17,7 +17,16 @@ Before anyone can use Composer, a Salesforce admin must set up Composer:
 . Click the Setup gear icon and choose *Setup*.
 . Enter `composer` in the search bar.
 . Select *MuleSoft Composer* from the search results.
-. From the *Get Started* page, complete all the tasks listed.
+. From the *Get Started* page, complete all the tasks listed:
+     .. Do some stuff
+
+If you need help with permissions, see link:sf.perm_sets_assigning.xml[link-xml]
+
+If you need help with permissions, see xref:sf.perm_sets_assigning.xml[xref-xml]
+
+If you need help with permissions, see xref:sf.perm_sets_assigning.html[xref-html]
+
+If you need help with permissions, see link:sf.perm_sets_assigning.html[link-html]If you need help with permissions, see link:https://help.salesforce.com/articleView?id=sf.perm_sets_assigning.htm&type=5[link-fullURL]
 
 == Verify Access to Composer
 

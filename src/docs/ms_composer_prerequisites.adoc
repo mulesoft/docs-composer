@@ -8,16 +8,41 @@ Additionally, an admin must set up Composer for use and assign the Composer perm
 * Use a Salesforce Unlimited, Enterprise, or Performance edition.
 * Enable Lightning.
 * Purchase the separate MuleSoft Composer license.
+* Don't use incognito mode or private browsers to access Composer.
 
 == Set Up Composer
 
-Before anyone can use Composer, a Salesforce admin must set up Composer:
+Before anyone can use Composer, a Salesforce admin must set it up.
+
+=== Find Composer
 
 . Log in to your Salesforce org as an admin.
 . Click the Setup gear icon and choose *Setup*.
 . Enter `composer` in the search bar.
 . Select *MuleSoft Composer* from the search results.
-. From the *Get Started* page, complete all the tasks listed.
+. From the *Get Started* page, click the button in each item to set up Composer for your org as described in the following section.
+
+=== Set Up Composer
+
+. In the *Install the Managed Package for MuleSoft Composer* section, click the *Install Managed Package* button. You are automatically given the Composer permission set.
+     .. In the *Change the type of Permitted Users* section, click the *Grant Permissions* button to open the *Manage Connected Apps* page in Salesforce.
+     .. Click *Edit* next to *MuleSoft Composer STG*.
+     .. In the *Permitted Users* dropdown, select *Admin approved users are pre-authorized* and save your change. Leave all other fields as they are.
++
+This step authorizes Composer to access  users' information (TODO: what does this mean?).
+. In the *Configure MuleSoft Services* section, click *Configure MuleSoft Services*.
++
+MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer. You won't have to interact with Anypoint Platform.
+. In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
+     .. Click *Composer User*.
+     .. Click *Manage Assignments*.
+     .. Select the checkbox next to each user who will receive permission to use Composer.
+     .. Click *Add Assignments*.
++
+You can assign or revoke this permission at any time.
+. In the *Launch MuleSoft Composer* section, click the *Launch* button to start Composer.
++
+If you navigate away from this page, you can launch Composer by searching for it in the App Launcher.
 
 == Verify Access to Composer
 
@@ -31,11 +56,3 @@ If you don't see *MuleSoft Composer* in the search results,
 it's likely that you need to purchase Composer for your Salesforce org or that you don't have permission to access it.
 
 When the Composer page displays, you're ready to create your first flow.
-
-== Next Steps
-
-If you're not sure you are ready to start, you can learn more about how to connect your systems and data:
-
-* The other topics in this section
-* Trailhead module 1 TODO: **link** JIRA created for this
-* Trailhead module 2 TODO: **link** JIRA created for this

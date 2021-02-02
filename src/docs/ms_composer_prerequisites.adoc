@@ -12,7 +12,7 @@ Additionally, an admin must set up Composer for use and assign the Composer perm
 
 == Set Up Composer
 
-Before anyone can use Composer, a Salesforce admin must set up Composer.
+Before anyone can use Composer, a Salesforce admin must set it up.
 
 === Find Composer
 

@@ -33,7 +33,7 @@ This step authorizes Composer to access  users' information (TODO: what does thi
 . In the *Configure MuleSoft Services* section, click *Configure MuleSoft Services*.
 +
 MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer. You won't have to interact with Anypoint Platform.
-. In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page.
+. In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
      .. Click *Composer User*.
      .. Click *Manage Assignments*.
      .. Select the checkbox next to all users you wish to give permission to use Composer.

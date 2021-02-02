@@ -42,7 +42,7 @@ MuleSoft creates and configures an instance of Anypoint Platform to provide a de
 You can assign or revoke this permission at any time.
 . In the *Launch MuleSoft Composer* section, click the *Launch* button to start Composer.
 +
-You can also launch Composer by searching for it in the App Launcher.
+If you navigate away from this page, you can launch Composer by searching for it in the App Launcher.
 
 == Verify Access to Composer
 

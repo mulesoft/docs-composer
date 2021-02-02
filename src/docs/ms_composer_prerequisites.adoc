@@ -8,7 +8,7 @@ Additionally, an admin must set up Composer for use and assign the Composer perm
 * Use a Salesforce Unlimited, Enterprise, or Performance edition.
 * Enable Lightning.
 * Purchase the separate MuleSoft Composer license.
-* Don't use incognito or private browser mode to access Composer.
+* Don't use incognito mode or private browsers to access Composer.
 
 == Set Up Composer
 

@@ -7,7 +7,7 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 * The org must be a Salesforce Unlimited, Enterprise, or Performance edition.
 * The org must have Lightning enabled.
 * You must purchase a separate MuleSoft Composer license for the org.
-* Because firewall configurations and other network blocking rules may stop Composer from working, you must relax any IP restrictions for the connected app. Instructions are included in set up section of this topic.
+* Because firewall configurations and other network blocking rules may stop Composer from working, you must relax any IP restrictions for the connected app. Instructions are included in the setup section of this topic.
 * IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses to whitelist.
 * You must not use incognito mode or private browsers to access Composer.
 

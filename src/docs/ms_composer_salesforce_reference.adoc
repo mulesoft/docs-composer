@@ -1,14 +1,18 @@
 = Salesforce Reference
 
-The systems you connect to require credentials that you store in a connection.
-These systems provide triggers and actions specific to that system.
+Whether you are using Salesforce as a data source (take my Salesforce records and copy them to a Google Sheet, for example) or a data target (take my Google Sheet row and turn it into a Salesforce lead), the details of how to pull data into a flow are specific to the data source or data target.
 
-== Environments
+== Salesforce Sandbox and Production Orgs
 
 You can connect to both sandbox and production orgs.
-For the best protection, connect to a sandbox org when you build and test a flow. After testing is complete, connect to a production org to activate the flow.
+For the best protection:
 
-== Connection Details
+* Connect to a sandbox org when you build and test a flow.
+* After testing is complete, connect to a production org to activate the flow.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
 
 Username and password::
 
@@ -21,14 +25,19 @@ URL::
 
 The URL that you used to log in to Salesforce, for example, `myOrg.salesforce.com`.
 
+=== Salesforce Connected App Limits
+
 Salesforce allows each user to grant access to no more than five connected apps at a time.
 Because of this limit, if you create more than five Composer connections to the same Salesforce org, Salesforce
 revokes tokens from the oldest to the most recently created, without notice, until the number of authorized tokens returns to five.
+
 If possible, create only one connection per user per Salesforce org to avoid this issue.
 
 For more about Salesforce connected apps and authorization, see https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm.
 
 == Triggers
+
+include::_partials/trigger-definition.adoc[]
 
 On new record::
 
@@ -51,6 +60,8 @@ Records are typically stored for approximately 15 days before being hard-deleted
 * You can't modify the soft-delete timestamp.
 
 == Actions
+
+include::_partials/action-definition.adoc[]
 
 Get records::
 

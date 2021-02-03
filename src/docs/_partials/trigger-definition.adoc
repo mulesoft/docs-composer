@@ -1,3 +1,3 @@
-Each flow starts with a scheduler that specifies how frequently the flow runs or with a trigger that you define, such as "each time a new record is created." A scheduler is simply a specified time span, but triggers provide multiple options related to the data in your system.
+Each flow starts with a scheduler that specifies a time span for how frequently the flow starts or with a trigger that you define, such as "each time a new record is created." Triggers provide multiple options related to the data in your system.
 
 This system provides the following trigger options:

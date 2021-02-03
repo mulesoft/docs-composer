@@ -1,50 +1,55 @@
-= MuleSoft Composer for Salesforce Prerequisites
+= MuleSoft Composer for Salesforce: Getting Started
 
-You must have the correct Salesforce edition and have access to MuleSoft Composer for Salesforce (Composer) in your Salesforce org.
-Additionally, an admin must set up Composer for use and assign the Composer permission to users.
+Check that you meet the listed prerequisites before you set up Composer. Then you can set up and begin using Composer.
 
-== Meet Salesforce Org Requirements
+== Prerequisites
 
-* Use a Salesforce Unlimited, Enterprise, or Performance edition.
-* Enable Lightning.
-* Purchase the separate MuleSoft Composer license.
-* Don't use incognito mode or private browsers to access Composer.
+* The org must be a Salesforce Unlimited, Enterprise, or Performance edition.
+* The org must have Lightning enabled.
+* You must purchase a separate MuleSoft Composer license for the org.
+* Because firewall configurations and other network blocking rules may stop Composer from working, you must relax any IP restrictions for the connected app. Instructions are included in the setup section of this topic.
+* IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses to whitelist.
+* You must not use incognito mode or private browsers to access Composer.
 
 == Set Up Composer
 
-Before anyone can use Composer, a Salesforce admin must set it up.
+Before anyone can use Composer, a Salesforce admin must set it up, including installation, permissions assignments, and a few adjustments to your Salesforce org settings.
 
-=== Find Composer
+=== Find the Composer Setup Page
 
 . Log in to your Salesforce org as an admin.
-. Click the Setup gear icon and choose *Setup*.
+. Click the Setup gear icon, and then choose *Setup*.
 . Enter `composer` in the search bar.
 . Select *MuleSoft Composer* from the search results.
-. From the *Get Started* page, click the button in each item to set up Composer for your org as described in the following section.
-
-=== Set Up Composer
-
-. In the *Install the Managed Package for MuleSoft Composer* section, click the *Install Managed Package* button. You are automatically given the Composer permission set.
-     .. In the *Change the type of Permitted Users* section, click the *Grant Permissions* button to open the *Manage Connected Apps* page in Salesforce.
-     .. Click *Edit* next to *MuleSoft Composer STG*.
-     .. In the *Permitted Users* dropdown, select *Admin approved users are pre-authorized* and save your change. Leave all other fields as they are.
 +
-This step authorizes Composer to access  users' information (TODO: what does this mean?).
-. In the *Configure MuleSoft Services* section, click *Configure MuleSoft Services*.
+If you can't find Composer in the search results, it's likely that your org needs to purchase a license for Composer.
+
+Next, you'll install Composer and make some Salesforce org adjustments to ensure Composer works properly.
+
+=== Admin: Install Composer and Adjust Salesforce Org Settings
+
+. In the *Install the Managed Package for MuleSoft Composer* section, click *Install Managed Package*.
 +
-MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer. You won't have to interact with Anypoint Platform.
+Four more steps are revealed when the installation is complete. As the admin performing the installation, you are automatically given the Composer permission set.
+
+. In the *Change the Type of Permitted Users* section, click *Open Settings* to launch the Salesforce connected app page for Composer and change two settings:
+     .. In the *Permitted Users* dropdown, select *Admin approved users are pre-authorized*.
+     .. In the *IP Relaxation* dropdown, select *Relax IP restrictions*.
+     .. Save the changes.
+
+. In the *Configure MuleSoft Services* section, click *Initiate Configuration*.
++
+MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
      .. Click *Composer User*.
-     .. Click *Manage Assignments*.
+     .. Click *Manage Assignments*, and then *Add Assignments*.
      .. Select the checkbox next to each user who will receive permission to use Composer.
-     .. Click *Add Assignments*.
-+
-You can assign or revoke this permission at any time.
+     .. Click *Add*. You can assign or revoke this permission set at any time.
 . In the *Launch MuleSoft Composer* section, click the *Launch* button to start Composer.
-+
-If you navigate away from this page, you can launch Composer by searching for it in the App Launcher.
 
-== Verify Access to Composer
+Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
+
+== Users: Verify Access to Composer
 
 If you aren't the Salesforce admin who installed Composer, verify that you have access to the Composer app:
 

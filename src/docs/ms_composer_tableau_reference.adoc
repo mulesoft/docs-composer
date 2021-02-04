@@ -1,9 +1,11 @@
 = Tableau Reference
 
-The systems you connect to require credentials that you store in a connection.
-These systems provide triggers and actions specific to that system.
+Whether you are using Tableau as a data source or a data target,
+some details of how to work with data in a flow are specific to the data source or data target.
 
 == Connection Details
+
+include::_partials/connection-definition.adoc[]
 
 Tableau server URI::
 
@@ -39,9 +41,9 @@ Tableau has limits on personal access tokens that affect your connection:
 
 You must use a scheduler for Tableau. Event triggers are not available.
 
-//TODO: What is there to say about scheduler in ref docs?
-
 == Actions
+
+include::_partials/action-definition.adoc[]
 
 Add Data to Data Source::
 
@@ -54,5 +56,3 @@ Valid data source choices:
 
 //TODO: Need to clarify what this means: "The data structure and optional fields, if specified previously (TODO: Where?), are listed and cannot be changed"
 //TODO: What does it mean "they can be deleted to hide them in the form, and this won't change structure of data source"?
-
-== Example

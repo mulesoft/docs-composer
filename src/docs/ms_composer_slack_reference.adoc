@@ -1,6 +1,6 @@
 = Slack Reference
 
-When you use Slack as a data target, some details of how to work with data in a flow are specific to Slack.
+When you use Slack as a data target (such sending a Slack message when a Salesforce opportunity is won), some details of how to work with data in a flow are specific to Slack.
 
 == Connection Details
 

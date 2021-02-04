@@ -1,6 +1,6 @@
 = Tableau Reference
 
-Whether you are using Tableau as a data source or a data target,
+Whenever you use Tableau as a data target (push Salesforce data to an existing Tableau hyper file, for example)
 some details of how to work with data in a flow are specific to the data source or data target.
 
 == Connection Details
@@ -9,7 +9,7 @@ include::_partials/connection-definition.adoc[]
 
 Tableau server URI::
 
-The URI where you usually log in, for example, `http://MyServer/api/3.8/auth/signin`
+The URI where you usually log in, for example, `\http://MyServer/api/3.8/auth/signin`
 
 Token name::
 
@@ -24,7 +24,7 @@ Site::
 The site attribute, also called a Site ID
 +
 This is the first portion of the URL that appears after `/site` in the browser URL bar after you log in. If you are connecting to Tableau Online, you must supply the site attribute.
-For example, if you see `https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks` in your browser URL, the *Site* value is `MarketingTeam`.
+For example, if you see `\https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks` in your browser URL, the *Site* value is `MarketingTeam`.
 
 For more information about authentication in Tableau, see `https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`.
 

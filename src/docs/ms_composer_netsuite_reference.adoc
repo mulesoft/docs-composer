@@ -3,10 +3,6 @@
 Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce for example) or a data target (when
 a Salesforce opportunity closes, create a Netsuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
 
-== NetSuite Accounts
-
-Composer requires that you access cloud-based NetSuite accounts, not
-
 == Connection Details
 
 include::_partials/connection-definition.adoc[]
@@ -47,7 +43,7 @@ A record is created, or an existing record is updated.
 
 == Actions
 
-include::_partials/action-definition.adoc
+include::_partials/action-definition.adoc[]
 
 Search record::
 

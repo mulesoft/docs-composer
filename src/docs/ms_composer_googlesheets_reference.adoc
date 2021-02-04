@@ -6,7 +6,7 @@ some details of how to work with data in a flow are specific to the data source 
 
 == Connection Details
 
-include::_partials/connection-definition.adoc
+include::_partials/connection-definition.adoc[]
 
 * If you are already logged in to a Google account, you'll be asked to approve access.
 
@@ -14,7 +14,7 @@ include::_partials/connection-definition.adoc
 
 == Triggers
 
-include::_partials/trigger-definition.adoc
+include::_partials/trigger-definition.adoc[]
 
 New spreadsheet::
 
@@ -43,7 +43,7 @@ This trigger fires when a sheet is created or updated.
 
 == Actions
 
-include::_partials/action-definition.adoc
+include::_partials/action-definition.adoc[]
 
 Create a spreadsheet row::
 

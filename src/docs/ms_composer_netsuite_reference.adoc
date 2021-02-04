@@ -49,6 +49,8 @@ A record is created, or an existing record is updated.
 
 include::_partials/action-definition.adoc[]
 
+include::_partials/action-definition.adoc[]
+
 Search record::
 
 Find and retrieve a record based on search criteria.

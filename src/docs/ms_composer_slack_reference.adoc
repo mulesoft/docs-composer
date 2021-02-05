@@ -1,9 +1,10 @@
 = Slack Reference
 
-The systems you connect to require credentials that you store in a connection.
-These systems provide triggers and actions specific to that system.
+When you use Slack as a data target (such sending a Slack message when a Salesforce opportunity is won), some details of how to work with data in a flow are specific to Slack.
 
 == Connection Details
+
+include::_partials/connection-definition.adoc[]
 
 Username and password::
 
@@ -13,9 +14,13 @@ TODO: complete the details
 
 == Triggers
 
+include::_partials/trigger-definition.adoc[]
+
 You can't trigger a flow using a connection to Slack.
 
 == Actions
+
+include::_partials/action-definition.adoc[]
 
 Post message to a channel::
 
@@ -28,5 +33,3 @@ Post a direct message to the specified user
 Find a user by email address::
 
 Find a user by their email address
-
-== Example

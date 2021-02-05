@@ -1,22 +1,24 @@
 = Google Sheets Reference
 
-The systems you connect to require credentials that you store in a connection.
-These systems provide triggers and actions specific to that system.
+Whether you are using Salesforce as a data source (take new Google Sheet rows and copy them to a Salesforce org as Contacts, for example)
+or a data target (take my new Salesforce Contact and turn it into a row in a Google Sheet),
+some details of how to work with data in a flow are specific to the data source or data target.
 
 == Connection Details
 
-Google Account::
+include::_partials/connection-definition.adoc[]
 
-If you are already logged in to a Google account, you'll be asked to approve access.
+* If you are already logged in to a Google account, you'll be asked to approve access.
 
-//TODO: what if not already logged in?
+* If you are not already logged in to a Google account, supply the email and password you use to log in to Google Sheets, and complete the authentication dialogs.
 
 == Triggers
 
+include::_partials/trigger-definition.adoc[]
+
 New spreadsheet::
 
-This trigger fires when a new spreadsheet is created in the Google drive associated with the connection.
-//TODO: What about a new sheet? Use case is send a slack message each time.
+This trigger fires when a new spreadsheet is created in the Google Drive associated with the connection.
 
 New row in sheet::
 
@@ -39,8 +41,9 @@ This trigger fires when a sheet is created or updated.
 * Header rows excluded
 * Trigger works with My Drive, not Team Drive
 
-
 == Actions
+
+include::_partials/action-definition.adoc[]
 
 Create a spreadsheet row::
 
@@ -48,14 +51,8 @@ This action adds a new row at the end of the sheet named in the connection.
 
 Update a spreadsheet row::
 
-This action update a row in a sheet.
-
-//TODO: How does this work if "search rows" is post-GA?
+This action updates a row in a sheet.
 
 === Limits
 
-* Sheet must have a header row. If data is stored in row #1, the action fails.
-
-//TODO: More limits expected. If none materialize, will change to not-a-bullet.
-
-== Example
+A Google Sheet must have a header row. If data is stored in row #1, the action fails.

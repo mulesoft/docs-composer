@@ -1,6 +1,6 @@
 = Salesforce Reference
 
-Whether you are using Salesforce as a data source (take new Salesforce records and copy them to a Google Sheet, for example) or a data target (take a Google Sheet row and turn it into a Salesforce lead), the details of how to pull data into a flow are specific to the data source or data target.
+Whether you are using Salesforce as a data source (take new Salesforce records and copy them to a Google Sheet, for example) or a data target (take a Google Sheet row and turn it into a Salesforce lead), some details of how to work with data in a flow are specific to the data source or data target.
 
 == Salesforce Sandbox and Production Orgs
 

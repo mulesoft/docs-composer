@@ -1,18 +1,62 @@
 = NetSuite Reference
 
-The systems you connect to require credentials that you store in a connection.
-These systems provide triggers and actions specific to that system.
+Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce for example) or a data target (when
+a Salesforce opportunity closes, create a Netsuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
 
 == Connection Details
 
-Username and password::
+include::_partials/connection-definition.adoc[]
 
-The username and password you use to log into the system.
+Connection Name::
 
-TODO: complete the details
+add details
+
+Account::
+
+add details
+
+Consumer Key::
+
+add details
+
+Consumer Secret::
+
+Token Id::
+
+add details
+
+Token Secret::
+
+add details
 
 == Triggers
 
+include::_partials/trigger-definition.adoc[]
+
+New record::
+
+A new record is created in NetSuite.
+
+Upsert record::
+
+A record is created, or an existing record is updated.
+
 == Actions
 
-== Example
+include::_partials/action-definition.adoc[]
+
+Search record::
+
+Find and retrieve a record based on search criteria.
+
+Create record::
+
+A record is created.
+
+Update record::
+
+A record is changed.
+
+Upsert record::
+
+A record is created or changed.

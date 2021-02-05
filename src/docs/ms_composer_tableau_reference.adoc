@@ -1,13 +1,15 @@
 = Tableau Reference
 
-The systems you connect to require credentials that you store in a connection.
-These systems provide triggers and actions specific to that system.
+Whenever you use Tableau as a data target (push Salesforce data to an existing Tableau hyper file, for example)
+some details of how to work with data in a flow are specific to the data source or data target.
 
 == Connection Details
 
+include::_partials/connection-definition.adoc[]
+
 Tableau server URI::
 
-The URI where you usually log in, for example, `http://MyServer/api/3.8/auth/signin`
+The URI where you usually log in, for example, `\http://MyServer/api/3.8/auth/signin`
 
 Token name::
 
@@ -22,7 +24,8 @@ Site::
 The site attribute, also called a Site ID
 +
 This is the first portion of the URL that appears after `/site` in the browser URL bar after you log in. If you are connecting to Tableau Online, you must supply the site attribute.
-For example, if you see `https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks` in your browser URL, the *Site* value is `MarketingTeam`.
+
+For example, if you see `\https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks` in your browser URL, the *Site* value is `MarketingTeam`.
 
 For more information about authentication in Tableau, see `https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`.
 
@@ -39,9 +42,9 @@ Tableau has limits on personal access tokens that affect your connection:
 
 You must use a scheduler for Tableau. Event triggers are not available.
 
-//TODO: What is there to say about scheduler in ref docs?
-
 == Actions
+
+include::_partials/action-definition.adoc[]
 
 Add Data to Data Source::
 
@@ -54,5 +57,3 @@ Valid data source choices:
 
 //TODO: Need to clarify what this means: "The data structure and optional fields, if specified previously (TODO: Where?), are listed and cannot be changed"
 //TODO: What does it mean "they can be deleted to hide them in the form, and this won't change structure of data source"?
-
-== Example

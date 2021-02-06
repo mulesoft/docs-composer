@@ -6,9 +6,9 @@ When you use Slack as a data target (such sending a Slack message when a Salesfo
 
 include::_partials/connection-definition.adoc[]
 
-Workspace Name:
+Workspace Name::
 
-Enter your workspace name, for example `my-workspace.slack.com`.
+The Slack workspace name, for example `my-workspace.slack.com`.
 
 Username and password::
 

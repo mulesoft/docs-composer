@@ -8,7 +8,7 @@ include::_partials/connection-definition.adoc[]
 
 Workspace Name::
 
-The Slack workspace name, for example `my-workspace.slack.com`.
+The Slack workspace name, for example, `my-workspace.slack.com`.
 
 Username and password::
 

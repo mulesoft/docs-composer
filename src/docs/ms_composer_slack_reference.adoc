@@ -6,15 +6,17 @@ When you use Slack as a data target (such sending a Slack message when a Salesfo
 
 include::_partials/connection-definition.adoc[]
 
+Workspace Name::
+
+The Slack workspace name, for example, `my-workspace.slack.com`.
+
 Username and password::
 
-The username and password that you use to log in to the system.
-
-TODO: complete the details
+The username and password that you use to log in to Slack.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+Use Scheduler to specify when a flow is triggered, for example every fifteen minutes.
 
 You can't trigger a flow using a connection to Slack.
 
@@ -22,14 +24,15 @@ You can't trigger a flow using a connection to Slack.
 
 include::_partials/action-definition.adoc[]
 
-Post message to a channel::
+Post Message to Channel::
 
-Post a new message to a specific private or public channel (#channel) you select
+Post a new message to a specific private or public channel that you select.
+Type the channel into the field using the format: `#my-channel-name`.
 
-Send a direct message::
+Send Direct Message::
 
-Post a direct message to the specified user
+Post a direct message to the specified user by typing it into the field.
 
-Find a user by email address::
+Find User by Email Address::
 
-Find a user by their email address
+Find a user by typing their email address into the field.

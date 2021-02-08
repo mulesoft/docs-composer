@@ -14,6 +14,8 @@ For the best protection:
 
 include::_partials/connection-definition.adoc[]
 
+include::_partials/connection-name.adoc[]
+
 Username and password::
 
 The username and password that you used to log in to Salesforce.

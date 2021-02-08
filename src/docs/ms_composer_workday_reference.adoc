@@ -5,12 +5,9 @@ These systems provide triggers and actions specific to that system.
 
 == Connection Details
 
-Connection Name::
+include::_partials/connection-definition.adoc[]
 
-The name you assign to this connection
-+
-Give your connection a name that will help you recognize it later on,
-since none of the details except the name will be visible after you create it.
+include::_partials/connection-name.adoc[]
 
 Tenant Name::
 

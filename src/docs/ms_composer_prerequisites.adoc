@@ -10,6 +10,7 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 * Because firewall configurations and other network blocking rules may stop Composer from working, you must relax any IP restrictions for the connected app. Instructions are included in the setup section of this topic.
 * IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses to whitelist.
 * You must not use incognito mode or private browsers to access Composer.
+* When you create a connection to another system, be sure that you meet all requirements and limitations listed in the reference section for each connection.
 
 == Set Up Composer
 
@@ -61,3 +62,7 @@ If you don't see *MuleSoft Composer* in the search results,
 it's likely that you need to purchase Composer for your Salesforce org or that you don't have permission to access it.
 
 When the Composer page displays, you're ready to create your first flow.
+
+== See Also
+
+link:ms_composer_reference.adoc[Connection Reference]

@@ -1,0 +1,12 @@
+Connection Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies it among all your connections in Composer.
+
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+If you are logged into the system from the same computer where you are operating Composer,
+the authorization dialog may pop up without you having to fill in all of the following fields.
+If you wish to log into the system as a different user, close the connection dialog in Composer, log out of the other system and then restart the connection dialog in Composer.

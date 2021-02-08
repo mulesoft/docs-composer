@@ -7,27 +7,33 @@ a Salesforce opportunity closes, create a Netsuite sales order), the details of 
 
 include::_partials/connection-definition.adoc[]
 
+include::_partials/connection-name.adoc[]
+
+You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWSU).
+
 Connection Name::
 
 add details
 
 Account::
 
-add details
+The account Id as listed in your NetSuite instance by accessing *Integration > Web Services Preferences*.
 
 Consumer Key::
 
-add details
+ddd
 
 Consumer Secret::
 
+ddd
+
 Token Id::
 
-add details
+The token ID generated in NetSuite
 
 Token Secret::
 
-add details
+The token secret generated with the token ID in NetSuite
 
 == Triggers
 

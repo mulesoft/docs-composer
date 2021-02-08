@@ -22,6 +22,8 @@ You can't trigger a flow using a connection to Slack.
 
 include::_partials/action-definition.adoc[]
 
+include::_partials/connection-name.adoc[]
+
 Post message to a channel::
 
 Post a new message to a specific private or public channel (#channel) you select

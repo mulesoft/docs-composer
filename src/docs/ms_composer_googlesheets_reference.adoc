@@ -8,9 +8,8 @@ some details of how to work with data in a flow are specific to the data source 
 
 include::_partials/connection-definition.adoc[]
 
-* If you are already logged in to a Google account, you'll be asked to approve access.
+include::_partials/connection-name.adoc[]
 
-* If you are not already logged in to a Google account, supply the email and password you use to log in to Google Sheets, and complete the authentication dialogs.
 
 == Triggers
 

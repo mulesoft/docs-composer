@@ -11,21 +11,17 @@ include::_partials/connection-name.adoc[]
 +
 You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWSU).
 
-Connection Name::
-
-add details
-
 Account::
 
 The account Id as listed in your NetSuite instance by accessing *Integration > Web Services Preferences*.
 
 Consumer Key::
 
-ddd
+The consumer key generated in NetSuite
 
 Consumer Secret::
 
-ddd
+The consumer key generated in NetSuite
 
 Token Id::
 

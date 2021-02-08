@@ -8,7 +8,7 @@ a Salesforce opportunity closes, create a Netsuite sales order), the details of 
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
-
++
 You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWSU).
 
 Connection Name::

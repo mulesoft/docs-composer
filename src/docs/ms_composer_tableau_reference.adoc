@@ -7,6 +7,8 @@ some details of how to work with data in a flow are specific to the data source 
 
 include::_partials/connection-definition.adoc[]
 
+include::_partials/connection-name.adoc[]
+
 Tableau server URI::
 
 The URI where you usually log in, for example, `\http://MyServer/api/3.8/auth/signin`

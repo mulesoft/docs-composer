@@ -8,9 +8,9 @@ some details of how to work with data in a flow are specific to the data source 
 
 include::_partials/connection-definition.adoc[]
 
-* If you are already logged in to a Google account, you'll be asked to approve access.
-
-* If you are not already logged in to a Google account, supply the email and password you use to log in to Google Sheets, and complete the authentication dialogs.
+include::_partials/connection-name.adoc[]
++
+Composer launches an authentication dialog where you choose which Google Drive account you're connecting to Composer, and if you aren't already logged in, you enter a username and password.
 
 == Triggers
 

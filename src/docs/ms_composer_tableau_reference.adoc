@@ -57,6 +57,6 @@ Valid data source choices:
 * Project
 * Data source
 
-When using the Tableau connector with Composer, you are only able to add data to data sources that connect live to a hyper file. You can create a hyper file using Tableau Desktop (*Connect To a File -> _hyper-file name_*) or by publishing a `.hyper` file via the REST API or `tabcmd`. You can't access live data sources such as a CSV or Excel file, nor can you access data sources that are refreshed on a recurring basis per a schedule defined in Tableau.
+When using the Tableau connector with Composer, the data source must be a hyper file. You can create a hyper file using Tableau Desktop (*Connect To a File -> _hyper-file name_*) or by publishing a `.hyper` file via the REST API or `tabcmd`. You can't access live data sources such as a CSV or Excel file, nor can you access data sources that are refreshed on a recurring basis per a schedule defined in Tableau.
 
 The time it takes for changes made by the flow to show up in Tableau servers depends on the size of the hyper file.

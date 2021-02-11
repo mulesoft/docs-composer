@@ -10,11 +10,9 @@ some details of how to work with data in a flow are specific to the data source 
 
 == Connection Details
 
-
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
-
 
 Tableau server URI::
 

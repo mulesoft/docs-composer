@@ -60,5 +60,5 @@ Add new data to an existing Tableau data source.
 * You must specify two pieces of information for each data source: the Tableau project ID and data source ID, which you can retrieve from the URL of the open project and data source, respectively. Once entered, Composer displays the project name and data source name instead of the IDs.
 * The data source you use must be published and must connect live to a hyper file.
 +
-You can create a hyper file using Tableau Desktop (*Connect To a File -> _hyper-file name_*) or by publishing a `.hyper` file via the REST API or `tabcmd`. You can't access live data sources such as a CSV or Excel file, nor can you access data sources that are refreshed on a recurring basis per a schedule defined in Tableau.
+You can create a hyper file using Tableau Desktop (*Connect To a File -> _hyper-file name_*) or by publishing a `.hyper` file via the REST API or `tabcmd`. You can't access a live data source such as a CSV or Excel file, nor can you access data sources that are refreshed on a recurring basis per a schedule defined in Tableau.
 * The time it takes for changes made by the flow to show up in Tableau servers depends on the size of the hyper file.

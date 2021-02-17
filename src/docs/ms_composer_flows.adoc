@@ -1,3 +1,22 @@
 = Build Composer Flows
 
-TODO: **develop topic**
+After you have collected the information as described in the Composer Checklist, build and test your flow:
+
+. Create a trigger and test it.
+. Create each action in order. Test each action before adding another.
+
+Once these steps are complete, you're ready to activate the flow and then monitor your flow.
+
+== Create and Test the Trigger
+
+add content here
+
+== Create and Test an Action
+
+add content here
+
+After you've tested the complete flow, you're ready to activate.
+
+[NOTE]
+If you used sandbox orgs while creating the flow, don't forget to change the connections to production connections and retest before activating.
+

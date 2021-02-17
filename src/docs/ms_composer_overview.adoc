@@ -42,8 +42,10 @@ Composer never exposes your credentials, and the connections are available only 
 Step 2: Choose a trigger::
 
 Every flow stars with a trigger: an event such as "a record or row is created," or a time interval to automatically launched the flow.
-For example, whenever a User record is created or updated in Salesforce, the flow runs on that record.
-If the trigger is defined as "run every 24 hours" then the flow looks for all the records changed or updated in the last 24 hours and runs on them.
+For example, whenever a user record is created or updated in Salesforce, the flow runs on that record.
+If the trigger is defined as a time interval such as "run every 24 hours", no triggering event is defined and no connection is needed because the time interval is the trigger.
+
+Connections are created or chosen while you are creating the trigger, as is the time interval.
 
 Step 3: Define the actions you want to take::
 
@@ -76,7 +78,7 @@ and you can add complexity to it as you discover new use cases.
 
 == Next Steps
 
-* Review the other topics to understand each step of creating flows.
+* Review xref:ms_composer_about_flows.adoc[About Flows] and xref:ms_composer_first_example.adoc[Composer Example] to understand each step of creating flows.
 * Create a plan for your first flow using the xref:ms_composer_checklist.adoc[checklist].
 * Open Composer in your Salesforce org and build your first flow.
 

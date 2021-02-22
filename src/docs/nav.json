@@ -6,14 +6,23 @@
       "title": "MuleSoft Composer for Salesforce",
       "topics" : [
         {
+          "file" : "ms_composer_getting_started.adoc",
+          "title": "Getting Started",
+          "topics" : [
+          {
           "file" : "ms_composer_prerequisites.adoc",
           "title": "Composer Prerequisites"
-        },
-        {
+          },
+          {
+          "file"  : "ms_composer_about_flows.adoc"
+          },
+          {
           "file" : "ms_composer_first_example.adoc"
-        },
-        {
+          },
+          {
           "file" : "ms_composer_checklist.adoc"
+          }
+          ]
         },
         {
           "file" : "ms_composer_connections.adoc"

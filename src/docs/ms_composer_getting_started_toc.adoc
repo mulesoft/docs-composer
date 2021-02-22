@@ -1,0 +1,8 @@
+= Getting Started with MuleSoft Composer
+
+Before you automate your first process using Composer, be sure you visit all the topics in this section:
+
+. Perform all set-up tasks and verify all prerequisites: xref:ms_composer_prerequisites.adoc[Prerequisites]
+. Learn about how Composer automates the transfer, mapping, and transformation of data from one or more sources to one or more targets: xref:ms_composer_about_flows.adoc[How Composer Works]
+. Step through the first example of building and testing a flow, and then activating it and monitoring the flow: xref:ms_composer_first_example.adoc[First Composer Example]
+. To prepare for creating your first flow, collect the information you'll need: xref:ms_composer_checklist.adoc[Checklist]

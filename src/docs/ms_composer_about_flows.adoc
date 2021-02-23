@@ -1,4 +1,4 @@
-= About Composer Flows
+= How Composer Works
 
 Flows define the automated processes between two or more systems.
 

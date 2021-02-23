@@ -61,8 +61,11 @@ If you aren't the Salesforce admin who installed Composer, verify that you have 
 If you don't see *MuleSoft Composer* in the search results,
 it's likely that you need to purchase Composer for your Salesforce org or that you don't have permission to access it.
 
-When the Composer page displays, you're ready to create your first flow.
+When the Composer page displays, you're ready to create your first flow. If you'd like to learn more before using Composer, review the other topics in this section.
 
 == See Also
 
+link:ms_composer_flows.adoc[Build and Test a Flow]
+link:ms_composer_activation.adoc[Activate a Flow]
+link:ms_composer_monitoring.adoc[Monitor a Flow]
 link:ms_composer_reference.adoc[Connection Reference]

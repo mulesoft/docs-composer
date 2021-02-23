@@ -65,7 +65,7 @@ When the Composer page displays, you're ready to create your first flow. If you'
 
 == See Also
 
-link:ms_composer_flows.adoc[Build and Test a Flow]
-link:ms_composer_activation.adoc[Activate a Flow]
-link:ms_composer_monitoring.adoc[Monitor a Flow]
-link:ms_composer_reference.adoc[Connection Reference]
+* link:ms_composer_flows.adoc[Build and Test a Flow]
+* link:ms_composer_activation.adoc[Activate a Flow]
+* link:ms_composer_monitoring.adoc[Monitor a Flow]
+* link:ms_composer_reference.adoc[Connection Reference]

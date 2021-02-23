@@ -11,9 +11,9 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 * IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses to whitelist.
 * Browser prerequisites:
      ** Don't use incognito mode or private browsers to access Composer.
-     ** As described in https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_framework_supported_browsers.htm[Salesforce documentation], for Safari browsers,
-ensure that you have unchecked the *Prevent cross-site tracking* option.
-* When you create a connection to another system, be sure that you meet all requirements and limitations listed in the reference section for each connection.
+     ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must
+uncheck the *Prevent cross-site tracking* option in Safari sqecurity preferences.
+* When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
 
 == Set Up Composer
 
@@ -68,4 +68,5 @@ When the Composer page displays, you're ready to create your first flow.
 
 == See Also
 
-link:ms_composer_reference.adoc[Connection Reference]
+* link:ms_composer_reference.adoc[Connection Reference]
+* https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_framework_supported_browsers.htm[Salesforce Canvas browser support]

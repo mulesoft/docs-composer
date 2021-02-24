@@ -1,5 +1,10 @@
 = Activate a Flow
 
-After you test a flow, activate it to start it working.
+After you build and test a flow, activate it.
 
-TODO: **develop this topic**
+. In Composer, find the flow you want to activate in the Composer Flows list. Your flow status is listed as *Inactive*.
+. Click the flow name to open it.
+. Click *Edit*.
+. Click *Activate*.
+
+Composer notifies you when the flow is activated.

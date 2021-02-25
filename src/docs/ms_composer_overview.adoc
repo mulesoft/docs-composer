@@ -8,7 +8,7 @@ integrated view of your customers and your business.
 To automate processes with Composer, you build a flow that contains every step in the process:
 
 * Selecting the data that you specify from a system such as Google Sheets, Tableau, Workday, or a Salesforce org
-* Performing actions on the data such as copying it to another system
+* Performing actions on the data, such as copying it to another system
 
 You choose when to trigger the flow: when something happens, like a change to a record or row, or at intervals of time that you specify. Flows can be as simple or complex as your business needs.
 
@@ -86,6 +86,5 @@ and you can add complexity to it as you discover new use cases.
 * xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[Trailhead: MuleSoft Composer Installation and Configuration^]
 * xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[Trailhead: MuleSoft Composer Basics^]
 * https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft blog post^]
-
 
 

@@ -18,7 +18,7 @@ Imagine that a regional Slack user-group tracks its local members in a spreadshe
 
 image::images/overview1.png[Keeping data in sync between data silos, 600]
 
-This simple flow can be expanded to do more complex actions, such as writing to different sheets depending on
+This simple flow can be expanded to perform more complex actions, such as writing to different sheets based on
 the zipcode of the new user, or propogating changes for existing users.
 
 == Steps To Create a Flow

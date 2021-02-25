@@ -59,7 +59,7 @@ Step 4: Test your flow on one record::
 
 As you define triggers and actions, you see sample data that helps you verify you are building the right steps.
 You can test every change before making the next one, making it easier to find and correct issues with your flow.
-Nothing else changes until you click the activate button.
+Nothing else changes until you activate the flow.
 
 Step 5: Activate the flow::
 

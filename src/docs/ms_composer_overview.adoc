@@ -53,7 +53,7 @@ Also, perhaps you want to copy over only some information from each record.
 +
 You can make the flow as elaborate or as simple as you need.
 +
-If you chose to start the flow at a specified time interval, than you'll fetch data as part of the first action.
+If you chose to start the flow at a specified time interval, then you'll fetch data as part of the first action.
 
 Step 4: Test your flow on one record::
 

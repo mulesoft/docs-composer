@@ -57,7 +57,7 @@ If you chose to start the flow at a specified time interval, then you'll fetch d
 
 Step 4: Test your flow on one record::
 
-As you define triggers and define actions, you see sample data that helps you know that you are building the right steps.
+As you define triggers and actions, you see sample data that helps you know that you are building the right steps.
 After every change you make to the flow, you can test it on a single record to ensure it behaves as you expect.
 Nothing else changes until you click the activate button.
 

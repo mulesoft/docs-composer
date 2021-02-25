@@ -14,7 +14,7 @@ You choose when to trigger the flow: when something happens, like a change to a 
 
 == Example
 
-Imagine that a regional Slack user-group tracks its local members in a spreadsheet. Slack users register with the national organization who uses Salesforce to track membership. With Composer, the national team can write membership updates directly to the regional Google Sheets spreadsheet with Composer.
+Imagine that a regional Slack user-group tracks its local members in a spreadsheet. Slack users register with the national organization first. Since the national office uses Salesforce to track membership, automatically pushing new members to the correct regional Google Sheets would save everyone a lot of time. Using Composer, the Salesforce admin can create a single flow that automatically performs this task in near real-time.
 
 image::images/overview1.png[Keeping data in sync between data silos, 600]
 
@@ -86,5 +86,4 @@ and you can add complexity to it as you discover new use cases.
 * xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[Trailhead: MuleSoft Composer Installation and Configuration^]
 * xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[Trailhead: MuleSoft Composer Basics^]
 * https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft blog post^]
-
 

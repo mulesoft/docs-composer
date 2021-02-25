@@ -8,7 +8,7 @@ You can connect to both sandbox and production orgs.
 For the best protection:
 
 * Connect to a sandbox org when you build and test a flow.
-* After testing is complete, connect to a production org to activate the flow.
+* After testing is complete, connect to a production org, test, and then activate the flow.
 
 == Connections
 
@@ -41,19 +41,15 @@ For more about Salesforce connected apps and authorization, see https://help.sal
 
 include::_partials/trigger-definition.adoc[]
 
-On new record::
+New record::
 
 Checks for a new record every 10 minutes.
 
-On updated record::
+New or updated record::
 
-Checks for updated records every 10 minutes.
+Checks for new or updated records of the specified object type every 10 minutes.
 
-On upserted record::
-
-Checks for created or updated records of the specified object type every 10 minutes.
-
-On deleted record::
+Deleted record::
 
 * Checks for a deleted record every 30 minutes.
 * Returns only soft-deleted records. Soft-deleted records are stored in Salesforce for approximately 15 days.
@@ -65,10 +61,6 @@ Records are typically stored for approximately 15 days before being hard-deleted
 
 include::_partials/action-definition.adoc[]
 
-Get records::
-
-Return all the records that match specified search terms.
-
 Create new record::
 
 Create a standard or custom record.
@@ -77,7 +69,11 @@ Update record::
 
 Update any standard or custom record as specified by record ID.
 
-Create or update record (upsert)::
+Get records::
+
+Return all the records that match specified search terms.
+
+Create or update record::
 
 Update any standard or custom record as specified by record ID.
 If the record ID isn't found, create the record.

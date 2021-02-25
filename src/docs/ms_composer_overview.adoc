@@ -34,7 +34,7 @@ typically enter those credentials. Some systems require a few additional pieces 
 After you define the connection, you can use it multiple times in the same flow or in different flows that you create.
 Composer never exposes your credentials, and the connections are available only to you, even if other people are also building flows.
 +
-Instead of a connection, you can choose to schedule a time when the flow runs, such as every ten minutes.
+Instead of a connection, you can choose to schedule a time when the flow runs, such as every 10 minutes.
 
 Step 2: Choose a trigger::
 
@@ -86,4 +86,3 @@ and you can add complexity to it as you discover new use cases.
 * xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[Trailhead: MuleSoft Composer Installation and Configuration^]
 * xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[Trailhead: MuleSoft Composer Basics^]
 * https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft blog post^]
-

@@ -38,7 +38,7 @@ Instead of a connection, you can choose to schedule a time when the flow runs, s
 
 Step 2: Choose a trigger::
 
-Every flow that uses a connection starts with a trigger: an event such as "a new record is created."
+Every flow that uses a connection starts with a trigger: an event such as creating a new record.
 This event always triggers the flow to run. The events available to trigger a flow depend on the connection you choose.
 +
 If a scheduled time was chosen instead of a connection, no trigger is needed, because the flow runs

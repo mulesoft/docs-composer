@@ -53,7 +53,7 @@ Also, perhaps you want to copy over only some information from each record.
 +
 You can make the flow as elaborate or as simple as you need.
 +
-If you start the flow at a specified time interval instead of a trigger event, then you'll fetch data as part of the first action.
+If you start the flow at a specified time interval instead of choosing a connection, then you'll fetch data as part of the first action.
 
 Step 4: Test your flow on one record::
 

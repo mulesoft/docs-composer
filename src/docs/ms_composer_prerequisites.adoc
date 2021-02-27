@@ -7,12 +7,15 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 * The org where you set up Composer must be a Salesforce Unlimited, Enterprise, or Performance edition.
 * The org must have Lightning enabled.
 * You must purchase a separate MuleSoft Composer license for the org.
-* Because firewall configurations and other network blocking rules may stop Composer from working, you must relax any IP restrictions for the connected app. Instructions are included in the setup section of this topic.
-* IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses to whitelist.
+* If your company network has a stringent firewall or list of blocked IP addresses, your network administrator must add `*.mulesoft.com` to the list of allowed addresses.
++
+IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses.
+* You must relax any IP restrictions for the connections that you create to data sources and data targets. Instructions are included in the setup section of this topic.
+
 * Browser prerequisites:
      ** Don't use incognito mode or private browsers to access Composer.
      ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must
-uncheck the *Prevent cross-site tracking* option in Safari sqecurity preferences.
+uncheck the *Prevent cross-site tracking* option in Safari security preferences.
 * When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
 
 == Set Up Composer

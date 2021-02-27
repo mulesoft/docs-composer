@@ -1,4 +1,4 @@
-= Composer Example for Salesforce
+= Composer Example: Salesforce to Google Sheets
 
 Saura is the Salesforce admin for WeBeTeachers, a national group of language teachers.
 Each time someone joins a regional chapter, they are added to the regional Google Sheets spreadsheet. Saura needs to add the new member's name, email, and the date they joined to the national Salesforce org.

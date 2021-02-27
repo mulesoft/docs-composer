@@ -1,15 +1,51 @@
 = Build Composer Flows
 
-After you have collected the information as described in the Composer Checklist, build and test your flow:
+Flows define the automated processes between two or more systems.
 
-. Create a trigger and test it.
-. Create each action in order. Test each action before adding another.
+For example, you can automate any of these actions with Composer:
+
+* Copy all new records in one Salesforce org and replicate them in another.
+* Send a Slack message every time a Google Sheet is updated.
+* Check your Tableau data every fifteen minutes, and if the data changed, copy those changes to a different Tableau data source.
+
+You can also combine multiple actions in a single flow, such as replicating Salesforce records and then sending a Slack message to a particular channel based on the record type. Understanding how the basic building blocks of a flow work together makes it easier to confidently build and test flows. Building a flow is a simple matter of adding a trigger and all the actions you want to perform to complete an automated process.
+
+== Building Composer Flows
+
+After you have collected the information as described in xref:ms_composer_checklist.adoc[the preparation checklist], build and test your flow:
+
+. Create and name a flow.
+. In the flow, create a trigger and test it.
+. In the flow, create each action in order. Test each action before adding the next.
 
 After these steps are complete, you're ready to activate the flow, and then monitor it.
 
-== Create and Test the Trigger
+== Create a New Flow
 
-add content here
+steps
+
+== Create the Flow's Trigger
+
+missing text
+
+Add a new connection or choose an existing one.
+
+=== Create and Add a New Connection
+
+To create your first connection:
+
+. Open up a flow or start a new one.
++
+image:images/create-connection.png[Flow dialog showing connector controls, 300]
+. Click *Add new connection* and then add the username, password, and URL where you usually type in these credentials. Some systems require different types of information, so be sure to check the reference topic for the system you want to connect.
+
+=== Add an Existing Connection
+
+To select an existing connection, open or start a flow, and then choose *Add new connection*.
+
+=== Change a Connection Name
+
+To change the name of an existing connection that isn't in a deployed flow, choose *Manage*.
 
 == Create and Test an Action
 

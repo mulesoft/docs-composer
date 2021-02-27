@@ -4,11 +4,14 @@ Whether you are using Salesforce as a data source (take new Salesforce records a
 
 == Salesforce Sandbox and Production Orgs
 
-You can connect to both sandbox and production orgs.
-For the best protection:
+You can connect to Salesforce sandbox and production orgs.
 
-* Connect to a sandbox org when you build and test a flow.
-* After testing is complete, connect to a production org, test, and then activate the flow.
+To protect your production org:
+
+. Connect to a sandbox org when you build and test a flow.
+. After testing is complete, connect to a production org, test, and then activate the flow.
++
+Remember to change the connection from sandbox to production in every trigger and action that uses the sandbox connection.
 
 == Connections
 
@@ -37,6 +40,32 @@ If possible, create only one connection per user per Salesforce org to avoid thi
 
 For more about Salesforce connected apps and authorization, see https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm.
 
+== Relaxed IP Restrictions
+
+When you use a Salesforce connection in a flow for the first time, if you receive an error that references IP or OAuth failures, that org may have IP restrictions set. Relax the IP restrictions for that connection to resolve this error.
+
+To relax IP restrictions on a connection to Salesforce:
+
+. Log into the Salesforce org. You must be a Salesforce admin in that org.
+. Navigate to *Setup > Connected Apps OAuth Usage*.
+. Find *MuleSoft Composer* in the list, and click *Install*.
+. Accept the installation of the connected app in this org by clicking *Install* on the authorization dialog.
++
+This does not install the MuleSoft Composer managed package, it merely makes the connected app (the connection you created) available so that you can relax the IP restrictions.
+. Click *Edit Policies*.
+. Change IP Relaxation to *Relax IP Restrictions* and then save your change.
+
+IP restrictions are now relaxed for the connection.
+
+=== Change a Connection
+
+To change a connection:
+
+. Open the flow.
+. Click the change icon in the trigger or every action that connects to a sandbox:
++
+image::images/change-connection.png[Change the connection control, 500]
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
@@ -51,8 +80,7 @@ Checks for new or updated records of the specified object type every 10 minutes.
 
 Deleted record::
 
-* Checks for a deleted record every 30 minutes.
-* Returns only soft-deleted records. Soft-deleted records are stored in Salesforce for approximately 15 days.
+Checks for soft-deleted records. Soft-deleted records are stored in Salesforce for approximately 15 days.
 +
 Records are typically stored for approximately 15 days before being hard-deleted and irretrievable.
 * You can't modify the soft-delete timestamp.
@@ -67,7 +95,7 @@ Create a standard or custom record.
 
 Update record::
 
-Update any standard or custom record as specified by record ID.
+Update any standard or custom record as specified by an external ID.
 
 Get records::
 
@@ -81,3 +109,7 @@ If the record ID isn't found, create the record.
 Delete record::
 
 Delete a record specified by its object type and record ID.
+
+== Objects
+
+All standard and custom objects are available.

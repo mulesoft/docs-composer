@@ -12,6 +12,8 @@ include::_partials/connection-name.adoc[]
 Tenant Name::
 
 The name or ID of your Workday tenant
++
+For example, if the URL where you log into workday is `na.workday.com/wday/authgwy/global-modern/`, then your tenant name is `global-modern`.
 
 User Name and Password::
 
@@ -23,10 +25,6 @@ New or updated object::
 
 This trigger checks for a new or updated object.
 
-You specify the object type:
-
-* *JOB_REQUISITIONS*
-* *WORKER*
 
 == Actions
 
@@ -44,7 +42,18 @@ This action updates the details on a job requisition.
 
 Get Customer::
 
-//TODO: Description--how does the flow know which customers to return? or does it return all?
+This action fetches customer details.
 
+== Object Types
 
-== Example
+The following object types are available:
+
+* Triggers
+    ** JOB_REQUISITIONS
+    ** WORKER
+
+* Actions
+    ** CUSTOMER
+    ** JOB_REQUISITIONS
+    ** WORKER
+

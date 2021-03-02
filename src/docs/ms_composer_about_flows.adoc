@@ -14,11 +14,19 @@ After you create and name a flow, you're ready to add a connection.
 
 == Connections
 
-When you first create a flow, you're asked to create a new connection, select an existing one, or choose a timer interval that will trigger the flow.
+Before you create a flow, know the source of data you want and the credentials you need to access that data.
+With this information, you'll create a connection that can be used at any point in your flow.
 
+Connections protect your login credentials while giving easy access to data sources:
+
+* Only you can see the connections you create.
+* The credentials are never exposed or accessible after you create the connection.
+* You can't remove a connection until you've removed every reference from it from every flow.
+* You can't change the name of a connection after it is used in a flow that is deployed. When you first create a flow, you're asked to create a new connection, select an existing one, or choose a timer interval that will trigger the flow.
++
 image::images/connection-example.png[Example of a connection dialog, 400]
 
-Choose either *Scheduler* or *Connections*:
+For each flow, the first step is choosing either *Scheduler* or *Connections*:
 
 * Use the *Connections* section to do one of the following:
 
@@ -30,18 +38,16 @@ Choose either *Scheduler* or *Connections*:
 +
 image::images/connection-scheduler.png[New trigger with time interval, 600]
 
-After you choose a time interval or connection, that item is added to a trigger and displayed.
-For example, the following trigger results from choosing or creating a connection to Google Sheets:
-
-image::images/connection-trigger.png[New trigger with connection, 600]
-
-Name the trigger now or later, or leave it unnamed. As you work on the flow, you can go back and rename the trigger if needed.
+Next, you finish defining the trigger.
 
 == Triggers
 
-The first step of the flow is always a trigger. The options available depend on which connection you used. If you chose a time interval instead of an event, you won't see any options.
+The first step of the flow is always a trigger. The options available depend on which connection you used.
 
-The following example shows a trigger based on an event:
+* If you chose a time interval instead of an event, you won't see any options: the trigger is finished and you are ready to create the actions that define what this flow does.
+* If you chose a connection, define what kind of data triggers the flow and is fetched, available for the actions you'll define next.
+
+The following example shows a trigger that uses a connection:
 
 image::images/trigger-example.png[Example of a trigger, 600]
 
@@ -53,7 +59,7 @@ The trigger listens to the data source and starts when an event specified in the
 * *Result fields* by default lists the number of fields that will be available to the flow each time it is triggered. To work with only some record fields, click *Select Fields*.
 * *Sample Output* shows you the field name and a sample value taken from a random record in the data source you connected to. It's just there to show you what's available for use in the flow. To see the API Name, click the information bubble next to each field name.
 
-The rest of the flow is defined in the actions.
+Now that you know what triggers the flow to run, and what data is fetched, you are ready to define the actions: what the flow does.
 
 == Actions
 

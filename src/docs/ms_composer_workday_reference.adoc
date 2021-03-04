@@ -42,7 +42,7 @@ This action updates the details on a job requisition.
 
 Get Customer::
 
-This action fetches customer details.
+This action returns the customer details corresponding to the customer ID that you supply.
 
 == Object Types
 

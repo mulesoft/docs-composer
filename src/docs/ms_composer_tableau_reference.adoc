@@ -16,7 +16,7 @@ include::_partials/connection-name.adoc[]
 
 Tableau server URI::
 
-The URI where you usually log in, for example, `\http://MyServer/api/3.8/auth/signin`
+The URI is the domain where you usually log in, for example, `\https://[region].online.tableau.com`
 
 Token name::
 
@@ -47,7 +47,7 @@ Tableau has limits on personal access tokens that affect your connection:
 
 == Triggers
 
-You must use a scheduler for Tableau. Event triggers are not available.
+You must use a scheduler or other connector for a flow that includes Tableau. Event triggers are not available.
 
 == Actions
 

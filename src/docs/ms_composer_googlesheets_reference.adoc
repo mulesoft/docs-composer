@@ -20,20 +20,20 @@ New spreadsheet::
 
 This trigger fires when a new spreadsheet is created in the Google Drive associated with the connection.
 
-New row in sheet::
-
-This trigger fires when a new row is added to the end of one sheet within a spreadsheet identified in the connection.
-+
-* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
-* Each time the flow is triggered after the first, new rows added to the sheet are picked up every five minutes.
+//New row in sheet::
+//
+//This trigger fires when a new row is added to the end of one sheet within a spreadsheet identified in the connection.
+//+
+//* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
+//* Each time the flow is triggered after the first, new rows added to the sheet are picked up every five minutes.
 //TODO: post-GA webhook allows for actual real-time pickup
-
-New or updated row in sheet::
-
-This trigger fires when a sheet is created or updated.
-+
-* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
-* Each time the flow is triggered after the first, new rows added at the end of the sheet are picked up every five minutes.
+//
+//New or updated row in sheet::
+//
+//This trigger fires when a sheet is created or updated.
+//+
+//* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
+//* Each time the flow is triggered after the first, new rows added at the end of the sheet are picked up every five minutes.
 
 === Limits
 

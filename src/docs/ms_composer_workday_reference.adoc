@@ -13,7 +13,7 @@ Tenant Name::
 
 The name or ID of your Workday tenant
 +
-For example, if the URL where you log into WorkDay is `na.workday.com/wday/authgwy/global-modern/`, then your tenant name is `global-modern`.
+For example, if the URL where you log into Workday is `na.workday.com/wday/authgwy/global-modern/`, then your tenant name is `global-modern`.
 
 User Name and Password::
 
@@ -56,4 +56,3 @@ The following object types are available:
     ** CUSTOMER
     ** JOB_REQUISITIONS
     ** WORKER
-

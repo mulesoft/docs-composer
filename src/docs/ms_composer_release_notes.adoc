@@ -1,0 +1,21 @@
+= Release Notes for MuleSoft Composer for Salesforce
+
+General Availability March 15, 2021
+
+MuleSoft Composer for Salesforce empowers everyone to create connected experiences faster by giving non-developers, who own key parts of the customer journey, a simple clicks-not-code solution. Using Composer, you don't need to wait on development resources to unlock data, integrate apps, and automate business processes to create real customer value.
+
+== Known Issues
+
+=== Triggers
+
+* After you create a trigger, you can't create a new connection for the trigger. To change to a new connection on a trigger that's already been created, use one of the following workarounds:
+//CAPP=-1550
+
+    ** If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
+    ** If you want to change the instance of the same data source but no connection for that source exists yet:
+        . Add an action to the end of your flow, and while in the action, create the connection you need.
+        . Delete the action.
+        . Open the trigger and use *Change Connection* to change to the new connection.
+
+
+

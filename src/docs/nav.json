@@ -6,6 +6,10 @@
       "title": "MuleSoft Composer for Salesforce",
       "topics" : [
         {
+          "file" : "ms_composer_release_notes.adoc",
+          "title": "Release Notes"
+        },
+        {
           "file" : "ms_composer_prerequisites.adoc",
           "title": "Getting Started",
           "topics": [

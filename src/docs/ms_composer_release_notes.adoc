@@ -2,7 +2,7 @@
 
 General Availability March 15, 2021
 
-MuleSoft Composer for Salesforce empowers everyone to create connected experiences faster by giving non-developers, who own key parts of the customer journey, a simple clicks-not-code solution. Using Composer, you don't need to wait on development resources to unlock data, integrate apps, and automate business processes to create real customer value.
+Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 == Known Issues
 

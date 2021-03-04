@@ -30,7 +30,7 @@ This trigger checks for a new or updated object.
 
 Get Worker Details by ID::
 
-This action returns the worker details corresponding to the ID that you supply.
+This action returns the worker details corresponding to the employee's `Workday ID` that you supply.
 
 Create Worker::
 

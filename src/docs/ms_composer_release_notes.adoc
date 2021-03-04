@@ -1,12 +1,14 @@
 = Release Notes for MuleSoft Composer for Salesforce
 
-General Availability March 15, 2021
-
 Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
-== Known Issues
+== General Availability
 
-=== Triggers
+March 15, 2021
+
+=== Known Issues
+
+==== Triggers
 
 * After you create a trigger, you can't create a new connection for the trigger. To change to a new connection on a trigger that's already been created, use one of the following workarounds:
 //CAPP=-1550

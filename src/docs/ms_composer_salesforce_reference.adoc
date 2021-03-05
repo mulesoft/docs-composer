@@ -2,17 +2,6 @@
 
 Whether you are using Salesforce as a data source (take new Salesforce records and copy them to a Google Sheet, for example) or a data target (take a Google Sheet row and turn it into a Salesforce lead), some details of how to work with data in a flow are specific to the data source or data target.
 
-== Salesforce Sandbox and Production Orgs
-
-You can connect to Salesforce sandbox and production orgs.
-
-To protect your production org:
-
-. Connect to a sandbox org when you build and test a flow.
-. After testing is complete, connect to a production org, test, and then activate the flow.
-+
-Remember to change the connection from sandbox to production in every trigger and action that uses the sandbox connection.
-
 == Connections
 
 include::_partials/connection-definition.adoc[]
@@ -40,7 +29,7 @@ If possible, create only one connection per user per Salesforce org to avoid thi
 
 For more about Salesforce connected apps and authorization, see https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm.
 
-== Relaxed IP Restrictions
+=== Relaxed IP Restrictions
 
 When you use a Salesforce connection in a flow for the first time, if you receive an error that references IP or OAuth failures, that org may have IP restrictions set. Relax the IP restrictions for that connection to resolve this error.
 
@@ -65,6 +54,17 @@ To change a connection:
 . Click the change icon in the trigger or every action that connects to a sandbox:
 +
 image::images/change-connection.png[Change the connection control, 500]
+
+=== Salesforce Sandbox and Production Orgs
+
+You can connect to Salesforce sandbox and production orgs.
+
+To protect your production org:
+
+. Connect to a sandbox org when you build and test a flow.
+. After testing is complete, connect to a production org, test, and then activate the flow.
++
+Remember to change the connection from sandbox to production in every trigger and action that uses the sandbox connection.
 
 == Triggers
 

@@ -6,58 +6,67 @@
       "title": "MuleSoft Composer for Salesforce",
       "topics" : [
         {
+          "file" : "ms_composer_release_notes.adoc",
+          "title": "Release Notes"
+        },
+        {
           "file" : "ms_composer_prerequisites.adoc",
-          "title": "Composer Getting Started",
+          "title": "Getting Started",
           "topics": [
           {
           "file"  : "ms_composer_about_flows.adoc"
           },
           {
-          "file" : "ms_composer_first_example.adoc"
+          "file" : "ms_composer_first_example.adoc",
+          "title": "Example: Salesforce to Google Sheets"
           },
           {
-          "file" : "ms_composer_checklist.adoc"
+          "file" : "ms_composer_checklist.adoc",
+          "title": "Preparation Checklist"
           }
           ]
         },
         {
-          "file" : "ms_composer_connections.adoc"
+          "file" : "ms_composer_flows.adoc",
+          "title": "Build and Test Flows"
         },
         {
-          "file" : "ms_composer_flows.adoc"
+          "file" : "ms_composer_activation.adoc",
+          "title": "Activate Flows"
         },
         {
-          "file" : "ms_composer_activation.adoc"
-        },
-        {
-          "file" : "ms_composer_monitoring.adoc"
+          "file" : "ms_composer_monitoring.adoc",
+          "title": "Monitor Flows"
         },
         {
           "file" : "ms_composer_reference.adoc",
           "title": "Composer Reference",
           "topics" : [
             {
-              "file" : "ms_composer_googlesheets_reference.adoc"
+              "file" : "ms_composer_googlesheets_reference.adoc",
+              "title": "Google Sheets"
             },
             {
-              "file" : "ms_composer_salesforce_reference.adoc"
+              "file" : "ms_composer_salesforce_reference.adoc",
+              "title": "Salesforce"
             },
             {
-              "file" : "ms_composer_slack_reference.adoc"
+              "file" : "ms_composer_tableau_reference.adoc",
+              "title": "Tableau"
             },
             {
-              "file" : "ms_composer_tableau_reference.adoc"
-            },
-            {
-              "file" : "ms_composer_workday_reference.adoc"
+              "file" : "ms_composer_workday_reference.adoc",
+              "title": "Workday"
             }
           ]
         },
         {
-          "file" : "ms_composer_troubleshooting.adoc"
+          "file" : "ms_composer_troubleshooting.adoc",
+          "title": "Troubleshooting"
         },
         {
-          "file" : "ms_composer_glossary.adoc"
+          "file" : "ms_composer_glossary.adoc",
+          "title": "Glossary"
         }
       ]
     }

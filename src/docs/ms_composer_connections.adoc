@@ -19,17 +19,7 @@ To create your first connection:
 image:images/create-connection.png[Flow dialog showing connector controls, 300]
 . Click *Add new connection* and then add the username, password, and URL where you usually type in these credentials.
 +
-For Tableau, additional information is required:
-
-        ** The Tableau URL, for example: \https://us-west-2b.online.tableau.com
-
-        ** The External testing token, which you can retrieve from the Tableau admin profile
-
-        ** A random string which is generated **(where? how?)**
-
-        ** The subfolder name **(where do they find this or is it always mulesoftconnectivity?)**
-+
-**Any other connectors that need special instructions?**
+Some systems require additional information. Check the Reference topic for that connection if you aren't familiar with the items being requested.
 
 == Add an Existing Connection
 

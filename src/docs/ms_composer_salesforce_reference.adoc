@@ -31,7 +31,7 @@ For more about Salesforce connected apps and authorization, see https://help.sal
 
 === Relaxed IP Restrictions
 
-If your org has IP restrictions set, errors that references IP or OAuth failures may occur. Relax the IP restrictions to resolve this error.
+If your org has IP restrictions set, errors that reference IP or OAuth failures may occur. Relax the IP restrictions to resolve this error.
 
 To relax IP restrictions on a connection to Salesforce:
 

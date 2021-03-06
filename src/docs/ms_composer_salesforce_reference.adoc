@@ -31,16 +31,16 @@ For more about Salesforce connected apps and authorization, see https://help.sal
 
 === Relaxed IP Restrictions
 
-When you use a Salesforce connection in a flow for the first time, if you receive an error that references IP or OAuth failures, that org may have IP restrictions set. Relax the IP restrictions for that connection to resolve this error.
+If your org has IP restrictions set, errors that references IP or OAuth failures may occur. Relax the IP restrictions to resolve this error.
 
 To relax IP restrictions on a connection to Salesforce:
 
 . Log into the Salesforce org. You must be a Salesforce admin in that org.
 . Navigate to *Setup > Connected Apps OAuth Usage*.
 . Find *MuleSoft Composer* in the list, and click *Install*.
-. Accept the installation of the connected app in this org by clicking *Install* on the authorization dialog.
+. Click *Install* on the authorization dialog.
 +
-This does not install the MuleSoft Composer managed package, it merely makes the connected app (the connection you created) available so that you can relax the IP restrictions.
+This makes the connected app (the connection you created) available so that you can relax the IP restrictions. It doesn't reinstall the Composer app.
 . Click *Edit Policies*.
 . Change IP Relaxation to *Relax IP Restrictions* and then save your change.
 
@@ -54,6 +54,7 @@ To change a connection:
 . Click the change icon in the trigger or every action that connects to a sandbox:
 +
 image::images/change-connection.png[Change the connection control, 500]
+. Choose a new connection and save your changes.
 
 === Salesforce Sandbox and Production Orgs
 

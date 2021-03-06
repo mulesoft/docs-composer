@@ -5,6 +5,6 @@ After activation, you can easily monitor active Composer flows.
 . Click *Composer Flows*.
 . Click the name of a flow.
 
-The Flow Detail page shows the flow's run history: each time the flow fired, and whether it was successful or not:
+The Flow Detail page shows the flow's run history: each time the flow runs, and whether it was successful or not:
 
 image::images/success-monitoring.png[Image of a flow run history, 500]

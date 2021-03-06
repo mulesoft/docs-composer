@@ -63,7 +63,7 @@ You can connect to Salesforce sandbox and production orgs.
 To protect your production org:
 
 . Connect to a sandbox org when you build and test a flow.
-. After testing is complete, connect to a production org, test, and then activate the flow.
+. After testing is complete, connect to a production org, test the flow with the new connection, and then activate the flow.
 +
 Remember to change the connection from sandbox to production in every trigger and action that uses the sandbox connection.
 

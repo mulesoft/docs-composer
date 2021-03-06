@@ -1,6 +1,6 @@
 = Monitoring Composer Flows
 
-After activation, you can easily monitor active Composer flows.
+After activation, you can monitor active Composer flows.
 
 . Click *Composer Flows*.
 . Click the name of a flow.

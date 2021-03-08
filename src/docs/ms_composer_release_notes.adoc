@@ -8,6 +8,18 @@ March 15, 2021
 
 === Known Issues
 
+==== Connections
+
+You can't access the *Add Connection* button from a trigger or action once it has been created.
+
+To change a connection to a new connection of the same system type:
+
+. Add an action to the end of your flow, which displays the *Add Connection* button.
+. Create your new connection.
+. Delete the action you added.
+. In the trigger or action where you want to change to the new connection, click the change icon (three dots).
+. Click *Change Connection* and the new connection is listed.
+
 ==== Triggers
 
 * After you create a trigger, you can't create a new connection for the trigger. To change to a new connection on a trigger that's already been created, use one of the following workarounds:
@@ -18,6 +30,5 @@ March 15, 2021
         . Add an action to the end of your flow, and while in the action, create the connection you need.
         . Delete the action.
         . Open the trigger and use *Change Connection* to change to the new connection.
-
 
 

@@ -113,4 +113,4 @@ Delete a record specified by its object type and record ID.
 
 == Objects
 
-All standard and custom objects are available.
+All standard and custom objects are available, excluding the objects associated with Marketing Cloud and Commerce Cloud.

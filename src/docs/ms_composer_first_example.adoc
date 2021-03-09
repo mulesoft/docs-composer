@@ -1,0 +1,37 @@
+= Composer Example: Salesforce to Google Sheets
+
+Saura is the Salesforce admin for WeBeTeachers, a national group of language teachers.
+Each time someone joins a regional chapter, they are added to the regional Google Sheets spreadsheet. Saura needs to add the new member's name, email, and the date they joined to the national Salesforce org.
+
+Sure of which data she wants and what she wants to do with it, Saura is ready to define a series of steps that control
+the flow of data and metadata from regional spreadsheets to her Salesforce org.
+
+. Log in to Salesforce and name the flow.
++
+Saura logs in to the Salesforce org and opens MuleSoft Composer.
+She selects *Start Flow* and provides a name that makes the connection easy to recognize.
++
+She sees information about connections and details about what will trigger this flow.
+Saura starts with the connection, which is the credentials used to access other systems in the flow.
+
+. Define a connection for the trigger.
++
+Saura specifies the username, password, and URL used to access the external system, in this case the Salesforce inventory org:
++
+* *URL*: salesforce.login.com
+* *username*: Saura@org-name.com
+* *password*: _*********_
++
+. Saura saves the information and Composer creates a new connection. The credentials aren't visible again.
++
+This connection is automatically associated with the trigger she's creating.
+
+. Define the trigger.
++
+A flow starts automatically each time a triggering event happens.
+Saura chooses which kind of event or time period acts as a trigger for her flow:
+
+* An event such as "a record is updated."
+* A time interval such as "every ten minutes."
+
+TODO: **Finish this topic**

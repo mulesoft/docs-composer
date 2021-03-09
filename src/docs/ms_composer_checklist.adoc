@@ -3,22 +3,20 @@
 Before you build a flow, assemble the information you need:
 
 * The username, password, and the URL where you send these credentials for every data source or data target.
-This user must have access to the data you will work with. +
-(TODO: *does this need to be said? Any details needed?*)
+This user must have access to the data you plan to work with. +
 
-* The trigger for your flow: an event like "a Google Sheet row is deleted from spreadsheet MyData,"
-or a time period like "every weekday morning at 9:00 AM PDT."
+* The trigger for your flow: an event like "a Google Sheet row is updated when I add a new Salesforce contact,"
+or a time period like "every fifteen minutes."
 
 * An ordered list of all the steps and all the logic required to move and transform your data:
 
-    ** Which records or rows do you need to access?
-    ** What are you trying to do?
+    ** Which records, rows, or other data do you need to access?
+    ** What are you trying to do? For example:
         *** Pull changes and copy them
         *** Transform the structure or type of the data
         *** Add information from one source to information in another
-    ** Will you filter out some records based on criteria like "owned by," or "updated after"?
+    ** Will you filter out some records based on criteria such as "owned by," or "updated after"?
 
-Of course, if you aren't certain of some of this information, create some experimental flows.
-Flows don't start working until you activate them, and you can change them while you are building them.
-
-TODO: *Format as a checklist? Add more things to think about beforehand?*
+Of course, if you aren't certain of some of this information, you can still use Composer.
+Flows, the main building block of process automation, don't start working until you activate them.
+You can change them as you create them, so feel free to experiment.

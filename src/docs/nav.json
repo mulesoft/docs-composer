@@ -17,10 +17,6 @@
           "file"  : "ms_composer_about_flows.adoc"
           },
           {
-          "file" : "ms_composer_first_example.adoc",
-          "title": "Example: Salesforce to Google Sheets"
-          },
-          {
           "file" : "ms_composer_checklist.adoc",
           "title": "Preparation Checklist"
           }

@@ -113,4 +113,6 @@ Delete a record specified by its object type and record ID.
 
 == Objects
 
-All standard and custom objects are available.
+All standard and custom Salesforce objects.
+
+Some products in Marketing Cloud and Commerce Cloud use data that is not stored in Salesforce records and therefore is not available with a Salesforce connection.

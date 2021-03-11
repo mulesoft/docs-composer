@@ -29,7 +29,6 @@ Connections protect your login credentials while giving easy access to data sour
 
 * Only you can see the connections you create.
 * The credentials are never exposed or accessible after you create the connection.
-* You can't remove a connection until you've removed every reference from it from every flow.
 * You can't change the name of a connection after it is used in a flow that is deployed.
 
 After choosing the connection, Composer displays a dialog for you to finish defining the trigger.

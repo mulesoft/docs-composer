@@ -138,6 +138,12 @@ You can add as many branches as you need, and as many actions per branch as you 
 
 == Test Each Step
 
-Composer allows you to save and test after every trigger, action, or flow control that's added to your flow. You can add or delete actions and flow controls wherever you see the plus sign in a circle.
+You can test your work after every trigger, action, and flow control as you add them. As you test, you may want to add or delete actions and flow controls. You may also want to change the connection you use in triggers or actions to another connection of the same system type.
 
 Once testing is complete, you are ready to activate your flow.
+
+== See Also
+
+* xref:ms_composer_flows.adoc[Build and Test a Flow]
+* xref:ms_composer_activation.adoc[Activate a Flow]
+* xref:ms_composer_monitoring.adoc[Monitor a Flow]

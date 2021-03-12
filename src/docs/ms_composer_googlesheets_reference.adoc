@@ -59,3 +59,5 @@ This action updates a row in a sheet.
 === Limits
 
 A Google Sheet must have a header row. If data is stored in row #1, the action fails.
+
+*Google Sheets™ is a trademark of Google LLC.*

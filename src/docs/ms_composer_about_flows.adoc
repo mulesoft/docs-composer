@@ -121,7 +121,7 @@ image::images/for-each-example.png[For Each example, 500]
 
 *Input list* is chosen from the list of records available from a previous action. In this example, a previous action fetched all the contact records associated with a single account.
 
-The rest of the For Each loop is the action that writes the contacts to a Google Sheet, one record per row.
+The rest of the steps are the actions that are to be performed on each record in the list. In this example, the action writes contacts to a Google Sheet, one record per row.
 
 === If/Else Block
 

@@ -11,7 +11,7 @@ You can also combine multiple actions in a single flow, such as replicating Sale
 
 == Connections or Scheduler
 
-After you create and name a flow, you're ready to choose what will trigger the flow, either an event in a system such as Salesforce or Workday, or a time interval such as "every fifteen minutes."
+After you create and name a flow, you're ready to choose what will trigger the flow: an event in a system such as Salesforce or Workday, or a time interval such as "every fifteen minutes."
 
 image::images/connection-example.png[Example of a connection dialog, 400]
 
@@ -19,7 +19,7 @@ Triggering a flow with an event is done with a connection, and triggering with a
 
 === Connections
 
-In order for a system event to trigger a flow, you must connect to that system. In the What Should Start This Flow page, choose a connection as the first step of creating a trigger:
+The first step in triggering a flow is connecting to the system where the trigger will occur. In the What Should Start This Flow page, choose a connection as the first step of creating a trigger:
 
 * Choose an existing connection from the list.
 * Click *Add New Connection* to create a new connection that is automatically selected after you create it.
@@ -31,7 +31,7 @@ Connections protect your login credentials while giving easy access to data sour
 * The credentials are never exposed or accessible after you create the connection.
 * You can't change the name of a connection after it is used in a flow that is deployed.
 
-After choosing the connection, Composer displays a dialog for you to finish defining the trigger.
+After you choose a connection, Composer displays a dialog for you to finish defining the trigger.
 From this dialog, you can change the connection to another of the same system.
 
 === Scheduler
@@ -57,43 +57,41 @@ The trigger listens to the data source and starts when an event specified in the
 * *Start this flow when:* is a list of actions that can start a flow for the chosen connection. Click in the text box to see a list of options.
 * *Object type* is a list of objects you can choose, such as account or opportunity for a Salesforce connection. The label here and the choices you are given depend on the connection.
 * *Result fields* by default lists the number of fields that will be available to the flow each time it is triggered. To work with only some record fields, click *Select Fields*.
-* *Sample Output* shows you the field name and a sample value taken from an actual, random record in the data source you connected to. Check the sample output to confirm that you've connected to the correct account. It also helps you understand the data you'll have to work with in subsequent steps.
+* *Sample Output* shows you the field name and a sample value taken from an actual record in the data source you connected to. Check the sample output to confirm that you've connected to the correct account. It also helps you understand the data that you'll be able to work with.
 +
 To see the API Name of the field, hover over the information bubble next to each field name.
 
-You can test your trigger and adjust as needed. Simple click *Test*, then make the system event happen: in this example, create a new Salesforce contact. If the test completes without errors, you're ready for the next step: define the actions that this flow will perform after being triggered.
+You can test your trigger and adjust as needed. Simply click *Test*, then make the system event happen: in this example, create a new Salesforce contact. If the test completes without errors, you're ready for the next step: define the actions that this flow will perform after being triggered.
 
 == Actions
 
-An action is a step in the flow. You create the first action of the flow right after the trigger, and as with the trigger, you can choose a connection. You'll have access to the data fetched by the trigger as well.
+An action is a step in the flow. You create the first action of the flow right after the trigger, and as with the trigger, you can choose a connection. You'll have access to the data fetched by the trigger and any previous actions as well.
 
 However, you can also start with a flow control before the action.
 
 image:images/create-an-action.png[Add action dialog, 400]
 
-=== Action Starting with a Connection
-
-In the following example, a Salesforce admin has created an action, named it, and chosen a connection to their Google spreadsheets, as you can see in the top banner of the action. The admin has also defined the action: in this case, create a new row in a spreadsheet and populate it with some fields from the trigger: in this case, each new Salesforce contact.
+In the following example, a Salesforce admin has created an action, named it, and chosen a connection to their Google spreadsheets, as you can see in the top banner of the action. The admin has also defined the action: in this case, create a new row in a spreadsheet and populate it with some fields from the flow trigger (each new contact record).
 
 image::images/action-step1.png[Example action, 600]
 
-* *Action* is the task you want to perform. The actions you can choose from depend on which connection you used when you created the action. Naming the action may make your flow easier to understand.
+* *Action* is the task you want to perform. The actions you can choose from depend on which connection you choose.
 +
 The rest of the fields in this section depend on the connection type, and the action you choose.
 * *Spreadsheet ID* is the name of the spreadsheet this action will use. You can search for and select any of the spreadsheets that you can access using the credentials you used to create the connection.
-* *Worksheet* is the name of the specific worksheet in the spreadsheet where you will add a row.
+* *Worksheet* is the name of the worksheet where you will add a row.
 
 * *Columns* is the area where you map the trigger fields to columns in the spreadsheet. Click *Add Columns* to see all the columns from the spreadsheet listed:
 +
 image::images/action-step2.png[Example action, 600]
 +
-Choose which fields you want to act upon, and then map the trigger-delivered fields with these:
+Choose which fields you want to act upon, and then map the fields you fetched with the trigger or previous actions with these:
 +
 image::images/action-step3.png[Example action, 600]
 +
 Map the fields delivered by the trigger to the spreadsheet rows you selected. In this example, *Email*, *FirstName*, and *LastName* will be mapped to the Google sheet columns *Email*, *First Name*, and *Last Name*. You don't have to map all the fields fetched in your action  or trigger connection.
 +
-The selection pane presents different items depending on the flow trigger and other choices. For a list of valid actions for each connection, see the reference topic for the system you are interested in.
+Remember, the selection pane (*Columns*) is different depending on the connection for this action and other choices. For a list of valid actions for each connection, see the reference topic for the system you are interested in.
 
 This is the complete action, ready for testing:
 
@@ -105,19 +103,19 @@ The fields from Salesforce that are mapped to the Google Sheet fields are data p
 
 Data pills allow your data mapping to be as simple or as complex as you need:
 
-* Because fields are fetched in the form of data pills, you can use compound or nested fields in your flows.
+* Data pills contain the complexity of a data structure, making it easy map data from triggers or previous actions.
 
-* You can map more than one data pill to a field.
+* You can concatenate two or more data pills by mapping them to the same field, column, or other data target.
 
-* You can create a custom expression instead of simply mapping fields.  Select *Custom Express fx* when mapping a field to create a custom expression. For example, you might want to add some text such as `Copied from Salesforce`after a field, to flag it for inspection. Or, you might want to add two data pills to a single field.
+* You can create a custom expression instead of simply mapping data pills to data targets, by select *Custom Express fx*. For example, you might want to add some text such as `Copied from Salesforce` after a data pill, to flag it for inspection.
 
-== Flow Control Before an Action
+== Flow Controls
 
-Instead of starting with the action, you can start with a flow control that leads to one or more actions. You can choose between a For Each loop or an If/Else block.
+If you need to add logic to your flow beyond a basic action, you can use a For Each loop or an If/Else block. You'll define the flow control and then specify the action to be taken based on the logic applied to the data fetched previously.
 
 === For Each Loop
 
-A For Each loop acts on each record of a set. For example, if the flow fetches a set of contacts from Salesforce, you can copy each record to a row in a Google Sheet.
+A For Each loop acts on each record in a list. For example, if the flow fetches a set of contacts from Salesforce, you can loop through the list and copy each record to a row in a Google Sheet.
 
 image::images/for-each-example.png[For Each example, 500]
 
@@ -131,15 +129,17 @@ An If/Else block takes a single record and checks to see if it meets conditions 
 
 image::images/if-else-example.png[If Else example, 500]
 
-This example shows only one branch: if the phone number on the record starts with `702`, then the first and last names are copied to a row in a Google Sheet. Any record that doesn't meet the criteria will have no action taken on it.
+This example shows only one If branch: if the phone number on the record starts with `702`, then the first and last names are copied to a row in a Google Sheet. If a record doesn't meet the criteria, no action is taken, and the flow moves on to the next action, since there is only one branch.
 
-You can add as many branches as you need, and as many actions per branch as you need by clicking *Add If*, and you can specify a fall-through action with *Add Else*. Be careful how you order your If statements, because the action specified by the first branch whose conditions are met is the only action performed in the If/Else block.
+You can add up to 20 conditions per branch and as many actions per branch as you need. Click *Add If* to add branches. After specifying all the branches you need, you can specify a fall-through action with *Add Else*.
+
+Be careful how you order your If statements. The action specified by the first branch whose conditions are met is the only action performed in the If/Else block.
 
 == Test Each Step
 
-You can test your work after every trigger, action, and flow control as you add them. As you test, you may want to add or delete actions and flow controls. You may also want to change the connection you use in triggers or actions to another connection of the same system type.
+You can test your work after every trigger and action. As you test, you can add or delete actions and flow controls. You can also change the connection you use in triggers or actions to another connection of the same system type.
 
-Once testing is complete, you are ready to activate your flow.
+After testing is complete, you are ready to activate your flow.
 
 == See Also
 

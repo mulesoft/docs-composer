@@ -81,7 +81,7 @@ The rest of the fields in this section depend on the connection type, and the ac
 * *Spreadsheet ID* is the name of the spreadsheet this action will use. You can search for and select any of the spreadsheets that you can access using the credentials you used to create the connection.
 * *Worksheet* is the name of the worksheet where you will add a row.
 
-* *Columns* is the area where you map the trigger fields to columns in the spreadsheet. Click *Add Columns* to see all the columns from the spreadsheet listed:
+* *Columns* is the area where you map the trigger fields to columns in the spreadsheet. This area, like the others, is different for different systems. In this example, click *Add Columns* to see all the columns from the spreadsheet listed and choose the ones you want to work with here:
 +
 image::images/action-step2.png[Example action, 600]
 +

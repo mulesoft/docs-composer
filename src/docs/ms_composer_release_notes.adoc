@@ -8,6 +8,8 @@ March 15, 2021
 
 === Known Issues
 
+The following issues were identified at the time of this release.
+
 ==== Connections
 
 You can't access the *Add Connection* button from a trigger or action once it has been created.
@@ -20,15 +22,16 @@ To change a connection to a new connection of the same system type:
 . In the trigger or action where you want to change to the new connection, click the change icon (three dots).
 . Click *Change Connection* and the new connection is listed.
 
+
 ==== Triggers
 
-* After you create a trigger, you can't create a new connection for the trigger. To change to a new connection on a trigger that's already been created, use one of the following workarounds:
+After you create a trigger, you can't create a new connection for the trigger. To change to a new connection on a trigger that's already been created, use one of the following workarounds:
 //CAPP=-1550
 
-    ** If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
-    ** If you want to change the instance of the same data source but no connection for that source exists yet:
-        . Add an action to the end of your flow, and while in the action, create the connection you need.
-        . Delete the action.
-        . Open the trigger and use *Change Connection* to change to the new connection.
+* If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
+* If you want to change the instance of the same data source but the connection for that source doesn't exist yet:
+   . Add an action to the end of your flow, and while in the action, create the connection you need.
+   . Delete the action.
+   . Open the trigger and use *Change Connection* to change to the new connection.
 
 

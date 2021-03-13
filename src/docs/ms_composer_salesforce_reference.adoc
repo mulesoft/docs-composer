@@ -100,7 +100,13 @@ Update any standard or custom record as specified by an external ID.
 
 Get records::
 
-Return all the records that match specified search terms.
+Return all the records that match specified search terms:
+
+image::images/query-builder.png[Query builder UI, 500]
+
+* You can choose which fields that the action fetches in the *Result fields* section.
+* You can add one or more conditions to specify which types of records should be returned in the *Filter records* section. For example, you could specify that the last name begin with "B."
+* You can control the sort order of the returned records in the "Sort records" section. Records can be sorted in ascending or descending order of a field that you specify.
 
 Create or update record::
 

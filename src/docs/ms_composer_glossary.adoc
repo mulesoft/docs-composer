@@ -28,4 +28,4 @@ Composer connects to systems such as Salesforce, NetSuite, and Google Sheets to 
 
 task::
 
-A change made by MuleSoft Composer for Salesforce to an object or record in the target system(s) of an integration flow that is an insertion, update or deletion.
+A change made by MuleSoft Composer for Salesforce to an object or record in the target system(s) of an integration flow that is an insertion, update, or deletion.

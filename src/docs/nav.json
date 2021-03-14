@@ -24,15 +24,15 @@
         },
         {
           "file" : "ms_composer_flows.adoc",
-          "title": "Build and Test Flows"
+          "title": "Build and Test a Flow"
         },
         {
           "file" : "ms_composer_activation.adoc",
-          "title": "Activate Flows"
+          "title": "Activate a Flow"
         },
         {
           "file" : "ms_composer_monitoring.adoc",
-          "title": "Monitor Flows"
+          "title": "Monitor a Flow"
         },
         {
           "file" : "ms_composer_reference.adoc",

@@ -1,4 +1,4 @@
-= Activate a Flow
+= Activate a Composer Flow
 
 After you build and test a flow, activate it.
 

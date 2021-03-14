@@ -1,4 +1,4 @@
-= Build and Test a Flow
+= Build and Test a Composer Flow
 
 After you have collected the information as described in xref:ms_composer_checklist.adoc[the preparation checklist], build and test your flow:
 

@@ -6,15 +6,15 @@
       "title": "MuleSoft Composer for Salesforce",
       "topics" : [
         {
+          "file" : "ms_composer_release_notes.adoc",
+          "title": "Release Notes"
+        },
+        {
           "file" : "ms_composer_prerequisites.adoc",
           "title": "Getting Started",
           "topics": [
           {
           "file"  : "ms_composer_about_flows.adoc"
-          },
-          {
-          "file" : "ms_composer_first_example.adoc",
-          "title": "Example: Salesforce to Google Sheets"
           },
           {
           "file" : "ms_composer_checklist.adoc",
@@ -24,15 +24,15 @@
         },
         {
           "file" : "ms_composer_flows.adoc",
-          "title": "Build and Test Flows"
+          "title": "Build and Test a Flow"
         },
         {
           "file" : "ms_composer_activation.adoc",
-          "title": "Activate Flows"
+          "title": "Activate a Flow"
         },
         {
           "file" : "ms_composer_monitoring.adoc",
-          "title": "Monitor Flows"
+          "title": "Monitor a Flow"
         },
         {
           "file" : "ms_composer_reference.adoc",

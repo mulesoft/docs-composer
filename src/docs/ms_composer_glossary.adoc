@@ -25,3 +25,7 @@ The circumstances or requirements that must be met before an action is taken: if
 system::
 
 Composer connects to systems such as Salesforce, NetSuite, and Google Sheets to execute automated processes which you build, test, and activate as flows. Connections to a system can be made during any step in a flow. Flows must connect to a system during the first step, the trigger or scheduler, even if that system is the same Salesforce org where Composer is hosted.
+
+task::
+
+A change made by MuleSoft Composer for Salesforce to an object or record in the target system(s) of an integration flow that is an insertion, update, or deletion.

@@ -84,7 +84,7 @@ For example, if your trigger is "new records created in Salesforce," and you wan
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
 . Click *Save* from the Flow Details menu bar.
 . Click *Test* to test your action. Composer gives you five minutes to test. For example, if you were testing an action to copy every new contact in a Salesforce org, you'd click *Test*, then log into the Salesforce org and create a new contact.
-.Composer notifies you when the test is complete.
+. Composer notifies you when the test is complete.
 
 Test after every trigger, flow control, and action you add to your flow. Testing often makes diagnosing problems easier.
 

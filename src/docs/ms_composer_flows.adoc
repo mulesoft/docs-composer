@@ -10,6 +10,10 @@ After these steps are complete, you're ready to activate the flow, and then moni
 
 == Create a New Flow
 
+You can create a new flow or clone an existing flow.
+
+=== Create a New Flow
+
 To create a new flow:
 
 . From the Composer Home page, click *Create New Flow*.
@@ -17,6 +21,14 @@ To create a new flow:
 . Click *Save*.
 
 Now you are ready to create a trigger or set a timed interval that controls when the flow runs.
+
+=== Clone an Existing Flow
+
+To clone an existing flow:
+
+. From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the Flow Details page.
+. Click *Clone*.
+. Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
 
 == Create a Flow Trigger
 

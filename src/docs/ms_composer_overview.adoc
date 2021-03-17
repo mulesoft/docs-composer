@@ -77,12 +77,12 @@ and you can add complexity to it as you discover new use cases.
 
 == Next Steps
 
-. Review xref:ms_composer_about_flows.adoc[About Flows] and xref:ms_composer_first_example.adoc[Composer Example] to understand each step of creating flows. If you want more help, you can use Salesforce Trailhead or visit the MuleSoft blog post about Composer.
+. Review xref:ms_composer_about_flows.adoc[How Composer Works] to understand how the different parts of a flow work together to automate processes. If you want more help, you can use Salesforce Trailhead or visit the MuleSoft blog post about Composer.
 . Create a plan for your first flow using the xref:ms_composer_checklist.adoc[checklist].
 . Open Composer in your Salesforce org and build your first flow.
 
 == Additional Learning Resources
 
-* xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[Trailhead: MuleSoft Composer Installation and Configuration^]
-* xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[Trailhead: MuleSoft Composer Basics^]
+* https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[Trailhead: MuleSoft Composer Installation and Configuration^]
+* https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[Trailhead: MuleSoft Composer Basics^]
 * https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft blog post^]

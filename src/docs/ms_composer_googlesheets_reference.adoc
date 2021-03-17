@@ -19,6 +19,8 @@ include::_partials/trigger-definition.adoc[]
 New spreadsheet::
 
 This trigger fires when a new spreadsheet is created in the Google Drive associated with the connection.
++
+Google Sheets are not saved at the moment of creation. They are saved the first time they are edited. Therefore, a new spreadsheet won't trigger a flow until after it is edited and saved. However, the save date is the time of creation, not the first edit. Thus, if you create a second spreadsheet and edit it before you edit the first one, the second spreadsheet triggers a flow; the first one is ignored.
 
 //New row in sheet::
 //
@@ -45,14 +47,17 @@ This trigger fires when a new spreadsheet is created in the Google Drive associa
 
 include::_partials/action-definition.adoc[]
 
-Create a spreadsheet row::
+Create row::
 
 This action adds a new row at the end of the sheet named in the connection.
 
-Update a spreadsheet row::
+Update row::
 
 This action updates a row in a sheet.
 
 === Limits
 
-A Google Sheet must have a header row. If data is stored in row #1, the action fails.
+* A Google Sheet must have a header row. If data is stored in row #1, the action fails.
+* Google Sheets does not write to a cell if the composite data pill has a null or empty value. This could affect the *Update row* or *Create row* actions.
+
+*Google Sheets™ is a trademark of Google LLC.*

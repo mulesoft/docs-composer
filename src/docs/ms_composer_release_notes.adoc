@@ -13,7 +13,7 @@ The following issues were identified at the time of this release.
 * If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log into Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 * You can't access the *Add Connection* button from a trigger or action once it has been created.
@@ -55,5 +55,4 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
 //CCONN-714, copied to tableau reference
-
 

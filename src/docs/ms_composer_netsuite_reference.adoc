@@ -62,3 +62,48 @@ A record is changed.
 Upsert record::
 
 A record is created or changed.
+
+== Record Types
+
+The following record types are supported.
+
+* Triggers
+
+** Contact
+** Employee
+** Inventory Item
+** Invoice
+** Sales Order
+** Support Case
+** Customer
+
+* Actions
++
+For *Create*, *Update*, and *Upsert* actions:
+
+** Contact
+** Customer
+** Employee
+** Inventory Item
+** Invoice
+** Payment Item
+** Sales Order
+** Support Case
+
+For *Search record* action:
+
+** Contacts
+** Customer
+** Employee
+** Inventory Item
+** Payment Item
+** Refund
+** Sales Order
+
+== Custom Objects
+
+Custom Objects are not supported.
+
+== List Objects
+
+List objects are supported.

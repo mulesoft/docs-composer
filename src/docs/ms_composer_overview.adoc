@@ -83,6 +83,6 @@ and you can add complexity to it as you discover new use cases.
 
 == Additional Learning Resources
 
-* xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config[Trailhead: MuleSoft Composer Installation and Configuration^]
-* xref:https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics[Trailhead: MuleSoft Composer Basics^]
+* https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config/[Trailhead: MuleSoft Composer Installation and Configuration^]
+* https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics/[Trailhead: MuleSoft Composer Basics^]
 * https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft blog post^]

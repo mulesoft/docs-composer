@@ -40,7 +40,7 @@ To change to a new connection on a trigger that's already been created, use one 
 
 === Salesforce
 
-* An error occurs if you use the Salesforce action *Get Records* and return a Date field.
+As part of the Salesforce action *Get records*, you can't query based on a Data field.
 //CPLAT-1126
 
 === Tableau

@@ -43,7 +43,7 @@ To change to a new connection on a trigger that's already been created, use one 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126
 
-* Composer doesn't set the value of some required Boolean fields. You must set these values in the relevant step.
+* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
 //CAPP-2009
 
 === Tableau

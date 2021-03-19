@@ -71,5 +71,5 @@ When the Composer page displays, you're ready to create your first flow. If you'
 
 == See Also
 
-* link:ms_composer_reference.adoc[Connection Reference]
+* xref:ms_composer_reference.adoc[Connection Reference]
 * https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_framework_supported_browsers.htm[Salesforce Canvas browser support]

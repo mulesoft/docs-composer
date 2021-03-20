@@ -36,6 +36,11 @@ For example, if you see `\https://10ay.online.tableau.com/#/site/MarketingTeam/w
 
 For more information about authentication in Tableau, see `https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`.
 
+==== Known Issues
+
+Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
+//CCONN-714, copied from tableau reference
+
 === Duration of Tokens
 
 Tableau has limits on personal access tokens that affect your connection:

@@ -34,7 +34,7 @@ To change to a new connection on a trigger that's already been created, use one 
 ** If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
 ** If you want to change the instance of the same data source, but the connection for that source doesn't exist yet:
 +
-. Add an action to the end of your flow, and while in the action, create the connection you need.
+. Add an action to the end of your flow. In the action, create the connection you need.
 . Delete the action.
 . Open the trigger and use *Change Connection* to change to the new connection.
 

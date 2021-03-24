@@ -38,8 +38,15 @@ To create a trigger:
 +
 * Click an existing connection to select it.
 * Click *Add New Connection* to create a new connection and automatically select it.
-
++
 You can also rename or delete connections from this dialog by clicking *Manage*.
+. In the trigger card:
++
+* Optionally give the trigger a name.
+* Choose an event that starts the flow.
+* Supply additional information as requested.
+
+You can save and test your trigger, or delete and replace it.
 
 === Create and Add a New Connection
 

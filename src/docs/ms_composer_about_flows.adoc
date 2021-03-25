@@ -140,7 +140,7 @@ Be careful how you order your If statements. The action specified by the first b
 
 == Test Each Step
 
-You can test your work after every trigger and action. As you test, you can add or delete actions and flow controls. You can also change the connection you use in triggers or actions to another connection of the same system type.
+You can test your work after every trigger and action. As you test, you can add or delete triggers, actions, and flow controls. You can also change the connection you use in triggers or actions to another connection of the same system type.
 
 After testing is complete, you are ready to activate your flow.
 

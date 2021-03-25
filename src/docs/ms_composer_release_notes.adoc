@@ -85,12 +85,12 @@ To change to a new connection on a trigger that’s already been created, use on
 . Delete the action.
 . Open the trigger and use Change Connection to change to the new connection.
 
-=== Google Sheets
+==== Google Sheets
 
 A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
 //CCONN-735
 
-=== Salesforce
+==== Salesforce
 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126

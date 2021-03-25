@@ -79,7 +79,7 @@ To change a connection to a new connection of the same system type:
 To change to a new connection on a trigger that has already been created, use one of the following workarounds:
 +
 ** If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
-** If you want to change the instance of the same data source, but the connection for that source doesn’t exist yet:
+** If you want to change the instance of the same data source, but the connection for that source doesn't exist yet:
 +
 . Add an action to the end of your flow. In the action, create the connection you need.
 . Delete the action.

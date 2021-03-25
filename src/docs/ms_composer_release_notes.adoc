@@ -83,7 +83,7 @@ To change to a new connection on a trigger that’s already been created, use on
 +
 . Add an action to the end of your flow. In the action, create the connection you need.
 . Delete the action.
-. Open the trigger and use Change Connection to change to the new connection.
+. Open the trigger and use *Change Connection* to change to the new connection.
 
 ==== Google Sheets
 
@@ -102,4 +102,3 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
 //CCONN-714, copied to Tableau reference
-

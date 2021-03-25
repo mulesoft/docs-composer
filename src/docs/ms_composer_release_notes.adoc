@@ -2,17 +2,17 @@
 
 Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
-== Latest Release
-
-MuleSoft Composer version 1.1.0 is available on March 25, 2021.
-
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-Previous versions and release dates:
+== March 25, 2021
 
-* General Availability on March 15, 2021
+MuleSoft Composer version 1.1.0 is available beginning March 25, 2021.
 
-== Known Issues
+=== New Features
+
+You can delete and replace a trigger step in any unactivated flow.
+
+=== Known Issues
 
 The following issues were identified at the time of this release.
 
@@ -32,6 +32,59 @@ To change a connection to a new connection of the same system type:
 . In the trigger or action where you want to change to the new connection, click the change icon (three dots).
 . Click *Change Connection*. The new connection is listed.
 
+==== Google Sheets
+
+A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
+//CCONN-735
+
+==== Salesforce
+
+* As part of the Salesforce action *Get records*, you can't query based on a Date field.
+//CPLAT-1126
+
+* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
+//CAPP-2009
+
+==== Tableau
+
+Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
+//CCONN-714, copied to Tableau reference
+
+== March 15, 2021
+
+MuleSoft Composer for Salesforce is generally available.
+
+=== Known Issues
+
+The following issues were identified at the time of this release.
+
+* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+//CAPP-1625
+
+* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+//CAPP-2051
+
+* You can't access the *Add Connection* button from a trigger or action once it has been created.
++
+To change a connection to a new connection of the same system type:
++
+. Add an action to the end of your flow, which displays the *Add Connection* button.
+. Create your new connection.
+. Delete the action you added.
+. In the trigger or action where you want to change to the new connection, click the change icon (three dots).
+. Click *Change Connection*. The new connection is listed.
+
+* After you create a trigger, you can’t delete that step.
++
+To change to a new connection on a trigger that’s already been created, use one of the following workarounds:
++
+** If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
+**If you want to change the instance of the same data source, but the connection for that source doesn’t exist yet:
++
+. Add an action to the end of your flow. In the action, create the connection you need.
+. Delete the action.
+. Open the trigger and use Change Connection to change to the new connection.
+
 === Google Sheets
 
 A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
@@ -45,7 +98,8 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 * Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
 //CAPP-2009
 
-=== Tableau
+==== Tableau
 
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
 //CCONN-714, copied to Tableau reference
+

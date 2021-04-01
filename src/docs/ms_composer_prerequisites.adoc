@@ -4,7 +4,7 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 
 == Prerequisites
 
-* The org where you set up Composer must be a Salesforce Unlimited, Enterprise, or Performance edition.
+* The org where you set up Composer must be a Salesforce Unlimited, Enterprise, or Performance edition. It can't be a sandbox org.
 * The org must have Lightning enabled.
 * You must purchase a separate MuleSoft Composer license for the org.
 * If your company network has a stringent firewall or list of blocked IP addresses, your network administrator must add `*.mulesoft.com` to the list of allowed addresses.

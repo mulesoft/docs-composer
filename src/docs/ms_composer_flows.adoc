@@ -35,7 +35,7 @@ To clone an existing flow:
 
 After you have created or cloned a flow, define the trigger: the event or time interval that starts the flow.
 
-To create a trigger based on an event:
+To define a trigger based on an event:
 
 . Open a flow if it is not already open. The *What Should Start This Flow?* dialog is displayed.
 +
@@ -151,6 +151,5 @@ You can add logic and actions in different patterns, depending on what your flow
 After you test your completed flow, you are ready to activate it.
 
 If you used connections to a sandbox org while creating and testing the flow, don't forget to change the connections to production orgs and retest before activating.
-
 
 

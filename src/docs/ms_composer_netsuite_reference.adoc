@@ -70,12 +70,13 @@ The following record types are supported.
 * Triggers
 
 ** Contact
+** Customer
 ** Employee
 ** Inventory Item
 ** Invoice
 ** Sales Order
 ** Support Case
-** Customer
+
 
 * Actions
 +
@@ -83,6 +84,7 @@ For *Create*, *Update*, and *Upsert* actions:
 
 ** Contact
 ** Customer
+** Customer Refund
 ** Employee
 ** Inventory Item
 ** Invoice

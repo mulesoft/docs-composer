@@ -19,7 +19,7 @@ Triggering a flow with an event is done with a connection, and triggering with a
 
 === Connections
 
-The first step in triggering a flow is connecting to the system where the trigger will occur. In the What Should Start This Flow page, choose a connection as the first step of creating a trigger:
+The first step in triggering a flow is connecting to the system where the trigger will occur. In the What Should Start This Flow page, choose or create a connection as the first step of creating a trigger:
 
 * Choose an existing connection from the list.
 * Click *Add New Connection* to create a new connection that is automatically selected after you create it.

@@ -1,7 +1,7 @@
 = Tableau Reference
 
-Whenever you use Tableau as a data target (push Salesforce data to an existing Tableau hyper file, for example)
-some details of how to work with data in a flow are specific to the data source or data target.
+Use Tableau as a data target. For example, you can push Salesforce data to an existing Tableau hyper file.
+Some details of how to work with data in a flow are specific to the data target.
 
 == Tableau Requirements for Composer
 

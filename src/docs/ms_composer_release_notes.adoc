@@ -4,9 +4,53 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== March 25, 2021
+== April 7, 2021
 
-MuleSoft Composer version 1.1.0 is available beginning March 25, 2021.
+=== New Features
+
+Two new connectors are now available: Slack and NetSuite.
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+=== Known Issues
+
+The following issues were identified at the time of this release.
+
+* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+//CAPP-1625
+
+* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+//CAPP-2051
+
+* You can't access the *Add Connection* button from a trigger or action once it has been created.
++
+To change a connection to a new connection of the same system type:
++
+. Add an action to the end of your flow, which displays the *Add Connection* button.
+. Create your new connection.
+. Delete the action you added.
+. In the trigger or action where you want to change to the new connection, click the change icon (three dots).
+. Click *Change Connection*. The new connection is listed.
+
+==== Google Sheets
+
+A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
+//CCONN-735
+
+==== Salesforce
+
+* As part of the Salesforce action *Get records*, you can't query based on a Date field.
+//CPLAT-1126
+
+* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
+//CAPP-2009
+
+==== Tableau
+
+Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
+//CCONN-714, copied to Tableau reference
+
+== March 25, 2021
 
 === New Features
 

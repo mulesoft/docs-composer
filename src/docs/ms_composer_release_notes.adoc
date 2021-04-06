@@ -8,8 +8,8 @@ New versions are automatically available once they are released; you don't need 
 
 === New Features
 
-* Two new connectors are now available: Slack and NetSuite.
-+
+You can now connect to two more systems: Slack and NetSuite.
+
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 * The user interface for creating a connection is easier to understand.

@@ -49,7 +49,7 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 
 ==== Tableau
 
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
+Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
 //CCONN-714, copied to Tableau reference
 
 == March 25, 2021

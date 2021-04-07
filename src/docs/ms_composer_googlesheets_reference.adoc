@@ -1,10 +1,10 @@
 = Google Sheets Reference
 
-Whether you are using Salesforce as a data source (take new Google Sheet rows and copy them to a Salesforce org as Contacts, for example)
-or a data target (take my new Salesforce Contact and turn it into a row in a Google Sheet),
-some details of how to work with data in a flow are specific to the data source or data target.
+Use Google Sheets as a data source (get a new Google Sheet row and send a Slack message with information from the row, for example)
+or a data target (get a new Salesforce contact and turn it into a row in a Google Sheet).
+Some details of how to work with data in a flow are specific to the data source or data target, and also change depending on the specific trigger or actions you choose.
 
-== Connection Details
+== Connections
 
 include::_partials/connection-definition.adoc[]
 

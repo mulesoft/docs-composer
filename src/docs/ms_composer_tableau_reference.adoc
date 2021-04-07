@@ -1,14 +1,14 @@
 = Tableau Reference
 
-Whenever you use Tableau as a data target (push Salesforce data to an existing Tableau hyper file, for example)
-some details of how to work with data in a flow are specific to the data source or data target.
+Use Tableau as a data target. For example, you can push Salesforce data to an existing Tableau hyper file.
+Some details of how to work with data in a flow are specific to the data target.
 
 == Tableau Requirements for Composer
 
 * You can connect to Tableau Online or Tableau Server.
 * Your instance of Tableau must be publicly internet-facing and be version 2019.4 or higher.
 
-== Connection Details
+== Connections
 
 include::_partials/connection-definition.adoc[]
 

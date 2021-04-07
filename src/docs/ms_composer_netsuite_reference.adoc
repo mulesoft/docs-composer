@@ -35,6 +35,8 @@ The token secret generated with the token ID in NetSuite
 
 SOAP Port::
 
+The value can't be edited at this time.
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
@@ -108,7 +110,7 @@ The following record types are valid for all actions except *Get Record*:
 ** Sales Order
 ** Support Case
 
-The following record types are valid for the *Search record* action:
+The following record types are valid for the *Get Record* action:
 
 ** Contacts
 ** Customer
@@ -118,9 +120,9 @@ The following record types are valid for the *Search record* action:
 ** Refund
 ** Sales Order
 
-== Custom Objects
+== Custom Objects and Custom Fields
 
-Custom Objects are not supported.
+Custom objects and custom fields are not supported.
 
 == List Objects
 

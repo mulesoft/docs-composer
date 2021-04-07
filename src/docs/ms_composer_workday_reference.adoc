@@ -1,9 +1,9 @@
 = Workday Reference
 
-The systems you connect to require credentials that you store in a connection.
-These systems provide triggers and actions specific to that system.
+Use Workday as a data source or data target.
+Some details of how to work with data in a flow are specific to the data source or data target, and to the specific trigger or actions you choose.
 
-== Connection Details
+== Connections
 
 include::_partials/connection-definition.adoc[]
 

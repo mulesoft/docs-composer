@@ -47,6 +47,10 @@
               "title": "Salesforce"
             },
             {
+              "file" : "ms_composer_slack_reference.adoc",
+              "title": "Slack"
+            },
+            {
               "file" : "ms_composer_tableau_reference.adoc",
               "title": "Tableau"
             },

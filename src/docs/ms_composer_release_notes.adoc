@@ -19,6 +19,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 The following issues were identified at the time of this release:
 
 If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
+//CAPO-47
 * If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
 //CAPP-1625
 

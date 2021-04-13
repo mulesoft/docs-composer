@@ -71,16 +71,6 @@ Delete Record::
 
 A record is deleted
 
-Get Record::
-
-Find and retrieve a record based on the required search criteria:
-
-* *Type of Record*: Enter one of the supported <<Actions>> record types.
-* *ID Type*
-    ** *Internal*
-    ** *External*
-* *Record Id*: Add a data pill for the field that contains the record ID you wish to search on.
-
 == Record Types
 
 The following record types are supported.
@@ -98,7 +88,7 @@ The following record types are supported.
 
 * Actions
 +
-The following record types are valid for all actions except *Get Record*:
+The following record types are valid for all actions:
 
 ** Contact
 ** Customer
@@ -109,16 +99,6 @@ The following record types are valid for all actions except *Get Record*:
 ** Payment Item
 ** Sales Order
 ** Support Case
-
-The following record types are valid for the *Get Record* action:
-
-** Contacts
-** Customer
-** Employee
-** Inventory Item
-** Payment Item
-** Refund
-** Sales Order
 
 == Custom Objects and Custom Fields
 

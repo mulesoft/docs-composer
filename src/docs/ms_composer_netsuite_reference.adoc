@@ -1,0 +1,109 @@
+= NetSuite Reference
+
+Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce, for example) or a data target (when
+a Salesforce opportunity closes, create a Netsuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
+
+== Connection Details
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
++
+You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWSU).
+
+Account::
+
+The account ID as listed in your NetSuite instance by accessing *Setup > Integration > SOAP Web Services Preferences*. The value is a string of letters and numbers, for example: `TESTME1234567`.
++
+Always enter the letters in upper case.
+
+Consumer Key::
+
+The consumer key generated in NetSuite by accessing *Setup > Integration > Manage Integrations*
+
+Consumer Secret::
+
+The consumer secret generated in NetSuite along with the consumer key
+
+Token ID::
+
+The token ID generated in NetSuite
+
+Token Secret::
+
+The token secret generated with the token ID in NetSuite
+
+SOAP Port::
+
+The value can't be edited at this time.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+On Updated Records::
+
+A record is created, or an existing record is updated.
+
+On New Records::
+
+A new record is created in NetSuite.
+
+
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Update Record::
+
+A record is changed.
+
+Create Record::
+
+A record is created.
+
+Upsert Record::
+
+A record is created or updated.
+
+Delete Record::
+
+A record is deleted
+
+== Record Types
+
+The following record types are supported.
+
+* Triggers
+
+** Contact
+** Customer
+** Employee
+** Inventory Item
+** Invoice
+** Sales Order
+** Support Case
+
+
+* Actions
++
+The following record types are valid for all actions:
+
+** Contact
+** Customer
+** Customer Refund
+** Employee
+** Inventory Item
+** Invoice
+** Payment Item
+** Sales Order
+** Support Case
+
+== Custom Objects and Custom Fields
+
+Custom objects and custom fields are not supported.
+
+== List Objects
+
+List objects are supported.

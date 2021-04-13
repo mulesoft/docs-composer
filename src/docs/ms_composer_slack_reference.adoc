@@ -54,5 +54,5 @@ Post a new message to a specific private or public channel that you select.
 Get user by email address::
 
 Find a Slack user by entering their email address into the *Email* field.
-
++
 If you want to fetch the user's ID dynamically, you can insert this action, which fetches the Slack user by an email address from another system. Use the *ID* data pill returned by this action to specify the user who should receive the message.

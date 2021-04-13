@@ -43,6 +43,10 @@
               "title": "Google Sheets"
             },
             {
+              "file" : "ms_composer_netsuite_reference.adoc",
+              "title": "NetSuite"
+            },
+            {
               "file" : "ms_composer_salesforce_reference.adoc",
               "title": "Salesforce"
             },

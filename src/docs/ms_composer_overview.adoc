@@ -62,7 +62,7 @@ Your changes will not appear until you activate the flow.
 Step 5: Activate the flow::
 
 After testing, activate the flow in your production org.
-Once activated, the flow automatically runs when the conditions in the trigger are met.
+After the flow is activated, it automatically runs when the conditions in the trigger are met.
 
 Step 6: Monitor the behavior of your flow::
 

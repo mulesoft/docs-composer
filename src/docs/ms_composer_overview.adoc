@@ -19,7 +19,7 @@ Imagine that a regional Slack user-group tracks its local members in a spreadshe
 image::images/overview1.png[Keeping data in sync between data silos, 600]
 
 This simple flow can be expanded to perform more complex actions, such as writing to different sheets based on
-the zip code of the new user, or propagating changes for existing users.
+the zip code of the new user or propagating changes for existing users.
 
 == Steps To Create a Flow
 
@@ -46,12 +46,9 @@ at the chosen interval.
 
 Step 3: Define the actions you want to take::
 
-Define what happens to the data fetched by the trigger, and when those actions should be taken.
-For example, perhaps you want to fetch all the records that have changed
-since a particular time--but copy over only the ones that have changed, or only the ones that are new.
-Also, perhaps you want to copy over only some information from each record.
+Define what happens to the data fetched by the trigger, and when those actions should be taken; for example, to fetch all records for a specific time period but only copy over the records that have changed or that are new. You might also want to copy over only some information from each record, rather than the entire record.
 +
-You can make the flow as elaborate or as simple as you need.
+Using the triggers and actions of Mulesoft Composer for Salesforce, you can make the flow as elaborate or as simple as necessary.
 +
 If you start the flow at a specified time interval instead of choosing a connection, then you'll fetch data as part of the first action.
 
@@ -59,21 +56,20 @@ Step 4: Test your flow on one record::
 
 As you define triggers and actions, you see sample data that helps you verify you are building the right steps.
 You can test every change before making the next one, making it easier to find and correct issues with your flow.
-Nothing else changes until you activate the flow.
+Your changes will not appear until you activate the flow.
 
 Step 5: Activate the flow::
 
 After testing, activate the flow in your production org.
-After being activated, the flow automatically runs when the conditions in the trigger are met.
+After the flow is activated, it automatically runs when the conditions in the trigger are met.
 
 Step 6: Monitor the behavior of your flow::
 
-You can see what your flow is doing by looking at the data provided in the flow detail page in Composer.
+You can see what your flow is doing by looking at the data provided on the flow detail page in Composer.
 
 Mapping data between systems and doing exactly the right thing at the right time sometimes feels complicated;
 however, using Composer helps you break down the logic into the steps required.
-You can experiment with a flow until you've got it working just right,
-and you can add complexity to it as you discover new use cases.
+You can experiment with a flow until you've got it working just right, and you can add complexity to it as you discover new use cases.
 
 == Next Steps
 

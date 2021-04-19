@@ -19,7 +19,7 @@ Imagine that a regional Slack user-group tracks its local members in a spreadshe
 image::images/overview1.png[Keeping data in sync between data silos, 600]
 
 This simple flow can be expanded to perform more complex actions, such as writing to different sheets based on
-the zip code of the new user, or propagating changes for existing users.
+the zip code of the new user or propagating changes for existing users.
 
 == Steps To Create a Flow
 
@@ -59,12 +59,12 @@ Step 4: Test your flow on one record::
 
 As you define triggers and actions, you see sample data that helps you verify you are building the right steps.
 You can test every change before making the next one, making it easier to find and correct issues with your flow.
-Nothing else changes until you activate the flow.
+Your changes will not appear until you activate the flow.
 
 Step 5: Activate the flow::
 
 After testing, activate the flow in your production org.
-After being activated, the flow automatically runs when the conditions in the trigger are met.
+Once activated, the flow automatically runs when the conditions in the trigger are met.
 
 Step 6: Monitor the behavior of your flow::
 

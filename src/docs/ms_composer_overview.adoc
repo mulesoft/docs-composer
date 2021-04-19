@@ -69,8 +69,7 @@ You can see what your flow is doing by looking at the data provided on the flow 
 
 Mapping data between systems and doing exactly the right thing at the right time sometimes feels complicated;
 however, using Composer helps you break down the logic into the steps required.
-You can experiment with a flow until you've got it working just right,
-and you can add complexity to it as you discover new use cases.
+You can experiment with a flow until you've got it working just right, and you can add complexity to it as you discover new use cases.
 
 == Next Steps
 

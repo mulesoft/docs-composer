@@ -46,8 +46,7 @@ at the chosen interval.
 
 Step 3: Define the actions you want to take::
 
-Define what happens to the data fetched by the trigger, and when those actions should be taken.
-for example, to fetch all records for a specific time period but only copy over the records that have changed or that are new. You might also want to copy over only some information from each record, rather than the entire record.
+Define what happens to the data fetched by the trigger, and when those actions should be taken; for example, to fetch all records for a specific time period but only copy over the records that have changed or that are new. You might also want to copy over only some information from each record, rather than the entire record.
 +
 Using the triggers and actions of Mulesoft Composer for Salesforce, you can make the flow as elaborate or as simple as necessary.
 +
@@ -66,7 +65,7 @@ After the flow is activated, it automatically runs when the conditions in the tr
 
 Step 6: Monitor the behavior of your flow::
 
-You can see what your flow is doing by looking at the data provided in the flow detail page in Composer.
+You can see what your flow is doing by looking at the data provided on the flow detail page in Composer.
 
 Mapping data between systems and doing exactly the right thing at the right time sometimes feels complicated;
 however, using Composer helps you break down the logic into the steps required.

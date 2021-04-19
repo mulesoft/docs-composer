@@ -47,11 +47,9 @@ at the chosen interval.
 Step 3: Define the actions you want to take::
 
 Define what happens to the data fetched by the trigger, and when those actions should be taken.
-For example, perhaps you want to fetch all the records that have changed
-since a particular time--but copy over only the ones that have changed, or only the ones that are new.
-Also, perhaps you want to copy over only some information from each record.
+For example, perhaps you want to fetch all records from a specific time period, but only copy over the records that have changed or that are new. Also, perhaps you want to copy over only some information from each record.
 +
-You can make the flow as elaborate or as simple as you need.
+Using the triggers and actions of Mulesoft Composer for Salesforce, you can make the flow as elaborate or as simple as you need.
 +
 If you start the flow at a specified time interval instead of choosing a connection, then you'll fetch data as part of the first action.
 

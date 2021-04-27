@@ -17,7 +17,7 @@ You can create a new flow or clone an existing flow.
 To create a new flow:
 
 . From the Composer Home page, click *Create New Flow*.
-. Click the pencil next to *Untitled Flow* and give your flow a name. You can skip this action now and update the name of the flow at any time. +
+. Click the pencil next to *Untitled Flow* and give your flow a name. You can skip this action and update the name of the flow at any time. +
 [NOTE]
 The first time that you save, test, or activate the flow, a prompt appears asking you to name the flow.
 

@@ -1,1 +1,12 @@
-= Create NetSuite Connection
+= Establish the NetSuite Connection
+
+== Prerequisites
+To use MuleSoft Composer, you must have the MuleSoft Composer User permission set to perform integration tasks.
+
+== Prerequisites for the Sales Cloud environment
+First, in order for an account in Salesforce to store the internal ID of the associated customer in NetSuite, you must ensure that a custom field, NetSuite ID, has been created for the Account object in the NTO org. Here’s an example of NetSuite ID for Account in the NTO org.
+
+== NetSuite connection parameters
+When you create a connection to NetSuite using MuleSoft Composer, you must specify values for the following parameters:
+
+include::_partials/netsuite-connection-details.adoc[]

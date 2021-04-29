@@ -152,4 +152,12 @@ After you test your completed flow, you are ready to activate it.
 
 If you used connections to a sandbox org while creating and testing the flow, don't forget to change the connections to production orgs and retest before activating.
 
+== Monitor and Troubleshoot the Flow
 
+Once your flow is active, it runs in the background. If there is an issue with your flow, you will be alerted via email. An alert email describes what flow has an issue and the resulting error that occurred.
+
+To troubleshoot the flow:
+
+. From the *Composer Flows* tab, click the name of the flow you want to troubleshoot. Composer displays the Flow Details page.
+. On the Flow Details page, review the table displaying past jobs and errors.
+. Locate the error description to troubleshoot your flow.

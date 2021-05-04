@@ -35,13 +35,14 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 
 ==== Salesforce
 
-* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
+Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
 //CAPP-2009
 
 ==== Tableau
 
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
 //CCONN-714, copied to Tableau reference
+
 == April 13, 2021
 
 === New Features

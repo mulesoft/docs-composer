@@ -46,11 +46,12 @@
               "file" : "ms_composer_netsuite_reference.adoc",
               "title": "NetSuite"
               "topics" : [
-              {
-                  "file" : "ms_composer_create_connection.adoc",
+                {  "file" : "ms_composer_create_connection.adoc",
                   "title": "Establish a NetSuite Connection"
                 }
+
               ]
+            },
             {
               "file" : "ms_composer_salesforce_reference.adoc",
               "title": "Salesforce"

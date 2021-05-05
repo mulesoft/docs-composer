@@ -132,6 +132,7 @@ To create and test an If/Else block:
 . Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
 . After you add all the branches, click *Save*.
 
+[[create-and-test-a-for-each-loop]]
 === Create and Test a For Each Loop
 
 To create and test a For Each Loop:

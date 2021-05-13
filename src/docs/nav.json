@@ -55,6 +55,10 @@
               "title": "Slack"
             },
             {
+              "file" : "ms_composer_stripe_reference.adoc",
+              "title": "Slack"
+            },
+            {
               "file" : "ms_composer_tableau_reference.adoc",
               "title": "Tableau"
             },

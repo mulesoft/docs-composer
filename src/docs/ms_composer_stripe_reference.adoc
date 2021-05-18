@@ -8,14 +8,14 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-API Key::
+API key::
 
-The value in this field maps to the `Authorization` field in the specialist connector and functions as a username in Stripe. Authentication to the API is performed via HTTP Basic Authentication. Your API key is your username and a password is not required. You can find your API Key in your https://stripe.com/docs/api/authentication[Stripe Dashboard]. The Stripe API:
+The value in this field maps to the `Authorization` field in the specialist connector and functions as a username in Stripe. Authentication to the API is performed via HTTP Basic Authentication. Your API key is your username and a password is not required. You can find your API key in your https://stripe.com/docs/api/authentication[Stripe Dashboard]. The Stripe API:
 
 * Uses API keys to authenticate requests.
 * Supplies test mode keys that have the prefix `sk_test_` and live mode secret keys that have the prefix `sk_live_`.
 * Allows users to use restricted API keys for granular permissions.
-* Ensures that all API requests must be made via HTTPS.
+* Ensures that all API requests are made via HTTPS.
 
 https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth authentication, but Stripe does not. For more information on OAuth authentication in Stripe, see https://www.similartech.com/compare/stripe-vs-stripe-connect.
 
@@ -43,7 +43,7 @@ Note that best practice dictates that the value in the Customer ID field should 
 For more information on the Create Charge action in Stripe, see https://stripe.com/docs/api/charges/create.
 
 Create Customer::
-Create a new customer. When creating a new customer, note that the `Phone` field is the customer's phone number and not the shipping phone number.
+Create a new customer. When creating a new customer, the `Phone` field is the customer's phone number and not the shipping phone number.
 
 Find Customer::
 Finds an existing customer by `Customer ID`. 

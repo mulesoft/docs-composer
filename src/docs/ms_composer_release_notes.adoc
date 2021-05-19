@@ -4,13 +4,13 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== May 15, 2020
+== May 19, 2020
 
 === New Features
 
 You can now connect to a new system: Stripe.
 
-See xref:ms_composer_reference.adoc[the product documentation] for details about each connector. 
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 === Known Issues
 
@@ -49,11 +49,11 @@ Composer doesn't set the value of some required Boolean fields on the User objec
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
 //CCONN-714, copied to Tableau reference
 
-== May 6, 2020 
+== May 6, 2020
 
 === New Features
 
-You can now expand all cards or collapse all cards on the canvas using the *Expand all* or the *Collapse all* button. 
+You can now expand all cards or collapse all cards on the canvas using the *Expand all* or the *Collapse all* button.
 
 === Known Issues
 

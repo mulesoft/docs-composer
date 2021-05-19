@@ -4,6 +4,51 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== May 15, 2020
+
+=== New Features
+
+You can now connect to a new system: Stripe.
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector. 
+
+=== Known Issues
+
+The following issues were identified at the time of this release:
+
+* If you select the *Create Message* action in Slack, only public channels are returned.
+//CCONN-765
+
+* If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
+//CPLAT-1288
+
+* If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.
+//CPLAT-1292
+
+* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
+//CAPO-47
+
+* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+//CAPP-1625
+
+* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+//CAPP-2051
+
+==== Google Sheets
+
+A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
+//CCONN-735
+
+==== Salesforce
+
+Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
+//CAPP-2009
+
+==== Tableau
+
+Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
+//CCONN-714, copied to Tableau reference
+
 == May 6, 2020 
 
 === New Features

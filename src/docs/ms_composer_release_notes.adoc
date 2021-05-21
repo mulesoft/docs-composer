@@ -4,7 +4,7 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== May 19, 2020
+== May 19, 2021
 
 === New Features
 
@@ -49,7 +49,7 @@ Composer doesn't set the value of some required Boolean fields on the User objec
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
 //CCONN-714, copied to Tableau reference
 
-== May 6, 2020
+== May 6, 2021
 
 === New Features
 
@@ -92,7 +92,7 @@ Composer doesn't set the value of some required Boolean fields on the User objec
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
 //CCONN-714, copied to Tableau reference
 
-== April 29, 2020
+== April 29, 2021
 
 === Known Issues
 

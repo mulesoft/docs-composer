@@ -4,6 +4,17 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== DATE
+
+=== New Features
+
+You can now connect to a new system: Microsoft Teams.
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+=== Known Issues
+TBD
+
 == May 19, 2021
 
 === New Features

@@ -1,6 +1,6 @@
 = NetSuite Reference
 
-Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce, for example) or a data target (when a Salesforce opportunity closes, create a Netsuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
+Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce, for example) or a data target (when a Salesforce opportunity closes, create a NetSuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
 
 == Connection Details
 
@@ -81,9 +81,9 @@ The following record types are valid for all actions:
 ** Sales Order
 ** Support Case
 
-== Custom Objects and Custom Fields
+== Custom Fields
 
-Custom objects and custom fields are not supported.
+You can add custom fields to existing objects in NetSuite. MuleSoft Composer provides the ability to populate custom field values for Actions and retrieve custom values for Triggers entered into the NetSuite Record.
 
 == List Objects
 

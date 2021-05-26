@@ -87,6 +87,9 @@ Checks for soft-deleted records. Soft-deleted records are stored in Salesforce f
 Records are typically stored for approximately 15 days before being hard-deleted and irretrievable.
 * You can't modify the soft-delete timestamp.
 
+[NOTE]
+For the purposes of comparing flows, if you initiate a date comparison when building a flow and if there is no value in the date fields, then the value in the date fields will be updated to `0001-01-01` by default.
+
 == Actions
 
 include::_partials/action-definition.adoc[]
@@ -109,7 +112,7 @@ image::images/query-builder.png[Query builder UI, 500]
 * You can add one or more conditions to specify which types of records should be returned in the *Filter records* section. For example, you could specify that the last name begin with "B."
 * You can control the sort order of the returned records in the "Sort records" section. Records can be sorted in ascending or descending order of a field that you specify.
 
-When you add a record that was returned from the *Get records* action, you must add a xref:ms-composer-flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow. 
+When you add a record that was returned from the *Get records* action, you must add a xref:ms-composer-flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow.
 
 Create or update record::
 

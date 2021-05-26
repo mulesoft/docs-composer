@@ -67,3 +67,5 @@ Add new data to an existing Tableau data source.
 +
 You can create a hyper file using Tableau Desktop (*Connect To a File -> _hyper-file name_*) or by publishing a `.hyper` file via the REST API or `tabcmd`. You can't access a live data source such as a CSV or Excel file, nor can you access data sources that are refreshed on a recurring basis per a schedule defined in Tableau.
 * The time it takes for changes made by the flow to show up in Tableau servers depends on the size of the hyper file.
+
+If the data source that you are populating has a `Time` field that does not also include the date, then Tableau stores the value in the `dateTime` field as `30/12/1899`.

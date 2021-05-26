@@ -88,7 +88,7 @@ Records are typically stored for approximately 15 days before being hard-deleted
 * You can't modify the soft-delete timestamp.
 
 [NOTE]
-For the purposes of comparing flows, if you initiate a date comparison when building a flow and if there is no value in the date fields, then the value in the date fields will be updated to `0001-01-01` by default.
+For the purposes of comparing flows, if you initiate a date comparison when building a flow and if there is no value in one of the date fields, then the missing value is updated to `0001-01-01` by default.
 
 == Actions
 

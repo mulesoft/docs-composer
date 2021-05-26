@@ -1,0 +1,34 @@
+= Test a Composer Flow
+
+
+Test Mode Objectives
+The goals of test mode are to be able to validate that your flow is working as expected while you build in order to provide confidence in the behavior before activating.
+Frequency: Users should be able to test as they build (e.g. step by step), test each path and test as many times as they want.
+They need validation that each step performs as expected and each field mapping behaves as it should.
+UI Communication: As this step is necessary to instill confidence before activating, communication is important – this is both about what was successful, what had an error, what processed or has yet to be processed, etc.
+Speed: Speed is also important as this is not about "setting and forgetting" but rather a crucial step while designing, before proceeding. Users should get (near) real time feedback. (We should NOT be documenting that this is instantaneous though, it could take a few minutes)
+The purpose of test mode is not to process each of your desired records so that you never need to activate your flow.
+
+What is Test Mode
+
+There will be a separate “test” mode. User clicks “Test Flow” and is moved to a view that indicates that they are in Test Mode. We recommend that users test as they build.
+
+Definitions for tests
+One job = One trigger execution (event)
+
+Requirements
+“Test” mode will be limited to 5 minutes.
+Test mode actually hits the underlying systems.
+The entire flow built to-date will be executed. You cannot test a subset of cards.
+It will end when it reaches the time limit, when an event is captured or when the user stops it manually.
+If you do not trigger your flow and if the flow does not finish executing in this time, it will timeout
+The output/errors from the one job will appear on a card level as well as an indicator of if the step executed successfully or not.
+One job will be captured per test
+You can open, but not modify cards
+A flow that has just a trigger IS considered valid. This means that a user can configure just the trigger step and switch to test mode.
+
+Recommendations
+Test as you build
+Build your flow first with sandbox credentials or credentials to a trial org. Run all your tests with those accounts first. When you are ready to activate the flow, you can swap the connection on each card to a production org. It will maintain the field mappings.
+Test with sample/dummy records
+If the test is timing out and you have “get records” steps — consider limiting how many records they are processing by changing the test data or the query criteria

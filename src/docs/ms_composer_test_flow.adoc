@@ -1,7 +1,6 @@
 = Test a Composer Flow
 
-
-Test Mode Objectives
+== Test Mode Objectives
 The goals of test mode are to be able to validate that your flow is working as expected while you build in order to provide confidence in the behavior before activating.
 Frequency: Users should be able to test as they build (e.g. step by step), test each path and test as many times as they want.
 They need validation that each step performs as expected and each field mapping behaves as it should.
@@ -9,14 +8,14 @@ UI Communication: As this step is necessary to instill confidence before activat
 Speed: Speed is also important as this is not about "setting and forgetting" but rather a crucial step while designing, before proceeding. Users should get (near) real time feedback. (We should NOT be documenting that this is instantaneous though, it could take a few minutes)
 The purpose of test mode is not to process each of your desired records so that you never need to activate your flow.
 
-What is Test Mode
+== What is Test Mode
 
 There will be a separate “test” mode. User clicks “Test Flow” and is moved to a view that indicates that they are in Test Mode. We recommend that users test as they build.
 
 Definitions for tests
 One job = One trigger execution (event)
 
-Requirements
+== Requirements
 “Test” mode will be limited to 5 minutes.
 Test mode actually hits the underlying systems.
 The entire flow built to-date will be executed. You cannot test a subset of cards.
@@ -27,7 +26,7 @@ One job will be captured per test
 You can open, but not modify cards
 A flow that has just a trigger IS considered valid. This means that a user can configure just the trigger step and switch to test mode.
 
-Recommendations
+== Recommendations
 Test as you build
 Build your flow first with sandbox credentials or credentials to a trial org. Run all your tests with those accounts first. When you are ready to activate the flow, you can swap the connection on each card to a production org. It will maintain the field mappings.
 Test with sample/dummy records

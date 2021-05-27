@@ -87,9 +87,6 @@ Checks for soft-deleted records. Soft-deleted records are stored in Salesforce f
 Records are typically stored for approximately 15 days before being hard-deleted and irretrievable.
 * You can't modify the soft-delete timestamp.
 
-[NOTE]
-For the purposes of comparing flows, if you initiate a date comparison when building a flow and if there is no value in one of the date fields, then the missing value is updated to `0001-01-01` by default.
-
 == Actions
 
 include::_partials/action-definition.adoc[]

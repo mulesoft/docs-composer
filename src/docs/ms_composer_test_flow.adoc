@@ -1,7 +1,9 @@
 = Test a Composer Flow
 
-== Test Mode Objectives
-The goals of test mode are to be able to validate that your flow is working as expected while you build in order to provide confidence in the behavior before activating.
+== Test Mode
+
+Test Mode allows you to periodically validate your flow as you build to ensure that your flow is working as expected prior to activation. 
+
 Frequency: Users should be able to test as they build (e.g. step by step), test each path and test as many times as they want.
 They need validation that each step performs as expected and each field mapping behaves as it should.
 UI Communication: As this step is necessary to instill confidence before activating, communication is important – this is both about what was successful, what had an error, what processed or has yet to be processed, etc.

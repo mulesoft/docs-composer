@@ -8,6 +8,8 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
+Older connections may expire if not regularly used. The amount of time a connection a connection remains valid is set by Asana.
+
 Username::
 
 The OAuth username that you use to log in to Asana.

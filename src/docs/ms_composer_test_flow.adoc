@@ -2,7 +2,7 @@
 
 == Test Mode
 
-Test Mode allows you to periodically validate your flow as you build to ensure that your flow is working as expected prior to activation. 
+Using Test Mode, you can validate your flow as you build to ensure that your flow is working as expected prior to activation. 
 
 Frequency: Users should be able to test as they build (e.g. step by step), test each path and test as many times as they want.
 They need validation that each step performs as expected and each field mapping behaves as it should.

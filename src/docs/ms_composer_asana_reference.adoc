@@ -1,9 +1,6 @@
-= <ConnectorName> Reference
+= Asana Reference
 
-<Intro information>
-
-[NOTE]
-This is a test note.
+Asana is a SaaS-based project management tool which enables teams of all sizes to manage their daily tasks, schedules, and deliverables.
 
 == Connections
 
@@ -13,34 +10,31 @@ include::_partials/connection-name.adoc[]
 
 Username::
 
-The username that you use to log in to <Connector>.
+The OAuth username that you use to log in to Asana.
 
 Password::
 
-The password that you use to log in to <Connector>.
-
-<Field>::
-
-<Details>.
+The OAuth password that you use to log into Asana.
 
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
 
-<Field>::
-
-<Details>.
+New or updated task::
+Checks for new or updated tasks.
 
 == Actions
 
 include::_partials/action-definition.adoc[]
 
-<Field>::
+Create new task::
 
-<Details>.
+Creates a new task record.
 
-== Objects
+Update task::
 
-<Field>::
+Returns the completed and updated task record.
 
-<Details>.
+Add comment to card::
+
+Comment on a task to ask questions, provide extra information, or to offer insight. The comment appears on the card.

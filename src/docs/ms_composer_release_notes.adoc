@@ -19,7 +19,7 @@ The following issues were identified at the time of this release:
 * If you select the *Create Message* action in Slack, only public channels are returned.
 //CCONN-765
 
-* If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
+* If you use a NetSuite data pill in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
 //CPLAT-1288
 
 * If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.

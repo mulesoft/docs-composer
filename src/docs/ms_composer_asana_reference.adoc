@@ -8,6 +8,8 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
++
+
 Older connections may expire if not regularly used. The amount of time a connection a connection remains valid is set by Asana.
 
 Username::
@@ -23,7 +25,8 @@ The OAuth password that you use to log into Asana.
 include::_partials/trigger-definition.adoc[]
 
 New or updated task::
-Checks for new or updated tasks.
+
+Fires when a task is created or an existing task is updated.
 
 == Actions
 
@@ -32,6 +35,8 @@ include::_partials/action-definition.adoc[]
 Create new task::
 
 Creates a new task record.
++
+When creating a new task record, it is recommended that you store the values for both the User ID and the Task ID in the source system for use when updating task records.
 
 Update task::
 

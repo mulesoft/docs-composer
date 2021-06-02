@@ -10,7 +10,7 @@ include::_partials/connection-name.adoc[]
 
 +
 
-Older connections may expire if not regularly used. The amount of time a connection remains valid is set by Asana.
+Older connections may expire if not regularly used. Asana sets the amount of time a connection remains valid.
 
 Username::
 

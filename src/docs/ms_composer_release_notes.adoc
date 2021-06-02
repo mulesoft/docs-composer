@@ -8,7 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 === New Features
 
-You can now connect to a new system: Asana.
+You can now connect to a new system: Twilio.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
@@ -18,12 +18,6 @@ The following issues were identified at the time of this release:
 
 * If you select the *Create Message* action in Slack, only public channels are returned.
 //CCONN-765
-
-* If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
-//CPLAT-1288
-
-* If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.
-//CPLAT-1292
 
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47

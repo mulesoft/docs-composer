@@ -39,6 +39,10 @@
           "title": "Composer Reference",
           "topics" : [
             {
+              "file" : "ms_composer_asana_reference.adoc",
+              "title": "Asana"
+            },
+            {
               "file" : "ms_composer_googlesheets_reference.adoc",
               "title": "Google Sheets"
             },

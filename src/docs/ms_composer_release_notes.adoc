@@ -22,7 +22,7 @@ The following issues were identified at the time of this release:
 * If you use a NetSuite data pill in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
 //CPLAT-1288
 
-* If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.
+* If you have not completed any field mappings in the NetSuite *Update Record* action, testing will not start.
 //CPLAT-1292
 
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.

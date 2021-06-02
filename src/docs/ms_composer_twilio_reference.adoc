@@ -1,9 +1,6 @@
 = Twilio Reference
 
-<Intro information>
-
-[NOTE]
-This is a test note.
+Twilio is a SaaS cloud communications platform that allows users to make and receive phone calls, send and receive text messages, and perform other communication functions using web service APIs.
 
 == Connections
 
@@ -11,17 +8,13 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Username::
+Account SID::
 
-The username that you use to log in to <Connector>.
+The Account SID that you use to log in to Twilio.
 
-Password::
+Auth Token::
 
-The password that you use to log in to <Connector>.
-
-<Field>::
-
-<Details>.
+The Auth Token that you use to log in to Twilio.
 
 == Triggers
 
@@ -35,9 +28,25 @@ include::_partials/trigger-definition.adoc[]
 
 include::_partials/action-definition.adoc[]
 
-<Field>::
+Send Message::
 
-<Details>.
+Send a message to a recipient. Values are required in the following fields:
+
+* To
++
+The value in this field must be the phone number in E.164 format, SIP address, or channel user address (such as Whatsapp or Facebook messenger channel) of the recipient and the message initiator.
+
+* From
++
+The value in this field must be the phone number in E.164 format, SIP address, or channel user address (such as Whatsapp or Facebook messenger channel) of the recipient and the message initiator.
+
+* Message Text
++
+The value in this field cannot exceed 1600 characters.
+
+* Media URL
++
+If a value in this field is required to send a media message. You can only send images in SMS messages in the United States and Canada. 
 
 == Objects
 

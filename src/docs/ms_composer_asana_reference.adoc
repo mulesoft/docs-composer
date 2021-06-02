@@ -1,6 +1,6 @@
 = Asana Reference
 
-Asana is a SaaS-based project management tool which enables teams of all sizes to manage their daily tasks, schedules, and deliverables.
+Asana is a SaaS-based project management tool that enables teams of all sizes to manage their daily tasks, schedules, and deliverables.
 
 == Connections
 
@@ -10,7 +10,7 @@ include::_partials/connection-name.adoc[]
 
 +
 
-Older connections may expire if not regularly used. The amount of time a connection a connection remains valid is set by Asana.
+Older connections may expire if not regularly used. The amount of time a connection remains valid is set by Asana.
 
 Username::
 

@@ -36,7 +36,7 @@ Create new task::
 
 Creates a new task record.
 +
-When creating a new task record, it is recommended that you store the values for both the User ID and the Task ID in the source system for use when updating task records.
+When creating a new task record, store the values for both the User ID and the Task ID in the source system for use when updating task records.
 
 Update task::
 

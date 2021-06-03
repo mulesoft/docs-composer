@@ -132,7 +132,7 @@ To create and test an If/Else block:
 . Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
 . After you add all the branches, click *Save*.
 
-For the purposes of comparing flows, if you initiate a date comparison when building a flow and if there is no value in one of the date fields, then the missing value is updated to `0001-01-01` by default.
+For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
 
 [[create-and-test-a-for-each-loop]]
 === Create and Test a For Each Loop

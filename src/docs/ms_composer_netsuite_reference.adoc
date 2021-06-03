@@ -83,7 +83,7 @@ The following record types are valid for all actions:
 
 == Custom Fields
 
-You can add custom fields to existing objects in NetSuite. MuleSoft Composer provides the ability to populate custom field values for Actions and retrieve custom values for Triggers entered into the NetSuite record.
+MuleSoft Composer provides the ability to populate custom field values for Actions and retrieve custom values for Triggers entered into the NetSuite record.
 
 == List Objects
 

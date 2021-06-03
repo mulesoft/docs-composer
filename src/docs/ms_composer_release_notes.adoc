@@ -11,6 +11,7 @@ New versions are automatically available once they are released; you don't need 
 You can now connect to two more systems: Asana and Twilio.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
 === Known Issues
 
 The following issues were identified at the time of this release:

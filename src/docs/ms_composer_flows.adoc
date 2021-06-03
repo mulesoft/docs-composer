@@ -60,8 +60,6 @@ image:images/trigger-definition.png[Trigger step, 600]
 You can save and test your trigger, or delete and replace it.
 A trigger step is required to test or activate your flow.
 
-For the purposes of comparing flows, if you initiate a date comparison when building a flow and if there is no value in one of the date fields, then the missing value is updated to `0001-01-01` by default.
-
 == Change a Connection
 
 You can change connections in a trigger or action. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
@@ -133,6 +131,8 @@ To create and test an If/Else block:
 . Click *Add If* and repeat the previous steps for every If/Else branch you create.
 . Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
 . After you add all the branches, click *Save*.
+
+For the purposes of comparing flows, if you initiate a date comparison when building a flow and if there is no value in one of the date fields, then the missing value is updated to `0001-01-01` by default.
 
 [[create-and-test-a-for-each-loop]]
 === Create and Test a For Each Loop

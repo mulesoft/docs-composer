@@ -109,7 +109,7 @@ image::images/query-builder.png[Query builder UI, 500]
 * You can add one or more conditions to specify which types of records should be returned in the *Filter records* section. For example, you could specify that the last name begin with "B."
 * You can control the sort order of the returned records in the "Sort records" section. Records can be sorted in ascending or descending order of a field that you specify.
 
-When you add a record that was returned from the *Get records* action, you must add a xref:ms-composer-flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow. 
+When you add a record that was returned from the *Get records* action, you must add a xref:ms-composer-flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow.
 
 Create or update record::
 

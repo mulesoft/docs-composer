@@ -2,7 +2,7 @@
 
 Microsoft Teams is a SaaS enterprise communication system used to send messages within organizations and to customers outside of the direct organization.
 
-To send a Microsoft Teams message using Mulesoft Composer, you must have an active business, enterprise, or education Microsoft 365 license.
+To send a Microsoft Teams message using MuleSoft Composer, you must have an active business, enterprise, or education Microsoft 365 license.
 
 == Connections
 
@@ -12,11 +12,11 @@ include::_partials/connection-name.adoc[]
 
 Username::
 
-The username that you use to log in to Microsoft.
+The username that you use to log in to Microsoft 365.
 
 Password::
 
-The password that you use to log in to Microsoft.
+The password that you use to log in to Microsoft 365.
 
 == Actions
 

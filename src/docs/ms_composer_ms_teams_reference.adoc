@@ -1,6 +1,6 @@
 = Microsoft Teams Reference
 
-Microsoft Teams is a SaaS enterprise communication system used to send messages within organizations and to customers outside of the direct organization.
+Microsoft Teams is a SaaS enterprise communication system used to send messages within an organization and to customers outside of the direct organization.
 
 To send a Microsoft Teams message using MuleSoft Composer, you must have an active business, enterprise, or education Microsoft 365 license.
 

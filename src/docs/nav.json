@@ -43,8 +43,16 @@
           "title": "Composer Reference",
           "topics" : [
             {
+              "file" : "ms_composer_asana_reference.adoc",
+              "title": "Asana"
+            },
+            {
               "file" : "ms_composer_googlesheets_reference.adoc",
               "title": "Google Sheets"
+            },
+            {
+              "file" : "ms_composer_ms_teams_reference.adoc",
+              "title": "Microsoft Teams"
             },
             {
               "file" : "ms_composer_netsuite_reference.adoc",
@@ -59,8 +67,16 @@
               "title": "Slack"
             },
             {
+              "file" : "ms_composer_stripe_reference.adoc",
+              "title": "Stripe"
+            },
+            {
               "file" : "ms_composer_tableau_reference.adoc",
               "title": "Tableau"
+            },
+            {
+              "file" : "ms_composer_twilio_reference.adoc",
+              "title": "Twilio"
             },
             {
               "file" : "ms_composer_workday_reference.adoc",

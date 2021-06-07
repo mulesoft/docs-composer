@@ -1,10 +1,10 @@
-= Build and Test a Composer Flow
+= Build and a Composer Flow
 
-After you have collected the information as described in xref:ms_composer_checklist.adoc[the preparation checklist], build and test your flow:
+After you have collected the information as described in xref:ms_composer_checklist.adoc[the preparation checklist], build your flow:
 
 . Create and name a flow.
-. In the flow, create a trigger or flow control, and test.
-. In the flow, create each action in order. Test each action before adding the next.
+. In the flow, create a trigger or flow control, and xref:ms_composer_test_flow.adoc[test].
+. In the flow, create each action in order. xref:ms_composer_test_flow.adoc[Test] each action before adding the next.
 
 After these steps are complete, you're ready to activate the flow, and then monitor it.
 

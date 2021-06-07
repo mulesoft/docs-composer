@@ -58,7 +58,8 @@ image:images/trigger-definition.png[Trigger step, 600]
 * Choose an event that starts the flow. Supply additional information as requested.
 
 You can save and test your trigger, or delete and replace it.
-A trigger step is required to test or activate your flow.
+
+NOTE: A trigger step is required to test or activate your flow.
 
 == Change a Connection
 

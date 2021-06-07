@@ -19,7 +19,7 @@ When testing your flows, it is recommended that you:
 
 When testing your flow, please note the following:
 
-* To test a flow, you are only required to configure the trigger. A flow with a configured trigger is considered valid.
+* To test a flow, a trigger step is required. A flow with a configured trigger is considered valid.
 * Testing is limited to five minutes. Testing will end when the test has reached the time limit, an event is captured, or when the user ends the test manually. If you do not trigger your flow and if the flow does not finish executing during the stated time limit, the test will timeout.
 * Testing actually deploys the underlying systems for verification.
 * The entire flow built to date will be executed. You cannot test a subset of cards in your Composer Flow.

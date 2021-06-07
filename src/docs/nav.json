@@ -24,7 +24,11 @@
         },
         {
           "file" : "ms_composer_flows.adoc",
-          "title": "Build and Test a Flow"
+          "title": "Build a Flow"
+        },
+        {
+          "file" : "ms_composer_test_flow.adoc",
+          "title": "Test a Flow"
         },
         {
           "file" : "ms_composer_activation.adoc",

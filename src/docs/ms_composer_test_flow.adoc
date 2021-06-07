@@ -2,7 +2,7 @@
 
 == Test a Flow
 
-Using Test mode, you can validate each step of your flow as you build to ensure that each step and each field mapping in your flow is working as expected prior to activation. You can test your flow as often as you like. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you go.
+Using Test mode, you can validate each step of your flow as you build to ensure that each step and each field mapping in your flow is working as expected prior to activation. You can test your flow as often as you like. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you build.
 
 IMPORTANT: Your flow must be activated to process your records.
 
@@ -10,36 +10,25 @@ IMPORTANT: Your flow must be activated to process your records.
 
 When testing your flows, it is recommended that you:
 
-* Test as you build. Each time a test is initiated, the entire flow will be tested. This allows you to find errors quickly.
-* Build your flow in a sandbox environment or in a trial organization. This allows you to run all your tests with those accounts first. When you decide to activate your flow, you can click *Change Connection* in the Options menu on each card to change your environment to a production organization while maintaining the tested field mappings. 
+* Test as you build. Each time a test is initiated, the entire flow is tested. This allows you to find and fix errors at each stage.
+* Build your flow in a sandbox environment or organization. This allows you to test your flow using inactive accounts. When you want to activate your flow, you can click *Change Connection* in the options menu on each card to change your environment to a production organization while maintaining the tested field mappings.
 * Test your flows with dummy records.
-* If the
+* Consider limiting the number of records that are processed if your test times out during the *Get Records* phase. You can alter the test data or the query criteria to avoid issues.
 
+=== Notes
 
-If the test is timing out and you have “get records” steps — consider limiting how many records they are processing by changing the test data or the query criteria
+When testing your flow, please note the following:
+
+* To test a flow, you are only required to configure the trigger. A flow with a configured trigger is considered valid. 
+* Testing is limited to five minutes. Testing will end when the test has reached the time limit, an event is captured, or when the user ends the test manually. If you do not trigger your flow and if the flow does not finish executing during the stated time limit, the test will timeout.
+* Testing actually deploys the underlying systems for verification.
+* The entire flow built to date will be executed. You cannot test a subset of cards in your Composer Flow.
+* One job is captured per test.
+* You can open but not modify cards.
 
 To test a flow:
 
 . From the *Composer Flows* tab, click the name of the flow you want to test.
 . Click *Edit* from the Flow Details menu bar.
-. Click *Test*  from the Flow Details menu bar to test your action or trigger. Composer gives you five minutes to test. For example, if you were testing an action to copy every new contact in a Salesforce org, you'd click *Test*, then log into the Salesforce org and create a new contact.
-. Composer notifies you when the test is complete.
-
-
-== What is Test Mode
-
-There will be a separate “test” mode. User clicks “Test Flow” and is moved to a view that indicates that they are in Test Mode. We recommend that users test as they build.
-
-Definitions for tests
-One job = One trigger execution (event)
-
-== Requirements
-“Test” mode will be limited to 5 minutes.
-Test mode actually hits the underlying systems.
-The entire flow built to-date will be executed. You cannot test a subset of cards.
-It will end when it reaches the time limit, when an event is captured or when the user stops it manually.
-If you do not trigger your flow and if the flow does not finish executing in this time, it will timeout
-The output/errors from the one job will appear on a card level as well as an indicator of if the step executed successfully or not.
-One job will be captured per test
-You can open, but not modify cards
-A flow that has just a trigger IS considered valid. This means that a user can configure just the trigger step and switch to test mode.
+. Click *Test*  from the Flow Details menu bar to test your action or trigger. +
+Composer notifies you when the test is complete. The output, errors, and execution results from the job appear on the card.

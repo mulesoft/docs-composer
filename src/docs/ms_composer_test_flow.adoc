@@ -1,14 +1,30 @@
 = Test a Composer Flow
 
-== Test Mode
+== Test a Flow
 
-Using Test Mode, you can validate your flow as you build to ensure that your flow is working as expected prior to activation. 
+Using Test mode, you can validate each step of your flow as you build to ensure that each step and each field mapping in your flow is working as expected prior to activation. You can test your flow as often as you like. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you go.
 
-Frequency: Users should be able to test as they build (e.g. step by step), test each path and test as many times as they want.
-They need validation that each step performs as expected and each field mapping behaves as it should.
-UI Communication: As this step is necessary to instill confidence before activating, communication is important – this is both about what was successful, what had an error, what processed or has yet to be processed, etc.
-Speed: Speed is also important as this is not about "setting and forgetting" but rather a crucial step while designing, before proceeding. Users should get (near) real time feedback. (We should NOT be documenting that this is instantaneous though, it could take a few minutes)
-The purpose of test mode is not to process each of your desired records so that you never need to activate your flow.
+IMPORTANT: Your flow must be activated to process your records.
+
+=== Recommendations
+
+When testing your flows, it is recommended that you:
+
+* Test as you build. Each time a test is initiated, the entire flow will be tested. This allows you to find errors quickly.
+* Build your flow in a sandbox environment or in a trial organization. This allows you to run all your tests with those accounts first. When you decide to activate your flow, you can click *Change Connection* in the Options menu on each card to change your environment to a production organization while maintaining the tested field mappings. 
+* Test your flows with dummy records.
+* If the
+
+
+If the test is timing out and you have “get records” steps — consider limiting how many records they are processing by changing the test data or the query criteria
+
+To test a flow:
+
+. From the *Composer Flows* tab, click the name of the flow you want to test.
+. Click *Edit* from the Flow Details menu bar.
+. Click *Test*  from the Flow Details menu bar to test your action or trigger. Composer gives you five minutes to test. For example, if you were testing an action to copy every new contact in a Salesforce org, you'd click *Test*, then log into the Salesforce org and create a new contact.
+. Composer notifies you when the test is complete.
+
 
 == What is Test Mode
 
@@ -27,9 +43,3 @@ The output/errors from the one job will appear on a card level as well as an ind
 One job will be captured per test
 You can open, but not modify cards
 A flow that has just a trigger IS considered valid. This means that a user can configure just the trigger step and switch to test mode.
-
-== Recommendations
-Test as you build
-Build your flow first with sandbox credentials or credentials to a trial org. Run all your tests with those accounts first. When you are ready to activate the flow, you can swap the connection on each card to a production org. It will maintain the field mappings.
-Test with sample/dummy records
-If the test is timing out and you have “get records” steps — consider limiting how many records they are processing by changing the test data or the query criteria

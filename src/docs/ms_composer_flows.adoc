@@ -3,10 +3,12 @@
 After you have collected the information as described in xref:ms_composer_checklist.adoc[the preparation checklist], build your flow:
 
 . Create and name a flow.
-. In the flow, create a trigger or flow control, and xref:ms_composer_test_flow.adoc[test].
-. In the flow, create each action in order. xref:ms_composer_test_flow.adoc[Test] each action before adding the next.
+. In the flow, create a trigger or flow control.
+. In the flow, create each action in order.
 
-After these steps are complete, you're ready to activate the flow, and then monitor it.
+xref:ms_composer_test_flow.adoc[Test] after every trigger, flow control, and action you add to your flow. Testing often makes diagnosing problems easier.
+
+After you've tested the complete flow, you're ready to activate the flow, and then monitor it.
 
 == Create a New Flow
 
@@ -18,7 +20,7 @@ To create a new flow:
 
 . From the Composer Home page, click *Create New Flow*.
 . Click the pencil next to *Untitled Flow* and give your flow a name. You can skip this action and update the name of the flow at any time. The first time that you save, test, or activate the flow, a prompt shows asking you to name the flow.
-. Click *Save*.
+. Click *Save* from the Flow Details menu bar..
 
 Now you are ready to create a trigger or set a timed interval that controls when the flow runs.
 
@@ -57,7 +59,7 @@ image:images/trigger-definition.png[Trigger step, 600]
 * Optionally, replace *Untitled Step* with a trigger name of your choice.
 * Choose an event that starts the flow. Supply additional information as requested.
 
-You can save and test your trigger, or delete and replace it.
+You can save your trigger, or delete and replace it.
 
 NOTE: A trigger step is required to test or activate your flow.
 
@@ -74,9 +76,7 @@ To change a connection:
 +
 image::images/change-connection.png[Change the connection control, 400]
 
-. Choose a new connection and save your changes.
-
-After creating or changing a connection, click *Test* in the Flow Details menu bar to test that your connection works.
+. Choose a new connection and click *Save* from the Flow Details menu bar.
 
 == Schedule a Flow
 
@@ -90,13 +90,13 @@ image:images/connection-example.png[What Should Start This Flow dialog, 500]
 . Choose one of the time intervals, from 15 minutes to 30 days.
 +
 image::images/connection-scheduler.png[New trigger with time interval, 500]
-. Click *Save*.
+. Click *Save* from the Flow Details menu bar.
 
 After you have chosen the trigger or flow control, your next step is to add one or more actions to the flow. You can also add an If/Else block or For Each loop before an action if you need to apply logic to the action.
 
-== Create and Test an Action
+== Create an Action
 
-To create and test an action:
+To create an action:
 
 . After the trigger or flow control in your flow, click the large plus sign to open the *Add Action* dialog.
 . Click or create a connection for the action.
@@ -104,25 +104,19 @@ To create and test an action:
 For example, if your trigger is "new records created in Salesforce," and you want your action to be "copy new record to a Google Sheet," then you would choose or create a Google Sheet connection.
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
 . Click *Save* from the Flow Details menu bar.
-. Click *Test* to test your action. Composer gives you five minutes to test. For example, if you were testing an action to copy every new contact in a Salesforce org, you'd click *Test*, then log into the Salesforce org and create a new contact.
-. Composer notifies you when the test is complete.
 
-Test after every trigger, flow control, and action you add to your flow. Testing often makes diagnosing problems easier.
-
-After you've tested the complete flow, you're ready to activate.
-
-== Create and Test a Flow Control
+== Create a Flow Control
 
 If you need to perform some logic before an action, select a flow control first:
 
 . After the trigger or flow control in your flow, click the large plus sign to open the *Add Action* dialog.
 . Click either *If/Else Block* or *For Each*. An If/Else block is good when you need to do different actions depending on one or more conditions. A For Each loop is good for processing a set of records.
 . Complete the flow control, which usually includes adding an action.
-. Save and test.
+. Click *Save* from the Flow Details menu bar.
 
-=== Create and Test an If/Else Block
+=== Create an If/Else Block
 
-To create and test an If/Else block:
+To create an If/Else block:
 
 . Click the plus sign after the trigger or the last action in your flow.
 . Click *Add Action*.
@@ -131,26 +125,20 @@ To create and test an If/Else block:
 . Click the plus sign to add an action. Every condition must have an action, also called a step.
 . Click *Add If* and repeat the previous steps for every If/Else branch you create.
 . Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
-. After you add all the branches, click *Save*.
+. After you add all the branches, click *Save* from the Flow Details menu bar.
 
 For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
 
 [[create-and-test-a-for-each-loop]]
-=== Create and Test a For Each Loop
+=== Create a For Each Loop
 
-To create and test a For Each Loop:
+To create a For Each Loop:
 
 . Click the plus sign after the trigger or the last action in your flow.
 . Click *Add Action*.
 . Click *For Each*.
 . Choose a data pill from the *Input list*. You must have a trigger or action that returns a set of records or there won't be anything to choose here.
 . Click the plus sign to add an action.
-. After you complete the action, click *Save* and then test.
+. After you complete the action, click *Save* from the Flow Details menu bar.
 
 You can add logic and actions in different patterns, depending on what your flow needs to do.
-
-== Preparing for Activation
-
-After you test your completed flow, you are ready to activate it.
-
-If you used connections to a sandbox org while creating and testing the flow, don't forget to change the connections to production orgs and retest before activating.

@@ -32,3 +32,9 @@ To test a flow:
 . Click *Edit* from the Flow Details menu bar.
 . Click *Test*  from the Flow Details menu bar to test your action or trigger. +
 Composer notifies you when the test is complete. The output, errors, and execution results from the job appear on the card.
+
+== Preparing for Activation
+
+After you test your completed flow, you are ready to xref:ms_composer_activation.adoc[activate] it.
+
+If you used connections to a sandbox org while creating and testing the flow, don't forget to change the connections to production orgs and retest before activating.

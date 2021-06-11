@@ -2,20 +2,29 @@
 
 == Test a Flow
 
-Using Test mode, you can validate each step of your flow as you build to ensure that each step and each field mapping in your flow is working as expected prior to activation. You can test your flow as often as you like. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you build.
+Using Test mode as you build your flow, you can ensure that each step and each field mapping in your flow is working as expected before activation. You can test your flow as often as you like. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you build.
 
-IMPORTANT: Test mode is designed to process and test a single record. Your flow must be activated to process all of your records.
+IMPORTANT: Test mode processes and test a single record. You must activate your flow to process all of your records.
 
 === Notes
 
 When testing your flow, please note the following:
 
-* To test a flow, a trigger step is required. A flow with a configured trigger is considered valid.
-* Testing is limited to five minutes. Testing will end when the test has reached the time limit, an event is captured, or when the user ends the test manually. If you do not trigger your flow and if the flow does not finish executing during the stated time limit, the test will timeout.
-* Testing actually deploys the underlying systems for verification.
-* The entire flow built to date will be executed. You cannot test a subset of cards in your Composer Flow.
+* A trigger step is required. A flow with a configured trigger step is considered valid.
+* Testing is limited to five minutes. Testing will end when the test has reached the time limit, an event has occurred, or when the user manually terminates the test.
+* Testing deploys the underlying systems for verification.
+* The entire flow is executed and tested. You cannot test a subset of cards in your Composer flow.
 * One job is captured per test.
 * You can open but not modify cards.
+
+=== Recommendations
+
+When testing your flows:
+
+* Test as you build. Each time a test is initiated, the entire flow is tested so that you can find and fix errors efficiently.
+* Build your flow in a sandbox environment or organization. This allows you to test your flow using inactive accounts. When you want to activate your flow, you can click the change icon in the trigger or action that connects to a sandbox and then click xref:ms-composer-flows.adoc#change-a-connection[*Change Connection*] to change your environment to a production organization while maintaining the tested field mappings.
+* Test your flows with sample or dummy records.
+* Consider limiting the number of records processed if your test times out during the *Get Records* phase. You can alter the test data or the query criteria to avoid issues.
 
 To test a flow:
 
@@ -24,17 +33,8 @@ To test a flow:
 . Click *Test*  from the Flow Details menu bar to test your action or trigger. +
 Composer notifies you when the test is complete. The output, errors, and execution results from the job appear on the card.
 
-=== Recommendations
-
-When testing your flows, it is recommended that you:
-
-* Test as you build. Each time a test is initiated, the entire flow is tested. This allows you to find and fix errors at each stage.
-* Build your flow in a sandbox environment or organization. This allows you to test your flow using inactive accounts. When you want to activate your flow, you can click the change icon in the trigger or action that connects to a sandbox and then click xref:ms-composer-flows.adoc#change-a-connection[*Change Connection*] to change your environment to a production organization while maintaining the tested field mappings.
-* Test your flows with sample or dummy records.
-* Consider limiting the number of records that are processed if your test times out during the *Get Records* phase. You can alter the test data or the query criteria to avoid issues.
-
 == Preparing for Activation
 
 After you test your completed flow, you are ready to xref:ms_composer_activation.adoc[activate] it.
 
-If you used connections to a sandbox org while creating and testing the flow, don't forget to change the connections to production orgs and retest before activating.
+If you used connections to a sandbox environment while creating and testing the flow, don't forget to change the connections to a production environment and retest before activating.

@@ -63,6 +63,7 @@ You can save your trigger, or delete and replace it.
 
 NOTE: A trigger step is required to test or activate your flow.
 
+[[change-a-connection]]
 == Change a Connection
 
 You can change connections in a trigger or action. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.

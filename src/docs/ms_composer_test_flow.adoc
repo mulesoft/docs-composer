@@ -10,7 +10,7 @@ IMPORTANT: Test mode processes and tests a single record. You must activate your
 
 When testing your flow, note the following:
 
-* A trigger step is required. A flow with a configured trigger step is considered valid.
+* A trigger step is required. 
 * Testing is limited to five minutes. Testing will end when the test has reached the time limit, an event has occurred, or when the user manually terminates the test.
 * Testing deploys the underlying systems for verification.
 * The entire flow is executed and tested. You cannot test a subset of cards in your Composer flow.

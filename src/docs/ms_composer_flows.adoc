@@ -1,6 +1,6 @@
 = Build a Composer Flow
 
-After you have collected the information as described in xref:ms_composer_checklist.adoc[the preparation checklist], build your flow:
+After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], build your flow:
 
 . Create and name a flow.
 . In the flow, create a trigger or flow control.

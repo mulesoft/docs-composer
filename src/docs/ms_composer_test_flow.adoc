@@ -4,7 +4,7 @@
 
 Using Test mode as you build your flow, you can ensure that each step and each field mapping in your flow is working as expected before activation. You can test your flow as often as you like. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you build.
 
-IMPORTANT: Test mode processes and test a single record. You must activate your flow to process all of your records.
+IMPORTANT: Test mode processes and tests a single record. You must activate your flow to process all of your records.
 
 === Notes
 

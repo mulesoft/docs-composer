@@ -6,7 +6,7 @@ After you collect the information described in xref:ms_composer_checklist.adoc[t
 . In the flow, create a trigger.
 . In the flow, create each action, in order.
 
-xref:ms_composer_test_flow.adoc[Test] after every trigger, flow control, and action you add to your flow. Testing often makes diagnosing problems easier.
+xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow. 
 
 After you've tested the complete flow, you're ready to activate the flow, and then monitor it.
 

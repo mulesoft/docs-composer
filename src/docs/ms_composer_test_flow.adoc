@@ -8,7 +8,7 @@ IMPORTANT: Test mode processes and tests a single record. You must activate your
 
 === Notes
 
-When testing your flow, please note the following:
+When testing your flow, note the following:
 
 * A trigger step is required. A flow with a configured trigger step is considered valid.
 * Testing is limited to five minutes. Testing will end when the test has reached the time limit, an event has occurred, or when the user manually terminates the test.

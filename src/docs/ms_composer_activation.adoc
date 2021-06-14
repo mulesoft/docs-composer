@@ -2,7 +2,7 @@
 
 After you xref:ms_composer_flows.adoc[build] and xref:ms_composer_test_flow.adoc[test] a flow, activate it.
 
-IMPORTANT: To activate a flow, ensure that you are xref:ms-composer-flows.adoc#change-a-connection[connected] to a production environment. 
+IMPORTANT: To activate a flow, ensure that you are xref:ms-composer-flows.adoc#change-a-connection[connected] to a production environment.
 
 . In Composer, find the flow you want to activate in the Composer Flows list. Your flow status is listed as *Inactive*.
 . Click the flow name to open it.

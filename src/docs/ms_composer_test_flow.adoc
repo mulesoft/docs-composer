@@ -12,9 +12,9 @@ When testing your flow, note the following:
 
 When testing your flows:
 
-* Build your flow in a sandbox environment or organization. This allows you to test your flow using inactive accounts. When you want to activate your flow, click the change icon in the trigger or action that connects to a sandbox environment and then click xref:ms-composer-flows.adoc#change-a-connection[*Change Connection*] to change your environment to a production environment while maintaining the tested field mappings.
+* Build your flow in a sandbox environment or organization. This allows you to test your flow using inactive accounts. 
 * Test your flows with sample or dummy records.
-* Consider limiting the number of records processed if your test times. 
+* Consider limiting the number of records processed if your test times.
 
 To test a flow:
 

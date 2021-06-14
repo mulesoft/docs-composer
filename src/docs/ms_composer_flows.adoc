@@ -1,14 +1,8 @@
 = Build a Composer Flow
 
-After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], build your flow:
+After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
 
-. Create and name a flow.
-. In the flow, create a trigger.
-. In the flow, create each action, in order.
-
-xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow. 
-
-After you've tested the complete flow, you're ready to activate the flow, and then monitor it.
+IMPORTANT: xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
 == Create a New Flow
 
@@ -18,7 +12,7 @@ You can create a new flow or clone an existing flow.
 
 To create a new flow:
 
-. From the Composer Home page, click *Create New Flow*.
+. From the Composer *Home* page, click *Create New Flow*.
 . Click the pencil icon next to *Untitled Flow* and give your flow a name.
 +
 You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name.
@@ -35,6 +29,8 @@ To clone an existing flow:
 . Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
 
 == Create a Flow Trigger
+
+NOTE: A trigger step is required to test or activate your flow.
 
 After you have created or cloned a flow, define the trigger: the event or time interval that starts the flow.
 
@@ -58,12 +54,9 @@ You can rename or delete connections from this dialog by clicking the gear icon.
 +
 image:images/trigger-definition.png[Trigger step, 600]
 +
-* Optionally, replace *Untitled Step* with a trigger name of your choice.
+* Rename *Untitled Step* with a trigger name of your choice.
 * Choose an event that starts the flow. Supply additional information as requested.
-
-You can save your trigger, or delete and replace it.
-
-NOTE: A trigger step is required to test or activate your flow.
+* Click *Save*.
 
 [[change-a-connection]]
 == Change a Connection
@@ -79,7 +72,7 @@ To change a connection:
 +
 image::images/change-connection.png[Change the connection control, 400]
 
-. Choose a new connection and click *Save* from the Flow Details menu bar.
+. Choose a new connection and click *Save*.
 
 == Schedule a Flow
 
@@ -93,29 +86,29 @@ image:images/connection-example.png[What Should Start This Flow dialog, 500]
 . Choose one of the time intervals, from 15 minutes to 30 days.
 +
 image::images/connection-scheduler.png[New trigger with time interval, 500]
-. Click *Save* from the Flow Details menu bar.
+. Click *Save*.
 
-After you have chosen the trigger or flow control, your next step is to add one or more actions to the flow. You can also add an If/Else block or For Each loop before an action if you need to apply logic to the action.
+After you have chosen the trigger, your next step is to add one or more actions to the flow. You can also add an If/Else block or For Each loop before an action if you need to apply logic to the action.
 
 == Create an Action
 
 To create an action:
 
-. After the trigger or flow control in your flow, click the large plus sign to open the *Add Action* dialog.
+. After the trigger in your flow, click the large plus sign to open the *Add Action* dialog.
 . Click or create a connection for the action.
 +
 For example, if your trigger is "new records created in Salesforce," and you want your action to be "copy new record to a Google Sheet," then you would choose or create a Google Sheet connection.
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
-. Click *Save* from the Flow Details menu bar.
+. Click *Save*.
 
 == Create a Flow Control
 
 If you need to perform some logic before an action, select a flow control first:
 
-. After the trigger or flow control in your flow, click the large plus sign to open the *Add Action* dialog.
+. After the trigger in your flow, click the large plus sign to open the *Add Action* dialog.
 . Click either *If/Else Block* or *For Each*. An If/Else block is good when you need to do different actions depending on one or more conditions. A For Each loop is good for processing a set of records.
 . Complete the flow control, which usually includes adding an action.
-. Click *Save* from the Flow Details menu bar.
+. Click *Save*.
 
 === Create an If/Else Block
 
@@ -128,7 +121,7 @@ To create an If/Else block:
 . Click the plus sign to add an action. Every condition must have an action, also called a step.
 . Click *Add If* and repeat the previous steps for every If/Else branch you create.
 . Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
-. After you add all the branches, click *Save* from the Flow Details menu bar.
+. After you add all the branches, click *Save*.
 
 For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
 
@@ -142,6 +135,6 @@ To create a For Each Loop:
 . Click *For Each*.
 . Choose a data pill from the *Input list*. You must have a trigger or action that returns a set of records or there won't be anything to choose here.
 . Click the plus sign to add an action.
-. After you complete the action, click *Save* from the Flow Details menu bar.
+. After you complete the action, click *Save*.
 
 You can add logic and actions in different patterns, depending on what your flow needs to do.

@@ -1,4 +1,4 @@
-= Build and a Composer Flow
+= Build a Composer Flow
 
 After you have collected the information as described in xref:ms_composer_checklist.adoc[the preparation checklist], build your flow:
 

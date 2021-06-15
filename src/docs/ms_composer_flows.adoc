@@ -32,7 +32,7 @@ To clone an existing flow:
 
 NOTE: A trigger step is required to test or activate your flow.
 
-After you have created or cloned a flow, define the trigger: the event or time interval that starts the flow.
+After you create or clone a flow, define the trigger: the event or time interval that starts the flow.
 
 To define a trigger based on an event:
 

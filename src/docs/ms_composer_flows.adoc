@@ -115,9 +115,11 @@ If you need to perform some logic before an action, select a flow control first:
 [[create-an-if-else-block]]
 === Create an If/Else Block
 
-You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear path without the need to create separate projects or flows.
+You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear path, or branch, without the need to create separate projects or flows.
 
-
+Build conditions
+Supported Operators
+What is a branches
 
 To create an If/Else block:
 

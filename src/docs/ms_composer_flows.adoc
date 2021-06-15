@@ -88,7 +88,7 @@ image:images/connection-example.png[What Should Start This Flow dialog, 500]
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 . Click *Save*.
 
-After you have chosen the trigger, your next step is to add one or more actions to the flow. You can also add an If/Else block or For Each loop before an action if you need to apply logic to the action.
+After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an If/Else block or foreach loop.
 
 == Create an Action
 

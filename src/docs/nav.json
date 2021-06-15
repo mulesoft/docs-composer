@@ -47,6 +47,10 @@
               "title": "Google Sheets"
             },
             {
+              "file" : "ms_composer_ms_teams_reference.adoc",
+              "title": "Microsoft Teams"
+            },
+            {
               "file" : "ms_composer_netsuite_reference.adoc",
               "title": "NetSuite"
             },

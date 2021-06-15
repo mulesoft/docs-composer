@@ -115,6 +115,8 @@ If you need to perform some logic before an action, select a flow control first:
 [[create-an-if-else-block]]
 === Create an If/Else Block
 
+You can create an If/Else block to determine when steps in a flow are executed based on specific criteria. 
+
 To create an If/Else block:
 
 . Click the plus sign after the trigger or the last action in your flow.

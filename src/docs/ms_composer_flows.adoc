@@ -1,10 +1,10 @@
 = Build a Composer Flow
 
-After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
+After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow or cloning an existing flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
 
 IMPORTANT: xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
-== Create a New Flow
+== Create a Flow
 
 You can create a new flow or clone an existing flow.
 
@@ -27,12 +27,14 @@ To clone an existing flow:
 . From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the Flow Details page.
 . Click *Clone*.
 . Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
+. Click the pencil icon next to *Copy of _original flow name_* and give your flow a name.
++
+You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name.
+. Click *Save*.
 
 == Create a Flow Trigger
 
-NOTE: A trigger step is required to test or activate your flow.
-
-After you create or clone a flow, define the trigger: the event or time interval that starts the flow.
+After you create or clone a flow, define the trigger: the event or time interval that starts the flow. A trigger step is required to test or activate your flow.
 
 To define a trigger based on an event:
 
@@ -88,7 +90,7 @@ image:images/connection-example.png[What Should Start This Flow dialog, 500]
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 . Click *Save*.
 
-After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an If/Else block or foreach loop.
+After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an xref:ms_composer-flows.adoc#create-an-if-else-block[If/Else block] or xref:ms_composer-flows.adoc#create-and-test-a-for-each-loop[For Each] loop.
 
 == Create an Action
 
@@ -110,6 +112,7 @@ If you need to perform some logic before an action, select a flow control first:
 . Complete the flow control, which usually includes adding an action.
 . Click *Save*.
 
+[[create-an-if-else-block]]
 === Create an If/Else Block
 
 To create an If/Else block:

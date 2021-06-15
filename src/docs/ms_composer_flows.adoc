@@ -16,7 +16,7 @@ To create a new flow:
 . Click the pencil icon next to *Untitled Flow* and give your flow a name.
 +
 You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name.
-. Click *Save* from the Flow Details menu bar.
+. Click *Save*.
 
 Now you are ready to create a flow trigger.
 

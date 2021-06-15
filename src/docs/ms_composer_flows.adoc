@@ -90,7 +90,7 @@ image:images/connection-example.png[What Should Start This Flow dialog, 500]
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 . Click *Save*.
 
-After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an xref:ms_composer-flows.adoc#create-an-if-else-block[If/Else block] or xref:ms_composer-flows.adoc#create-and-test-a-for-each-loop[For Each] loop.
+After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an <<create-an-if-else-block,If/Else block>> or <<create-and-test-a-for-each-loop,For Each>> loop.
 
 == Create an Action
 

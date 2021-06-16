@@ -119,13 +119,13 @@ You can create an If/Else block to set conditions and execute actions only when 
 
 ==== Creating Branches
 
-Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch. 
+Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch.
 
-Build conditions
-
-==== Supported Operators
+==== Building Conditions
 
 The following operators are supported when building conditions in an If/Else block:
+
+[options="header,autowidth"]
 |===
 |Function | Supported Data Type | Value Required? | Notes
 |Equals/Does not equal | All | Yes |The value in this field is case sensitive for strings.

@@ -123,9 +123,14 @@ Branches are logic-based steps that run vertically in a flow.  You can add multi
 
 ==== Building Conditions
 
+When adding decision steps:
+
+* The *Field* value list is populated ba sed on the paramters selcted in the After the *Field* value is selected, all the compatible options appear in the *Operator* list. 
+
+
 The following operators are supported when building conditions in an If/Else block:
 
-[options="header,autowidth"]
+[%header%autowidth.spread]
 |===
 |Function | Supported Data Type | Value Required? | Notes
 |Equals/Does not equal | All | Yes |The value in this field is case sensitive for strings.

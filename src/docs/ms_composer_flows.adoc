@@ -117,9 +117,26 @@ If you need to perform some logic before an action, select a flow control first:
 
 You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear path, or branch, without the need to create separate projects or flows.
 
+==== Creating Branches
+
+Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch. 
+
 Build conditions
-Supported Operators
-What is a branches
+
+==== Supported Operators
+
+The following operators are supported when building conditions in an If/Else block:
+|===
+|Function | Supported Data Type | Value Required? | Notes
+|Equals/Does not equal | All | Yes |The value in this field is case sensitive for strings.
+|Contains/Does not contain | Array, String | Yes |
+|Greater than/ Less than |  Date, Number | Yes | In the *Date* field, *Greater than* is equal to a later date and *Less than* is equal to an earlier date.
+|Greater than or equal/Less than or equal | Date, Number | In the *Date* field, *Greater than or equal* is equal to a later date and *Less than or equal* is equal to an earlier date. |
+|Is empty/Is not empty |Array, String, Object | No |
+|Starts with/Ends with | String | Yes | The value in this field must be a string.
+|Is true/Is False | Boolean | No |
+| Is present/Is not present | All | No | If the value in this field is null or if there is no value selected, then the value in this field is set to *Not present* by default.
+|===
 
 To create an If/Else block:
 

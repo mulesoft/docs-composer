@@ -119,11 +119,13 @@ You can create an If/Else block to set conditions and execute actions only when 
 
 ==== Creating Branches
 
-Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch.
+Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch that are executed in sequential order.
 
 ==== Building Conditions
 
-When adding decision steps, the *Field* value list is populated based on values selected when defining the trigger for your flow. After the *Field* value is selected, all compatible options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and populated based on the values selected when defining the trigger.
+When adding decision steps, the *Field* value list is populated based on values selected when defining the trigger and the previous steps of your flow. After the *Field* value is selected, all compatible options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and populated based on the values selected when defining the trigger. For the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
+
+For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
 
 The following operators are supported when building conditions in an If/Else block:
 
@@ -137,7 +139,7 @@ The following operators are supported when building conditions in an If/Else blo
 |Greater than or equal/Less than or equal | Date, Number | Yes | In the *Date* field, the *Greater than or equal* value is equal to a later date and the *Less than or equal* value is equal to an earlier date.
 |Is empty/Is not empty |Array, String, Object | No |
 |Starts with/Ends with | String | Yes | A string value for this field is required.
-|Is true/Is False | Boolean | No |
+|Is true/Is false | Boolean | No |
 | Is present/Is not present | All | No | If the value in this field is null or if there is no value selected, then the value in this field is set to *Not present* by default.
 |===
 
@@ -147,13 +149,11 @@ To create an If/Else block:
 . Click *Add Action*.
 . Click *If/Else Block* to define the first branch.
 . Enter the requested criteria.
-. Click the plus sign to add an action. Every condition must have an action, also called a step.
-. Click *Add If* and repeat the previous steps for every If/Else branch you create.
+. Click the plus sign to add an action to that branch. Every branch must have an action, also called a step.
+. Optionally, if you want to add another branch, click *Add If* and repeat the previous steps for every If/Else branch you create.
 . Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
 . After you add all the branches, click *Save*. +
-You can add additional conditions to your If/Else block by clicking *Add condition*.
-
-For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
+If you want to set criteria for how the flow executes if none of the existing branches' criteria are met, you can add additional conditions to your If/Else block by clicking *Add condition*.
 
 [[create-and-test-a-for-each-loop]]
 === Create a For Each Loop

@@ -1,4 +1,4 @@
-= Salesforce Reference
+= Salesforce Connector Reference
 
 Use Salesforce as a data source (take new Salesforce records and copy them to a Google Sheet, for example) or a data target (take a new employee in Workday and create a contact in Salesforce).
 Some details of how to work with data in a flow are specific to the data source or data target. The details also depend on the trigger or actions you choose.

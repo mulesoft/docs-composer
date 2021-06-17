@@ -1,3 +1,3 @@
-= Composer Reference
+= Composer Connector Reference
 
 Each system that connects to MuleSoft Composer for Salesforce (Composer) behaves in different ways depending on how the system stores the information you want to retrieve and manipulate. Review each system reference page to understand which triggers and actions are available.

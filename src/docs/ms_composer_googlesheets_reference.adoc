@@ -1,4 +1,4 @@
-= Google Sheets Reference
+= Google Sheets Connector Reference
 
 Use Google Sheets as a data source (get a new Google Sheet row and send a Slack message with information from the row, for example)
 or a data target (get a new Salesforce contact and turn it into a row in a Google Sheet).

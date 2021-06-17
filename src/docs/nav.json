@@ -40,7 +40,7 @@
         },
         {
           "file" : "ms_composer_reference.adoc",
-          "title": "Composer Reference",
+          "title": "Composer Connector Reference",
           "topics" : [
             {
               "file" : "ms_composer_asana_reference.adoc",

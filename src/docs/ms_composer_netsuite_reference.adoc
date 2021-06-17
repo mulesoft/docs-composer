@@ -1,4 +1,4 @@
-= NetSuite Reference
+= NetSuite Connector Reference
 
 Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce, for example) or a data target (when a Salesforce opportunity closes, create a NetSuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
 

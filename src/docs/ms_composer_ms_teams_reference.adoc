@@ -1,4 +1,4 @@
-= Microsoft Teams Reference
+= Microsoft Teams Connector Reference
 
 Microsoft Teams is a SaaS enterprise communication system used to send messages within an organization and to customers outside of the direct organization.
 

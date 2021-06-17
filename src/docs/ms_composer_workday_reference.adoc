@@ -1,4 +1,4 @@
-= Workday Reference
+= Workday Connector Reference
 
 Use Workday as a data source or data target.
 Some details of how to work with data in a flow are specific to the data source or data target, and to the specific trigger or actions you choose.

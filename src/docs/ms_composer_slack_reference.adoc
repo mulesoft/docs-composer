@@ -1,4 +1,4 @@
-= Slack Reference
+= Slack Connector Reference
 
 Use Slack as a data target. For example, you can send a Slack message when a Salesforce opportunity is won.
 Some details of how to work with data in a flow are specific to this system, and to the actions you choose.

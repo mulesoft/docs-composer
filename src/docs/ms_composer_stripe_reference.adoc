@@ -1,4 +1,4 @@
-= Stripe Reference
+= Stripe Connector Reference
 
 Online payment processing platforms, like Stripe, are used by a growing number of businesses. Stripe enables businesses of all sizes to process payments through APIs by keeping customers and payment information synched.
 
@@ -46,4 +46,4 @@ Create Customer::
 Create a new customer. When creating a new customer, the `Phone` field is the customer's phone number and not the shipping phone number.
 
 Find Customer::
-Finds an existing customer by `Customer ID`. 
+Finds an existing customer by `Customer ID`.

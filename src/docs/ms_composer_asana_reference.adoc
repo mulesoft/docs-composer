@@ -1,4 +1,4 @@
-= Asana Reference
+= Asana Connector Reference
 
 Asana is a SaaS-based project management tool that enables teams of all sizes to manage their daily tasks, schedules, and deliverables.
 

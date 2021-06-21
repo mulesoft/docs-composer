@@ -119,13 +119,15 @@ You can create an If/Else block to set conditions and execute actions only when 
 
 ==== Creating Branches
 
-Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch that are executed in sequential order.
+Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch. Each branch is then executed in sequential order.
 
 ==== Building Conditions
 
 When adding decision steps, the *Field* value list is populated based on values selected when defining the trigger and the previous steps of your flow. After the *Field* value is selected, all compatible options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and populated based on the values selected when defining the trigger. For the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
 
 For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
+
+You can add additional conditions to your If/Else block by clicking *Add condition*.
 
 The following operators are supported when building conditions in an If/Else block:
 
@@ -151,9 +153,8 @@ To create an If/Else block:
 . Enter the requested criteria.
 . Click the plus sign to add an action to that branch. Every branch must have an action, also called a step.
 . Optionally, if you want to add another branch, click *Add If* and repeat the previous steps for every If/Else branch you create.
-. Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
+. Optionally, if you want to set criteria for how the flow executes if none of the criteria for the existing branches are met, click *Add Else* and repeat the previous steps for the final branch.
 . After you add all the branches, click *Save*. +
-If you want to set criteria for how the flow executes if none of the existing branches' criteria are met, you can add additional conditions to your If/Else block by clicking *Add condition*.
 
 [[create-and-test-a-for-each-loop]]
 === Create a For Each Loop

@@ -1,0 +1,82 @@
+= Xero Connector Reference
+
+Xero is a SaaS-based accounting application used primarily by small to medium sized businesses for accounting functions such as invoice creation and tracking, receiving and tracking payments, managing inventory, storing customer contacts, and creating purchase orders and quotes.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to Xero.
+
+Password::
+
+The OAuth password that you use to log in to Xero.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New/Updated Contact::
+
+Checks for a new or updated contact record. Provide a value for *Contact Type*.
+
+New/Updated Item::
+
+Checks for a new or updated item record. Provide a value for the following fields:
+
+* *IsPurchased*
+* *IsSold*
+* *IsTrackedAsInventory*
+
+New Payment::
+
+Checks for a submitted payment.
+
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create contact::
+
+Creates a new contact record. Provide a value for *Contact Type*. Additionally, if you add additional contacts, you must also provide a value for *Email address*.
+
+Update contact::
+
+Updates an existing contact record. Provide a value for *Contact ID*.
+
+Search contact::
+
+Returns a list of contact records based on values entered.
+
+Get contact by ID::
+
+Returns a single contact record based on the ID value. Provide a value for *Contact ID*.
+
+Create invoice::
+
+Creates an invoice record. Provide a value for the following fields:
+
+* *Contact type*
+* *Contact name*
+* *Branding theme*
+* *Items*
+
+Update invoice headers::
+
+Updates specific fields in an invoice record. Provide a value for the following fields:
+
+* *Invoice Reference Type*
+* *Inbvoice Reference*
+
+Create or update item::
+
+Creates or updates a field in the item record. Provide a value for *Item Code*.
+
+Create item::
+
+Creates an item record. Provide a value for *Item Code*. Additionally, if a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field. 

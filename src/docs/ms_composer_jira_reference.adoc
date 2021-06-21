@@ -1,0 +1,39 @@
+= JIRA Connector Reference
+
+JIRA is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to JIRA.
+
+Password::
+
+The OAuth password that you use to log in to JIRA.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New issue::
+Checks for a new issue created in JIRA.
+
+Updated issue::
+Checks for updated issues in JIRA.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+<Field>::
+
+<Details>.
+
+== Custom Fields
+
+Using MuleSoft Composer, you can access standard custom field values in JIRA for *Actions* and *Triggers* that you set in the JIRA issue.

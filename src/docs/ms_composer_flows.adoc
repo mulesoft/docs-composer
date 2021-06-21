@@ -151,7 +151,7 @@ To create an If/Else block:
 . Click *Add Action*.
 . Click *If/Else Block* to define the first branch.
 . Enter the requested criteria.
-. Click the plus sign to add an action to that branch. Every branch must have an action, also called a step.
+. Click *+* to add an action to that branch. Every branch must have an action, also called a _step_.
 . If you want to add another branch, click *Add If* and repeat the previous steps for every If/Else branch you create.
 . If you want to set criteria for how the flow executes if none of the criteria for the existing branches are met, click *Add Else* and repeat the previous steps for the final branch.
 . After you add all the branches, click *Save*. 

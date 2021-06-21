@@ -2,7 +2,7 @@
 
 By testing as you build your flow, you can ensure that each step and each field mapping in your flow is working as expected before activation. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you build.
 
-IMPORTANT: Testing processes and tests a single record. You must activate your flow to process all of your records.
+Testing processes and tests a single record. You must activate your flow to process all of your records.
 
 When testing your flow, note the following:
 
@@ -12,7 +12,7 @@ When testing your flow, note the following:
 
 When testing your flows:
 
-* Build your flow in a sandbox environment to test your flow using inactive accounts. 
+* Build your flow in a sandbox environment to test your flow using inactive accounts.
 * Test your flows with sample or dummy records.
 * Consider limiting the number of records processed if your test times out.
 

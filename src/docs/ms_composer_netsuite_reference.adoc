@@ -85,6 +85,14 @@ The following record types are valid for all actions:
 
 Using MuleSoft Composer, you can access custom field values for *Actions* and *Triggers* that you set in the NetSuite record.
 
+== Custom Search
+
+Using MuleSoft Composer, you can complete a custom search <STUFF> the NetSuite record.
+
+== Custom Objects
+
+Using MuleSoft Composer, you can access custom object values for <STUFF> that you set in the NetSuite record.
+
 == List Objects
 
 List objects are supported.

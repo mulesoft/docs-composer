@@ -65,7 +65,6 @@ Creates and adds a comment to an existing issue. Provide a value for the followi
 Get Account IDs for Users::
 Returns the account IDs for the users specified in the `key` or `username` parameters. You can specify multiple `key` or `username` parameters.
 
-
 == Custom Fields
 
 Using MuleSoft Composer, you can access standard custom field values in JIRA for *Actions* and *Triggers* that you set in the JIRA issue.

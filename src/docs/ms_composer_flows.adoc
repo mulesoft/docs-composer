@@ -129,7 +129,7 @@ The following operators are supported when building conditions in an If/Else blo
 [%header%autowidth.spread]
 |===
 |Function | Supported Data Type | Value Required? | Notes
-|Equals/Does not equal | All | Yes |The value in this field is case sensitive for strings.
+|Equals/Does not equal | All | Yes |The value in this field is case-sensitive for strings.
 |Contains/Does not contain | Array, String | Yes | None
 |Greater than/Less than |  Date, Number | Yes | In the *Date* field, the *Greater than* value is equal to a later date and the *Less than* value is equal to an earlier date.
 |Greater than or equal/Less than or equal | Date, Number | Yes | In the *Date* field, the *Greater than or equal* value is equal to a later date or the current date and the *Less than or equal* value is equal to an earlier date or the current date.

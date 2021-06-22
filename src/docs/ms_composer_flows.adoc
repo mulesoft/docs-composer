@@ -117,7 +117,7 @@ If you need to perform some logic before an action, select a flow control first:
 
 You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
 
-Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch. Each branch is then executed in sequential order.
+Branches are logic-based steps that run vertically in a flow. You can add multiple steps inside each branch. Each branch is then executed in sequential order.
 
 When adding decision steps, the values in the *Field* list are populated based on values selected when you designate the previous steps of your flow. After the *Field* value is selected, all compatible value options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and the list is populated based on the values you selected when defining the trigger. In the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
 

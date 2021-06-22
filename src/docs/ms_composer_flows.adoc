@@ -113,21 +113,15 @@ If you need to perform some logic before an action, select a flow control first:
 . Click *Save*.
 
 [[create-an-if-else-block]]
-=== Create an If/Else Block
+=== Add an If/Else Block
 
-You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear path, or _branch_, without the need to create separate projects, or _flows_.
-
-==== Creating Branches
+You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
 
 Branches are logic-based steps that run vertically in a flow.  You can add multiple steps inside each branch. Each branch is then executed in sequential order.
 
-==== Building Conditions
-
-When adding decision steps, the *Field* value list is populated based on values selected when defining the trigger and the previous steps of your flow. After the *Field* value is selected, all compatible options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and populated based on the values selected when defining the trigger. For the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
+When adding decision steps, the values in the *Field* list are populated based on values selected when you designate the previous steps of your flow. After the *Field* value is selected, all compatible value options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and the list is populated based on the values you selected when defining the trigger. In the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
 
 For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
-
-You can add additional conditions to your If/Else block by clicking *Add condition*.
 
 The following operators are supported when building conditions in an If/Else block:
 
@@ -135,13 +129,13 @@ The following operators are supported when building conditions in an If/Else blo
 [%header%autowidth.spread]
 |===
 |Function | Supported Data Type | Value Required? | Notes
-|Equals/Does not equal | All | Yes |The value in this field is case-sensitive for strings.
-|Contains/Does not contain | Array, String | Yes |
+|Equals/Does not equal | All | Yes |The value in this field is case sensitive for strings.
+|Contains/Does not contain | Array, String | Yes | None
 |Greater than/Less than |  Date, Number | Yes | In the *Date* field, the *Greater than* value is equal to a later date and the *Less than* value is equal to an earlier date.
-|Greater than or equal/Less than or equal | Date, Number | Yes | In the *Date* field, the *Greater than or equal* value is equal to a later date and the *Less than or equal* value is equal to an earlier date.
-|Is empty/Is not empty |Array, String, Object | No |
+|Greater than or equal/Less than or equal | Date, Number | Yes | In the *Date* field, the *Greater than or equal* value is equal to a later date or the current date and the *Less than or equal* value is equal to an earlier date or the current date.
+|Is empty/Is not empty |Array, String, Object | No | None
 |Starts with/Ends with | String | Yes | A string value for this field is required.
-|Is true/Is false | Boolean | No |
+|Is true/Is false | Boolean | No | None
 | Is present/Is not present | All | No | If the value in this field is null or if there is no value selected, then the value in this field is set to *Not present* by default.
 |===
 
@@ -154,7 +148,8 @@ To create an If/Else block:
 . Click *+* to add an action to that branch. Every branch must have an action, also called a _step_.
 . If you want to add another branch, click *Add If* and repeat the previous steps for every If/Else branch you create.
 . If you want to set criteria for how the flow executes if none of the criteria for the existing branches are met, click *Add Else* and repeat the previous steps for the final branch.
-. After you add all the branches, click *Save*. 
+. If you want to add additional conditions to your If/Else block, click *Add condition*.
+. After you add all the branches, click *Save*.
 
 [[create-and-test-a-for-each-loop]]
 === Create a For Each Loop

@@ -1,0 +1,75 @@
+= MuleSoft Composer for Salesforce: Getting Started
+
+Check that you meet the listed prerequisites before you set up Composer. Then you can set up and begin using Composer.
+
+== Prerequisites
+
+* The org where you set up Composer must be a Salesforce Unlimited, Enterprise, or Performance edition. It can't be a sandbox org.
+* The org must have Lightning enabled.
+* You must purchase a separate MuleSoft Composer license for the org.
+* If your company network has a stringent firewall or list of blocked IP addresses, your network administrator must add `*.mulesoft.com` to the list of allowed addresses.
++
+IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses.
+* You must relax any IP restrictions for the connections that you create to data sources and data targets. Instructions are included in the setup section of this topic.
+
+* Browser prerequisites:
+     ** Don't use incognito mode or private browsers to access Composer.
+     ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must
+uncheck the *Prevent cross-site tracking* option in Safari security preferences.
+* When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
+
+== Set Up Composer
+
+Before anyone can use Composer, a Salesforce admin must set it up, including installation, permissions assignments, and a few adjustments to your Salesforce org settings.
+
+=== Find the Composer Setup Page
+
+. Log in to your Salesforce org as an admin.
+. Click the Setup gear icon, and then choose *Setup*.
+. Enter `composer` in the search bar.
+. Select *MuleSoft Composer* from the search results.
++
+If you can't find Composer in the search results, it's likely that your org needs to purchase a license for Composer.
+
+Next, you'll install Composer and make some Salesforce org adjustments to ensure Composer works properly.
+
+=== Admin: Install Composer and Adjust Salesforce Org Settings
+
+. In the *Install the Managed Package for MuleSoft Composer* section, click *Install Managed Package*.
++
+Four more steps are revealed when the installation is complete. As the admin performing the installation, you are automatically given the Composer permission set.
+
+. In the *Change the Type of Permitted Users* section, click *Open Settings* to launch the Salesforce connected app page for Composer and change two settings:
+     .. In the *Permitted Users* dropdown, select *Admin approved users are pre-authorized*.
+     .. In the *IP Relaxation* dropdown, select *Relax IP restrictions*.
+     .. Save the changes.
+
+. In the *Configure MuleSoft Services* section, click *Initiate Configuration*.
++
+MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
+. In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
+     .. Click *Composer User*.
+     .. Click *Manage Assignments*, and then *Add Assignments*.
+     .. Select the checkbox next to each user who will receive permission to use Composer.
+     .. Click *Add*. You can assign or revoke this permission set at any time.
+. In the *Launch MuleSoft Composer* section, click the *Launch* button to start Composer.
+
+Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
+
+== Users: Verify Access to Composer
+
+If you aren't the Salesforce admin who installed Composer, verify that you have access to the Composer app:
+
+. In your Salesforce org, open the App Launcher.
+. Enter `composer` in the search bar.
+. Select *MuleSoft Composer* from the search results.
++
+If you don't see *MuleSoft Composer* in the search results,
+it's likely that you need to purchase Composer for your Salesforce org or that you don't have permission to access it.
+
+When the Composer page displays, you're ready to create your first flow. If you'd like to learn more before using Composer, review the other topics in this section.
+
+== See Also
+
+* xref:ms_composer_reference.adoc[Connection Reference]
+* https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_framework_supported_browsers.htm[Salesforce Canvas browser support]

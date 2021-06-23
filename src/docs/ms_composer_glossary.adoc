@@ -1,0 +1,31 @@
+= MuleSoft Composer for Salesforce Glossary
+
+connection::
+
+The credentials that give you access to a system where you want to access data: the username and password, and the URL where you enter them to gain access. Some systems require additional information such as a security token.
+
+data pill::
+
+A variable that allows you to reference a field name or other data structure from within a flow.
+
+data structure:: Structures that store data in a system. For example, Salesforce stores data in sObjects and fields, and Google Sheets stores information in sheets, rows, and cells.
+
+flow::
+
+An automated process that connects to a system and then performs actions on data from that system:
+
+* *action*: Something you do with the data fetched from a connection, such as copying a record or row from one system to another.
+* *step*: A trigger, or one or more actions. Steps include the logic needed to decide whether to perform the step or skip it. A step optionally includes a connection different from the initial trigger.
+* *trigger*: The first step of every flow, a trigger is something that starts the automated process defined in a flow. A trigger is either an event such as "a new record is created," or a specified point in time. Time-based triggers are called schedulers. The first step of every flow is a trigger.
+
+logic::
+
+The circumstances or requirements that must be met before an action is taken: if/else statements or for-each statements. Insert logic into steps as needed to ensure actions are taken only on the data that should be acted on, not on all the data returned.
+
+system::
+
+Composer connects to systems such as Salesforce, NetSuite, and Google Sheets to execute automated processes which you build, test, and activate as flows. Connections to a system can be made during any step in a flow. Flows must connect to a system during the first step, the trigger or scheduler, even if that system is the same Salesforce org where Composer is hosted.
+
+task::
+
+A change made by MuleSoft Composer for Salesforce to an object or record in the target system(s) of an integration flow that is an insertion, update, or deletion.

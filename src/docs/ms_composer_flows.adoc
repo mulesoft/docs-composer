@@ -15,7 +15,7 @@ To create a new flow:
 . From the Composer *Home* page, click *Create New Flow*.
 . Click the pencil icon next to *Untitled Flow* and give your flow a name.
 +
-You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name.
+You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name. Valid characters: A-Z, a-z, 0-9, space, -, ., _.
 . Click *Save*.
 
 Now you are ready to create a flow trigger.
@@ -27,7 +27,7 @@ To clone an existing flow:
 . From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the Flow Details page.
 . Click *Clone*.
 . Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
-. Click the pencil icon next to *Copy of _original flow name_* and give your flow a name.
+. Click the pencil icon next to *Copy of _original flow name_* and give your flow a name. Valid characters: A-Z, a-z, 0-9, space, -, ., _.
 +
 You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name.
 . Click *Save*.

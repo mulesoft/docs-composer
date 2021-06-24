@@ -44,13 +44,20 @@ Create Record::
 
 A record is created.
 
-Upsert Record::
+Update Record::
 
 A record is created or updated.
 
 Delete Record::
 
 A record is deleted
+
+Get Record::
+
+Returns a list of records based on specific search criteria. The following fields are required:
+
+* Object type
+* Filter records
 
 == Record Types
 
@@ -87,7 +94,7 @@ Using MuleSoft Composer, you can access custom field values for *Actions* and *T
 
 == Custom Search
 
-Using MuleSoft Composer, you can complete a custom search <STUFF> the NetSuite record.
+Using MuleSoft Composer, you can complete a custom search of NetSuite records using the *Get Records* action.
 
 == Custom Objects
 

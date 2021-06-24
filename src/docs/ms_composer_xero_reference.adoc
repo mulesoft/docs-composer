@@ -20,19 +20,19 @@ The OAuth password that you use to log in to Xero.
 
 include::_partials/trigger-definition.adoc[]
 
-New/Updated Contact::
+New/updated Contact::
 
 Checks for a new or updated contact record. Provide a value for *Contact Type*.
 
-New/Updated Item::
+New/update item::
 
 Checks for a new or updated item record. Provide a value for the following fields:
 
-* *IsPurchased*
-* *IsSold*
-* *IsTrackedAsInventory*
+* *Is purchased*
+* *Is sold*
+* *Is tracked as inventory*
 
-New Payment::
+New payment::
 
 Checks for a submitted payment.
 
@@ -76,7 +76,3 @@ Updates specific fields in an invoice record. Provide a value for the following 
 Create or update item::
 
 Creates or updates a field in the item record. Provide a value for *Item Code*.
-
-Create item::
-
-Creates an item record. Provide a value for *Item Code*. Additionally, if a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field. 

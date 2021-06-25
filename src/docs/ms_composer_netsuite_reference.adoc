@@ -52,7 +52,7 @@ Delete Record::
 
 A record is deleted
 
-Get Record::
+Get Records::
 
 Returns a list of records based on specific search criteria. The following fields are required:
 
@@ -72,6 +72,7 @@ The following record types are supported.
 ** Invoice
 ** Sales Order
 ** Support Case
+** Custom objets in NetSuite
 
 
 * Actions
@@ -87,6 +88,7 @@ The following record types are valid for all actions:
 ** Payment Item
 ** Sales Order
 ** Support Case
+** Custom objets in NetSuite
 
 == Custom Fields
 

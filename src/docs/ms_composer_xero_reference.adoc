@@ -6,6 +6,8 @@ Xero is a SaaS-based accounting application used primarily by small to medium si
 
 include::_partials/connection-definition.adoc[]
 
+To establish a connection from Composer to Xero, you must select the Xero organization to which you want to connect in the *Organizations* field.
+
 include::_partials/connection-name.adoc[]
 
 Username::
@@ -22,7 +24,10 @@ include::_partials/trigger-definition.adoc[]
 
 New/updated Contact::
 
-Checks for a new or updated contact record. Provide a value for *Contact Type*.
+Checks for a new or updated contact record. Provide a value for the following fields:
+
+* *Contact Type*
+* *Organizations*
 
 New/update item::
 
@@ -31,10 +36,11 @@ Checks for a new or updated item record. Provide a value for the following field
 * *Is purchased*
 * *Is sold*
 * *Is tracked as inventory*
+* *Organizations*
 
 New payment::
 
-Checks for a submitted payment.
+Checks for a submitted payment. Provide a value for the *Organizations* field.
 
 
 == Actions
@@ -43,19 +49,29 @@ include::_partials/action-definition.adoc[]
 
 Create contact::
 
-Creates a new contact record. Provide a value for *Contact Type*. Additionally, if you add additional contacts, you must also provide a value for *Email address*.
+Creates a new contact record. Provide a value for the following fields:
+
+* *Contact type*
+* *Organizations*
+* If you add additional contacts, you must also provide a value for *Email address*.
 
 Update contact::
 
-Updates an existing contact record. Provide a value for *Contact ID*.
+Updates an existing contact record. Provide a value for  the following fields:
+
+* *Contact ID*.
+* *Organizations*
 
 Search contact::
 
-Returns a list of contact records based on values entered.
+Returns a list of contact records based on values entered. Provide a value for *Organizations*.
 
 Get contact by ID::
 
-Returns a single contact record based on the ID value. Provide a value for *Contact ID*.
+Returns a single contact record based on the ID value. Provide a value for the following fields:
+
+* *Contact ID*
+* *Organizations*
 
 Create invoice::
 
@@ -65,14 +81,19 @@ Creates an invoice record. Provide a value for the following fields:
 * *Contact name*
 * *Branding theme*
 * *Items*
+* *Organizations*
 
 Update invoice headers::
 
 Updates specific fields in an invoice record. Provide a value for the following fields:
 
 * *Invoice Reference Type*
-* *Inbvoice Reference*
+* *Invoice Reference*
+* *Organizations*
 
 Create or update item::
 
-Creates or updates a field in the item record. Provide a value for *Item Code*.
+Creates or updates a field in the item record. Provide a value for the following fields:
+
+* *Item Code*
+* *Organizations*

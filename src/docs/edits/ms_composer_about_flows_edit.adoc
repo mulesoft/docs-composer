@@ -1,23 +1,22 @@
 = Composer Flow Components
 
-A flow defines the automated processes between two or more systems. Think of it as the schema for an entire automation process. For example, you can automate any of these actions with Composer:
+MuleSoft Composer (Composer) enables you to build _flows_ that define automated processes between two or more systems, such as:
 
 * Copy all new records in one Salesforce org and replicate them in another.
-* Create employee records or job requisitions in Workday, and populate some of the fields with data from another system.
+* Creating employee records or job requisitions in Workday and populating some of the fields with data from another system.
 //* Send a Slack message every time a Google Sheet is updated.
-* Check a source of data every fifteen minutes, and if the data changed, copy those changes to a Tableau data source.
+* Checking a source of data every fifteen minutes and, if the is data changed, copying those changes to a Tableau data source.
 
 You can also combine multiple actions in a single flow, such as replicating Salesforce records and then sending a Slack message to a particular channel based on the record type. Understanding how the basic building blocks of a flow work together makes it easier to confidently build and test flows. Building a flow is a simple matter of adding a trigger and all the actions you want to perform to complete an automated process.
 
 == Connections or Scheduler
 
-After you create and name a flow, you're ready to choose what will trigger the flow: an event in a system such as Salesforce or Workday, or a time interval such as "every fifteen minutes."
+After you create and name a new, empty flow, you're ready to choose what triggers the flow: an event in a system such as Salesforce or Workday (via a _connection_), or a time interval such as "every fifteen minutes" (via the Composer _Scheduler_ component).
 
 image::images/connection-example.png[Example of a connection dialog, 400]
 
-Triggering a flow with an event is done with a connection, and triggering with a time schedule is done with Scheduler.
 
-=== Connections
+=== How Connection Triggers Work
 
 The first step in triggering a flow is connecting to the system where the trigger will occur. In the *What Should Start This Flow* dialog, choose or create a connection as the first step of creating a trigger:
 

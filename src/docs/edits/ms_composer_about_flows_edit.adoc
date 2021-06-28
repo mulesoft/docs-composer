@@ -1,4 +1,4 @@
-= How Composer Works
+= Composer Flow Components
 
 A flow defines the automated processes between two or more systems. Think of it as the schema for an entire automation process. For example, you can automate any of these actions with Composer:
 

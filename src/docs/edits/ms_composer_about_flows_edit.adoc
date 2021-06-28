@@ -3,7 +3,7 @@
 MuleSoft Composer (Composer) enables you to build _flows_ that define automated processes between two or more systems, such as:
 
 * Copy all new records in one Salesforce org and replicate them in another.
-* Create employee records or job requisitions in Workday, and populate some of the fields with data from another system.
+* Creating employee records or job requisitions in Workday and populating some of the fields with data from another system.
 //* Send a Slack message every time a Google Sheet is updated.
 * Check a source of data every fifteen minutes, and if the data changed, copy those changes to a Tableau data source.
 

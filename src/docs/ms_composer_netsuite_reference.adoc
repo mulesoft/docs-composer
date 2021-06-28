@@ -52,12 +52,12 @@ Delete Record::
 
 A record is deleted
 
-Get Records::
+//Get Records::
 
-Returns a list of records based on specific search criteria. The following fields are required:
+//Returns a list of records based on specific search criteria. The following fields are required:
 
-* Object type
-* Filter records
+//* Object type
+//* Filter records
 
 == Record Types
 
@@ -72,7 +72,7 @@ The following record types are supported.
 ** Invoice
 ** Sales Order
 ** Support Case
-** Custom objets in NetSuite
+** Custom objects in NetSuite
 
 
 * Actions
@@ -88,19 +88,11 @@ The following record types are valid for all actions:
 ** Payment Item
 ** Sales Order
 ** Support Case
-** Custom objets in NetSuite
+** Custom objects in NetSuite
 
 == Custom Fields
 
 Using MuleSoft Composer, you can access custom field values for *Actions* and *Triggers* that you set in the NetSuite record.
-
-== Custom Search
-
-Using MuleSoft Composer, you can complete a custom search of NetSuite records using the *Get Records* action.
-
-== Custom Objects
-
-Using MuleSoft Composer, you can access custom object values for <STUFF> that you set in the NetSuite record.
 
 == List Objects
 

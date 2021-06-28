@@ -47,20 +47,13 @@ Checks for a submitted payment. Provide a value for the *Organisations* field.
 
 include::_partials/action-definition.adoc[]
 
-Create contact::
+Create or update contact::
 
-Creates a new contact record. Provide a value for the following fields:
+Creates a new contact record nor updates an edisting contact record. Provide a value for the following fields:
 
 * *Contact type*
 * *Organisations*
 * If you add additional contacts, you must also provide a value for *Email address*.
-
-Update contact::
-
-Updates an existing contact record. Provide a value for  the following fields:
-
-* *Contact ID*.
-* *Organisations*
 
 Search contact::
 

@@ -9,8 +9,6 @@ MuleSoft Composer (Composer) enables you to build _flows_ that define automated 
 
 You can also combine multiple actions in a single flow, such as replicating Salesforce records and then sending a Slack message to a particular channel based on the record type. Understanding how the basic building blocks of a flow work together makes it easier to confidently build and test flows. Building a flow is a simple matter of adding a trigger and all the actions you want to perform to complete an automated process.
 
-== Connections or Scheduler
-
 After you create and name a new, empty flow, you're ready to choose what triggers the flow: an event in a system such as Salesforce or Workday (via a _connection_), or a time interval such as "every fifteen minutes" (via the Composer _Scheduler_ component).
 
 image::images/connection-example.png[Example of a connection dialog, 400]

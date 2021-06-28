@@ -46,7 +46,7 @@ Checks for a submitted payment. Provide a value for the *Organisations* field.
 == Actions
 
 include::_partials/action-definition.adoc[]
-
+ 
 Create or update contact::
 
 Creates a new contact record nor updates an edisting contact record. Provide a value for the following fields:

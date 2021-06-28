@@ -16,7 +16,7 @@ After you create and name a new, empty flow, you're ready to choose what trigger
 image::images/connection-example.png[Example of a connection dialog, 400]
 
 
-=== Connections
+=== How Connection Triggers Work
 
 The first step in triggering a flow is connecting to the system where the trigger will occur. In the *What Should Start This Flow* dialog, choose or create a connection as the first step of creating a trigger:
 

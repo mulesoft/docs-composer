@@ -7,7 +7,13 @@ MuleSoft Composer (Composer) enables you to build _flows_ that define automated 
 //* Send a Slack message every time a Google Sheet is updated.
 * Checking a source of data every fifteen minutes and, if the is data changed, copying those changes to a Tableau data source.
 
-You can also combine multiple actions in a single flow, such as replicating Salesforce records and then sending a Slack message to a particular channel based on the record type. Understanding how the basic building blocks of a flow work together makes it easier to confidently build and test flows. Building a flow is a simple matter of adding a trigger and all the actions you want to perform to complete an automated process.
+Building a flow is a simple matter of using the Composer interface to:
+
+- Create and name an empty flow
+- Specify what _triggers_ the flow:
+     - A triggering event, using a _connection_
+     - A recurring time period, using _Scheduler_
+- Specify the _actions_ that take place during the flow, optionally including _flow control_ logic
 
 == Connections or Scheduler
 

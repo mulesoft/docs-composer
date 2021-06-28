@@ -1,6 +1,6 @@
 = How Composer Works
 
-A flow defines the automated processes between two or more systems. Think of it as the schema for an entire automation process. For example, you can automate any of these actions with Composer:
+MuleSoft Composer (Composer) enables you to build _flows_ that define automated processes between two or more systems, such as:
 
 * Copy all new records in one Salesforce org and replicate them in another.
 * Create employee records or job requisitions in Workday, and populate some of the fields with data from another system.

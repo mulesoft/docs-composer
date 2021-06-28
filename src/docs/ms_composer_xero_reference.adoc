@@ -6,7 +6,7 @@ Xero is a SaaS-based accounting application used primarily by small to medium si
 
 include::_partials/connection-definition.adoc[]
 
-To establish a connection from Composer to Xero, you must select the Xero organization to which you want to connect in the *Organizations* field.
+To establish a connection from Composer to Xero, you must select the Xero organisation to which you want to connect in the *Organisations* field.
 
 include::_partials/connection-name.adoc[]
 
@@ -27,7 +27,7 @@ New/updated Contact::
 Checks for a new or updated contact record. Provide a value for the following fields:
 
 * *Contact Type*
-* *Organizations*
+* *Organisations*
 
 New/update item::
 
@@ -36,11 +36,11 @@ Checks for a new or updated item record. Provide a value for the following field
 * *Is purchased*
 * *Is sold*
 * *Is tracked as inventory*
-* *Organizations*
+* *Organisations*
 
 New payment::
 
-Checks for a submitted payment. Provide a value for the *Organizations* field.
+Checks for a submitted payment. Provide a value for the *Organisations* field.
 
 
 == Actions
@@ -52,7 +52,7 @@ Create contact::
 Creates a new contact record. Provide a value for the following fields:
 
 * *Contact type*
-* *Organizations*
+* *Organisations*
 * If you add additional contacts, you must also provide a value for *Email address*.
 
 Update contact::
@@ -60,18 +60,18 @@ Update contact::
 Updates an existing contact record. Provide a value for  the following fields:
 
 * *Contact ID*.
-* *Organizations*
+* *Organisations*
 
 Search contact::
 
-Returns a list of contact records based on values entered. Provide a value for *Organizations*.
+Returns a list of contact records based on values entered. Provide a value for *Organisations*.
 
 Get contact by ID::
 
 Returns a single contact record based on the ID value. Provide a value for the following fields:
 
 * *Contact ID*
-* *Organizations*
+* *Organisations*
 
 Create invoice::
 
@@ -81,7 +81,7 @@ Creates an invoice record. Provide a value for the following fields:
 * *Contact name*
 * *Branding theme*
 * *Items*
-* *Organizations*
+* *Organisations*
 
 Update invoice headers::
 
@@ -89,11 +89,11 @@ Updates specific fields in an invoice record. Provide a value for the following 
 
 * *Invoice Reference Type*
 * *Invoice Reference*
-* *Organizations*
+* *Organisations*
 
 Create or update item::
 
 Creates or updates a field in the item record. Provide a value for the following fields:
 
 * *Item Code*
-* *Organizations*
+* *Organisations*

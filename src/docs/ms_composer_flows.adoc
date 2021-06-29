@@ -12,10 +12,9 @@ You can create a new flow or clone an existing flow.
 
 To create a new flow:
 
-. From the Composer *Home* page, click *Create New Flow*.
-. Click the pencil icon next to *Untitled Flow* and give your flow a name.
-+
-You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name.
+. From the Composer *Home* page, click *Create New Flow*. +
+Your flow is named automatically.
+. Optionally, click the pencil icon next to *_flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 
 Now you are ready to create a flow trigger.
@@ -27,9 +26,7 @@ To clone an existing flow:
 . From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the Flow Details page.
 . Click *Clone*.
 . Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
-. Click the pencil icon next to *Copy of _original flow name_* and give your flow a name.
-+
-You can update this name later, if necessary, but if you choose instead to skip this step, the first time that you attempt to save, test, or activate the flow, you are first prompted to supply a flow name.
+. Optionally, click the pencil icon next to *Copy of _original flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 
 == Create a Flow Trigger
@@ -48,16 +45,19 @@ image:images/list-of-connections.png[List of connections, 500]
 You can choose an existing connection or create a new one:
 
 * Click an existing connection to select it.
-* Click *Add new Salesforce Connection* to create a new connection and select it.
-+
+* Click *Add new Salesforce Connection* to create a new connection and select it. +
 You can rename or delete connections from this dialog by clicking the gear icon.
 
 . After you choose a connection, the trigger step displays:
 +
 image:images/trigger-definition.png[Trigger step, 600]
 +
-* Rename *Untitled Step* with a trigger name of your choice.
+Your trigger is named automatically. All triggers are named by combining the event or operation with the system name. For example, "On new record in Salesforce".
+
+* Optionally, you can rename the trigger. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
+
 * Choose an event that starts the flow. Supply additional information as requested.
+
 * Click *Save*.
 
 [[change-a-connection]]
@@ -113,7 +113,31 @@ If you need to perform some logic before an action, select a flow control first:
 . Click *Save*.
 
 [[create-an-if-else-block]]
-=== Create an If/Else Block
+=== Add an If/Else Block
+
+You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
+
+Branches are logic-based steps that run vertically in a flow. You can add multiple steps inside each branch. Each branch is then executed in sequential order.
+
+When adding decision steps, the values in the *Field* list are populated based on values selected when you designate the previous steps of your flow. After the *Field* value is selected, all compatible value options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and the list is populated based on the values you selected when defining the trigger. In the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
+
+For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
+
+The following operators are supported when building conditions in an If/Else block:
+
+[[supported-operators]]
+[%header%autowidth.spread]
+|===
+|Function | Supported Data Type | Value Required? | Notes
+|Equals/Does not equal | All | Yes |The value in this field is case-sensitive for strings.
+|Contains/Does not contain | Array, String | Yes | None
+|Greater than/Less than |  Date, Number | Yes | In the *Date* field, the *Greater than* value is equal to a later date and the *Less than* value is equal to an earlier date.
+|Greater than or equal/Less than or equal | Date, Number | Yes | In the *Date* field, the *Greater than or equal* value is equal to a later date or the current date and the *Less than or equal* value is equal to an earlier date or the current date.
+|Is empty/Is not empty |Array, String, Object | No | None
+|Starts with/Ends with | String | Yes | A string value for this field is required.
+|Is true/Is false | Boolean | No | None
+| Is present/Is not present | All | No | If the value in this field is null or if there is no value selected, then the value in this field is set to *Not present* by default.
+|===
 
 To create an If/Else block:
 
@@ -121,12 +145,11 @@ To create an If/Else block:
 . Click *Add Action*.
 . Click *If/Else Block* to define the first branch.
 . Enter the requested criteria.
-. Click the plus sign to add an action. Every condition must have an action, also called a step.
-. Click *Add If* and repeat the previous steps for every If/Else branch you create.
-. Click *Add Else* and repeat the previous steps for the final branch--the action to take if all other branches fail.
+. Click *+* to add an action to that branch. Every branch must have an action, also called a _step_.
+. If you want to add another branch, click *Add If* and repeat the previous steps for every If/Else branch you create.
+. If you want to set criteria for how the flow executes if none of the criteria for the existing branches are met, click *Add Else* and repeat the previous steps for the final branch.
+. If you want to add additional conditions to your If/Else block, click *Add condition*.
 . After you add all the branches, click *Save*.
-
-For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
 
 [[create-and-test-a-for-each-loop]]
 === Create a For Each Loop

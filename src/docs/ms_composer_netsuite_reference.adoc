@@ -44,7 +44,7 @@ Create Record::
 
 A record is created.
 
-Update Record::
+Upsert Record::
 
 A record is created or updated.
 

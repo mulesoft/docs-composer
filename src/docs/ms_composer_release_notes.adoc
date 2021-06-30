@@ -8,7 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 === New Features
 
-The NetSuite connector now supports Custom Record Types for *Actions* and *Triggers*.
+The NetSuite connector now supports Custom Record Types for actions and triggers.
 
 === Known Issues
 

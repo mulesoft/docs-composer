@@ -55,7 +55,9 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 
 * In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
 
-* You must edit or create custom fields prior to creating the JIRA connection in Composer.
+* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
+
+* If custom fields fail to load, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
 * When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
 

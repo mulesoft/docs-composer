@@ -4,11 +4,15 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== June 30, 2021
+== July 1, 2021
 
 === New Features
 
-The NetSuite connector now supports Custom Record Types for actions and triggers.
+* You can now connect to a new system: JIRA.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* The NetSuite connector now supports Custom Record Types for actions and triggers.
 
 === Known Issues
 
@@ -30,6 +34,32 @@ The following issues were identified at the time of this release:
 
 A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
 //CCONN-735
+
+==== JIRA
+
+* The following standard fields are not supported at this time:
+
+** *Affects version*
+** *Fix version*
+** *Environment*
+** *Component*
+
+* Custom fields containing the following list components are failing to render:
+
+** *Text field (multi-line)*
+** *Labels*
+** *Checkboxes*
+** *Radio Buttons*
+** *Select list (multiple-choice)*
+** *Select list (cascading)*
+
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+
+* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
+
+* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
+
+* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
 
 ==== Salesforce
 

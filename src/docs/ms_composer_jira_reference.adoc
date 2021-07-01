@@ -21,9 +21,11 @@ The OAuth password that you use to log in to JIRA.
 include::_partials/trigger-definition.adoc[]
 
 New issue::
+
 Checks for a new issue created in JIRA.
 
 Updated issue::
+
 Checks for updated issues in JIRA.
 
 == Actions
@@ -31,6 +33,7 @@ Checks for updated issues in JIRA.
 include::_partials/action-definition.adoc[]
 
 Create Issue::
+
 Creates a new issue within the selected project. Provide a value for the following fields:
 
 * *Project*
@@ -41,6 +44,7 @@ Creates a new issue within the selected project. Provide a value for the followi
 * *Priority*
 
 Update/Edit issue::
+
 Updates specified field values. Provide a value for the following fields:
 
 * *Project*
@@ -49,20 +53,25 @@ Updates specified field values. Provide a value for the following fields:
 * *Type*
 
 Assign User to Issue::
+
 Assigns a user to a specified issue. Provide a value for *Issue ID or Key*.
 
 Add Watcher to Issue::
+
 Adds a watcher to an existing JIRA issue. Provide a value for *Issue ID or Key*.
 
 Get Issue::
+
 Returns details for a specific issue. Provide a value for *Issue ID or Key*.
 
 Add Comment::
+
 Creates and adds a comment to an existing issue. Provide a value for the following fields:
 * *Issue ID or Key*
 * *Comment Text*
 
 Get Account IDs for Users::
+
 Returns the account IDs for the users specified in the `key` or `username` parameters. You can specify multiple `key` or `username` parameters.
 
 == Custom Fields

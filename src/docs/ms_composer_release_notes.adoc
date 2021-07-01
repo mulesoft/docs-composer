@@ -43,10 +43,8 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Fix version*
 ** *Environment*
 ** *Component*
-** *Status* +
-The *In Progress* status type may appear twice in the *Status* field. If so, please test both *In Progress* values to find the working value.
 
-* Fields containing the following list components are failing to render:
+* Custom fields containing the following list components are failing to render:
 
 ** *Text field (multi-line)*
 ** *Labels*
@@ -55,9 +53,11 @@ The *In Progress* status type may appear twice in the *Status* field. If so, ple
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+
 * You must edit or create custom fields prior to creating the JIRA connection in Composer.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please ignore this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
 
 ==== Salesforce
 

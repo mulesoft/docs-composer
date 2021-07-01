@@ -37,7 +37,7 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 
 ==== JIRA
 
-* The following fields are not supported at this time:
+* The following standard fields are not supported at this time:
 
 ** *Affects version*
 ** *Fix version*

@@ -47,6 +47,10 @@
               "title": "Asana"
             },
             {
+              "file" : "ms_composer_box_reference.adoc",
+              "title": "Box"
+            },
+            {
               "file" : "ms_composer_googlesheets_reference.adoc",
               "title": "Google Sheets"
             },

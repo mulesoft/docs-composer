@@ -22,20 +22,21 @@ This trigger fires when a new spreadsheet is created in the Google Drive associa
 +
 Google Sheets are not saved at the moment of creation. They are saved the first time they are edited. Therefore, a new spreadsheet won't trigger a flow until after it is edited and saved. However, the save date is the time of creation, not the first edit. Thus, if you create a second spreadsheet and edit it before you edit the first one, the second spreadsheet triggers a flow; the first one is ignored.
 
-//New row in sheet::
-//
-//This trigger fires when a new row is added to the end of one sheet within a spreadsheet identified in the connection.
-//+
-//* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
-//* Each time the flow is triggered after the first, new rows added to the sheet are picked up every five minutes.
-//TODO: post-GA webhook allows for actual real-time pickup
-//
-//New or updated row in sheet::
-//
-//This trigger fires when a sheet is created or updated.
-//+
-//* The first time this flow is triggered, all rows from the spreadsheet are returned, except the header row.
-//* Each time the flow is triggered after the first, new rows added at the end of the sheet are picked up every five minutes.
+New row in sheet::
+
+Monitors one sheet within a spreadsheet and triggers when a new row is added at the end of the sheet. When a flow is initiated, this trigger returns up all existing rows in the sheet. Each subsequent time that the flow is triggered, new rows added to the sheet are returned.
++
+Once text is present in one cell or column, updating those cells or columns does not trigger as a new row. To trigger a new row when updating a cell or column, use the *Update row in sheet* trigger.
+
+Updated row in sheet::
+
+Monitors one sheet within a spreadsheet and triggers when a row is created or updated. When a flow is initiated, this trigger returns all existing rows in the sheet. Each subsequent time that the flow is trigged, new or updated rows in the sheet are returned.
+
+New spreadsheet::
+
+This trigger fires when a new spreadsheet is created in the Google Drive associated with the connection.
++
+Google Sheets are not saved at the moment of creation; instead, they are saved the first time they are edited. Adding a new spreadsheet won’t trigger a flow until after that spreadsheet is edited and saved. The date on which the spreadsheet is saved is the date of creation. If you create a second spreadsheet and edit it before you edit the initial spreadsheet, the second spreadsheet triggers a flow and the first spreadsheet is ignored.
 
 === Limits
 

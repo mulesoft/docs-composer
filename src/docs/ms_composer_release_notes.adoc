@@ -8,9 +8,11 @@ New versions are automatically available once they are released; you don't need 
 
 === New Features
 
-* You can now connect to a new system: Xero. +
+* You can now connect to a new system: Xero.
++
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
 
 * The following triggers are now available in the Google Sheets connector:
 

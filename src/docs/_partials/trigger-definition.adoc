@@ -1,3 +1,5 @@
 Each flow starts with a scheduler that specifies a time span for how frequently the flow starts or with a trigger that you define, such as "each time a new record is created." Triggers provide multiple options related to the data in your system.
 
+Triggers execute every ten minutes. 
+
 This system provides the following trigger options:

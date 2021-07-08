@@ -52,6 +52,13 @@ Delete Record::
 
 A record is deleted
 
+//Get Records::
+
+//Returns a list of records based on specific search criteria. The following fields are required:
+
+//* Object type
+//* Filter records
+
 == Record Types
 
 The following record types are supported.
@@ -65,6 +72,7 @@ The following record types are supported.
 ** Invoice
 ** Sales Order
 ** Support Case
+** Custom Record Types
 
 
 * Actions
@@ -80,10 +88,11 @@ The following record types are valid for all actions:
 ** Payment Item
 ** Sales Order
 ** Support Case
+** Custom Record Types
 
 == Custom Fields
 
-Using MuleSoft Composer, you can access custom field values for *Actions* and *Triggers* that you set in the NetSuite record.
+Using MuleSoft Composer, you can access custom field values for actions and triggers that you set in the NetSuite record.
 
 == List Objects
 

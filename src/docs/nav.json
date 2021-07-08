@@ -51,6 +51,10 @@
               "title": "Google Sheets"
             },
             {
+              "file" : "ms_composer_jira_reference.adoc",
+              "title": "JIRA"
+            },
+            {
               "file" : "ms_composer_ms_teams_reference.adoc",
               "title": "Microsoft Teams"
             },
@@ -81,6 +85,10 @@
             {
               "file" : "ms_composer_workday_reference.adoc",
               "title": "Workday"
+            },
+            {
+              "file" : "ms_composer_xero_reference.adoc",
+              "title": "Xero"
             }
           ]
         },

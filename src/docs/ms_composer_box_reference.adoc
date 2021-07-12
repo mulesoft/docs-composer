@@ -42,7 +42,7 @@ Provide a value for the following fields:
 * *File content*
 * *Folder ID* or *Source URL*
 +
-If a file exists in the folder, then enter a value in the *Folder ID* field to overwrite the existing file. To create a new file in the folder, enter a value in the *File Name* field.
+If a file exists in the folder, enter a value in the *Folder ID* field to overwrite the existing file. To create a new file in the folder, enter a value in the *File Name* field.
 
 Create folder::
 

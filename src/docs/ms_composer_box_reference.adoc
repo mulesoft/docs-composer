@@ -14,7 +14,7 @@ The OAuth username that you use to log in to Box.
 
 Password::
 
-The OAuth password that you use to log into Box.
+The OAuth password that you use to log in to Box.
 
 == Triggers
 

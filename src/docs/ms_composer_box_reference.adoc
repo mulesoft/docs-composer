@@ -1,9 +1,6 @@
-= <ConnectorName> Reference
+= Box Reference
 
-<Intro information>
-
-[NOTE]
-This is a test note.
+Box is a general purpose, SaaS enterprise content management system. Organizations use Box to securely manage and to collaborate on documents, images, videos and various other files.
 
 == Connections
 
@@ -13,34 +10,61 @@ include::_partials/connection-name.adoc[]
 
 Username::
 
-The username that you use to log in to <Connector>.
+The OAuth username that you use to log in to Box.
 
 Password::
 
-The password that you use to log in to <Connector>.
-
-<Field>::
-
-<Details>.
+The OAuth password that you use to log into Box.
 
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
 
-<Field>::
+On new file in folder::
 
-<Details>.
+Triggers when a new folder is added. Provide a value for *Folder ID*.
 
 == Actions
 
 include::_partials/action-definition.adoc[]
 
-<Field>::
+Add file to folder using URL::
 
-<Details>.
+Provide a value for the following fields:
 
-== Objects
+* *Folder ID*
+* *Source URL*
 
-<Field>::
+Add file to folder using file content::
 
-<Details>.
+Provide a value for the following fields:
+
+* *File content*
+* *Folder ID* or *Source URL*
++
+If a file exists in the folder, then enter a value in the *Folder ID* field to overwrite the existing file. To create a new file in the folder, enter a value in the *File Name* field.
+
+Create folder::
+
+Creates a folder in the Box structure. Provide a value for the following fields:
+
+* *Parent Folder ID*
+* *Folder name*
+
+Create file metadata::
+
+Provide a value for the following fields:
+
+* *File ID*
+* *Metadata template*
+
+NOTE: Multiple selection field types, such as checkboxes, do not appear in Composer.
+
+Update file metadata::
+
+Provide a value for the following fields:
+
+* *File ID*
+* *Metadata template*
+
+NOTE: Multiple selection field types, such as checkboxes, do not appear in Composer.

@@ -52,12 +52,12 @@ Delete Record::
 
 A record is deleted
 
-//Get Records::
+Get Records::
 
-//Returns a list of records based on specific search criteria. The following fields are required:
+Returns a list of records based on specific search criteria. The following fields are required:
 
-//* Object type
-//* Filter records
+* Object type
+* Filter records
 
 == Record Types
 

@@ -47,8 +47,16 @@
               "title": "Asana"
             },
             {
+              "file" : "ms_composer_box_reference.adoc",
+              "title": "Box"
+            },
+            {
               "file" : "ms_composer_googlesheets_reference.adoc",
               "title": "Google Sheets"
+            },
+            {
+              "file" : "ms_composer_jira_reference.adoc",
+              "title": "JIRA"
             },
             {
               "file" : "ms_composer_ms_teams_reference.adoc",
@@ -81,6 +89,10 @@
             {
               "file" : "ms_composer_workday_reference.adoc",
               "title": "Workday"
+            },
+            {
+              "file" : "ms_composer_xero_reference.adoc",
+              "title": "Xero"
             }
           ]
         },

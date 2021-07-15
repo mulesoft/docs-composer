@@ -30,14 +30,14 @@ include::_partials/action-definition.adoc[]
 
 Add file to folder using URL::
 
-Provide a value for the following fields:
+Adds a file to a folder in Box which is referenced by a publicly-shared URL. Provide a value for the following fields:
 
 * *Folder ID*
 * *Source URL*
 
 Add file to folder using file content::
 
-Provide a value for the following fields:
+Adds a file to a folder in Box. Provide a value for the following fields:
 
 * *File content*
 * *Folder ID* or *Source URL*
@@ -53,18 +53,20 @@ Creates a folder in the Box structure. Provide a value for the following fields:
 
 Create file metadata::
 
-Provide a value for the following fields:
+Creates file metadata by populating a metadata template on a file in Box. Provide a value for the following fields:
 
 * *File ID*
 * *Metadata template*
 
-NOTE: Multiple selection field types, such as checkboxes, do not appear in Composer.
++
+Multiple selection field types, such as checkboxes, do not appear in Composer.
 
 Update file metadata::
 
-Provide a value for the following fields:
+Updates file metadata by updating the existing metadata template on a file in Box. Provide a value for the following fields:
 
 * *File ID*
 * *Metadata template*
 
-NOTE: Multiple selection field types, such as checkboxes, do not appear in Composer.
++
+Multiple selection field types, such as checkboxes, do not appear in Composer.

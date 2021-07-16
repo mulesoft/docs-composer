@@ -1,4 +1,4 @@
-= Box Reference
+= Box Connector Reference
 
 Box is a general purpose, SaaS enterprise content management system. Organizations use Box to securely manage and to collaborate on documents, images, videos and various other files.
 

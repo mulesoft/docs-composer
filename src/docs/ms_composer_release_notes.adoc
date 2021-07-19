@@ -4,7 +4,7 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== July DATE, 2021
+== July 19, 2021
 
 === New Features
 
@@ -63,6 +63,10 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 
 Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
 //CAPP-2009
+
+==== servicenow
+
+The ServiceNow Connector - Mule 4 only supports standard tables.
 
 ==== Tableau
 

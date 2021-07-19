@@ -51,13 +51,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 
@@ -119,13 +119,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 
@@ -185,13 +185,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 
@@ -258,13 +258,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 
@@ -365,13 +365,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 

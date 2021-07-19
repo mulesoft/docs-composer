@@ -4,6 +4,76 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== July 19, 2021
+
+=== New Features
+
+You can now connect to a new system: ServiceNow.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+=== Known Issues
+
+The following issues were identified at the time of this release:
+
+* If you select the *Create Message* action in Slack, only public channels are returned.
+//CCONN-765
+
+* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
+//CAPO-47
+
+* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+//CAPP-1625
+
+* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+//CAPP-2051
+
+==== Google Sheets
+
+A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
+//CCONN-735
+
+==== JIRA
+
+* The following standard fields are not supported at this time:
+
+** *Affects version*
+** *Fix version*
+** *Environment*
+** *Component*
+
+* Custom fields containing the following list components are failing to render:
+
+** *Text field (multi-line)*
+** *Labels*
+** *Checkboxes*
+** *Radio Buttons*
+** *Select list (multiple-choice)*
+** *Select list (cascading)*
+
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
+
+* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
+
+* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
+
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
+
+==== Salesforce
+
+Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
+//CAPP-2009
+
+==== ServiceNow
+
+The ServiceNow Connector - Mule 4 only supports standard tables.
+
+==== Tableau
+
+Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
+//CCONN-714, copied to Tableau reference
+
+
 == July 15, 2021
 
 === New Features
@@ -49,13 +119,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 
@@ -115,13 +185,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 
@@ -188,13 +258,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 
@@ -295,13 +365,13 @@ A space in the name of your Google Sheet worksheet can cause an error during tes
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, please test both *In Progress* values to find the working value.
+* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
 
 * After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
 
 * If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Please disregard this error.
+* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
 
 ==== Salesforce
 

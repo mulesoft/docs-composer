@@ -71,6 +71,10 @@
               "title": "Salesforce"
             },
             {
+              "file" : "ms_composer_servicenow_reference.adoc",
+              "title": "ServiceNow"
+            },
+            {
               "file" : "ms_composer_slack_reference.adoc",
               "title": "Slack"
             },

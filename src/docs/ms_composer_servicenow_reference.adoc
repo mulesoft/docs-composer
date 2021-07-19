@@ -8,7 +8,7 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Only users with the ServiceNow soap_admin role can create connections. For more information, see the ServiceNow help: https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958
+Only users with the ServiceNow `soap_admin` role can create connections. For more information, see the ServiceNow help: https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958
 
 Instance URL::
 

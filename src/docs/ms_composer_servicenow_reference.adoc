@@ -37,7 +37,7 @@ include::_partials/action-definition.adoc[]
 
 Search record::
 
-Searches for an existing record busing a query string that specifies record type criteria. Provide a value for the following fields:
+Searches for an existing record using a query string that specifies record type criteria. Provide a value for the following fields:
 * *Table Name*
 * *Query*
 +

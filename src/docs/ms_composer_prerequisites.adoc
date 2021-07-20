@@ -11,6 +11,7 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 +
 IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses.
 * You must relax any IP restrictions for the connections that you create to data sources and data targets. Instructions are included in the setup section of this topic.
+* Composer does not currently support mobile platforms.
 
 * Browser prerequisites:
      ** Don't use incognito mode or private browsers to access Composer.

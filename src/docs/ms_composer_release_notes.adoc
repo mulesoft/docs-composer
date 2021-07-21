@@ -8,7 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 === New Features
 
-You can now use drag-and-drop to rearrange cards on the Composer canvas.
+You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
 
 === Known Issues
 

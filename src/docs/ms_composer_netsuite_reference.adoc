@@ -54,7 +54,7 @@ A record is deleted
 
 Get Records::
 
-Returns a list of records based on specific search criteria. The following fields are required:
+Returns a list of up to 500 records based on specific search criteria. The following fields are required:
 
 * Object type
 * Filter records

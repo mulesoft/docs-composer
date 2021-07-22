@@ -97,6 +97,10 @@
             {
               "file" : "ms_composer_xero_reference.adoc",
               "title": "Xero"
+            },
+            {
+              "file" : "ms_composer_zendesk_reference.adoc",
+              "title": "Zendesk"
             }
           ]
         },

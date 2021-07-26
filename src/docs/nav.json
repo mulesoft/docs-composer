@@ -10,6 +10,10 @@
           "title": "Release Notes"
         },
         {
+          "file" : "rn-TES-multi.adoc",
+          "title": "Release Notes - TEST"
+        },
+        {
           "file" : "ms_composer_prerequisites.adoc",
           "title": "Getting Started",
           "topics": [

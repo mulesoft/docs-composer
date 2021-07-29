@@ -4,9 +4,9 @@ Asana is a SaaS-based project management tool that enables teams of all sizes to
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 +
 
@@ -22,7 +22,7 @@ The OAuth password that you use to log into Asana.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 New or updated task::
 
@@ -30,7 +30,7 @@ Fires when a task is created or an existing task is updated.
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Create new task::
 

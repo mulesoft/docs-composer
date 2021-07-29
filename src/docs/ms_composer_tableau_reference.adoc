@@ -10,9 +10,9 @@ Some details of how to work with data in a flow are specific to the data target.
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Tableau server URI::
 
@@ -56,7 +56,7 @@ You must use a scheduler or other connector for a flow that includes Tableau. Ev
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Add Data to Data Source::
 

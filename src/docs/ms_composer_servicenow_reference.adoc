@@ -4,9 +4,9 @@ ServiceNow is an IT Service Management (ITSM) system that helps IT organizations
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Only users with the ServiceNow `soap_admin` role can create connections. For more information, see the ServiceNow help: https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958
 
@@ -25,7 +25,7 @@ The password that you use to log in to ServiceNow.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 New or updated record::
 
@@ -33,7 +33,7 @@ Checks for new or updated records in the ServiceNow `record_type` table. Provide
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Search record::
 

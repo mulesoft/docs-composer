@@ -4,9 +4,9 @@ Online payment processing platforms, like Stripe, are used by a growing number o
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 API key::
 
@@ -21,14 +21,14 @@ https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth a
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 New charge::
 Checks for a new charge to a payment source.
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Create charge::
 Create a new charge. When creating a new charge, note that:

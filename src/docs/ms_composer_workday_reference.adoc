@@ -5,9 +5,9 @@ Some details of how to work with data in a flow are specific to the data source 
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Tenant Name::
 

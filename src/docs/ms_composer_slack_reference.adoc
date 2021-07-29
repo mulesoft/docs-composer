@@ -5,9 +5,9 @@ Some details of how to work with data in a flow are specific to this system, and
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Workspace Name::
 
@@ -25,7 +25,7 @@ You can't trigger a flow using a connection to Slack.
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Send a direct message to a user::
 

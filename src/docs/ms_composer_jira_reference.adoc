@@ -4,9 +4,9 @@ JIRA is a powerful project management tool and ticketing system used to help use
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Username::
 
@@ -18,7 +18,7 @@ The OAuth password that you use to log in to JIRA.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 New issue::
 
@@ -30,7 +30,7 @@ Checks for updated issues in JIRA.
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Create Issue::
 

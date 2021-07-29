@@ -7,9 +7,9 @@ This is a test note.
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Username::
 
@@ -25,7 +25,7 @@ The password that you use to log in to <Connector>.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 <Field>::
 
@@ -33,7 +33,7 @@ include::_partials/trigger-definition.adoc[]
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 <Field>::
 

@@ -5,9 +5,9 @@ Some details of how to work with data in a flow are specific to the data source 
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Username and password::
 
@@ -70,7 +70,7 @@ Remember to change the connection from sandbox to production in every trigger an
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 New record::
 
@@ -89,7 +89,7 @@ Records are typically stored for approximately 15 days before being hard-deleted
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Create new record::
 

@@ -4,9 +4,9 @@ Box is a general purpose, SaaS enterprise content management system. Organizatio
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Username::
 
@@ -18,7 +18,7 @@ The OAuth password that you use to log in to Box.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 On new file in folder::
 
@@ -26,7 +26,7 @@ Triggers when a new folder is added. Provide a value for *Folder ID*.
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Add file to folder using URL::
 

@@ -6,15 +6,15 @@ Some details of how to work with data in a flow are specific to the data source 
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 +
 Composer launches an authentication dialog where you choose which Google Drive account you're connecting to Composer, and if you aren't already logged in, you enter a username and password.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 New spreadsheet::
 
@@ -46,7 +46,7 @@ Google Sheets are not saved at the moment of creation; instead, they are saved t
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Create row::
 

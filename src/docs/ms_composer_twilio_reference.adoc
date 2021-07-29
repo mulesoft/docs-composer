@@ -4,9 +4,9 @@ Twilio is a SaaS cloud communications platform that allows users to make and rec
 
 == Connections
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 
 Account SID::
 
@@ -18,7 +18,7 @@ The Auth Token that you use to log in to Twilio.
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Send Message::
 

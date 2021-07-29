@@ -4,13 +4,13 @@ Whether you are using NetSuite as a data source (take a new NetSuite contact and
 
 == Connection Details
 
-include::_partials/connection-definition.adoc[]
+include::_partial/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include::_partial/connection-name.adoc[]
 +
 You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWSU).
 
-include::_partials/netsuite-connection-details.adoc[]
+include::_partial/netsuite-connection-details.adoc[]
 
 === Establish a NetSuite Connection
 
@@ -22,7 +22,7 @@ To use MuleSoft Composer to establish a NetSuite connection, you must have:
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+include::_partial/trigger-definition.adoc[]
 
 On Updated Records::
 
@@ -34,7 +34,7 @@ A new record is created in NetSuite.
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+include::_partial/action-definition.adoc[]
 
 Update Record::
 

@@ -26,50 +26,15 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/jira-ki.adoc[]
 
-==== JIRA
+include::_partials/salesforce-ki.adoc[]
 
-* The following standard fields are not supported at this time:
+include::_partials/servicenow-ki.adoc[]
 
-** *Affects version*
-** *Fix version*
-** *Environment*
-** *Component*
-
-* Custom fields containing the following list components are failing to render:
-
-** *Text field (multi-line)*
-** *Labels*
-** *Checkboxes*
-** *Radio Buttons*
-** *Select list (multiple-choice)*
-** *Select list (cascading)*
-
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
-
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
-
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
-
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
-
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== ServiceNow
-
-The ServiceNow Connector - Mule 4 only supports standard tables.
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 
 == July 15, 2021
@@ -94,47 +59,13 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/jira-ki.adoc[]
 
-==== JIRA
+include::_partials/salesforce-ki.adoc[]
 
-* The following standard fields are not supported at this time:
-
-** *Affects version*
-** *Fix version*
-** *Environment*
-** *Component*
-
-* Custom fields containing the following list components are failing to render:
-
-** *Text field (multi-line)*
-** *Labels*
-** *Checkboxes*
-** *Radio Buttons*
-** *Select list (multiple-choice)*
-** *Select list (cascading)*
-
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
-
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
-
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
-
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
-
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
-
+include::_partials/tableau-ki.adoc[]
 
 == July 19, 2021
 
@@ -160,51 +91,15 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/jira-ki.adoc[]
 
-==== JIRA
+include::_partials/salesforce-ki.adoc[]
 
-* The following standard fields are not supported at this time:
+include::_partials/servicenow-ki.adoc[]
 
-** *Affects version*
-** *Fix version*
-** *Environment*
-** *Component*
-
-* Custom fields containing the following list components are failing to render:
-
-** *Text field (multi-line)*
-** *Labels*
-** *Checkboxes*
-** *Radio Buttons*
-** *Select list (multiple-choice)*
-** *Select list (cascading)*
-
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
-
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
-
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
-
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
-
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== ServiceNow
-
-The ServiceNow Connector - Mule 4 only supports standard tables.
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
-
+include::_partials/tableau-ki.adoc[]
 
 == July 15, 2021
 
@@ -228,112 +123,13 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/jira-ki.adoc[]
 
-==== JIRA
+include::_partials/salesforce-ki.adoc[]
 
-* The following standard fields are not supported at this time:
-
-** *Affects version*
-** *Fix version*
-** *Environment*
-** *Component*
-
-* Custom fields containing the following list components are failing to render:
-
-** *Text field (multi-line)*
-** *Labels*
-** *Checkboxes*
-** *Radio Buttons*
-** *Select list (multiple-choice)*
-** *Select list (cascading)*
-
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
-
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
-
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
-
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
-
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
-
-
-== July 14, 2021
-
-=== New Features
-
-You can now connect to a new system: Box.
-+
-See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-=== Known Issues
-
-The following issues were identified at the time of this release:
-
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
-
-==== Google Sheets
-
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
-
-==== JIRA
-
-* The following standard fields are not supported at this time:
-
-** *Affects version*
-** *Fix version*
-** *Environment*
-** *Component*
-
-* Custom fields containing the following list components are failing to render:
-
-** *Text field (multi-line)*
-** *Labels*
-** *Checkboxes*
-** *Radio Buttons*
-** *Select list (multiple-choice)*
-** *Select list (cascading)*
-
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
-
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
-
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
-
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
-
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == July 8, 2021
 
@@ -367,46 +163,13 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/jira-ki.adoc[]
 
-==== JIRA
+include::_partials/salesforce-ki.adoc[]
 
-* The following standard fields are not supported at this time:
-
-** *Affects version*
-** *Fix version*
-** *Environment*
-** *Component*
-
-* Custom fields containing the following list components are failing to render:
-
-** *Text field (multi-line)*
-** *Labels*
-** *Checkboxes*
-** *Radio Buttons*
-** *Select list (multiple-choice)*
-** *Select list (cascading)*
-
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
-
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
-
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
-
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
-
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == June 4, 2021
 
@@ -432,21 +195,11 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/salesforce-ki.adoc[]
 
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
-
+include::_partials/tableau-ki.adoc[]
 
 == July 1, 2021
 
@@ -474,46 +227,13 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/jira-ki.adoc[]
 
-==== JIRA
+include::_partials/salesforce-ki.adoc[]
 
-* The following standard fields are not supported at this time:
-
-** *Affects version*
-** *Fix version*
-** *Environment*
-** *Component*
-
-* Custom fields containing the following list components are failing to render:
-
-** *Text field (multi-line)*
-** *Labels*
-** *Checkboxes*
-** *Radio Buttons*
-** *Select list (multiple-choice)*
-** *Select list (cascading)*
-
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
-
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
-
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
-
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
-
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == June 4, 2021
 
@@ -539,20 +259,11 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/salesforce-ki.adoc[]
 
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == June 2, 2021
 
@@ -578,20 +289,11 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/salesforce-ki.adoc[]
 
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == May 19, 2021
 
@@ -623,20 +325,11 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/salesforce-ki.adoc[]
 
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == May 6, 2021
 
@@ -666,20 +359,11 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/salesforce-ki.adoc[]
 
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == April 29, 2021
 
@@ -705,20 +389,11 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/salesforce-ki.adoc[]
 
-==== Salesforce
-
-Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == April 13, 2021
 
@@ -752,23 +427,14 @@ The following issues were identified at the time of this release:
 * If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
-
-==== Salesforce
+include::_partials/salesforce-ki.adoc[]
 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126
 
-* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == March 25, 2021
 
@@ -796,23 +462,14 @@ To change a connection to a new connection of the same system type:
 . In the trigger or action where you want to change to the new connection, click the change icon (three dots).
 . Click *Change Connection*. The new connection is listed.
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
-
-==== Salesforce
+include::_partials/salesforce-ki.adoc[]
 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126
 
-* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == March 15, 2021
 
@@ -850,20 +507,11 @@ To change to a new connection on a trigger that has already been created, use on
 . Delete the action.
 . Open the trigger and use *Change Connection* to change to the new connection.
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
-
-==== Salesforce
+include::_partials/salesforce-ki.adoc[]
 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126
 
-* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]

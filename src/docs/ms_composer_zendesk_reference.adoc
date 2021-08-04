@@ -1,9 +1,6 @@
-= <ConnectorName> Connector Reference
+= Zendesk Connector Reference
 
-<Intro information>
-
-[NOTE]
-This is a test note.
+Zendesk is a help desk management solution providing tools for customer service.
 
 == Connections
 
@@ -13,34 +10,62 @@ include::_partials/connection-name.adoc[]
 
 Username::
 
-The username that you use to log in to <Connector>.
+The OAuth username that you use to log in to Zendesk.
 
 Password::
 
-The password that you use to log in to <Connector>.
-
-<Field>::
-
-<Details>.
+The OAuth password that you use to log in to Zendesk.
 
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
 
-<Field>::
+New or updated ticket::
 
-<Details>.
+Checks for a new or updated ticket.
+
+New or updated organization::
+
+Fires when a new organization is created or an existing organization is updated in Zendesk.
+
+New or updated user::
+
+Fires when a new user is created or an existing user is updated in Zendesk.
 
 == Actions
 
 include::_partials/action-definition.adoc[]
 
-<Field>::
+Create a ticket::
 
-<Details>.
+Creates a new ticket. Provide values for the following fields:
 
-== Objects
+* *Subject*
+* *Comment*
 
-<Field>::
+Update a ticket::
 
-<Details>.
+Updates an existing ticket. Provide values for the following fields:
+
+* *Ticket ID*
+* *Comment*
+
+Search tickets::
+
+Searches for a ticket based on specified criteria.
+
+Create or update an organization::
+
+Creates a new organization or updates an existing organization.
+
+Create or update a user::
+
+Creates a new user or updates an existing user. Provide a value for *ID type*.
+
+Search organizations::
+
+Searches for organizations based on specified criteria and returns a list of organizations matching those criteria.
+
+Search users::
+
+Searches for users based on specified criteria and returns a list of organizations matching those criteria.

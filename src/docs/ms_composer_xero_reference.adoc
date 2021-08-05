@@ -53,6 +53,7 @@ Creates a new contact record nor updates an existing contact record. Provide a v
 * *Contact type*
 * *Organisation*
 * If you add additional contacts, you must also provide a value for *Email address*.
+* *Contact persons*
 
 Search contact::
 

@@ -66,15 +66,15 @@ Returns a single contact record based on the ID value. Provide a value for the f
 * *Contact ID*
 * *Organisation*
 
-//Create invoice::
+Create or update invoice::
 
-//Creates an invoice record. Provide a value for the following fields:
+Creates an invoice record. Provide a value for the following fields:
 
-//* *Contact type*
-//* *Contact name*
-//* *Branding theme*
-//* *Items*
-//* *Organisation*
+* *Organisation*
+* *Invoice type*
+* *Contact name*
+* *Items*
+
 
 Update invoice headers::
 
@@ -96,4 +96,7 @@ Creates or updates a field in the item record. Provide a value for the following
 
 == Objects
 
-The the *Create Invoice* action and the *Contact Persons* field supports a list of objects.
+The following object types are available:
+
+* Action: *Create or update invoice*
+* Field: *Contact persons*

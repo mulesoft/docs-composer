@@ -68,7 +68,7 @@ Returns a single contact record based on the ID value. Provide a value for the f
 
 Create or update invoice::
 
-Creates an invoice record. Provide a value for the following fields:
+Creates or updates an invoice record. Provide a value for the following fields:
 
 * *Organisation*
 * *Invoice type*

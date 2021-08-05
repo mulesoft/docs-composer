@@ -93,3 +93,7 @@ Creates or updates a field in the item record. Provide a value for the following
 
 //Create Item::
 //Creates an item record. Provide a value for Item Code. Additionally, if a value is specified in the Inventory Asset Account Code field, then a value is required in the Purchase Account Code field.
+
+== Objects
+
+The the *Create Invoice* action and the *Contact Persons* field supports a list of objects.

@@ -8,7 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 === New Features
 
-The Xero connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.  
+The Xero connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
 
 === Known Issues
 
@@ -20,10 +20,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -52,10 +52,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -85,10 +85,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -117,10 +117,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -149,10 +149,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -189,10 +189,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -221,10 +221,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -253,10 +253,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -285,10 +285,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -315,10 +315,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -351,10 +351,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -385,10 +385,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -415,10 +415,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -453,10 +453,10 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
@@ -478,10 +478,10 @@ You can delete and replace a trigger step in any unactivated flow.
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 * You can't access the *Add Connection* button from a trigger or action once it has been created.
@@ -511,10 +511,10 @@ MuleSoft Composer for Salesforce is generally available.
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 * You can't access the *Add Connection* button from a trigger or action once it has been created.

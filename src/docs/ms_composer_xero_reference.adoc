@@ -83,6 +83,7 @@ Updates specific fields in an invoice record. Provide a value for the following 
 * *Invoice Reference*
 
 Create Item::
+
 Creates an item record. Provide a value for the following fields:
 
 * *Organisation*
@@ -98,7 +99,7 @@ Creates or updates a field in the item record. Provide a value for the following
 
 == Objects
 
-The following object types are available:
+The following objects are available:
 
 * Action: *Create or update invoice*
 * Field: *Contact persons*

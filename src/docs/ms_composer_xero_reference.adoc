@@ -54,7 +54,7 @@ Creates a new contact record nor updates an existing contact record. Provide a v
 * *Contact name*
 * If you add additional contacts, you must also provide a value for *Email address*.
 
-Search contact::
+Search contacts::
 
 Returns a list of contact records based on values entered. Provide a value for *Organisation*.
 
@@ -82,13 +82,13 @@ Updates specific fields in an invoice record. Provide a value for the following 
 * *Invoice Reference Type*
 * *Invoice Reference*
 
-Create Item::
+//Create Item::
 
-Creates an item record. Provide a value for the following fields:
+//Creates an item record. Provide a value for the following fields:
 
-* *Organisation*
-* *Item Code*
-* If a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field.
+//* *Organisation*
+//* *Item Code*
+//* If a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field.
 
 Create or update item::
 

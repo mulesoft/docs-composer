@@ -22,25 +22,25 @@ The OAuth password that you use to log in to Xero.
 
 include::_partials/trigger-definition.adoc[]
 
-New/updated Contact::
+New or updated Contact::
 
 Checks for a new or updated contact record. Provide a value for the following fields:
 
-* *Contact Type*
 * *Organisation*
+* *Contact Type*
 
-New/update item::
+New or updated item::
 
 Checks for a new or updated item record. Provide a value for the following fields:
 
+* *Organisation*
 * *Is purchased*
 * *Is sold*
 * *Is tracked as inventory*
-* *Organisation*
 
-New payment::
+New or updated payment::
 
-Checks for a submitted payment. Provide a value for the *Organisation* field.
+Checks for a new or updated payment. Provide a value for the *Organisation* field.
 
 == Actions
 
@@ -50,10 +50,9 @@ Create or update contact::
 
 Creates a new contact record nor updates an existing contact record. Provide a value for the following fields:
 
-* *Contact type*
 * *Organisation*
+* *Contact name*
 * If you add additional contacts, you must also provide a value for *Email address*.
-* *Contact persons*
 
 Search contact::
 
@@ -63,8 +62,8 @@ Get contact by ID::
 
 Returns a single contact record based on the ID value. Provide a value for the following fields:
 
-* *Contact ID*
 * *Organisation*
+* *Contact ID*
 
 Create or update invoice::
 
@@ -79,19 +78,23 @@ Update invoice headers::
 
 Updates specific fields in an invoice record. Provide a value for the following fields:
 
+* *Organisation*
 * *Invoice Reference Type*
 * *Invoice Reference*
+
+Create Item::
+Creates an item record. Provide a value for the following fields:
+
 * *Organisation*
+* *Item Code*
+* If a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field.
 
 Create or update item::
 
 Creates or updates a field in the item record. Provide a value for the following fields:
 
-* *Item Code*
 * *Organisation*
-
-//Create Item::
-//Creates an item record. Provide a value for Item Code. Additionally, if a value is specified in the Inventory Asset Account Code field, then a value is required in the Purchase Account Code field.
+* *Item Code*
 
 == Objects
 

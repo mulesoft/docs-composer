@@ -99,7 +99,6 @@ Creates or updates a field in the item record. Provide a value for the following
 
 == Objects
 
-The following objects are available:
+The Action: *Create or update invoice* object is available.
 
-* Action: *Create or update invoice*
-* Field: *Contact persons*
+//* Field: *Contact persons*

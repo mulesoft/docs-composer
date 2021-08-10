@@ -4,12 +4,13 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== August 10, 2021
+== August 11, 2021
 
 === New Features
 
-Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
- 
+* Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
+
+* When testing step in a flow in which a list is returned, the maximum number of items in that list is five.
 
 === Known Issues
 

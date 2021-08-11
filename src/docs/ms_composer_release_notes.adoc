@@ -42,7 +42,8 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-The Xero connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
+The Xero connector now supports the *Create or update invoice* action.
+//Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
 
 === Known Issues
 

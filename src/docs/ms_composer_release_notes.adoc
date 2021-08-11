@@ -10,13 +10,13 @@ New versions are automatically available once they are released; you don't need 
 
 * Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
 
-* The following JIRA triggers and actions were renamed:
+* The following JIRA connector triggers and actions were renamed:
 ** Triggers
-*** *Updated issue* to *Updated issue with Custom Fields*
+*** *Update issue* to *Update issue with Custom Fields*
 *** *New issue* to *New issue with Custom Fields*
 ** Action: *Update Issue* to *Update Issue with Custom Fields*
 
-* The following JIRA triggers and actions are now available:
+* The JIRA connector now supports the following triggers and actions:
 ** Triggers
 *** *Updated issue with Standard Fields only*
 *** *New issue with Standard Fields only*

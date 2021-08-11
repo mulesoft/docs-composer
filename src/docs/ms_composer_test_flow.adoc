@@ -7,7 +7,7 @@ Testing processes and tests a single record. You must activate your flow to proc
 When testing your flow, note the following:
 
 * A trigger step is required.
-* Testing automatically ends after five minutes if not halted by an error or manually terminated.
+* Testing automatically ends after ten minutes if not halted by an error or manually terminated.
 * The entire flow is executed and tested.
 
 When testing your flows:

@@ -20,13 +20,22 @@ The OAuth password that you use to log in to JIRA.
 
 include::_partials/trigger-definition.adoc[]
 
-New issue::
+New issue with Custom Fields::
 
-Checks for a new issue created in JIRA.
+Checks for a new issue with custom fields created in JIRA.
 
-Updated issue::
+New issue with Standard Fields only::
 
-Checks for updated issues in JIRA.
+Checks for a new issue with standard fields created in JIRA.
+
+Updated issue with Custom Fields::
+
+Checks for updated issues with custom fields in JIRA.
+
+Updated issue with Standard Fields only::
+
+Checks for updated issues with standard fields in JIRA.
+
 
 == Actions
 
@@ -51,6 +60,13 @@ Updates specified field values. Provide a value for the following fields:
 * *Issue ID or Key*
 * *Notify Users*
 * *Type*
+
+Update issue with Standard Fields only::
+
+Updates specified standard field values. Provide a value for the following fields:
+
+* *Issue ID or Key*
+* *Notify Users*
 
 Assign User to Issue::
 

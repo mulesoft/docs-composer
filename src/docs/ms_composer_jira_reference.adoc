@@ -1,6 +1,6 @@
-Custom= JIRA Connector Reference
+= Jira Connector Reference
 
-JIRA is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
+Jira is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
 
 == Connections
 
@@ -10,11 +10,11 @@ include::_partials/connection-name.adoc[]
 
 Username::
 
-The OAuth username that you use to log in to JIRA.
+The OAuth username that you use to log in to Jira.
 
 Password::
 
-The OAuth password that you use to log in to JIRA.
+The OAuth password that you use to log in to Jira.
 
 == Triggers
 
@@ -22,19 +22,19 @@ include::_partials/trigger-definition.adoc[]
 
 New issue with Custom Fields::
 
-Checks for a new issue with Custom fields created in JIRA.
+Checks for a new issue with Custom fields created in Jira.
 
 New issue with Standard Fields only::
 
-Checks for a new issue with Standard fields created in JIRA.
+Checks for a new issue with Standard fields created in Jira.
 
 Update issue with Custom Fields::
 
-Checks for updated issues with Custom fields in JIRA.
+Checks for updated issues with Custom fields in Jira.
 
 Update issue with Standard Fields only::
 
-Checks for updated issues with Standard fields in JIRA.
+Checks for updated issues with Standard fields in Jira.
 
 
 == Actions
@@ -72,7 +72,7 @@ Assigns a user to a specified issue. Provide a value for *Issue ID or Key*.
 
 Add Watcher to Issue::
 
-Adds a watcher to an existing JIRA issue. Provide a value for *Issue ID or Key*.
+Adds a watcher to an existing Jira issue. Provide a value for *Issue ID or Key*.
 
 Get Issue::
 
@@ -90,4 +90,4 @@ Returns the account IDs for the users specified in the `key` or `username` param
 
 == Custom Fields
 
-Using MuleSoft Composer, you can access Standard  custom field values in JIRA for actions and triggers that you set in the JIRA issue.
+Using MuleSoft Composer, you can access Standard  custom field values in Jira for actions and triggers that you set in the Jira issue.

@@ -1,4 +1,4 @@
-Field'sRelease Notes for MuleSoft Composer for Salesforce
+= Release Notes for MuleSoft Composer for Salesforce
 
 Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -10,13 +10,13 @@ New versions are automatically available once they are released; you don't need 
 
 * Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
 
-* The following JIRA connector triggers and actions were renamed:
+* The following Jira connector triggers and actions were renamed:
 ** Triggers
 *** *Update issue* to *Update issue with Custom Fields*
 *** *New issue* to *New issue with Custom Fields*
 ** Action: *Update/edit issue* to *Update issue with Custom Fields*
 
-* The JIRA connector now supports the following triggers and actions:
+* The Jira connector now supports the following triggers and actions:
 ** Triggers
 *** *Updated issue with Standard Fields only*
 *** *New issue with Standard Fields only*
@@ -284,7 +284,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-* You can now connect to a new system: JIRA.
+* You can now connect to a new system: Jira.
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 

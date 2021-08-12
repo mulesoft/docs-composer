@@ -1,4 +1,4 @@
-Release Notes for MuleSoft Composer for Salesforce
+Field'sRelease Notes for MuleSoft Composer for Salesforce
 
 Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -10,7 +10,19 @@ New versions are automatically available once they are released; you don't need 
 
 * Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
 
-* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
+* The following JIRA connector triggers and actions were renamed:
+** Triggers
+*** *Update issue* to *Update issue with Custom Fields*
+*** *New issue* to *New issue with Custom Fields*
+** Action: *Update/edit issue* to *Update issue with Custom Fields*
+
+* The JIRA connector now supports the following triggers and actions:
+** Triggers
+*** *Updated issue with Standard Fields only*
+*** *New issue with Standard Fields only*
+** Action: *Update issue with Standard Fields only*
+
+//* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
 
 * The Xero connector now supports the *Contact persons* field in the *Create or update contact* action.
 

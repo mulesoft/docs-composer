@@ -1,4 +1,4 @@
-Custom= JIRA Connector Reference
+= Custom JIRA Connector Reference
 
 JIRA is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
 

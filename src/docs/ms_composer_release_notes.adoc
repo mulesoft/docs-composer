@@ -12,6 +12,8 @@ New versions are automatically available once they are released; you don't need 
 
 * When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
 
+* The Xero connector now supports the *Contact persons* field in the *Create or update contact* action.
+
 === Known Issues
 
 The following issues were identified at the time of this release:

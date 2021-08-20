@@ -21,4 +21,4 @@
 ** Custom Record Types
 ** Custom Transaction Fields
 
-. Reestablish the NetSuite connection. If the error continues to appear, contact support.
+. Reestablish the NetSuite connection. If the error continues to appear, contact Support.

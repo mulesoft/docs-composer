@@ -3,7 +3,7 @@
 * Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
 //CAPP-2009
 
-* If you are accessing Custom Objects in NetSuite and encounter the `INSUFFICIENT PERMISSIONS` error, complete the following steps: +
+* If an error occurs in Composer when testing your flow, in your Chrome browser, click *Developer Tools* and then click *Network*. In the *Network* tab in Chrome, test your flow again. If you encounter the `INSUFFICIENT PERMISSIONS` error, complete the following steps: +
 
 . In NetSuite, access your role configuration.
 . Click *Permissions* and then click *Setup*.
@@ -22,4 +22,3 @@
 ** Custom Transaction Fields
 
 . Reestablish the NetSuite connection. If the error continues to appear, contact support.
- 

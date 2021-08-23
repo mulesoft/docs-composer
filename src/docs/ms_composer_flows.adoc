@@ -103,23 +103,10 @@ For example, if your trigger is "new records created in Salesforce," and you wan
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
 . Click *Save*.
 
-When creating actions, null values in fields are handled by:
+When there are null values in custom expressions and are:
 
-Null values in custom expressions:
-
-
-Fields without attributes:
-Ignore any field the value for which evaluates to ‘null’, i.e. do not send that field to the connector (exclude from mule XML) (write DW expression such that fields to exclude are omitted from output).
-User experience:
-For required fields, this would translate into an error message that surfaces to the user.
-For optional fields, the field would just get ignored and the user would not be aware of that. This would need to be included in the documentation.
-
-Fields with attributes:
-Ignore any attribute the value for which evaluates to ‘null’, i.e. do not send that field to the connector (exclude from mule XML) (write DW expression such that attrubutes to exclude are omitted from output).
-User experience:
-The attribute would just get ignored and the user would not be aware of that. This would need to be included in the documentation.
-
-
+* Fields without attributes, the null value is ignored. If the value in a required field, an error message occurs. If the value is in an optional field, the value is ignored and not sent to the connector.
+ * Fields with attributes, the value is ignored and not sent to the connector.
 
 == Create a Flow Control
 

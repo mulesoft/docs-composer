@@ -76,6 +76,9 @@ image::images/change-connection.png[Change the connection control, 400]
 
 . Choose a new connection and click *Save*.
 
+== Repair a Connection
+
+
 == Schedule a Flow
 
 If you don't choose a connection, you can schedule a flow to start at regular intervals.

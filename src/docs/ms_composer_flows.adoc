@@ -78,6 +78,7 @@ image::images/change-connection.png[Change the connection control, 400]
 
 == Repair a Connection
 
+When using a connector with OAuth validation, That’s why we have the ‘refresh’ flow in place, when a OAuth dance is performed a refresh token is granted in order to be able to get new (and fresh) access tokens.
 
 == Schedule a Flow
 

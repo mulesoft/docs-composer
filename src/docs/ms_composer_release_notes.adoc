@@ -30,6 +30,8 @@ include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
@@ -78,6 +80,8 @@ include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
@@ -111,6 +115,8 @@ include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
@@ -142,6 +148,8 @@ The following issues were identified at the time of this release:
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -175,6 +183,8 @@ The following issues were identified at the time of this release:
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -208,6 +218,8 @@ include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
@@ -239,6 +251,8 @@ The following issues were identified at the time of this release:
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -280,6 +294,8 @@ include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
@@ -309,6 +325,8 @@ The following issues were identified at the time of this release:
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -344,6 +362,8 @@ include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
@@ -374,6 +394,8 @@ The following issues were identified at the time of this release:
 
 include::_partials/google-sheets-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
@@ -403,6 +425,8 @@ The following issues were identified at the time of this release:
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -440,6 +464,8 @@ The following issues were identified at the time of this release:
 
 include::_partials/google-sheets-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
@@ -474,6 +500,8 @@ The following issues were identified at the time of this release:
 
 include::_partials/google-sheets-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
@@ -503,6 +531,8 @@ The following issues were identified at the time of this release:
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -541,6 +571,8 @@ The following issues were identified at the time of this release:
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 

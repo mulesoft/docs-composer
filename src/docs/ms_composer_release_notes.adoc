@@ -354,7 +354,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 The following issues were identified at the time of this release:
 
-inlcude::_partials/platform-ki.adoc[]
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 

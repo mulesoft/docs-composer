@@ -224,7 +224,7 @@ include::_partials/tableau-ki.adoc[]
 
 === Known Issues
 
-inlcude::_partials/platform-ki.adoc[]
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 

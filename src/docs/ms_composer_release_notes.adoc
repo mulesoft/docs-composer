@@ -8,15 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 === New Features
 
-The NetSuite connector now supports NetSuite Financial objects.
-To support this feature, the following are now available:
-
-* Objects
-** Opportunity
-** Estimate
-* Attributes
-** Connectors Model Service - ListMappingValue
-** Adapter Service - ArrayFieldContent
+The NetSuite connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
 
 === Known Issues
 
@@ -56,17 +48,7 @@ When testing a step in a flow in which a list is returned, the maximum number of
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -77,6 +59,8 @@ include::_partials/netsuite-ki.adoc[]
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -106,17 +90,7 @@ include::_partials/tableau-ki.adoc[]
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -127,6 +101,8 @@ include::_partials/netsuite-ki.adoc[]
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -141,17 +117,7 @@ The Xero connector now supports the *Create or update invoice* action.
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -162,6 +128,8 @@ include::_partials/netsuite-ki.adoc[]
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -175,17 +143,7 @@ You can now use drag-and-drop or a modal to rearrange cards on the Composer canv
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -196,6 +154,8 @@ include::_partials/netsuite-ki.adoc[]
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -210,17 +170,7 @@ The *Get records* action is now available for the NetSuite connector. This actio
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -229,6 +179,8 @@ include::_partials/jira-ki.adoc[]
 include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -244,17 +196,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -266,6 +208,8 @@ include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
 
+include::_partials/slack-ki.adoc[]
+
 include::_partials/tableau-ki.adoc[]
 
 == July 15, 2021
@@ -276,19 +220,7 @@ The *Get records* action is now available for the NetSuite connector. This actio
 
 === Known Issues
 
-The following issues were identified at the time of this release:
-
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -297,6 +229,8 @@ include::_partials/jira-ki.adoc[]
 include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -316,21 +250,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 ** Updated row in sheet
 ** New spreadsheet
 
-=== Known Issues
-
-The following issues were identified at the time of this release:
-
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -339,6 +259,8 @@ include::_partials/jira-ki.adoc[]
 include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -352,25 +274,15 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 === Known Issues
 
-The following issues were identified at the time of this release:
-
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -388,17 +300,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -407,6 +309,8 @@ include::_partials/jira-ki.adoc[]
 include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -422,23 +326,15 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
@@ -454,21 +350,13 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 The following issues were identified at the time of this release:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+inlcude::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/netsuite-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 

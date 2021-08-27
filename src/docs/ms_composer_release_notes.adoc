@@ -53,7 +53,7 @@ include::_partials/tableau-ki.adoc[]
 
 The following issues were identified at the time of this release:
 
-inlcude::_partials/platform-ki.adoc[]
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 

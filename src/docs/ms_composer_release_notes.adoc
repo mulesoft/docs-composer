@@ -10,12 +10,9 @@ New versions are automatically available once they are released; you don't need 
 
 * The NetSuite connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
 
-* In the Slack connector, selecting the channel name no longer fails during the *Create message* action when you connect to a workspace that contains hundreds of channels.
-//COCN-539
-
 === Fixed Issues
 
-* The *Get channels* action no longer fails when connecting to the salesforce-internal workspace.
+* In the Slack connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action.
 //COCN-539
 
 === Known Issues
@@ -50,7 +47,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
+* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
 
 === Known Issues
 
@@ -118,8 +115,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-The Xero connector now supports the *Create or update invoice* action.
-//Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
+* The Xero connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
 
 === Known Issues
 
@@ -145,7 +141,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+* You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
 
 === Known Issues
 
@@ -172,7 +168,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-The *Get records* action is now available for the NetSuite connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+* The *Get records* action is now available for the NetSuite connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
 === Known Issues
 
@@ -196,7 +192,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-You can now connect to a new system: ServiceNow. +
+* You can now connect to a new system: ServiceNow. +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
@@ -224,7 +220,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-The *Get records* action is now available for the NetSuite connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+* The *Get records* action is now available for the NetSuite connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
 === Known Issues
 
@@ -276,8 +272,8 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-You can now connect to a new system: Microsoft Teams.
-
+* You can now connect to a new system: Microsoft Teams.
++
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 === Known Issues

@@ -12,7 +12,7 @@ New versions are automatically available once they are released; you don't need 
 
 === Fixed Issues
 
-* In the Slack connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action.
+* In the Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action.
 //COCN-539
 
 === Known Issues

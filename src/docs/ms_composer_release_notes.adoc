@@ -168,7 +168,7 @@ include::_partials/tableau-ki.adoc[]
 
 === New Features
 
-* The *Get records* action is now available for the NetSuite connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+* The *Get records* action is now available for the NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
 === Known Issues
 

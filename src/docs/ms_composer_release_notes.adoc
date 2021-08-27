@@ -254,7 +254,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 ** Updated row in sheet
 ** New spreadsheet
 
-inlcude::_partials/platform-ki.adoc[]
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 

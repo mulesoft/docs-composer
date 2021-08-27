@@ -1,6 +1,6 @@
 ==== Composer Platform
 
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
+* If you see the *Already editing somewhere?* dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
 * If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.

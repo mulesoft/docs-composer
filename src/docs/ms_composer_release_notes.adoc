@@ -11,7 +11,7 @@ New versions are automatically available once they are released; you don't need 
 The NetSuite connector now supports NetSuite Financial objects.
 To support this feature, the following are now available:
 
-* List Objects
+* Objects
 ** Opportunity
 ** Estimate
 * Attributes

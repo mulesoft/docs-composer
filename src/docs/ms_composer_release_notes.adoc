@@ -8,7 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The NetSuite connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
+* NetSuite Connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 

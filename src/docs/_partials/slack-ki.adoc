@@ -1,4 +1,11 @@
-==== Slack 
+==== Slack
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|If you select the *Create Message* action in Slack, only public channels appear. | None |CCONN-765
+
+|===

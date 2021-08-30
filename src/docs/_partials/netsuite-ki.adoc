@@ -7,9 +7,9 @@
 |Known Issue|Workaround |ID
 
 |An error occurs in Composer when testing your flow.
-|In your Chrome browser, click *Developer Tools* and then click *Network*. In the *Network* tab in Chrome, test your flow again. If you encounter the `INSUFFICIENT PERMISSIONS` error, complete the following steps:
+a|In your Chrome browser, click *Developer Tools* and then click *Network*. In the *Network* tab in Chrome, test your flow again. If you encounter the `INSUFFICIENT PERMISSIONS` error, complete the following steps: +
 
- . In NetSuite, access your role configuration.
+. In NetSuite, access your role configuration.
 . Click *Permissions* and then click *Setup*.
 . Ensure that the following permissions are set to *Full*:
 
@@ -29,23 +29,3 @@
  |None
 
 |===
-
-* If an error occurs in Composer when testing your flow, in your Chrome browser, click *Developer Tools* and then click *Network*. In the *Network* tab in Chrome, test your flow again. If you encounter the `INSUFFICIENT PERMISSIONS` error, complete the following steps: +
-
-. In NetSuite, access your role configuration.
-. Click *Permissions* and then click *Setup*.
-. Ensure that the following permissions are set to *Full*:
-
-** Control SuiteScript and Workflow Triggers in Web Service Request
-** SOAP Web Service
-** User Access Tokens
-** Custom Body Fields
-** Custom Column Fields
-** Custom Entity
-** Custom Item Fields
-** Custom Item Number Fields
-** Custom Lists
-** Custom Record Types
-** Custom Transaction Fields
-
-. Reestablish the NetSuite connection. If the error continues to appear, contact Support.

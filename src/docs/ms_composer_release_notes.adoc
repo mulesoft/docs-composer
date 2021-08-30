@@ -28,9 +28,6 @@ The following issues were identified at the time of this release:
 
 include::_partials/platform-ki.adoc[]
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
@@ -194,7 +191,8 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now connect to a new system: ServiceNow. +
+* You can now connect to a new system: ServiceNow.
++
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 

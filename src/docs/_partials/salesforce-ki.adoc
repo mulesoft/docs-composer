@@ -8,6 +8,4 @@
 
 |Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step. |None |CAPP-2009
 
-|X12 EDI Connector supports files up to 20MB. See xref:repo::adoc[]| |
-
 |===

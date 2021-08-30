@@ -26,20 +26,10 @@ include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3
 
 The following issues were identified at the time of this release:
 
+include::_partials/platform-ki.adoc[]
+
 * If you select the *Create Message* action in Slack, only public channels are returned.
 //CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
-//CAPP-1625
-
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
-
-
-include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 

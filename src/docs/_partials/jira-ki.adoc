@@ -15,7 +15,7 @@ a|The following standard fields are not supported at this time: +
 
 | None |None
 
-a|Custom fields containing the following list components are failing to render: +
+a|Custom fields containing the following list components fail to render: +
 
 ** *Text field (multi-line)*
 ** *Labels*

@@ -1,0 +1,53 @@
+= <ProductName> <Version> Release Notes
+
+<ShortDescription_Product>
+
+== <ReleaseDate>
+
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+////
+Change the table entries as needed
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule |4.1.1 and later
+|Anypoint Studio |7.1 and later
+|===
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+////
+Change the table entries as needed
+
+[%header,cols="2,1", width="70”]
+|===
+|Issue|ID
+|Message Flows now appear in chronological order. |SE-12345
+|Batch jobs no longer hang while using persistent queues. |SE-54321
+|===
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+1]
+
+////
+Change the table entries as needed. Remove the Workaround column if not needed.
+
+[%header,cols="2,2,1", width="75”]
+|===
+|Known Issue|Workaround |ID
+|An error occurs when saving a new host profile. | Refresh the page. |SE-4242
+|X12 EDI Connector supports files up to 20MB. See xref:repo::adoc[]| |
+|===
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=upgrade,leveloffset=+1]
+
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]

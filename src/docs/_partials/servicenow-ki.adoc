@@ -6,6 +6,6 @@
 
 |Known Issue|Workaround |ID
 
-|The ServiceNow Connector - Mule 4 only supports standard tables. | None |None
+|ServiceNow Connector - Mule 4 supports only standard tables. | None |None
 
 |===

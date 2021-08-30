@@ -18,7 +18,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 Issue|ID
 
-|In the Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action. |COCN-539
+|In Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action. |COCN-539
 
 |===
 

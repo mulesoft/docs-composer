@@ -8,7 +8,7 @@
 
 |The *Already editing somewhere?* dialog appears, but you aren't editing the flow in another tab. | Log out of Composer and log back in to resume work. |CAPO-47
 
-|The *New Flow* button does not appear on the *Recently Viewed* list page. | Switch to the *All List* page. | CAPP-1625
+|The *New Flow* button does not appear on the *Recently Viewed* list page. | Switch to the *All* page. | CAPP-1625
 
 |A blank area appears on the *Home* page when you first log in to Composer |Clear your browser cookies and reload. | CAPP-2051
 

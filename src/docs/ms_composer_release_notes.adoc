@@ -50,7 +50,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -92,7 +92,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -118,7 +118,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -144,7 +144,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -171,7 +171,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -198,7 +198,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -302,7 +302,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -328,7 +328,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -352,7 +352,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -376,9 +376,9 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -390,7 +390,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -414,9 +414,9 @@ You can now expand all cards or collapse all cards on the canvas using the *Expa
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -428,7 +428,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -446,9 +446,9 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -460,7 +460,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -478,7 +478,7 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now connect to two more systems: Slack and NetSuite.
+You can now connect to the following systems: Slack and NetSuite.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
@@ -486,9 +486,9 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -500,7 +500,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -527,7 +527,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -560,7 +560,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.

@@ -346,7 +346,7 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now connect to two more systems: Asana and Twilio.
+* You can now connect to the following systems: Asana and Twilio.
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 

@@ -16,10 +16,9 @@
 // end::knownIssues[]
 
 // tag::upgrade[]
-= Upgrade 
+= Upgrade
 // end::upgrade[]
 
 // tag::seeAlso[]
 = See Also
 // end::seeAlso[]
-

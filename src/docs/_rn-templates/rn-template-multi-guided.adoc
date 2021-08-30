@@ -54,7 +54,7 @@ Use this format:
 * For monthly releases with no specific date: April 2021
 ////
 
-include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 ////
 (Delete if no updates)
@@ -99,7 +99,7 @@ For more information about multiple IdP support, see xref:api-manager::configure
 * <Change2>
 ////
 
-include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+2]
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+3]
 
 ////
 (Delete if not applicable)
@@ -119,7 +119,7 @@ Guidelines for Compatibility:
 |===
 ////
 
-include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
 ////
 (Delete if no fixes)
@@ -147,7 +147,7 @@ This type of change should appear in the Change Log only, unless specifically re
 |===
 ////
 
-include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 ////
 (Delete if no known issues. Remove the Workaround column if not needed.)
@@ -181,7 +181,7 @@ For example:
 If the fix is a new feature, add it to What’s New.
 ////
 
-include::partial$release-notes/rn-headings.adoc[tag=upgrade,leveloffset=+2]
+include::partial$release-notes/rn-headings.adoc[tag=upgrade,leveloffset=+3]
 
 ////
 (Delete if not applicable)
@@ -199,7 +199,7 @@ If you link to the product doc, make sure to merge any product doc changes befor
 * Instead, add them to an Upgrade topic in the main documentation and link to that topic from the RNs.
 ////
 
-include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+2]
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
 
 * https://help.mulesoft.com/s/[MuleSoft Help Center]
 * https://www.mulesoft.com/support-and-services[MuleSoft Services]

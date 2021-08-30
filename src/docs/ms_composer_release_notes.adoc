@@ -6,16 +6,16 @@ New versions are automatically available once they are released; you don't need 
 
 == August 30, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The NetSuite connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
 
-=== Fixed Issues
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
 * In the Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action.
 //COCN-539
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -25,7 +25,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -45,11 +45,11 @@ include::_partials/tableau-ki.adoc[]
 
 == August 17, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -71,7 +71,7 @@ include::_partials/tableau-ki.adoc[]
 
 == August 11, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
 
@@ -91,7 +91,7 @@ include::_partials/tableau-ki.adoc[]
 
 * The Xero connector now supports the *Contact persons* field in the *Create or update contact* action.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -113,11 +113,11 @@ include::_partials/tableau-ki.adoc[]
 
 == August 6, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The Xero connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -139,11 +139,11 @@ include::_partials/tableau-ki.adoc[]
 
 == July 22, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -166,11 +166,11 @@ include::_partials/tableau-ki.adoc[]
 
 == July 15, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The *Get records* action is now available for the NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -190,13 +190,13 @@ include::_partials/tableau-ki.adoc[]
 
 == July 19, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: ServiceNow. +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -218,11 +218,11 @@ include::_partials/tableau-ki.adoc[]
 
 == July 15, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The *Get records* action is now available for the NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 include::_partials/platform-ki.adoc[]
 
@@ -240,7 +240,7 @@ include::_partials/tableau-ki.adoc[]
 
 == July 8, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: Xero.
 +
@@ -270,13 +270,13 @@ include::_partials/tableau-ki.adoc[]
 
 == June 4, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: Microsoft Teams.
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 include::_partials/platform-ki.adoc[]
 
@@ -292,7 +292,7 @@ include::_partials/tableau-ki.adoc[]
 
 == July 1, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: Jira.
 +
@@ -300,7 +300,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 * The NetSuite connector now supports Custom Record Types for actions and triggers.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -320,13 +320,13 @@ include::_partials/tableau-ki.adoc[]
 
 == June 4, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now connect to a new system: Microsoft Teams.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -344,13 +344,13 @@ include::_partials/tableau-ki.adoc[]
 
 == June 2, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now connect to two more systems: Asana and Twilio.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -368,13 +368,13 @@ include::_partials/tableau-ki.adoc[]
 
 == May 19, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now connect to a new system: Stripe.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -390,7 +390,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -406,11 +406,11 @@ include::_partials/tableau-ki.adoc[]
 
 == May 6, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now expand all cards or collapse all cards on the canvas using the *Expand all* or the *Collapse all* button.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -426,7 +426,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -442,7 +442,7 @@ include::_partials/tableau-ki.adoc[]
 
 == April 29, 2021
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -458,7 +458,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -474,7 +474,7 @@ include::_partials/tableau-ki.adoc[]
 
 == April 13, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now connect to two more systems: Slack and NetSuite.
 
@@ -482,7 +482,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 * The user interface for creating a connection is easier to understand.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release:
 
@@ -498,7 +498,7 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -517,15 +517,15 @@ include::_partials/tableau-ki.adoc[]
 
 == March 25, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can delete and replace a trigger step in any unactivated flow.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
@@ -554,11 +554,11 @@ include::_partials/tableau-ki.adoc[]
 
 MuleSoft Composer for Salesforce is generally available.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All list* page.
 //CAPP-1625
 
 * If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.

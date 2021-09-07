@@ -19,6 +19,7 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
      ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
      ** When using Firefox or Chrome, you must allow third-party cookies.
 * When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
+* Composer fields with date values use the following format: YYYY-MM-DDThh:mmZ.
 
 == Set Up Composer
 

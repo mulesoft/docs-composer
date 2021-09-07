@@ -1,3 +1,11 @@
 ==== ServiceNow
 
-The ServiceNow Connector - Mule 4 only supports standard tables.
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|ServiceNow Connector - Mule 4 supports only standard tables. | None |None
+
+|===

@@ -19,12 +19,10 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 Issue|ID
 
-
 |Fixed issues with validation errors. |COCN-43, COCN-37
 
 |Fixed issue that caused the *Reason* field to be invisible. |COCN-600
 
-|When using the *Create Message* action in a workspace that contains more than 10,000 channels, selecting the channel name no longer fails. |COCN-512
 
 |===
 
@@ -53,6 +51,18 @@ include::_partials/tableau-ki.adoc[]
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Slack Connector now supports markdown for text formatting.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|When using the *Create Message* action in a workspace that contains more than 10,000 channels, selecting the channel name no longer fails. |COCN-512
+
+|===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

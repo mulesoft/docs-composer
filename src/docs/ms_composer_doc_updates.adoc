@@ -1,0 +1,12 @@
+= Documentation Updates
+
+
+[%header%autowidth.spread]
+
+|===
+
+|Release Date |Updated Topics |Change Log
+
+|September 2, 2021 |xref:ms_composer_slack_reference.adoc[Slack Connector Reference] |Added content for markdown support.
+
+|===

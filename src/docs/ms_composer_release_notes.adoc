@@ -20,7 +20,7 @@ Issue|ID
 
 |Fixed issues with validation errors. |COCN-43, COCN-37
 
-|Fixed issue in which the *Reason* field did not appear. |COCN-600
+|Fixed issue that caused the *Reason* field to be invisible. |COCN-600
 
 |===
 

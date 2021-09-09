@@ -6,6 +6,20 @@
 
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
+=== Documentation Updates
+
+The following documentation updates were made for this release:
+////
+Change the table entries as needed
+
+[%header,cols="2,1", width="70”]
+|===
+|Topic |Change Log
+|xref:TOPICNAME.adoc |<Change>
+
+|===
+////
+
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
 
 ////

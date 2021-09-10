@@ -52,3 +52,5 @@ Update record::
 Updates an existing entry of the selected record type table in ServiceNow. Provide a value in the following fields:
 * *Table Name*
 * *Sys ID*
+
+include::_partials/see-also.adoc[]

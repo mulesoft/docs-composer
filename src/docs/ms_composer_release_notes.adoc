@@ -14,9 +14,9 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 Issue|ID
 
-|Fixed issue when updating or creating 500 contact records for a service organization in the Salesforce Connector, a portion of the records did not process. | COCN-446
+|Fixed issue that occurred when updating or creating 500 contact records for a service organization in the Salesforce Connector, a portion of the records did not process. | COCN-446
 
-|Fixed issue when using *Create Record* action in the Salesforce Connector on an *Invoice* object, the *Invoice* fields were not available. | COCN-530
+|Fixed issue that occurred when using *Create Record* action in the Salesforce Connector on an *Invoice* object, the *Invoice* fields were not available. | COCN-530
 
 
 |===

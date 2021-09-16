@@ -82,3 +82,8 @@ You can experiment with a flow until you've got it working just right, and you c
 * https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config/[Trailhead: MuleSoft Composer Installation and Configuration^]
 * https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics/[Trailhead: MuleSoft Composer Basics^]
 * https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft blog post^]
+
+== See Also
+
+* xref:ms_composer_prerequisites.adoc[Getting Started]
+* xref:ms_composer_reference.adoc[Composer Connector Reference]

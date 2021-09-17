@@ -71,4 +71,4 @@ Updates file metadata by updating the existing metadata template on a file in Bo
 +
 Multiple selection field types, such as checkboxes, do not appear in Composer.
 
-include::_partials/see-also.adoc[]s
+include::_partials/see-also.adoc[]

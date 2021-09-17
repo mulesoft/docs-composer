@@ -101,10 +101,6 @@
           ]
         },
         {
-          "file" : "ms_composer_troubleshooting.adoc",
-          "title": "Troubleshooting"
-        },
-        {
           "file" : "ms_composer_glossary.adoc",
           "title": "Glossary"
         }

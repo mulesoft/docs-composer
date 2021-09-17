@@ -21,3 +21,5 @@ To test a flow:
 . From the *Composer Flows* tab, click the name of the flow you want to test.
 . Click *Test*. +
 Composer notifies you when the test is complete. The execution results from the test appear on the card.
+
+include::_partials/see-also.adoc[]

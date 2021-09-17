@@ -1,9 +1,71 @@
-= Release Notes for MuleSoft Composer for Salesforce
+records= Release Notes for MuleSoft Composer for Salesforce
 
 Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== September 14, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce now supports the *Pick from Calendar* option for selecting values in date fields.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 9, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|Fixed issue that occurred when updating or creating 500 contact records for a service organization in the Salesforce Connector, a portion of the records did not process. | COCN-446
+
+|Fixed issue that occurred when using *Create Record* action in the Salesforce Connector on an *Invoice* object, the *Invoice* fields were not available. | COCN-530
+
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
 
 == September 8, 2021
 

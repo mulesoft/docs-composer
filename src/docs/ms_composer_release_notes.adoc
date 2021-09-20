@@ -8,7 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* Custom picklists are now supported for the NetSuite Connector. 
+* The NetSuite Connector now supports custom picklists.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

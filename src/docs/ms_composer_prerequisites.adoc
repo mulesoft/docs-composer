@@ -37,6 +37,8 @@ Next, you'll install Composer and make some Salesforce org adjustments to ensure
 
 === Admin: Install Composer and Adjust Salesforce Org Settings
 
+TIP: When using Composer, flows are assigned to specific users. To allow members of your team to share flows, we suggest creating a shared integration user. This allows your team to work simultaneously on flows and to allow multiple people to access the same flows concurrently with provided credentials.
+
 . In the *Install the Managed Package for MuleSoft Composer* section, click *Install Managed Package*.
 +
 Four more steps are revealed when the installation is complete. As the admin performing the installation, you are automatically given the Composer permission set.

@@ -4,11 +4,11 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== September 24, 2021
+== September 27, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The NetSuite Connector now supports custom list types.
+* The NetSuite Connector now allows users to map values to custom picklists, using the named custom value, without the use of internal IDs.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

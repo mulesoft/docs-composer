@@ -60,6 +60,8 @@ MuleSoft creates and configures an instance of Anypoint Platform to provide a de
 
 Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
 
+You can sync data between two Salesforce organizations with a single license. When you set up Composer, you can choose the primary organization in which you want to build flows and then, within Composer in that organization, you can create connections to one or more other Salesforce organizations.
+
 == Users: Verify Access to Composer
 
 If you aren't the Salesforce admin who installed Composer, verify that you have access to the Composer app:

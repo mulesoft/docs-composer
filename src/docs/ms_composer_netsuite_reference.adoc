@@ -113,4 +113,8 @@ Using MuleSoft Composer, you can access custom field values for actions and trig
 
 List objects are supported.
 
+== Custom Picklists
+
+You can map values to custom picklists using the value name. Internal IDs are not required to map values to custom picklists.
+
 include::_partials/see-also.adoc[]

@@ -56,7 +56,7 @@
             },
             {
               "file" : "ms_composer_jira_reference.adoc",
-              "title": "JIRA"
+              "title": "Jira"
             },
             {
               "file" : "ms_composer_ms_teams_reference.adoc",
@@ -103,10 +103,6 @@
               "title": "Zendesk"
             }
           ]
-        },
-        {
-          "file" : "ms_composer_troubleshooting.adoc",
-          "title": "Troubleshooting"
         },
         {
           "file" : "ms_composer_glossary.adoc",

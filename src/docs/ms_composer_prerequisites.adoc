@@ -5,6 +5,7 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 == Prerequisites
 
 * The org where you set up Composer must be a Salesforce Unlimited, Enterprise, or Performance edition. It can't be a sandbox org.
+* The maximum number of concurrent users supported by an organization is 25.
 * The org must have Lightning enabled.
 * You must purchase a separate MuleSoft Composer license for the org.
 * If your company network has a stringent firewall or list of blocked IP addresses, your network administrator must add `*.mulesoft.com` to the list of allowed addresses.
@@ -36,6 +37,8 @@ Next, you'll install Composer and make some Salesforce org adjustments to ensure
 
 === Admin: Install Composer and Adjust Salesforce Org Settings
 
+When using Composer, flows are private to the users who created them. To allow members of your team to collaborate on flows, create a shared integration user. This allows your team to work simultaneously on flows and to allow multiple people to access the same flows concurrently with provided credentials.
+
 . In the *Install the Managed Package for MuleSoft Composer* section, click *Install Managed Package*.
 +
 Four more steps are revealed when the installation is complete. As the admin performing the installation, you are automatically given the Composer permission set.
@@ -57,6 +60,8 @@ MuleSoft creates and configures an instance of Anypoint Platform to provide a de
 
 Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
 
+You can sync data between two Salesforce organizations with a single license. When you set up Composer, you can choose the primary organization in which you want to build flows and then, within Composer in that organization, you can create connections to one or more other Salesforce organizations.
+
 == Users: Verify Access to Composer
 
 If you aren't the Salesforce admin who installed Composer, verify that you have access to the Composer app:
@@ -72,5 +77,7 @@ When the Composer page displays, you're ready to create your first flow. If you'
 
 == See Also
 
-* xref:ms_composer_reference.adoc[Connection Reference]
+* xref:ms_composer_overview.adoc[Overview]
+* xref:ms_composer_reference.adoc[Composer Connector Reference]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
 * https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_framework_supported_browsers.htm[Salesforce Canvas browser support]

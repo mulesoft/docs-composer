@@ -1,0 +1,205 @@
+= <ProductName> <Version> Release Notes
+
+<ShortDescription_Product>
+
+////
+Use this template for RNs with multiple releases (major.x, major.minor.x) per file.
+
+For new RN files:
+
+. Copy this .adoc to your product folder and rename.
+. Complete the sections, leaving the includes for the headings.
+. Delete guidance and any headings that don't apply.
+
+For existing RN files:
+
+. Copy the content of this .adoc to your existing RN file.
+. Complete the sections, leaving the includes for the headings.
+. Delete guidance and any headings that don't apply.
+. Don't change the format for previous releases.
+
+* Release Notes must include at least one of What’s New or Fixed Issues.
++
+For example, new releases have no fixed issues; patch releases often contain bug fixes only.
++
+* If a section does not apply, *delete it*.
++
+For example, if a release contains no fixed issues or compatibility doesn’t apply.
+* Titles are always plural, regardless of the number of notes under the title.
++
+* Use the includes to keep titles consistent.*
+* For bulleted lists:
++
+--
+** Always use bullets - even if there is only one!
+** Always add a period - even for incomplete sentences!
+--
+* List items in order of importance, if known.
+* Release Notes follow the same authoring and approval process as other documentation.
+* If Release Notes include links to new or changed feature documentation, make sure to merge those changes before merging the RN PR.
+////
+
+== <Version>
+
+*<ReleaseDate>*
+
+////
+<Version> is required as the first H2.
+
+<ReleaseDate> is the date the product is released.
+If a product is released in the EU before in the US, the date is the EU release date.
+Use this format:
+
+* Most releases: April 22, 2021
+* For monthly releases with no specific date: April 2021
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+////
+(Delete if no updates)
+
+The What’s New section can include (in this order):
+
+. Features
++
+Feature, action, or workflow that did not exist in any form in previous releases of the product.
+. Enhancements
++
+Upgrade or improvement to an existing feature, including security and operating system updates - not bug fixes.
+. Changes
++
+Features or behaviors that changed from previous versions.
+. Deprecations
+. Bundled Components
+
+Guidelines for What’s New:
+
+* If the release includes many changes, add subsections to organize the content into the types.
++
+--
+Suggested subsection headings:
+
+=== Features
+=== Enhancements
+=== Changes
+=== Deprecations
+=== Bundled Components
+--
+
+* Don’t include ticket numbers for items in this section.
+* List the features/changes in order of importance, if possible.
+* Describe the feature or change in terms of user benefit and include a link to the product documentation, if applicable.
++
+If you link to the product doc, make sure to merge any product doc changes before merging the RN PR.
+
+* Using Access Management in Anypoint Platform PCE, you can now use multiple IdPs.
++
+For more information about multiple IdP support, see xref:api-manager::configure-multiple-credential-providers.adoc[Configure Multiple Client Providers for Client Management].
+* <Change2>
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+3]
+
+////
+(Delete if not applicable)
+
+The Compatibility section includes any compatibility information required before installing/upgrading.
+
+Guidelines for Compatibility:
+
+* If applicable, include other requirements, such as hardware or software, in this section.
+* Present compatibility information in a table.
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule |4.1.1 and later
+|Anypoint Studio |7.1 and later
+|===
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+////
+(Delete if no fixes)
+
+The Fixed Issues section can include (in this order):
+. Security vulnerabilities
+. User-reported issues
+. Issues that users likely encountered
+
+Guidelines for Fixed Issues:
+
+* Don’t include back-end changes or changes that don’t affect the user interface, behavior, or usage.
++
+This type of change should appear in the Change Log only, unless specifically requested by the PM.
+. Present fixed issues in a table with the ticket number in the second column. Do not link to the ticket number.
+. List the fixed issue in order of importance, if possible.
+. Describe the fixed issue in terms of how the user experienced it.
+
+[%header,cols="2,1", width="70”]
+|===
+|Issue|ID
+|Message Flows now appear in chronological order. |SE-12345
+|Batch jobs no longer hang while using persistent queues. |SE-54321
+|`NullPointerException` errors no longer occur when using the HTTP Connector inside a connector built with XML SDK. |SE-18335
+|===
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+////
+(Delete if no known issues. Remove the Workaround column if not needed.)
+
+The Known Issues section includes issues that can disrupt the normal workflow for many users and that they should know before upgrading. A known issue must include one of these criteria:
+
+* Bug found too late to fix for the current release that developers intend to fix in a later release
+* Bug that has a workaround
+
+Most release notes do not include known issues. If you include a known issue, you must track it so that you can continue to list it as a known issue until it is fixed.
+
+IMPORTANT: Always get PM approval before listing a known issue and ensure that the issue meets the Known Issues criteria. Do not include limitations in Known Issues. Instead, document limitations in the product documentation.
+
+Guidelines for Known Issues:
+
+* Present known issues (and workarounds, if applicable) in a table, and the ticket number in the last column.
+* Describe the known issue in terms of how the user might experience it.
++
+For example:
++
+[%header,cols="2,2,1", width="75”]
+|===
+|Known Issue|Workaround |ID
+|An error occurs when saving a new host profile. | Refresh the page. |SE-4242
+|X12 EDI Connector supports files up to 20MB. See xref:repo::adoc[]| |
+|===
++
+* Copy any unfixed known issues from the previous release to the current release.
+* When a known issue from a previous release is fixed, add it to Fixed Issues and identify it as a previously known issue.
++
+If the fix is a new feature, add it to What’s New.
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=upgrade,leveloffset=+3]
+
+////
+(Delete if not applicable)
+
+The Upgrade section includes any information a user needs to know before and immediately after upgrading
+(such as hardware, software, and workspace upgrade requirements).
+
+Guidelines for Upgrade:
+
+* Include a link to an upgrade or migrate topic/section in the product release notes.
++
+If you link to the product doc, make sure to merge any product doc changes before merging the RN PR.
++
+* Don’t include upgrade details, such as the steps for upgrading or tables of differences between two releases, in the release notes.
+* Instead, add them to an Upgrade topic in the main documentation and link to that topic from the RNs.
+////
+
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]

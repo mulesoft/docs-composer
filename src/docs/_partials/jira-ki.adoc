@@ -1,13 +1,21 @@
-==== JIRA
+==== Jira
 
-* The following standard fields are not supported at this time:
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+a|The following standard fields are not supported at this time: +
 
 ** *Affects version*
 ** *Fix version*
 ** *Environment*
 ** *Component*
 
-* Custom fields containing the following list components are failing to render:
+| None |None
+
+a|Custom fields containing the following list components fail to render: +
 
 ** *Text field (multi-line)*
 ** *Labels*
@@ -16,10 +24,14 @@
 ** *Select list (multiple-choice)*
 ** *Select list (cascading)*
 
-* In the *Status* field, the *In Progress* value sometimes appears twice. If so, test both *In Progress* values to find the working value.
+| None |None
 
-* After creating a case in JIRA, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. To update the value in the *Reporter* field, you can manually update the case record in JIRA.
+|In the *Status* field, the *In Progress* value sometimes appears twice. |None |None
 
-* If custom fields fail to appear, reset your JIRA connection by deleting the connection and re-authenticating your JIRA account.
+|After creating a case in Jira, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. |To update the value in the *Reporter* field, you can manually update the case record in Jira. |None
 
-* When you create an issue, you may encounter a 400 error in the output metadata. Disregard this error.
+|Custom fields fail to appear. |Reset your Jira connection by deleting the connection and re-authenticating your Jira account. |None
+
+|When you create an issue, you may encounter a 400 error in the output metadata. | Disregard this error. |None
+
+|===

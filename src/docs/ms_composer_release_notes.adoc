@@ -1,142 +1,418 @@
-Release Notes for MuleSoft Composer for Salesforce
+records= Release Notes for MuleSoft Composer for Salesforce
 
 Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== August 11, 2021
 
-=== New Features
+== September 27, 2021
 
-You can now connect to a new system: Zendesk. +
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+* The NetSuite Connector now allows users to map values to custom picklists, using the named custom value, without the use of internal IDs.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 14, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce now supports the *Pick from Calendar* option for selecting values in date fields.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+=======
+== September 9, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+=======
+|===
+
+Issue|ID
+
+|Fixed issue that occurred when updating or creating 500 contact records for a service organization in the Salesforce Connector, a portion of the records did not process. | COCN-446
+
+|Fixed issue that occurred when using *Create Record* action in the Salesforce Connector on an *Invoice* object, the *Invoice* fields were not available. | COCN-530
+
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 8, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Workday Connector now supports the Workday R1.2021 version.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|Fixed issues with validation errors. |COCN-43, COCN-37
+
+|Fixed issue that caused the *Reason* field to be invisible. |COCN-600
+
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 2, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Slack Connector now supports markdown for text formatting.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|When using the *Create Message* action in a workspace that contains more than 10,000 channels, selecting the channel name no longer fails. |COCN-512
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 30, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|In Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action. |COCN-539
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 17, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 11, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
+
+* The following Jira connector triggers and actions were renamed:
+** Triggers
+*** *Update issue* to *Update issue with Custom Fields*
+*** *New issue* to *New issue with Custom Fields*
+** Action: *Update/edit issue* to *Update issue with Custom Fields*
+
+* The Jira connector now supports the following triggers and actions:
+** Triggers
+*** *Updated issue with Standard Fields only*
+*** *New issue with Standard Fields only*
+** Action: *Update issue with Standard Fields only*
+
+//* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
+
+* The Xero connector now supports the *Contact persons* field in the *Create or update contact* action.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 6, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The Xero connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == July 22, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+* You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+
+== July 15, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Get records* action is now available for the NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == July 19, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now connect to a new system: ServiceNow. +
+* You can now connect to a new system: ServiceNow.
++
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
 include::_partials/servicenow-ki.adoc[]
 
+include::_partials/slack-ki.adoc[]
+
 include::_partials/tableau-ki.adoc[]
 
 == July 15, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-The *Get records* action is now available for the NetSuite connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+* The *Get records* action is now available for the NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
-
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == July 8, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: Xero.
 +
@@ -150,149 +426,113 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 ** Updated row in sheet
 ** New spreadsheet
 
-=== Known Issues
-
-The following issues were identified at the time of this release:
-
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == June 4, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now connect to a new system: Microsoft Teams.
-
+* You can now connect to a new system: Microsoft Teams.
++
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
-
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == July 1, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now connect to a new system: JIRA.
+* You can now connect to a new system: Jira.
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 * The NetSuite connector now supports Custom Record Types for actions and triggers.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == June 4, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now connect to a new system: Microsoft Teams.
-
+* You can now connect to a new system: Microsoft Teams.
++
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == June 2, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now connect to two more systems: Asana and Twilio.
-
+* You can now connect to the following systems: Asana and Twilio.
++
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
-//CCONN-765
-
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
-
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
-//CAPP-1625
-
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -300,17 +540,17 @@ include::_partials/tableau-ki.adoc[]
 
 == May 19, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now connect to a new system: Stripe.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -322,29 +562,33 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
 
+include::_partials/netsuite-ki.adoc[]
+
 include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
 
 == May 6, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now expand all cards or collapse all cards on the canvas using the *Expand all* or the *Collapse all* button.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -356,13 +600,15 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -370,11 +616,11 @@ include::_partials/tableau-ki.adoc[]
 
 == April 29, 2021
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -386,13 +632,15 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -400,19 +648,19 @@ include::_partials/tableau-ki.adoc[]
 
 == April 13, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now connect to two more systems: Slack and NetSuite.
+You can now connect to the following systems: Slack and NetSuite.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 * The user interface for creating a connection is easier to understand.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-The following issues were identified at the time of this release:
+This release includes the following known issues:
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -424,13 +672,15 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
 
 include::_partials/salesforce-ki.adoc[]
 
@@ -441,18 +691,18 @@ include::_partials/tableau-ki.adoc[]
 
 == March 25, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can delete and replace a trigger step in any unactivated flow.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 * You can't access the *Add Connection* button from a trigger or action once it has been created.
@@ -478,14 +728,14 @@ include::_partials/tableau-ki.adoc[]
 
 MuleSoft Composer for Salesforce is generally available.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 * You can't access the *Add Connection* button from a trigger or action once it has been created.

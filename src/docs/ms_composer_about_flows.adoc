@@ -145,6 +145,8 @@ After testing is complete, you are ready to activate your flow.
 
 == See Also
 
+* xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: Overview]
+* xref:ms_composer_prerequisites.adoc[MuleSoft Composer for Salesforce: Getting Started]
 * xref:ms_composer_flows.adoc[Build and Test a Flow]
 * xref:ms_composer_activation.adoc[Activate a Flow]
 * xref:ms_composer_monitoring.adoc[Monitor a Flow]

@@ -90,6 +90,21 @@ The following record types are valid for all actions:
 ** Support Case
 ** Custom Record Types
 
+* Objects
+
+** CreditMemo
+** CustomerDeposit
+** CashSale
+** CashRefund
+** CustomerPayment
+** CustomerRefund
+** Journal Entry
+** Opportunity
+** Estimate
+** NonInventoryPurchaseItem
+** NonInventoryResaleItem
+** NonInventorySaleItem
+
 == Custom Fields
 
 Using MuleSoft Composer, you can access custom field values for actions and triggers that you set in the NetSuite record.
@@ -97,3 +112,9 @@ Using MuleSoft Composer, you can access custom field values for actions and trig
 == List Objects
 
 List objects are supported.
+
+== Custom Picklists
+
+You can map values to custom picklists using the value name. Internal IDs are not required to map values to custom picklists.
+
+include::_partials/see-also.adoc[]

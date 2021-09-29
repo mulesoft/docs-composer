@@ -38,7 +38,7 @@ To relax IP restrictions on a connection to Salesforce:
 
 . Log into the Salesforce org. You must be a Salesforce admin in that org.
 . Navigate to *Setup > Connected Apps OAuth Usage*.
-. Find *MuleSoft Composer* in the list, and click *Install*.
+. Find *MuleSoft Platform* in the list with the description *MuleSoft OCS app for KPROD*, and click *Install*.
 . Click *Install* on the authorization dialog.
 +
 This makes the connected app (the connection you created) available so that you can relax the IP restrictions. It doesn't reinstall the Composer app.

@@ -1,4 +1,5 @@
-records= Release Notes for MuleSoft Composer for Salesforce
+
+Release Notes for MuleSoft Composer for Salesforce
 
 Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -8,7 +9,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now connect to a new system: ServiceNow.
+* You can now connect to a new system: Zendesk.
 +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.

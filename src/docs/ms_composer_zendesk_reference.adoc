@@ -48,7 +48,7 @@ Update a ticket::
 Updates an existing ticket. Provide values for the following fields:
 
 * *Ticket ID*
-* *Comment*
+* *Description*
 
 Search tickets::
 
@@ -60,7 +60,10 @@ Creates a new organization or updates an existing organization.
 
 Create or update a user::
 
-Creates a new user or updates an existing user. Provide a value for *ID type*.
+Creates a new user or updates an existing user. Provide a value for the following fields:
+
+* *ID type*
+* *Name*
 
 Search organizations::
 

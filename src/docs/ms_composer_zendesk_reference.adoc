@@ -20,15 +20,15 @@ The OAuth password that you use to log in to Zendesk.
 
 include::_partials/trigger-definition.adoc[]
 
-New or updated ticket::
+New/updated ticket::
 
 Checks for a new or updated ticket.
 
-New or updated organization::
+New/updated organization::
 
 Fires when a new organization is created or an existing organization is updated in Zendesk.
 
-New or updated user::
+New/updated user::
 
 Fires when a new user is created or an existing user is updated in Zendesk.
 

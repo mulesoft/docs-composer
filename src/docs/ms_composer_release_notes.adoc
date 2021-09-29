@@ -10,6 +10,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing using refresh tokens that do not require you to reconnect.
 
+== September 27, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The NetSuite Connector now allows users to map values to custom picklists, using the named custom value, without the use of internal IDs.
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 This release includes the following known issues:

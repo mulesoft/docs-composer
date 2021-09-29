@@ -37,6 +37,8 @@ Next, you'll install Composer and make some Salesforce org adjustments to ensure
 
 === Admin: Install Composer and Adjust Salesforce Org Settings
 
+When using Composer, flows are private to the users who created them. To allow members of your team to collaborate on flows, create a shared integration user. This allows your team to work simultaneously on flows and to allow multiple people to access the same flows concurrently with provided credentials.
+
 . In the *Install the Managed Package for MuleSoft Composer* section, click *Install Managed Package*.
 +
 Four more steps are revealed when the installation is complete. As the admin performing the installation, you are automatically given the Composer permission set.
@@ -57,6 +59,8 @@ MuleSoft creates and configures an instance of Anypoint Platform to provide a de
 . In the *Launch MuleSoft Composer* section, click the *Launch* button to start Composer.
 
 Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
+
+You can sync data between two Salesforce organizations with a single license. When you set up Composer, you can choose the primary organization in which you want to build flows and then, within Composer in that organization, you can create connections to one or more other Salesforce organizations.
 
 == Users: Verify Access to Composer
 

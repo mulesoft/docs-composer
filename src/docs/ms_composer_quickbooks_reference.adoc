@@ -1,5 +1,9 @@
 = Quickbooks Online Connector Reference
 
+QuickBooks Online provides cloud-based accounting software that enables organizations to manage core business processes, ERP financials, e-commerce, inventory, and more.
+
+The QuickBooks Online Connector uses https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API version 62].
+
 == Connections
 
 include::_partials/connection-definition.adoc[]
@@ -93,7 +97,7 @@ Searches for an existing customer.
 
 Query Item::
 
-Searches for an existing item. 
+Searches for an existing item.
 
 Get Invoice::
 

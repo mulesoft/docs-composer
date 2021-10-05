@@ -85,15 +85,15 @@ Updates an existing item. The following fields are required:
 
 Query Invoice::
 
-Searches for an existing invoice. The following field is required: *SQL Query*.
+Searches for an existing invoice.
 
 Query Customer::
 
-Searches for an existing customer. The following field is required: *SQL Query*.
+Searches for an existing customer.
 
 Query Item::
 
-Searches for an existing item. The following field is required: *SQL Query*.
+Searches for an existing item. 
 
 Get Invoice::
 

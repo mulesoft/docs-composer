@@ -8,36 +8,103 @@ include::_partials/connection-name.adoc[]
 
 Username::
 
-The username that you use to log in to <Connector>.
+The OAuth username that you use to log in to QuickBooks Online.
 
 Password::
 
-The password that you use to log in to <Connector>.
-
-<Field>::
-
-<Details>.
+The OAuth password that you use to log in to QuickBooks Online.
 
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
 
-<Field>::
+New Invoice::
 
-<Details>.
+Triggers when a new invoice is created.
+
+Updated Invoice::
+
+Triggers when an existing invoice is updated.
+
+New Customer::
+
+Triggers when a new customer is created.
+
+Updated Customer::
+
+Triggers when an existing customer is updated.
+
+New Item::
+
+Triggers when a new item is created.
+
+Updated Item::
+
+Triggers when an existing item is updated.
 
 == Actions
 
 include::_partials/action-definition.adoc[]
 
-<Field>::
+Create Invoice::
 
-<Details>.
+Creates a new invoice. The following field is required: *Customer ID*.
 
-== Objects
+Update Invoice::
 
-<Field>::
+Updates an existing invoice. The following field is required: *Invoice ID*.
 
-<Details>.
+Create Customer::
+
+Creates a new customer.
+
+Update Customer::
+
+Updates an existing customer. The following field is required: *Customer ID*.
+
+Create Item::
+
+Creates a new item. The following fields are required:
+
+* *Name*
+* *Type*
+* If the value in the *Track Quantity on Hand* is equal to `True`, the following fields are required:
+** *Asset Account Reference*
+** *Invoice Start Date*
+** *Quantity on Hand*
+
+Update Item::
+
+Updates an existing item. The following fields are required:
+
+* *Item ID*
+* If the value in the *Track Quantity on Hand* is equal to `True`, the following fields are required:
+** *Asset Account Reference*
+** *Invoice Start Date*
+** *Quantity on Hand*
+
+Query Invoice::
+
+Searches for an existing invoice. The following field is required: *SQL Query*.
+
+Query Customer::
+
+Searches for an existing customer. The following field is required: *SQL Query*.
+
+Query Item::
+
+Searches for an existing item. The following field is required: *SQL Query*.
+
+Get Invoice::
+
+Returns an invoice. The following field is required: *Invoice ID*.
+
+Get Customer::
+
+Returns a customer.  The following field is required: *Customer ID*.
+
+Get Item::
+
+Returns an item. The following field is required: *Item ID*.
 
 include::_partials/see-also.adoc[]

@@ -21,7 +21,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 Issue|ID
 
-|If you encounter an error while testing, instructions now appear in the *Test stopped unexpectedly* window to download the HAR file and to contact support. | CAPO-364
+|If you encounter an error while testing, instructions and a link now appear in the *Test stopped unexpectedly* window to download the debugging information file and to contact support. | CAPO-364
 
 |===
 

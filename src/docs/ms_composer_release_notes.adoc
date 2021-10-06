@@ -4,9 +4,6 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-
-* If you encounter an error while testing, instructions now appear in the *Test stopped unexpectedly* window to download the HAR file and to contact support.
-
 == October 6, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -15,6 +12,18 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|If you encounter an error while testing, instructions now appear in the *Test stopped unexpectedly* window to download the HAR file and to contact support. | CAPO-364
+
+|===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
@@ -94,7 +103,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 [%header%autowidth.spread]
 
-You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+* You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
 
 |===
 

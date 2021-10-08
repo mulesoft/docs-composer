@@ -89,19 +89,38 @@ Updates an existing item. The following fields are required:
 
 Query Invoice::
 
-Searches for an existing invoice.
+Searches for an existing invoice. The following field is required: *SQL ID*. Additionally, one or more of the following fields must be populated to return results:
+
+* Invoice Id Equals
+* Customer Id Equals
+* Due Date Greater Or Equal
+* Date Created Greater or Equal
+* Last Updated Date Greater or Equal
 
 Query Customer::
 
-Searches for an existing customer.
+Searches for an existing customer. The following field is required: *SQL ID*. Additionally, one or more of the following fields must be populated to return results:
+Customer Id Equals
+
+* Customer Display Name Equals
+* Customer Display Name Like
+* Active Equals
+* Primary Email Address Equals
+* Primary Email Address Like
+* Balance Greater Or Equal
+* Date Created Greater or Equal
+* Last Updated Date Greater or Equal
+
+
 
 Query Item::
 
-Searches for an existing item.
+Searches for an existing item. The following field is required: *SQL ID*.
 
 Get Invoice::
 
-Returns an invoice. The following field is required: *Invoice ID*.
+Returns an invoice. The following field is required: *Customer ID*.
+
 
 Get Customer::
 

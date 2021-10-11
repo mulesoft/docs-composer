@@ -111,8 +111,6 @@ Customer Id Equals
 * Date Created Greater or Equal
 * Last Updated Date Greater or Equal
 
-
-
 Query Item::
 
 Searches for an existing item.

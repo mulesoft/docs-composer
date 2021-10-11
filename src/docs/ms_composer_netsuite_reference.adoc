@@ -4,6 +4,11 @@ Whether you are using NetSuite as a data source (take a new NetSuite contact and
 
 == Connection Details
 
+When connecting to NetSuite via MuleSoft Composer, in NetSuite:
+
+* Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*
+* Ensure that the role used in the integration is not using two-factor authentication by navigating to *Setup* > *User/Roles* > *Two-Factor Authentication Roles*.
+
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
@@ -12,18 +17,13 @@ You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWS
 
 include::_partials/netsuite-connection-details.adoc[]
 
-When connecting to NetSuite via MuleSoft Composer, in NetSuite:
+//When creating a connection, note the following connection fields in NetSuite:
 
-* Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*
-* Ensure that the role used in the integration is not using two-factor authentication by navigating to *Setup* > *User/Roles* > *Two-Factor Authentication Roles*.
-
-When creating a connection, note the following connection fields in NetSuite:
-
-* *Account ID*: The *Account ID* value associated with your NetSuite instance. You can view the Account ID by navigating to *Setup* > *Integration* > *SOAP Web Services Preferences*.
-* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate a *Consumer Key* by navigating to *Setup* > *Integration* > *Manage Integrations*
-* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for the *Consumer Key*.
-* *Token ID*: The *Token ID* generated in NetSuite.
-* *Token Secret*: The *Token Secret* generated with the Token ID in NetSuite.
+//* *Account ID*: The *Account ID* value associated with your NetSuite instance. You can view the Account ID by navigating to *Setup* > *Integration* > *SOAP Web Services Preferences*.
+//* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate a *Consumer Key* by navigating to *Setup* > *Integration* > *Manage Integrations*
+//* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for the *Consumer Key*.
+//* *Token ID*: The *Token ID* generated in NetSuite.
+//* *Token Secret*: The *Token Secret* generated with the Token ID in NetSuite.
 
 === Establish a NetSuite Connection
 

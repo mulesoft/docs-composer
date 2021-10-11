@@ -20,6 +20,8 @@ To use MuleSoft Composer to establish a NetSuite connection, you must have:
 
 * An account in Salesforce to store the internal ID of the associated customer in NetSuite. You must ensure that a custom field, NetSuite ID, has been created for the Account object in the organization.
 
+* 
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]

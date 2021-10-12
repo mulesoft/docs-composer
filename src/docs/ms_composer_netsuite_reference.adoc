@@ -21,7 +21,7 @@ include::_partials/netsuite-connection-details.adoc[]
 
 //* *Account ID*: The *Account ID* value associated with your NetSuite instance. You can view the account ID by navigating to *Setup* > *Integration* > *SOAP Web Services Preferences*.
 //* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate  a consumer key by navigating to *Setup* > *Integration* > *Manage Integrations*.
-//* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for the *Consumer Key*.
+//* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for *Consumer Key*.
 //* *Token ID*: The *Token ID* generated in NetSuite.
 //* *Token Secret*: The *Token Secret* generated with the Token ID in NetSuite.
 

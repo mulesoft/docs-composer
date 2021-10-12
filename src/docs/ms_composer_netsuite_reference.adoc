@@ -23,7 +23,7 @@ include::_partials/netsuite-connection-details.adoc[]
 //* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate  a consumer key by navigating to *Setup* > *Integration* > *Manage Integrations*.
 //* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for *Consumer Key*.
 //* *Token ID*: The *Token ID* value generated in NetSuite.
-//* *Token Secret*: The *Token Secret* generated with the Token ID in NetSuite.
+//* *Token Secret*: The *Token Secret* value generated with the token ID in NetSuite.
 
 === Establish a NetSuite Connection
 

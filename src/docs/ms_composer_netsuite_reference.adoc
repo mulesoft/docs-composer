@@ -6,7 +6,7 @@ Whether you are using NetSuite as a data source (take a new NetSuite contact and
 
 When connecting to NetSuite via MuleSoft Composer, in NetSuite:
 
-* Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*
+* Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*.
 * Ensure that the role used in the integration is not using two-factor authentication by navigating to *Setup* > *User/Roles* > *Two-Factor Authentication Roles*.
 
 include::_partials/connection-definition.adoc[]

@@ -2,7 +2,7 @@
 
 QuickBooks Online provides cloud-based accounting software that enables organizations to manage core business processes, ERP financials, e-commerce, inventory, and more.
 
-TTe Quickbooks Online Connector uses https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API minor version 62].
+The Quickbooks Online Connector uses https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API minor version 62].
 
 == Connections
 

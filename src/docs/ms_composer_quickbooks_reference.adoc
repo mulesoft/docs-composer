@@ -2,7 +2,7 @@
 
 QuickBooks Online provides cloud-based accounting software that enables organizations to manage core business processes, ERP financials, e-commerce, inventory, and more.
 
-The QuickBooks Online Connector uses https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API version 62].
+TTe Quickbooks Online Connector uses https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API minor version 62].
 
 == Connections
 
@@ -91,29 +91,37 @@ Query Invoice::
 
 Searches for an existing invoice. One or more of the following fields must be populated to return results:
 
-* Invoice Id Equals
-* Customer Id Equals
-* Due Date Greater Or Equal
-* Date Created Greater or Equal
-* Last Updated Date Greater or Equal
+* *Invoice ID Equals*
+* *Customer ID Equals*
+* *Due Date Greater Or Equal*
+* *Date Created Greater or Equal*
+* *Last Updated Date Greater or Equal*
 
 Query Customer::
 
 Searches for an existing customer. One or more of the following fields must be populated to return results:
-Customer Id Equals
 
-* Customer Display Name Equals
-* Customer Display Name Like
-* Active Equals
-* Primary Email Address Equals
-* Primary Email Address Like
-* Balance Greater Or Equal
-* Date Created Greater or Equal
-* Last Updated Date Greater or Equal
+* *Customer ID Equals*
+* *Customer Display Name Equals*
+* *Customer Display Name Like*
+* *Active Equals*
+* *Primary Email Address Equals*
+* *Primary Email Address Like*
+* *Balance Greater Or Equal*
+* *Date Created Greater or Equal*
+* *Last Updated Date Greater or Equal*
 
 Query Item::
 
-Searches for an existing item.
+Searches for an existing item. One or more of the following fields must be populated to return results:
+
+* *Item ID Equals*
+* *Name Equals*
+* *Name Like*
+* *Active Equals*
+* *Type Equals*
+* *Date Created Greater or Equal*
+* *Last Updated Date Greater or Equal*
 
 Get Invoice::
 

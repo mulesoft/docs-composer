@@ -57,7 +57,7 @@ This action returns the customer details corresponding to the customer ID that y
 
 //Get Object::
 
-//This action returns an existing object in  Workday Financial Management. A value is required in the following fields:
+//This action returns an existing object in Workday Financial Management. A value is required in the following fields:
 
 //* *Object*
 //* *ID*

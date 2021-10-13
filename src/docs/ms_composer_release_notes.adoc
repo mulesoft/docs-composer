@@ -4,7 +4,22 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-//== October 7, 2021
+//== DATE
+
+//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+//* You can now connect to a new system: Google Calendar.
+//+
+
+//See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+//include::_partials/platform-ki.adoc[]
+
+//include::_partials/googlecalendar-ki.adoc[]
+
+//== DATE 7, 2021
 
 //include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -263,7 +278,6 @@ Issue|ID
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -289,7 +303,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -325,13 +338,10 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 *** *New issue with Standard Fields only*
 ** Action: *Update issue with Standard Fields only*
 
-//* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
-
 * The Xero connector now supports the *Contact persons* field in the *Create or update contact* action.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -357,7 +367,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -383,7 +392,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -410,7 +418,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -437,7 +444,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -541,7 +547,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -567,7 +572,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -591,7 +595,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -615,7 +618,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
@@ -653,7 +655,6 @@ You can now expand all cards or collapse all cards on the canvas using the *Expa
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
@@ -685,7 +686,6 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
@@ -725,7 +725,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
 
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765

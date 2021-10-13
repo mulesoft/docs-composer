@@ -101,12 +101,12 @@
             {
               "file" : "ms_composer_xero_reference.adoc",
               "title": "Xero"
+            },
+            {
+              "file" : "ms_composer_zendesk_reference.adoc",
+              "title": "Zendesk"
             }
           ]
-        },
-        {
-          "file" : "ms_composer_troubleshooting.adoc",
-          "title": "Troubleshooting"
         },
         {
           "file" : "ms_composer_glossary.adoc",

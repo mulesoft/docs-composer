@@ -10,3 +10,5 @@ To activate your flow:
 . Click *Activate*.
 
 Composer notifies you when the flow is activated.
+
+include::_partials/see-also.adoc[]

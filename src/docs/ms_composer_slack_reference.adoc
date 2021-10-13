@@ -41,7 +41,7 @@ To post a direct message to a specified user, supply the following information:
 
 Create a message::
 
-Post a new message to a specific private or public channel that you select. To post a message to a private channel, you must first add the MuleSoft Platform app to that private channel.  
+Post a new message to a specific private or public channel that you select. To post a message to a private channel, you must first add the MuleSoft Platform app to that private channel.
 +
 * *Channel Name*: A channel in the Slack workspace that you select from a drop-down list of the existing channels.
 * *Message*: The message to be sent. You can choose from several options:
@@ -56,3 +56,5 @@ Get user by email address::
 Find a Slack user by entering their email address into the *Email* field.
 +
 If you want to fetch the user's ID dynamically, you can insert this action, which fetches the Slack user by an email address from another system. Use the *ID* data pill returned by this action to specify the user who should receive the message.
+
+include::_partials/see-also.adoc[]

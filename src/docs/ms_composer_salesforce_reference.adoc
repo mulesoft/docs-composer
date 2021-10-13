@@ -38,7 +38,7 @@ To relax IP restrictions on a connection to Salesforce:
 
 . Log into the Salesforce org. You must be a Salesforce admin in that org.
 . Navigate to *Setup > Connected Apps OAuth Usage*.
-. Find *MuleSoft Composer* in the list, and click *Install*.
+. Find *MuleSoft Platform* in the list with the description *MuleSoft OCS app for KPROD*, and click *Install*.
 . Click *Install* on the authorization dialog.
 +
 This makes the connected app (the connection you created) available so that you can relax the IP restrictions. It doesn't reinstall the Composer app.
@@ -125,3 +125,5 @@ Delete a record specified by its object type and record ID.
 All standard and custom Salesforce objects are available.
 
 Some products in Marketing Cloud and Commerce Cloud use data that is not stored in Salesforce records and therefore is not available with a Salesforce connection.
+
+include::_partials/see-also.adoc[]

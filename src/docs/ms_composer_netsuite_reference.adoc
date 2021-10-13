@@ -4,6 +4,11 @@ Whether you are using NetSuite as a data source (take a new NetSuite contact and
 
 == Connection Details
 
+When connecting to NetSuite via MuleSoft Composer, in NetSuite:
+
+* Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*.
+* Ensure that the role used in the integration is not using two-factor authentication by navigating to *Setup* > *User/Roles* > *Two-Factor Authentication Roles*.
+
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
@@ -11,6 +16,14 @@ include::_partials/connection-name.adoc[]
 You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWSU).
 
 include::_partials/netsuite-connection-details.adoc[]
+
+//When creating a connection, note the following connection fields in NetSuite:
+
+//* *Account ID*: The *Account ID* value associated with your NetSuite instance. You can view the account ID by navigating to *Setup* > *Integration* > *SOAP Web Services Preferences*.
+//* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate a value for consumer key by navigating to *Setup* > *Integration* > *Manage Integrations*.
+//* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for *Consumer Key*.
+//* *Token ID*: The *Token ID* value generated in NetSuite.
+//* *Token Secret*: The *Token Secret* value generated with the token ID in NetSuite.
 
 === Establish a NetSuite Connection
 
@@ -112,3 +125,9 @@ Using MuleSoft Composer, you can access custom field values for actions and trig
 == List Objects
 
 List objects are supported.
+
+== Custom Picklists
+
+You can map values to custom picklists using the value name. Internal IDs are not required to map values to custom picklists.
+
+include::_partials/see-also.adoc[]

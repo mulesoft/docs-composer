@@ -69,3 +69,5 @@ You can create a hyper file using Tableau Desktop (*Connect To a File -> _hyper-
 * The time it takes for changes made by the flow to show up in Tableau servers depends on the size of the hyper file.
 
 If the data source that you are populating has a `Time` field but does not include a date, then Tableau stores the date value in the data source as `30/12/1899`.
+
+include::_partials/see-also.adoc[]

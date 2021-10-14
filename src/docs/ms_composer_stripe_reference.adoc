@@ -24,13 +24,19 @@ https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth a
 include::_partials/trigger-definition.adoc[]
 
 New charge::
+
 Checks for a new charge to a payment source.
+
+//New refund::
+
+//Executes when a new refund is created.
 
 == Actions
 
 include::_partials/action-definition.adoc[]
 
 Create charge::
+
 Create a new charge. When creating a new charge, note that:
 
 * In the `Amount` field, the value is an integer. For instance, 1.00 is 100.
@@ -42,10 +48,16 @@ Note that best practice dictates that the value in the Customer ID field should 
 
 For more information on the Create Charge action in Stripe, see https://stripe.com/docs/api/charges/create.
 
-Create Customer::
+Create customer::
+
 Create a new customer. When creating a new customer, the `Phone` field is the customer's phone number and not the shipping phone number.
 
-Find Customer::
+Find customer::
+
 Finds an existing customer by `Customer ID`.
+
+//Create product::
+
+//Creates a new product object. The following field is required: *Name*.
 
 include::_partials/see-also.adoc[]

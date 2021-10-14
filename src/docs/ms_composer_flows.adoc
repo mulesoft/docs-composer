@@ -114,6 +114,11 @@ For example, if your trigger is "new records created in Salesforce," and you wan
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
 . Click *Save*.
 
+When there are null values in custom expressions and are:
+
+* Fields without attributes, the null value is ignored. If the value in a required field, an error message occurs. If the value is in an optional field, the value is ignored and not sent to the connector.
+ * Fields with attributes, the value is ignored and not sent to the connector.
+
 == Create a Flow Control
 
 If you need to perform some logic before an action, select a flow control first:

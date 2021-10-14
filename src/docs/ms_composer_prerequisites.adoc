@@ -19,6 +19,7 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
      ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
      ** When using Firefox or Chrome, you must allow third-party cookies.
 * When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
+* Composer fields with date values use the following format: YYYY-MM-DDThh:mmZ.
 
 == Set Up Composer
 
@@ -57,6 +58,8 @@ MuleSoft creates and configures an instance of Anypoint Platform to provide a de
 . In the *Launch MuleSoft Composer* section, click the *Launch* button to start Composer.
 
 Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
+
+You can sync data between two Salesforce organizations with a single license. When you set up Composer, you can choose the primary organization in which you want to build flows and then, within Composer in that organization, you can create connections to one or more other Salesforce organizations.
 
 == Users: Verify Access to Composer
 

@@ -76,6 +76,17 @@ image::images/change-connection.png[Change the connection control, 400]
 
 . Choose a new connection and click *Save*.
 
+//== Repair a Connection
+
+//If your OAuth connection is lost, you can repair the connection by refreshing the access token.
+
+//To repair a connection:
+
+//. Open the flow.
+//. Click *Edit*.
+//. Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
+//. Click *Repair*.
+
 == Schedule a Flow
 
 If you don't choose a connection, you can schedule a flow to start at regular intervals.

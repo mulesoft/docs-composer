@@ -4,6 +4,8 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+//* The Stripe Connector now supports a new action, Create Product, and a new trigger, New Refund.
+
 //== DATE
 
 //include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

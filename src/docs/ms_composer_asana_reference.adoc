@@ -1,0 +1,49 @@
+= Asana Connector Reference
+
+Asana is a SaaS-based project management tool that enables teams of all sizes to manage their daily tasks, schedules, and deliverables.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
++
+
+Older connections may expire if not regularly used. Asana sets the amount of time a connection remains valid.
+
+Username::
+
+The OAuth username that you use to log in to Asana.
+
+Password::
+
+The OAuth password that you use to log into Asana.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New or updated task::
+
+Fires when a task is created or an existing task is updated.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create new task::
+
+Creates a new task record.
++
+When creating a new task record, store the values for both the User ID and the Task ID in the source system for use when updating task records.
+
+Update task::
+
+Returns the completed and updated task record.
+
+Add comment to card::
+
+Comment on a task to ask questions, provide extra information, or to offer insight. The comment appears on the card.
+
+include::_partials/see-also.adoc[]

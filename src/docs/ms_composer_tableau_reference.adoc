@@ -1,4 +1,4 @@
-= Tableau Reference
+= Tableau Connector Reference
 
 Use Tableau as a data target. For example, you can push Salesforce data to an existing Tableau hyper file.
 Some details of how to work with data in a flow are specific to the data target.
@@ -36,7 +36,7 @@ For example, if you see `\https://10ay.online.tableau.com/#/site/MarketingTeam/w
 
 For more information about authentication in Tableau, see `https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`.
 
-=== Known Issues
+=== Limitations
 
 Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
 //CCONN-714, copied from tableau reference
@@ -67,3 +67,7 @@ Add new data to an existing Tableau data source.
 +
 You can create a hyper file using Tableau Desktop (*Connect To a File -> _hyper-file name_*) or by publishing a `.hyper` file via the REST API or `tabcmd`. You can't access a live data source such as a CSV or Excel file, nor can you access data sources that are refreshed on a recurring basis per a schedule defined in Tableau.
 * The time it takes for changes made by the flow to show up in Tableau servers depends on the size of the hyper file.
+
+If the data source that you are populating has a `Time` field but does not include a date, then Tableau stores the date value in the data source as `30/12/1899`.
+
+include::_partials/see-also.adoc[]

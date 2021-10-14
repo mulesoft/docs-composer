@@ -1,0 +1,106 @@
+= Xero Connector Reference
+
+Xero is a SaaS-based accounting application used primarily by small to medium sized businesses for accounting functions such as invoice creation and tracking, receiving and tracking payments, managing inventory, storing customer contacts, and creating purchase orders and quotes.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+To establish a connection from Composer to Xero, you must select the Xero organisation to which you want to connect in the *Organisation* field.
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to Xero.
+
+Password::
+
+The OAuth password that you use to log in to Xero.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New or updated Contact::
+
+Checks for a new or updated contact record. Provide a value for the following fields:
+
+* *Organisation*
+* *Contact Type*
+
+New or updated item::
+
+Checks for a new or updated item record. Provide a value for the following fields:
+
+* *Organisation*
+* *Is purchased*
+* *Is sold*
+* *Is tracked as inventory*
+
+New or updated payment::
+
+Checks for a new or updated payment. Provide a value for the *Organisation* field.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create or update contact::
+
+Creates a new contact record nor updates an existing contact record. Provide a value for the following fields:
+
+* *Organisation*
+* *Contact name*
+* If you add additional contacts, you must also provide a value for *Email address*.
+
+Search contacts::
+
+Returns a list of contact records based on values entered. Provide a value for *Organisation*.
+
+Get contact by ID::
+
+Returns a single contact record based on the ID value. Provide a value for the following fields:
+
+* *Organisation*
+* *Contact ID*
+
+Create or update invoice::
+
+Creates or updates an invoice record. Provide a value for the following fields:
+
+* *Organisation*
+* *Invoice type*
+* *Contact name*
+* *Items*
+
+Update invoice headers::
+
+Updates specific fields in an invoice record. Provide a value for the following fields:
+
+* *Organisation*
+* *Invoice Reference Type*
+* *Invoice Reference*
+
+//Create Item::
+
+//Creates an item record. Provide a value for the following fields:
+
+//* *Organisation*
+//* *Item Code*
+//* If a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field.
+
+Create or update item::
+
+Creates or updates a field in the item record. Provide a value for the following fields:
+
+* *Organisation*
+* *Item Code*
+
+== Objects
+
+The Action: *Create or update invoice* object is available.
+
+//* Field: *Contact persons*
+
+include::_partials/see-also.adoc[]

@@ -1,0 +1,50 @@
+= Twilio Connector Reference
+
+Twilio is a SaaS cloud communications platform that allows users to make and receive phone calls, send and receive text messages, and perform other communication functions using web service APIs.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Account SID::
+
+The Account SID that you use to log in to Twilio.
+
+Auth Token::
+
+The Auth Token that you use to log in to Twilio.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Send Message::
+
+Send a message to a recipient. Values are required in the following fields:
+
+* *To*: The value in this field must be the phone number in E.164 format, SIP address, or channel user address (such as WhatsApp or Facebook messenger channel) of the message recipient.
+
+* *From*: The value in this field must be the phone number in E.164 format, SIP address, or channel user address (such as WhatsApp or Facebook messenger channel) of the message initiator.
+
++
+To send a message, you must provide a value in one of the following fields:
+
+* *Message Text*: Provide a value in this field to send an SMS message. The value in this field cannot exceed 1600 characters.
+
+* *Media URL*: Provide a value in this field to send a media message. Media messages are only available in the United States and Canada. Media messages sent to recipients outside of the United States and Canada appear as an SMS message with an URL link.
+
+Make a Phone Call::
+
+Initiates a phone call. Values are required in the following fields:
+
+* *To*: The value in this field must be the phone number in E.164 format, SIP address, or client identifier of the call recipient.
+
+* *From*: The value in this field must be the phone number in E.164 format, SIP address, or client identifier of the call initiator.
+
+* *TwiML URL*: The value in this field is the URL that hosts a set of TwiML instructions.
++
+For more information on TwiML, see the Twilio documentation: https://www.twilio.com/docs/voice/twiml.
+
+include::_partials/see-also.adoc[]

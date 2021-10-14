@@ -1,0 +1,56 @@
+= ServiceNow Connector Reference
+
+ServiceNow is an IT Service Management (ITSM) system that helps IT organizations manage service requests and incidents reported by employees as well as service requests from partners, vendors, and customers.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Only users with the ServiceNow `soap_admin` role can create connections. For more information, see the ServiceNow help: https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958
+
+Instance URL::
+
+The URL or ID of your ServiceNow instance.
+
+Username::
+
+The username that you use to log in to ServiceNow.
+
+Password::
+
+The password that you use to log in to ServiceNow.
+
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New or updated record::
+
+Checks for new or updated records in the ServiceNow `record_type` table. Provide a value for *Table Name*.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Search record::
+
+Searches for an existing record using a query string that specifies record type criteria. Provide a value for the following fields:
+* *Table Name*
+* *Query*
++
+If the value in the *Table Name* field is `sysparm_no_count`, then this value is set to `True` by default. For more information, see the ServiceNow documentation: https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI#r_TableAPI-GET.
+
+Create record::
+
+Creates a new entry of the selected record type table in ServiceNow. Provide a value for *Table Name*.
+
+Update record::
+
+Updates an existing entry of the selected record type table in ServiceNow. Provide a value in the following fields:
+* *Table Name*
+* *Sys ID*
+
+include::_partials/see-also.adoc[]

@@ -1,0 +1,95 @@
+= Jira Connector Reference
+
+Jira is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to Jira.
+
+Password::
+
+The OAuth password that you use to log in to Jira.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New issue with Custom Fields::
+
+Checks for a new issue with Custom fields created in Jira.
+
+New issue with Standard Fields only::
+
+Checks for a new issue with Standard fields created in Jira.
+
+Update issue with Custom Fields::
+
+Checks for updated issues with Custom fields in Jira.
+
+Update issue with Standard Fields only::
+
+Checks for updated issues with Standard fields in Jira.
+
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create Issue::
+
+Creates a new issue within the selected project. Provide a value for the following fields:
+
+* *Project*
+* *Key*
+* *Summary*
+* *Type*
+* *Status*
+* *Priority*
+
+Update issue with Custom Fields::
+
+Updates specified Custom field values. Provide a value for the following fields:
+
+* *Issue ID or Key*
+* *Notify Users*
+
+Update issue with Standard Fields only::
+
+Updates specified Standard field values. Provide a value for the following fields:
+
+* *Issue ID or Key*
+* *Notify Users*
+
+Assign User to Issue::
+
+Assigns a user to a specified issue. Provide a value for *Issue ID or Key*.
+
+Add Watcher to Issue::
+
+Adds a watcher to an existing Jira issue. Provide a value for *Issue ID or Key*.
+
+Get Issue::
+
+Returns details for a specific issue. Provide a value for *Issue ID or Key*.
+
+Add Comment::
+
+Creates and adds a comment to an existing issue. Provide a value for the following fields:
+* *Issue ID or Key*
+* *Comment Text*
+
+Get Account IDs for Users::
+
+Returns the account IDs for the users specified in the `key` or `username` parameters. You can specify multiple `key` or `username` parameters.
+
+== Custom Fields
+
+Using MuleSoft Composer, you can access Standard  custom field values in Jira for actions and triggers that you set in the Jira issue.
+
+include::_partials/see-also.adoc[]

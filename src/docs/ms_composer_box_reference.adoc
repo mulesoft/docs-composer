@@ -1,0 +1,74 @@
+= Box Connector Reference
+
+Box is a general purpose, SaaS enterprise content management system. Organizations use Box to securely manage and to collaborate on documents, images, videos and various other files.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to Box.
+
+Password::
+
+The OAuth password that you use to log in to Box.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+On new file in folder::
+
+Triggers when a new folder is added. Provide a value for *Folder ID*.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Add file to folder using URL::
+
+Adds a file to a folder in Box which is referenced by a publicly-shared URL. Provide a value for the following fields:
+
+* *Folder ID*
+* *Source URL*
+
+Add file to folder using file content::
+
+Adds a file to a folder in Box. Provide a value for the following fields:
+
+* *File content*
+* *Folder ID* or *Source URL*
++
+If a file exists in the folder, enter a value in the *Folder ID* field to overwrite the existing file. To create a new file in the folder, enter a value in the *File Name* field.
+
+Create folder::
+
+Creates a folder in the Box structure. Provide a value for the following fields:
+
+* *Parent Folder ID*
+* *Folder name*
+
+Create file metadata::
+
+Creates file metadata by populating a metadata template on a file in Box. Provide a value for the following fields:
+
+* *File ID*
+* *Metadata template*
+
++
+Multiple selection field types, such as checkboxes, do not appear in Composer.
+
+Update file metadata::
+
+Updates file metadata by updating the existing metadata template on a file in Box. Provide a value for the following fields:
+
+* *File ID*
+* *Metadata template*
+
++
+Multiple selection field types, such as checkboxes, do not appear in Composer.
+
+include::_partials/see-also.adoc[]

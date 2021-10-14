@@ -1,9 +1,13 @@
-= NetSuite Reference
+= NetSuite Connector Reference
 
-Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce, for example) or a data target (when
-a Salesforce opportunity closes, create a Netsuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
+Whether you are using NetSuite as a data source (take a new NetSuite contact and copy it to Salesforce, for example) or a data target (when a Salesforce opportunity closes, create a NetSuite sales order), the details of how to work with data in a flow are specific to the data source or data target.
 
 == Connection Details
+
+When connecting to NetSuite via MuleSoft Composer, in NetSuite:
+
+* Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*.
+* Ensure that the role used in the integration is not using two-factor authentication by navigating to *Setup* > *User/Roles* > *Two-Factor Authentication Roles*.
 
 include::_partials/connection-definition.adoc[]
 
@@ -11,31 +15,23 @@ include::_partials/connection-name.adoc[]
 +
 You must connect to NetSuite as a regular user (WSU), not a concurrent user (cWSU).
 
-Account::
+include::_partials/netsuite-connection-details.adoc[]
 
-The account ID as listed in your NetSuite instance by accessing *Setup > Integration > SOAP Web Services Preferences*. The value is a string of letters and numbers, for example: `TESTME1234567`.
-+
-Always enter the letters in upper case.
+//When creating a connection, note the following connection fields in NetSuite:
 
-Consumer Key::
+//* *Account ID*: The *Account ID* value associated with your NetSuite instance. You can view the account ID by navigating to *Setup* > *Integration* > *SOAP Web Services Preferences*.
+//* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate a value for consumer key by navigating to *Setup* > *Integration* > *Manage Integrations*.
+//* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for *Consumer Key*.
+//* *Token ID*: The *Token ID* value generated in NetSuite.
+//* *Token Secret*: The *Token Secret* value generated with the token ID in NetSuite.
 
-The consumer key generated in NetSuite by accessing *Setup > Integration > Manage Integrations*
+=== Establish a NetSuite Connection
 
-Consumer Secret::
+To use MuleSoft Composer to establish a NetSuite connection, you must have:
 
-The consumer secret generated in NetSuite along with the consumer key
+* The MuleSoft Composer User permission set to `perform integration tasks`.
 
-Token ID::
-
-The token ID generated in NetSuite
-
-Token Secret::
-
-The token secret generated with the token ID in NetSuite
-
-SOAP Port::
-
-The value can't be edited at this time.
+* An account in Salesforce to store the internal ID of the associated customer in NetSuite. You must ensure that a custom field, NetSuite ID, has been created for the Account object in the organization.
 
 == Triggers
 
@@ -48,8 +44,6 @@ A record is created, or an existing record is updated.
 On New Records::
 
 A new record is created in NetSuite.
-
-
 
 == Actions
 
@@ -71,6 +65,13 @@ Delete Record::
 
 A record is deleted
 
+Get Records::
+
+Returns a list of up to 500 records based on specific search criteria. The following fields are required:
+
+* Object type
+* Filter records
+
 == Record Types
 
 The following record types are supported.
@@ -84,6 +85,7 @@ The following record types are supported.
 ** Invoice
 ** Sales Order
 ** Support Case
+** Custom Record Types
 
 
 * Actions
@@ -99,11 +101,33 @@ The following record types are valid for all actions:
 ** Payment Item
 ** Sales Order
 ** Support Case
+** Custom Record Types
 
-== Custom Objects and Custom Fields
+* Objects
 
-Custom objects and custom fields are not supported.
+** CreditMemo
+** CustomerDeposit
+** CashSale
+** CashRefund
+** CustomerPayment
+** CustomerRefund
+** Journal Entry
+** Opportunity
+** Estimate
+** NonInventoryPurchaseItem
+** NonInventoryResaleItem
+** NonInventorySaleItem
+
+== Custom Fields
+
+Using MuleSoft Composer, you can access custom field values for actions and triggers that you set in the NetSuite record.
 
 == List Objects
 
 List objects are supported.
+
+== Custom Picklists
+
+You can map values to custom picklists using the value name. Internal IDs are not required to map values to custom picklists.
+
+include::_partials/see-also.adoc[]

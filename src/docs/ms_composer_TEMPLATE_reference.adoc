@@ -1,0 +1,48 @@
+= <ConnectorName> Connector Reference
+
+<Intro information>
+
+[NOTE]
+This is a test note.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The username that you use to log in to <Connector>.
+
+Password::
+
+The password that you use to log in to <Connector>.
+
+<Field>::
+
+<Details>.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+<Field>::
+
+<Details>.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+<Field>::
+
+<Details>.
+
+== Objects
+
+<Field>::
+
+<Details>.
+
+include::_partials/see-also.adoc[]

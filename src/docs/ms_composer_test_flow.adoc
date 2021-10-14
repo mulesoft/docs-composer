@@ -1,0 +1,25 @@
+= Test a Composer Flow
+
+By testing as you build your flow, you can ensure that each step and each field mapping in your flow is working as expected before activation. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you build.
+
+Testing processes and tests a single record. You must activate your flow to process all of your records.
+
+When testing your flow, note the following:
+
+* A trigger step is required.
+* Testing automatically ends after ten minutes if not halted by an error or manually terminated.
+* The entire flow is executed and tested.
+
+When testing your flows:
+
+* Build your flow in a sandbox environment to test your flow using inactive accounts.
+* Test your flows with sample or dummy records.
+* Consider limiting the number of records processed if your test times out.
+
+To test a flow:
+
+. From the *Composer Flows* tab, click the name of the flow you want to test.
+. Click *Test*. +
+Composer notifies you when the test is complete. The execution results from the test appear on the card.
+
+include::_partials/see-also.adoc[]

@@ -1,0 +1,33 @@
+= Microsoft Teams Connector Reference
+
+Microsoft Teams is a SaaS enterprise communication system used to send messages within an organization and to customers outside of the direct organization.
+
+To send a Microsoft Teams message using MuleSoft Composer, you must have an active business, enterprise, or education Microsoft 365 license.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The username that you use to log in to Microsoft 365.
+
+Password::
+
+The password that you use to log in to Microsoft 365.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Send message to channel::
+
+Sends a message to all users who are members of a specific Microsoft Teams channel. The following fields are required:
+
+* Team ID
+* Channel ID
+* Message
+
+include::_partials/see-also.adoc[]

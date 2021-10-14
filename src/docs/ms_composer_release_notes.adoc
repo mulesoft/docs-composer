@@ -4,21 +4,626 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== April 13, 2021
+//* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing using refresh tokens that do not require you to reconnect.
+//* The Stripe Connector now supports a new action, Create Product, and a new trigger, New Refund.
 
-=== New Features
+//== DATE
 
-You can now connect to two more systems: Slack and NetSuite.
+//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+//* You can now connect to a new system: Google Calendar.
+//+
+
+//See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+//include::_partials/platform-ki.adoc[]
+
+//include::_partials/googlecalendar-ki.adoc[]
+
+//== DATE 7, 2021
+
+//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+//* You can now connect a new system: QuickBooks Online.
+//+
+
+//ee xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+//This release includes the following known issues:
+
+//include::_partials/platform-ki.adoc[]
+
+//include::_partials/google-sheets-ki.adoc[]
+
+//include::_partials/jira-ki.adoc[]
+
+//include::_partials/netsuite-ki.adoc[]
+
+//include::_partials/salesforce-ki.adoc[]
+
+//include::_partials/servicenow-ki.adoc[]
+
+//include::_partials/slack-ki.adoc[]
+
+//include::_partials/tableau-ki.adoc[]
+
+== October 7, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Zendesk.
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-* The user interface for creating a connection is easier to understand.
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
-=== Known Issues
+[%header%autowidth.spread]
 
-The following issues were identified at the time of this release:
+|===
 
-* If you select the *Create Message* action in Slack, only public channels are returned.
+Issue|ID
+
+|If you encounter an error while testing, instructions and a link now appear in the *Test stopped unexpectedly* window to download the debugging information file and to contact support. | CAPO-364
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+
+== September 27, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The NetSuite Connector now allows users to map values to custom picklists, using the named custom value, without the use of internal IDs.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 14, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce now supports the *Pick from Calendar* option for selecting values in date fields.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 9, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+* You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+
+|===
+
+Issue|ID
+
+|Fixed issue that occurred when updating or creating 500 contact records for a service organization in the Salesforce Connector, a portion of the records did not process. | COCN-446
+
+|Fixed issue that occurred when using *Create Record* action in the Salesforce Connector on an *Invoice* object, the *Invoice* fields were not available. | COCN-530
+
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 8, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Workday Connector now supports the Workday R1.2021 version.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|Fixed issues with validation errors. |COCN-43, COCN-37
+
+|Fixed issue that caused the *Reason* field to be invisible. |COCN-600
+
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== September 2, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Slack Connector now supports markdown for text formatting.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|When using the *Create Message* action in a workspace that contains more than 10,000 channels, selecting the channel name no longer fails. |COCN-512
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 30, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+|In Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action. |COCN-539
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 17, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 11, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
+
+* The following Jira connector triggers and actions were renamed:
+** Triggers
+*** *Update issue* to *Update issue with Custom Fields*
+*** *New issue* to *New issue with Custom Fields*
+** Action: *Update/edit issue* to *Update issue with Custom Fields*
+
+* The Jira connector now supports the following triggers and actions:
+** Triggers
+*** *Updated issue with Standard Fields only*
+*** *New issue with Standard Fields only*
+** Action: *Update issue with Standard Fields only*
+
+* The Xero connector now supports the *Contact persons* field in the *Create or update contact* action.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== August 6, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The Xero connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== July 22, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+
+== July 15, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Get records* action is now available for the NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== July 19, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: ServiceNow.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== July 15, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Get records* action is now available for the NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== July 8, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Xero.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+
+* The following triggers are now available in the Google Sheets connector:
+
+** New row in sheet
+** Updated row in sheet
+** New spreadsheet
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== June 4, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Microsoft Teams.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== July 1, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Jira.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* The NetSuite connector now supports Custom Record Types for actions and triggers.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== June 4, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Microsoft Teams.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== June 2, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to the following systems: Asana and Twilio.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== May 19, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+You can now connect to a new system: Stripe.
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+* If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
 * If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
@@ -30,44 +635,144 @@ The following issues were identified at the time of this release:
 * If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
 //CAPO-47
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
+include::_partials/netsuite-ki.adoc[]
 
-==== Salesforce
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== May 6, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+You can now expand all cards or collapse all cards on the canvas using the *Expand all* or the *Collapse all* button.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+* If you select the *Create Message* action in Slack, only public channels appear.
+//CCONN-765
+
+* If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
+//CPLAT-1288
+
+* If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.
+//CPLAT-1292
+
+* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
+//CAPO-47
+
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
+//CAPP-1625
+
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
+//CAPP-2051
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== April 29, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+* If you select the *Create Message* action in Slack, only public channels appear.
+//CCONN-765
+
+* If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
+//CPLAT-1288
+
+* If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.
+//CPLAT-1292
+
+* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
+//CAPO-47
+
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
+//CAPP-1625
+
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
+//CAPP-2051
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== April 13, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+You can now connect to the following systems: Slack and NetSuite.
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* The user interface for creating a connection is easier to understand.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+
+* If you select the *Create Message* action in Slack, only public channels appear.
+//CCONN-765
+
+* If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
+//CPLAT-1288
+
+* If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.
+//CPLAT-1292
+
+* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
+//CAPO-47
+
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
+//CAPP-1625
+
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
+//CAPP-2051
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126
 
-* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == March 25, 2021
 
-=== New Features
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can delete and replace a trigger step in any unactivated flow.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 * You can't access the *Add Connection* button from a trigger or action once it has been created.
@@ -80,36 +785,27 @@ To change a connection to a new connection of the same system type:
 . In the trigger or action where you want to change to the new connection, click the change icon (three dots).
 . Click *Change Connection*. The new connection is listed.
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
-
-==== Salesforce
+include::_partials/salesforce-ki.adoc[]
 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126
 
-* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]
 
 == March 15, 2021
 
 MuleSoft Composer for Salesforce is generally available.
 
-=== Known Issues
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 The following issues were identified at the time of this release.
 
-* If you don't see the *New Flow* button on the Recently Viewed list page, switch to the All list page.
+* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
 //CAPP-1625
 
-* If you see a blank area instead of the Home page contents when you first log in to Composer, clear your browser cookies and reload.
+* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
 //CAPP-2051
 
 * You can't access the *Add Connection* button from a trigger or action once it has been created.
@@ -134,20 +830,11 @@ To change to a new connection on a trigger that has already been created, use on
 . Delete the action.
 . Open the trigger and use *Change Connection* to change to the new connection.
 
-==== Google Sheets
+include::_partials/google-sheets-ki.adoc[]
 
-A space in the name of your Google Sheet worksheet can cause an error during testing. Remove the space and rerun the test.
-//CCONN-735
-
-==== Salesforce
+include::_partials/salesforce-ki.adoc[]
 
 * As part of the Salesforce action *Get records*, you can't query based on a Date field.
 //CPLAT-1126
 
-* Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step.
-//CAPP-2009
-
-==== Tableau
-
-Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error will occur.
-//CCONN-714, copied to Tableau reference
+include::_partials/tableau-ki.adoc[]

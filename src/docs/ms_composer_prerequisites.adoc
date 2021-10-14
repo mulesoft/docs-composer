@@ -5,18 +5,21 @@ Check that you meet the listed prerequisites before you set up Composer. Then yo
 == Prerequisites
 
 * The org where you set up Composer must be a Salesforce Unlimited, Enterprise, or Performance edition. It can't be a sandbox org.
+* The maximum number of concurrent users supported by an organization is 25.
 * The org must have Lightning enabled.
 * You must purchase a separate MuleSoft Composer license for the org.
 * If your company network has a stringent firewall or list of blocked IP addresses, your network administrator must add `*.mulesoft.com` to the list of allowed addresses.
 +
 IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses.
 * You must relax any IP restrictions for the connections that you create to data sources and data targets. Instructions are included in the setup section of this topic.
+* Composer does not currently support mobile platforms.
 
 * Browser prerequisites:
      ** Don't use incognito mode or private browsers to access Composer.
-     ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must
-uncheck the *Prevent cross-site tracking* option in Safari security preferences.
+     ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
+     ** When using Firefox or Chrome, you must allow third-party cookies.
 * When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
+* Composer fields with date values use the following format: YYYY-MM-DDThh:mmZ.
 
 == Set Up Composer
 
@@ -56,6 +59,8 @@ MuleSoft creates and configures an instance of Anypoint Platform to provide a de
 
 Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
 
+You can sync data between two Salesforce organizations with a single license. When you set up Composer, you can choose the primary organization in which you want to build flows and then, within Composer in that organization, you can create connections to one or more other Salesforce organizations.
+
 == Users: Verify Access to Composer
 
 If you aren't the Salesforce admin who installed Composer, verify that you have access to the Composer app:
@@ -71,5 +76,7 @@ When the Composer page displays, you're ready to create your first flow. If you'
 
 == See Also
 
-* xref:ms_composer_reference.adoc[Connection Reference]
+* xref:ms_composer_overview.adoc[Overview]
+* xref:ms_composer_reference.adoc[Composer Connector Reference]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
 * https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_framework_supported_browsers.htm[Salesforce Canvas browser support]

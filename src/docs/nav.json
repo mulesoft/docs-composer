@@ -67,10 +67,6 @@
               "title": "NetSuite"
             },
             {
-              "file" : "ms_composer_quickbooks_reference.adoc",
-              "title": "QuickBooks Online"
-            },
-            {
               "file" : "ms_composer_salesforce_reference.adoc",
               "title": "Salesforce"
             },

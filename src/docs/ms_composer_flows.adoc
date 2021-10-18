@@ -76,6 +76,17 @@ image::images/change-connection.png[Change the connection control, 400]
 
 . Choose a new connection and click *Save*.
 
+//== Repair a Connection
+
+//If your OAuth connection is lost, you can repair the connection by refreshing the access token.
+
+//To repair a connection:
+
+//. Open the flow.
+//. Click *Edit*.
+//. Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
+//. Click *Repair*.
+
 == Schedule a Flow
 
 If you don't choose a connection, you can schedule a flow to start at regular intervals.
@@ -102,6 +113,11 @@ To create an action:
 For example, if your trigger is "new records created in Salesforce," and you want your action to be "copy new record to a Google Sheet," then you would choose or create a Google Sheet connection.
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
 . Click *Save*.
+
+When there are null values in custom expressions and are:
+
+* Fields without attributes, the null value is ignored. If the value in a required field, an error message occurs. If the value is in an optional field, the value is ignored and not sent to the connector.
+ * Fields with attributes, the value is ignored and not sent to the connector.
 
 == Create a Flow Control
 

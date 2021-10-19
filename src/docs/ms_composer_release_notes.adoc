@@ -28,6 +28,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The Stripe Connector now supports a new action, *Create Product*, and a new trigger, *New Refund*.
 
+* Restrictions for mapping a list of objects have been lifted in the connectors. You can now map to any top level field, regardless of the list of object selected.
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 This release includes the following known issues:
@@ -47,6 +49,7 @@ include::_partials/servicenow-ki.adoc[]
 include::_partials/slack-ki.adoc[]
 
 include::_partials/tableau-ki.adoc[]
+
 
 == October 14, 2021
 

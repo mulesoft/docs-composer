@@ -1,0 +1,1 @@
+../.././../../mulesoft/src/docs/ms_composer_box_reference.adoc

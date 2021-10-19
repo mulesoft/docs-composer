@@ -28,7 +28,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The Stripe Connector now supports a new action, *Create Product*, and a new trigger, *New Refund*.
 
-* Restrictions for mapping a list of objects have been lifted in the connectors. You can now map to any top level field, regardless of the list of object selected.
+* Restrictions for mapping a list of objects have been lifted in the connectors. You can now map any top-level field, not just fields coming from the list of objects you've selected.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

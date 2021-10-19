@@ -27,9 +27,9 @@ New charge::
 
 Checks for a new charge to a payment source.
 
-//New refund::
+New refund::
 
-//Executes when a new refund is created.
+Executes when a new refund is created.
 
 == Actions
 
@@ -56,8 +56,8 @@ Find customer::
 
 Finds an existing customer by `Customer ID`.
 
-//Create product::
+Create product::
 
-//Creates a new product object. The following field is required: *Name*.
+Creates a new product object. The following field is required: *Name*.
 
 include::_partials/see-also.adoc[]

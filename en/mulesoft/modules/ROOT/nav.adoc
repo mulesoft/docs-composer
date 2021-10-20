@@ -1,4 +1,4 @@
-. xref:ms_composer_overview.adoc[MuleSoft Composer]
+xref:ms_composer_overview.adoc[MuleSoft Composer]
 
 //Release notes file for Composer-specific docs go here!
 

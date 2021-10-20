@@ -1,6 +1,6 @@
-. xref:ms_composer_overview.adoc[MuleSoft Composer for Salesforce]
+. xref:ms_composer_overview.adoc[MuleSoft Composer]
 
-* xref:ms_composer_release_notes.adoc[Release Notes]
+//Release notes file for Composer-specific docs go here!
 
 * xref:ms_composer_prerequisites.adoc[Getting Started]
 * xref:ms_composer_about_flows.adoc[Preparation Checklist]

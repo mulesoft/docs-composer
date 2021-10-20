@@ -1,8 +1,9 @@
 = Composer Documentation Set
 
-This set of documentation is designed to be build with link:https://github.com/mulesoft/docs-site-comity[comity].
+Composer documentation is designed to be built with both link:https://github.com/mulesoft/docs-site-comity[comity] and antora.
 
-It follows a less complex structure than antora projects.
+== Comity
+The documentation that is built with comity is located in the salesforce subdirectory.  It follows a less complex structure than antora projects.
 
 [cols=2*, options=header]
 |===
@@ -10,17 +11,20 @@ It follows a less complex structure than antora projects.
 |where
 
 |AsciiDoc files
-|`src/docs`
+|`<language>/src/docs`
 
 |Images
-|`src/docs/images`
+|`<language>src/docs/images`
 
 |Share only content
-|`src/docs/includes`
+|`<language>src/docs/includes`
 |===
 
-At this point in time, there is no need to create a playbook, but that could change.
+where `<language>` is either `en` for English or `jp` for Japanese.
 
-== Notes
-* The table of contents design isn't complete; suggested in the meantime to create nav.adoc as for antora projects
-* When comity is ready for testing, use the instructions there for building content.
+The build is controlled by a playbook maintained in comity.
+
+== Antora
+The antora documentation structure matches the rest of Mulesoft's documentation sets
+with the exception being the content is stored within a directory signifying the language.
+As such, when building, the playbook must include a `start_paths` key and value.

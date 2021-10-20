@@ -1,0 +1,3 @@
+= Salesforce Composer documentation in Japanese
+
+Put the translated composer content here.

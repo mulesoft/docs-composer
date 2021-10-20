@@ -19,41 +19,12 @@
 ** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]
 ** xref:ms_composer_salesforce_reference.adoc[Salesforce]
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]
+** xref:ms_composer_slack_reference.adoc[Slack]
+** xref:ms_composer_stripe_reference.adoc[Stripe]
+** xref:ms_composer_tableau_reference.adoc[Tableau]
+** xref:ms_composer_twilio_reference.adoc[Twilio]
+** xref:ms_composer_workday_reference.adoc[Workday]
+** xref:ms_composer_xero_reference.adoc[Xero]
+** xref:ms_composer_zendesk_reference.adoc[Zendesk]
 
-ms_composer_slack_reference.adoc",
-              "title": "Slack"
-            },
-            {
-              "file" : "ms_composer_stripe_reference.adoc",
-              "title": "Stripe"
-            },
-            {
-              "file" : "ms_composer_tableau_reference.adoc",
-              "title": "Tableau"
-            },
-            {
-              "file" : "ms_composer_twilio_reference.adoc",
-              "title": "Twilio"
-            },
-            {
-              "file" : "ms_composer_workday_reference.adoc",
-              "title": "Workday"
-            },
-            {
-              "file" : "ms_composer_xero_reference.adoc",
-              "title": "Xero"
-            },
-            {
-              "file" : "ms_composer_zendesk_reference.adoc",
-              "title": "Zendesk"
-            }
-          ]
-        },
-        {
-          "file" : "ms_composer_glossary.adoc",
-          "title": "Glossary"
-        }
-      ]
-    }
-  ]
-}
+* xref:ms_composer_glossary.adoc[Glossary]

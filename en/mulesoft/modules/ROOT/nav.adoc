@@ -1,0 +1,59 @@
+. xref:ms_composer_overview.adoc[MuleSoft Composer for Salesforce]
+
+* xref:ms_composer_release_notes.adoc[Release Notes]
+
+* xref:ms_composer_prerequisites.adoc[Getting Started]
+* xref:ms_composer_about_flows.adoc[Preparation Checklist]
+* xref:ms_composer_flows.adoc[Build a Flow]
+* xref:ms_composer_test_flow.adoc[Test a Flow]
+* xref:ms_composer_activation.adoc[Activate a Flow]
+* xref:ms_composer_monitoring.adoc[Monitor a Flow]
+
+* xref:ms_composer_reference.adoc[Composer Connector Reference]
+** xref:ms_composer_asana_reference.adoc[Asana]
+** xref:ms_composer_box_reference.adoc[Box]
+** xref:ms_composer_googlesheets_reference.adoc[Google Sheets]
+** xref:ms_composer_jira_reference.adoc[Jira]
+** xref:ms_composer_ms_teams_reference.adoc[Microsoft Teams]
+** xref:ms_composer_netsuite_reference.adoc[NetSuite]
+** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]
+** xref:ms_composer_salesforce_reference.adoc[Salesforce]
+** xref:ms_composer_servicenow_reference.adoc[ServiceNow]
+
+ms_composer_slack_reference.adoc",
+              "title": "Slack"
+            },
+            {
+              "file" : "ms_composer_stripe_reference.adoc",
+              "title": "Stripe"
+            },
+            {
+              "file" : "ms_composer_tableau_reference.adoc",
+              "title": "Tableau"
+            },
+            {
+              "file" : "ms_composer_twilio_reference.adoc",
+              "title": "Twilio"
+            },
+            {
+              "file" : "ms_composer_workday_reference.adoc",
+              "title": "Workday"
+            },
+            {
+              "file" : "ms_composer_xero_reference.adoc",
+              "title": "Xero"
+            },
+            {
+              "file" : "ms_composer_zendesk_reference.adoc",
+              "title": "Zendesk"
+            }
+          ]
+        },
+        {
+          "file" : "ms_composer_glossary.adoc",
+          "title": "Glossary"
+        }
+      ]
+    }
+  ]
+}

@@ -1,9 +1,25 @@
-= MuleSoft Composer for Salesforce
 
+ifeval::["{product}"=="salesforce"]
+= MuleSoft Composer for Salesforce
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+= MuleSoft Composer
+endif::[]
+
+ifeval::["{product}"=="salesforce"]
 MuleSoft Composer for Salesforce (Composer) makes it easy to build process automation for
 data, using clicks instead of code from within your Salesforce org.
 When you create a secure process to connect the information stored in different systems, you build a real-time,
 integrated view of your customers and your business.
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+MuleSoft Composer (Composer) makes it easy to build process automation for
+data, using clicks instead of code from within your Salesforce org.
+When you create a secure process to connect the information stored in different systems, you build a real-time,
+integrated view of your customers and your business.
+endif::[]
 
 To automate processes with Composer, you build a flow that contains every step in the process:
 

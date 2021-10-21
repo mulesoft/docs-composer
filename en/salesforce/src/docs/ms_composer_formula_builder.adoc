@@ -1,35 +1,30 @@
-= Field Mapping
+= Build Formulas for a Flow
 
 You can manipulate data in Composer by building expressions and applying functions. With the *Custom Expression* editor, you can use DataWeave functions for number, string, or date manipulation using simple math, truncating, capitalizing or setting a date.
 
-== Prerequisites
+== Before You Begin
 
-* Each underlying dataweave function will have a user-friendly name (if deemed necessary), which is how it will be labeled to the end user.
-* Each function will have a one sentence explanation about how it performs and to which data type(s) it can be applied.
-* The functions that accept data types (as input) other than the data type of the output field will not be displayed.
-* Only data pills of the same data type as the field will be shown (other than for string fields where automatic type casting is already supported).
-* Functions can be nested. I.e. the input parameters of a function can be another function call. f(f(datapill))
-
-Conditionals:
-The data pills and formulas displayed in the if/else block for the value are dependent on the data type of the field selected.
+* Only functions that accept data types as inputs appear.
+* Only data pills of the same data type as the field appear. This does not apply to string fields where automatic type casting is already supported.
+* Functions can be nested. The input parameters of a function can be another function call.
+* The data pills and formulas displayed in the if/else block for the value are dependent on the data type of the selected field.
 
 == DataWeave Functions
 
-=== Math
+Composer uses https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave] operators to build custom expressions.
 
-The following formulas and operators and supported: +, -, *, /, ( ), ^
+=== Math Functions
 
-Additionally,
+The following formulas and operators and supported: `+, -, *, /, ( ), ^`
+
+Additionally:
+
+* Only data pills of the type `number` are supported.
+* For fields of the type `number` in actions, Composer provides an advanced editor that supports data pills of data type `number`, ~ (manual input), and the following operators: `+, -, *, /`
+* Parentheses dictate the order of operations.
 
 
-For fields of type number in action cards, we will support a different editor in the “advanced” mode. The editor will support data pills of data type number, numbers (manual input), and the following operators:
-+, -, *, /
-It will also support parenthesis which dictate the order of operations
-It will not support data pills of data type other than number or inputs other than numbers or the above operators
-Note: These are the same dataweave operators and operators used in Salesforce function editor and in Workato
-The other types of functions cannot be selected in this mode (until the future state when we support typecasting)
-
-=== Dates
+=== Date Functions
 
 The following formulas and operations are supported:
 
@@ -52,23 +47,24 @@ The following formulas and operations are supported:
 ** Beginning of the month
 ** Beginning of the year
 
-The underlying system (connector) should re-format the date to the format that the end system requires. The user is not required to provide the expected format. We will not surface a specific function to handle this case.
 
-=== Strings
+=== String Functions
 
 [%header%autowidth.spread]
 
 |===
 
-|Composer Formula |DataWave Formula |Formula Definition
+|Composer Formula |DataWave Formula |Description
 
 |today |Dates::today |Returns current date.
 |now |now | Returns current date and time.
-|addDays(#), addMonths(#), addYears(#) | Periods::days(#),
+|addDays(#)
+|addMonths(#)
+|addYears(#)| Periods::days(#),
 
 |===
 
-=== Numbers
+=== Number Functions
 
 The following formulas and operations are supported:
 

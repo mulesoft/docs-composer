@@ -4,7 +4,6 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-//* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing using refresh tokens that do not require you to reconnect.
 //* Fixed the issue in the Workday Connector in which the the *Create Worker* action returned a value for *Applicant Reference ID* but not for *Employee Reference*.
 //* Restrictions for mapping a list of objects have been lifted in the connectors. You can now map any top-level field, not just fields coming from the list of objects you've selected.
 //* You can now connect to a new system: Google Calendar.
@@ -16,7 +15,9 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The *Custom Expression Editor* now appears in actions. You can use this to  
+* You can now use the *Custom Expression Editor* to create and edit custom expressions in actions. 
+
+* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing using refresh tokens that do not require you to reconnect.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

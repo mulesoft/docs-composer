@@ -76,16 +76,16 @@ image::images/change-connection.png[Change the connection control, 400]
 
 . Choose a new connection and click *Save*.
 
-//== Repair a Connection
+== Repair a Connection
 
-//If your OAuth connection is lost, you can repair the connection by refreshing the access token.
+If your OAuth connection is lost, you can repair the connection by refreshing the access token.
 
-//To repair a connection:
+To repair a connection:
 
-//. Open the flow.
-//. Click *Edit*.
-//. Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
-//. Click *Repair*.
+. Open the flow.
+. Click *Edit*.
+. Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
+. Click *Repair*.
 
 == Schedule a Flow
 
@@ -99,8 +99,7 @@ image:images/connection-example.png[What Should Start This Flow dialog, 500]
 . Choose one of the time intervals, from 15 minutes to 30 days.
 +
 image::images/connection-scheduler.png[New trigger with time interval, 500]
-. Click *Save*.
-
+. Click *Save*. +
 After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an <<create-an-if-else-block,If/Else block>> or <<create-and-test-a-for-each-loop,For Each>> loop.
 
 == Create an Action
@@ -112,6 +111,11 @@ To create an action:
 +
 For example, if your trigger is "new records created in Salesforce," and you want your action to be "copy new record to a Google Sheet," then you would choose or create a Google Sheet connection.
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
+. To add a custom expression:
+.. From the menu, select *Custom Expressions fx*.
+.. In the *Custom Expression fx* window, create the expression by entering text in the editor and selecting data pills from the list.
+.. Optionally, if the field contains a custom expression, click the pencil to edit the field.
+.. Click *Apply*.
 . Click *Save*.
 
 When there are null values in custom expressions and are:

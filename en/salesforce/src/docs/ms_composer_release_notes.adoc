@@ -15,7 +15,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now use the *Custom Expression Editor* to create and edit custom expressions in actions. 
+* You can now create and edit your custom expressions with the *Custom Expression Editor*.
 
 * MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing using refresh tokens that do not require you to reconnect.
 

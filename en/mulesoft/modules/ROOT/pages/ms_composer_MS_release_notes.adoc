@@ -8,7 +8,8 @@ New versions are automatically available once they are released; you don't need 
 
 *<ReleaseDate>*
 
-include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
 
 MuleSoft Composer is generally available.
 

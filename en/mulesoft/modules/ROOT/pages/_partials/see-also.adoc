@@ -1,0 +1,20 @@
+== See Also
+
+ifeval::["{product}"=="salesforce"]
+* xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: Overview]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+* xref:ms_composer_overview.adoc[Mulesoft Composer: Overview]
+endif::[]
+
+ifeval::["{product}"=="salesforce"]
+* xref:ms_composer_prerequisites.adoc[MuleSoft Composer for Salesforce: Getting Started]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+* xref:ms_composer_prerequisites.adoc[MuleSoft Composer: Getting Started]
+endif::[]
+
+* xref:ms_composer_reference.adoc[Composer Connector Reference]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]

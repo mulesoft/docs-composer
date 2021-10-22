@@ -1,0 +1,24 @@
+// Headings for rn-template
+// tag::whatsNew[]
+= What's New
+// end::whatsNew[]
+
+// tag::compatibility[]
+= Compatibility
+// end::compatibility[]
+
+// tag::fixedIssues[]
+= Fixed Issues
+// end::fixedIssues[]
+
+// tag::knownIssues[]
+= Known Issues
+// end::knownIssues[]
+
+// tag::upgrade[]
+= Upgrade
+// end::upgrade[]
+
+// tag::seeAlso[]
+= See Also
+// end::seeAlso[]

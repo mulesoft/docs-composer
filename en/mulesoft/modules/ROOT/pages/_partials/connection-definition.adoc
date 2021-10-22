@@ -1,0 +1,3 @@
+To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with that system's required credentials. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
+
+This system requires the following credential information for its connections:

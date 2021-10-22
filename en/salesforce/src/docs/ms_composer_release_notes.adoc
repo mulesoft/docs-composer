@@ -17,7 +17,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now create and edit your custom expressions with the *Custom Expression Editor*.
 
-* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing using refresh tokens that do not require you to reconnect.
+* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

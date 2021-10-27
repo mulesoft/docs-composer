@@ -43,7 +43,7 @@ ifeval::["{product}"=="salesforce"]
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-. From the left pane, click *Flows*.
+. From the sidebar, click *Flows*.
 . On the *Flows* page, click the name of the flow you want to clone. Composer displays the *Flow Details* page.
 . Click *Clone*.
 . Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
@@ -61,7 +61,7 @@ To define a trigger based on an event:
 . Open a flow if it is not already open. The *What Should Start This Flow?* dialog is displayed.
 +
 image:images/connection-example.png[What Should Start This Flow dialog, 500]
-. Select the system where the triggering event occurs. Your existing connections are displayed. 
+. Select the system where the triggering event occurs. Your existing connections are displayed.
 +
 image:images/list-of-connections.png[List of connections, 500]
 +

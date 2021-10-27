@@ -1,3 +1,4 @@
+:product: mulesoft
 = Build a Composer Flow
 
 After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow or cloning an existing flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
@@ -12,10 +13,20 @@ You can create a new flow or clone an existing flow.
 
 To create a new flow:
 
+ifeval::["{product}"=="salesforce"]
 . From the Composer *Home* page, click *Create New Flow*. +
 Your flow is named automatically.
 . Optionally, click the pencil icon next to *_flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. From the Composer *Home* page, click *Create new flow*. +
+Your flow is named automatically.
+. Optionally, click the pencil icon next to *Untitled Flow* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
+. Click *Save*.
+endif::[]
+
 
 Now you are ready to create a flow trigger.
 
@@ -23,11 +34,23 @@ Now you are ready to create a flow trigger.
 
 To clone an existing flow:
 
-. From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the Flow Details page.
+ifeval::["{product}"=="salesforce"]
+. From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the *Flow Details* page.
 . Click *Clone*.
 . Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
 . Optionally, click the pencil icon next to *Copy of _original flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. From the left pane, click *Flows*.
+. On the *Flows* page, click the name of the flow you want to clone. Composer displays the *Flow Details* page.
+. Click *Clone*.
+. Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
+. Optionally, click the pencil icon next to *Copy of _original flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
+. Click *Save*.
+endif::[]
+
 
 == Create a Flow Trigger
 
@@ -38,7 +61,7 @@ To define a trigger based on an event:
 . Open a flow if it is not already open. The *What Should Start This Flow?* dialog is displayed.
 +
 image:images/connection-example.png[What Should Start This Flow dialog, 500]
-. Select the system where the triggering event occurs. Your existing connections are displayed.
+. Select the system where the triggering event occurs. Your existing connections are displayed. 
 +
 image:images/list-of-connections.png[List of connections, 500]
 +

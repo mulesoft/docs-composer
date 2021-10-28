@@ -11,7 +11,7 @@ New versions are automatically available once they are released; you don't need 
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-== October 27, 2021
+== October 28, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 

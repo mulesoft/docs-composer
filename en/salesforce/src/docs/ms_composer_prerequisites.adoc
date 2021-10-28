@@ -1,4 +1,3 @@
-
 ifeval::["{product}"=="salesforce"]
 = MuleSoft Composer for Salesforce: Getting Started
 endif::[]
@@ -105,7 +104,7 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 
 == Set Up Composer
 
-Before anyone can use Composer, a Salesforce admin must set it up, including installation, permissions assignments, and a few adjustments to your Salesforce org settings.
+Before anyone can use Composer, a MuleSoft admin must set it up, including installation, permissions assignments, and a few adjustments to your MuleSoft org settings.
 
 === Find the Composer Setup Page
 

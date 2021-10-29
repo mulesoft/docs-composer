@@ -47,7 +47,7 @@ ifeval::["{product}"=="mulesoft"]
 . Click *Clone*.
 +
 Composer copies the existing flow and opens the copy in the Flow Details page. Notice that the flow is named *Copy of _original flow name_*.
-. Optionally, click the pencil icon next to *Copy of _original flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
+. If you want to rename the flow, click the pencil icon next to *Copy of _original flow name_* and use any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
 

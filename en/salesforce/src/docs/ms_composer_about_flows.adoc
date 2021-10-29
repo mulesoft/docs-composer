@@ -57,7 +57,7 @@ The first step in triggering a flow is connecting to the system where the trigge
 //After you choose a connection, Composer displays a dialog for you to finish defining the trigger.
 //From this dialog, you can change the connection to another of the same system.
 
-==== Scheduler
+==== Triggering Flows by Using a Scheduler
 
 Instead of connections, you can use *Scheduler* to create a time interval that triggers a flow:
 

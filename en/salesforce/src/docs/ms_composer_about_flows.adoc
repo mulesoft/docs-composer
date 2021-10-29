@@ -59,7 +59,7 @@ The first step in triggering a flow is connecting to the system where the trigge
 
 ==== Triggering Flows by Using a Scheduler
 
-Instead of connections, you can use *Scheduler* to create a time interval that triggers a flow:
+Instead of using connections to trigger a flow, you can use the *Scheduler* control to create a time interval that triggers a flow:
 
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 

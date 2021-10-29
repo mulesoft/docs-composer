@@ -34,7 +34,7 @@ You can test your trigger and adjust as needed. Simply click *Test*, then make t
 
 === Choosing Between Using Connections or a Scheduler
 
-After you create and name a flow, you're ready to choose what will trigger the flow: an event in a system such as Salesforce or Workday, or a time interval such as "every fifteen minutes."
+After you create and name a flow, you're ready to choose what triggers the flow: an event in a system such as Salesforce or Workday, or a time interval such as "every fifteen minutes."
 
 image::images/connection-example.png[Example of a connection dialog, 400]
 

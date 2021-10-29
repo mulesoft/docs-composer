@@ -32,7 +32,7 @@ To see the API Name of the field, hover over the information bubble next to each
 
 You can test your trigger and adjust as needed. Simply click *Test*, then make the system event happen: in this example, create a new Salesforce contact. If the test completes without errors, you're ready for the next step: define the actions that this flow will perform after being triggered.
 
-=== Connections or Scheduler
+=== Choosing Between Using Connections or a Scheduler
 
 After you create and name a flow, you're ready to choose what will trigger the flow: an event in a system such as Salesforce or Workday, or a time interval such as "every fifteen minutes."
 

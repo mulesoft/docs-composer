@@ -22,7 +22,7 @@ endif::[]
 ifeval::["{product}"=="mulesoft"]
 . From the Composer *Home* page, click *Create new flow*. +
 Your flow is named automatically.
-. Optionally, click the pencil icon next to *Untitled Flow* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
+. To change the name automatically created for your new flow, click the pencil icon next to *Untitled Flow* and create a custom name using any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
 

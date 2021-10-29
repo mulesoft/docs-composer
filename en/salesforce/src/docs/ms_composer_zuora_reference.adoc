@@ -51,7 +51,7 @@ Updates a customer account with a payment method, a bill to contact, and an opti
 
 Create Rate Plan Charge::
 
-Creates, compiles and sends a new product rate plan. The following fields are required:
+Creates, compiles, and sends a new product rate plan. The following fields are required:
 
 * *Name*
 * *Product Rate Plan ID*

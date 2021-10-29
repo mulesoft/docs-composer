@@ -52,7 +52,7 @@ The first step in triggering a flow is connecting to the system where the trigge
 
 * Choose an existing connection from the list.
 * Click *Add New Connection* to create a new connection that is automatically selected after you create it.
-* Optionally, you can manage connections: change a connection name or delete a connection.
+* Manage connections by changing connection names or deleting connections.
 
 //After you choose a connection, Composer displays a dialog for you to finish defining the trigger.
 //From this dialog, you can change the connection to another of the same system.

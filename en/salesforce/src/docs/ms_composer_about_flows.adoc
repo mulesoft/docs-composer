@@ -45,7 +45,7 @@ Triggering a flow with an event is done with a connection, and triggering with a
 Using connections to trigger flows protects your login credentials while giving easy access to data sources:
 
 * Only you can see the connections you create.
-* The credentials are never exposed or accessible after you create the connection.
+* Your credentials are never exposed or accessible after you create a connection to replace them.
 * You can't change the name of a connection after it is used in a flow that is deployed.
 
 The first step in triggering a flow is connecting to the system where the trigger will occur. In the *What Should Start This Flow* dialog, choose or create a connection as the first step of creating a trigger:

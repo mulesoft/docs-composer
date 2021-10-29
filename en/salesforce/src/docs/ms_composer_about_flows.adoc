@@ -42,7 +42,7 @@ Triggering a flow with an event is done with a connection, and triggering with a
 
 ==== Triggering Flows by Using Connections
 
-Connections protect your login credentials while giving easy access to data sources:
+Using connections to trigger flows protects your login credentials while giving easy access to data sources:
 
 * Only you can see the connections you create.
 * The credentials are never exposed or accessible after you create the connection.

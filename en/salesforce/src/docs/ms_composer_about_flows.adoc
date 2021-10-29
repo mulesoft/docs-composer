@@ -40,7 +40,7 @@ image::images/connection-example.png[Example of a connection dialog, 400]
 
 Triggering a flow with an event is done with a connection, and triggering with a time schedule is done with Scheduler.
 
-==== Connections
+==== Triggering Flows by Using Connections
 
 Connections protect your login credentials while giving easy access to data sources:
 

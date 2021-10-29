@@ -89,7 +89,7 @@ ifeval::["{product}"=="mulesoft"]
 * You must purchase a MuleSoft Composer license, which is sold separately from the Anypoint Platform license.
 * If your company network has a stringent firewall or list of blocked IP addresses, your network administrator must add `*.mulesoft.com` to the list of allowed addresses.
 +
-IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a list of IP addresses.
+IP addresses used by Composer are dynamic; therefore, MuleSoft can't provide a list of IP addresses.
 * You must relax any IP restrictions for the connections that you create to data sources and data targets. Instructions are included in the setup section of this topic.
 * Composer does not currently support mobile platforms.
 

@@ -141,7 +141,7 @@ Information about the users' invitations appear.
 
 == Admin: Manage Users
 
-You may need to manage your existing users to meet your organization’s business needs for MuleSoft Composer. The following user management tasks are available:
+As administrator, you are responsible for managing your MuleSoft Composer users to meet your organization’s business needs. The following user management tasks are available:
 
 * Change user roles
 * Reset user passwords

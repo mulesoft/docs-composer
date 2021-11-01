@@ -129,7 +129,7 @@ The invited users receive the MuleSoft Composer welcome email.
 
 === Monitor Pending Unaccepted Invitations
 
-After inviting users, you can monitor all pending invitations that have not yet been accepted.
+After inviting users, you can monitor each pending invitation that has not yet been accepted.
 
 To monitor pending invitations:
 

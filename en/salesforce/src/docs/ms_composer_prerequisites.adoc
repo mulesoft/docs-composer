@@ -127,7 +127,7 @@ The following permissions are available:
 +
 The invited users receive the MuleSoft Composer welcome email.
 
-=== Monitor MuleSoft Composer Invitations
+=== Monitor Pending Unaccepted Invitations
 
 After inviting users, you can monitor all pending invitations that have not yet been accepted.
 

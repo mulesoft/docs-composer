@@ -111,7 +111,7 @@ After you successfully connect, you then invite users to access that MuleSoft Co
 . In the *Create account* form, complete the required fields, including a password of at least eight characters that contains at least one uppercase letter, one lowercase letter, and one number.
 . Click *Create account*.
 . Log in to MuleSoft Composer using the username and password you just created. +
-. Select a verification method, follow the steps to set up your multi-factor authentication, and then click *Connect*. +
+. In *Register a Verification Method*, select a verification method, follow the steps to set up your multifactor authentication, and then click *Connect*. +
 The MuleSoft Composer overview page appears.
 
 === Invite Users to Access MuleSoft Composer

@@ -145,7 +145,7 @@ You may need to manage your existing users to meet your organization’s busines
 
 * Change user roles
 * Reset user passwords
-* Reset user Multi-Factor Authentication (MFA) methods
+* Reset user multifactor authentication (MFA) methods
 * Delete users
 
 === Change User Roles

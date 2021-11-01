@@ -123,7 +123,8 @@ The MuleSoft Composer overview page appears.
 +
 The following permissions are available:
 * *Builder*: Enables all users in the group to create and manage flows.
-* *Administrator*: Allows inviting and managing users in addition to the builder permissions.  +
+* *Administrator*: Enables all users in the group to invite and manage users in addition to creating and managing flows.  
++
 The invited users receive the MuleSoft Composer welcome email.
 
 === Monitor MuleSoft Composer Invitations

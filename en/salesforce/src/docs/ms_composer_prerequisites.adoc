@@ -168,7 +168,8 @@ An email is sent to the user with instructions for resetting their MuleSoft Comp
 
 . In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
 The *Users* page appears.
-. Next to the user's email address, click the options icon, and then click *Reset Multi-factor Auth*. +
+. Next to the user's email address, click the options icon,
+ and then click *Reset Multi-factor Auth*. +
 An email is sent to the user with instructions for resetting their MuleSoft Composer password.
 
 === Delete Users

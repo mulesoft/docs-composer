@@ -6,10 +6,10 @@ ifeval::["{product}"=="mulesoft"]
 = MuleSoft Composer: Getting Started
 endif::[]
 
-Check that you meet the listed prerequisites before you set up Composer. Then you can set up and begin using Composer.
+Check that you meet the listed requirements before you set up Composer. Then you can set up and begin using Composer.
 
 ifeval::["{product}"=="salesforce"]
-== Prerequisites
+== Requirements and Restrictions
 
 * The org where you set up Composer must be a Salesforce Unlimited, Enterprise, or Performance edition. It can't be a sandbox org.
 * The maximum number of concurrent users supported by an organization is 25.
@@ -21,10 +21,10 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 * You must relax any IP restrictions for the connections that you create to data sources and data targets. Instructions are included in the setup section of this topic.
 * Composer does not currently support mobile platforms.
 
-* Browser prerequisites:
-     ** Don't use incognito mode or private browsers to access Composer.
-     ** Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
-     ** When using Firefox or Chrome, you must allow third-party cookies.
+=== Browser Requirements:
+* Don't use incognito mode or private browsers to access Composer.
+* Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
+* When using Firefox or Chrome, you must allow third-party cookies.
 * When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
 * Composer fields with date values use the following format: YYYY-MM-DDThh:mmZ.
 
@@ -83,7 +83,7 @@ When the Composer page displays, you're ready to create your first flow. If you'
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-== Prerequisites
+== Requirements and Restrictions
 
 * The maximum number of concurrent users supported by an organization is 25.
 * You must purchase a MuleSoft Composer license, which is sold separately from the Anypoint Platform license.
@@ -93,9 +93,9 @@ IP addresses used by Composer are dynamic; therefore, MuleSoft can't provide a l
 * You must relax any IP restrictions for the connections that you create to data sources and data targets as detailed in the Composer setup instructions.
 * Composer does not currently support mobile platforms.
 
-* Browser prerequisites:
-     ** Don't use incognito mode or private browsers to access Composer.
-     ** If you use Firefox or Chrome, allow third-party cookies.
+=== Browser requirements:
+* Don't use incognito mode or private browsers to access Composer.
+* If you use Firefox or Chrome, allow third-party cookies.
 * When you connect to another system, follow the requirements and restrictions applicable to that connection.
 * Composer fields with date values use the format _YYYY-MM-DDThh:mmZ_.
 
@@ -105,25 +105,29 @@ After you purchase MuleSoft Composer, it automatically creates a MuleSoft Compos
 
 After you successfully connect, you then invite users to access that MuleSoft Composer org.
 
-=== Access MuleSoft Composer as the Main Administrator
+=== Access MuleSoft Composer as for the First Time:
+
+As your organization's primary administrator, follow these steps to initiate your MuleSoft Composer org:
 
 . Log in to your email account, find the welcome email from MuleSoft Composer, and then click *Accept invitation*.
 . In the *Create account* form, complete the required fields, including a password of at least eight characters that contains at least one uppercase letter, one lowercase letter, and one number.
 . Click *Create account*.
-. Log in to MuleSoft Composer using the username and password you just created. +
-. In *Register a Verification Method*, select a verification method, follow the steps to set up your multifactor authentication, and then click *Connect*. +
+. Log in to MuleSoft Composer using the username and password you just created.
+. In *Register a Verification Method*, select a verification method, follow the steps to set up your multi-factor authentication, and then click *Connect*. +
 The MuleSoft Composer overview page appears.
 
 === Invite Users to Access MuleSoft Composer
 
-. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
-. In the *Users* page, click *Add Users*.
+After you access your MuleSoft Composer org using administrator credentials, you then invite your organization's users to your new MuleSoft Composer account:
+
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
+. On the *Users* page, click *Add Users*.
 . In the *Invite New Users* window, enter the email addresses of the users you want to invite, separating the names by using commas.
-. Select the permissions that you want to apply to that group of users and then click *Invite*. 
+. Select the permissions that you want to apply to that group of users and then click *Invite*.
 +
 The following permissions are available:
 * *Builder*: Enables all users in the group to create and manage flows.
-* *Administrator*: Enables all users in the group to invite and manage users in addition to creating and managing flows.  
+* *Administrator*: Enables all users in the group to invite and manage users in addition to creating and managing flows.
 +
 The invited users receive the MuleSoft Composer welcome email.
 
@@ -133,11 +137,13 @@ After inviting users, you can monitor each pending invitation that has not yet b
 
 To monitor a pending invitation:
 
-. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
-The *Users* page appears.
-. Select the *Pending Invitations* tab. +
-Information about the users' invitations appear.
-. On the right side of the invitation, click the options icon. In the menu:
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
+. On the *Users* page, elect the *Pending Invitations* tab. +
+Information about the users' invitations appear. In the menu:
+.. Click the options icon to the right of the user invitation that you want to monitor.
+.. If the invitation to that user is older than 14 days and is about to expire, if you want to resend it, click *Resend Invite*.
+.. If you want to revoke the invitation to that user, click *Revoke Invite*.
+
 
 == Admin: Manage Users
 
@@ -145,42 +151,44 @@ As administrator, you are responsible for managing your MuleSoft Composer users 
 
 * Change user roles
 * Reset user passwords
-* Reset user multifactor authentication (MFA) methods
+* Reset user multi-factor authentication (MFA) methods
 * Delete users
 
 === Change User Roles
 
-. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
-The *Users* page appears.
-. Next to the user's email address, click the options icon and then click *Manage*. +
+To change a user's role:
+
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
+. On the *Users* page, next to the user's email address, click the options icon and then click *Manage*. +
 The user's page appears.
 . Select the *Permissions* tab.
 . Select the permission setting for the user and then click *Save*.
 
 === Reset User Passwords
 
-. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
-The *Users* page appears.
-. Next to the user's email address, click the options icon, and then click *Reset Password*. +
+To reset a user's password:
+
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
+. On the *Users* page, next to the user's email address, click the options icon, and then click *Reset Password*. +
 An email is sent to the user with instructions for resetting their MuleSoft Composer MFA settings.
 
-=== Reset User Multifactor Authentication (MFA) Methods
+=== Reset User Multi-factor Authentication (MFA) Methods
 
-. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
-The *Users* page appears.
-. Next to the user's email address, click the options icon,
+To reset a user's MFA method:
+
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
+. On the *Users* page, next to the user's email address, click the options icon,
  and then click *Reset Multi-factor Auth*. +
 An email is sent to the user with instructions for resetting their MuleSoft Composer password.
 
 === Delete Users
 
-. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
-The *Users* page appears.
-. Next to the user's email address, click the options icon, and then click *Delete*. +
+To delete a user:
+
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
+. On the *Users* page, next to the user's email address, click the options icon, and then click *Delete*. +
 A message appears, warning you that deleting a user cannot be undone.
 . Click *Delete*.
-
-
 endif::[]
 
 ifeval::["{product}"=="salesforce"]

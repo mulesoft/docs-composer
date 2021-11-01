@@ -95,7 +95,7 @@ IP addresses used by Composer are dynamic; therefore, MuleSoft can't provide a l
 
 * Browser prerequisites:
      ** Don't use incognito mode or private browsers to access Composer.
-     ** When using Firefox or Chrome, you allow third-party cookies.
+     ** If you use Firefox or Chrome, allow third-party cookies.
 * When you connect to another system, follow the requirements and restrictions applicable to that connection.
 * Composer fields with date values use the format _YYYY-MM-DDThh:mmZ_.
 

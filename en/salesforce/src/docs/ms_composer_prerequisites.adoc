@@ -152,7 +152,7 @@ As administrator, you are responsible for managing your MuleSoft Composer users 
 
 . In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
 The *Users* page appears.
-. Next to the user's email address, click the options icon, and then click *Manage*. +
+. Next to the user's email address, click the options icon and then click *Manage*. +
 The user's page appears.
 . Select the *Permissions* tab.
 . Select the permission setting for the user and then click *Save*.

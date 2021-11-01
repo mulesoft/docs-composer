@@ -103,7 +103,7 @@ IP addresses used by Composer are dynamic; therefore, MuleSoft can't provide a l
 
 After you purchase MuleSoft Composer, it automatically creates a MuleSoft Composer org for you and sends a welcome email so that you can access MuleSoft Composer for the first time.
 
-After you've successfully connected to MuleSoft Composer as the main administrator, you must invite users to access MuleSoft Composer.
+After you successfully connect, you then invite users to access that MuleSoft Composer org.
 
 === Access MuleSoft Composer as the Main Administrator
 

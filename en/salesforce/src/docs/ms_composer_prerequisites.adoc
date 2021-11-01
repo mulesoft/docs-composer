@@ -107,7 +107,7 @@ After you successfully connect, you then invite users to access that MuleSoft Co
 
 === Access MuleSoft Composer as the Main Administrator
 
-. Log in to your email account, access the welcome email from MuleSoft Composer, and then click *Accept invitation*.
+. Log in to your email account, find the welcome email from MuleSoft Composer, and then click *Accept invitation*.
 . In the *Create account* form, complete the required fields and then click *Create account*. Note that your password must contain at least eight characters, one uppercase letter, one lowercase letter, and one number.
 . Log in to MuleSoft Composer using your username and password. +
 The *Register a Verification Method* dialog box appears.

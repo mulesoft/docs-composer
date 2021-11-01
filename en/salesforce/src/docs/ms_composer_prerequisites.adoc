@@ -176,7 +176,7 @@ An email is sent to the user with instructions for resetting their MuleSoft Comp
 . In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
 The *Users* page appears.
 . Next to the user's email address, click the options icon, and then click *Delete*. +
-A message appears, ensuring that deleting a user cannot be undone.
+A message appears, warning you that deleting a user cannot be undone.
 . Click *Delete*.
 
 

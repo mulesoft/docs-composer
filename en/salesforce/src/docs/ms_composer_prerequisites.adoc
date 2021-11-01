@@ -164,7 +164,7 @@ The *Users* page appears.
 . Next to the user's email address, click the options icon, and then click *Reset Password*. +
 An email is sent to the user with instructions for resetting their MuleSoft Composer MFA settings.
 
-=== Reset User Multi-Factor Authentication (MFA) Methods
+=== Reset User Multifactor Authentication (MFA) Methods
 
 . In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
 The *Users* page appears.

@@ -122,7 +122,7 @@ The MuleSoft Composer overview page appears.
 . Select the permissions that you want to apply to that group of users and then click *Invite*. 
 +
 The following permissions are available:
-* *Builder*: Allows user to create and manage flows.
+* *Builder*: Enables all users in the group to create and manage flows.
 * *Administrator*: Allows inviting and managing users in addition to the builder permissions.  +
 The invited users receive the MuleSoft Composer welcome email.
 

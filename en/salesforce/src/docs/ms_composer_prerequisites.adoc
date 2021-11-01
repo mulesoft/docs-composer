@@ -119,7 +119,9 @@ The MuleSoft Composer overview page appears.
 . In the MuleSoft Composer sidebar, click *Settings* and then click *Users*. +
 . In the *Users* page, click *Add Users*.
 . In the *Invite New Users* window, enter the email addresses of the users you want to invite, separating the names by using commas.
-. Select the permissions for those users and then click *Invite*. Note that the permission you set will be assigned to all users added  in the previous step. The following permissions are available:
+. Select the permissions that you want to apply to that group of users and then click *Invite*. 
++
+The following permissions are available:
 * *Builder*: Allows user to create and manage flows.
 * *Administrator*: Allows inviting and managing users in addition to the builder permissions.  +
 The invited users receive the MuleSoft Composer welcome email.

@@ -138,7 +138,6 @@ The *Users* page appears.
 . Select the *Pending Invitations* tab. +
 Information about the users' invitations appear.
 . On the right side of the invitation, click the options icon. In the menu:
-.. If the invitation is about to expire and you want to resend the invitation to the user, click *Resend Invite*.
 .. If the invitation is no longer required, click *Revoke Invite*.
 
 == Admin: Manage Users

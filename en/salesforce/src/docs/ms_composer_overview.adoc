@@ -40,7 +40,7 @@ the zip code of the new user or propagating changes for existing users.
 == Steps To Create a Flow
 
 To create a functioning, real-time integration in Composer, you don't need coding experience.
-Simply open Composer in your Salesforce org, and then create a flow that contains all the steps you need to get data from point A to point B:
+Simply open Composer, and then create a flow that contains all the steps you need to get data from point A to point B:
 
 Step 1: Choose or create a connection::
 
@@ -64,7 +64,7 @@ Step 3: Define the actions you want to take::
 
 Define what happens to the data fetched by the trigger, and when those actions should be taken; for example, to fetch all records for a specific time period but only copy over the records that have changed or that are new. You might also want to copy over only some information from each record, rather than the entire record.
 +
-Using the triggers and actions of Mulesoft Composer for Salesforce, you can make the flow as elaborate or as simple as necessary.
+Using the triggers and actions of Composer, you can make the flow as elaborate or as simple as necessary.
 +
 If you start the flow at a specified time interval instead of choosing a connection, then you'll fetch data as part of the first action.
 

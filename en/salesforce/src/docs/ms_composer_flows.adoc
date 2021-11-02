@@ -42,14 +42,13 @@ endif::[]
 
 ifeval::["{product}"=="mulesoft"]
 . From the sidebar, click *Flows*.
-. On the *Flows* page, click the name of the flow you want to clone. 
+. On the *Flows* page, click the name of the flow you want to clone.
 . Click *Clone*.
 +
 Composer copies the existing flow and opens the copy in the Flow Details page. Notice that the flow is named *Copy of _original flow name_*.
 . If you want to rename the flow, click the pencil icon next to *Copy of _original flow name_* and use any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
-
 
 == Create a Flow Trigger
 
@@ -60,7 +59,7 @@ To define a trigger based on an event:
 . Open a flow if it is not already open. The *What Should Start This Flow?* dialog is displayed.
 +
 image:images/connection-example.png[What Should Start This Flow dialog, 500]
-. Select the system where the triggering event occurs. Your existing connections are displayed.
+. Select the connector where the triggering event occurs. Your existing connections are displayed.
 +
 image:images/list-of-connections.png[List of connections, 500]
 +
@@ -98,6 +97,7 @@ image::images/change-connection.png[Change the connection control, 400]
 
 . Choose a new connection and click *Save*.
 
+ifeval::["{product}"=="salesforce"]
 == Repair a Connection
 
 If your OAuth connection is lost, you can repair the connection by refreshing the access token.
@@ -108,6 +108,7 @@ To repair a connection:
 . Click *Edit*.
 . Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
 . Click *Repair*.
+endif::[]
 
 == Schedule a Flow
 

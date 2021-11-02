@@ -1,1 +1,1 @@
-../.././../../mulesoft/src/docs/ms_composer_about_flows.adoc
+../../../../salesforce/src/docs/ms_composer_about_flows.adoc

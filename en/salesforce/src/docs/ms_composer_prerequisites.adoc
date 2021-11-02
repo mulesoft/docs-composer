@@ -81,7 +81,7 @@ it's likely that you need to purchase Composer for your Salesforce org or that y
 
 When the Composer page displays, you're ready to create your first flow. If you'd like to learn more before using Composer, review the other topics in this section.
 
-== See Also
+== Related Resources
 
 * xref:ms_composer_overview.adoc[Overview]
 * xref:ms_composer_reference.adoc[Composer Connector Reference]

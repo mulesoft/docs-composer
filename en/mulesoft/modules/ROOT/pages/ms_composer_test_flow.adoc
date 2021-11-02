@@ -1,1 +1,1 @@
-../.././../../mulesoft/src/docs/ms_composer_test_flow.adoc
+../../../../salesforce/src/docs/ms_composer_test_flow.adoc

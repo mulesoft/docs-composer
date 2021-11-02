@@ -1,1 +1,1 @@
-../.././../../mulesoft/src/docs/ms_composer_netsuite_reference.adoc
+../../../../salesforce/src/docs/ms_composer_netsuite_reference.adoc

@@ -4,13 +4,97 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-//* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing using refresh tokens that do not require you to reconnect.
 //* Fixed the issue in the Workday Connector in which the the *Create Worker* action returned a value for *Applicant Reference ID* but not for *Employee Reference*.
-//* Restrictions for mapping a list of objects have been lifted in the connectors. You can now map any top-level field, not just fields coming from the list of objects you've selected.
 //* You can now connect to a new system: Google Calendar.
 //+
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+
+== October 28, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* On the *Composer Flows* page, if a flow fails to execute, a detailed error message now appears to help you troubleshoot the issue.
+
+* You can now connect to a new system: Zuora.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== October 27, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Restrictions for mapping a list of objects have been lifted in the connectors. You can now map any top-level field, not just fields coming from the list of objects you've selected.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== October 21, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now create and edit your custom expressions in actions with the *Custom Expression Editor* window that appears when selecting 'fx' from the menu.
+
+* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
 
 == October 20, 2021
 
@@ -74,7 +158,7 @@ include::_partials/tableau-ki.adoc[]
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: Zendesk.
-
++
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -461,7 +545,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: ServiceNow.
 +
-
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
@@ -511,7 +594,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now connect to a new system: Xero.
 +
-
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 
@@ -635,7 +717,7 @@ include::_partials/tableau-ki.adoc[]
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 You can now connect to a new system: Stripe.
-
++
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

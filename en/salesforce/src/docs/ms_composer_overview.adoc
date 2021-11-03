@@ -15,7 +15,7 @@ endif::[]
 
 ifeval::["{product}"=="mulesoft"]
 MuleSoft Composer (Composer) makes it easy to build process automation for
-data, using clicks instead of code from within your Salesforce org.
+data, using clicks instead of code.
 When you create a secure process to connect the information stored in different systems, you build a real-time,
 integrated view of your customers and your business.
 endif::[]
@@ -86,6 +86,7 @@ Mapping data between systems and doing exactly the right thing at the right time
 however, using Composer helps you break down the logic into the steps required.
 You can experiment with a flow until you've got it working just right, and you can add complexity to it as you discover new use cases.
 
+ifeval::["{product}"=="salesforce"]
 == Next Steps
 
 . Review xref:ms_composer_about_flows.adoc[How Composer Works] to understand how the different parts of a flow work together to automate processes. If you want more help, you can use Salesforce Trailhead or visit the MuleSoft blog post about Composer.
@@ -103,3 +104,19 @@ You can experiment with a flow until you've got it working just right, and you c
 * xref:ms_composer_prerequisites.adoc[Getting Started]
 * xref:ms_composer_reference.adoc[Composer Connector Reference]
 * https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+== Next Steps
+
+. Review xref:ms_composer_about_flows.adoc[How Composer Works] to understand how the different parts of a flow work together to automate processes.
+. Create a plan for your first flow using the xref:ms_composer_checklist.adoc[checklist].
+. Open Composer and build your first flow.
+
+== Related Resources
+
+* https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[Mulesoft Composer Training^]
+* xref:ms_composer_prerequisites.adoc[Getting Started]
+* xref:ms_composer_reference.adoc[Composer Connector Reference]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
+endif::[]

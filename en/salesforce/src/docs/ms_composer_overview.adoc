@@ -39,7 +39,7 @@ the zip code of the new user or propagating changes for existing users.
 == Steps To Create a Flow
 
 To create a functioning, real-time integration in Composer, you don't need coding experience.
-Simply open Composer, and then create a flow that contains all the steps you need to get data from point A to point B:
+Simply open Composer and create a flow that contains all the steps you need to get data from point A to point B:
 
 Step 1: Choose or create a connection::
 

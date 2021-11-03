@@ -26,5 +26,6 @@ xref:ms_composer_overview.adoc[MuleSoft Composer]
 ** xref:ms_composer_workday_reference.adoc[Workday]
 ** xref:ms_composer_xero_reference.adoc[Xero]
 ** xref:ms_composer_zendesk_reference.adoc[Zendesk]
+** xref:ms_composer_zuora_reference.adoc[Zuora]
 
 * xref:ms_composer_glossary.adoc[Glossary]

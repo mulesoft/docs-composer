@@ -4,27 +4,25 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== <Version>
-
-*<ReleaseDate>*
+== November 5, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 MuleSoft Composer is generally available.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+//include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
-[%header,cols="2,1", width="70”]
-|===
-|Issue|ID
-|Message Flows now appear in chronological order. |SE-12345
-|Batch jobs no longer hang while using persistent queues. |SE-54321
-|`NullPointerException` errors no longer occur when using the HTTP Connector inside a connector built with XML SDK. |SE-18335
-|===
+//[%header,cols="2,1", width="70”]
+//|===
+//|Issue|ID
+//|Message Flows now appear in chronological order. |SE-12345
+//|Batch jobs no longer hang while using persistent queues. |SE-54321
+//|`NullPointerException` errors no longer occur when using the HTTP Connector inside a connector built with XML SDK. |SE-18335
+//|===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
+//include::_partials/release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
 
 * https://help.mulesoft.com/s/[MuleSoft Help Center]
 * https://www.mulesoft.com/support-and-services[MuleSoft Services]

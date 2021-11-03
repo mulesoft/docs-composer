@@ -18,7 +18,7 @@ When testing your flows:
 
 To test a flow:
 
-. In Composer, in the flows list, click the flow you want to test, and then click *Edit*.
+. In Composer, in the flows list, click the flow you want to test and click *Edit*.
 . Click *Test*. +
 Composer notifies you when the test is complete. The execution results from the test appear on the card.
 

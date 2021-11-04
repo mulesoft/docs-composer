@@ -1,0 +1,3 @@
+After you connect to a system and define the trigger or configure a scheduler, you define the actions that the flow performs, such as copying a record from Workday to Salesforce. The actions you can perform depend on which system you are connected to.
+
+This system provides the following actions:

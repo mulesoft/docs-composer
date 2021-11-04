@@ -12,10 +12,19 @@ You can create a new flow or clone an existing flow.
 
 To create a new flow:
 
+ifeval::["{product}"=="salesforce"]
 . From the Composer *Home* page, click *Create New Flow*. +
 Your flow is named automatically.
 . Optionally, click the pencil icon next to *_flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. From the Composer *Home* page, click *Create new flow*. +
+Your flow is named automatically.
+. To change the name automatically created for your new flow, click the pencil icon next to *Untitled Flow* and create a custom name using any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
+. Click *Save*.
+endif::[]
 
 Now you are ready to create a flow trigger.
 
@@ -23,11 +32,23 @@ Now you are ready to create a flow trigger.
 
 To clone an existing flow:
 
-. From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the Flow Details page.
+ifeval::["{product}"=="salesforce"]
+. From the *Composer Flows* tab, click the name of the flow you want to clone. Composer displays the *Flow Details* page.
 . Click *Clone*.
 . Composer copies the existing flow and opens the copy in the Flow Details page. Notice the flow is named *Copy of _original flow name_*.
 . Optionally, click the pencil icon next to *Copy of _original flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. From the sidebar, click *Flows*.
+. On the *Flows* page, click the name of the flow you want to clone.
+. Click *Clone*.
++
+Composer copies the existing flow and opens the copy in the Flow Details page. Notice that the flow is named *Copy of _original flow name_*.
+. If you want to rename the flow, click the pencil icon next to *Copy of _original flow name_* and use any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
+. Click *Save*.
+endif::[]
 
 == Create a Flow Trigger
 
@@ -38,14 +59,14 @@ To define a trigger based on an event:
 . Open a flow if it is not already open. The *What Should Start This Flow?* dialog is displayed.
 +
 image:images/connection-example.png[What Should Start This Flow dialog, 500]
-. Select the system where the triggering event occurs. Your existing connections are displayed.
+. Select the connector where the triggering event occurs. Your existing connections are displayed.
 +
 image:images/list-of-connections.png[List of connections, 500]
 +
 You can choose an existing connection or create a new one:
 
 * Click an existing connection to select it.
-* Click *Add new Salesforce Connection* to create a new connection and select it. +
+* Click *Add new _connector name_ Connection* to create a new connection and select it. +
 You can rename or delete connections from this dialog by clicking the gear icon.
 
 . After you choose a connection, the trigger step displays:
@@ -76,6 +97,7 @@ image::images/change-connection.png[Change the connection control, 400]
 
 . Choose a new connection and click *Save*.
 
+ifeval::["{product}"=="salesforce"]
 == Repair a Connection
 
 If your OAuth connection is lost, you can repair the connection by refreshing the access token.
@@ -86,6 +108,7 @@ To repair a connection:
 . Click *Edit*.
 . Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
 . Click *Repair*.
+endif::[]
 
 == Schedule a Flow
 

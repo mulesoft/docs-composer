@@ -8,7 +8,7 @@ ifeval::["{product}"=="mulesoft"]
 Each system that connects to MuleSoft Composer (Composer) behaves in different ways depending on how the system stores the information you want to retrieve and manipulate. Review each system reference page to understand which triggers and actions are available
 endif::[]
 
-== See Also
+== Related Resources
 
 * xref:ms_composer_overview.adoc[Overview]
 * xref:ms_composer_prerequisites.adoc[Getting Started]

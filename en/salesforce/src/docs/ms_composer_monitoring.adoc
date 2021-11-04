@@ -2,11 +2,23 @@
 
 After activation, you can monitor active Composer flows.
 
+ifeval::["{product}"=="salesforce"]
 . In the Composer home page, click *Composer Flows*.
-. In the *All* view, click the name of a flow to display the Flow Detail page.
+. In the *All* view, click the name of a flow to display the Flow Details page.
 
 The Flow Detail page shows the flow's run history: each time the flow runs, and whether that run was successful:
 
 image::images/success-monitoring.png[Image of a flow run history, 600]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. From the sidebar, click *Flows*.
+. Click the name of a flow to display the flow detail page.
+
+The flow detail page shows each time the flow ran and whether that run was successful:
+
+image::images/success-monitoring-ms.png[Image of a flow run history, 600]
+endif::[]
+
 
 include::_partials/see-also.adoc[]

@@ -9,37 +9,6 @@ A flow defines the automated processes between two or more systems. Think of it 
 
 You can also combine multiple actions in a single flow, such as replicating Salesforce records and then sending a Slack message to a particular channel based on the record type. Understanding how the basic building blocks of a flow work together makes it easier to confidently build and test flows. Building a flow is a simple matter of adding a trigger and all the actions you want to perform to complete an automated process.
 
-== Connections or Scheduler
-
-After you create and name a flow, you're ready to choose what will trigger the flow: an event in a system such as Salesforce or Workday, or a time interval such as "every fifteen minutes."
-
-image::images/connection-example.png[Example of a connection dialog, 400]
-
-Triggering a flow with an event is done with a connection, and triggering with a time schedule is done with Scheduler.
-
-=== Connections
-
-The first step in triggering a flow is connecting to the system where the trigger will occur. In the *What Should Start This Flow* dialog, choose or create a connection as the first step of creating a trigger:
-
-* Choose an existing connection from the list.
-* Click *Add New Connection* to create a new connection that is automatically selected after you create it.
-* Optionally, you can manage connections: change a connection name or delete a connection.
-
-Connections protect your login credentials while giving easy access to data sources:
-
-* Only you can see the connections you create.
-* The credentials are never exposed or accessible after you create the connection.
-* You can't change the name of a connection after it is used in a flow that is deployed.
-
-After you choose a connection, Composer displays a dialog for you to finish defining the trigger.
-From this dialog, you can change the connection to another of the same system.
-
-=== Scheduler
-
-Instead of connections, you can use *Scheduler* to create a time interval that triggers a flow:
-
-image::images/connection-scheduler.png[New trigger with time interval, 500]
-
 == Triggers
 
 The first step of the flow is always a trigger. The options available depend on which connection or schedule you choose:
@@ -62,6 +31,37 @@ The trigger listens to the data source and starts when an event specified in the
 To see the API Name of the field, hover over the information bubble next to each field name.
 
 You can test your trigger and adjust as needed. Simply click *Test*, then make the system event happen: in this example, create a new Salesforce contact. If the test completes without errors, you're ready for the next step: define the actions that this flow will perform after being triggered.
+
+=== Choosing Between Using Connections or a Scheduler
+
+After you create and name a flow, choose what triggers the flow: an event in a system such as Salesforce or Workday (creating a connection), or a time interval specified by a Scheduler, such as "every fifteen minutes.
+
+Triggering a flow with an event is done with a connection, and triggering with a time schedule is done with Scheduler.
+
+image::images/connection-example.png[Example of a connection dialog, 400]
+
+==== Triggering Flows by Using Connections
+
+Using connections to trigger flows protects your login credentials while giving easy access to data sources:
+
+* Only you can see the connections you create.
+* Your credentials are never exposed or accessible after you create a connection to replace them.
+* You can't change the name of a connection after it is used in a flow that is deployed.
+
+The first step in triggering a flow is connecting to the system where the trigger will occur. In the *What Should Start This Flow* dialog, choose or create a connection as the first step of creating a trigger:
+
+* Choose an existing connection from the list.
+* Click *Add New Connection* to create a new connection that is automatically selected after you create it.
+* Manage connections by changing connection names or deleting connections.
+
+//After you choose a connection, Composer displays a dialog for you to finish defining the trigger.
+//From this dialog, you can change the connection to another of the same system.
+
+==== Triggering Flows by Using a Scheduler
+
+Instead of using connections to trigger a flow, you can use the *Scheduler* control to create a time interval that triggers a flow:
+
+image::images/connection-scheduler.png[New trigger with time interval, 500]
 
 == Actions
 
@@ -143,7 +143,7 @@ You can test your work after every trigger and action. As you test, you can add 
 
 After testing is complete, you are ready to activate your flow.
 
-== See Also
+== Related Resources
 
 ifeval::["{product}"=="salesforce"]
 * xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: Overview]

@@ -1,6 +1,6 @@
 xref:ms_composer_overview.adoc[MuleSoft Composer]
 
-//Release notes file for Composer-specific docs go here!
+* xref:ms_composer_ms_release_notes.adoc[Release Notes]
 
 * xref:ms_composer_prerequisites.adoc[Getting Started]
 * xref:ms_composer_about_flows.adoc[Preparation Checklist]
@@ -26,5 +26,6 @@ xref:ms_composer_overview.adoc[MuleSoft Composer]
 ** xref:ms_composer_workday_reference.adoc[Workday]
 ** xref:ms_composer_xero_reference.adoc[Xero]
 ** xref:ms_composer_zendesk_reference.adoc[Zendesk]
+** xref:ms_composer_zuora_reference.adoc[Zuora]
 
 * xref:ms_composer_glossary.adoc[Glossary]

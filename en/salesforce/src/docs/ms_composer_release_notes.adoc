@@ -11,6 +11,18 @@ New versions are automatically available once they are released; you don't need 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 //MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+| | CSCA-1055
+
+|===
+
 == October 28, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

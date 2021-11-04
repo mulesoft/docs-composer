@@ -143,7 +143,7 @@ You can test your work after every trigger and action. As you test, you can add 
 
 After testing is complete, you are ready to activate your flow.
 
-== See Also
+== Related Resources
 
 ifeval::["{product}"=="salesforce"]
 * xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: Overview]

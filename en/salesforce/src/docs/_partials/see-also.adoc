@@ -1,4 +1,4 @@
-== See Also
+== Related Resources
 
 ifeval::["{product}"=="salesforce"]
 * xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: Overview]

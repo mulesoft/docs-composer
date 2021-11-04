@@ -144,7 +144,6 @@ Information about the users' invitations appear. In the menu:
 .. If the invitation to that user is older than 14 days and is about to expire, if you want to resend it, click *Resend Invite*.
 .. If you want to revoke the invitation to that user, click *Revoke Invite*.
 
-
 == Admin: Manage Users
 
 As administrator, you are responsible for managing your MuleSoft Composer users to meet your organization’s business needs. The following user management tasks are available:
@@ -192,7 +191,7 @@ A message appears, warning you that deleting a user cannot be undone.
 endif::[]
 
 ifeval::["{product}"=="salesforce"]
-== See Also
+== Related Resources
 
 * xref:ms_composer_overview.adoc[Overview]
 * xref:ms_composer_reference.adoc[Composer Connector Reference]
@@ -201,7 +200,7 @@ ifeval::["{product}"=="salesforce"]
 endif::[]
 
 ifeval::["{product}"=="salesforce"]
-== See Also
+== Related Resources
 
 * xref:ms_composer_overview.adoc[Overview]
 * xref:ms_composer_reference.adoc[Composer Connector Reference]

@@ -20,5 +20,5 @@
 // end::upgrade[]
 
 // tag::seeAlso[]
-= See Also
+= Related Resources
 // end::seeAlso[]

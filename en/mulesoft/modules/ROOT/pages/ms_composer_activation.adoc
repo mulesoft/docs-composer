@@ -1,6 +1,6 @@
 = Activate a Composer Flow
 
-After you xref:ms_composer_flows.adoc[build] and xref:ms_composer_test_flow.adoc[test] a flow in a sandbox environment, xref:ms-composer-flows.adoc#change-a-connection[connect] your flow to a production environment. After testing your flow in the production environment, you can activate it.
+After you xref:ms_composer_flows.adoc[build] and xref:ms_composer_test_flow.adoc[test] a flow in a sandbox environment, xref:ms_composer_flows.adoc#change-a-connection[connect] your flow to a production environment. After testing your flow in the production environment, you can activate it.
 
 To activate your flow:
 

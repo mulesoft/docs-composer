@@ -19,7 +19,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 Issue|ID
 
-| | CSCA-1055
+| On the action card in the Jira connector, the *Summary* field now appears under the *Priority* field. | CSCA-1055
 
 |===
 

@@ -1,15 +1,1 @@
-= Composer Connector Reference
-
-ifeval::["{product}"=="salesforce"]
-Each system that connects to MuleSoft Composer for Salesforce (Composer) behaves in different ways depending on how the system stores the information you want to retrieve and manipulate. Review each system reference page to understand which triggers and actions are available
-endif::[]
-
-ifeval::["{product}"=="mulesoft"]
-Each system that connects to MuleSoft Composer (Composer) behaves in different ways depending on how the system stores the information you want to retrieve and manipulate. Review each system reference page to understand which triggers and actions are available
-endif::[]
-
-== Related Resources
-
-* xref:ms_composer_overview.adoc[Overview]
-* xref:ms_composer_prerequisites.adoc[Getting Started]
-* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
+../../../mulesoft/modules/ROOT/pages/ms_composer_reference.adoc

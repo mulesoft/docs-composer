@@ -1,14 +1,1 @@
-= Activate a Composer Flow
-
-After you xref:ms_composer_flows.adoc[build] and xref:ms_composer_test_flow.adoc[test] a flow in a sandbox environment, xref:ms_composer_flows.adoc#change-a-connection[connect] your flow to a production environment. After testing your flow in the production environment, you can activate it.
-
-To activate your flow:
-
-. In Composer, find the flow you want to activate in the flows list. Your flow status is listed as *Inactive*.
-. Click the flow name to open it.
-. Click *Edit*.
-. Click *Activate*.
-
-Composer notifies you when the flow is activated.
-
-include::_partials/see-also.adoc[]
+../../../mulesoft/modules/ROOT/pages/ms_composer_activation.adoc

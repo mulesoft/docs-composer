@@ -111,6 +111,11 @@ Data pills allow your data mapping to be as simple or as complex as you need:
 
 If a data pill is a field with a null or blank value, and you map it to an optional field, Composer removes it from the flow. If you map it to a required field, an error occurs because a value is required.
 
+== List of Strings
+
+  
+
+
 == Flow Controls
 
 If you need to add logic to your flow beyond a basic action, you can use a For Each loop or an If/Else block. You'll define the flow control and then specify the action to be taken based on the logic applied to the data fetched previously.

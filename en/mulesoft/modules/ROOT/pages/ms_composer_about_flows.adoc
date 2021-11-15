@@ -109,12 +109,9 @@ Data pills allow your data mapping to be as simple or as complex as you need:
 
 * You can create a custom expression instead of simply mapping data pills to data targets, by select *Custom Express fx*. For example, you might want to add some text such as `Copied from Salesforce` after a data pill, to flag it for inspection.
 
+* You can type in a field and matching data pills are returned in a dropdown. You can enter a single term or enter multiple terms separated by commas. You can type characters, dates, booleans, or numbers. 
+
 If a data pill is a field with a null or blank value, and you map it to an optional field, Composer removes it from the flow. If you map it to a required field, an error occurs because a value is required.
-
-== List of Strings
-
-  
-
 
 == Flow Controls
 

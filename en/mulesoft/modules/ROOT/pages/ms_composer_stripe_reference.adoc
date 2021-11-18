@@ -1,1 +1,63 @@
-../../../../salesforce/src/docs/ms_composer_stripe_reference.adoc
+= Stripe Connector Reference
+
+Online payment processing platforms, like Stripe, are used by a growing number of businesses. Stripe enables businesses of all sizes to process payments through APIs by keeping customers and payment information synched.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+API key::
+
+The value in this field maps to the `Authorization` field in the specialist connector and functions as a username in Stripe. Authentication to the API is performed via HTTP Basic Authentication. Your API key is your username and a password is not required. You can find your API key in your https://stripe.com/docs/api/authentication[Stripe Dashboard]. The Stripe API:
+
+* Uses API keys to authenticate requests.
+* Supplies test mode keys that have the prefix `sk_test_` and live mode secret keys that have the prefix `sk_live_`.
+* Allows users to use restricted API keys for granular permissions.
+* Ensures that all API requests are made via HTTPS.
+
+https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth authentication, but Stripe does not. For more information on OAuth authentication in Stripe, see https://www.similartech.com/compare/stripe-vs-stripe-connect.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New charge::
+
+Checks for a new charge to a payment source.
+
+New refund::
+
+Executes when a new refund is created.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create charge::
+
+Create a new charge. When creating a new charge, note that:
+
+* In the `Amount` field, the value is an integer. For instance, 1.00 is 100.
+* The following fields require values:
+** Either the `Source` or the `Customer` field
+** `Customer ID` +
+Note that best practice dictates that the value in the Customer ID field should come from an existing account in Stripe. For example, `cus_JQ1BWAcXfKuswb`.
+** Some shipping fields are required if any shipping fields are present. +
+
+For more information on the Create Charge action in Stripe, see https://stripe.com/docs/api/charges/create.
+
+Create customer::
+
+Create a new customer. When creating a new customer, the `Phone` field is the customer's phone number and not the shipping phone number.
+
+Find customer::
+
+Finds an existing customer by `Customer ID`.
+
+Create product::
+
+Creates a new product object. The following field is required: *Name*.
+
+include::_partials/see-also.adoc[]

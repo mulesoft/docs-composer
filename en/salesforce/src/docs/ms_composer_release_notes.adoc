@@ -10,6 +10,65 @@ New versions are automatically available once they are released; you don't need 
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
+== November 8, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== November 4, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+| On the action card in the Jira connector, the *Summary* field now appears under the *Priority* field. | CSCA-1055
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
 
 == October 28, 2021
 
@@ -73,8 +132,6 @@ include::_partials/tableau-ki.adoc[]
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now create and edit your custom expressions in actions with the *Custom Expression Editor* window that appears when selecting 'fx' from the menu.
-
-* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

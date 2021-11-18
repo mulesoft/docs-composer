@@ -1,1 +1,80 @@
-../../../../salesforce/src/docs/ms_composer_workday_reference.adoc
+= Workday Connector Reference
+
+Use Workday as a data source or data target.
+Some details of how to work with data in a flow are specific to the data source or data target, and to the specific trigger or actions you choose.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Tenant Name::
+
+The name or ID of your Workday tenant
++
+For example, if the URL where you log into Workday is `na.workday.com/wday/authgwy/global-modern/`, then your tenant name is `global-modern`.
+
+User Name and Password::
+
+The username and password that you use to log in to the system.
+
+For Composer to successfully authenticate a Workday user account, the Workday user requires full user roles. Composer does not authenticate API User roles.
+
+== Triggers
+
+New or updated object::
+
+This trigger checks for a new or updated object.
+//This trigger checks for a new or updated object in Workday Financial Management. A value is required in the following field: *Object*.
+
+== Actions
+
+Get Worker Details by ID::
+
+This action returns the worker details corresponding to the employee's `Workday ID` that you supply.
+
+Create Worker::
+
+This action creates a new worker.
+
+Update Job Requisition::
+
+This action updates the details on a job requisition.
+
+Get Customer::
+
+This action returns the customer details corresponding to the customer ID that you supply.
+
+//Create Object::
+
+//This action creates a new object in Workday Financial Management. A value is required in the following field: Object.
+
+//Update Object::
+
+//This action updates an existing object in Workday Financial Management. A value is required in the following fields:
+
+//* *Object*
+//* *Unique ID*
+
+//Get Object::
+
+//This action returns an existing object in Workday Financial Management. A value is required in the following fields:
+
+//* *Object*
+//* *ID*
+
+== Object Types
+
+The following object types are available:
+
+* Triggers
+    ** JOB_REQUISITIONS
+    ** WORKER
+
+* Actions
+    ** CUSTOMER
+    ** JOB_REQUISITIONS
+    ** WORKER
+
+include::_partials/see-also.adoc[]

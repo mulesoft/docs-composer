@@ -1,1 +1,139 @@
-../../../../salesforce/src/docs/ms_composer_quickbooks_reference.adoc
+= Quickbooks Online Connector Reference
+
+QuickBooks Online provides cloud-based accounting software that enables organizations to manage core business processes, ERP financials, e-commerce, inventory, and more.
+
+The Quickbooks Online Connector uses https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API minor version 62].
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to QuickBooks Online.
+
+Password::
+
+The OAuth password that you use to log in to QuickBooks Online.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New Invoice::
+
+Triggers when a new invoice is created.
+
+Updated Invoice::
+
+Triggers when an existing invoice is updated.
+
+New Customer::
+
+Triggers when a new customer is created.
+
+Updated Customer::
+
+Triggers when an existing customer is updated.
+
+New Item::
+
+Triggers when a new item is created.
+
+Updated Item::
+
+Triggers when an existing item is updated.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create Invoice::
+
+Creates a new invoice. The following field is required: *Customer ID*.
+
+Update Invoice::
+
+Updates an existing invoice. The following field is required: *Invoice ID*.
+
+Create Customer::
+
+Creates a new customer.
+
+Update Customer::
+
+Updates an existing customer. The following field is required: *Customer ID*.
+
+Create Item::
+
+Creates a new item. The following fields are required:
+
+* *Name*
+* *Type*
+* If the value in the *Track Quantity on Hand* is equal to `True`, the following fields are required:
+** *Asset Account Reference*
+** *Invoice Start Date*
+** *Quantity on Hand*
+
+Update Item::
+
+Updates an existing item. The following fields are required:
+
+* *Item ID*
+* If the value in the *Track Quantity on Hand* is equal to `True`, the following fields are required:
+** *Asset Account Reference*
+** *Invoice Start Date*
+** *Quantity on Hand*
+
+Query Invoice::
+
+Searches for an existing invoice. One or more of the following fields must be populated to return results:
+
+* *Invoice ID Equals*
+* *Customer ID Equals*
+* *Due Date Greater Or Equal*
+* *Date Created Greater or Equal*
+* *Last Updated Date Greater or Equal*
+
+Query Customer::
+
+Searches for an existing customer. One or more of the following fields must be populated to return results:
+
+* *Customer ID Equals*
+* *Customer Display Name Equals*
+* *Customer Display Name Like*
+* *Active Equals*
+* *Primary Email Address Equals*
+* *Primary Email Address Like*
+* *Balance Greater Or Equal*
+* *Date Created Greater or Equal*
+* *Last Updated Date Greater or Equal*
+
+Query Item::
+
+Searches for an existing item. One or more of the following fields must be populated to return results:
+
+* *Item ID Equals*
+* *Name Equals*
+* *Name Like*
+* *Active Equals*
+* *Type Equals*
+* *Date Created Greater or Equal*
+* *Last Updated Date Greater or Equal*
+
+Get Invoice::
+
+Returns an invoice. The following field is required: *Customer ID*.
+
+
+Get Customer::
+
+Returns a customer.  The following field is required: *Customer ID*.
+
+Get Item::
+
+Returns an item. The following field is required: *Item ID*.
+
+include::_partials/see-also.adoc[]

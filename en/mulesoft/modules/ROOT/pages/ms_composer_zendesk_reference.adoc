@@ -1,1 +1,74 @@
-../../../../salesforce/src/docs/ms_composer_zendesk_reference.adoc
+= Zendesk Connector Reference
+
+Zendesk is a help desk management solution providing tools for customer service.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to Zendesk.
+
+Password::
+
+The OAuth password that you use to log in to Zendesk.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New/updated ticket::
+
+Checks for a new or updated ticket.
+
+New/updated organization::
+
+Fires when a new organization is created or an existing organization is updated in Zendesk.
+
+New/updated user::
+
+Fires when a new user is created or an existing user is updated in Zendesk.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create a ticket::
+
+Creates a new ticket. Provide values for the following fields:
+
+* *Subject*
+* *Comment*
+
+Update a ticket::
+
+Updates an existing ticket. Provide values for the following fields:
+
+* *Ticket ID*
+* *Description*
+
+Search tickets::
+
+Searches for a ticket based on specified criteria.
+
+Create or update an organization::
+
+Creates a new organization or updates an existing organization.
+
+Create or update a user::
+
+Creates a new user or updates an existing user. Provide a value for the following fields:
+
+* *ID type*
+* *Name*
+
+Search organizations::
+
+Searches for organizations based on specified criteria and returns a list of organizations matching those criteria.
+
+Search users::
+
+Searches for users based on specified criteria and returns a list of organizations matching those criteria.

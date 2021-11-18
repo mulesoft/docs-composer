@@ -1,1 +1,96 @@
-../../../../salesforce/src/docs/ms_composer_zuora_reference.adoc
+= Zuora Connector Reference
+
+Zuora is a subscription management and recurring revenue service that manages product packaging, plans, and pricing, as well as customer product subscriptions and accounts creation for automatic billing and payment.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Client ID::
+
+The OAuth Client ID registered with Zuora.
+
+Client Secret::
+
+The OAuth Client Secret registered with Zuora.
+
+Environment::
+
+The Base URI for the Zuora tenant.
+
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Get Account::
+
+Retrieves information about a customer account. The *Account Key* field is required.
+
+Create Account::
+
+Creates a customer account with a payment method, a bill to contact, and an optional sold to contact. The following fields are required:
+
+* *Account Name*
+* *Credit Card Payment Method*
+* *Currency*
+* If no subscription is created, then the *Bill Cycle Day* field is required.
+* *Bill To Contact First Name*
+* *Bill To Contact Last Name*
+* *Bill To Contact State*
+* *Bill To State Country*
+
+Update Account::
+
+Updates a customer account with a payment method, a bill to contact, and an optional sold to contact. The following fields are required:
+
+* *Account Key*
+* If the value in the *Auto Pay* field is set to `true`, then the *Credit Card Payment Method ID* field is required.
+
+Create Rate Plan Charge::
+
+Creates, compiles, and sends a new product rate plan. The following fields are required:
+
+* *Name*
+* *Product Rate Plan ID*
+* *Charge Model*
+* *Charge Type*
+
+* If the value in the *End Date Condition* field is set to `Fixed Period`, then the following fields are required:
+** *Up To Periods*
+** *Up To Period Type*
+
+* If the value in the *Price Increase Option* field is set to `Specific Percentage Value`, then the *Price Increase Percentage* field is required.
+
+* If the value in the *Taxable* field is set to `true`, then the following fields are required:
+
+** *Tax Code*
+** *Tax Mode*
+
+* *Trigger Event*
+* *Unit of Measure*
+
+
+Update Product Rate Plan Charge::
+
+Updates an existing product rate plan charge. The following fields are required:
+
+* *Product Rate Plan ID*
+* If the value in the *Billing Period* field is set to either `Specific Weeks` or `Specific Months`, then the *Specific Billing Period* field is required.
+
+* If the value in the *End Date Condition* field is set to `Fixed Period`, then the following fields are required:
+** *Up To Periods*
+** *Up To Period Type*
+
+* If the value in the *Price Increase Option* field is set to `Specific Percentage Value`, then the *Price Increase Percentage* field is required.
+
+* If the value in the *Taxable* field is set to `true`, then the following fields are required:
+** *Tax Code*
+** *Tax Mode*
+
+
+
+
+include::_partials/see-also.adoc[]

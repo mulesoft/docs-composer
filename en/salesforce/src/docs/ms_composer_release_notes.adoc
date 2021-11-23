@@ -20,7 +20,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 Issue|ID
 
-| When adding a For Each block to a flow control in the Salesforce connector, the For Each block returns the object label name instead of the object API name. | COCN-745
+| When adding a For Each block to a flow control in the Salesforce connector, the For Each block shows the object label name instead of the object API name. | COCN-745
 
 |===
 

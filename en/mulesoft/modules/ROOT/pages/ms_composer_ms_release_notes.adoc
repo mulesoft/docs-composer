@@ -4,6 +4,20 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== November 23, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+Issue|ID
+
+| When adding a For Each block to a flow control in the Salesforce connector, the For Each block shows the object label name instead of the object API name. | COCN-745
+
+|===
+
 == November 5, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -26,4 +40,3 @@ MuleSoft Composer is generally available.
 
 * https://help.mulesoft.com/s/[MuleSoft Help Center]
 * https://www.mulesoft.com/support-and-services[MuleSoft Services]
-

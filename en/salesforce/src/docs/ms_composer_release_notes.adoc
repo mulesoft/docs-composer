@@ -14,9 +14,9 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The Jira Connector now supports spaces for input field `type` for all operations.
+* The Jira Connector now supports spaces in input fields for all operations.
 
-* The Jira Connector now supports comments on Jira issues. 
+* Actions in the Jira Connector now support the `Comment` field.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

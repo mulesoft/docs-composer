@@ -16,9 +16,9 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The NetSuite Connector now supports the `Job` record type.
 
-* The NetSuite connector now supports the `External ID` field for the *Update Record* action.
+* The NetSuite connector now supports the `External` value in the `ID Type` field for the *Update Record* action.
 
-* The NetSuite connector now supports the `ID Type` values for the *Delete Record* action.
+* The NetSuite connector now supports `ID Type` values for the *Delete Record* action.
 
 * The NetSuite connector now supports the `Assembly Item` record type.
 

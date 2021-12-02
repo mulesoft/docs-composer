@@ -11,6 +11,14 @@ New versions are automatically available once they are released; you don't need 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 //MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
 
+== December 1, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The Jira Connector now supports spaces in input fields for all operations.
+
+* Actions in the Jira Connector now support the `Comment` field.
+
 == October 28, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

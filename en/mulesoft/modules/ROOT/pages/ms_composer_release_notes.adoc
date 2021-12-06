@@ -15,14 +15,13 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The NetSuite Connector now supports the `Job` record type.
+* The NetSuite Connector now supports the *Job* record type.
 
-* The NetSuite connector now supports the `External` value in the `ID Type` field for the *Update Record* action.
+* The NetSuite connector now supports the *External* value in the *ID Type* field for the *Update Record* action.
 
-* The NetSuite connector now supports `ID Type` values for the *Delete Record* action.
+* The NetSuite connector now supports *ID Type* values for the *Delete Record* action.
 
-* The NetSuite connector now supports the `Assembly Item` record type.
-
+* The NetSuite connector now supports the *Assembly Item* record type.
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -35,7 +34,7 @@ Issue|ID
 | When some metadata subcategories are empty, metadata can be refreshed in the flow. | SE-23496
 | Fixed the issue when processing custom fields with empty values. | SE-23068
 | The NetSuite XML request no longer requires the runServerSuiteScriptAndTriggerWorkflows flag. | SE-22758
-| Fixed the issue when processing  date/time custom fields. | COCN-735
+| Fixed the issue when processing date/time custom fields. | COCN-735
 
 |===
 

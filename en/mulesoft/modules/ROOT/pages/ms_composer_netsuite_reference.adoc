@@ -35,7 +35,7 @@ To use MuleSoft Composer to establish a NetSuite connection, you must have:
 
 === Run Server SuiteScript to Trigger Workflows
 
-If your NetSuite configuration preferences are set to run server SuiteScript and trigger workflows, the following criteria are required :
+If your NetSuite configuration preferences are set to run server SuiteScript and trigger workflows, the following criteria are required:
 
 * The *Audience* field must have all roles selected.
 * The *Execute As Role* field must be set to `Administrator`.

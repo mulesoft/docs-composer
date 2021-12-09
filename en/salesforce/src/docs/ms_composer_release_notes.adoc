@@ -22,8 +22,8 @@ Issue|ID
 
 | Fixed metadata pagination issues in the Xero Connector. | CSCA-1106
 | Fixed failing sample data requests for the *Get contact by ID* and *Search contacts* actions in the Xero Connector. | CSCA-1044
-| Fixed the | CSCA-1043
-| | CSCA-1042
+| Fixed the field labels in the Xero Connector to match those field names in the Xero APIs. | CSCA-1043
+| Fixed the issue in which the *On new or updated contact* action in the Xero Connector sent out multiple Slack messages when updating more than one field in the contact. | CSCA-1042
 | Fixed field labels in the Xero Connector.  | CSCA-1040
 
 

@@ -16,7 +16,7 @@ Issue|ID
 
 | Fixed metadata pagination issues in the Xero Connector. | CSCA-1106
 | Fixed failing sample data requests for the *Get contact by ID* and *Search contacts* actions in the Xero Connector. | CSCA-1044
-| Fixed the field labels in the Xero Connector to match those field names in the Xero APIs. | CSCA-1043
+| Fixed the field labels in the Xero Connector to match the corresponding field names in the Xero APIs. | CSCA-1043
 | Fixed field labels in the Xero Connector.  | CSCA-1040
 
 |===

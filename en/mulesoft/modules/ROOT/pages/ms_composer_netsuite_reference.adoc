@@ -53,7 +53,7 @@ include::_partials/trigger-definition.adoc[]
 
 On Updated Records::
 
-A record is created, or an existing record is updated.
+A record is created or an existing record is updated.
 
 On New Records::
 

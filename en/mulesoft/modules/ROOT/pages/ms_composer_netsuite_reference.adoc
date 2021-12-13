@@ -35,8 +35,9 @@ To use MuleSoft Composer to establish a NetSuite connection, you must have:
 
 === Set NetSuite Permissions
 
-* When setting NetSuite permissions:
-** The Administrator role has full access and permissions to all objects.
+Access to NetSuite data and to the NetSuite user interface is based on users, roles, and permissions.
+
+For more information on users, roles, and permissions, see the https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite documentation].
 
 
 === Run Server SuiteScript to Trigger Workflows

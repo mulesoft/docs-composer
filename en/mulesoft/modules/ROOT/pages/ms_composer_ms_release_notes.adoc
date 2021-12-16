@@ -16,7 +16,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 | Previously, in the Google Sheets Connector when Google Sheets was the trigger, all output fields were returned as `text` regardless of the assigned data type (for example, `int` or` `bool`). As a result, if you attempted to map the trigger data pills to non-text fields in the action, you encountered an error. Now, trigger fields retain their original data types and you can map them appropriately in subsequent actions. | SE-227701, COCN-575
 | Fixed an issue in the Google Sheets Connector in which metadata from a document containing a space failed.  | COCN-742
@@ -32,7 +32,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 | Fixed metadata pagination issues in the Xero Connector. | CSCA-1106
 | Fixed failing sample data requests for the *Get contact by ID* and *Search contacts* actions in the Xero Connector. | CSCA-1044
@@ -59,7 +59,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 | When some metadata subcategories are empty, metadata can be refreshed in the flow. | SE-23496
 | Fixed the issue when processing custom fields with empty values. | SE-23068
@@ -86,7 +86,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-| Issue|ID
+|Issue|ID
 
 | When adding a For Each block to a flow control in the Salesforce connector, the For Each block shows the object label name instead of the object API name. | COCN-745
 

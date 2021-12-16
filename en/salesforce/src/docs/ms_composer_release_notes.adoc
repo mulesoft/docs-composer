@@ -10,6 +10,46 @@ New versions are automatically available once they are released; you don't need 
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
+== December 16, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In the Google Sheets Connector, when using the Create/Update Row action, you can now transfer multiple rows of data.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+| Issue |ID
+
+| Previously, in the Google Sheets Connector when Google Sheets was the trigger, all output fields were returned as `text` regardless of the assigned data type (for example, `int` or` `bool`). As a result, if you attempted to map the trigger data pills to non-text fields in the action, you encountered an error. Now, trigger fields retain their original data types and you can map them appropriately in subsequent actions. | SE-227701, COCN-575
+| Fixed an issue in the Google Sheets Connector in which metadata from a document containing a space failed.  | COCN-742
+// | Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
 == December 9, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -18,7 +58,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 | Fixed metadata pagination issues in the Xero Connector. | CSCA-1106
 | Fixed failing sample data requests for the *Get contact by ID* and *Search contacts* actions in the Xero Connector. | CSCA-1044
@@ -66,7 +106,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 | When some metadata subcategories are empty, metadata can be refreshed in the flow. | SE-23496
 | Fixed the issue when processing custom fields with empty values. | SE-23068
@@ -131,7 +171,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 | When adding a For Each block to a flow control in the Salesforce connector, the For Each block shows the object label name instead of the object API name. | COCN-745
 
@@ -191,7 +231,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 | On the action card in the Jira connector, the *Summary* field now appears under the *Priority* field. | CSCA-1055
 
@@ -371,7 +411,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 |If you encounter an error while testing, instructions and a link now appear in the *Test stopped unexpectedly* window to download the debugging information file and to contact support. | CAPO-364
 
@@ -460,7 +500,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 |Fixed issue that occurred when updating or creating 500 contact records for a service organization in the Salesforce Connector, a portion of the records did not process. | COCN-446
 
@@ -501,7 +541,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 |Fixed issues with validation errors. |COCN-43, COCN-37
 
@@ -542,7 +582,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 |When using the *Create Message* action in a workspace that contains more than 10,000 channels, selecting the channel name no longer fails. |COCN-512
 
@@ -580,7 +620,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-Issue|ID
+|Issue|ID
 
 |In Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action. |COCN-539
 

@@ -4,6 +4,20 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== December 21, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
+
+|===
+
 == December 16, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

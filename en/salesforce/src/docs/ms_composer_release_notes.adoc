@@ -20,7 +20,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
+| Fixed an issue in the Asana Connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
 
 |===
 

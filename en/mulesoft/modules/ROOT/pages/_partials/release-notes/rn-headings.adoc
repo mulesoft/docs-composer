@@ -24,6 +24,6 @@ ifeval::[{platform} == 'salesforce']
 = Related Resources
 endif::[]
 ifeval::[{platform} == 'mulesoft']
-= See Also
+= Related Resources
 endif::[]
 // end::seeAlso[]

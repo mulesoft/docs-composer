@@ -9,7 +9,7 @@ New versions are automatically available once they are released; you don't need 
 //+
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-//* MuleSoft Composer for Salesforce now enables the List of Strings data pill. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.  
+
 
 == January 11, 2022
 
@@ -24,6 +24,53 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 | Upgraded library dependencies. | COCN-894
 
 |===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+== January 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce now supports the List of Strings component. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+This release includes the following known issues:
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
 
 == January 5, 2022
 

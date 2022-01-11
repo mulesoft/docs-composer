@@ -11,9 +11,23 @@ New versions are automatically available once they are released; you don't need 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 //* MuleSoft Composer for Salesforce now enables the List of Strings data pill. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.  
 
+== January 11, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Upgraded library dependencies. | COCN-894
+
+|===
+
 == January 5, 2022
 
-nclude::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
 [%header%autowidth.spread]
 

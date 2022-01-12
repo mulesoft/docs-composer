@@ -49,7 +49,7 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* MuleSoft Composer for Salesforce now supports the List of Strings component. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
+* MuleSoft Composer for Salesforce now supports the `list of strings` data pill. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

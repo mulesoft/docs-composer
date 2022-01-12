@@ -101,7 +101,7 @@ The fields from Salesforce that are mapped to the Google Sheet fields are data p
 
 == Data Pills
 
-Data pills contain the complexity of a data structure, making it easy map data from triggers or previous actions. Using data pills, data mapping to be as simple or as complex as you need:
+Data pills contain the complexity of a data structure, making it easy to map data from triggers or previous actions. Using data pills, data mapping can be as simple or as complex as you need:
 
 * You can concatenate two or more data pills by mapping them to the same field, column, or other data target.
 

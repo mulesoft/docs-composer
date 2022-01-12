@@ -22,7 +22,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* MuleSoft Composer now supports the List of Strings component. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
+* MuleSoft Composer now supports the `list of strings` data pill. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
 
 == January 5, 2022
 

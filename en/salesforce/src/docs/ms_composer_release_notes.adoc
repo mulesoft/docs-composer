@@ -10,8 +10,7 @@ New versions are automatically available once they are released; you don't need 
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-
-== January 11, 2022
+== January 13, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 

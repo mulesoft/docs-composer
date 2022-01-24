@@ -20,13 +20,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| The Update Row operation in the Google Sheets Connector did not accept a data pill as an input for Row Number. | COCN-910
+| The *Update row* action in the Google Sheets Connector did not accept a data pill as an input for the *Row number* field. | COCN-910
 
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -60,8 +58,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -94,8 +90,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -119,8 +113,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * MuleSoft Composer for Salesforce now supports the `list of strings` data pill. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -155,8 +147,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -188,8 +178,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -230,8 +218,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -266,8 +252,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -315,8 +299,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -342,8 +324,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * Actions in the Jira Connector now support the `Comment` field.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -377,8 +357,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -402,8 +380,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -437,8 +413,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -468,8 +442,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -493,8 +465,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * Restrictions for mapping a list of objects have been lifted in the connectors. You can now map any top-level field, not just fields coming from the list of objects you've selected.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -520,8 +490,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -545,8 +513,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * The Stripe Connector now supports a new action, *Create Product*, and a new trigger, *New Refund*.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -575,8 +541,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -617,8 +581,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -644,8 +606,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -669,8 +629,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * MuleSoft Composer for Salesforce now supports the *Pick from Calendar* option for selecting values in date fields.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -708,8 +666,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -750,8 +706,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-This release includes the following known issues:
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -787,8 +741,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-This release includes the following known issues:
 
 include::_partials/platform-ki.adoc[]
 
@@ -826,7 +778,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -850,7 +801,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
 
 include::_partials/platform-ki.adoc[]
 
@@ -890,7 +840,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -915,7 +864,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -939,7 +887,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
 
 include::_partials/platform-ki.adoc[]
 
@@ -966,7 +913,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -990,7 +936,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
 
 include::_partials/platform-ki.adoc[]
 
@@ -1037,7 +982,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * You can now connect to a new system: Xero.
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
 
 * The following triggers are now available in the Google Sheets connector:
 
@@ -1093,7 +1037,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -1118,7 +1061,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -1141,7 +1083,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
@@ -1163,7 +1104,6 @@ You can now connect to a new system: Stripe.
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
 
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
@@ -1201,7 +1141,6 @@ You can now expand all cards or collapse all cards on the canvas using the *Expa
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 
@@ -1231,7 +1170,6 @@ include::_partials/tableau-ki.adoc[]
 == April 29, 2021
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
 
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
@@ -1270,8 +1208,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 * The user interface for creating a connection is easier to understand.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-
 * If you select the *Create Message* action in Slack, only public channels appear.
 //CCONN-765
 

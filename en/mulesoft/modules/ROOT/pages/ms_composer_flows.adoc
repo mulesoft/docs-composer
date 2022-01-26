@@ -61,14 +61,15 @@ To refresh a card:
 . Click the refresh icon in the trigger or action card that you want to refresh.
 +
 The cache for the card is cleared and the new data is retrieved.
+image:images/composer_refresh_card.png[Refreshing a card]
 
 To refresh a field:
 
 . Open the flow.
 . Click the refresh icon next to the field that you want to refresh in the trigger or action card.
 +
-The cache for the card is cleared and the new data is retrieved.
-
+The cache for the field is cleared and the new value providers are retrieved.
+image:images/composer_refresh_field.png[Refreshing a field]
 
 == Create a Flow Trigger
 

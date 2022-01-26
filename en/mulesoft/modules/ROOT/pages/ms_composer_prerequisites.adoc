@@ -21,6 +21,7 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 * Composer does not currently support mobile platforms.
 
 === Browser Requirements:
+
 * Don't use incognito mode or private browsers to access Composer.
 * Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
 * When using Firefox or Chrome, you must allow third-party cookies.
@@ -54,6 +55,8 @@ Four more steps are revealed when the installation is complete. As the admin per
      .. Save the changes.
 
 . In the *Configure MuleSoft Services* section, click *Initiate Configuration*.
++
+Salesforce certificates expire after one year. To renew an expired certificate, click *Initiate Configuration*.
 +
 MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:

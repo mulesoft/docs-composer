@@ -4,6 +4,16 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== January 27, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+
+* The Date Time picker is now available. You can either *Pick from Calendar* or *Search Data Pills* in fields with the data type `date` or `time`. The date picker uses the time zone set in your browser by default.
+
+* The *Flow Details* page now shows the *Created on* and *Last Modified* dates in the time zone set for your browser.
+
+* When an error occurs, if there is additional information about the error, you can click the *More details* link in the error message. In the *Error* window, you can troubleshoot the issue or copy the *Trace ID* to provide to support. You can also click the *Contact MuleSoft Support Team* button to contact support directly.
 
 == January 25, 2022
 
@@ -131,6 +141,10 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The NetSuite connector now supports the *Assembly Item* record type.
 
+* The Jira Connector now supports spaces in input fields for all operations.
+
+* Actions in the Jira Connector now support the `Comment` field.
+
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
 [%header%autowidth.spread]
@@ -145,16 +159,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 | Fixed the issue when processing date/time custom fields. | COCN-735
 
 |===
-
-
-== December 2, 2021
-
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
-* The Jira Connector now supports spaces in input fields for all operations.
-
-* Actions in the Jira Connector now support the `Comment` field.
-
 
 == November 23, 2021
 

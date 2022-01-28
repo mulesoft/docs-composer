@@ -1,3 +1,4 @@
+
 = Build a Composer Flow
 
 After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow or cloning an existing flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
@@ -49,6 +50,26 @@ Composer copies the existing flow and opens the copy in the Flow Details page. N
 . If you want to rename the flow, click the pencil icon next to *Copy of _original flow name_* and use any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
+
+== Refresh a Flow
+
+When building a flow, you may need to refresh the flow to view updated data at either the object level or the field level.
+
+To refresh a object:
+
+. Open the flow.
+. Click the refresh icon in the upper right corner of the trigger or action card that you want to refresh.
++
+image:images/composer_refresh_card.png[Refreshing an object]
+The cache for the object type is cleared and the new data is retrieved.
+
+To refresh a field:
+
+. Open the flow.
+. Click the refresh icon in the bottom left corner of the trigger or action card.
++
+image:images/composer_refresh_field.png[Refreshing a field]
+The cache for the field is cleared. The new value providers for the field are retrieved.
 
 == Create a Flow Trigger
 

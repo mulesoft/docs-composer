@@ -14,6 +14,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
+* In the Stripe Connector, in the *Create Product* action, the *Images* field is now available. This field enables you to add the URL of to up to eight images that are then attached to the action.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

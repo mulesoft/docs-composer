@@ -45,7 +45,7 @@ Next, you'll install Composer and make some Salesforce org adjustments to ensure
 
 === Admin: Adjust the Session Settings
 
-. In the Salesforce Composer sidebar, click *Settings*, *Security*, and then click *Session Settings*.
+. In the Salesforce Composer sidebar, click *Settings* > *Security* > *Session Settings*.
 . On the *Sessions Settings* page, in the *Session Settings* subsection, deselect the *Lock sessions to the IP address from which they originated* checkbox.
 . Click *Save*.
 

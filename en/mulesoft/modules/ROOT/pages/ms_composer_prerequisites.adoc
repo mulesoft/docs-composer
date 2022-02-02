@@ -43,6 +43,12 @@ If you can't find Composer in the search results, it's likely that your org need
 
 Next, you'll install Composer and make some Salesforce org adjustments to ensure Composer works properly.
 
+=== Admin: Adjust the Session Settings
+
+. In the Salesforce Composer sidebar, click *Settings*, *Security*, and then click *Session Settings*.
+. On the *Sessions Settings* page, in the *Session Settings* subsection, deselect the *Lock sessions to the IP address from which they originated* checkbox.
+. Click *Save*.
+
 === Admin: Install Composer and Adjust Salesforce Org Settings
 
 . In the *Install the Managed Package for MuleSoft Composer* section, click *Install Managed Package*.

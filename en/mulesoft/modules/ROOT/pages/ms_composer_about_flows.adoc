@@ -121,13 +121,20 @@ The value that a field can accept for a value is a data types. In Composer, the 
 
 |Data Type |Definition
 
-|Array | Provides a collection of a fixed number of components of the same data type. |
+|Array | Provides a collection of a fixed number of components of the same data type.
+
 |Boolean | Evaluates to true or false. Possible values: `true`, `false`
+
 |Date | Stores a year, month, and day as ``yyyy-MM-dd.
+
 |DateTime | Stores a date and time within a time zone, where a time zone is the time relative to Greenwich Mean Time (GMT). A time zone must include a + or a -. For example, `03:00:00` is a time, while +03:00 is a time zone. Example that represents 12:30 p.m. on June 1, 2019 in Macau: `2019-06-01T12:30:00+08:00`
+
 |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
+
 |Number | Stores a float number, which can range from 1.40129846432481707e-45 to 3.40282346638528860e+38 and include a decimal point, or an integer.
-|Object | Referes to a reference of data of any type (`boolean`, `date`, `number`, etc.). |
+
+|Object | Referes to a reference of data of any type (`boolean`, `date`, `number`, etc.).
+
 |String | Stores text, numbers (not `number` data types), or a combination of both. Examples: "94u0sfjlk*(f!`lkkjd", "18005555555", "Fred"
 
 |===

@@ -113,7 +113,7 @@ If a data pill is a field with a null or blank value, and you map it to an optio
 
 == Supported Data Types
 
-The value that a field can accept for a value is a data types. In Composer, the following data types are available:
+The value that a field can accept for a value is a data type. In Composer, the following data types are available:
 
 [%header%autowidth.spread]
 

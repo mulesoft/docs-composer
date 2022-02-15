@@ -9,6 +9,8 @@ When connecting to NetSuite via MuleSoft Composer, in NetSuite:
 * Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*.
 * Ensure that the role used in the integration is not using two-factor authentication by navigating to *Setup* > *User/Roles* > *Two-Factor Authentication Roles*.
 
+Composer supports NetSuite 2020.2 instances. 
+
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
@@ -32,6 +34,14 @@ To use MuleSoft Composer to establish a NetSuite connection, you must have:
 * The MuleSoft Composer User permission set to `perform integration tasks`.
 
 * An account in Salesforce to store the internal ID of the associated customer in NetSuite. You must ensure that a custom field, NetSuite ID, has been created for the Account object in the organization.
+
+=== Run Server SuiteScript to Trigger Workflows
+
+If your NetSuite configuration preferences are set to run server SuiteScript and trigger workflows, the following criteria are required:
+
+* The *Audience* field must have all roles selected.
+* The *Execute As Role* field must be set to `Administrator`.
+* The *Log Level* field must be set to `Debug`.
 
 == Triggers
 

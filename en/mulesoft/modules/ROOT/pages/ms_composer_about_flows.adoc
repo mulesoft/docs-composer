@@ -101,13 +101,13 @@ The fields from Salesforce that are mapped to the Google Sheet fields are data p
 
 == Data Pills
 
-Data pills allow your data mapping to be as simple or as complex as you need:
-
-* Data pills contain the complexity of a data structure, making it easy map data from triggers or previous actions.
+Data pills contain the complexity of a data structure, making it easy to map data from triggers or previous actions. Using data pills, data mapping can be as simple or as complex as you need:
 
 * You can concatenate two or more data pills by mapping them to the same field, column, or other data target.
 
 * You can create a custom expression instead of simply mapping data pills to data targets, by select *Custom Express fx*. For example, you might want to add some text such as `Copied from Salesforce` after a data pill, to flag it for inspection.
+
+* You can construct a list of strings with multiple comma-separated data pills and manually-entered string values. If you enter a single data pill, Composer automatically converts that data pill to a list. When using the `list of strings` data pill, if you also select a data pill of the data type `string`, `number`, `boolean` or `date`, those data pills are appended to the existing list and the non-string data pills will be typecast to a `string` data type.
 
 If a data pill is a field with a null or blank value, and you map it to an optional field, Composer removes it from the flow. If you map it to a required field, an error occurs because a value is required.
 
@@ -164,3 +164,11 @@ endif::[]
 * xref:ms_composer_flows.adoc[Build and Test a Flow]
 * xref:ms_composer_activation.adoc[Activate a Flow]
 * xref:ms_composer_monitoring.adoc[Monitor a Flow]
+
+ifeval::["{product}"=="salesforce"]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+* https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[Knowledge Articles]
+endif::[]

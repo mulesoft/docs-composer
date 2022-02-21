@@ -4,11 +4,30 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-== February 1, 2022
+== February 21, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Fixed the issue in the NetSuite Connector in which triggers with the *Type of Record* field set to `NON_INVENTORY_SALE_ITEM` returned data from other record types. | W-10674134
+
+|===
+
+== February 7, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In the Stripe Connector, in the *Create Product* action, the *Images* field is now available. This field enables you to add the URL of to up to eight images that are then attached to the action.
+
+* In the QuickBooks Connector, the following fields are now available in the *Create Invoice* action:
+
+** *Transaction Tax Code*
+** *Item Tax Code*
 
 == January 27, 2022
 

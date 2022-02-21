@@ -134,6 +134,7 @@ After you access your MuleSoft Composer org using administrator credentials, you
 . Select the permissions that you want to apply to that group of users and then click *Invite*.
 +
 The following permissions are available:
+
 * *Builder*: Enables all users in the group to create and manage flows.
 * *Administrator*: Enables all users in the group to invite and manage users in addition to creating and managing flows.
 +

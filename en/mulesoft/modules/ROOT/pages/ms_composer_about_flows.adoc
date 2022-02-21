@@ -133,7 +133,7 @@ If a data pill is a field with a null or blank value, and you map it to an optio
 
 //|Number | Stores a float number, which can range from 1.40129846432481707e-45 to 3.40282346638528860e+38 and include a decimal point, or an integer.
 
-//|Object | Referes to a reference of data of any type (`boolean`, `date`, `number`, etc.).
+//|Object | Refers to a reference of data of any type (`boolean`, `date`, `number`, etc.).
 
 //|String | Stores text, numbers (not `number` data types), or a combination of both. Examples: "94u0sfjlk*(f!`lkkjd", "18005555555", "Fred"
 

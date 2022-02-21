@@ -10,6 +10,9 @@ New versions are automatically available once they are released; you don't need 
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
+//| Fixed an issue in the NetSuite Connector in which creating custom fields on the *Contact* object with the type `document` did not return results. | COCN-752
+//| Fixed an issue in the NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
+
 == February 21, 2022
 
 [%header%autowidth.spread]

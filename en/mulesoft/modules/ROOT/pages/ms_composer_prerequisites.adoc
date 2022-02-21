@@ -1,7 +1,6 @@
 ifeval::["{product}"=="salesforce"]
 = MuleSoft Composer for Salesforce: Getting Started
 endif::[]
-
 ifeval::["{product}"=="mulesoft"]
 = MuleSoft Composer: Getting Started
 endif::[]
@@ -22,6 +21,7 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 * Composer does not currently support mobile platforms.
 
 === Browser Requirements:
+
 * Don't use incognito mode or private browsers to access Composer.
 * Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
 * When using Firefox or Chrome, you must allow third-party cookies.
@@ -43,6 +43,12 @@ If you can't find Composer in the search results, it's likely that your org need
 
 Next, you'll install Composer and make some Salesforce org adjustments to ensure Composer works properly.
 
+=== Admin: Adjust the Session Settings
+
+. In the Salesforce Composer sidebar, click *Settings* > *Security* > *Session Settings*.
+. On the *Sessions Settings* page, in the *Session Settings* subsection, deselect the *Lock sessions to the IP address from which they originated* checkbox.
+. Click *Save*.
+
 === Admin: Install Composer and Adjust Salesforce Org Settings
 
 . In the *Install the Managed Package for MuleSoft Composer* section, click *Install Managed Package*.
@@ -55,6 +61,8 @@ Four more steps are revealed when the installation is complete. As the admin per
      .. Save the changes.
 
 . In the *Configure MuleSoft Services* section, click *Initiate Configuration*.
++
+Salesforce certificates expire after one year. To renew an expired certificate, click *Initiate Configuration*.
 +
 MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
@@ -126,6 +134,7 @@ After you access your MuleSoft Composer org using administrator credentials, you
 . Select the permissions that you want to apply to that group of users and then click *Invite*.
 +
 The following permissions are available:
+
 * *Builder*: Enables all users in the group to create and manage flows.
 * *Administrator*: Enables all users in the group to invite and manage users in addition to creating and managing flows.
 +

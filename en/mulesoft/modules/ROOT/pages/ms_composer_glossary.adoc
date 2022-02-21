@@ -1,38 +1,59 @@
 ifeval::["{product}"=="salesforce"]
 = MuleSoft Composer for Salesforce Glossary
 endif::[]
+
 ifeval::["{product}"=="mulesoft"]
 = MuleSoft Composer Glossary
 endif::[]
 
-connection::
+activate:: The process of starting a flow.
 
-The credentials that give you access to a system where you want to access data: the username and password, and the URL where you enter them to gain access. Some systems require additional information such as a security token.
+clone:: The process of copying a flow, including all actions and triggers, in its entirety.
 
-data pill::
+connection:: The credentials that give you access to a system where you want to access data: the username and password, and the URL where you enter them to gain access. Some systems require additional information such as a security token.
 
-A variable that allows you to reference a field name or other data structure from within a flow.
+copy:: The process of duplicating a portion of a flow. You can copy records, triggers, and actions.
+
+//custom expression::
+
+data pill:: A variable that allows you to reference a field name or other data structure from within a flow.
 
 data structure:: Structures that store data in a system. For example, Salesforce stores data in sObjects and fields, and Google Sheets stores information in sheets, rows, and cells.
 
-flow::
+edit:: The process of modifying an existing flow, action, or trigger.
 
-An automated process that connects to a system and then performs actions on data from that system:
+//field::
+
+for each:: A logic option that allows you to specify an action for each trigger criteria that is met.
+
+flow:: An automated process that connects to a system and then performs actions on data from that system:
 
 * *action*: Something you do with the data fetched from a connection, such as copying a record or row from one system to another.
 * *step*: A trigger, or one or more actions. Steps include the logic needed to decide whether to perform the step or skip it. A step optionally includes a connection different from the initial trigger.
 * *trigger*: The first step of every flow, a trigger is something that starts the automated process defined in a flow. A trigger is either an event such as "a new record is created," or a specified point in time. Time-based triggers are called schedulers. The first step of every flow is a trigger.
 
-logic::
+if/else:: A logic option that allows you to to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
 
-The circumstances or requirements that must be met before an action is taken: if/else statements or for-each statements. Insert logic into steps as needed to ensure actions are taken only on the data that should be acted on, not on all the data returned.
+logic:: The circumstances or requirements that must be met before an action is taken: if/else statements or for-each statements. Insert logic into steps as needed to ensure actions are taken only on the data that should be acted on, not on all the data returned.
 
-system::
+monitor:: The process of reviewing activated flows to ensure that they are running successfully.
 
-Composer connects to systems such as Salesforce, NetSuite, and Google Sheets to execute automated processes which you build, test, and activate as flows. Connections to a system can be made during any step in a flow. Flows must connect to a system during the first step, the trigger or scheduler, even if that system is the same Salesforce org where Composer is hosted.
+//object type::
 
-task::
+record:: A collection of fields and data types in Composer.  A flow triggers either on a schedule or as a result of a change on a record. That record is then processed through each step in the flow.
 
-A change made by MuleSoft Composer for Salesforce to an object or record in the target system(s) of an integration flow that is an insertion, update, or deletion.
+repair:: An action to refresh the access token to reconnect your OAuth connection.
+
+//sample type::
+
+schedule:: The process of automating the start of a flow at regular intervals.
+
+scheduler:: The mechanism by which flows are scheduled.
+
+system:: Composer connects to systems such as Salesforce, NetSuite, and Google Sheets to execute automated processes which you build, test, and activate as flows. Connections to a system can be made during any step in a flow. Flows must connect to a system during the first step, the trigger or scheduler, even if that system is the same Salesforce org where Composer is hosted.
+
+task:: A change made by Composer for Salesforce to an object or record in the target system(s) of an integration flow that is an insertion, update, or deletion.
+
+test:: The process used to ensure that triggers and actions function properly when constructing a flow.
 
 include::_partials/see-also.adoc[]

@@ -1,6 +1,7 @@
 ifeval::["{product}"=="salesforce"]
 = MuleSoft Composer for Salesforce Glossary
 endif::[]
+
 ifeval::["{product}"=="mulesoft"]
 = MuleSoft Composer Glossary
 endif::[]
@@ -13,7 +14,7 @@ connection:: The credentials that give you access to a system where you want to 
 
 copy:: The process of duplicating a portion of a flow. You can copy records, triggers, and actions.
 
-custom expression::
+//custom expression::
 
 data pill:: A variable that allows you to reference a field name or other data structure from within a flow.
 
@@ -21,7 +22,7 @@ data structure:: Structures that store data in a system. For example, Salesforce
 
 edit:: The process of modifying an existing flow, action, or trigger.
 
-field::
+//field::
 
 for each:: A logic option that allows you to specify an action for each trigger criteria that is met.
 
@@ -37,13 +38,13 @@ logic:: The circumstances or requirements that must be met before an action is t
 
 monitor:: The process of reviewing activated flows to ensure that they are running successfully.
 
-object type::
+//object type::
 
 record:: A collection of fields and data types in Composer.  A flow triggers either on a schedule or as a result of a change on a record. That record is then processed through each step in the flow.
 
 repair:: An action to refresh the access token to reconnect your OAuth connection.
 
-sample type::
+//sample type::
 
 schedule:: The process of automating the start of a flow at regular intervals.
 

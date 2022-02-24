@@ -8,43 +8,51 @@ You can manipulate data in Composer by building expressions and applying functio
 * Functions can be nested. The input parameters of a function can be another function call.
 * The functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 
+== About the Custom Expression Editor
+
+Using the Custom Expression Editor, you can manipulate your input data by building expressions and applying functions beyond a basic one-to-one mapping.
+
 === String Functions
 
-INTRO STUFF
+The Custom Expression Editor supports the following `string` formulas and operators:
 
 [%header%autowidth.spread]
 |===
 
 |Function Name |Description |Example |Input Data Type Parameters |Output Data Type
 
-|lower | Returns the provided string in lowercase characters. |lower(COMPOSER) = composer |text: String |String
+|lower | Returns the provided string in lowercase characters. |`lower(COMPOSER) = composer` |text: String |String
 
-|upper |Returns the provided string in uppercase characters. |upper(composer) = COMPOSER |text: String |String
+|upper |Returns the provided string in uppercase characters. |`upper(composer) = COMPOSER` |text: String |String
 
 |capitalize |Capitalizes the first letter of each word in a string. This also removes underscores between words and puts a space before each capitalized word.
-|capitalize(name) = Name +
+|`capitalize(name) = Name` +
 
-capitalize(firstName) = First Name +
+`capitalize(firstName) = First Name` +
 
-capitalize(customer_first_name) = Customer First Name +
+`capitalize(customer_first_name) = Customer First Name` +
 |text: String |String
 
 |trim |Removes any blank spaces from the beginning and end of a string.
-trim(<long example text>) = this example long text |text: String |String
+|`trim(<long example text>) = this example long text` |text: String |String
 
 |first |Returns the specified number of characters from the beginning  characters from the beginning of a string. For example, the first five characters of a string.
-If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |first(Hello Composer!, 5) = Hello |text: String +
+If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |`first(Hello Composer!, 5) = Hello` |text: String +
 
 numCharacters: Number |String
 
-|last |Returns the specified number of characters from the end of a string.  For example, the last nine characters of a string. |last(Hello Composer!, 9) = Composer! |text: String +
+|last |Returns the specified number of characters from the end of a string.  For example, the last nine characters of a string. |`last(Hello Composer!, 9) = Composer!` |text: String +
 
 numCharacters: Number|String
 
-|substitute |Replaces all substrings that match a literal search string with a specified replacement string. Replacement proceeds from the beginning of the string to the end. For example, the result of replacing "aa" with "b" in the string` "aaa" is "ba", rather than "ab". |substitute(Composer, o, O) = COmpOser +
+|substitute |Replaces all substrings that match a literal search string with a specified replacement string. Replacement proceeds from the beginning of the string to the end. For example, the result of replacing `aa` with `b` in the string `aaa` is `ba`, rather than `ab`. |`substitute(Composer, o, O) = COmpOser` +
 
-substitute(Composer, a, Example) = Composer |text: String +
+`substitute(Composer, a, Example) = Composer`
+
+|text: String +
+
 target: String +
+
 replacement: String |
 String
 
@@ -52,7 +60,7 @@ String
 
 === Number Functions
 
-INTRO STUFF
+The Custom Expression Editor supports the following `number` formulas and operators:
 
 [%header%autowidth.spread]
 |===
@@ -67,7 +75,7 @@ INTRO STUFF
 
 === Date Functions
 
-INTRO STUFF
+The Custom Expression Editor supports the following `date` formulas and operators:
 
 [%header%autowidth.spread]
 |===
@@ -81,4 +89,32 @@ INTRO STUFF
 |===
 
 
-include::_partials/see-also.adoc[]
+== Related Resources
+
+ifeval::["{product}"=="salesforce"]
+* xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: Overview]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+* xref:ms_composer_overview.adoc[Mulesoft Composer: Overview]
+endif::[]
+
+ifeval::["{product}"=="salesforce"]
+* xref:ms_composer_prerequisites.adoc[MuleSoft Composer for Salesforce: Getting Started]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+* xref:ms_composer_prerequisites.adoc[MuleSoft Composer: Getting Started]
+endif::[]
+
+* xref:ms_composer_flows.adoc[Build and Test a Flow]
+* xref:ms_composer_activation.adoc[Activate a Flow]
+* xref:ms_composer_monitoring.adoc[Monitor a Flow]
+
+ifeval::["{product}"=="salesforce"]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+* https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[Knowledge Articles]
+endif::[]

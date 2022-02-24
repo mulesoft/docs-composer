@@ -1,17 +1,12 @@
 = Build Formulas for a Flow
 
-You can manipulate data in Composer by building expressions and applying functions. With the *Custom Expression* editor, you can use DataWeave functions for number, string, or date manipulation using simple math, truncating, capitalizing or setting a date.
+You can manipulate data in Composer by building expressions and applying functions. With the *Custom Expression Editor*, you can create expressions that include functions and mathematical operators. For example, you can truncate words, capitalize phrases, and set the date.
 
 == Before You Begin
 
-* Only functions that accept data types as inputs appear.
-* Only data pills of the same data type as the field appear. This does not apply to string fields where automatic type casting is already supported.
+//More content may be added - to be determined later
 * Functions can be nested. The input parameters of a function can be another function call.
-* The data pills and formulas displayed in the if/else block for the value are dependent on the data type of the selected field.
-
-== DataWeave Functions
-
-Composer uses https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave] operators to build custom expressions.
+* The functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 
 === Math Functions
 

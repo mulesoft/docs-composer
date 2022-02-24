@@ -8,73 +8,77 @@ You can manipulate data in Composer by building expressions and applying functio
 * Functions can be nested. The input parameters of a function can be another function call.
 * The functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 
-=== Math Functions
-
-The following formulas and operators and supported: `+, -, *, /, ( ), ^`
-
-Additionally:
-
-* Only data pills of the type `number` are supported.
-* For fields of the type `number` in actions, Composer provides an advanced editor that supports data pills of data type `number`, ~ (manual input), and the following operators: `+, -, *, /`
-* Parentheses dictate the order of operations.
-
-
-=== Date Functions
-
-The following formulas and operations are supported:
-
-* Basic Dates
-** Today
-** Now
-
-* Date Calculations
-** Days between
-** Add days (specify how many)
-** Add years (specify how many)
-** Add hours (specify how many)
-** Add minutes (specify how many)
-** Add seconds (specify how many)
-
-* Beginning/end of time period
-** Beginning of the hour
-** Beginning of the day
-** Beginning of the week
-** Beginning of the month
-** Beginning of the year
-
-
 === String Functions
 
-[%header%autowidth.spread]
+INTRO STUFF
 
+[%header%autowidth.spread]
 |===
 
-|Composer Formula |DataWave Formula |Description
+|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
 
-|today |Dates::today |Returns current date.
-|now |now | Returns current date and time.
-|addDays(#)
-|addMonths(#)
-|addYears(#)| Periods::days(#),
+|lower | Returns the provided string in lowercase characters. |lower(COMPOSER) = composer |text: String |String
+
+|upper |Returns the provided string in uppercase characters. |upper(composer) = COMPOSER |text: String |String
+
+|capitalize |Capitalizes the first letter of each word in a string. This also removes underscores between words and puts a space before each capitalized word.
+|capitalize(name) = Name +
+
+capitalize(firstName) = First Name +
+
+capitalize(customer_first_name) = Customer First Name +
+|text: String |String
+
+|trim |Removes any blank spaces from the beginning and end of a string.
+trim(<long example text>) = this example long text |text: String |String
+
+|first |Returns the specified number of characters from the beginning  characters from the beginning of a string. For example, the first five characters of a string.
+If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |first(Hello Composer!, 5) = Hello |text: String +
+
+numCharacters: Number |String
+
+|last |Returns the specified number of characters from the end of a string.  For example, the last nine characters of a string. |last(Hello Composer!, 9) = Composer! |text: String +
+
+numCharacters: Number|String
+
+|substitute |Replaces all substrings that match a literal search string with a specified replacement string. Replacement proceeds from the beginning of the string to the end. For example, the result of replacing "aa" with "b" in the string` "aaa" is "ba", rather than "ab". |substitute(Composer, o, O) = COmpOser +
+
+substitute(Composer, a, Example) = Composer |text: String +
+target: String +
+replacement: String |
+String
 
 |===
 
 === Number Functions
 
-The following formulas and operations are supported:
+INTRO STUFF
 
-* Round
-* Ceil
-* Floor
-* Abs
+[%header%autowidth.spread]
+|===
+
+|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+|===
+
+=== Date Functions
+
+INTRO STUFF
+
+[%header%autowidth.spread]
+|===
+
+|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+|===
 
 
-
-=== Null Values
-
-
-== Adding a Formula
-
-.
-
-== Configuring a Formula
+include::_partials/see-also.adoc[]

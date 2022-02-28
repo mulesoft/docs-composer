@@ -66,42 +66,24 @@ The Custom Expression Editor supports the following `number` formulas and operat
 
 |Function Name |Description |Example |Input Data Type Parameters |Output Data Type
 
-round
-Rounds a number up or down to the nearest whole number.
-round(1.2) = 1
-round(4.6) = 5
-round(3.5) = 4
-number: Number
-Number
-ceil
-Rounds a number up to the nearest whole number.
-ceil(1.2) = 2
-ceil(3) = 3
-number: Number
-Number
-floor
-Rounds a number down to the nearest whole number.
-floor(2.2) = 2
-floor(3) = 3
-number: Number
-Number
-abs
-Returns the absolute value of a number.
-abs(-3.4) = 3.4
-abs(2) = 2
-number: Number
-Number
+|round |Rounds a number up or down to the nearest whole number. |`round(1.2) = 1` +
+`round(4.6) = 5` +
+`round(3.5) = 4` |number: Number |Number
 
+|ceil |Rounds a number up to the nearest whole number. |`ceil(1.2) = 2` +
+`ceil(3) = 3` |number: Number |Number
 
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+|floor |Rounds a number down to the nearest whole number. |`floor(2.2) = 2` +
+`floor(3) = 3` |number: Number |Number
+
+|abs |Returns the absolute value of a number. |`abs(-3.4) = 3.4` +
+`abs(2) = 2` |number: Number |Number
 
 |===
 
 === Date Functions
 
-Formulas that are duplicated for `Date` and `DateTime` (e.g. `addDays`, `beginningOfMonth`, etc) are appended with `_Date` and `_DateTime`.
+Formulas that are duplicated for `Date` and `DateTime` (e.g. `addDays`, `beginningOfMonth`, etc) and are appended with `_Date` or `_DateTime`.
 
 The Custom Expression Editor supports the following `date` formulas and operators:
 
@@ -110,11 +92,7 @@ The Custom Expression Editor supports the following `date` formulas and operator
 
 |Function Name |Description |Example |Input Data Type Parameters |Output Data Type
 
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-today
-Returns the date for today as a Date type.
+|today |Returns the date for today as a Date type.
 today() = 2021-03-15
 
 
@@ -328,10 +306,38 @@ Number
 
 == Data Types
 
+The value that a field can accept for a value is a data type. In Composer, the following data types are available:
+
+[%header%autowidth.spread]
+
+|===
+
+|Data Type |Definition
+
+|Array | Provides a collection of a fixed number of components of the same data type.
+
+|Boolean | Evaluates to true or false. Possible values: `true`, `false`
+
+|Date | Stores a year, month, and day as ``yyyy-MM-dd.
+
+|DateTime | Stores a date and time within a time zone, where a time zone is the time relative to Greenwich Mean Time (GMT). A time zone must include a + or a -. For example, `03:00:00` is a time, while +03:00 is a time zone. Example that represents 12:30 p.m. on June 1, 2019 in Macau: `2019-06-01T12:30:00+08:00`
+
+|Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
+
+|Number | Stores a float number, which can range from 1.40129846432481707e-45 to 3.40282346638528860e+38 and include a decimal point, or an integer.
+
+|Object | Refers to a reference of data of any type (`boolean`, `date`, `number`, etc.).
+
+|String | Stores text, numbers (not `number` data types), or a combination of both. Examples: "94u0sfjlk*(f!`lkkjd", "18005555555", "Fred"
+
+|===
+
 == Access the Custom Expression Editor
 
+
+[[add-custom-expression-to-an-action]]
 == Add a Custom Expression to an Action
-//add bookmark for composer flows topic - link in #4 
+//add bookmark for composer flows topic - link in #4
 
 == Related Resources
 

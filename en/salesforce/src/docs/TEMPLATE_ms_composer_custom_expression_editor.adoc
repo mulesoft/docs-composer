@@ -92,215 +92,89 @@ The Custom Expression Editor supports the following `date` formulas and operator
 
 |Function Name |Description |Example |Input Data Type Parameters |Output Data Type
 
-|today |Returns the date for today as a Date type.
-today() = 2021-03-15
+|today |Returns the date for today as a Date type. |`today() = 2021-03-15` | NA |Date
 
+|now |Returns a DateTime value for the current date and time. |`now() = 2021-03-15T18:23:20` | NA |DateTime
 
-Date
-now
-Returns a DateTime value for the current date and time.
-now() = 2021-03-15T18:23:20
+|addDays |Creates and returns a Date value incremented or decremented by the specified number of days. |`addDays(today(), 3) = 2021-03-18` +
+`addDays(2021-03-15, -4) = 2021-03-11` |date: Date +
+numDays: number |Date
 
+|addDays |Creates and returns a DateTime value incremented or decremented by the specified number of days.
+`addDays(now(), 3) = 2021-03-18T18:23:20` +
+`addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20` |dateTime: DateTime +
+numDays: number |DateTime
 
-DateTime
-addDays
-Creates and returns a Date value incremented or decremented by the specified number of days
-addDays(today(), 3) = 2021-03-18
+|addMonths |Creates and returns a Date value incremented or decremented by the specified number of months. |`addMonths(today(), 3) = 2021-06-15` +
+`addMonths(2021-03-15, -4) = 2020-12-15` |date: Date +
+numMonths: number |Date
 
-addDays(2021-03-15, -4) = 2021-03-11
-date: Date
-numDays: number
-Date
-addDays
-Creates and returns a DateTime value incremented or decremented by the specified number of days
-addDays(now(), 3) = 2021-03-18T18:23:20
+|addMonths |Creates and returns a DateTime value incremented or decremented by the specified number of months. |`addMonths(now(), 3) = 2021-06-15T18:23:20` +
+`addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20` |dateTime: DateTime +
+numMonths: number |DateTime
 
-addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20
-dateTime: DateTime
-numDays: number
-DateTime
-addMonths
-Creates and returns a Date value incremented or decremented by the specified number of months.
-addMonths(today(), 3) = 2021-06-15
+|addYears |Creates and returns a Date value incremented or decremented by the specified number of years. |`addYears(today(), 1) = 2022-03-15` +
+`addYears(2021-03-15, -1) = 2020-03-15` |date: Date +
+numYears: number |Date
 
-addMonths(2021-03-15, -4) = 2020-12-15
-date: Date
-numMonths: number
-Date
-addMonths
-Creates and returns a DateTime value incremented or decremented by the specified number of months.
-addMonths(now(), 3) = 2021-06-15T18:23:20
+|addYears |Creates and returns a DateTime value incremented or decremented by the specified number of years.
+|`addYears(now(), 3) = 2024-03-15T18:23:20` +
+`addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20` |dateTime: DateTime +
+numYears: number |DateTime
 
-addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20
-dateTime: DateTime
-numMonths: number
-DateTime
-addYears
-Creates and returns a Date value incremented or decremented by the specified number of years.
-addYears(today(), 1) = 2022-03-15
+|addHours |Creates and returns a DateTime value incremented or decremented by the specified number of hours. |addHours(now(), 1) = 2021-03-15T23:23:20 +
+`addHours(2021-03-15T22:23:20, 3) = 2021-03-16T01:23:20` +
+`addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20` + |dateTime: DateTime +
+numHours: number |DateTime
 
-addYears(2021-03-15, -1) = 2020-03-15
-date: Date
-numYears: number
-Date
-addYears
-Creates and returns a DateTime value incremented or decremented by the specified number of years.
-addYears(now(), 3) = 2024-03-15T18:23:20
+|addMinutes |Creates and returns a DateTime value incremented or decremented by the specified number of minutes.
+|`addMinutes(now(), 5) = 2021-03-15T18:33:20` +
+`addMinutes(2021-03-15T23:45:00,15) = 2021-03-16T00:00:00` +
+`addMinutes(2021-03-15T18:23:20, -30) = 2021-03-15T17:53:20`
+|dateTime: DateTime |numMinutes: number |DateTime
 
-addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20
-dateTime: DateTime
-numYears: number
-DateTime
-addHours
-Creates and returns a DateTime value incremented or decremented by the specified number of hours.
-addHours(now(), 1) = 2021-03-15T23:23:20
+|addSeconds |Creates and returns a DateTime value incremented or decremented by the specified number of seconds. |`addSeconds(now(), 30) = 2021-03-15T18:23:50` +
+`addSeconds(2021-03-15T23:45:00,15) = 2021-03-15T23:45:30` +
+`addSeconds(2021-03-15T18:23:20, -30) = 2021-03-15T18:22:50`
+|dateTime: DateTime +
+numSeconds: number |DateTime
 
-addHours(2021-03-15T22:23:20, 3) = 2021-03-16T01:23:20
+|beginningOfHour |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified hour. The minutes and seconds in the input change to 00:00. |`beginningOfHour(2021-03-15T18:23:20) = 2021-03-15T18:00:00` |dateTime: DateTime |DateTime
 
-addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20
-dateTime: DateTime
-numHours: number
-DateTime
-addMinutes
-Creates and returns a DateTime value incremented or decremented by the specified number of minutes.
-addMinutes(now(), 5) = 2021-03-15T18:33:20
+|beginningOfDay |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified day. The hours, minutes, and seconds in the input change to 00:00:00. |`beginningOfDay(2021-03-15T18:23:20) = 2021-03-15T00:00:00` |dateTime: DateTime |DateTime
 
-addMinutes(2021-03-15T23:45:00,15) = 2021-03-16T00:00:00
+|beginningOfWeek |Returns a new Date value that changes the Day value from the input to the beginning of the first day of the specified week. The function treats Sunday as the first day of the week. |`beginningOfWeek(2021-03-15) = 2021-03-14` +
+`beginningOfWeek(today()) = 2021-03-14` |date: Date |Date
 
-addMinutes(2021-03-15T18:23:20, -30) = 2021-03-15T17:53:20
-dateTime: DateTime
-numMinutes: number
-DateTime
+|beginningOfWeek |Returns a new DateTime value that changes the Day and Time values from the input to the beginning of the first day of the specified week. The function treats Sunday as the first day of the week.
+|`beginningOfWeek(2021-03-15T18:23:20) = 2021-03-14T00:00:00` +
+`beginningOfWeek(now()) = 2021-03-14T00:00:00` |dateTime: DateTime |DateTime
 
-addSeconds
-Creates and returns a DateTime value incremented or decremented by the specified number of seconds.
-addSeconds(now(), 30) = 2021-03-15T18:23:50
+|beginningOfMonth |Returns a new Date value that changes the Day value from the input to the first day of the specified month. |`beginningOfMonth(2021-11-15) = 2021-11-01` +
+`beginningOfMonth(today()) = 2021-03-01` |date: Date |Date
 
-addSeconds(2021-03-15T23:45:00,15) = 2021-03-15T23:45:30
+|beginningOfMonth |Returns a new DateTime value that changes the Day value from the input to the first day of the specified month. The day and time in the input changes to `01T00:00:00`. |b`eginningOfMonth(2021-03-15T18:23:20) = 2021-03-01T00:00:00` +
+`beginningOfMonth(now()) = 2021-03-01T00:00:00` |dateTime: DateTime |DateTime
 
-addSeconds(2021-03-15T18:23:20, -30) = 2021-03-15T18:22:50
-dateTime: DateTime
-numSeconds: number
-DateTime
-beginningOfHour
-Returns a new DateTime value that changes the Time value in the input to the beginning of the specified hour.
+|beginningOfYear |Returns a new Date value that changes the Month and Day values from the input to the first day of the specified year. |`beginningOfYear(2021-11-15) = 2021-01-01` +
+`beginningOfYear(today()) = 2021-01-01` |date: Date |Date
 
-The minutes and seconds in the input change to 00:00.
-beginningOfHour(2021-03-15T18:23:20) = 2021-03-15T18:00:00
-dateTime: DateTime
-DateTime
-beginningOfDay
-Returns a new DateTime value that changes the Time value in the input to the beginning of the specified day.
-The hours, minutes, and seconds in the input change to 00:00:00.
-beginningOfDay(2021-03-15T18:23:20) = 2021-03-15T00:00:00
-dateTime: DateTime
-DateTime
+|beginningOfYear |Returns a new DateTime value that changes the Month and Day values from the input to the first day of the specified year. It also sets the Time value to `00:00:00`. The month, day, and time in the input changes to `01-01T00:00:00`. |`beginningOfYear(2021-03-15T18:23:20) = 2021-01-01T00:00:00` +
+`beginningOfYear(now()) = 2021-01-01T00:00:00` |dateTime: DateTime |DateTime
 
-beginningOfWeek
-Returns a new Date value that changes the Day value from the input to the beginning of the first day of the specified week.
-The function treats Sunday as the first day of the week.
-beginningOfWeek(2021-03-15) = 2021-03-14
+|daysBetween |Returns the Number of days between two Dates. If the to Date is earlier than the from Date, the function returns a negative number equal to the number of days between the two Dates. |`daysBetween(2020-03-15, 2021-03-15) = 365`|from: Date +
+to: Date |Number
 
-beginningOfWeek(today()) = 2021-03-14
+|daysBetween |Returns the Number of days between two DateTimes. If the to DateTime is earlier than the from DateTime, the function returns a negative number equal to the number of days between the two DateTimes. |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |from: DateTime +
+to: DateTime |Number
 
+|month |Returns the numerical value of the month in the Date input. |`month(2021-03-15) = 3` |date: Date |Number
 
-date: Date
-Date
-beginningOfWeek
-Returns a new DateTime value that changes the Day and Time values from the input to the beginning of the first day of the specified week.
-The function treats Sunday as the first day of the week.
-beginningOfWeek(2021-03-15T18:23:20) = 2021-03-14T00:00:00
+|month |Returns the numerical value of the month in the DateTime input. |`month(2021-03-15T18:23:20) = 3` |dateTime: DateTime |Number
 
-beginningOfWeek(now()) = 2021-03-14T00:00:00
+|year |Returns the numerical value of the year in the Date input. |`year(2021-03-15) = 2021` |date: Date |Number
 
-
-dateTime: DateTime
-DateTime
-beginningOfMonth
-Returns a new Date value that changes the Day value from the input to the first day of the specified month.
-beginningOfMonth(2021-11-15) = 2021-11-01
-
-beginningOfMonth(today()) = 2021-03-01
-date: Date
-Date
-beginningOfMonth
-Returns a new DateTime value that changes the Day value from the input to the first day of the specified month.
-The day and time in the input changes to 01T00:00:00.
-
-
-beginningOfMonth(2021-03-15T18:23:20) = 2021-03-01T00:00:00
-
-beginningOfMonth(now()) = 2021-03-01T00:00:00
-dateTime:
-DateTime
-DateTime
-
-beginningOfYear
-Returns a new Date value that changes the Month and Day values from the input to the first day of the specified year.
-beginningOfYear(2021-11-15) = 2021-01-01
-
-beginningOfYear(today()) = 2021-01-01
-date: Date
-Date
-beginningOfYear
-Returns a new DateTime value that changes the Month and Day values from the input to the first day of the specified year. It also sets the Time value to 00:00:00.
-The month, day, and time in the input changes to 01-01T00:00:00.
-beginningOfYear(2021-03-15T18:23:20) = 2021-01-01T00:00:00
-
-beginningOfYear(now()) = 2021-01-01T00:00:00
-dateTime: DateTime
-DateTime
-daysBetween
-
-
-
-Returns the Number of days between two Dates.
-
-If the to Date is earlier than the from Date, the function returns a negative number equal to the number of days between the two Dates.
-daysBetween(2020-03-15, 2021-03-15) = 365
-from: Date
-to: Date
-Number
-daysBetween
-
-
-Returns the Number of days between two DateTimes.
-
-If the to DateTime is earlier than the from DateTime, the function returns a negative number equal to the number of days between the two DateTimes.
-daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365
-from: DateTime
-to: DateTime
-Number
-
-month
-
-
-Returns the numerical value of the month in the Date input.
-month(2021-03-15) = 3
-date: Date
-Number
-month
-
-
-Returns the numerical value of the month in the DateTime input.
-month(2021-03-15T18:23:20) = 3
-dateTime: DateTime
-Number
-year
-
-
-Returns the numerical value of the year in the Date input.
-year(2021-03-15) = 2021
-date: Date
-Number
-year
-
-
-Returns the numerical value of the year in the DateTime input.
-year(2021-03-15T18:23:20) = 2021
-dateTime: DateTime
-Number
-
+|year |Returns the numerical value of the year in the DateTime input. |year(2021-03-15T18:23:20) = 2021 |dateTime: DateTime |Number
 
 |===
 
@@ -334,37 +208,19 @@ The value that a field can accept for a value is a data type. In Composer, the f
 
 == Access the Custom Expression Editor
 
+To access the Custom Expression Editor:
+
+. From the *Composer Flows* tab, open a flow.
+. Click *Edit*
+. In the action, in a fx field, click the pencil. +
+The *Custom Expression Editor* appears.
+//screenshot
 
 [[add-custom-expression-to-an-action]]
 == Add a Custom Expression to an Action
-//add bookmark for composer flows topic - link in #4
 
-== Related Resources
+To add a custom expression to an action:
 
-ifeval::["{product}"=="salesforce"]
-* xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: Overview]
-endif::[]
+. In the *Custom Expression Editor*, 
 
-ifeval::["{product}"=="mulesoft"]
-* xref:ms_composer_overview.adoc[Mulesoft Composer: Overview]
-endif::[]
-
-ifeval::["{product}"=="salesforce"]
-* xref:ms_composer_prerequisites.adoc[MuleSoft Composer for Salesforce: Getting Started]
-endif::[]
-
-ifeval::["{product}"=="mulesoft"]
-* xref:ms_composer_prerequisites.adoc[MuleSoft Composer: Getting Started]
-endif::[]
-
-* xref:ms_composer_flows.adoc[Build and Test a Flow]
-* xref:ms_composer_activation.adoc[Activate a Flow]
-* xref:ms_composer_monitoring.adoc[Monitor a Flow]
-
-ifeval::["{product}"=="salesforce"]
-* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]
-endif::[]
-
-ifeval::["{product}"=="mulesoft"]
-* https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[Knowledge Articles]
-endif::[]
+include::_partials/see-also.adoc[]

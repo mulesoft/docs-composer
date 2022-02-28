@@ -212,7 +212,7 @@ To access the Custom Expression Editor:
 
 . From the *Composer Flows* tab, open a flow.
 . Click *Edit*
-. In the action, in a *Custom Expression fx* field, click the pencil. +
+. In the action, in a field, select *Custom Expression fx* from the drop down. +
 The *Custom Expression Editor* appears.
 //screenshot
 
@@ -221,11 +221,15 @@ The *Custom Expression Editor* appears.
 
 To add a custom expression to an action:
 
-. In the *Custom Expression Editor*, in the left pane, click the *Function*, *Data*, or *Operators* tab to see or search for the available string, number, or date parameters available for the selected field.
-.  Click the parameters you want to add. +
+. In the *Custom Expression Editor*, in the left pane, click the:
+.. *Function* tab to add a function.
+.. *Data* tab to add a field or data pill.
+.. *Operator* tab to add an operator. +
+The available functions, fields, data pills, or operators appear.
+
 The selected parameters appear in the *Total Amount* box.
 . Optionally, you can enter the parameters manually in the *Total Amount* box.
-. Once you have added all the parameters to your expression, select *Check Syntax*.
+. Once you have created the expression, select *Check Syntax*.
 
 
 fuction, data --> field and/or data pill, operators

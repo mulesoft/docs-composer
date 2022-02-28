@@ -222,9 +222,9 @@ The *Custom Expression Editor* appears.
 To add a custom expression to an action:
 
 . In the *Custom Expression Editor*, in the left pane, click the:
-.. *Function* tab to add a function.
-.. *Data* tab to add a field or data pill.
-.. *Operator* tab to add an operator. +
+.. *Function* tab to view or search for a function.
+.. *Data* tab to view or search for a field or data pill.
+.. *Operator* tab to view or search for an operator. +
 The available functions, fields, data pills, or operators appear.
 
 The selected parameters appear in the *Total Amount* box.

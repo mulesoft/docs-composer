@@ -212,7 +212,7 @@ To access the *Custom Expression Editor*:
 
 . From the *Composer Flows* tab, open a flow.
 . Click *Edit*
-. In the action, in a field, select *Custom Expression fx* from the drop down. +
+. In the action, in a field, select *Custom Expression fx* from the dropdown. +
 The *Custom Expression Editor* appears.
 //screenshot
 
@@ -226,8 +226,8 @@ To add a custom expression to an action:
 .. *Data* tab to view or search for a field or data pill.
 .. *Operator* tab to view or search for an operator.
 . Select the available functions, fields, data pills, or operators for your custom expression from the left pane. +
-The selections appear in the *<Field Name>* text box of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
-. Optionally, if you know the custom expression that you want to add, you can enter it manually in the *<Field Name>* text box of the *Custom Expression Editor*.
+The selections appear in the *<Field Name>* text box in the right pane of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
+. Optionally, if you know the custom expression that you want to add, you can enter it manually in the *<Field Name>* text box.
 . After the custom expression is created and validated, click *Apply*.
 . In the *Flow Details* page, click *Save*. +
 The custom expression is added to the field.
@@ -240,10 +240,10 @@ To edit an existing custom expression in an action:
 . Click *Edit*
 . In the action, in a field containing a custom expression, click the pencil. +
 The *Custom Expression Editor* appears.
-. In the *<Field Name>* text box of the *Custom Expression Editor*, select and delete the existing custom expression or place your cursor where you would like add additional items from the left pane.
+. In the *<Field Name>* text box in the right pane of the *Custom Expression Editor*, select and delete the existing custom expression or place your cursor where you would like add additional items from the left pane.
 . In the left pane, select from the available functions, fields, data pills, or operators. +
-The selections appear in the *<Field Name>* text box of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
-. Optionally, if you know the custom expression that you want to add, you can enter it manually in the *<Field Name>* text box of the *Custom Expression Editor*.
+The selections appear in the *<Field Name>* text box in the right pane of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
+. Optionally, if you know the custom expression that you want to add, you can enter it manually in the *<Field Name>* text box.
 . After the custom expression is edited and validated, click *Apply*.
 . In the *Flow Details* page, click *Save*. +
 The custom expression is edited.
@@ -255,9 +255,9 @@ To delete an existing custom expression in an action:
 . From the *Composer Flows* tab, open a flow.
 . Click *Edit*
 . In the action, in a field containing a custom expression, click the X. +
-The custom expression is cleared. If a value in the field is required, you will need to either add a new custom expression or select a value from the drop down.
+The custom expression is cleared from the field. If a value in the field is required, you will need to either add a new custom expression or select a value from the dropdown.
 . In the *Flow Details* page, click *Save*. +
-The custom expression is deleted. 
+The custom expression is deleted.
 
 
 include::_partials/see-also.adoc[]

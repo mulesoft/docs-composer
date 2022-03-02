@@ -244,10 +244,9 @@ The value that a field can accept for a value is a data type. In Composer, the f
 [[keyboard-shortcuts]]
 == Keyboard Shortcuts
 
-The *Custom Expression Editor* enables you to use keyboard shortcuts for math operators. When inserting math operators, you can press *Control + Shift + <+, (, ), or *>*. For example, to enter a ``*`` operator, you would type *Control + Shift + **.
+The *Custom Expression Editor* enables you to use keyboard shortcuts for math operators. When inserting math operators, you can press *Control + Shift + <+, (, ), or *>*. For example, to enter a ``*`` operator, you would press *Control + Shift + **.
 
 For */* and *-*, the Shift key is not required. For example, to insert a */*, you can press *Control + /*.
-
 
 == Access the Custom Expression Editor
 

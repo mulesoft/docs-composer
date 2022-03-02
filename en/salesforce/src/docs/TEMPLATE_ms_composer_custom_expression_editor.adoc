@@ -59,6 +59,9 @@ replacement: String |String
 
 === Number Functions
 
+In the editor, there is a difference between a math operator (+,-,*, or /) selected from the operator list versus an operator typed and resolved as a string character. For example, typing `9+9` is actually a string rather than `18`. To use math operators, select them from the operator list or use xref:ms_composer_custom_expression_editor.adoc#keyboard-shortcuts[keyboard shortcuts].
+//link to keyboard shortcuts
+
 The *Custom Expression Editor* supports the following `number` formulas and operators:
 
 [%header%autowidth.spread]
@@ -88,7 +91,7 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 
 === Date Functions
 
-The *Custom Expression Editor* supports the following `date` formulas and operators:
+The *Custom Expression Editor* supports the following `date` and `dateTime` formulas and operators:
 
 [%header%autowidth.spread]
 |===
@@ -210,8 +213,6 @@ to: DateTime |Number
 
 |===
 
-Note that formulas that are duplicated for `Date` and `DateTime` (e.g. `addDays`, `beginningOfMonth`, etc) and are appended with `_Date` or `_DateTime`.
-
 == Data Types
 
 The value that a field can accept for a value is a data type. In Composer, the following data types are available:
@@ -240,18 +241,28 @@ The value that a field can accept for a value is a data type. In Composer, the f
 
 |===
 
+[[keyboard-shortcuts]]
+== Keyboard Shortcuts
+
+The *Custom Expression Editor* enables you to use keyboard shortcuts for math operators. When inserting math operators, you can press *Control + Shift + <+, (, ), or *>*. For example, to enter a ``*`` operator, you would type *Control + Shift + **.
+
+For */* and *-*, the Shift key is not required. For example, to insert a */*, you can press *Control + /*.
+
+
 == Access the Custom Expression Editor
 
 To access the *Custom Expression Editor*:
 
 . From the *Composer Flows* tab, open a flow.
-. Click *Edit*
-. In an action, in a field, select *Custom Expression fx* from the dropdown. +
+. Click *Edit*.
+. In an action field, in a value in the query builder, or in the value of an If/Else Block, select *Custom Expression fx* from the dropdown. +
 The *Custom Expression Editor* appears.
 //screenshot
 
 [[add-custom-expression-to-an-action]]
 == Add a Custom Expression to an Action
+
+When adding a custom expression, you can hover over elements in the *Custom Expression Editor* window to view helpful suggestions and in-app support for parameters, examples, and more.
 
 To add a custom expression to an action:
 
@@ -261,7 +272,6 @@ To add a custom expression to an action:
 .. *Operator* tab to view or search for an operator.
 . Select the available functions, fields, data pills, or operators for your custom expression from the left pane. +
 The selections appear in the *<Field Name>* text box in the right pane of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
-. Optionally, if you know the custom expression that you want to add, you can enter it manually in the *<Field Name>* text box.
 . After the custom expression is created and validated, click *Apply*.
 . On the *Flow Details* page, click *Save*. +
 The custom expression is added to the field.
@@ -277,7 +287,6 @@ The *Custom Expression Editor* appears.
 . In the *<Field Name>* text box in the right pane of the *Custom Expression Editor*, select and delete the existing custom expression or place your cursor where you want to add additional items from the left pane.
 . In the left pane, select from the available functions, fields, data pills, or operators. +
 The selections appear in the *<Field Name>* text box in the right pane of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
-. Optionally, if you know the custom expression that you want to add, you can enter it manually in the *<Field Name>* text box.
 . After the custom expression is edited and validated, click *Apply*.
 . On the *Flow Details* page, click *Save*. +
 The custom expression is edited.

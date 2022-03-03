@@ -1,4 +1,3 @@
-:product: mulesoft
 = Build Formulas for a Flow
 
 You can manipulate data in Composer by building expressions and applying functions. With the *Custom Expression Editor*, you can create expressions that include functions and mathematical operators. For example, you can truncate words, capitalize phrases, and set the date.
@@ -256,7 +255,7 @@ To access the *Custom Expression Editor*:
 . Click *Edit*.
 . In an action field, in a value in the query builder, or in the value of an If/Else Block, select *Custom Expression fx* from the dropdown. +
 The *Custom Expression Editor* appears.
-//screenshot
+//screenshot once in staging 
 
 [[add-custom-expression-to-an-action]]
 == Add a Custom Expression to an Action

@@ -6,12 +6,7 @@ You can manipulate data in Composer by building _expressions_ and applying _func
 
 //More content may be added - to be determined later
 * You can nest functions. You can use the input parameters of another function call for your function.
-* Composer functions use https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
-
-== Supported Functions
-
-Using the *Custom Expression Editor*, you can manipulate your input data by building expressions and applying functions beyond basic one-to-one mapping.
-//More content required here - what is the customer advantage? Efficiency? Cost cutting? Ease of use?
+* Composer functions are built with https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 
 === String Functions
 

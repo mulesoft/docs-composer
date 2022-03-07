@@ -1,16 +1,17 @@
-= Build Formulas for a Flow
+= Building Formulas for Flows
 
-You can manipulate data in Composer by building expressions and applying functions. With the *Custom Expression Editor*, you can create expressions that include functions and mathematical operators. For example, you can truncate words, capitalize phrases, and set the date.
+You can manipulate data in Composer by building _expressions_ and applying _functions_. With the *Custom Expression Editor*, you can create expressions that include functions and mathematical operators. For example, you can truncate words, capitalize phrases, and set the date.
 
 == Before You Begin
 
 //More content may be added - to be determined later
-* Functions can be nested. The input parameters of a function can be another function call.
-* The functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
+* You can nest functions. You can use the input parameters of another function call for your function.
+* Composer functions use https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 
-== About the Custom Expression Editor
+== Supported Functions
 
 Using the *Custom Expression Editor*, you can manipulate your input data by building expressions and applying functions beyond basic one-to-one mapping.
+//More content required here - what is the customer advantage? Efficiency? Cost cutting? Ease of use?
 
 === String Functions
 
@@ -36,11 +37,11 @@ The *Custom Expression Editor* supports the following `string` formulas and oper
 |trim |Removes any blank spaces from the beginning and end of a string.
 |`trim(<long example text>) = this example long text` |text: String |String
 
-|first |Returns the specified number of characters from the beginning of a string. For example, you can return the first five characters of a string. If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |`first(Hello Composer!, 5) = Hello` |text: String +
+|first |Returns the specified number of characters from the beginning of a string. If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |`first(Hello Composer!, 5) = Hello` |text: String +
 
 numCharacters: Number |String
 
-|last |Returns the specified number of characters from the end of a string.  For example, you can return the last nine characters of a string. |`last(Hello Composer!, 9) = Composer!` |text: String +
+|last |Returns the specified number of characters from the end of a string. |`last(Hello Composer!, 9) = Composer!` |text: String +
 
 numCharacters: Number|String
 
@@ -56,11 +57,11 @@ replacement: String |String
 
 |===
 
-It is important to note that in a `string` field, you can `number` expressions selected from the operator list; however, they must be enclosed within a parenthesis. For example, you can enter `abc(9+9)` where the `+` is selected from the operator list. This string renders as `abc18`.
+It is important to note that in a `string` field, you can use `number` expressions selected from the operator list; however, the expressions must be enclosed within parentheses. For example, you can enter `abc(9+9)` where the `+` is selected from the operator list. This string renders as `abc18`.
 
 === Number Functions
 
-In the editor, there is a difference between a math operator (+,-,*, or /) selected from the operator list versus an operator typed and resolved as a string character. For example, typing `9+9` is actually a string rather than `18`. To use math operators, select them from the operator list or use xref:ms_composer_custom_expression_editor.adoc#keyboard-shortcuts[keyboard shortcuts].
+In the editor, aa mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use math operators, select them from the operator list or use xref:ms_composer_custom_expression_editor.adoc#keyboard-shortcuts[keyboard shortcuts].
 
 The *Custom Expression Editor* supports the following `number` formulas and operators:
 
@@ -195,11 +196,11 @@ numSeconds: number |DateTime
 
 `beginningOfYear(now()) = 2021-01-01T00:00:00` |dateTime: DateTime |DateTime
 
-|daysBetween |Returns the Number of days between two Dates. If the to Date is earlier than the from Date, the function returns a negative number equal to the number of days between the two Dates. |`daysBetween(2020-03-15, 2021-03-15) = 365`|from: Date +
+|daysBetween |Returns the number of days between two dates. If the to Date value is earlier than the from Date value, the function returns a negative number equal to the number of days between the two dates. |`daysBetween(2020-03-15, 2021-03-15) = 365`|from: Date +
 
 to: Date |Number
 
-|daysBetween |Returns the Number of days between two DateTimes. If the to DateTime is earlier than the from DateTime, the function returns a negative number equal to the number of days between the two DateTimes. |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |from: DateTime +
+|daysBetween |Returns the number of days between two DateTime values. If the to DateTime value is earlier than the from DateTime value, the function returns a negative number equal to the number of days between the two DateTime values. |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |from: DateTime +
 
 to: DateTime |Number
 
@@ -215,7 +216,7 @@ to: DateTime |Number
 
 == Data Types
 
-The value that a field can accept for a value is a data type. In Composer, the following data types are available:
+The value that a Composer field can accept for a value is a _data type_. In Composer, the following data types are available:
 
 [%header%autowidth.spread]
 
@@ -225,26 +226,26 @@ The value that a field can accept for a value is a data type. In Composer, the f
 
 |Array | Provides a collection of a fixed number of components of the same data type.
 
-|Boolean | Evaluates to true or false. Possible values: `true`, `false`
+|Boolean | Evaluates to `true` or `false`.
 
-|Date | Stores a year, month, and day as ``yyyy-MM-dd.
+|Date | Stores a year, month, and day as `yyyy-MM-dd`.
 
-|DateTime | Stores a date and time within a time zone, where a time zone is the time relative to Greenwich Mean Time (GMT). A time zone must include a + or a -. For example, `03:00:00` is a time, while +03:00 is a time zone. For example, 12:30 p.m. on June 1, 2019 in Macau: `2019-06-01T12:30:00+08:00`
+|DateTime | Stores a date and time within a time zone relative to Greenwich Mean Time (GMT). A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`.
 
 // |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
 
-|Number | Stores a float number, which can range from 1.40129846432481707e-45 to 3.40282346638528860e+38 and include a decimal point, or an integer.
+|Number | Stores either a floating-point number in the range of 1.40129846432481707e-45 to 3.40282346638528860e+38 or an integer.
 
-|Object | Refers to a composite data type that can contain other data types as properties (`boolean`, `date`, `number`, etc.).
+|Object | Refers to a composite data type that can contain other data types as properties  (`boolean`, `date`, `number`, and so on).
 
-|String | Stores text, numbers (not `number` data types), or a combination of both. Examples: "94u0sfjlk*(f!`lkkjd", "18005555555", "Fred"
+|String | Stores text, numbers that are not `number` data types, or a combination of both, for example,  `94u0sfjlk*(f!`lkkjd`, `18005555555`, or `Fred`.
 
 |===
 
 [[keyboard-shortcuts]]
-== Keyboard Shortcuts
+== Supported Keyboard Shortcuts
 
-The *Custom Expression Editor* enables you to use keyboard shortcuts for math operators. When inserting math operators, you can press *Control + Shift + <+, (, ), or *>*. For example, to enter a ``*`` operator, you would press *Control + Shift + **.
+The *Custom Expression Editor*  enables you to use keyboard shortcuts for mathematical operators. When inserting mathematical operators, press one of *Control + Shift + <+, (, ), or *>*. For example, to enter a operator, press *Control + Shift +*.
 
 For */* and *-*, the Shift key is not required. For example, to insert a */*, you can press *Control + /*.
 
@@ -254,53 +255,54 @@ To access the *Custom Expression Editor*:
 
 . From the *Composer Flows* tab, open a flow.
 . Click *Edit*.
-. In an action field, in a value in the query builder, or in the value of an If/Else Block, select *Custom Expression fx* from the dropdown. +
+. In an action field, in a value in the query builder, or in the value of an If/Else Block, select *Custom Expression fx* from the drop-down menu. +
 The *Custom Expression Editor* appears.
 //screenshot once in staging
 
 [[add-custom-expression-to-an-action]]
 == Add a Custom Expression to an Action
 
-When adding a custom expression, you can place the cursor over elements in the *Custom Expression Editor* window to trigger context popovers with helpful suggestions and in-app support for parameters, examples, and more.
+When adding a custom expression, place the cursor over elements in the *Custom Expression Editor* window to trigger context popovers with helpful suggestions and in-app support.
 
 To add a custom expression to an action:
 
-. In the *Custom Expression Editor*, in the left pane, click the:
-.. *Function* tab to view or search for a function.
-.. *Data* tab to view or search for a field or data pill.
-.. *Operator* tab to view or search for an operator.
+. In the *Custom Expression Editor* left pane, click one of the following tabs:
+.. *Function*, to view or search for a function
+.. *Data*, to view or search for a field or data pill
+.. *Operator*, to view or search for an operator
 . Select the available functions, fields, data pills, or operators for your custom expression from the left pane. +
-The selections appear in the *<Field Name>* box in the right pane of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
-. Optionally, you can copy the expression from the *<Field Name>* box for use in another field.
+Your selections appear in the *<Field Name>* box in the right pane. The syntax of your custom expression is validated automatically.
+. If you want to reuse the expression in the *<Field Name>* box in another field, copy it.
 . After the custom expression is created and validated, click *Apply*.
 . Click *Save*. +
 The custom expression is added to the field.
 
-== Edit an Existing Custom Expression
+== Edit a Custom Expression
 
 To edit an existing custom expression in an action:
 
 . From the *Composer Flows* tab, open a flow.
 . Click *Edit*
-. In an action, in a field containing a custom expression, click the pencil. +
+. In an action field containing your custom expression, click the pencil icon. +
 The *Custom Expression Editor* appears.
-. In the *<Field Name>* text box in the right pane of the *Custom Expression Editor*, select and delete the existing custom expression or place your cursor where you want to add additional items from the left pane.
+. In the *<Field Name>* box in the right pane of the *Custom Expression Editor*, either select and delete the existing custom expression or place your cursor where you want to add additional items from the left pane.
 . In the left pane, select from the available functions, fields, data pills, or operators. +
-The selections appear in the *<Field Name>* box in the right pane of the *Custom Expression Editor*. The syntax of the custom expression is validated automatically.
-. After the custom expression is edited and validated, click *Apply*.
+Your selections appear in the *<Field Name>* box in the right pane. The syntax of your edited custom expression is validated automatically.
+. After your custom expression is edited and validated, click *Apply*.
 . Click *Save*. +
-The custom expression is edited.
+Your custom expression is edited.
 
-== Delete an Existing Custom Expression
+== Delete a Custom Expression
 
 To delete an existing custom expression in an action:
 
 . From the *Composer Flows* tab, open a flow.
 . Click *Edit*
-. In an action, in a field containing a custom expression, click the X. +
-The custom expression is cleared from the field. If a value in the field is required, you will need to either add a new custom expression or select a value from the dropdown.
+. In an action field containing a custom expression, click the X icon. +
+The custom expression is deleted from the field.
+. If your implementation requires this field to contain a value, either add a new custom expression or select a value from the drop-down menu.
 . On the *Flow Details* page, click *Save*. +
-The custom expression is deleted.
+The custom expression is deleted. If your environment requires a value in the custom expression field, your addition or selection is saved.
 
 
 include::_partials/see-also.adoc[]

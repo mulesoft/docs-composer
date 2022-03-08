@@ -6,7 +6,7 @@ You can manipulate data in Composer by building _expressions_ and applying _func
 
 //More content may be added - to be determined later
 * You can nest functions. You can use the input parameters of another function call for your function.
-* Composer functions are built with https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
+* Composer functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 
 === String Functions
 
@@ -136,7 +136,8 @@ numYears: number |Date
 
 numYears: number |DateTime
 
-|addHours |Creates and returns a DateTime value incremented or decremented by the specified number of hours. |addHours(now(), 1) = 2021-03-15T23:23:20 +
+|addHours |Creates and returns a DateTime value incremented or decremented by the specified number of hours. |`addHours(now(), 1) = 2021-03-15T23:23:20` +
+
 `addHours(2021-03-15T22:23:20, 3) = 2021-03-16T01:23:20` +
 
 `addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20` |dateTime: DateTime +

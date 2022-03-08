@@ -4,6 +4,12 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== March 2, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Get Organization by ID* action is now available for the Zendesk Connector. This action returns an organization based on specified ID search criteria.
+
 == February 21, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

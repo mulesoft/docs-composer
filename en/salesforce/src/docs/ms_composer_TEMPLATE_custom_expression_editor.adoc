@@ -1,0 +1,308 @@
+= Building Formulas for Flows
+
+Manipulate data in Composer by building _expressions_ and applying _functions_. Using the *Custom Expression Editor*, create expressions that include functions and mathematical operators. Use the editor also to truncate words, capitalize phrases, and set the date.
+
+When building formulas for a flow, keep in mind that:
+
+//More content may be added - to be determined later
+* You can nest functions and use the input parameters of another function call for your function.
+* Composer functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
+
+=== String Functions
+
+The *Custom Expression Editor* supports the following `string` formulas and operators:
+
+[%header%autowidth.spread]
+|===
+
+|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+
+|lower | Returns the provided string in lowercase characters. |`lower(COMPOSER) = composer` |text: String |String
+
+|upper |Returns the provided string in uppercase characters. |`upper(composer) = COMPOSER` |text: String |String
+
+|capitalize |Capitalizes the first letter of each word in a string. This also removes underscores between words and puts a space before each capitalized word.
+|`capitalize(name) = Name` +
+
+`capitalize(firstName) = First Name` +
+
+`capitalize(customer_first_name) = Customer First Name` +
+|text: String |String
+
+|trim |Removes any blank spaces from the beginning and end of a string.
+|`trim(<long example text>) = this example long text` |text: String |String
+
+|first |Returns the specified number of characters from the beginning of a string. If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |`first(Hello Composer!, 5) = Hello` |text: String +
+
+numCharacters: Number |String
+
+|last |Returns the specified number of characters from the end of a string. |`last(Hello Composer!, 9) = Composer!` |text: String +
+
+numCharacters: Number|String
+
+|substitute |Replaces all substrings that match a literal search string with a specified replacement string. Replacement proceeds from the beginning of the string to the end. For example, the result of replacing `aa` with `b` in the string `aaa` is `ba`, rather than `ab`. |`substitute(Composer, o, O) = COmpOser` +
+
+`substitute(Composer, a, Example) = Composer`
+
+|text: String +
+
+target: String +
+
+replacement: String |String
+
+|===
+
+It is important to note that in a `string` field, you can use `number` expressions selected from the operator list; however, the expressions must be enclosed within parentheses. For example, you can enter `abc(9+9)` where the `+` is selected from the operator list. This string renders as `abc18`.
+
+=== Number Functions
+
+In the editor, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or use xref:ms_composer_custom_expression_editor.adoc#keyboard-shortcuts[keyboard shortcuts].
+
+The *Custom Expression Editor* supports the following `number` formulas and operators:
+
+[%header%autowidth.spread]
+|===
+
+|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+
+|round |Rounds a number up or down to the nearest whole number. |`round(1.2) = 1` +
+
+`round(4.6) = 5` +
+
+`round(3.5) = 4` |number: Number |Number
+
+|ceil |Rounds a number up to the nearest whole number. |`ceil(1.2) = 2` +
+
+`ceil(3) = 3` |number: Number |Number
+
+|floor |Rounds a number down to the nearest whole number. |`floor(2.2) = 2` +
+
+`floor(3) = 3` |number: Number |Number
+
+|abs |Returns the absolute value of a number. |`abs(-3.4) = 3.4` +
+
+`abs(2) = 2` |number: Number |Number
+
+|===
+
+=== Date Functions
+
+The *Custom Expression Editor* supports the following `date` and `dateTime` formulas and operators:
+
+[%header%autowidth.spread]
+|===
+
+|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+
+|today |Returns the date for today as a Date type. |`today() = 2021-03-15` | NA |Date
+
+|now |Returns a DateTime value for the current date and time. |`now() = 2021-03-15T18:23:20` | NA |DateTime
+
+|addDays |Creates and returns a Date value incremented or decremented by the specified number of days. |`addDays(today(), 3) = 2021-03-18` +
+
+`addDays(2021-03-15, -4) = 2021-03-11` |date: Date +
+
+numDays: number |Date
+
+|addDays |Creates and returns a DateTime value incremented or decremented by the specified number of days.
+|`addDays(now(), 3) = 2021-03-18T18:23:20` +
+
+`addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20` |dateTime: DateTime +
+
+numDays: number |DateTime
+
+|addMonths |Creates and returns a Date value incremented or decremented by the specified number of months. |`addMonths(today(), 3) = 2021-06-15` +
+
+`addMonths(2021-03-15, -4) = 2020-12-15` |date: Date +
+
+numMonths: number |Date
+
+|addMonths |Creates and returns a DateTime value incremented or decremented by the specified number of months. |`addMonths(now(), 3) = 2021-06-15T18:23:20` +
+
+`addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20` |dateTime: DateTime +
+
+numMonths: number |DateTime
+
+|addYears |Creates and returns a Date value incremented or decremented by the specified number of years. |`addYears(today(), 1) = 2022-03-15` +
+
+`addYears(2021-03-15, -1) = 2020-03-15` |date: Date +
+
+numYears: number |Date
+
+|addYears |Creates and returns a DateTime value incremented or decremented by the specified number of years.
+|`addYears(now(), 3) = 2024-03-15T18:23:20` +
+
+`addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20` |dateTime: DateTime +
+
+numYears: number |DateTime
+
+|addHours |Creates and returns a DateTime value incremented or decremented by the specified number of hours. |`addHours(now(), 1) = 2021-03-15T23:23:20` +
+
+`addHours(2021-03-15T22:23:20, 3) = 2021-03-16T01:23:20` +
+
+`addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20` |dateTime: DateTime +
+
+numHours: number |DateTime
+
+|addMinutes |Creates and returns a DateTime value incremented or decremented by the specified number of minutes.
+|`addMinutes(now(), 5) = 2021-03-15T18:33:20` +
+
+`addMinutes(2021-03-15T23:45:00,15) = 2021-03-16T00:00:00` +
+
+`addMinutes(2021-03-15T18:23:20, -30) = 2021-03-15T17:53:20`
+|dateTime: DateTime +
+
+numMinutes: number |DateTime
+
+|addSeconds |Creates and returns a DateTime value incremented or decremented by the specified number of seconds. |`addSeconds(now(), 30) = 2021-03-15T18:23:50` +
+
+`addSeconds(2021-03-15T23:45:00,15) = 2021-03-15T23:45:30` +
+
+`addSeconds(2021-03-15T18:23:20, -30) = 2021-03-15T18:22:50`
+|dateTime: DateTime +
+
+numSeconds: number |DateTime
+
+|beginningOfHour |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified hour. The minutes and seconds in the input change to 00:00. |`beginningOfHour(2021-03-15T18:23:20) = 2021-03-15T18:00:00` |dateTime: DateTime |DateTime
+
+|beginningOfDay |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified day. The hours, minutes, and seconds in the input change to 00:00:00. |`beginningOfDay(2021-03-15T18:23:20) = 2021-03-15T00:00:00` |dateTime: DateTime |DateTime
+
+|beginningOfWeek |Returns a new Date value that changes the Day value from the input to the beginning of the first day of the specified week. The function treats Sunday as the first day of the week. |`beginningOfWeek(2021-03-15) = 2021-03-14` +
+
+`beginningOfWeek(today()) = 2021-03-14` |date: Date |Date
+
+|beginningOfWeek |Returns a new DateTime value that changes the Day and Time values from the input to the beginning of the first day of the specified week. The function treats Sunday as the first day of the week.
+|`beginningOfWeek(2021-03-15T18:23:20) = 2021-03-14T00:00:00` +
+
+`beginningOfWeek(now()) = 2021-03-14T00:00:00` |dateTime: DateTime |DateTime
+
+|beginningOfMonth |Returns a new Date value that changes the Day value from the input to the first day of the specified month. |`beginningOfMonth(2021-11-15) = 2021-11-01` +
+
+`beginningOfMonth(today()) = 2021-03-01` |date: Date |Date
+
+|beginningOfMonth |Returns a new DateTime value that changes the Day value from the input to the first day of the specified month. The day and time in the input changes to `01T00:00:00`. |`beginningOfMonth(2021-03-15T18:23:20) = 2021-03-01T00:00:00` +
+
+`beginningOfMonth(now()) = 2021-03-01T00:00:00` |dateTime: DateTime |DateTime
+
+|beginningOfYear |Returns a new Date value that changes the Month and Day values from the input to the first day of the specified year. |`beginningOfYear(2021-11-15) = 2021-01-01` +
+
+`beginningOfYear(today()) = 2021-01-01` |date: Date |Date
+
+|beginningOfYear |Returns a new DateTime value that changes the Month and Day values from the input to the first day of the specified year. It also sets the Time value to `00:00:00`. The month, day, and time in the input changes to `01-01T00:00:00`. |`beginningOfYear(2021-03-15T18:23:20) = 2021-01-01T00:00:00` +
+
+`beginningOfYear(now()) = 2021-01-01T00:00:00` |dateTime: DateTime |DateTime
+
+|daysBetween |Returns the number of days between two dates. If the to Date value is earlier than the from Date value, the function returns a negative number equal to the number of days between the two dates. |`daysBetween(2020-03-15, 2021-03-15) = 365`|from: Date +
+
+to: Date |Number
+
+|daysBetween |Returns the number of days between two DateTime values. If the to DateTime value is earlier than the from DateTime value, the function returns a negative number equal to the number of days between the two DateTime values. |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |from: DateTime +
+
+to: DateTime |Number
+
+|month |Returns the numerical value of the month in the Date input. |`month(2021-03-15) = 3` |date: Date |Number
+
+|month |Returns the numerical value of the month in the DateTime input. |`month(2021-03-15T18:23:20) = 3` |dateTime: DateTime |Number
+
+|year |Returns the numerical value of the year in the Date input. |`year(2021-03-15) = 2021` |date: Date |Number
+
+|year |Returns the numerical value of the year in the DateTime input. |year(2021-03-15T18:23:20) = 2021 |dateTime: DateTime |Number
+
+|===
+
+== Data Types
+
+The value that a Composer field can accept for a value is a _data type_. In Composer, the following data types are available:
+
+[%header%autowidth.spread]
+
+|===
+
+|Data Type |Definition
+
+|Array | Provides a collection of a fixed number of components of the same data type.
+
+|Boolean | Evaluates to `true` or `false`.
+
+|Date | Stores a year, month, and day as `yyyy-MM-dd`.
+
+|DateTime | Stores a date and time within a time zone relative to Greenwich Mean Time (GMT). A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`.
+
+// |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
+
+|List | Returns a list of objects, for example, the output of the *Get Records* action. 
+//and list of strings like the *to* field in Gmail Connector
+
+
+|Number | Stores either a floating-point number in the range of 1.40129846432481707e-45 to 3.40282346638528860e+38 or an integer.
+
+|Object | Refers to a composite data type that can contain other data types as properties  (`boolean`, `date`, `number`, and so on).
+
+|String | Stores text, numbers that are not `number` data types, or a combination of both, for example, `94u0sfjlk*(f!`lkkjd`, `18005555555`, or `Fred`.
+
+|===
+
+[[keyboard-shortcuts]]
+== Supported Keyboard Shortcuts
+
+The *Custom Expression Editor*  enables you to use keyboard shortcuts for mathematical operators. When inserting mathematical operators, press one of *Control + Shift + <+, (, ), or *>*. For example, to enter a operator, press *Control + Shift +*.
+
+For */* and *-*, the Shift key is not required. For example, to insert a */*, you can press *Control + /*.
+
+== Access the Custom Expression Editor
+
+To access the *Custom Expression Editor*:
+
+. From the *Composer Flows* tab, open a flow.
+. Click *Edit*.
+. In an action field, in a value in the query builder, or in the value of an *If/Else Block* control, select *Custom Expression fx* from the drop-down menu. +
+The *Custom Expression Editor* appears.
+//screenshot once in staging
+
+[[add-custom-expression-to-an-action]]
+== Add a Custom Expression to an Action
+
+When adding a custom expression, place the cursor over elements in the *Custom Expression Editor* window to trigger context popovers containing helpful suggestions and in-app support.
+
+To add a custom expression to an action:
+
+. In the *Custom Expression Editor* left pane, click one of the following tabs:
+.. *Function*, to view or search for a function
+.. *Data*, to view or search for a field or data pill
+.. *Operator*, to view or search for an operator
+. Select the available functions, fields, data pills, or operators for your custom expression from the left pane. +
+Your selections appear in the *<Field Name>* box in the right pane. The syntax of your custom expression is validated automatically.
+. If you want to reuse the expression in the *<Field Name>* box in another field, copy it.
+. After the custom expression is created and validated, click *Apply*.
+. Click *Save*. +
+The custom expression is added to the field.
+
+== Edit a Custom Expression
+
+To edit an existing custom expression in an action:
+
+. From the *Composer Flows* tab, open a flow.
+. Click *Edit*
+. In an action field containing your custom expression, click the pencil icon. +
+The *Custom Expression Editor* appears.
+. In the *<Field Name>* box in the right pane of the *Custom Expression Editor*, either select and delete the existing custom expression or place your cursor where you want to add items from the left pane.
+. In the left pane, select from the available functions, fields, data pills, or operators. +
+Your selections appear in the *<Field Name>* box in the right pane. The syntax of your edited custom expression is validated automatically.
+. After your custom expression is edited and validated, click *Apply*.
+. Click *Save*. +
+Your custom expression is edited.
+
+== Delete a Custom Expression
+
+To delete an existing custom expression in an action:
+
+. From the *Composer Flows* tab, open a flow.
+. Click *Edit*
+. In an action field containing a custom expression, click the X icon. +
+The custom expression is deleted from the field.
+. If your implementation requires this field to contain a value, either add a new custom expression or select a value from the drop-down menu.
+. On the *Flow Details* page, click *Save*. +
+The custom expression is deleted. If your environment requires a value in the custom expression field, your addition or selection is saved.
+
+
+include::_partials/see-also.adoc[]

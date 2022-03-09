@@ -234,7 +234,7 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 |Object | Refers to a composite data type that can contain other data types as properties  (`boolean`, `date`, `number`, and so on).
 
-|String | Stores text, numbers that are not `number` data types, or a combination of both, for example,  `94u0sfjlk*(f!`lkkjd`, `18005555555`, or `Fred`.
+|String | Stores text, numbers that are not `number` data types, or a combination of both, for example, `94u0sfjlk*(f!`lkkjd`, `18005555555`, or `Fred`.
 
 |===
 

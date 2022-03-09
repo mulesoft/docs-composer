@@ -281,7 +281,7 @@ To edit an existing custom expression in an action:
 . Click *Edit*
 . In an action field containing your custom expression, click the pencil icon. +
 The *Custom Expression Editor* appears.
-. In the *<Field Name>* box in the right pane of the *Custom Expression Editor*, either select and delete the existing custom expression or place your cursor where you want to add additional items from the left pane.
+. In the *<Field Name>* box in the right pane of the *Custom Expression Editor*, either select and delete the existing custom expression or place your cursor where you want to add items from the left pane.
 . In the left pane, select from the available functions, fields, data pills, or operators. +
 Your selections appear in the *<Field Name>* box in the right pane. The syntax of your edited custom expression is validated automatically.
 . After your custom expression is edited and validated, click *Apply*.

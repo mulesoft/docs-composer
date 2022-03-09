@@ -2,10 +2,10 @@
 
 Manipulate data in Composer by building _expressions_ and applying _functions_. Using the *Custom Expression Editor*, create expressions that include functions and mathematical operators. Use the editor also to truncate words, capitalize phrases, and set the date.
 
-== Before You Begin
+When building formulas for a flow, keep in mind that:
 
 //More content may be added - to be determined later
-* You can nest functions. You can use the input parameters of another function call for your function.
+* You can nest functions and use the input parameters of another function call for your function.
 * Composer functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 
 === String Functions
@@ -251,7 +251,7 @@ To access the *Custom Expression Editor*:
 
 . From the *Composer Flows* tab, open a flow.
 . Click *Edit*.
-. In an action field, in a value in the query builder, or in the value of an If/Else Block, select *Custom Expression fx* from the drop-down menu. +
+. In an action field, in a value in the query builder, or in the value of an *If/Else Block* control, select *Custom Expression fx* from the drop-down menu. +
 The *Custom Expression Editor* appears.
 //screenshot once in staging
 

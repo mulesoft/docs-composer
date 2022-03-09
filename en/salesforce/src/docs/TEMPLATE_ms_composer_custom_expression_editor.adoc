@@ -258,7 +258,7 @@ The *Custom Expression Editor* appears.
 [[add-custom-expression-to-an-action]]
 == Add a Custom Expression to an Action
 
-When adding a custom expression, place the cursor over elements in the *Custom Expression Editor* window to trigger context popovers with helpful suggestions and in-app support.
+When adding a custom expression, place the cursor over elements in the *Custom Expression Editor* window to trigger context popovers containing helpful suggestions and in-app support.
 
 To add a custom expression to an action:
 

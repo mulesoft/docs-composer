@@ -56,7 +56,7 @@ It is important to note that in a `string` field, you can use `number` expressio
 
 === Number Functions
 
-In the editor, aa mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use math operators, select them from the operator list or use xref:ms_composer_custom_expression_editor.adoc#keyboard-shortcuts[keyboard shortcuts].
+In the editor, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or use xref:ms_composer_custom_expression_editor.adoc#keyboard-shortcuts[keyboard shortcuts].
 
 The *Custom Expression Editor* supports the following `number` formulas and operators:
 

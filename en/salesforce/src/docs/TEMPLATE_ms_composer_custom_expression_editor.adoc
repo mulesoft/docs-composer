@@ -1,6 +1,6 @@
 = Building Formulas for Flows
 
-You can manipulate data in Composer by building _expressions_ and applying _functions_. With the *Custom Expression Editor*, you can create expressions that include functions and mathematical operators. For example, you can truncate words, capitalize phrases, and set the date.
+Manipulate data in Composer by building _expressions_ and applying _functions_. Using the *Custom Expression Editor*, create expressions that include functions and mathematical operators. Use the editor also to truncate words, capitalize phrases, and set the date.
 
 == Before You Begin
 

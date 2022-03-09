@@ -230,6 +230,10 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 // |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
 
+|List | Returns a list of objects, for example, the output of the *Get Records* action. 
+//and list of strings like the *to* field in Gmail Connector
+
+
 |Number | Stores either a floating-point number in the range of 1.40129846432481707e-45 to 3.40282346638528860e+38 or an integer.
 
 |Object | Refers to a composite data type that can contain other data types as properties  (`boolean`, `date`, `number`, and so on).

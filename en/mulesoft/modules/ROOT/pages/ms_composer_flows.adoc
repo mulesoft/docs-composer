@@ -159,7 +159,7 @@ For example, if your trigger is "new records created in Salesforce," and you wan
 .. Optionally, if the field contains a custom expression, click the pencil to edit the field.
 .. Click *Apply*.
 . Click *Save*.
-//. Optionally, if the field is enabled for a xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[custom expression], click the pencil to edit the field.
+//. If you want to edit a field, and that field is enabled for a xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[custom expression], click the pencil icon.
 . Click *Save*.
 
 When there are null values in custom expressions and are:

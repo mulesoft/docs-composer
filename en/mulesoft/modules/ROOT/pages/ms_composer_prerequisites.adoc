@@ -153,6 +153,19 @@ Information about the users' invitations appear. In the menu:
 .. If the invitation to that user is older than 14 days and is about to expire, if you want to resend it, click *Resend Invite*.
 .. If you want to revoke the invitation to that user, click *Revoke Invite*.
 
+
+== Enable Failure Notifications
+
+As administrator you can enable email failure notifications. While flows are running, checks run every 15 minutes and log table for any failures. An email will be sent to the flow owner if any of their flows have at least 1 failure in the 15 mins time frame.
+
+1. A user will only receive 4 consecutive emails for the same error on flow
+    1. Error on Flow means in the last 15 mins has the flow failed (It doesn’t account for fail count or type error)
+    2. The counter get reset if a new flow failed in the last 15 mins
+    3. The counter get reset after 24 hours.
+    4. The counter will not be incremented if no runs are detected.
+
+
+
 == Admin: Manage Users
 
 As administrator, you are responsible for managing your MuleSoft Composer users to meet your organization’s business needs. The following user management tasks are available:

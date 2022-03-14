@@ -30,13 +30,7 @@ Once text is present in one cell or column, updating those cells or columns does
 
 Updated row in sheet::
 
-Monitors one sheet within a spreadsheet and triggers when a row is created or updated. When a flow is initiated, this trigger returns all existing rows in the sheet. Each subsequent time that the flow is trigged, new or updated rows in the sheet are returned.
-
-New spreadsheet::
-
-This trigger fires when a new spreadsheet is created in the Google Drive associated with the connection.
-+
-Google Sheets are not saved at the moment of creation; instead, they are saved the first time they are edited. Adding a new spreadsheet won’t trigger a flow until after that spreadsheet is edited and saved. The date on which the spreadsheet is saved is the date of creation. If you create a second spreadsheet and edit it before you edit the initial spreadsheet, the second spreadsheet triggers a flow and the first spreadsheet is ignored.
+Monitors one sheet within a spreadsheet and triggers when a row is created or updated. When a flow is initiated, this trigger returns all existing rows in the sheet. Each subsequent time that the flow is triggered, new or updated rows in the sheet are returned.
 
 === Limits
 

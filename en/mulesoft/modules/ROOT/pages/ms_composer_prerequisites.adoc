@@ -89,19 +89,18 @@ it's likely that you need to purchase Composer for your Salesforce org or that y
 
 When the Composer page displays, you're ready to create your first flow. If you'd like to learn more before using Composer, review the other topics in this section.
 
-== Enable Flow Failure Notifications
+//== Enable Flow Failure Notifications
 
-As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If a flow fails, an email is sent to the owner of the flow. Note that:
+//As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If a flow fails, an email is sent to the owner of the flow. Note that:
 
-* A maximum of four consecutive emails are sent for the same error.
-* The error log for the flow resets every 24 hours.
-* The error log only runs while the flow runs.
+//* A maximum of four consecutive emails are sent for the same error.
+//* The error log for the flow resets every 24 hours.
+//* The error log only runs while the flow runs.
 
-To enable email notifications:
+//To enable email notifications:
 
-. In the Salesforce Composer sidebar, click *Settings* > *Email notifications*.
-. In the *Receive email notifications when flows fail to run* row, toggle the button to enable email notifications.
-
+//. In the Salesforce Composer sidebar, click *Settings* > *Email notifications*.
+//. In the *Receive email notifications when flows fail to run* row, toggle the button to enable email notifications.
 
 endif::[]
 
@@ -213,20 +212,19 @@ To delete a user:
 A message appears, warning you that deleting a user cannot be undone.
 . Click *Delete*.
 
-== Enable Flow Failure Notifications
+//== Enable Flow Failure Notifications
 
-As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If a flow fails, an email is sent to the owner of the flow. Note that:
+//As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If a flow fails, an email is sent to the owner of the flow. Note that:
 
-* A maximum of four consecutive emails are sent for the same error.
-* The error log for the flow resets every 24 hours.
-* The error log only runs while the flow runs.
+//* A maximum of four consecutive emails are sent for the same error.
+//* The error log for the flow resets every 24 hours.
+//* The error log only runs while the flow runs.
 
-To enable email notifications:
+//To enable email notifications:
 
-. In the MuleSoft Composer sidebar, click *Settings* and then click *Email notifications*.
-. Toggle the button to enable email notifications.
-. Click *Save*.
-
+//. In the MuleSoft Composer sidebar, click *Settings* and then click *Email notifications*.
+//. Toggle the button to enable email notifications.
+//. Click *Save*.
 
 endif::[]
 

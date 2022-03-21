@@ -12,4 +12,8 @@
 
 |A blank area appears on the *Home* page when you first log in to Composer |Clear your browser cookies and reload. | CAPP-2051
 
+| In the *Custom Expression Editor*, function overloading is not supported. As a result, there are duplicate functions across Dates and DateTimes data types. For example, there are two `addDays` functions: one function takes a date as a parameter and returns a `date` and the other function takes a `dateTime` as a parameter and returns a `dateTime`. | N/A |
+
+|
+
 |===

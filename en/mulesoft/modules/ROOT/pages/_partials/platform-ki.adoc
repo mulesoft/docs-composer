@@ -12,8 +12,8 @@
 
 |A blank area appears on the *Home* page when you first log in to Composer |Clear your browser cookies and reload. | CAPP-2051
 
-| In the *Custom Expression Editor*, function overloading is not supported. As a result, there are duplicate functions across Dates and DateTimes data types. For example, there are two `addDays` functions: one function takes a date as a parameter and returns a `date` and the other function takes a `dateTime` as a parameter and returns a `dateTime`. | N/A |
+|In the *Custom Expression Editor*, function overloading is not supported. As a result, there are duplicate functions across Date and DateTime data types. For example, there are two `addDays` functions: one function takes a `date` as a parameter and returns a `date` and the other function takes a `dateTime` as a parameter and returns a `dateTime`. | N/A | MCOM-354
 
-|
+|In the *Custom Expression Editor*, there is a difference in the editor between a math operator (+,-,*, or /) selected from the operator list versus an operator typed and resolved as a string. For example, typing `9+9` is actually a string rather than `18`. |To use math operators, select them from the operator list or use keyboard shortcuts. | MCOM-354
 
 |===

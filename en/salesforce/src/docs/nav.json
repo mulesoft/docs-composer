@@ -27,6 +27,10 @@
           "title": "Build a Flow"
         },
         {
+          "file" : "ms_composer_custom_expression_editor.adoc",
+          "title": "Build Formulas for Flows"
+        },
+        {
           "file" : "ms_composer_test_flow.adoc",
           "title": "Test a Flow"
         },

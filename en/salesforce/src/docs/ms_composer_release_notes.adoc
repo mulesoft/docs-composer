@@ -47,6 +47,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3
 
 include::_partials/platform-ki.adoc[]
 
+include::_partials/custom-expression-editor-ki.adoc[]
+
 include::_partials/google-sheets-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]

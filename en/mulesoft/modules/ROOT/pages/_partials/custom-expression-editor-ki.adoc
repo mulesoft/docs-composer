@@ -1,0 +1,13 @@
+==== Custom Expression Editor
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|Function overloading is not supported. As a result, there are duplicate functions across Date and DateTime data types. For example, there are two `addDays` functions: one function takes a `date` as a parameter and returns a `date` and the other function takes a `dateTime` as a parameter and returns a `dateTime`. | N/A | MCOM-354
+
+|There is a difference in the editor between a math operator (+,-,*, or /) selected from the operator list versus an operator typed and resolved as a string. For example, typing `9+9` is actually a string rather than `18`. |To use math operators, select them from the operator list or use keyboard shortcuts. | MCOM-354
+
+|===

@@ -56,7 +56,7 @@ It is important to note that in a `string` field, you can use `number` expressio
 
 === Number Functions
 
-In the editor, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or use xref:keyboard-shortcuts[keyboard shortcuts].
+In the *Custom Expression Editor*, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or use xref:keyboard-shortcuts[keyboard shortcuts].
 
 The *Custom Expression Editor* supports the following `number` formulas and operators:
 
@@ -86,6 +86,8 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 |===
 
 === Date Functions
+
+In the *Custom Expression Editor*, `date` and `dateTime` data pills can only be used as inputs. You cannot enter the dates manually.
 
 The *Custom Expression Editor* supports the following `date` and `dateTime` formulas and operators:
 

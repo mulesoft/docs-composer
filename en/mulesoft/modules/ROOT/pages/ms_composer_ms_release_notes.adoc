@@ -16,6 +16,18 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now use the *Custom Expressions Editor* to build expressions and apply functions in Composer. This release supports basic math operators and basic functions such as string, date, and number.
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Fixed the issue in the Jira Connector in which flow triggers were not activated if the field values contained spaces. | W-10830185, W-10824255
+
+|===
+
 == March 14, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

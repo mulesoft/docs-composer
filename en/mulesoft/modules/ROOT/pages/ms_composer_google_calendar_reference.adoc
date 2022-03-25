@@ -1,0 +1,49 @@
+= Google Calendar Connector Reference
+
+Google Calendar is a calendar and task planning application by Google that focuses on enhancing personal and team productivity. Using Google Calendar, individuals can easily schedule tasks and meetings. They can also share events with colleagues through an easy-to-use calendar interface.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to Google.
+
+Password::
+
+The OAuth password that you use to log in to Google.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+The Google Calendar Connector accepts time values in RFC 339 format (e.g.; YYYY-MM-DD-Thh:mmZ).
+
+For example, January 1, 2022, at 9:00 AM Pacific Time (which is -7 hours fr
+m UTC time) would be *2022-01-01-T6:00Z*.
+
+Create a new event::
+
+Creates an event. The following fields are required:
+
+* Calendar ID
+* Start Time
+* End Time
+
+Update an event::
+
+Updates an event. The following fields are required:
+
+* Calendar ID
+* Event ID
+* Start Time
+* End Time
+
+The Google Calendar connector's use and transfer to any other application of information received from Google APIs is subject to the https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[Google API Services User Data Policy^], including the Limited Use requirements.
+
+*Google Calendar™ is a trademark of Google LLC.*
+
+include::_partials/see-also.adoc[]

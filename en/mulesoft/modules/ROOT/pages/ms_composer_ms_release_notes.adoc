@@ -10,6 +10,15 @@ New versions are automatically available once they are released; you don't need 
 
 //* The *Get Invoices* action and the *On New or Updated Invoices* trigger are now available for the Zero Connector.
 
+== March 25, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: Google Calendar.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
 == March 22, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

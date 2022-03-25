@@ -36,6 +36,8 @@ Sends an email with up to one attachment. The following fields are required:
 * Subject
 * Body
 
+The Google Gmail connector's use and transfer to any other application of information received from Google APIs is subject to the https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[Google API Services User Data Policy], including the Limited Use requirements.
+
 *Gmail™ is a trademark of Google LLC.*
 
 include::_partials/see-also.adoc[]

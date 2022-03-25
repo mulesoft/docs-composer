@@ -44,4 +44,6 @@ Updates an event. The following fields are required:
 
 The Google Calendar connector's use and transfer to any other application of information received from Google APIs is subject to the https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[Google API Services User Data Policy], including the Limited Use requirements.
 
-Google Sheets™ is a trademark of Google LLC.
+*Google Calendar™ is a trademark of Google LLC.*
+
+include::_partials/see-also.adoc[]

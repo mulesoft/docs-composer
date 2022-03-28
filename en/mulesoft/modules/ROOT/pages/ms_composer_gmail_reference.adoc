@@ -2,6 +2,10 @@
 
 Gmail is a popular email service used by businesses for a large number of communication purposes. This connector enables productivity by connecting a user's inbox to other systems like Google Sheets, Salesforce, or Slack.
 
+== Before You Begin
+
+The Composer Gmail Connector requires third-party app access to access restricted data in Google. Before using the connector, your Google Workspace administrator must https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[add "MuleSoft Composer" to the list of configured apps^] to create Gmail OAuth connections with Composer.
+
 == Connections
 
 include::_partials/connection-definition.adoc[]
@@ -30,7 +34,7 @@ include::_partials/action-definition.adoc[]
 
 Send email::
 
-Sends an email with up to one attachment. The following fields are required:
+Sends an email with up to one attachment link. The following fields are required:
 
 * To
 * Subject

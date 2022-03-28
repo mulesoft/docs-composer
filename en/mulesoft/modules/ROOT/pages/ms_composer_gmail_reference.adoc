@@ -1,0 +1,47 @@
+= Gmail Connector Reference
+
+Gmail is a popular email service used by businesses for a large number of communication purposes. This connector enables productivity by connecting a user's inbox to other systems like Google Sheets, Salesforce, or Slack.
+
+== Before You Begin
+
+The Composer Gmail Connector requires third-party app access to access restricted data in Google. Before using the connector, your Google Workspace administrator must https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[add "MuleSoft Composer" to the list of configured apps^] to create Gmail OAuth connections with Composer.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username::
+
+The OAuth username that you use to log in to Google.
+
+Password::
+
+The OAuth password that you use to log in to Google.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New email::
+
+This trigger fires when a new email is received in the user’s inbox.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Send email::
+
+Sends an email with up to one attachment link. The following fields are required:
+
+* To
+* Subject
+* Body
+
+The Google Gmail connector's use and transfer to any other application of information received from Google APIs is subject to the https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[Google API Services User Data Policy], including the Limited Use requirements.
+
+*Gmail™ is a trademark of Google LLC.*
+
+include::_partials/see-also.adoc[]

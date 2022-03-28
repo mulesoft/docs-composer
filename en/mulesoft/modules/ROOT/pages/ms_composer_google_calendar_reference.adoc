@@ -20,11 +20,6 @@ The OAuth password that you use to log in to Google.
 
 include::_partials/action-definition.adoc[]
 
-The Google Calendar Connector accepts time values in RFC 339 format (e.g.; YYYY-MM-DD-Thh:mmZ).
-
-For example, January 1, 2022, at 9:00 AM Pacific Time (which is -7 hours fr
-m UTC time) would be *2022-01-01-T6:00Z*.
-
 Create a new event::
 
 Creates an event. The following fields are required:
@@ -40,7 +35,10 @@ Updates an event. The following fields are required:
 * Calendar ID
 * Event ID
 * Start Time
-* End Time
+* End Time +
+
+If entering a custom dateTime data pill, ensure the time entered uses the UTC +0 ("Zulu") timezone.
+For example, January 1, 2022, at 9:00 AM Pacific Time (UTC-7) is entered as *2022-01-01, 04:00pm*
 
 The Google Calendar connector's use and transfer to any other application of information received from Google APIs is subject to the https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[Google API Services User Data Policy^], including the Limited Use requirements.
 

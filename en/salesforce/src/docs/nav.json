@@ -55,6 +55,10 @@
               "title": "Box"
             },
             {
+              "file" : "ms_composer_gmail_reference.adoc",
+              "title": "Gmail"
+            },
+            {
               "file" : "ms_composer_google_calendar_reference.adoc",
               "title": "Google Calendar"
             },

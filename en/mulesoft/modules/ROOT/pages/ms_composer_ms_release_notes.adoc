@@ -10,6 +10,15 @@ New versions are automatically available once they are released; you don't need 
 
 //* The *Get Invoices* action and the *On New or Updated Invoices* trigger are now available for the Zero Connector.
 
+== March 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following objects are now available for the NetSuite Connector:
+** Vendor
+** Vendor Bill
+** Purchase Order
+
 == March 25, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

@@ -34,6 +34,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
+== March 23, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *On New or Update Invoice* trigger and the *Get Invoices* action are now available for the Xero Connector.
+
 == March 22, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

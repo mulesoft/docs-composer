@@ -6,7 +6,7 @@ Xero is a SaaS-based accounting application used primarily by small to medium si
 
 include::_partials/connection-definition.adoc[]
 
-To establish a connection from Composer to Xero, you must select the Xero organisation to which you want to connect in the *Organisation* field.
+To establish a connection from Composer to Xero, you must select the Xero Organization to which you want to connect in the *Organization* field.
 
 include::_partials/connection-name.adoc[]
 
@@ -26,21 +26,29 @@ New or updated Contact::
 
 Checks for a new or updated contact record. Provide a value for the following fields:
 
-* *Organisation*
+* *Organization*
 * *Contact Type*
 
 New or updated item::
 
 Checks for a new or updated item record. Provide a value for the following fields:
 
-* *Organisation*
+* *Organization*
 * *Is purchased*
 * *Is sold*
 * *Is tracked as inventory*
 
 New or updated payment::
 
-Checks for a new or updated payment. Provide a value for the *Organisation* field.
+Checks for a new or updated payment. Provide a value for the *Organization* field.
+
+On New or Update Invoice::
+
+Checks for a new or updated invoice. Provide a value for the following fields:
+
+* *Organization*
+* *Invoice type*
+* *Invoice status*
 
 == Actions
 
@@ -50,26 +58,26 @@ Create or update contact::
 
 Creates a new contact record nor updates an existing contact record. Provide a value for the following fields:
 
-* *Organisation*
+* *Organization*
 * *Contact name*
 * If you add additional contacts, you must also provide a value for *Email address*.
 
 Search contacts::
 
-Returns a list of contact records based on values entered. Provide a value for *Organisation*.
+Returns a list of contact records based on values entered. Provide a value for *Organization*.
 
 Get contact by ID::
 
 Returns a single contact record based on the ID value. Provide a value for the following fields:
 
-* *Organisation*
+* *Organization*
 * *Contact ID*
 
 Create or update invoice::
 
 Creates or updates an invoice record. Provide a value for the following fields:
 
-* *Organisation*
+* *Organization*
 * *Invoice type*
 * *Contact name*
 * *Items*
@@ -78,7 +86,7 @@ Update invoice headers::
 
 Updates specific fields in an invoice record. Provide a value for the following fields:
 
-* *Organisation*
+* *Organization*
 * *Invoice Reference Type*
 * *Invoice Reference*
 
@@ -86,7 +94,7 @@ Updates specific fields in an invoice record. Provide a value for the following 
 
 //Creates an item record. Provide a value for the following fields:
 
-//* *Organisation*
+//* *Organization*
 //* *Item Code*
 //* If a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field.
 
@@ -94,8 +102,12 @@ Create or update item::
 
 Creates or updates a field in the item record. Provide a value for the following fields:
 
-* *Organisation*
+* *Organization*
 * *Item Code*
+
+Get Invoices::
+
+Returns new or updated invoice records. Provide a value for *Organization*.
 
 == Objects
 

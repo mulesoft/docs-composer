@@ -4,7 +4,10 @@ Gmail is a popular email service used by businesses for a large number of commun
 
 == Before You Begin
 
-The Composer Gmail Connector requires third-party app access to access restricted data in Google. Before using the connector, your Google Workspace administrator must https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[add "MuleSoft Composer" to the list of configured apps^] to create Gmail OAuth connections with Composer.
+The Composer Gmail Connector requires third-party app access to access restricted data in Google. Before using the connector, your Google Workspace administrator must https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[add one of the following Client IDs to the list of configured apps^] to create Gmail OAuth connections with Composer:
+
+* Production Environment United States: `14294369739-rn5ftpjat2mnofvp3gevkvmik0roioe7.apps.googleusercontent.com`
+* Production Environment Europe: `14294369739-028kk1tl316tgo3a59rtpl6qq6u22d25.apps.googleusercontent.com`
 
 == Connections
 

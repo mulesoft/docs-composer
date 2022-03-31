@@ -13,18 +13,30 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-
-== March 28, 2022
-
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
-
 * You can now connect a new system: Gmail.
 +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Updated error messages in the Google Sheets Connector for empty list fields in the *Create Row* action.  | W-10574328
+| Fixed the issue in the Google Sheets Connector in which columns without headers were incorrectly assigned the header of the next column with a header. | W-10899109
+
+|===
+
+== March 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
 * The following objects are now available for the NetSuite Connector:
+
 ** Vendor
 ** Vendor Bill
 ** Purchase Order

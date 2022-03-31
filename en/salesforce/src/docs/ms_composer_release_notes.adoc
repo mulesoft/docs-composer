@@ -21,6 +21,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 [%header%autowidth.spread]
 
+* You can now connect a new system: Gmail.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
 |===
 
 |Issue|ID
@@ -53,13 +58,8 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-
-* You can now connect a new system: Gmail.
-+
-
-See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
 * The following objects are now available for the NetSuite Connector:
+
 ** Vendor
 ** Vendor Bill
 ** Purchase Order

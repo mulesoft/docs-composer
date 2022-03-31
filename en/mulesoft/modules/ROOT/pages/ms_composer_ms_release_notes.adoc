@@ -4,28 +4,7 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-//== March 11, 2022
-
-//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
-//* The *Get Invoices* action and the *On New or Updated Invoices* trigger are now available for the Zero Connector.
-
-== March 28, 2022
-
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
-
-* You can now connect a new system: Gmail.
-+
-
-See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-* The following objects are now available for the NetSuite Connector:
-** Vendor
-** Vendor Bill
-** Purchase Order
-
-== March 25, 2022
+== March 31, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -33,6 +12,34 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* You can now connect a new system: Gmail.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Updated error messages in the Google Sheets Connector for empty list fields in the *Create Row* action.  | W-10574328
+| Fixed the issue in the Google Sheets Connector in which columns without headers were incorrectly assigned the header of the next column with a header. | W-10899109
+
+|===
+
+== March 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following objects are now available for the NetSuite Connector:
+
+** Vendor
+** Vendor Bill
+** Purchase Order
 
 == March 23, 2022
 

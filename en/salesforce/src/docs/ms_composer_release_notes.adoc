@@ -7,7 +7,7 @@ New versions are automatically available once they are released; you don't need 
 //* Fixed the issue in the Workday Connector in which the the *Create Worker* action returned a value for *Applicant Reference ID* but not for *Employee Reference*.
 //| Fixed an issue in the NetSuite Connector in which creating custom fields on the *Contact* object with the type `document` did not return results. | COCN-752
 //| Fixed an issue in the NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
-
+//* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
 == April 4, 2022
 

@@ -153,7 +153,8 @@ To create an action:
 +
 For example, if your trigger is "new records created in Salesforce," and you want your action to be "copy new record to a Google Sheet," then you would choose or create a Google Sheet connection.
 . Select an action, and any other values displayed. What you have to specify for an action depends on system type you are connected to for the action.
-. If you want to edit a field, and that field is enabled for a xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[custom expression], click the pencil icon.
+. If you want to edit a field, and that field is enabled for a xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[custom expression], click the pencil icon. +
+Note that you can only enter text or select a single data pill for a field. If you want to enter a complex expression (including functions, math operators, concatenation of text, and special tokens) you must use the *Custom Expression Editor*.
 . Click *Save*.
 
 When there are null values in custom expressions and are:

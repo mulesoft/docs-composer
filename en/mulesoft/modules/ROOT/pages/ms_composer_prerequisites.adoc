@@ -212,6 +212,75 @@ To delete a user:
 A message appears, warning you that deleting a user cannot be undone.
 . Click *Delete*.
 
+=== Enable Multiple Identification Providers (IDP)
+
+As administrator, you can enable users to add identity providers for their organization. Note that:
+
+*
+*
+*
+
+==== To enable OpenID Connect IDP:
+
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Multiple IDP*.
+. On the *Identity Provider* page, click *Add Identity Provider* > *OpenID Connect*.
+. In the *New Identity Provider* page, complete the required fields:
++
+* Name
++
+Enter a nickname for this IDP.
++
+* Client Registration URL
++
+This field appears when *Dynamic Registration* is selected. <Need info>.
++
+* Authentication Header
++
+This field appears when *Dynamic Registration* is selected. <Need info>.
++
+* Client ID
++
+This field appears when *Manual Registration* is selected. The unique identifier that you provided for your manually created client application.
++
+* Client Secret
++
+This field appears when *Manual Registration* is selected. The password, or secret, for authenticating your Composer organization with your Identity Provider.
++
+* OpenID Connect Issuer
++
+The location of the OpenID Provider. For most providers, `/.well-known/openid-configuration` is appended to the issuer to generate the metadata URL for openID Connect specifications. For Salesforce, you must provide the value for `issuer`.
++
+* Authorize URL
++
+The URL where the user authenticates and grants OpenID Connect client applications access to the user's identity.
++
+* Token URL
++
+The URL that provides the user’s identity encoded in a secure JSON Web Token.
++
+* User Info URL
++
+The URL that returns user profile information to the client app.
+
+. Optionally, expand *Advanced Settings*, and provide the folllowing values:
++
+* Group Scope
++
+<Need info>
++
+* Group Attribute JSON Data Expression
++
+<Need info>
++
+* Disable
+
+. Click *Save*.
+. Log out of Composer, navigate to the sign-on URL you entered in the Identity Management SAML 2.0 form, and then log in through your identity provider to test the configuration.
+
+
+
+
+
 //== Enable Flow Failure Notifications
 
 //As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If a flow fails, an email is sent to the owner of the flow. Note that:

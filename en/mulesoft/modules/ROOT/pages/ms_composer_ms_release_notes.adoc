@@ -4,6 +4,20 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== April 12, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Fixed the issue in the Workday Connector in which the values in the *Currency* and *Pay Plan* fields of an *Update Job Requisition* action were not ordered alphabetically.  | W-10663753
+
+|===
+
 == April 4, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

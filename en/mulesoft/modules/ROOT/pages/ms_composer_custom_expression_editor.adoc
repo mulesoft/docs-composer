@@ -16,11 +16,11 @@ The *Custom Expression Editor* supports the following `string` formulas and oper
 [%header%autowidth.spread]
 |===
 
-|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+|Function Name |Description |Example |Parameter Definition |Input Data Type Parameters |Output Data Type
 
-|lower | Returns the provided string in lowercase characters. |`lower(COMPOSER) = composer` |text: String |String
+|lower | Returns the provided string in lowercase characters. |`lower(COMPOSER) = composer` |NA |text: String |String
 
-|upper |Returns the provided string in uppercase characters. |`upper(composer) = COMPOSER` |text: String |String
+|upper |Returns the provided string in uppercase characters. |`upper(composer) = COMPOSER` |NA |text: String |String
 
 |capitalize |Capitalizes the first letter of each word in a string. This also removes underscores between words and puts a space before each capitalized word.
 |`capitalize(name) = Name` +
@@ -28,12 +28,12 @@ The *Custom Expression Editor* supports the following `string` formulas and oper
 `capitalize(firstName) = First Name` +
 
 `capitalize(customer_first_name) = Customer First Name` +
-|text: String |String
+|NA |text: String |String
 
 |trim |Removes any blank spaces from the beginning and end of a string.
-|`trim(<long example text>) = this example long text` |text: String |String
+|`trim(<long example text>) = this example long text` |NA |text: String |String
 
-|first |Returns the specified number of characters from the beginning of a string. If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |`first(Hello Composer!, 5) = Hello` |text: String +
+|first |Returns the specified number of characters from the beginning of a string. If the number is equal to or greater than the number of characters in the string, the function returns the entire string. |`first(Hello Composer!, 5) = Hello` |NA |text: String +
 
 numCharacters: Number |String
 
@@ -45,7 +45,7 @@ numCharacters: Number|String
 
 `substitute(Composer, a, Example) = Composer`
 
-|text: String +
+|NA |text: String +
 
 target: String +
 
@@ -64,25 +64,25 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 [%header%autowidth.spread]
 |===
 
-|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+|Function Name |Description |Example |Parameter Definition |Input Data Type Parameters |Output Data Type
 
 |round |Rounds a number up or down to the nearest whole number. |`round(1.2) = 1` +
 
 `round(4.6) = 5` +
 
-`round(3.5) = 4` |number: Number |Number
+`round(3.5) = 4` |NA |number: Number |Number
 
 |ceil |Rounds a number up to the nearest whole number. |`ceil(1.2) = 2` +
 
-`ceil(3) = 3` |number: Number |Number
+`ceil(3) = 3` |NA |number: Number |Number
 
 |floor |Rounds a number down to the nearest whole number. |`floor(2.2) = 2` +
 
-`floor(3) = 3` |number: Number |Number
+`floor(3) = 3` |NA |number: Number |Number
 
 |abs |Returns the absolute value of a number. |`abs(-3.4) = 3.4` +
 
-`abs(2) = 2` |number: Number |Number
+`abs(2) = 2` |NA |number: Number |Number
 
 |===
 
@@ -95,47 +95,47 @@ The *Custom Expression Editor* supports the following `date` and `dateTime` form
 [%header%autowidth.spread]
 |===
 
-|Function Name |Description |Example |Input Data Type Parameters |Output Data Type
+|Function Name |Description |Example |Parameter Definition |Input Data Type Parameters |Output Data Type
 
-|today |Returns the date for today as a Date type. |`today() = 2021-03-15` | NA |Date
+|today |Returns the date for today as a Date type. |`today() = 2021-03-15` |NA | NA |Date
 
-|now |Returns a DateTime value for the current date and time. |`now() = 2021-03-15T18:23:20` | NA |DateTime
+|now |Returns a DateTime value for the current date and time. |`now() = 2021-03-15T18:23:20` |NA | NA |DateTime
 
 |addDays |Creates and returns a Date value incremented or decremented by the specified number of days. |`addDays(today(), 3) = 2021-03-18` +
 
-`addDays(2021-03-15, -4) = 2021-03-11` |date: Date +
+`addDays(2021-03-15, -4) = 2021-03-11` |NA |date: Date +
 
 numDays: number |Date
 
 |addDays |Creates and returns a DateTime value incremented or decremented by the specified number of days.
 |`addDays(now(), 3) = 2021-03-18T18:23:20` +
 
-`addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20` |dateTime: DateTime +
+`addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20` |NA |dateTime: DateTime +
 
 numDays: number |DateTime
 
 |addMonths |Creates and returns a Date value incremented or decremented by the specified number of months. |`addMonths(today(), 3) = 2021-06-15` +
 
-`addMonths(2021-03-15, -4) = 2020-12-15` |date: Date +
+`addMonths(2021-03-15, -4) = 2020-12-15` |NA |date: Date +
 
 numMonths: number |Date
 
 |addMonths |Creates and returns a DateTime value incremented or decremented by the specified number of months. |`addMonths(now(), 3) = 2021-06-15T18:23:20` +
 
-`addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20` |dateTime: DateTime +
+`addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20` |NA |dateTime: DateTime +
 
 numMonths: number |DateTime
 
 |addYears |Creates and returns a Date value incremented or decremented by the specified number of years. |`addYears(today(), 1) = 2022-03-15` +
 
-`addYears(2021-03-15, -1) = 2020-03-15` |date: Date +
+`addYears(2021-03-15, -1) = 2020-03-15` |NA |date: Date +
 
 numYears: number |Date
 
 |addYears |Creates and returns a DateTime value incremented or decremented by the specified number of years.
 |`addYears(now(), 3) = 2024-03-15T18:23:20` +
 
-`addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20` |dateTime: DateTime +
+`addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20` |NA |dateTime: DateTime +
 
 numYears: number |DateTime
 
@@ -143,7 +143,7 @@ numYears: number |DateTime
 
 `addHours(2021-03-15T22:23:20, 3) = 2021-03-16T01:23:20` +
 
-`addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20` |dateTime: DateTime +
+`addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20` |NA |dateTime: DateTime +
 
 numHours: number |DateTime
 
@@ -153,7 +153,7 @@ numHours: number |DateTime
 `addMinutes(2021-03-15T23:45:00,15) = 2021-03-16T00:00:00` +
 
 `addMinutes(2021-03-15T18:23:20, -30) = 2021-03-15T17:53:20`
-|dateTime: DateTime +
+|NA |dateTime: DateTime +
 
 numMinutes: number |DateTime
 
@@ -162,54 +162,54 @@ numMinutes: number |DateTime
 `addSeconds(2021-03-15T23:45:00,15) = 2021-03-15T23:45:30` +
 
 `addSeconds(2021-03-15T18:23:20, -30) = 2021-03-15T18:22:50`
-|dateTime: DateTime +
+|NA |dateTime: DateTime +
 
 numSeconds: number |DateTime
 
-|beginningOfHour |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified hour. The minutes and seconds in the input change to 00:00. |`beginningOfHour(2021-03-15T18:23:20) = 2021-03-15T18:00:00` |dateTime: DateTime |DateTime
+|beginningOfHour |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified hour. The minutes and seconds in the input change to 00:00. |`beginningOfHour(2021-03-15T18:23:20) = 2021-03-15T18:00:00` |NA |dateTime: DateTime |DateTime
 
-|beginningOfDay |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified day. The hours, minutes, and seconds in the input change to 00:00:00. |`beginningOfDay(2021-03-15T18:23:20) = 2021-03-15T00:00:00` |dateTime: DateTime |DateTime
+|beginningOfDay |Returns a new DateTime value that changes the Time value in the input to the beginning of the specified day. The hours, minutes, and seconds in the input change to 00:00:00. |`beginningOfDay(2021-03-15T18:23:20) = 2021-03-15T00:00:00` |NA |dateTime: DateTime |DateTime
 
 |beginningOfWeek |Returns a new Date value that changes the Day value from the input to the beginning of the first day of the specified week. The function treats Sunday as the first day of the week. |`beginningOfWeek(2021-03-15) = 2021-03-14` +
 
-`beginningOfWeek(today()) = 2021-03-14` |date: Date |Date
+`beginningOfWeek(today()) = 2021-03-14` |NA |date: Date |Date
 
 |beginningOfWeek |Returns a new DateTime value that changes the Day and Time values from the input to the beginning of the first day of the specified week. The function treats Sunday as the first day of the week.
 |`beginningOfWeek(2021-03-15T18:23:20) = 2021-03-14T00:00:00` +
 
-`beginningOfWeek(now()) = 2021-03-14T00:00:00` |dateTime: DateTime |DateTime
+`beginningOfWeek(now()) = 2021-03-14T00:00:00` |NA |dateTime: DateTime |DateTime
 
 |beginningOfMonth |Returns a new Date value that changes the Day value from the input to the first day of the specified month. |`beginningOfMonth(2021-11-15) = 2021-11-01` +
 
-`beginningOfMonth(today()) = 2021-03-01` |date: Date |Date
+`beginningOfMonth(today()) = 2021-03-01` |NA |date: Date |Date
 
 |beginningOfMonth |Returns a new DateTime value that changes the Day value from the input to the first day of the specified month. The day and time in the input changes to `01T00:00:00`. |`beginningOfMonth(2021-03-15T18:23:20) = 2021-03-01T00:00:00` +
 
-`beginningOfMonth(now()) = 2021-03-01T00:00:00` |dateTime: DateTime |DateTime
+`beginningOfMonth(now()) = 2021-03-01T00:00:00` |NA |dateTime: DateTime |DateTime
 
 |beginningOfYear |Returns a new Date value that changes the Month and Day values from the input to the first day of the specified year. |`beginningOfYear(2021-11-15) = 2021-01-01` +
 
-`beginningOfYear(today()) = 2021-01-01` |date: Date |Date
+`beginningOfYear(today()) = 2021-01-01` |NA |date: Date |Date
 
 |beginningOfYear |Returns a new DateTime value that changes the Month and Day values from the input to the first day of the specified year. It also sets the Time value to `00:00:00`. The month, day, and time in the input changes to `01-01T00:00:00`. |`beginningOfYear(2021-03-15T18:23:20) = 2021-01-01T00:00:00` +
 
-`beginningOfYear(now()) = 2021-01-01T00:00:00` |dateTime: DateTime |DateTime
+`beginningOfYear(now()) = 2021-01-01T00:00:00` |NA |dateTime: DateTime |DateTime
 
-|daysBetween |Returns the number of days between two dates. If the to Date value is earlier than the from Date value, the function returns a negative number equal to the number of days between the two dates. |`daysBetween(2020-03-15, 2021-03-15) = 365`|from: Date +
+|daysBetween |Returns the number of days between two dates. If the to Date value is earlier than the from Date value, the function returns a negative number equal to the number of days between the two dates. |`daysBetween(2020-03-15, 2021-03-15) = 365`|NA |from: Date +
 
 to: Date |Number
 
-|daysBetween |Returns the number of days between two DateTime values. If the to DateTime value is earlier than the from DateTime value, the function returns a negative number equal to the number of days between the two DateTime values. |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |from: DateTime +
+|daysBetween |Returns the number of days between two DateTime values. If the to DateTime value is earlier than the from DateTime value, the function returns a negative number equal to the number of days between the two DateTime values. |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |NA |from: DateTime +
 
 to: DateTime |Number
 
-|month |Returns the numerical value of the month in the Date input. |`month(2021-03-15) = 3` |date: Date |Number
+|month |Returns the numerical value of the month in the Date input. |`month(2021-03-15) = 3` |NA |date: Date |Number
 
-|month |Returns the numerical value of the month in the DateTime input. |`month(2021-03-15T18:23:20) = 3` |dateTime: DateTime |Number
+|month |Returns the numerical value of the month in the DateTime input. |`month(2021-03-15T18:23:20) = 3` |NA |dateTime: DateTime |Number
 
-|year |Returns the numerical value of the year in the Date input. |`year(2021-03-15) = 2021` |date: Date |Number
+|year |Returns the numerical value of the year in the Date input. |`year(2021-03-15) = 2021` |NA |date: Date |Number
 
-|year |Returns the numerical value of the year in the DateTime input. |year(2021-03-15T18:23:20) = 2021 |dateTime: DateTime |Number
+|year |Returns the numerical value of the year in the DateTime input. |year(2021-03-15T18:23:20) = 2021 |NA |dateTime: DateTime |Number
 
 |===
 

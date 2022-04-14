@@ -39,7 +39,7 @@ numCharacters: Number |String
 
 |last |Returns the specified number of characters from the end of a string. |`last(Hello Composer!, 9) = Composer!` |text: String +
 
-numCharacters: Number|String
+numCharacters: Number|String |String
 
 |substitute |Replaces all substrings that match a literal search string with a specified replacement string. Replacement proceeds from the beginning of the string to the end. For example, the result of replacing `aa` with `b` in the string `aaa` is `ba`, rather than `ab`. |`substitute(Composer, o, O) = COmpOser` +
 
@@ -51,20 +51,20 @@ target: String +
 
 replacement: String |String
 
-|fromStringToBoolean |Transforms a String input value into a Boolean value. |fromStringToBoolean(true) = true +
+|fromStringToBoolean |Transforms a string input value into a boolean value. |`fromStringToBoolean(true) = true` +
 
-fromStringToBoolean(FALSE) = false +
+`fromStringToBoolean(FALSE) = false` +
 
-fromStringToBoolean(TrUe) = true +
+`fromStringToBoolean(TrUe) = true` +
 |text |text: String |Boolean
 
-|fromStringToDate |Transforms a String input value into a Date value. Accepts a format and locale. The format parameter represents the format of the input string. +
+|fromStringToDate |Transforms a string input value into a date value. Accepts a format and locale. The format parameter represents the format of the input string. +
 
 The default format is `uuuu-MM-dd` and the default locale is US; however, these defaults can be modified.
 
-|fromStringToDate(2021-03-15, uuuu-MM-dd, US) = 2021-03-15 +
+|`fromStringToDate(2021-03-15, uuuu-MM-dd, US) = 2021-03-15` +
 
-fromStringToDate(2021/15/03, uuuu/dd/MM, US) = 2021-03-15
+`fromStringToDate(2021/15/03, uuuu/dd/MM, US) = 2021-03-15`
 |text +
 
 format (optional) +
@@ -78,22 +78,24 @@ format: String +
 locale: String +
 |Date
 
-|fromStringToDateTime |Transforms a String input value into a DateTime value.
+|fromStringToDateTime |Transforms a string input value into a dateTime value.
 Accepts a format and locale. The format parameter represents the format of the input string.
-The default format is `uuuu-MM-dd'T'HH:mm:ss'Z` and the default locale is US; however, these defaults can be modified. |fromStringToDateTime(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z,US) =  2021-03-15T23:57:59Z +
+The default format is `uuuu-MM-dd'T'HH:mm:ss'Z` and the default locale is US; however, these defaults can be modified. |`fromStringToDateTime(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z,US) =  2021-03-15T23:57:59Z` +
 
-fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz, US) = 2021-03-15T23:57:59Z
+`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz, US) = 2021-03-15T23:57:59Z`
 
-|text |format (optional) +
+|text +
+
+format (optional) +
 
 locale (optional) |text: String +
 
 format: String +
 locale: String |DateTime
 
-|fromStringToNumber |Transforms a String input value into a Number value. |fromStringToNumber(1) = 1 +
+|fromStringToNumber |Transforms a string input value into a number value. |`fromStringToNumber(1) = 1` +
 
-fromStringToNumber(0.05) = 0.05 |text |text: String |Number
+`fromStringToNumber(0.05) = 0.05` |text |text: String |Number
 
 |===
 
@@ -127,6 +129,16 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 |abs |Returns the absolute value of a number. |`abs(-3.4) = 3.4` +
 
 `abs(2) = 2` |NA |number: Number |Number
+
+|fromNumberToString |Transforms a number value (whole or decimal) into a string value. |`fromNumberToString(1) = 1` +
+
+`fromNumberToString(0.05) = 0.05` |Number |number: Number |String
+
+|fromNumberToDateTime |Transforms a number input value into a dateTime value. Uses milliseconds or seconds as the unit. The default unit is seconds. |`fromDateTimeToNumber(1443743879, seconds) = 2015-10-01T23:57:59Z` +
+
+`fromDateTimeToNumber(1443743879000, milliseconds) = 2015-10-01T23:57:59Z` |number +
+
+unit (optional) |number: Number |unit: String |DateTime
 
 |===
 
@@ -253,7 +265,49 @@ to: DateTime |Number
 
 |year |Returns the numerical value of the year in the Date input. |`year(2021-03-15) = 2021` |NA |date: Date |Number
 
-|year |Returns the numerical value of the year in the DateTime input. |year(2021-03-15T18:23:20) = 2021 |NA |dateTime: DateTime |Number
+|year |Returns the numerical value of the year in the DateTime input. |`year(2021-03-15T18:23:20) = 2021` |NA |dateTime: DateTime |Number
+
+|fromDateToString |Transforms a date input value into a string value. Accepts a format and locale. The format parameter represents the required format of the output string. The default format is `uuuu-MM-dd` and the default locale is US; however, these defaults can be modified. |`fromDateToString(2021-03-15, uuuu-dd-MM, US) = 2021-15-03` +
+
+`fromDateToString(2021-03-15, uuuu/MM/dd, US) = 2021/03/15` +
+
+`fromDateToString(2021-03-15, eeee, dd MMMM, ES) = lunes, 15 marzo` |date +
+
+format (optional) +
+
+locale (optional) |date: Date +
+
+format: String +
+
+locale: String |String
+
+|fromDateTimeToString |Transforms a dateTime input value into a string value. Accepts a format and locale. The format parameter represents the desired format of the output string. The default format is xxx and the default locale is US; however, these defaults can be modified. |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z, US) = 2021-03-15T23:57:59Z` +
+
+`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |dateTime +
+
+format (optional) +
+
+locale (optional) |dateTime: DateTime +
+
+format: String +
+
+locale: String |String
+
+|fromDateTimeToNumber |Transforms a dateTime input value into a number value. The number is in milliseconds or seconds, depending on the selected unit. The default unit is seconds. |`fromDateTimeToNumber(2015-10-01T23:57:59Z, seconds) = 1443743879` +
+
+`fromDateTimeToNumber(2015-10-01T23:57:59Z, milliseconds) = 1443743879000` |dateTime +
+
+unit (optional) |dateTime: DateTime +
+
+unit: String |Number
+
+|fromDateToDateTime |Transforms a date input value into a dateTime. It does so by adding a time. The default time is T00:00:00Z. All manual entries will be interpreted in UTC. |`fromDateToDateTime(2021-03-15, T00:00:00Z) = 2021-03-15T00:00:00Z` +
+
+`fromDateToDateTime(2021-03-15, T23:57:59Z) = 2021-03-15T23:57:59Z` |date +
+
+time (optional) |date: Date +
+
+time: String |DateTime
 
 |===
 

@@ -51,6 +51,50 @@ target: String +
 
 replacement: String |String
 
+|fromStringToBoolean |Transforms a String input value into a Boolean value. |fromStringToBoolean(true) = true +
+
+fromStringToBoolean(FALSE) = false +
+
+fromStringToBoolean(TrUe) = true +
+|text |text: String |Boolean
+
+|fromStringToDate |Transforms a String input value into a Date value. Accepts a format and locale. The format parameter represents the format of the input string. +
+
+The default format is `uuuu-MM-dd` and the default locale is US; however, these defaults can be modified.
+
+|fromStringToDate(2021-03-15, uuuu-MM-dd, US) = 2021-03-15 +
+
+fromStringToDate(2021/15/03, uuuu/dd/MM, US) = 2021-03-15
+|text +
+
+format (optional) +
+
+locale (optional) +
+
+|text: String +
+
+format: String +
+
+locale: String +
+|Date
+
+|fromStringToDateTime |Transforms a String input value into a DateTime value.
+Accepts a format and locale. The format parameter represents the format of the input string.
+The default format is `uuuu-MM-dd'T'HH:mm:ss'Z` and the default locale is US; however, these defaults can be modified. |fromStringToDateTime(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z,US) =  2021-03-15T23:57:59Z +
+
+fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz, US) = 2021-03-15T23:57:59Z
+
+|text |format (optional) +
+
+locale (optional) |text: String +
+
+format: String +
+locale: String |DateTime
+
+|fromStringToNumber |Transforms a String input value into a Number value. |fromStringToNumber(1) = 1 +
+
+fromStringToNumber(0.05) = 0.05 |text |text: String |Number
+
 |===
 
 It is important to note that in a `string` field, you can use `number` expressions selected from the operator list; however, the expressions must be enclosed within parentheses. For example, you can enter `abc(9+9)` where the `+` is selected from the operator list. This string renders as `abc18`.

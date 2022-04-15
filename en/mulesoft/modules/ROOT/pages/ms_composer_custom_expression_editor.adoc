@@ -94,9 +94,7 @@ locale: String |DateTime
 |fromStringToNumber |Transforms a string input value into a number value. |`fromStringToNumber(1) = 1` +
 
 `fromStringToNumber(0.05) = 0.05` |
-Format: Optional formatting to apply to the value. A format accepts `#` or `0` (but not both) as placeholders for decimal values and a single whole number that is less than `10`. Only one decimal point is permitted. Other characters produce an error. +
-
-Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. |text: String |Number
+NA |text: String |Number
 
 |===
 
@@ -133,17 +131,11 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 
 |fromNumberToString |Transforms a number value (whole or decimal) into a string value. |`fromNumberToString(1) = 1` +
 
-`fromNumberToString(0.05) = 0.05` |Format: Optional formatting to apply to the value. A format accepts `#` or `0` (but not both) as placeholders for decimal values and a single whole number that is less than `10`. Only one decimal point is permitted. Other characters produce an error. +
-
-Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. |number: Number |String
+`fromNumberToString(0.05) = 0.05` |NA |number: Number |String
 
 |fromNumberToDateTime |Transforms a number input value into a dateTime value. Uses milliseconds or seconds as the unit. The default unit is seconds. |`fromDateTimeToNumber(1443743879, seconds) = 2015-10-01T23:57:59Z` +
 
-`fromDateTimeToNumber(1443743879000, milliseconds) = 2015-10-01T23:57:59Z` |number +
-
-unit (optional) |Format: The formatting to use on the dateTime value. This parameter accepts Java character patterns based on ISO-8601. A dateTime value, such as `2011-12-03T10:15:30.000000+01:00`, has the format `uuuu-MM-dd HH:mm:ssz`. +
-
-Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES` |unit: String |DateTime
+`fromDateTimeToNumber(1443743879000, milliseconds) = 2015-10-01T23:57:59Z` |Unit: The unit of time to use for the conversion: "milliseconds" or "seconds". The default unit is "seconds." |unit: String |DateTime
 
 |===
 
@@ -276,19 +268,21 @@ to: DateTime |Number
 
 `fromDateToString(2021-03-15, uuuu/MM/dd, US) = 2021/03/15` +
 
-`fromDateToString(2021-03-15, eeee, dd MMMM, ES) = lunes, 15 marzo` |Format: Optional formatting to apply to the value. A format accepts `#` or `0` (but not both) as placeholders for decimal values and a single whole number that is less than `10`. Only one decimal point is permitted. Other characters produce an error. +
+`fromDateToString(2021-03-15, eeee, dd MMMM, ES) = lunes, 15 marzo` |Format: The ISO-8601 formatting to use on the Date. For example, this parameter accepts character patterns based on the Java 8 java.time.format. The default format is `uuuu-MM-dd`. +
 
-Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. |date: Date +
+Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. When you pass a translatable format, such as `eeee` and `MMMM`, a locale (such as `ES`) transforms the corresponding numeric values to a localized string. |date: Date +
 
 format: String +
 
 locale: String |String
 
-|fromDateTimeToString |Transforms a dateTime input value into a string value. Accepts a format and locale. The format parameter represents the desired format of the output string. The default format is xxx and the default locale is US; however, these defaults can be modified. |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z, US) = 2021-03-15T23:57:59Z` +
+|fromDateTimeToString |Transforms a dateTime input value into a string value. Accepts a format and locale. The format parameter represents the desired format of the output string. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z`
+ and the default locale is US; however, these defaults can be modified. |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z, US) = 2021-03-15T23:57:59Z` +
 
-`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format: Optional formatting to apply to the value. A format accepts `#` or `0` (but not both) as placeholders for decimal values and a single whole number that is less than `10`. Only one decimal point is permitted. Other characters produce an error. +
+`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format: The ISO-8601 formatting to use on the DateTime. For example, this parameter accepts character patterns based on the Java 8 java.time.format. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z`.
+ +
 
-Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. |dateTime: DateTime +
+Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. When you pass a translatable format, such as `eeee` and `MMMM`, a locale (such as `ES`) transforms the corresponding numeric values to a localized string. |dateTime: DateTime +
 
 format: String +
 
@@ -296,17 +290,13 @@ locale: String |String
 
 |fromDateTimeToNumber |Transforms a dateTime input value into a number value. The number is in milliseconds or seconds, depending on the selected unit. The default unit is seconds. |`fromDateTimeToNumber(2015-10-01T23:57:59Z, seconds) = 1443743879` +
 
-`fromDateTimeToNumber(2015-10-01T23:57:59Z, milliseconds) = 1443743879000` |Format: Optional formatting to apply to the value. A format accepts `#` or `0` (but not both) as placeholders for decimal values and a single whole number that is less than `10`. Only one decimal point is permitted. Other characters produce an error. +
-
-Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. |dateTime: DateTime +
+`fromDateTimeToNumber(2015-10-01T23:57:59Z, milliseconds) = 1443743879000` |Unit: The unit of time to use for the conversion: "milliseconds" or "seconds". The default unit is "seconds." |dateTime: DateTime +
 
 unit: String |Number
 
 |fromDateToDateTime |Transforms a date input value into a dateTime. It does so by adding a time. The default time is T00:00:00Z. All manual entries will be interpreted in UTC. |`fromDateToDateTime(2021-03-15, T00:00:00Z) = 2021-03-15T00:00:00Z` +
 
-`fromDateToDateTime(2021-03-15, T23:57:59Z) = 2021-03-15T23:57:59Z` |Format: The formatting to use on the dateTime value. This parameter accepts Java character patterns based on ISO-8601. A dateTime value, such as `2011-12-03T10:15:30.000000+01:00`, has the format `uuuu-MM-dd HH:mm:ssz`. +
-
-Locale: Optional ISO 3166 country code to use, such as `US`, `AR`, or `ES`. |date: Date +
+`fromDateToDateTime(2021-03-15, T23:57:59Z) = 2021-03-15T23:57:59Z` |NA |date: Date +
 
 time: String |DateTime
 

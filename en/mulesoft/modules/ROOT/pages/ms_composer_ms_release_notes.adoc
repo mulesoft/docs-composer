@@ -4,6 +4,21 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== April 18, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+Using the *Custom Expression Editor*, you can now use formulas to transform data from one data type to another and format it accurately.
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When using the *fromDateToTime* or the *fromStringToDateTime* function in the *Custom Expression Editor*, the value returned is off by one day. For example, if you enter `04/27/2022 T00:00:00Z`, the value returned is `4/26/2022 5:00:00 PM`. | |
+|===
+
 == April 12, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

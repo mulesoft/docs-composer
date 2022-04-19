@@ -93,50 +93,38 @@ Returns a list of up to 500 records based on specific search criteria. The follo
 
 The following record types are supported.
 
-* Triggers
+[%header%autowidth.spread]
+|===
 
-** Contact
-** Customer
-** Employee
-** Inventory Item
-** Invoice
-** Sales Order
-** Support Case
-** Custom Record Types
+|Record Type |Trigger |Action |Object
 
+|Cash Sale | | |X
+|Cashe Refund | | |X
+|Contact |X |X |
+|Credit Memo | | |X
+|Customer |X |X |
+|Customer Deposit | | |X
+|Customer Payment | | |X
+|Customer Refund | |X |X
+|Custom Record Types |X |X |
+|Estimate | | |X
+|Employee |X |X |
+|Inventory Item |X |X |
+|Invoice |X |X |
+|Journal Entry | | |X
+|Non-Inventory Purchase Item | | |X
+|Non-Inventory Resale Item | | |X
+|Non-Inventory Sale Item | | |X
+|Oppurtunity | | |X
+|Payment Item | |X |
+|Purchase Order | | |X
+|Sales Order |X |X |
+|Support Case |X |X |
+|Vendor | | |X
+|Vendor Bill | | |X
 
-* Actions
-+
-The following record types are valid for all actions:
+|===
 
-** Contact
-** Customer
-** Customer Refund
-** Employee
-** Inventory Item
-** Invoice
-** Payment Item
-** Sales Order
-** Support Case
-** Custom Record Types
-
-* Objects
-
-** CreditMemo
-** CustomerDeposit
-** CashSale
-** CashRefund
-** CustomerPayment
-** CustomerRefund
-** Journal Entry
-** Opportunity
-** Estimate
-** NonInventoryPurchaseItem
-** NonInventoryResaleItem
-** NonInventorySaleItem
-** Vendor
-** Vendor Bill
-** Purchase Order
 
 == Custom Fields
 

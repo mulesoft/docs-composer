@@ -115,7 +115,7 @@ The following record types are supported.
 |Non-Inventory Purchase Item | | |X
 |Non-Inventory Resale Item | | |X
 |Non-Inventory Sale Item | | |X
-|Oppurtunity | | |X
+|Opportunity | | |X
 |Payment Item | |X |
 |Purchase Order | | |X
 |Sales Order |X |X |

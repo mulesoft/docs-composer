@@ -99,7 +99,7 @@ The following record types are supported.
 |Record Type |Trigger |Action |Object
 
 |Cash Sale | | |X
-|Cashe Refund | | |X
+|Cash Refund | | |X
 |Contact |X |X |
 |Credit Memo | | |X
 |Customer |X |X |

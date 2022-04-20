@@ -220,6 +220,8 @@ As an administrator, you can enable users to add identity providers for their or
 * <TBD KIs>
 * <TBD KIs>
 
+For more information on identity management in MuleSoft, see the xref:access-management::external-identity.adoc[Access Management] documentation.
+
 To enable OpenID Connect IDP:
 
 . In the MuleSoft Composer sidebar, click *Settings* and then click *Multiple IDP*.
@@ -227,8 +229,8 @@ To enable OpenID Connect IDP:
 . In the *New Identity Provider* page, complete the required fields:
 +
 * *Name*: Enter a nickname for this IDP.
-* *Client Registration URL*: This field appears when *Dynamic Registration* is selected. <Need info>.
-* *Authentication Header*: This field appears when *Dynamic Registration* is selected. <Need info>.
+* *Client Registration URL*: This field appears when *Dynamic Registration* is selected. The URL to dynamically register client applications as a client application for your identity provider.
+* *Authentication Header*: This field appears when *Dynamic Registration* is selected. The header to provide credentials to authenticate with a server. This header is required if the provider restricts registration requests to authorized clients.
 * *Client ID*: This field appears when *Manual Registration* is selected. The unique identifier that you provided for your manually created client application.
 * *Client Secret*: This field appears when *Manual Registration* is selected. The password, or secret, for authenticating your Composer organization with your Identity Provider.
 * *OpenID Connect Issuer*: The location of the OpenID Provider. For most providers, `/.well-known/openid-configuration` is appended to the issuer to generate the metadata URL for openID Connect specifications. For Salesforce, you must provide the value for `issuer`.
@@ -238,9 +240,9 @@ To enable OpenID Connect IDP:
 
 . Optionally, expand *Advanced Settings*, and provide the following values:
 +
-* *Group Scope*: <Need info>
-* *Group Attribute JSON Data Expression*: <Need info>
-* *Disable server certificate validation* checkbox: Select checkbox to disable... <need info>
+* *Group Scope*: The OIDC scope to request the group claim.
+* *Group Attribute JSON Data Expression*: The JSONata Expression used to select the groups from the user info or ID token. The result must be an array of strings.
+* *Disable server certificate validation* checkbox: Select checkbox to disable server certificate validation if your OpenID client management instance presents a self-signed certificate, or one signed by an internal certificate authority.
 
 . Click *Save*.
 . Log out of Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.

@@ -9,11 +9,35 @@ New versions are automatically available once they are released; you don't need 
 //| Fixed an issue in the NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
+== April 22, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In the Google Sheets and Slack Connectors, you can now hover over certain triggers, actions, and fields to view in-app contextual help.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
 == April 18, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-Using the *Custom Expression Editor*, you can now use formulas to transform data from one data type to another and format it accurately.
+* Using the *Custom Expression Editor*, you can now use formulas to transform data from one data type to another and format it accurately.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

@@ -99,7 +99,7 @@ When the Composer page displays, you're ready to create your first flow. If you'
 
 //To enable email notifications:
 
-//. In the Salesforce Composer sidebar, click *Settings* > *Email notifications*.
+//. In the Composer sidebar, click *Settings* > *Email notifications*.
 //. In the *Receive email notifications when flows fail to run* row, toggle the button to enable email notifications.
 
 endif::[]
@@ -222,7 +222,7 @@ A message appears, warning you that deleting a user cannot be undone.
 
 //To enable email notifications:
 
-//. In the MuleSoft Composer sidebar, click *Settings* and then click *Email notifications*.
+//. In the Composer sidebar, click *Settings* and then click *Email notifications*.
 //. Toggle the button to enable email notifications.
 //. Click *Save*.
 

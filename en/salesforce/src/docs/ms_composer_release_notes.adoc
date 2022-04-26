@@ -9,6 +9,38 @@ New versions are automatically available once they are released; you don't need 
 //| Fixed an issue in the NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
+== April 26, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue |ID
+
+|In the JIRA Connector, entering a string value containing quotes in the *Description* field no longer causes an invalid JSON parsing request.  | W-11037529
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
 == April 22, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

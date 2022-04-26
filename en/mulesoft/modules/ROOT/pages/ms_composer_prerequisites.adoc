@@ -91,7 +91,7 @@ When the Composer page displays, you're ready to create your first flow. If you'
 
 //== Enable Flow Failure Notifications
 
-//As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If a flow fails, an email is sent to the owner of the flow. Note that:
+//As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, an email is sent to the owner of the flow. Note that:
 
 //* A maximum of four consecutive emails are sent for the same error.
 //* The error log for the flow resets every 24 hours.
@@ -214,7 +214,7 @@ A message appears, warning you that deleting a user cannot be undone.
 
 //== Enable Flow Failure Notifications
 
-//As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If a flow fails, an email is sent to the owner of the flow. Note that:
+//As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, an email is sent to the owner of the flow. Note that:
 
 //* A maximum of four consecutive emails are sent for the same error.
 //* The error log for the flow resets every 24 hours.

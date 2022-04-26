@@ -4,6 +4,20 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== April 26, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue |ID
+
+|In the JIRA Connector, entering a string value containing quotes in the *Description* field no longer causes an invalid JSON parsing request.  | W-11037529
+
+|===
+
 == April 22, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

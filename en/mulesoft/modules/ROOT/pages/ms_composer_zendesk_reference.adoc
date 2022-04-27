@@ -8,13 +8,13 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Username::
+Connection Display Name::
 
-The OAuth username that you use to log in to Zendesk.
+The Connection Display Name that you use to log in to Zendesk.
 
-Password::
+Base URI::
 
-The OAuth password that you use to log in to Zendesk.
+The Base URI that you use to log in to Zendesk.
 
 == Triggers
 

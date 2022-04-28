@@ -216,7 +216,7 @@ A message appears, warning you that deleting a user cannot be undone.
 
 As an administrator, you can enable users to add identity providers (IDPs) for their organization. Note that:
 
-* If an IDP user is deleted from MuleSoft Composer and that user subsequently logs in to MuleSoft Composer using the IDP, the user profile is restored in the `Disabled` state. To allow the user to authenticate again, an Admin can toggle the state to `Enabled`.
+* If an IDP user is deleted from MuleSoft Composer and that user subsequently logs in to MuleSoft Composer using the IDP, the user profile is restored in the `Disabled` state. To allow the user to authenticate again, an toggle the state to `Enabled`.
 * Admins cannot disable the creation of new users via the *Users* page.
 * Deleting an IDP user does not stop the flows activated by that user.
 * When MuleSoft Composer is dynamically registered as an OpenID Connect SSO provider in Okta, the MuleSoft Composer app is named “Anypoint Platform” in Okta.

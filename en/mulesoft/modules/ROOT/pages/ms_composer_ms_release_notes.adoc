@@ -14,6 +14,23 @@ The following actions were added to the Workday Connector to enable Workday Fina
 * *Update Object*
 * *Get Object*
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue |ID
+
+| | W-10574439 COCN-667
+| | W-10574489 COCN-605
+| | W-10574413 COCN-705
+| | W-10574467 COCN-632
+| | COCN-612
+
+|===
+
+
 == April 28, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -21,7 +38,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * You can now add multiple identity providers (IDP) for your organization to enable single sign-on (SSO). The following identity providers are now available:
 
 ** OpenID Connect IDP
-** SAML 2.0 ID 
+** SAML 2.0 ID
 
 == April 26, 2022
 

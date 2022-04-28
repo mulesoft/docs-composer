@@ -258,7 +258,7 @@ Note that the file-based configuration of a SAML 2.0 is not supported.
 +
 * *Name*: Enter a nickname for this IDP.
 * *Sign On URL*: The redirect URL provided by the IDP for sign in. For example, `https://example.com/sso/saml`.
-* *Sign Off URL*: URL to redirect signout requests, so users both sign out of Composer and have their SAML user’s status set to `signed out`.
+* *Sign Off URL*: The URL to redirect signout requests, so users both sign out of Composer and have their SAML user’s status set to `signed out`.
 * *Issuer*: The ID of the identity provider instance that sends SAML assertions.
 * *Public Key*: The Public key provided by the identity provider, which is used to sign the SAML assertion. It is the `X509Certificate` value in the SAML response.
 * *Audience*: An arbitrary string value that identifies your Composer organization. The typical value for this string is `<organizationDomain>.composer.mulesoft.com`.

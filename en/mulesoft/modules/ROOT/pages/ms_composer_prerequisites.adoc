@@ -230,7 +230,7 @@ To enable OpenID Connect (OIDC) IDP:
 . In the *New Identity Provider* page, complete the required fields:
 +
 * *Name*: The nickname for this IDP.
-* *Client Registration URL*: This field appears when *Dynamic Registration* is selected. The URL to dynamically register client applications for your identity provider.
+* *Client Registration URL*:  The URL to dynamically register client applications for your identity provider. This field appears when you select *Dynamic Registration*.
 * *Authentication Header*: This field appears when *Dynamic Registration* is selected. The header provides credentials to authenticate a server. This header is required if the provider restricts registration requests to authorized clients.
 * *Client ID*: This field appears when *Manual Registration* is selected. The unique identifier that you provided for your manually created client application.
 * *Client Secret*: This field appears when *Manual Registration* is selected. The password, or secret, for authenticating your Composer organization with your Identity Provider.

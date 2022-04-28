@@ -276,7 +276,7 @@ The default value for this setting for newly configured identity provider config
 * *Last Name Attribute*: Field name in the SAML `AttributeStatements` that maps to `Last Name`.
 * *Email Attribute*: Field name in the SAML `AttributeStatements` that maps to `Email`.
 * *Group Attribute*: Field name in the SAML `AttributeStatements` that maps to `Group`.
-* *Require encrypted SAMl assertions* checkbox: If enabled, the SAML assertions sent from the IdP must be encrypted and follow the guidelines mentioned in the Prerequisites.
+* *Require encrypted SAMl assertions* checkbox: If enabled, the SAML assertions sent from the IDP must be encrypted and follow the guidelines mentioned in the prerequisites.
 
 . Click *Save*.
 . Log out of Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.

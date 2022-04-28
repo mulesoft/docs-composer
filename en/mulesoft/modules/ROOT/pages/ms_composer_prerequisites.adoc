@@ -56,9 +56,9 @@ Next, you'll install Composer and make some Salesforce org adjustments to ensure
 Four more steps are revealed when the installation is complete. As the admin performing the installation, you are automatically given the Composer permission set.
 
 . In the *Change the Type of Permitted Users* section, click *Open Settings* to launch the Salesforce connected app page for Composer and change two settings:
-     .. In the *Permitted Users* dropdown, select *Admin approved users are pre-authorized*.
-     .. In the *IP Relaxation* dropdown, select *Relax IP restrictions*.
-     .. Save the changes.
+   .. In the *Permitted Users* dropdown, select *Admin approved users are pre-authorized*.
+   .. In the *IP Relaxation* dropdown, select *Relax IP restrictions*.
+   .. Save the changes.
 
 . In the *Configure MuleSoft Services* section, click *Initiate Configuration*.
 +
@@ -66,10 +66,10 @@ Salesforce certificates expire after one year. To renew an expired certificate, 
 +
 MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
-     .. Click *Composer User*.
-     .. Click *Manage Assignments*, and then *Add Assignments*.
-     .. Select the checkbox next to each user who will receive permission to use Composer.
-     .. Click *Add*. You can assign or revoke this permission set at any time.
+   .. Click *Composer User*.
+   .. Click *Manage Assignments*, and then *Add Assignments*.
+   .. Select the checkbox next to each user who will receive permission to use Composer.
+   .. Click *Add*. You can assign or revoke this permission set at any time.
 . In the *Launch MuleSoft Composer* section, click the *Launch* button to start Composer.
 
 Now that Composer is configured properly, you can launch it by searching for "composer" in the App Launcher.
@@ -230,11 +230,11 @@ To enable OpenID Connect (OIDC) IDP:
 . In the *New Identity Provider* page, complete the required fields:
 +
 * *Name*: The nickname for this IDP.
-* *Client Registration URL*:  The URL to dynamically register client applications for your identity provider. This field appears when you select *Dynamic Registration*.
-* *Authentication Header*:  The header that provides credentials to authenticate a server. This header is required if the provider restricts registration requests to authorized clients. This field appears when you select *Dynamic Registration*.
+* *Client Registration URL*: The URL to dynamically register client applications for your identity provider. This field appears when you select *Dynamic Registration*.
+* *Authentication Header*: The header that provides credentials to authenticate a server. This header is required if the provider restricts registration requests to authorized clients. This field appears when you select *Dynamic Registration*.
 * *Client ID*: The unique identifier that you provided for your manually created client application. This field appears when you select *Manual Registration*.
-* *Client Secret*: This field appears when *Manual Registration* is selected. The password, or secret, for authenticating your MuleSoft Composer organization with your Identity Provider.
-* *OpenID Connect Issuer*: The location of the OpenID Provider. For most providers, `/.well-known/openid-configuration` is appended to the issuer to generate the metadata URL for openID Connect specifications. For Salesforce, you must provide the value for `issuer`.
+* *Client Secret*: The password, or secret, for authenticating your MuleSoft Composer organization with your Identity Provider. This field appears when *Manual Registration* is selected.
+* *OpenID Connect Issuer*: The location of the OpenID Provider. For most providers, `.well-known/openid-configuration` is appended to the issuer to generate the metadata URL for OpenID Connect specifications. If your OpenID Provider is Salesforce, then you must provide the value for `issuer`.
 * *Authorize URL*: The URL where the user authenticates and grants OpenID Connect client applications access to the user's identity.
 * *Token URL*: The URL that provides the user’s identity encoded in a secure JSON Web Token.
 * *User Info URL*: The URL that returns user profile information to the client app.
@@ -243,7 +243,7 @@ To enable OpenID Connect (OIDC) IDP:
 +
 * *Group Scope*: The OIDC scope to request the group claim.
 * *Group Attribute JSON Data Expression*: The JSONata expression used to select the groups from the user information or ID token. The result must be an array of strings.
-* *Disable server certificate validation* checkbox: Select  to disable server certificate validation if your OpenID client management instance presents a self-signed certificate or one signed by an internal certificate authority.
+* *Disable server certificate validation* checkbox: Select to disable server certificate validation if your OpenID client management instance presents a self-signed certificate or one signed by an internal certificate authority.
 
 . Click *Save*.
 . Log out of MuleSoft Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.
@@ -257,7 +257,7 @@ Note that the file-based configuration of a SAML 2.0 is not supported.
 . In the *New Identity Provider* page, complete the required fields:
 +
 * *Name*: Enter a nickname for this IDP.
-* *Sign On URL*: The redirect URL provided by the IDP for sign in. For example, `https://example.com/sso/saml`.
+* *Sign On URL*: The redirect URL provided by the IDP for sign in. For example, `\https://example.com/sso/saml`.
 * *Sign Off URL*: The URL to redirect sign-out requests, so users both sign out of MuleSoft Composer and have their SAML user’s status set to `signed out`.
 * *Issuer*: The ID of the identity provider instance that sends SAML assertions.
 * *Public Key*: The Public key provided by the identity provider, which is used to sign the SAML assertion. It is the `X509Certificate` value in the SAML response.

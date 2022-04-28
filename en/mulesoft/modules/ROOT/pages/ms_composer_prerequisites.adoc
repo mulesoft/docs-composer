@@ -232,8 +232,8 @@ To enable OpenID Connect (OIDC) IDP:
 * *Name*: The nickname for this IDP.
 * *Client Registration URL*:  The URL to dynamically register client applications for your identity provider. This field appears when you select *Dynamic Registration*.
 * *Authentication Header*:  The header that provides credentials to authenticate a server. This header is required if the provider restricts registration requests to authorized clients. This field appears when you select *Dynamic Registration*.
-* *Client ID*: The unique identifier that you provided for your manually created client application. This field appears when you select *Manual Registration*. 
-* *Client Secret*: This field appears when *Manual Registration* is selected. The password, or secret, for authenticating your Composer organization with your Identity Provider.
+* *Client ID*: The unique identifier that you provided for your manually created client application. This field appears when you select *Manual Registration*.
+* *Client Secret*: This field appears when *Manual Registration* is selected. The password, or secret, for authenticating your MuleSoft Composer organization with your Identity Provider.
 * *OpenID Connect Issuer*: The location of the OpenID Provider. For most providers, `/.well-known/openid-configuration` is appended to the issuer to generate the metadata URL for openID Connect specifications. For Salesforce, you must provide the value for `issuer`.
 * *Authorize URL*: The URL where the user authenticates and grants OpenID Connect client applications access to the user's identity.
 * *Token URL*: The URL that provides the user’s identity encoded in a secure JSON Web Token.
@@ -246,7 +246,7 @@ To enable OpenID Connect (OIDC) IDP:
 * *Disable server certificate validation* checkbox: Select  to disable server certificate validation if your OpenID client management instance presents a self-signed certificate or one signed by an internal certificate authority.
 
 . Click *Save*.
-. Log out of Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.
+. Log out of MuleSoft Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.
 
 To enable SAML 2.0 IDP:
 
@@ -258,15 +258,15 @@ Note that the file-based configuration of a SAML 2.0 is not supported.
 +
 * *Name*: Enter a nickname for this IDP.
 * *Sign On URL*: The redirect URL provided by the IDP for sign in. For example, `https://example.com/sso/saml`.
-* *Sign Off URL*: URL to redirect signout requests, so users both sign out of Composer and have their SAML user’s status set to `signed out`.
+* *Sign Off URL*: URL to redirect sign-out requests, so users both signout of MuleSoft Composer and have their SAML user’s status set to `signed out`.
 * *Issuer*: The ID of the identity provider instance that sends SAML assertions.
 * *Public Key*: The Public key provided by the identity provider, which is used to sign the SAML assertion. It is the `X509Certificate` value in the SAML response.
-* *Audience*: An arbitrary string value that identifies your Composer organization. The typical value for this string is `<organizationDomain>.composer.mulesoft.com`.
-* *Single Sign On Initiation*: Specify whether SSO can be initiated by Composer, your identity provider (for example, Okta), or both.
+* *Audience*: An arbitrary string value that identifies your MuleSoft Composer organization. The typical value for this string is `<organizationDomain>.composer.mulesoft.com`.
+* *Single Sign On Initiation*: Specify whether SSO can be initiated by MuleSoft Composer, your identity provider (for example, Okta), or both.
 
-** The *Service Provider Only* option allows only the Composer to initiate SSO.
+** The *Service Provider Only* option allows only MuleSoft Composer to initiate SSO.
 ** The *Identity Provider Only* option allows only your external identity provider to initiate SSO.
-** The *Both* option allows either Composer or your external identity provider to initiate SSO. +
+** The *Both* option allows either MuleSoft Composer or your external identity provider to initiate SSO. +
 The default value for this setting for newly configured identity provider configurations is *Both*.
 
 . Optionally, expand *Advanced Settings*, and provide the following values:
@@ -279,7 +279,7 @@ The default value for this setting for newly configured identity provider config
 * *Require encrypted SAMl assertions* checkbox: If enabled, the SAML assertions sent from the IDP must be encrypted and follow the guidelines mentioned in the prerequisites.
 
 . Click *Save*.
-. Log out of Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.
+. Log out of MuleSoft Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.
 
 == Enable Flow Failure Notifications
 

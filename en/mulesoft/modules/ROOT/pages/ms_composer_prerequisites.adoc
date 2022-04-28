@@ -267,7 +267,7 @@ Note that the file-based configuration of a SAML 2.0 is not supported.
 ** The *Service Provider Only* option allows only the Composer to initiate SSO.
 ** The *Identity Provider Only* option allows only your external identity provider to initiate SSO.
 ** The *Both* option allows either Composer or your external identity provider to initiate SSO. +
-The default value for this setting for newly configured identity provider configurations is Both.
+The default value for this setting for newly configured identity provider configurations is *Both*.
 
 . Optionally, expand *Advanced Settings*, and provide the following values:
 +

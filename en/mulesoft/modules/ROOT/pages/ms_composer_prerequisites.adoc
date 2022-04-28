@@ -237,7 +237,7 @@ To enable OpenID Connect (OIDC) IDP:
 * *OpenID Connect Issuer*: The location of the OpenID Provider. For most providers, `/.well-known/openid-configuration` is appended to the issuer to generate the metadata URL for openID Connect specifications. For Salesforce, you must provide the value for `issuer`.
 * *Authorize URL*: The URL where the user authenticates and grants OpenID Connect client applications access to the user's identity.
 * *Token URL*: The URL that provides the user’s identity encoded in a secure JSON Web Token.
-* *User Info URL*: URL that returns user profile information to the client app.
+* *User Info URL*: The URL that returns user profile information to the client app.
 
 . Optionally, expand *Advanced Settings*, and provide the following values:
 +

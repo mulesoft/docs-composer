@@ -271,7 +271,7 @@ The default value for this setting for newly configured identity provider config
 
 . Optionally, expand *Advanced Settings*, and provide the following values:
 +
-* *Username Attribute*: Field name in the SAML `AttributeStatements` that maps to username. If no value is configured, the `NameID` attribute of the SAML `Subject` is used (Note: this is outside the SAML `AttributeStatements`).
+* *Username Attribute*: Field name in the SAML `AttributeStatements` that maps to the user's name. If no value is configured, the `NameID` attribute of the SAML `Subject` is used (Note: This is outside the SAML `AttributeStatements`).
 * *First Name Attribute*: Field name in the SAML `AttributeStatements` that maps to `First Name`.
 * *Last Name Attribute*: Field name in the SAML `AttributeStatements` that maps to `Last Name`.
 * *Email Attribute*: Field name in the SAML `AttributeStatements` that maps to `Email`.

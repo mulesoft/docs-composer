@@ -257,7 +257,7 @@ Note that the file-based configuration of a SAML 2.0 is not supported.
 . In the *New Identity Provider* page, complete the required fields:
 +
 * *Name*: Enter a nickname for this IDP.
-* *Sign On URL*: Redirect URL provided by the IDP for sign in. For example, `https://example.com/sso/saml`.
+* *Sign On URL*: The redirect URL provided by the IDP for sign in. For example, `https://example.com/sso/saml`.
 * *Sign Off URL*: URL to redirect signout requests, so users both sign out of Composer and have their SAML user’s status set to `signed out`.
 * *Issuer*: ID of the identity provider instance that sends SAML assertions.
 * *Public Key*: Public key provided by the identity provider, which is used to sign the SAML assertion. It is the `X509Certificate` value in the SAML Response.

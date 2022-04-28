@@ -232,7 +232,7 @@ To enable OpenID Connect (OIDC) IDP:
 * *Name*: The nickname for this IDP.
 * *Client Registration URL*:  The URL to dynamically register client applications for your identity provider. This field appears when you select *Dynamic Registration*.
 * *Authentication Header*:  The header that provides credentials to authenticate a server. This header is required if the provider restricts registration requests to authorized clients. This field appears when you select *Dynamic Registration*.
-* *Client ID*: This field appears when *Manual Registration* is selected. The unique identifier that you provided for your manually created client application.
+* *Client ID*: The unique identifier that you provided for your manually created client application. This field appears when you select *Manual Registration*. 
 * *Client Secret*: This field appears when *Manual Registration* is selected. The password, or secret, for authenticating your Composer organization with your Identity Provider.
 * *OpenID Connect Issuer*: The location of the OpenID Provider. For most providers, `/.well-known/openid-configuration` is appended to the issuer to generate the metadata URL for openID Connect specifications. For Salesforce, you must provide the value for `issuer`.
 * *Authorize URL*: The URL where the user authenticates and grants OpenID Connect client applications access to the user's identity.

@@ -243,7 +243,7 @@ To enable OpenID Connect (OIDC) IDP:
 +
 * *Group Scope*: The OIDC scope to request the group claim.
 * *Group Attribute JSON Data Expression*: The JSONata expression used to select the groups from the user information or ID token. The result must be an array of strings.
-* *Disable server certificate validation* checkbox: Select checkbox to disable server certificate validation if your OpenID client management instance presents a self-signed certificate or one signed by an internal certificate authority.
+* *Disable server certificate validation* checkbox: Select  to disable server certificate validation if your OpenID client management instance presents a self-signed certificate or one signed by an internal certificate authority.
 
 . Click *Save*.
 . Log out of Composer, navigate to the sign-on URL you entered in the *New Identity Provider* page, and then log in through your identity provider to test the configuration.

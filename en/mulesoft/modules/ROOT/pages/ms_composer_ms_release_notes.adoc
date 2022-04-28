@@ -4,6 +4,15 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== April 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now add multiple identity providers (IDP) for your organization to enable single sign-on (SSO). The following identity providers are now available:
+
+** OpenID Connect IDP
+** SAML 2.0 ID 
+
 == April 26, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

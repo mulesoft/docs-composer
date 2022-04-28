@@ -250,15 +250,17 @@ To enable OpenID Connect (OIDC) IDP:
 
 To enable SAML 2.0 IDP:
 
+Note that the file-based configuration of a SAML 2.0 is not supported.
+
 . In the MuleSoft Composer sidebar, click *Settings* and then click *Multiple IDP*.
 . On the *Identity Provider* page, click *Add Identity Provider* > *SAML 2.0*.
 . In the *New Identity Provider* page, complete the required fields:
 +
 * *Name*: Enter a nickname for this IDP.
-* *Sign On URL*: Redirect URL provided by the IDP for sign in, for example: `https://example.com/sso/saml`.
-* *Sign Off URL*: URL to redirect signout requests, so users both sign out of Composer and have their SAML user’s status set to signed out.
+* *Sign On URL*: Redirect URL provided by the IDP for sign in. For example, `https://example.com/sso/saml`.
+* *Sign Off URL*: URL to redirect signout requests, so users both sign out of Composer and have their SAML user’s status set to `signed out`.
 * *Issuer*: ID of the identity provider instance that sends SAML assertions.
-* *Public Key*: Public key provided by the identity provider, which is used to sign the SAML assertion. It is the "X509Certificate" value in the SAML Response.
+* *Public Key*: Public key provided by the identity provider, which is used to sign the SAML assertion. It is the `X509Certificate` value in the SAML Response.
 * *Audience*: An arbitrary string value that identifies your Composer organization. The typical value for this string is `<organizationDomain>.composer.mulesoft.com`.
 * *Single Sign On Initiation*: Specify whether SSO can be initiated by Composer, your identity provider (for example, Okta), or both.
 

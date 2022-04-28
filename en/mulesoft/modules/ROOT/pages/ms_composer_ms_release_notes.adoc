@@ -4,6 +4,17 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== April 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+The following actions were added to the Workday Connector to enable Workday Financial Management:
+
+* *Create Object*
+* *Update Object*
+* *Get Object*
+
+
 == April 26, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

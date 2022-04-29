@@ -60,7 +60,7 @@ To test the connection, provide a value for the following fields:
 
 Click *Connect* to test the connection. A message appears to indicate the connection was created successfully (indicated by a response code of `200`) or that an error occurred.
 
-Note that if the application requires a token exchange to transact data, the user will need to create a token for each use case. For example, in Salesforce Marketing Cloud, this is needed because the first step in Flow 1 will generate a token, which might get invalidated by a similar step in Flow 2.
+Note that if the application requires a token exchange to transact data, you need to create a token for each use case. For example, in Salesforce Marketing Cloud, this is needed because the first step in Flow 1 will generate a token, which might get invalidated by a similar step in Flow 2.
 
 == HTTP Connector Fields
 

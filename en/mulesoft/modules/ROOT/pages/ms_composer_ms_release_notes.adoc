@@ -14,6 +14,7 @@ The following actions were added to the Workday Connector to enable Workday Fina
 * *Update Object*
 * *Get Object*
 
+//Add this to the other RN page once verified in the wdf-core-group channel!!
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
 [%header%autowidth.spread]
@@ -22,11 +23,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue |ID
 
-| | W-10574439 COCN-667
-| | W-10574489 COCN-605
-| | W-10574413 COCN-705
-| | W-10574467 COCN-632
-| | COCN-612
+|Fixed the issue in the Workday Connector in which you could not filter fields containing values with the file data type. | W-10574439 COCN-667
+|In the Workday Connector, when editing a *Job Requisition* action, the *Position Time Type* field is now selectable as a list or set as a data pill. | W-10574489 COCN-605
+|When a generic error message is returned from the API in the Workday Connector, the error message that occurs in Composer is now informative. | W-10574413 COCN-705
+|Improved validation error messages in the Workday Connector to make them more specific. | W-10574467 COCN-632
+|In the Workday Connector, the *Position Title*, *Supervisory Organization*, and *Location* fields are now optional in the *Create Worker* action. | COCN-612
 
 |===
 

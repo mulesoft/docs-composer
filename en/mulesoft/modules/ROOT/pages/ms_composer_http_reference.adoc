@@ -47,7 +47,7 @@ The following authorization options are available:
 
 === Test the Connection
 
-After a connection method is established, you can then test the connection. While other connectors for Composer are tested automatically in the background, the HTTP Connector is tested manually. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.
+After you establish a connection method, you can test the connection. While Composer tests other connectors  automatically in the background, you must test the HTTP Connector. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.
 
 To test the connection, provide a value for the following fields:
 

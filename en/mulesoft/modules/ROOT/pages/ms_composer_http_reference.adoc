@@ -1,6 +1,6 @@
 = HTTP Connector Reference
 
-The HTTP Connector connects cloud applications that are not currently supported through dedicated connectors. The HTTP Connector allows you to connect to systems that Composer does not currently support to extend the capabilities of the systems that Composer does support. The HTTP Connector for Composer uses https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP] 1.1 to handle JSON data.
+The HTTP Connector connects cloud applications that are not currently supported through dedicated connectors. Use the HTTP Connector to connect to systems that Composer does not currently support to extend the capabilities of the systems that Composer does support. The HTTP Connector for Composer uses https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP] 1.1 to handle JSON data.
 
 == Connections
 

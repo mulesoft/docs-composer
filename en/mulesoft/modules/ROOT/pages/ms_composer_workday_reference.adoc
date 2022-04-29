@@ -35,8 +35,7 @@ The host name of your Workday instance. For example, `wd2-impl-services1.workday
 
 New or updated object::
 
-This trigger checks for a new or updated object.
-//This trigger checks for a new or updated object in Workday Financial Management. A value is required in the following field: *Object*.
+This trigger checks for a new or updated object in Workday Financial Management. A value is required in the following field: *Object*.
 
 == Actions
 
@@ -56,23 +55,23 @@ Get Customer::
 
 This action returns the customer details corresponding to the customer ID that you supply.
 
-//Create Object::
+Create Object::
 
-//This action creates a new object in Workday Financial Management. A value is required in the following field: Object.
+This action creates a new object in Workday Financial Management. Provide a value for *Object*.
 
-//Update Object::
+Update Object::
 
-//This action updates an existing object in Workday Financial Management. A value is required in the following fields:
+This action updates an existing object in Workday Financial Management. Provide a value for the following fields:
 
-//* *Object*
-//* *Unique ID*
+* *Object*
+* *Unique ID*
 
-//Get Object::
+Get Object::
 
-//This action returns an existing object in Workday Financial Management. A value is required in the following fields:
+This action returns an existing object in Workday Financial Management. Provide a value for the the following fields:
 
-//* *Object*
-//* *ID*
+* *Object*
+* *ID*
 
 == Object Types
 
@@ -83,8 +82,13 @@ The following object types are available:
     ** WORKER
 
 * Actions
+    ** COMPANY
+    ** CONTRACT
     ** CUSTOMER
+    ** INVOICE
     ** JOB_REQUISITIONS
+    ** PROJECT
+    ** SALES_ITEM
     ** WORKER
 
 include::_partials/see-also.adoc[]

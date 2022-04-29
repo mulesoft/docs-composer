@@ -4,7 +4,7 @@ The HTTP Connector connects cloud applications that are not currently supported 
 
 == Connections
 
-To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with that system's required credentials. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
+To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with the required credentials of that system. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
 
 Provide the following connection information:
 

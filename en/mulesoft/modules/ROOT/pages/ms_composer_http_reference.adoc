@@ -26,7 +26,7 @@ The following authorization options are available:
   ** *Token URL*
 
 * *API Key* +
-  The API Key connects to applications without explicitly defining a user. This key must be added to all requests and the cloud application identifies the origin of the request and completes the authorization. Provide a value for the following fields:
+  The API Key connects to applications without explicitly defining a user. This key must be added to all requests, and the cloud application identifies the origin of the request and completes the authorization. Provide a value for the following fields:
   ** *Base URL*
   ** *Name*
   ** *Value*

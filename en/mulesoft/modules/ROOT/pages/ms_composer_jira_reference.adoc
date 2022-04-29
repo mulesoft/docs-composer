@@ -41,7 +41,7 @@ Checks for updated issues with Standard fields in Jira.
 
 include::_partials/action-definition.adoc[]
 
-Create Issue::
+Create issue with custom fields::
 
 Creates a new issue within the selected project. Provide a value for the following fields:
 
@@ -52,39 +52,39 @@ Creates a new issue within the selected project. Provide a value for the followi
 * *Status*
 * *Priority*
 
-Update issue with Custom Fields::
+Update issue with custom fields::
 
 Updates specified Custom field values. Provide a value for the following fields:
 
 * *Issue ID or Key*
 * *Notify Users*
 
-Update issue with Standard Fields only::
+Update issue with standard fields only::
 
 Updates specified Standard field values. Provide a value for the following fields:
 
 * *Issue ID or Key*
 * *Notify Users*
 
-Assign User to Issue::
+Assign user to issue::
 
 Assigns a user to a specified issue. Provide a value for *Issue ID or Key*.
 
-Add Watcher to Issue::
+Add watcher to Issue::
 
 Adds a watcher to an existing Jira issue. Provide a value for *Issue ID or Key*.
 
-Get Issue::
+Get issue::
 
 Returns details for a specific issue. Provide a value for *Issue ID or Key*.
 
-Add Comment::
+Add comment to issue::
 
 Creates and adds a comment to an existing issue. Provide a value for the following fields:
 * *Issue ID or Key*
 * *Comment Text*
 
-Get Account IDs for Users::
+Get account IDs for users::
 
 Returns the account IDs for the users specified in the `key` or `username` parameters. You can specify multiple `key` or `username` parameters.
 

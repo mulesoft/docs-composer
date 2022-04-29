@@ -1,0 +1,13 @@
+==== Workday
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|In the *Invoice* object, all fields containing the data type `number` for amounts are sent as strings. | Using the xref:ms_custom_expression_editor.adoc[Custom Expression Editor], you can use the typecasting function, `fromStringToNumber`, to change the field type from `string` to `number`. For example: +
+
+`Unit Cost=fromStringToNumber(Sales Price)` + |
+
+|===

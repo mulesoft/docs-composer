@@ -92,7 +92,7 @@ The following fields are applicable for the HTTP Connector:
 
 |*Example Request* |String |An example request in JSON format. If you provide a value for this field, Composer parses the example to deduce its fields. The fields are then available for entering data to configure the request operation.
 
-|*Example Response* |String |The example JSON payload of the response. If you provide a value for this field, Composer parses the example JSON payload and provides data pills that match the JSON fields.
+|*Example Response* |String |An example response in JSON format. If you provide a value for this field, Composer parses the example JSON payload and provides data pills that match the JSON fields.
 
 |===
 

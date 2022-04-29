@@ -13,18 +13,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/http-ki.adoc[]
-
-== April 28, 2022
-
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
 * You can now add multiple identity providers (IDP) for your organization to enable single sign-on (SSO). The following identity providers are now available:
 
 ** OpenID Connect IDP
 ** SAML 2.0 ID
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/http-ki.adoc[]
 
 == April 26, 2022
 

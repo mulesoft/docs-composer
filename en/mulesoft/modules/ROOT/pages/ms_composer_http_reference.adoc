@@ -88,7 +88,7 @@ The following fields are applicable for the HTTP Connector:
 
 |*Headers* |Object |Allows you and the server to pass additional information with an HTTP request or response. Consists of its case-insensitive name (key) followed by a colon, and then followed by its value. If you add headers, you must provide values for the *Key* and *Value* fields.
 
-|*Query Parameters* |Object |Query parameters the request should include. If you add query parameters, you must provide values for the *Key* and *Value* fields.
+|*Query Parameters* |Object |Query parameters to include in the request. If you add query parameters, you must provide values for the *Key* and *Value* fields.
 
 |*Example Request* |String |The example in JSON format of the request. If you provide a value for this field, Composer parses the example to deduce its fields. The fields are then available for entering data to configure the request operation.
 

@@ -32,6 +32,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |In the Workday Connector, the *Position Title*, *Supervisory Organization*, and *Location* fields are now optional in the *Create Worker* action. However, if the *Location* value is not set on the *Position* object, then the *Location* field is required, or the Create Worker API operation will fail.” | W-10574483 COCN-612
 
+|In the Jira Connector, pagination is now enabled to fetch all assignable users in the *Reporter* and *Assignee* fields when using the *Create issue with custom fields* action. |W-10934109
+
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

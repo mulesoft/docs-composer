@@ -19,11 +19,22 @@ The following actions were added to the Workday Connector to enable Workday Fina
 * *Update Object*
 * *Get Object*
 
+== April 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: HTTP.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 include::_partials/platform-ki.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
 
 include::_partials/jira-ki.adoc[]
 

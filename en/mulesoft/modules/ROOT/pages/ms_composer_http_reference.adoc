@@ -1,0 +1,117 @@
+= HTTP Connector Reference
+
+The HTTP Connector connects cloud applications that are not currently supported through dedicated connectors. Use the HTTP Connector to connect to systems that Composer does not currently support to extend the capabilities of the systems that Composer does support. The HTTP Connector for Composer uses https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP] 1.1 to handle JSON data.
+
+== Connections
+
+To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with the required credentials of that system. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
+
+Provide the following connection information:
+
+include::_partials/connection-name.adoc[]
+
+Base URL::
+
+The default location URL for the cloud application that the connection uses.
+
+Authorization::
+
+The following authorization options are available:
+
+* *OAuth 2.0 Client Credentials* +
+  The OAuth 2.0 Client Credentials obtain an access token from a user-defined path. Provide a value for the following fields:
+  ** *Base URL*
+  ** *Client ID*
+  ** *Client Secret*
+  ** *Token URL*
+
+* *API Key* +
+  The API Key connects to applications without explicitly defining a user. You must add this key to all requests, and the cloud application identifies the origin of the request and completes the authorization. Provide a value for the following fields:
+  ** *Base URL*
+  ** *Name*
+  ** *Value*
+  ** *Sent As*: Select one of the following values:
+    *** *Header*: If selected, Composer adds the following header to the request: `Name: Value`.
+    *** *Query Parameter*: If selected, Composer adds the following query parameter to the request: `Name=Value`.
+
+* *Basic Authentication* +
+  The Basic Authentication method enables an HTTP user agent to provide a username and password when making an HTTP request. Provide a value for the following fields:
+  ** *Base URL*
+  ** *Username*
+  ** *Password*
+
+* *Bearer Token Authorization*
+  Bearer Token Authorization is the authentication process that sends a header named `Authorization` with a value of `Bearer` and a token with every request. Provide a value for the following fields:
+  ** *Base URL*
+  ** *Token*
+
+=== Test the Connection
+
+After you establish a connection method, you can test the connection. While Composer tests other connectors  automatically in the background, you must test the HTTP Connector. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.
+
+To test the connection, provide a value for the following fields:
+
+* *Request Method*
+* *Request Path*: The value in this field is relative to the Base URL.
+* *Request Headers*
+  ** *Key*
+  ** *Value*
+* *Request Body*: This option appears when the HTTP method is POST and is the body of the request message. 
+
+Click *Connect* to test the connection. A message appears to indicate the connection was created successfully (indicated by a response code of `200`) or that an error occurred.
+
+Note that if the application requires a token exchange to transact data, you need to create a token for each use case. For example, in Salesforce Marketing Cloud, this is needed because the first step in Flow 1 will generate a token, which might get invalidated by a similar step in Flow 2.
+
+== HTTP Connector Fields
+
+The following fields are applicable for the HTTP Connector:
+
+[%header%autowidth.spread]
+
+|===
+
+|Name |Type |Description
+
+|Relative URL |String |URL for the target of the request without considering the base path.
+
+|Action |String |The type of request.
+
+|HTTP Method |String a|The HTTP method for the request. The following HTTP methods are available:
+
+* *GET*: Retrieves information from the server.
+* *POST*: Sends information to the server.
+* *PUT*: Updates information in existing records on the server.
+* *PATCH*: Updates specific data for existing records on the server.
+* *DELETE*: Deletes information in existing records on the server.
+
+|*Path* |String |Identifies the specific resource in the server that you want to access.
+
+|*Headers* |Object |Allows you and the server to pass additional information with an HTTP request or response. Consists of its case-insensitive name (key) followed by a colon, and then followed by its value. If you add headers, you must provide values for the *Key* and *Value* fields.
+
+|*Query Parameters* |Object |Query parameters to include in the request. If you add query parameters, you must provide values for the *Key* and *Value* fields.
+
+|*Example Request* |String |An example request in JSON format. If you provide a value for this field, Composer parses the example to deduce its fields. The fields are then available for entering data to configure the request operation.
+
+|*Example Response* |String |An example response in JSON format. If you provide a value for this field, Composer parses the example JSON payload and provides data pills that match the JSON fields.
+
+|===
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Request in HTTP::
+A request in HTTP returns the fields of the response payload. A value is required for the following fields:
+
+* *Action*
+* *HTTP Method*
+* *Path*
+* *Example Response*
+* Optionally, if you click *Add Query Parameters*, provide a value for the following fields:
+  ** *Key*
+  ** *Value*
+* Optionally, if you click *Add Headers*, provide a value for the following fields:
+  ** *Key*
+  ** *Value*
+
+include::_partials/see-also.adoc[]

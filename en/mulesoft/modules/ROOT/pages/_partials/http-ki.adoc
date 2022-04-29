@@ -8,7 +8,7 @@
 
 |After changing the text in the *Example Request* field, the *HTTP Request* fields do not clear. |Rebuild the action. |W-11052290
 
-|Some API endpoints expect a list as input. Composer only support creating one list from another. |Add a previous step that returns a list to your flow and use it as a basis for the list required in the HTTP request. |
+|Some API endpoints expect a list as input. Composer only supports creating one list from another. |Add a previous step that returns a list to your flow and use it as a basis for the list required in the HTTP request. |
 
 |When testing a connection, the *Request Body* field appears even if the *Request Method* field is set to `GET`. |None. |
 

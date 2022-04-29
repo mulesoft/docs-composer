@@ -58,7 +58,7 @@ To test the connection, provide a value for the following fields:
   ** *Value*
 * *Request Body*: This option appears when the HTTP method is POST and is the body of the request message. 
 
-Click *Connect* to test the connection. A message appears to indicate the connection was created successfully (which is indicated by a response code of `200`) or that an error occurred.
+Click *Connect* to test the connection. A message appears to indicate the connection was created successfully (indicated by a response code of `200`) or that an error occurred.
 
 Note that if the application requires a token exchange to transact data, the user will need to create a token for each use case. For example, in Salesforce Marketing Cloud, this is needed because the first step in Flow 1 will generate a token, which might get invalidated by a similar step in Flow 2.
 

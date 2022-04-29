@@ -90,7 +90,7 @@ The following fields are applicable for the HTTP Connector:
 
 |*Query Parameters* |Object |Query parameters to include in the request. If you add query parameters, you must provide values for the *Key* and *Value* fields.
 
-|*Example Request* |String |The example in JSON format of the request. If you provide a value for this field, Composer parses the example to deduce its fields. The fields are then available for entering data to configure the request operation.
+|*Example Request* |String |An example request in JSON format. If you provide a value for this field, Composer parses the example to deduce its fields. The fields are then available for entering data to configure the request operation.
 
 |*Example Response* |String |The example JSON payload of the response. If you provide a value for this field, Composer parses the example JSON payload and provides data pills that match the JSON fields.
 

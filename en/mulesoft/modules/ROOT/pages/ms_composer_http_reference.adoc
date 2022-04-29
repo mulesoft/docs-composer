@@ -84,7 +84,7 @@ The following fields are applicable for the HTTP Connector:
 * *PATCH*: Updates specific data for existing records on the server.
 * *DELETE*: Deletes information in existing records on the server.
 
-|*Path* |String |Identifies the specific resource in the server that the user wants to access.
+|*Path* |String |Identifies the specific resource in the server that you want to access.
 
 |*Headers* |Object |Allows the user and the server to pass additional information with an HTTP request or response. Consists of its case-insensitive name (key) followed by a colon, and then followed by its value. If you add headers, you must provide values for the *Key* and *Value* fields.
 

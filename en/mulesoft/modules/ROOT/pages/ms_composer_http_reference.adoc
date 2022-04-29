@@ -41,7 +41,7 @@ The following authorization options are available:
   ** *Password*
 
 * *Bearer Token Authorization*
-  Bearer Token Authorization is the authentication process that sends a header named Authorization with a value of Bearer and a token with every request. Provide a value for the following fields:
+  Bearer Token Authorization is the authentication process that sends a header named `Authorization` with a value of `Bearer` and a token with every request. Provide a value for the following fields:
   ** *Base URL*
   ** *Token*
 

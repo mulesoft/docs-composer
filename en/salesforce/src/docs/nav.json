@@ -67,6 +67,10 @@
               "title": "Google Sheets"
             },
             {
+              "file" : "ms_composer_http_reference.adoc",
+              "title": "HTTP"
+            },
+            {
               "file" : "ms_composer_jira_reference.adoc",
               "title": "Jira"
             },

@@ -19,6 +19,49 @@ The following actions were added to the Workday Connector to enable Workday Fina
 * *Update Object*
 * *Get Object*
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue |ID
+
+|Fixed the issue in the Workday Connector in which you could not filter fields containing values with the file data type. | W-10574439 COCN-667
+
+|In the Workday Connector, when editing a *Job Requisition* action, the *Position Time Type* field is now selectable as a list or set as a data pill. | W-10574489 COCN-605
+
+|When a generic error message is returned from the API in the Workday Connector, the error message that occurs in Composer is now informative. | W-10574413 COCN-705
+
+|Improved validation error messages in the Workday Connector to make them more specific. | W-10574467 COCN-632
+
+|In the Workday Connector, the *Position Title*, *Supervisory Organization*, and *Location* fields are now optional in the *Create Worker* action. However, if the *Location* value is not set on the *Position* object, then the *Location* field is required, or the Create Worker API operation will fail.” | W-10574483 COCN-612
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+
 == April 28, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

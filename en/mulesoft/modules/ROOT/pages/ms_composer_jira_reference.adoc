@@ -70,7 +70,7 @@ Assign user to issue::
 
 Assigns a user to a specified issue. Provide a value for *Issue ID or Key*.
 
-Add watcher to Issue::
+Add watcher to issue::
 
 Adds a watcher to an existing Jira issue. Provide a value for *Issue ID or Key*.
 

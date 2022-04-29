@@ -7,6 +7,9 @@
 |Known Issue |Workaround |ID
 
 |After changing the text in the *Example Request* field, the *HTTP Request* fields do not clear. |Rebuild the action. |W-11052290
-|For systems requiring that Composer pass an array of objects for defining the filters for Contact records, there is no current implementation of a static array list that is blocking these kinds of requests.  |Once the Contact records are returned, you can add a For Each Loop to go through the list and then use an If/Else Block to evaluate the following action. |
+
+|Some API endpoints expect a list as input. Composer only support creating one list from another. |Add a previous step that returns a list to your flow and use it as a basis for the list required in the HTTP request. |
+
+|When testing a connection, the *Request Body* field appears even if the *Request Method* field is set to `GET`. |None. |
 
 |===

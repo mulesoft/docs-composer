@@ -6,5 +6,7 @@
 
 |Known Issue |Workaround |ID
 
-|
+|After changing the text in the *Example Request* field, the *HTTP Request* fields do not clear. |Rebuild the action. |W-11052290
+|For systems requiring that Composer pass an array of objects for defining the filters for Contact records, there is no current implementation of a static array list that is blocking these kinds of requests.  |Once the Contact records are returned, you can add a For Each Loop to go through the list and then use an If/Else Block to evaluate the following action. |
+
 |===

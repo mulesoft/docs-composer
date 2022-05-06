@@ -96,47 +96,53 @@ The following record types are supported.
 [%header%autowidth.spread]
 |===
 
-|Record Type |Trigger |Action |Object
+|Record Type |Trigger |Action
 
-|Cash Sale | | |X
-|Cash Refund | | |X
-|Contact |X |X |
-|Credit Memo | | |X
-|Customer |X |X |
-|Customer Deposit | | |X
-|Customer Payment | | |X
-|Customer Refund | |X |X
-|Custom Record Types |X |X |
-|Estimate | | |X
-|Employee |X |X |
-|Inventory Item |X |X |
-|Invoice |X |X |
-|Journal Entry | | |X
-|Non-Inventory Purchase Item | | |X
-|Non-Inventory Resale Item | | |X
-|Non-Inventory Sale Item | | |X
-|Opportunity | | |X
-|Payment Item | |X |
-|Purchase Order | | |X
-|Sales Order |X |X |
-|Support Case |X |X |
-|Vendor | | |X
-|Vendor Bill | | |X
+|CASH_SALE |X |X
+|CASH_REFUND |X |X
+|CONTACT |X |X
+|CREDIT_MEMO |X |X
+|CUSTOMER |X |X
+|CUSTOMER_DEPOSIT |X |X
+|CUSTOMER_PAYMENT |X |X
+|CUSTOMER_REFUND |X |X
+|CUSTOM_RECORD_TYPES |X |X
+|ESTIMATE |X |X
+|EMPLOYEE |X |X
+|INVENTORY_ITEM |X |X
+|INVOICE |X |X
+|JOURNAL_ENTRY |X |X
+|NON_INVENTORY_PURCHASE_ITEM |X |X
+|NON_INVENTORY_RESALE_ITEM |X |X
+|NON_INVENTORY_SALE_ITEM |X |X
+|OPPORTUNITY |X |X
+|PAYMENT_ITEM | |X
+|PURCHASE_ORDER |X |X
+|RETURN_AUTHORIZATION |X |X
+|SALES_ORDER |X |X
+|SERVICE_SALE_ITEM |X |X
+|SERVICE_PURCHASE_ITEM |X |X
+|SUPPORT_CASE |X |X
+|VENDOR |X |X
+|VENDOR_BILL |X |X
 
 |===
 
+[NOTE]
+The PAYMENT_ITEM object is not supported by the GET RECORDS action.
 
 == Custom Fields
 
 Using MuleSoft Composer, you can access custom field values for actions and triggers that you set in the NetSuite record.
 
-== Objects
+//== Objects
 
-The following objects are available:
+//The following objects are available:
 
-* Service Sale Item
-* Service Purchase Item
-* Return Authorization
+//* Service Sale Item
+//* Service Purchase Item
+//* Return Authorization
+//kept but commented out the above Objects section in case I misunderstood Jan's instructions
 
 == List Objects
 

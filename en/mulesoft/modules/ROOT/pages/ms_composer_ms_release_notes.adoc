@@ -10,9 +10,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The following objects are now available for NetSuite Connector:
 
-** Service Sale Item
-** Service Purchase Item
+** Service Item for Sale
+** Service Item for Purchase
 ** Return Authorization
+
+[NOTE]
+The objects will appear in all caps and with underscores.
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 

@@ -4,15 +4,39 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== May 5, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following objects are now available for NetSuite Connector:
+
+** Service Item for Sale
+** Service Item for Purchase
+** Return Authorization
+
+[NOTE]
+The objects will appear in all caps and with underscores.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue |ID
+|Fixed the null pointer exception issue that occurred in NetSuite Connector using a trigger that had been previously modified to select a custom object. |W-10995359
+
+|===
+
 == April 29, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-The following actions were added to the Workday Connector to enable Workday Financial Management:
+* The following actions were added to the Workday Connector to enable Workday Financial Management:
 
-* *Create Object*
-* *Update Object*
-* *Get Object*
+** *Create Object*
+** *Update Object*
+** *Get Object*
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 

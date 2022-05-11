@@ -1,6 +1,6 @@
 = HTTP Connector Reference
 
-The HTTP Connector connects cloud applications that are not currently supported through dedicated connectors. Use the HTTP Connector to connect to systems that Composer does not currently support to extend the capabilities of the systems that Composer does support. The HTTP Connector for Composer uses https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP] 1.1 to handle JSON data.
+HTTP Connector connects cloud applications that are not currently supported through dedicated connectors. Use HTTP Connector to connect to systems that Composer does not currently support to extend the capabilities of the systems that Composer does support. HTTP Connector for Composer uses https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP] 1.1 to handle JSON data.
 
 == Connections
 
@@ -47,7 +47,7 @@ The following authorization options are available:
 
 === Test the Connection
 
-After you establish a connection method, you can test the connection. While Composer tests other connectors  automatically in the background, you must test the HTTP Connector. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.
+After you establish a connection method, you can test the connection. While Composer tests other connectors  automatically in the background, you must test HTTP Connector. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.
 
 To test the connection, provide a value for the following fields:
 
@@ -64,7 +64,7 @@ Note that if the application requires a token exchange to transact data, you nee
 
 == HTTP Connector Fields
 
-The following fields are applicable for the HTTP Connector:
+The following fields are applicable for HTTP Connector:
 
 [%header%autowidth.spread]
 

@@ -143,7 +143,7 @@ This type of change should appear in the Change Log only, unless specifically re
 |Issue|ID
 |Message Flows now appear in chronological order. |SE-12345
 |Batch jobs no longer hang while using persistent queues. |SE-54321
-|`NullPointerException` errors no longer occur when using the HTTP Connector inside a connector built with XML SDK. |SE-18335
+|`NullPointerException` errors no longer occur when using HTTP Connector inside a connector built with XML SDK. |SE-18335
 |===
 ////
 

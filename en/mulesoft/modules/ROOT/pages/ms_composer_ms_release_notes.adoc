@@ -55,7 +55,7 @@ include::_partials/workday-ki.adoc[]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The following actions were added to the Workday Connector to enable Workday Financial Management:
+* The following actions were added to Workday Connector to enable Workday Financial Management:
 
 ** *Create Object*
 ** *Update Object*
@@ -69,17 +69,17 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue |ID
 
-|Fixed the issue in the Workday Connector in which you could not filter fields containing values with the file data type. | W-10574439 COCN-667
+|Fixed the issue in Workday Connector in which you could not filter fields containing values with the file data type. | W-10574439 COCN-667
 
-|In the Workday Connector, when editing a *Job Requisition* action, the *Position Time Type* field is now selectable as a list or set as a data pill. | W-10574489 COCN-605
+|In Workday Connector, when editing a *Job Requisition* action, the *Position Time Type* field is now selectable as a list or set as a data pill. | W-10574489 COCN-605
 
-|When a generic error message is returned from the API in the Workday Connector, the error message that occurs in Composer is now informative. | W-10574413 COCN-705
+|When a generic error message is returned from the API in Workday Connector, the error message that occurs in Composer is now informative. | W-10574413 COCN-705
 
-|Improved validation error messages in the Workday Connector to make them more specific. | W-10574467 COCN-632
+|Improved validation error messages in Workday Connector to make them more specific. | W-10574467 COCN-632
 
-|In the Workday Connector, the *Position Title*, *Supervisory Organization*, and *Location* fields are now optional in the *Create Worker* action. However, if the *Location* value is not set on the *Position* object, then the *Location* field is required, or the Create Worker API operation will fail.” | W-10574483 COCN-612
+|In Workday Connector, the *Position Title*, *Supervisory Organization*, and *Location* fields are now optional in the *Create Worker* action. However, if the *Location* value is not set on the *Position* object, then the *Location* field is required, or the Create Worker API operation will fail.” | W-10574483 COCN-612
 
-|In the Jira Connector, pagination is now enabled to fetch all assignable users in the *Reporter* and *Assignee* fields when using the *Create issue with custom fields* action. |W-10934109
+|In Jira Connector, pagination is now enabled to fetch all assignable users in the *Reporter* and *Assignee* fields when using the *Create issue with custom fields* action. |W-10934109
 
 |===
 
@@ -150,7 +150,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed the issue in the Workday Connector in which the values in the *Currency* and *Pay Plan* fields of an *Update Job Requisition* action were not ordered alphabetically.  | W-10663753
+| Fixed the issue in Workday Connector in which the values in the *Currency* and *Pay Plan* fields of an *Update Job Requisition* action were not ordered alphabetically.  | W-10663753
 
 |===
 
@@ -180,8 +180,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Updated error messages in the Google Sheets Connector for empty list fields in the *Create Row* action.  | W-10574328
-| Fixed the issue in the Google Sheets Connector in which columns without headers were incorrectly assigned the header of the next column with a header. | W-10899109
+| Updated error messages in Google Sheets Connector for empty list fields in the *Create Row* action.  | W-10574328
+| Fixed the issue in Google Sheets Connector in which columns without headers were incorrectly assigned the header of the next column with a header. | W-10899109
 
 |===
 
@@ -189,7 +189,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The following objects are now available for the NetSuite Connector:
+* The following objects are now available for NetSuite Connector:
 
 ** Vendor
 ** Vendor Bill
@@ -199,7 +199,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The *On New or Update Invoice* trigger and the *Get Invoices* action are now available for the Xero Connector.
+* The *On New or Update Invoice* trigger and the *Get Invoices* action are now available for Xero Connector.
 
 == March 22, 2022
 
@@ -215,7 +215,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed the issue in the Jira Connector in which flow triggers were not activated if the field values contained spaces. | W-10830185, W-10824255
+| Fixed the issue in Jira Connector in which flow triggers were not activated if the field values contained spaces. | W-10830185, W-10824255
 
 |===
 
@@ -229,7 +229,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed the issue in the Salesforce Connector in which objects containing boolean fields without set default values did not return metadata. | W-10808550
+| Fixed the issue in Salesforce Connector in which objects containing boolean fields without set default values did not return metadata. | W-10808550
 
 |===
 
@@ -243,7 +243,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed the issue in the Salesforce Connector in which remaining access tokens were not refreshed in the *Session Management* page after deleting an access token. | W-10718676
+| Fixed the issue in Salesforce Connector in which remaining access tokens were not refreshed in the *Session Management* page after deleting an access token. | W-10718676
 
 |===
 
@@ -251,7 +251,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The *Get Organization by ID* action is now available for the Zendesk Connector. This action returns an organization based on specified ID search criteria.
+* The *Get Organization by ID* action is now available for Zendesk Connector. This action returns an organization based on specified ID search criteria.
 
 == February 21, 2022
 
@@ -263,7 +263,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed the issue in the NetSuite Connector in which triggers with the *Type of Record* field set to `NON_INVENTORY_SALE_ITEM` returned data from other record types. | W-10674134
+| Fixed the issue in NetSuite Connector in which triggers with the *Type of Record* field set to `NON_INVENTORY_SALE_ITEM` returned data from other record types. | W-10674134
 
 |===
 
@@ -271,7 +271,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* In the Stripe Connector, in the *Create Product* action, the *Images* field is now available. This field enables you to add the URL of to up to eight images that are then attached to the action.
+* In Stripe Connector, in the *Create Product* action, the *Images* field is now available. This field enables you to add the URL of to up to eight images that are then attached to the action.
 
 * In the QuickBooks Connector, the following fields are now available in the *Create Invoice* action:
 
@@ -298,7 +298,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| The *Update row* action in the Google Sheets Connector did not accept a data pill as an input for the *Row number* field. | COCN-910
+| The *Update row* action in Google Sheets Connector did not accept a data pill as an input for the *Row number* field. | COCN-910
 
 |===
 
@@ -346,7 +346,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed the issue in which the NetSuite Connector’s metadata resolution fails and produces an empty error message. The error no longer occurs. | COCN-875
+| Fixed the issue in which NetSuite Connector’s metadata resolution fails and produces an empty error message. The error no longer occurs. | COCN-875
 
 |===
 
@@ -368,7 +368,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* In the Google Sheets Connector, when using the Create/Update Row action, you can now transfer multiple rows of data.
+* In Google Sheets Connector, when using the Create/Update Row action, you can now transfer multiple rows of data.
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -378,8 +378,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Previously, in the Google Sheets Connector when Google Sheets was the trigger, all output fields were returned as `text` regardless of the assigned data type (for example, `int` or` `bool`). As a result, if you attempted to map the trigger data pills to non-text fields in the action, you encountered an error. Now, trigger fields retain their original data types and you can map them appropriately in subsequent actions. | SE-227701, COCN-575
-| Fixed an issue in the Google Sheets Connector in which metadata from a document containing a space failed.  | COCN-742
+| Previously, in Google Sheets Connector when Google Sheets was the trigger, all output fields were returned as `text` regardless of the assigned data type (for example, `int` or` `bool`). As a result, if you attempted to map the trigger data pills to non-text fields in the action, you encountered an error. Now, trigger fields retain their original data types and you can map them appropriately in subsequent actions. | SE-227701, COCN-575
+| Fixed an issue in Google Sheets Connector in which metadata from a document containing a space failed.  | COCN-742
 | Upgraded library dependencies. | |
 // | Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
 
@@ -395,10 +395,10 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| Fixed metadata pagination issues in the Xero Connector. | CSCA-1106
-| Fixed failing sample data requests for the *Get contact by ID* and *Search contacts* actions in the Xero Connector. | CSCA-1044
-| Fixed the field labels in the Xero Connector to match the corresponding field names in the Xero APIs. | CSCA-1043
-| Fixed field labels in the Xero Connector.  | CSCA-1040
+| Fixed metadata pagination issues in Xero Connector. | CSCA-1106
+| Fixed failing sample data requests for the *Get contact by ID* and *Search contacts* actions in Xero Connector. | CSCA-1044
+| Fixed the field labels in Xero Connector to match the corresponding field names in the Xero APIs. | CSCA-1043
+| Fixed field labels in Xero Connector.  | CSCA-1040
 
 |===
 
@@ -406,7 +406,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The NetSuite Connector now supports the *Job* record type.
+* NetSuite Connector now supports the *Job* record type.
 
 * The NetSuite connector now supports the *External* value in the *ID Type* field for the *Update Record* action.
 
@@ -414,9 +414,9 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The NetSuite connector now supports the *Assembly Item* record type.
 
-* The Jira Connector now supports spaces in input fields for all operations.
+* Jira Connector now supports spaces in input fields for all operations.
 
-* Actions in the Jira Connector now support the `Comment` field.
+* Actions in Jira Connector now support the `Comment` field.
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -443,7 +443,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |Issue|ID
 
-| When adding a For Each block to a flow control in the Salesforce connector, the For Each block shows the object label name instead of the object API name. | COCN-745
+| When adding a For Each block to a flow control in Salesforce Connector, the For Each block shows the object label name instead of the object API name. | COCN-745
 
 |===
 
@@ -461,7 +461,7 @@ MuleSoft Composer is generally available.
 //|Issue|ID
 //|Message Flows now appear in chronological order. |SE-12345
 //|Batch jobs no longer hang while using persistent queues. |SE-54321
-//|`NullPointerException` errors no longer occur when using the HTTP Connector inside a connector built with XML SDK. |SE-18335
+//|`NullPointerException` errors no longer occur when using HTTP Connector inside a connector built with XML SDK. |SE-18335
 //|===
 
 //include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

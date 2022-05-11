@@ -5,6 +5,8 @@ After you collect the information described in xref:ms_composer_checklist.adoc[t
 
 xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
+Note that flows are private and cannot be shared.
+
 == Create a Flow
 
 You can create a new flow or clone an existing flow.

@@ -131,6 +131,19 @@ To repair a connection:
 . Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
 . Click *Repair*.
 
+== Delete a Connection
+
+If you no longer need a specific OAuth connection, you can delete it.
+
+When you attempt to delete a connection, Composer....  
+
+To delete a connection:
+
+. Open the flow.
+. Click *Edit*.
+. Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
+. Click *Repair*.
+
 == Schedule a Flow
 
 If you don't choose a connection, you can schedule a flow to start at regular intervals.

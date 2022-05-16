@@ -93,11 +93,13 @@ Note that flows are private and cannot be shared.
 
 == Enable Flow Failure Notifications
 
-As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, Composer sends an email to the owner of the flow. Note that:
+As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, Composer sends an email to the owner of the flow.
 
-* A maximum of four consecutive emails are sent for the same error.
-* The error log for the flow resets every 24 hours.
-* The error log only runs while the flow runs.
+//Note that:
+
+//* A maximum of four consecutive emails are sent for the same error.
+//* The error log for the flow resets every 24 hours.
+//* The error log only runs while the flow runs.
 
 To enable email notifications:
 

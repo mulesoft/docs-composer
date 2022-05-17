@@ -18,7 +18,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 
 |Issue |ID
-|Fixed the issue in Slack Connector in which an null pointer exception occurred after cleaning markup in a plain text string. |W-11031313
+|Fixed the issue in Slack Connector in which a null pointer exception occurred after cleaning markup in a plain text string. |W-11031313
 
 |===
 

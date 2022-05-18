@@ -216,6 +216,16 @@ To delete a user:
 A message appears, warning you that deleting a user cannot be undone.
 . Click *Delete*.
 
+== Admin: Resolve Expiring Certificates
+
+As an administrator, you will need to renew Salesforce certificates every twelve months.
+
+To renew an expiring certificate:
+
+. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
+. In the *Configure MuleSoft Services* row, click *Initiate Configuration*. +
+The Salesforce Certificate is renewed.
+
 === Enable Multiple Identification Providers (IDP)
 
 As an administrator, you can enable users to add identity providers (IDPs) for their organization. Note that:

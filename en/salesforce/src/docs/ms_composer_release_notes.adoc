@@ -13,7 +13,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* In NetSuite Connector, empty field values are ignored by default; however, to clear empty values instead, you can now select the `Clear on Null Values` option.
+* In NetSuite Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

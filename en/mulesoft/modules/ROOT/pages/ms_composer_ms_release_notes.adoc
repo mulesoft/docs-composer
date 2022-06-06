@@ -4,6 +4,25 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== June 6, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue |ID
+|In Workday Connector, the connection validation now succeeds even if the user does not have access to the `Performance_Management` service. |W-11193505
+|Fixed reported security vulnerabilities in Workday Connector by upgrading the Spring Framework library from `org.springframework:spring-context:5.3.18` to `org.springframework:spring-context:5.3.20`. |W-11195299
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+
 == May 31, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

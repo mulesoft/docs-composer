@@ -299,6 +299,24 @@ To enable email notifications:
 . Toggle the button to enable email notifications.
 . Click *Save*.
 
+== Connect Composer to Anypoint Platform
+
+Organizations who own MuleSoft Composer and Anypoint Platform can connect the two products to unlock additional capabilities.
+
+To link Composer to Anypoint Platform:
+
+* In *Access Management*, in the left pane, click *Composer Sync*.
+* In the *Composer Sync Orgs* page, click *Add Composer Orgs*.
+* In the *Add organization* window, int he *Organization ID* box, enter your Composer Organization and then click *Add*.
+
+[NOTE]
+
+You can locate your Composer Organization ID by navigating to *Composer* > *Settings* > *Account* > *General Information*.
+
+*  
+
+
+
 endif::[]
 
 ifeval::["{product}"=="salesforce"]

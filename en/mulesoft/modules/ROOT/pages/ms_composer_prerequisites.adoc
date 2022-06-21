@@ -301,7 +301,7 @@ To enable email notifications:
 
 == Connect Composer to Anypoint Platform
 
-Organizations that use both MuleSoft Composer and Anypoint Platform can connect the two products to unlock additional capabilities.
+Organizations that use both MuleSoft Composer and Anypoint Platform can connect the two products.
 
 To link Composer to Anypoint Platform:
 

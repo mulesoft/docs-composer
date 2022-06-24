@@ -20,7 +20,6 @@ Environment::
 
 The Base URI for the Zuora tenant. For more information, see the https://www.zuora.com/developer/api-reference/#section/Introduction/Access-to-the-API[Zuora documentation].
 
-
 == Actions
 
 include::_partials/action-definition.adoc[]

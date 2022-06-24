@@ -18,7 +18,7 @@ The OAuth Client Secret registered with Zuora.
 
 Environment::
 
-The Base URI for the Zuora tenant. See the https://www.zuora.com/developer/api-reference/#section/Introduction/Access-to-the-API[Zuora documentation].
+The Base URI for the Zuora tenant. For more information, see the https://www.zuora.com/developer/api-reference/#section/Introduction/Access-to-the-API[Zuora documentation].
 
 
 == Actions

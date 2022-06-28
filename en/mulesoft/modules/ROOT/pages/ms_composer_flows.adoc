@@ -162,7 +162,7 @@ Note that you can only enter text or select a single data pill for a field. If y
 When there are null values in custom expressions and are:
 
 * Fields without attributes, the null value is ignored. If the value in a required field, an error message occurs. If the value is in an optional field, the value is ignored and not sent to the connector. +
-For NetSuite Connector and Salesforce Connector, select the gear icon and then select `Clear on Null Values` to clear the existing value of the field when the field value is null.
+For NetSuite Connector and Salesforce Connector, click the gear icon and then select `Clear on Null Values` to clear the existing value of the field when the field value is null.
  * Fields with attributes, the value is ignored and not sent to the connector.
 
 == Create a Flow Control

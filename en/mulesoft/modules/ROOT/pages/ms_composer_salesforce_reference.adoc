@@ -68,6 +68,8 @@ To protect your production org:
 +
 Remember to change the connection from sandbox to production in every trigger and action that uses the sandbox connection.
 
+include::_partials/null-values.adoc[]
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
@@ -90,8 +92,6 @@ Records are typically stored for approximately 15 days before being hard-deleted
 == Actions
 
 include::_partials/action-definition.adoc[]
-
-include::_partials/null-values.adoc[]
 
 Create new record::
 

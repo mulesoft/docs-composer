@@ -50,6 +50,8 @@ If your NetSuite configuration preferences are set to run server SuiteScript and
 * The *Execute As Role* field must be set to `Administrator`.
 * The *Log Level* field must be set to `Debug`.
 
+include::_partials/null-values.adoc[]
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
@@ -65,8 +67,6 @@ A new record is created in NetSuite.
 == Actions
 
 include::_partials/action-definition.adoc[]
-
-include::_partials/null-values.adoc[]
 
 Update Record::
 

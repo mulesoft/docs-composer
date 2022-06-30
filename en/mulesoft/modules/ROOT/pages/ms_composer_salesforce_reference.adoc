@@ -91,6 +91,8 @@ Records are typically stored for approximately 15 days before being hard-deleted
 
 include::_partials/action-definition.adoc[]
 
+include::_partials/null-values.adoc[]
+
 Create new record::
 
 Create a standard or custom record.
@@ -111,7 +113,7 @@ image::images/query-builder.png[Query builder UI, 500]
 
 When you add a record that was returned from the *Get records* action, you must add a xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow.
 
-When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`. 
+When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`.
 
 For more information on Field-Level Encryption, see the https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce documentation].
 

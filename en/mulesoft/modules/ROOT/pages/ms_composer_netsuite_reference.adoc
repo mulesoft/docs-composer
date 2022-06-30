@@ -66,6 +66,8 @@ A new record is created in NetSuite.
 
 include::_partials/action-definition.adoc[]
 
+include::_partials/null-values.adoc[]
+
 Update Record::
 
 A record is changed.

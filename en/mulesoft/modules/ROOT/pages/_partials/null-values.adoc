@@ -1,0 +1,3 @@
+== Null Values
+
+By default, Composer ignores fields with empty values. To change this behavior to clear the existing value of the field when the field value is null, click the gear, and then select `Clear on Null Values`.

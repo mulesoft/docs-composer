@@ -50,6 +50,8 @@ If your NetSuite configuration preferences are set to run server SuiteScript and
 * The *Execute As Role* field must be set to `Administrator`.
 * The *Log Level* field must be set to `Debug`.
 
+include::_partials/null-values.adoc[]
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]

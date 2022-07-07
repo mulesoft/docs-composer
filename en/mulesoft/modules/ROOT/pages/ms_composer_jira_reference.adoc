@@ -2,6 +2,8 @@
 
 Jira is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
 
+To use Jira Connector with Composer, you must have the _Administrator Jira_ global permission. For more information, see the https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira documentation].
+
 == Connections
 
 include::_partials/connection-definition.adoc[]

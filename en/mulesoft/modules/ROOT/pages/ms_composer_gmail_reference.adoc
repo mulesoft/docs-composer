@@ -29,7 +29,7 @@ include::_partials/trigger-definition.adoc[]
 
 New email::
 
-This trigger fires when a new email is received in the user’s inbox.
+If you don't specify a  https://developers.google.com/gmail/api/guides/labels[filter^], this trigger fires on all emails (received, sent, or drafts).
 
 == Actions
 

@@ -13,7 +13,10 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now delete OAuth connectors from your flows.
+* When deleting a connection, a list of active and inactive flows using the selected connection now appears. Using this list, if the connection is:
+** Not used in any flows, you can delete the connection.
+** Used in inactive flows, a list containing the name and count of inactive flows using this connection appears. Deleting this connection will affect the listed flows. If you reopen the inactive flow, you must select a new connection.
+** Used in active and inactive flows, a list containing the name, count, and status of active and inactive flows using this connection appears. If you choose to delete the connection, secondary confirmation appears. Prior to deleting the connection, Composer will first attempt to stop the flows.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

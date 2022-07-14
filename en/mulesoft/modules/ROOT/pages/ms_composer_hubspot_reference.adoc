@@ -1,0 +1,42 @@
+= Hubspot Connector Reference
+
+HubSpot offers a full platform of marketing, sales, customer service, and CRM software — plus the methodology, resources, and support — to help businesses grow
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Bearer Token::
+
+The Bearer Token connection provider allows the user to configure a connection that uses a bearer token to authorize a call made to one of the Hubspot API endpoints. The connection sets the value of the Authorization field to “Bearer [TOKEN]. The token can be obtained either by generating a private or a public app. Once you've created your app, you can start making API calls using the app's access token. If you need to edit your app's info or change its scopes. 
+
+Private app access tokens used for Bearer token authorization are implemented on top of OAuth.
+[NOTE]
+Token refresh can only be done manually from the web interface, no API is exposed for performing this task programmatically from the connector. The HubSpot rotate procedure can be found https://developers.hubspot.com/docs/api/private-apps[here]
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create record::
+
+This operation creates an object in hubspot.
+
+Update record::
+
+This operation performs a partial update of an Object identified by {recordId} and {recordType}. {recordId} refers to the internal object ID. {recordType} refers to the type of the object(i.e.: company, contact). Provided property values will be overwritten. Read-only and non-existent properties will be ignored. Properties values can be cleared by passing an empty string.
+
+Create or update record::
+
+This operation performs an upsert (update or insert) of an Object identified by {recordId} and {recordType}. {recordId} refers to the internal object ID and {recordType} refers to the type of the object(i.e.: company, contact). Provided property values will be overwritten. Read-only and non-existent properties will be ignored. Properties values can be cleared by passing an empty string. 
+This operation firstly tries to do an update of the specified record using the HubSpot id (or email in the case of a contact). If the update fails (because the id/email does not exist) then the operation creates the record with the provided properties.
+
+
+== Objects
+
+The objects which are supported by Hubpsot at the moment are company and contact.
+
+
+include::_partials/see-also.adoc[]

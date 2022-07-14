@@ -11,6 +11,7 @@ Note that flows are private and cannot be shared.
 
 You can create a new flow or clone an existing flow.
 
+[[create-a-new-flow]]
 === Create a New Flow
 
 To create a new flow:
@@ -135,14 +136,17 @@ To repair a connection:
 
 If you no longer need a specific OAuth connection, you can delete it.
 
-When you attempt to delete a connection, Composer....  
+When you attempt to delete a connection, Composer ensures that deleting the connection will not affect other flows.
 
 To delete a connection:
 
-. Open the flow.
-. Click *Edit*.
-. Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
-. Click *Repair*.
+. <<create-a-new-flow,Create a new flow.>>
+. In the *What Should Start This Flow?* window, click the change icon. +
+The current connections appear.
+. Next to the connection that you want to delete, click the trashcan. +
+A message appears ensuring that you want to delete the selected connection and lists any flows currently using that connection. If any flows are using that connection, you must first <<change-a-connection,change the connection>> for those flows.
+* Click *Delete*. +
+The OAuth connection is deleted.
 
 == Schedule a Flow
 

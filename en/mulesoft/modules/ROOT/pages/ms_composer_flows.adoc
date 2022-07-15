@@ -11,6 +11,7 @@ Note that flows are private and cannot be shared.
 
 You can create a new flow or clone an existing flow.
 
+[[create-a-new-flow]]
 === Create a New Flow
 
 To create a new flow:
@@ -130,6 +131,27 @@ To repair a connection:
 . Click *Edit*.
 . Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
 . Click *Repair*.
+
+== Delete a Connection
+
+If you no longer need a specific connection, you can delete it.
+
+To delete a connection:
+
+. <<create-a-new-flow,Create a new flow>> or add a step to an existing flow.
+. If you create a new flow:
+ .. Select the connector or system to start your flow.
+ .. In the *What Should Start This Flow?* window, click the gear icon.
+. If you add a step to an existing flow:
+ .. Select the connector or system to start your flow.
+ .. In the *Next Step* window, click the gear icon.
+. In the *Manage <Connector Name> Connections* window, next to the connection that you want to delete, click the trashcan. +
+A message appears ensuring that you want to delete the selected connection. A window appears, displaying a list of flows currently using that connection. If the connection is: +
+* Not used in any flows, you can delete the connection.
+* Used in inactive flows, a list containing the name and count of inactive flows using this connection appears. Deleting this connection will affect the listed flows. If you reopen the inactive flow, you must <<change-a-connection,select a new connection>>.
+* Used in active and inactive flows, a list containing the name, count, and status of active and inactive flows using this connection appears. If you choose to delete the connection, secondary confirmation appears. Prior to deleting the connection, Composer will first attempt to stop the flows.
+. Click *Delete*. +
+The connection is deleted.
 
 == Schedule a Flow
 

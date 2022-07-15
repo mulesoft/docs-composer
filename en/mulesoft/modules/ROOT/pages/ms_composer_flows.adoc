@@ -136,8 +136,6 @@ To repair a connection:
 
 If you no longer need a specific connection, you can delete it.
 
-When you attempt to delete a connection, Composer
-
 To delete a connection:
 
 . <<create-a-new-flow,Create a new flow>> or add a step to an existing flow.

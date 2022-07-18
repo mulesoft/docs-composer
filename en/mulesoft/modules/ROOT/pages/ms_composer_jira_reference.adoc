@@ -4,7 +4,7 @@ Jira is a powerful project management tool and ticketing system used to help use
 
 To use Jira Connector with Composer, you must have the _Administrator Jira_ global permission. For more information, see the https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira documentation].
 
-When using custom fields in Jira connector, the following field types are supported:
+When using custom fields in Jira Connector, the following field types are supported:
 
 * Float
 * Select

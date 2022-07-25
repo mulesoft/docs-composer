@@ -3,8 +3,8 @@
 * xref:ms_composer_ms_release_notes.adoc[Release Notes]
 
 * xref:ms_composer_prerequisites.adoc[Getting Started]
-* xref:ms_composer_about_flows.adoc[How Composer Works]
-* xref:ms_composer_checklist.adoc[Preparation Checklist]
+** xref:ms_composer_about_flows.adoc[How Composer Works]
+** xref:ms_composer_checklist.adoc[Preparation Checklist]
 * xref:ms_composer_flows.adoc[Build a Flow]
 * xref:ms_composer_custom_expression_editor.adoc[Build Formulas for Flows]
 * xref:ms_composer_test_flow.adoc[Test a Flow]

@@ -20,6 +20,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 Note that the objects will appear in all caps and with underscores.
 
+* NetSuite Connector now supports exponential retries which prevent concurrency limit errors.
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 include::_partials/platform-ki-july22.adoc[]

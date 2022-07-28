@@ -18,6 +18,7 @@
 ** xref:ms_composer_google_calendar_reference.adoc[Google Calendar]
 ** xref:ms_composer_googlesheets_reference.adoc[Google Sheets]
 ** xref:ms_composer_http_reference.adoc[HTTP]
+** xref:ms_composer_hubspot_reference.adoc[HubSpot]
 ** xref:ms_composer_jira_reference.adoc[Jira]
 ** xref:ms_composer_ms_teams_reference.adoc[Microsoft Teams]
 ** xref:ms_composer_netsuite_reference.adoc[NetSuite]

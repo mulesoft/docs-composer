@@ -1,0 +1,48 @@
+= HubSpot Connector Reference
+
+HubSpot offers a full platform of marketing, sales, customer service, and CRM software, as well as methodology, resources, and support, to help businesses grow.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies this connection from others.
+
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Bearer token::
+
+The HubSpot account access token.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create new record::
+
+Create a company or a contact in HubSpot.
+
+To create a new company, provide a value for *Company Name*.
+
+To create a new contact, provide a value for *Contact Name*.
+
+Update a record::
+
+Update a company or a contact in HubSpot as specified by an external ID.
+
+To update a company or a contact, provide a value for *HubSpot ID*.
+
+Create or update record::
+
+Create or update a company or a contact in HubSpot in a single step.
+
+To create or update a company, provide a value for *HubSpot ID*.
+
+To create or update a contact, provide a value for *External ID Field to Match*.
+
+include::_partials/see-also.adoc[]

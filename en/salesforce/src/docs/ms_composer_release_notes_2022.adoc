@@ -9,9 +9,9 @@ New versions are automatically available once they are released; you don't need 
 //| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
-//== July 29, 2022
+== July 29, 2022
 
-//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 //* Required fields in Composer are now denoted with an asterisk (*).
 
@@ -21,10 +21,25 @@ New versions are automatically available once they are released; you don't need 
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-//* You can now connect a new system: HubSpot.
-//+
+* You can now connect a new system: HubSpot.
++
 
-//See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 may not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
 
 
 //include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

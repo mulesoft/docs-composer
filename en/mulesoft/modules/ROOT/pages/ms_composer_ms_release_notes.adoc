@@ -8,11 +8,6 @@ New versions are automatically available once they are released; you don't need 
 
 // include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-//* Required fields in Composer are now denoted with an asterisk (*). Previously, when adding fields in Composer, only optional fields appeared in the modals. Now:
-// ** If a parent field is selected or deselected and it has required child fields, those child fields are also selected or deselected by default.
-// ** If a field is selected or deselected, and it has required parent fields, those parent fields are also selected or deselected by default.
-// ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
-
 //* You can now connect a new system: Salesforce Marketing Cloud Connector.
 //+
 
@@ -51,6 +46,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* Required fields in Composer are now denoted with an asterisk (*). Previously, when adding fields in Composer, only optional fields appeared in the modals. Now:
+
+ ** When a parent field is selected or deselected and it has required child fields, those child fields are also selected or deselected by default.
+ ** When a field is selected or deselected and it has required parent fields, those parent fields are also selected or deselected by default.
+ ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
+ +
+Note that required fields can only be removed by deselecting them within the modal. 
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

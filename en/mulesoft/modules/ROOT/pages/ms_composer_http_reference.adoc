@@ -56,7 +56,7 @@ To test the connection, provide a value for the following fields:
 * *Request Headers*
   ** *Key*
   ** *Value*
-* *Request Body*: This option appears when the HTTP method is POST and is the body of the request message. 
+* *Request Body*: This option appears when the HTTP method is POST and is the body of the request message.
 
 Click *Connect* to test the connection. A message appears to indicate the connection was created successfully (indicated by a response code of `200`) or that an error occurred.
 
@@ -74,7 +74,8 @@ The following fields are applicable for HTTP Connector:
 
 |Relative URL |String |URL for the target of the request without considering the base path.
 
-|Action |String |The type of request.
+|Action |String |The type of request. You must choose between *Request* or *Paginated Request*.
+
 
 |HTTP Method |String a|The HTTP method for the request. The following HTTP methods are available:
 
@@ -94,6 +95,17 @@ The following fields are applicable for HTTP Connector:
 
 |*Example Response* |String |An example response in JSON format. If you provide a value for this field, Composer parses the example JSON payload and provides data pills that match the JSON fields.
 
+|*Array Path* |String |The path to the JSON array. The value from the *Array Path* field is selected by default, but a different value can be selected from the dropdown. This value only appears if the value in the *Action* field is set to *Paginated Request*.
+
+|*Pagination Type* |String |The type of pagination for the request. The following Pagination Types are available:
+
+* *Page Number*: If this value is selected, provide a value in the *Page Number Parameter Name* field.
+* *Marker*: If this value is selected, provide a value in the *Marker Parameter Name* field.
+* *Marker*: If this value is selected, provide a value in the *Marker Parameter Name* field.
+* *Link Header*: If this value is selected, provide a value in the *Link Relation* field.
+
+|*Filtering Parameter* |Free text, string, data pill |Field to define how this trigger is used. This field is defined by the user in the *Query Parameter* or the *Header* field.
+
 |===
 
 == Actions
@@ -101,12 +113,28 @@ The following fields are applicable for HTTP Connector:
 include::_partials/action-definition.adoc[]
 
 Request in HTTP::
-A request in HTTP returns the fields of the response payload. A value is required for the following fields:
+When *Request* is selected in the *Action* field, a request in HTTP returns the fields of the response payload. A value is required for the following fields:
 
 * *Action*
 * *HTTP Method*
 * *Path*
 * *Example Response*
+* Optionally, if you click *Add Query Parameters*, provide a value for the following fields:
+  ** *Key*
+  ** *Value*
+* Optionally, if you click *Add Headers*, provide a value for the following fields:
+  ** *Key*
+  ** *Value*
+
+Paginated Request in HTTP::
+When *Paginated Request* is selected in the *Action* field, a paginated HTTP request is initiated. A Paginated Request returns a list of items which subsequent flow steps can use in a For Each Loop. Composer automatically uses the pagination configuration to fetch data from the API. A value is required for the following fields:
+
+* *Action*
+* *HTTP Method*
+* *Path*
+* *Example Response*
+* *Array Path*
+* *Pagination Type*
 * Optionally, if you click *Add Query Parameters*, provide a value for the following fields:
   ** *Key*
   ** *Value*

@@ -1,0 +1,35 @@
+= MuleSoft Automation Credits
+
+//RELEASE NOTE: To facilitate MuleSoft Automation, the subscription pricing method has been reevaluated for MuleSoft Composer. For more details, see https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans].
+
+Your MuleSoft Automation subscription plan includes a quota of MuleSoft Automation Credits that you can use with MuleSoft RPA, MuleSoft Composer or a combination of both products. As you use processes to create automations, your total credit quota is depleted.
+
+The following table shows the conversion rate between Automation Credits and different activities:
+
+[%header%autowidth.spread]
+
+|===
+
+|RPA Bot Minutes |RPA API Calls |Composer Tasks
+
+|1 Automation Credit = 5 |1 Automation Credit = 100 |1 Automation Credit = 50
+
+|===
+
+You can use any combination of these activities, which aggregate over the term of your subscription (not per session), and are then converted to credits as shown. Then, the credits are deducted from your assigned quota for the subscription period.
+
+Note that in the event that a task takes less than 1 minute, RPA Bot Minutes are rounded up to the nearest minute.
+
+For detailed definitions and more information, see the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans].
+
+== Automation Credit Definitions
+
+RPA Bot Minutes::
+Robotic Process Automation (“RPA”) Bot Minutes: The number of minutes running process automations across all bot sessions. A single bot may run multiple parallel sessions, with RPA Bot Minutes counting  for each  parallel session.  Multiple bots may be configured to run the same process, with RPA Bot Minutes counting   for each of these separate bot sessions.  Test runs or process runs in the test phase are also counted towards RPA Bot Minutes.
+
+Composer Task::
+A Composer Task is any action executed on a Composer Connector, including but not limited to read, create, update, and delete.
+
+RPA API Calls::
+
+Robotic Process Automation (“RPA”) API Call: occurs when Customer invokes an API to perform an operation, including, but not limited to  lookup, validate, create, update, or delete data in a system as part of an RPA process.

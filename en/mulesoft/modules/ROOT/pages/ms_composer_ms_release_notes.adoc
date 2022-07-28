@@ -28,6 +28,8 @@ New versions are automatically available once they are released; you don't need 
 
 // *The HTTP Connector Scheduler now includes Timestamps.
 
+//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
 //==== Composer Platform
 
 //[%header%autowidth.spread]

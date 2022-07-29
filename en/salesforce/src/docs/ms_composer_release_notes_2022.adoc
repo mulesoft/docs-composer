@@ -29,10 +29,6 @@ New versions are automatically available once they are released; you don't need 
 // *** Message to channel
 // *** Direct message to user
 
-//* HTTP Connector now supports Paginated Requests. When retrieving collections of objects from remote systems, use Paginated Requests to ensure that all data pages are returned.
-
-// *The HTTP Connector Scheduler now includes Timestamps.
-
 //include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 //include::_partials/platform-ki-july22.adoc[]
@@ -70,7 +66,11 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
  ** When a field is selected or deselected and it has required parent fields, those parent fields are also selected or deselected by default.
  ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
  +
-Note that required fields can only be removed by deselecting them within the modal. 
+Note that required fields can only be removed by deselecting them within the modal.
+
+* HTTP Connector now supports Paginated Requests. When retrieving collections of objects from remote systems, use Paginated Requests to ensure that all data pages are returned.
+
+* Flows based on a scheduler now have access to the scheduler's current and previous timestamps.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

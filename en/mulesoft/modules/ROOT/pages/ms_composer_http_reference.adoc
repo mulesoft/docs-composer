@@ -104,7 +104,7 @@ The following fields are applicable for HTTP Connector:
 * *Marker*: If this value is selected, provide a value in the *Marker Parameter Name* field.
 * *Link Header*: If this value is selected, provide a value in the *Link Relation* field.
 
-|*Filtering Parameter* |Free text, string, data pill |Field to define how this trigger is used. This field is defined by the user in the *Query Parameter* or the *Header* field.
+|*Maximum Number of Pages* |Number |The maximum number of pages returned from the API in requests.
 
 |===
 

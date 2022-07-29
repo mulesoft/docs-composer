@@ -79,6 +79,10 @@
               "title": "HTTP"
             },
             {
+              "file" : "ms_composer_hubspot_reference.adoc",
+              "title": "HubSpot"
+            },
+            {
               "file" : "ms_composer_jira_reference.adoc",
               "title": "Jira"
             },

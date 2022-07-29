@@ -127,7 +127,7 @@ When *Request* is selected in the *Action* field, a request in HTTP returns the 
   ** *Value*
 
 Paginated Request in HTTP::
-When *Paginated Request* is selected in the *Action* field, a paginated HTTP request is initiated. A Paginated Request returns a list of items which subsequent flow steps can use in a For Each Loop. Composer automatically uses the pagination configuration to fetch data from the API. A value is required for the following fields:
+When *Paginated Request* is selected in the *Action* field, a paginated HTTP request is initiated. A Paginated Request returns a list of items that subsequent flow steps can use in a For Each Loop. Composer automatically uses the pagination configuration to fetch data from the API. A value is required for the following fields:
 
 * *Action*
 * *HTTP Method*

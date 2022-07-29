@@ -62,6 +62,7 @@ Required fields can be removed only by deselecting them within the modal.
 * HTTP Connector now supports Paginated Requests. When retrieving collections of objects from remote systems, use Paginated Requests to ensure that all data pages are returned.
 
 * Flows based on a scheduler now have access to the scheduler's current and previous timestamps.
+* NetSuite Connector now supports exponential retries which prevent concurrency limit errors.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

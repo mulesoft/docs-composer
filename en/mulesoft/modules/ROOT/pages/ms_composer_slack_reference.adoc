@@ -1,6 +1,6 @@
 = Slack Connector Reference
 
-Use Slack as a data target. For example, you can send a Slack message when a Salesforce opportunity is won.
+Use Slack as a data source or target. For example, you can send a Slack message when a Salesforce opportunity is won.
 Some details of how to work with data in a flow are specific to this system, and to the actions you choose.
 
 == Connections
@@ -23,7 +23,7 @@ include::_partials/trigger-definition.adoc[]
 
 On New Message::
 
-When this trigger fires, attachments from a new message are available as datapills for subsequent steps.
+When this trigger fires, attachments from a new message are available as data pills for subsequent steps.
 
 
 == Actions
@@ -60,12 +60,12 @@ Find a Slack user by entering their email address into the *Email* field.
 +
 If you want to fetch the user's ID dynamically, you can insert this action, which fetches the Slack user by an email address from another system. Use the *ID* data pill returned by this action to specify the user who should receive the message.
 
-Post message to channel::
+//Post message to channel::
 
-When a message is posted to a channel, you can specify a list of attachments to include in the message.
+//When a message is posted to a channel, you can specify a list of attachments to include in the message.
 
-Sent a direct message to a user::
+//Sent a direct message to a user::
 
-When a direct message is sent, you can specify a list of attachments to include in the message.
+//When a direct message is sent, you can specify a list of attachments to include in the message.
 
 include::_partials/see-also.adoc[]

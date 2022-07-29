@@ -49,7 +49,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
  ** When a field is selected or deselected and it has required parent fields, those parent fields are also selected or deselected by default.
  ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
  +
-Note that required fields can only be removed by deselecting them within the modal.
+Required fields can be removed only by deselecting them within the modal.
 
 * HTTP Connector now supports Paginated Requests. When retrieving collections of objects from remote systems, use Paginated Requests to ensure that all data pages are returned.
 

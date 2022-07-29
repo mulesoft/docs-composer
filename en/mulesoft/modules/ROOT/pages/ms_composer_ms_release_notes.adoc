@@ -25,7 +25,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3
 
 |Known Issue|Workaround |ID
 
-|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 may not appear in the list. | |
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 may not appear in the list. | |
 |===
 
 include::_partials/workday-ki.adoc[]

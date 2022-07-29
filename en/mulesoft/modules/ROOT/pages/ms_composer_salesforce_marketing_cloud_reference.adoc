@@ -33,7 +33,7 @@ Enter the Authentication Base URI from the Installed Package.
 
 Scopes::
 
-(Optional) Enter the scopes MuleSoft Composer should have access to. This is helpful if your package has access to a larger number of scopes than needed here.
+(Optional) Enter the scopes MuleSoft Composer should have access to. This is helpful if your package has access to a larger number of scopes than are needed here.
 Minimum scope required: offline, email_send, sms_send, list_and_subscribers_read
 
 == Actions

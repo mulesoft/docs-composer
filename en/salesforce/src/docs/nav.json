@@ -103,6 +103,10 @@
               "title": "Salesforce"
             },
             {
+              "file" : "ms_composer_salesforce_marketing_cloud_reference.adoc",
+              "title": "Salesforce Marketing Cloud"
+            },
+            {
               "file" : "ms_composer_servicenow_reference.adoc",
               "title": "ServiceNow"
             },

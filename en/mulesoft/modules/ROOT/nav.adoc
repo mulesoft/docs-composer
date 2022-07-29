@@ -24,6 +24,7 @@
 ** xref:ms_composer_netsuite_reference.adoc[NetSuite]
 ** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]
 ** xref:ms_composer_salesforce_reference.adoc[Salesforce]
+** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]
 ** xref:ms_composer_slack_reference.adoc[Slack]
 ** xref:ms_composer_stripe_reference.adoc[Stripe]

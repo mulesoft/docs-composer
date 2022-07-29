@@ -13,21 +13,15 @@ New versions are automatically available once they are released; you don't need 
 
 //include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-//* Required fields in Composer are now denoted with an asterisk (*).
+//* Required fields in Composer are now denoted with an asterisk (*). Previously, when adding fields in Composer, only optional fields appeared in the modals. Now:
+// ** If a parent field is selected or deselected and it has required child fields, those child fields are also selected or deselected by default.
+// ** If a field is selected or deselected, and it has required parent fields, those parent fields are also selected or deselected by default.
+// ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
 
-//WRITER NOTE: As both of these are added, consolidate into a single RN with the text "...connect to two new systems: Salesforce Marketing Cloud Connector and HubSpot Connector."
 //* You can now connect a new system: Salesforce Marketing Cloud Connector.
 //+
 
 //See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-//* You can now connect a new system: HubSpot.
-//+
-
-//See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-
-//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 //* In Slack Connector, the following new action and triggers are available to enable file message attachments:
 // ** Action: On New message
@@ -61,6 +55,44 @@ New versions are automatically available once they are released; you don't need 
 
 //include::_partials/workday-ki.adoc[]
 
+== July 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: HubSpot.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* Required fields in Composer are now denoted with an asterisk (*). Previously, when adding fields in Composer, only optional fields appeared in the modals. Now:
+
+ ** When a parent field is selected or deselected and it has required child fields, those child fields are also selected or deselected by default.
+ ** When a field is selected or deselected and it has required parent fields, those parent fields are also selected or deselected by default.
+ ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
+ +
+Note that required fields can only be removed by deselecting them within the modal. 
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-july22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
 
 == July 27, 2022
 

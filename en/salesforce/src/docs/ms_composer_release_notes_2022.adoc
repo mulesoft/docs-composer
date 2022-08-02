@@ -27,7 +27,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 
 |Issue |ID
-|In NetSuite Connector, connections using lowercase values in the `Account ID` field no longer fail. |W-10575461
+|Labels are now properly capitalized in ServiceNow Connector. |W-10575461
+|In NetSuite Connector, connections using lowercase values in the `Account ID` field no longer fail. |W-11469671
 
 |===
 

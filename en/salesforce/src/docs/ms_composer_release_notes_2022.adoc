@@ -15,6 +15,22 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In Salesforce Connector, you can now specify conditions for triggers.
 
+* The following Record Types are now available for NetSuite Connector:
+ ** SERVICE_RESALE_ITEM
+ ** TIME_SHEET
+ ** TIME_BILL
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue |ID
+|Fixed the issue in ServiceNow Connector in which some labels were not properly capitalized. |W-10575461
+
+|===
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 include::_partials/platform-ki-July22.adoc[]

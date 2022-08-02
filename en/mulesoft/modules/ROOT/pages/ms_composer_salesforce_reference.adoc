@@ -91,12 +91,12 @@ Records are typically stored for approximately 15 days before being hard-deleted
 
 === Trigger Conditions
 
-You can add trigger conditions to specify which conditions should trigger a workflow. For example, you can restrict a workflow to trigger only when a specific field meets the conditions you specify.
+You can add trigger conditions to specify which conditions should trigger a workflow, for example, you can restrict a workflow to trigger only when a specific field meets the conditions you specify.
 
 To add a trigger condition:
 
 . Select a trigger.
-. In the *Trigger Conditions* section, click on the *Criteria* dropdown menu and select either All Conditions Must Be Met (AND) or Any Condition Must Be Met (OR).
+. In the *Trigger Conditions* section, click on the *Criteria* dropdown menu and select either *All Conditions Must Be Met (AND)* or *Any Condition Must Be Met (OR)*.
 . Specify your conditions for specific fields.
 
 To add more trigger conditions, click *Add Condition*.

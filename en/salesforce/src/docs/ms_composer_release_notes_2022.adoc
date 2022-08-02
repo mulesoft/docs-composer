@@ -50,7 +50,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki-july22.adoc[]
+include::_partials/platform-ki-July22.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -94,7 +94,7 @@ Required fields can be removed only by deselecting them within the modal.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki-july22.adoc[]
+include::_partials/platform-ki-July22.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -127,7 +127,7 @@ Note that the objects will appear in all caps and with underscores.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki-july22.adoc[]
+include::_partials/platform-ki-July22.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 
@@ -159,7 +159,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki-july22.adoc[]
+include::_partials/platform-ki-July22.adoc[]
 
 include::_partials/google-sheets-ki.adoc[]
 

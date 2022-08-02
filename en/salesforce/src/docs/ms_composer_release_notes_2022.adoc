@@ -15,7 +15,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In Salesforce Connector, you can now specify conditions for triggers.
 
-* The following Record Types are now available for NetSuite Connector:
+* The following record types are now available for NetSuite Connector:
  ** SERVICE_RESALE_ITEM
  ** TIME_SHEET
  ** TIME_BILL

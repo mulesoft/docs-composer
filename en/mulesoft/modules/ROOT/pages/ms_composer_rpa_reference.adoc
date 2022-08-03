@@ -16,7 +16,7 @@ Extract data from PDF, CSV, and other file formats and send this data to other s
 Automate payroll data entry and validate the information across multiple systems.
 * Price comparisons +
 Automate the monitoring of input prices and competitor prices.
-* Processing Refunds +
+* Processing refunds +
 Automate the processing of customer refund requests to make them quicker and provide the best experience for customers.
 * Customer Information Updates +
 Update customer information automatically across different systems that do not have an API and that are accessible only through the UI.

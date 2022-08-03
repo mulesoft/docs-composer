@@ -1,6 +1,6 @@
-= RPA Connector Reference
+= MuleSoft RPA Connector Reference
 
-https://docs.mulesoft.com/rpa-home/[Robotic Process Automation (RPA)] is a software technology that combines robotics and automation to perform repetitive tasks. RPA uses a software bot to mimic the actions a person would take, by automating repetitive manual tasks like entering text and updating fields through one or multiple application user interfaces.
+https://docs.mulesoft.com/rpa-home/[Mulesoft Robotic Process Automation (RPA)] is a software technology that combines robotics and automation to perform repetitive tasks. RPA uses a software bot to mimic the actions a person would take, by automating repetitive manual tasks like entering text and updating fields through one or multiple application user interfaces.
 
 //For more information on metering and billing for Composer and RPA, see xref:ms_composer_task_metering.adoc[MuleSoft Automation Credits].
 
@@ -35,17 +35,21 @@ After creating the flows, xref:ms_composer_test_flows.adoc[test the flows] to en
 
 include::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+Connection Display Name::
 
-Username::
+Enter a connection name that will help you remember the details of this connection. You can reuse connections multiple times in a single flow, and in more than one flow, and the credentials are hidden after you create the connection. Therefore, it’s helpful to provide a name that easily identifies this connection from others.
 
-The username that you use to log in to RPA.
+Only you can see the connection. Other users in your Composer app must create their own connections.
 
-Password::
+Older connections may expire if not regularly used. Asana sets the amount of time a connection remains valid.
 
-The password that you use to log in to RPA.
+RPA API URL::
 
-API Key::
+The URL that you used to log in to RPA, for example, `my0rg.rpa.mulesoft.com`.
+
+API key::
+
+The authentication code for the user. The API key is generated in the https://docs.mulesoft.com/rpa-manager/usermanagement-connect#create-an-api-key-for-a-user[RPA User Management] module.
 
 
 == Triggers
@@ -56,13 +60,14 @@ RPA Poll Trigger::
 
 Create listeners that check the status of a specific RPA process. When the RPA process finishes the execution, the polling trigger starts processing the configured activities in the Composer flow.
 
-
 == Actions
 
 include::_partials/action-definition.adoc[]
 
 Invoke RPA Process::
 
-Create a standard or custom record.  Provide a value for *RPA Process Name*.
+Create a standard or custom record. Provide a value for *RPA Process Name*.
 
 include::_partials/see-also.adoc[]
+
+* https://docs.mulesoft.com/rpa-home/[Mulesoft Robotic Process Automation (RPA)]

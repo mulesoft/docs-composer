@@ -99,6 +99,10 @@
               "title": "QuickBooks Online"
             },
             {
+              "file" : "ms_composer_rpa_reference.adoc",
+              "title": "MuleSoft RPA"
+            },
+            {
               "file" : "ms_composer_salesforce_reference.adoc",
               "title": "Salesforce"
             },

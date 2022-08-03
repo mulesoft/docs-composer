@@ -6,7 +6,7 @@ https://docs.mulesoft.com/rpa-home/[Mulesoft Robotic Process Automation (RPA)] i
 
 == RPA Use Cases
 
-Your company can benefit in many ways by implementing RPA into their processes, either by saving time, reducing costs, or preventing errors caused by human input.
+You can benefit in many ways by implementing RPA into your processes, either by saving time, reducing costs, or preventing errors caused by human input.
 
 The most common use cases for RPA include:
 

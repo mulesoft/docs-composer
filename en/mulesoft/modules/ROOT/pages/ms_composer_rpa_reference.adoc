@@ -27,7 +27,7 @@ When invoking RPA processes from Composer, a two-flow Composer scenario is only 
 
 For long-running processes, you can configure two flows that finish within the Composer flow timeout period, which avoids blocking other events that would be queued for processing.
 
-If multiple users create invoke or poll flows for the same process, it is best practice to track execution IDs via the external database. Therefore, you can process only your executions in poll-trigger flows, not another user’s executions.
+If multiple users create invoke or poll flows for the same process, track execution IDs via the external database. You can process only your executions in poll-trigger flows, not another user’s executions.
 
 After creating the flows, xref:ms_composer_test_flow.adoc[test the flows] to ensure that the RPA process completes in less than three minutes for each flow.
 

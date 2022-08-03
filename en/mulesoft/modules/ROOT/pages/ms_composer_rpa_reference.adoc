@@ -38,14 +38,14 @@ include::_partials/connection-definition.adoc[]
 Connection Display Name::
 
 Enter a connection name that will help you remember the details of this connection. You can reuse connections multiple times in a single flow, and in more than one flow, and the credentials are hidden after you create the connection. Therefore, it’s helpful to provide a name that easily identifies this connection from others.
-
++
 Only you can see the connection. Other users in your Composer app must create their own connections.
-
++
 Older connections may expire if not regularly used. Asana sets the amount of time a connection remains valid.
 
 RPA API URL::
 
-The URL provided by the RPA Admin who is creating the processes that you want to integrate via Composer, for example, `https://myOrg.rpa.mulesoft.com/rpa/api/v1`.
+The URL provided by the RPA Admin who is creating the processes that you want to integrate via Composer, for example, `\https://myOrg.rpa.mulesoft.com/rpa/api/v1`.
 
 API key::
 
@@ -57,7 +57,7 @@ include::_partials/trigger-definition.adoc[]
 
 RPA Process Execution Completed::
 
-Create listeners that check the status of a specific RPA process. When the RPA process finishes the execution, the polling trigger starts processing the configured activities in the Composer flow. Note that you must select whether you want listeners for _successful_ or _failed_ executions. You cannot receive notifications for both. 
+Create listeners that check the status of a specific RPA process. When the RPA process finishes the execution, the polling trigger starts processing the configured activities in the Composer flow. Note that you must select whether you want listeners for _successful_ or _failed_ executions. You cannot receive notifications for both.
 
 == Actions
 

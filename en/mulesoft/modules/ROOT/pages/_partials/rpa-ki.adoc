@@ -1,0 +1,23 @@
+==== RPA
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|If connecting to a different RPA than the one for which that the existing flow was built, the current RPA process is not automatically mapped to the processes in the new org.
+
+a| Complete the following steps:
+
+. Delete the step in the flow.
+. Re-add the step in the flow.
+. Refresh the process list.
+. Select the new process.
+| None
+
+|When getting a JSON from RPA, you can pass a list of objects to a connector supporting lists. For example, you can pass the list of order line items to NetSuite. |None | None.
+
+|When getting a JSON from RPA, you cannot use primitive values of a list when iterating the list. For example, a list of strings can be iterated, but you cannot do anything with the resulting values. |None |None
+
+|===

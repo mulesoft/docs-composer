@@ -14,7 +14,7 @@ The most common use cases for RPA include:
 Extract data from PDF, CSV, and other file formats and send this data to other systems.
 * Payroll processing +
 Automate payroll data entry and validate the information across multiple systems.
-* Price Comparisons +
+* Price comparisons +
 Automate the monitoring of input prices and competitor prices.
 * Processing Refunds +
 Automate the processing of customer refund requests to make them quicker and provide the best experience for customers.

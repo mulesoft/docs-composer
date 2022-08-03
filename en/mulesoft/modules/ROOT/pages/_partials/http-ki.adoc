@@ -10,6 +10,6 @@
 
 |Some API endpoints expect a list as input. Composer only supports creating one list from another. |Add a previous step that returns a list to your flow and use it as a basis for the list required in the HTTP request. |
 
-|When testing a connection, the *Request Body* field appears even if the *Request Method* field is set to `GET`. |None. |
+|When testing a connection, the *Request Body* field appears even if the *Request Method* field is set to `GET`. |None |
 
 |===

@@ -1,0 +1,70 @@
+= MuleSoft RPA Connector Reference
+
+https://docs.mulesoft.com/rpa-home/[Mulesoft Robotic Process Automation (RPA)] is a software technology that combines robotics and automation to perform repetitive tasks. RPA uses a software bot to mimic the actions a person would take, by automating repetitive manual tasks like entering text and updating fields through one or multiple application user interfaces.
+
+//For more information on metering and billing for Composer and RPA, see xref:ms_composer_task_metering.adoc[MuleSoft Automation Credits].
+
+== RPA Use Cases
+
+You can benefit in many ways by implementing RPA into your processes, either by saving time, reducing costs, or preventing errors caused by human input.
+
+The most common use cases for RPA include:
+
+* Data extraction and data entry +
+Extract data from PDF, CSV, and other file formats and send this data to other systems.
+* Payroll processing +
+Automate payroll data entry and validate the information across multiple systems.
+* Price comparisons +
+Automate the monitoring of input prices and competitor prices.
+* Processing refunds +
+Automate the processing of customer refund requests to make them quicker.
+* Customer information updates +
+Update customer information automatically across different systems that do not have APIs and that are accessible only through the UI.
+
+== Invoke Two Composer Flows for RPA
+
+When invoking RPA processes from Composer, a two-flow Composer scenario is only required when the RPA process takes longer than the allowed completion timeout period, which is three minutes.
+
+For long-running processes, you can configure two flows that finish within the Composer flow timeout period, which avoids blocking other events that would be queued for processing.
+
+If multiple users create invoke or poll flows for the same process, track execution IDs via the external database. You can process only your executions in poll-trigger flows, not another user’s executions.
+
+After creating the flows, xref:ms_composer_test_flow.adoc[test the flows] to ensure that the RPA process completes in less than three minutes for each flow.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name::
+
+Enter a connection name to remember the details of this connection. You can reuse connections multiple times in a single flow, and in more than one flow, and the credentials are hidden after you create the connection. Provide a name that easily identifies this connection from others.
++
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+RPA API URL::
+
+The URL provided by the RPA Admin who is creating the processes that you want to integrate via Composer, for example, `\https://myOrg.rpa.mulesoft.com/rpa/api/v1`.
+
+API key::
+
+The authentication code for the user. The API key is generated in the https://docs.mulesoft.com/rpa-manager/usermanagement-connect#create-an-api-key-for-a-user[RPA User Management] module.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+RPA Process Execution Completed::
+
+Create listeners that check the status of a specific RPA process. When the RPA process finishes the execution, the polling trigger processes the configured activities in the Composer flow. Note that you must select whether you want listeners for _successful_ or _failed_ executions. You cannot receive notifications for both.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Invoke RPA Process::
+
+Invokes a process in RPA. Provide a value for *RPA Process Name*. Additionally, select the activity parameters that you want to set and set values for those parameters.
+
+include::_partials/see-also.adoc[]
+
+* https://docs.mulesoft.com/rpa-home/[Mulesoft Robotic Process Automation (RPA)]

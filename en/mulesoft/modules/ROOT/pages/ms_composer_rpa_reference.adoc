@@ -10,7 +10,7 @@ You can benefit in many ways by implementing RPA into your processes, either by 
 
 The most common use cases for RPA include:
 
-* Data Extraction and Data Entry +
+* Data extraction and data entry +
 Extract data from PDF, CSV, and other file formats and send this data to other systems.
 * Payroll Processing +
 Automate payroll data entry and validate the information across multiple systems.

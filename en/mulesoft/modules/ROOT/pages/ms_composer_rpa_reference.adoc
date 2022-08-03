@@ -25,7 +25,7 @@ Update customer information automatically across different systems that do not h
 
 When invoking RPA processes from Composer, a two-flow Composer scenario is only required when the RPA process takes longer than the allowed completion timeout period, which is three minutes.
 
-For long-running processes, you can configure two flows that are expected to finish well within the Composer flow timeout period to avoid blocking other events that would be queued for processing.
+For long-running processes, you can configure two flows that finish within the Composer flow timeout period, which avoids blocking other events that would be queued for processing.
 
 If multiple users create invoke or poll flows for the same process, it is best practice to track execution IDs via the external database. Therefore, you can process only your executions in poll-trigger flows, not another user’s executions.
 

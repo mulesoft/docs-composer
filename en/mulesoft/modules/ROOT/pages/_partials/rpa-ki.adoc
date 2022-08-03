@@ -6,7 +6,7 @@
 
 |Known Issue |Workaround |ID
 
-|If connecting to a different RPA than the one for which that the existing flow was built, the current RPA process is not automatically mapped to the processes in the new org.
+|If connecting to a different RPA than one for which that the existing flow was built, the current RPA process is not automatically mapped to the processes in the new org.
 
 a| Complete the following steps:
 

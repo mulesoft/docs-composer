@@ -40,8 +40,6 @@ Connection Display Name::
 Enter a connection name to remember the details of this connection. You can reuse connections multiple times in a single flow, and in more than one flow, and the credentials are hidden after you create the connection. Provide a name that easily identifies this connection from others.
 +
 Only you can see the connection. Other users in your Composer app must create their own connections.
-+
-Older connections may expire if not regularly used. Asana sets the amount of time a connection remains valid.
 
 RPA API URL::
 

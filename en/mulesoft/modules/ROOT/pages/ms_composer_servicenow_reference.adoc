@@ -29,7 +29,7 @@ include::_partials/trigger-definition.adoc[]
 
 New or Updated Record::
 
-Checks for new or updated records in the ServiceNow `record_type` table. Provide a value for *Table Name*.
+Checks for new or updated records in the ServiceNow `record_type` table. Provide a value for *Table name*.
 
 == Actions
 
@@ -38,19 +38,19 @@ include::_partials/action-definition.adoc[]
 Search Record::
 
 Searches for an existing record using a query string that specifies record type criteria. Provide a value for the following fields:
-* *Table Name*
+* *Table name*
 * *Query*
 +
-If the value in the *Table Name* field is `sysparm_no_count`, then this value is set to `True` by default. For more information, see the ServiceNow documentation: https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI#r_TableAPI-GET.
+If the value in the *Table name* field is `sysparm_no_count`, then this value is set to `True` by default. For more information, see the ServiceNow documentation: https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI#r_TableAPI-GET.
 
 Create Record::
 
-Creates a new entry of the selected record type table in ServiceNow. Provide a value for *Table Name*.
+Creates a new entry of the selected record type table in ServiceNow. Provide a value for *Table name*.
 
 Update Record::
 
 Updates an existing entry of the selected record type table in ServiceNow. Provide a value in the following fields:
-* *Table Name*
+* *Table name*
 * *Sys ID*
 
 include::_partials/see-also.adoc[]

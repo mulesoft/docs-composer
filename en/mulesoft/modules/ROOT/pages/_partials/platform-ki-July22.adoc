@@ -14,5 +14,5 @@
 
 |When using the *fromDateToTime* or the *fromStringToDateTime* function in the *Custom Expression Editor*, the value returned is off by one day. For example, if you enter `04/27/2022 T00:00:00Z`, the value returned is `4/26/2022 5:00:00 PM`. | |
 
-|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 may not appear in the list. | |
+|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
 |===

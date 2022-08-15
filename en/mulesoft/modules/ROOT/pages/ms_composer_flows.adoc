@@ -182,17 +182,17 @@ This feature is enabled by default for new customers and disabled by default for
 * In orgs of existing customers, *Flow Owner* is not visible by default in the list view on the Composer Flows tab. New customers, however, can see *Flow Owner* by default in the list view on the Composer Flows tab.
 +
 To add *Flow Owner* to the Recently viewed list:
-[start=1]
+
 . From the Composer Flows tab, select Recently viewed.
 . Go to Setup > Search Layouts > Composer Flow > Default Layout.
 . Add *Flow Owner*.
-+
+
 To add *Flow Owner* to All (or any other view list):
 [start=1]
 . From the Composer Flows tab, select All.
 . Go to List View Controls > Select Fields to Display.
 . Move *Flow Owner* from Available Fields to Visible Fields.
-
++
 * Bulk ownership transfer or changing ownership to a user other than yourself is not supported.
 
 

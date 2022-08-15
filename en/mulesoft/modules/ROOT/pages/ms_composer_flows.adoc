@@ -5,7 +5,6 @@ After you collect the information described in xref:ms_composer_checklist.adoc[t
 
 xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
-Note that flows are private and cannot be shared.
 
 == Create a Flow
 
@@ -167,6 +166,52 @@ image:images/connection-example.png[What Should Start This Flow dialog, 500]
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 . Click *Save*. +
 After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an <<create-an-if-else-block,If/Else block>> or <<create-and-test-a-for-each-loop,For Each>> loop.
+
+
+ifeval::["{product}"=="salesforce"]
+== Open Access for Flows
+
+All users can view or manage all flows within your org.
+
+This feature is enabled by default for new customers and disabled by default for existing customers. To disable this feature at the org level, contact Composer Support.
+
+=== Limitations
+
+* To filter by owner of the flow, you must use the *Flow Owner* field and not the *Owner* field.
+* When filtering using the *Flow Owner* field, you can use only the *starts with*, *equals*, and *contains* operators. The *starts with*, *equals*, and *contains* operators all mimic the functionality of the *contains* operator.
+* In orgs of existing customers, *Flow Owner* is not visible by default in the list view on the Composer Flows tab. New customers, however, can see *Flow Owner* by default in the list view on the Composer Flows tab.
++
+To add *Flow Owner* to the Recently viewed list:
+
+. From the Composer Flows tab, select Recently viewed.
+. Go to Setup > Search Layouts > Composer Flow > Default Layout.
+. Add *Flow Owner*.
++
+To add *Flow Owner* to All (or any other view list):
+
+. From the Composer Flows tab, select All.
+. Go to List View Controls > Select Fields to Display.
+. Move *Flow Owner* from Available Fields to Visible Fields.
+
+* Bulk ownership transfer or changing ownership to a user other than yourself is not supported.
+
+=== View Flows
+
+You can view all flows within your org and view flow details, such as status to see if a flow is active or inactive, last modified date for flow changes (not activation or deactivation), flow owner, or run history.
+
+To view all flows within your org:
+
+. Go to the Composer Flows tab. You can now view all flows within your org and view flow details, such as *Flow Name*, *Status*, and *Last Modified Date*.
+
+=== Manage Flows
+
+You can manage all flows within your org. You can activate or deactivate all flows within your org, delete all flows within your org, edit all flows within your org, or change ownership of error email notification flows within your org.
+
+To manage all flows within your org:
+
+. From the Composer Flows tab, select a flow.
+. Click on the desired button, for example, click *Delete* to delete a flow or click *Transfer ownership* to change flow ownership (for error email notification flows only).
+endif::[]
 
 == Create an Action
 

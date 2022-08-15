@@ -187,7 +187,6 @@ To add *Flow Owner* to the Recently viewed list:
 . Go to Setup > Search Layouts > Composer Flow > Default Layout.
 . Add *Flow Owner*.
 
-+
 To add *Flow Owner* to All (or any other view list):
 
 [start=1]

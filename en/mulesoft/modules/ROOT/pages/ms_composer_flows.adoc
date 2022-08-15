@@ -189,12 +189,12 @@ To add *Flow Owner* to the Recently viewed list:
 
 +
 To add *Flow Owner* to All (or any other view list):
-
++
 [start=1]
 . From the Composer Flows tab, select All.
 . Go to List View Controls > Select Fields to Display.
 . Move *Flow Owner* from Available Fields to Visible Fields.
-
++
 * Bulk ownership transfer or changing ownership to a user other than yourself is not supported.
 
 === View Flows

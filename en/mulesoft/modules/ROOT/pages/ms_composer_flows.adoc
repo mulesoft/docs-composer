@@ -188,7 +188,7 @@ This feature is enabled by default for new customers and disabled by default for
 . Add *Flow Owner*.
 
 ** To add *Flow Owner* to All (or any other view list):
-[start=1]
+
 . From the Composer Flows tab, select All.
 . Go to List View Controls > Select Fields to Display.
 . Move *Flow Owner* from Available Fields to Visible Fields.

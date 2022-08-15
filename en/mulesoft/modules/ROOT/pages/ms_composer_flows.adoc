@@ -168,7 +168,7 @@ image::images/connection-scheduler.png[New trigger with time interval, 500]
 After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an <<create-an-if-else-block,If/Else block>> or <<create-and-test-a-for-each-loop,For Each>> loop.
 
 
-ifeval::["{product}"=="mulesoft"]
+
 == Open Access for Flows
 
 All users can view or manage all flows within your org.
@@ -211,7 +211,7 @@ To manage all flows within your org:
 
 . From the Composer Flows tab, select a flow.
 . Click on the desired button, for example, click *Delete* to delete a flow or click *Transfer ownership* to change flow ownership (for error email notification flows only).
-endif::[]
+
 
 == Create an Action
 

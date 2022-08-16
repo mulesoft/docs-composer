@@ -196,7 +196,7 @@ This feature is enabled by default for new customers and disabled by default for
 
 === View Flows
 
-You can view all flows within your org and view flow details, such as status to see if a flow is active or inactive, last modified date for flow changes (not activation or deactivation), flow owner, or run history.
+You can view all flows within your org and view flow details, such as the status to see if a flow is active or inactive, the last modified date to see flow changes (not activation or deactivation), the flow owner, or the run history.
 
 To view all flows within your org:
 

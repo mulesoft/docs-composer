@@ -43,7 +43,7 @@ Only you can see the connection. Other users in your Composer app must create th
 
 RPA API URL::
 
-The URL provided by the RPA Admin who is creating the processes that you want to integrate via Composer, for example, `\https://myOrg.rpa.mulesoft.com/rpa/api/v1`.
+The URL provided by the RPA Admin who is creating the processes that you want to integrate via Composer. The *RPA API URL* is the RPA Manager URL with `/rpa/api/v1` appended to it. For example, if your RPA Manager URL is `https://myOrg.rpa.mulesoft.com`, then the value in the *RPA API URL* field is  `https://myOrg.rpa.mulesoft.com/rpa/api/v1`.
 
 API key::
 

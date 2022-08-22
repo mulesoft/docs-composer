@@ -1,0 +1,131 @@
+= Salesforce Connector リファレンス
+
+Salesforce をデータ取得元 (新規の Salesforce レコードを取得し、たとえば Google スプレッドシートにコピー) またはデータ取得先 (Workday で新規従業員を取得し、Salesforce で取引先責任者を作成) として使用します。
+フローでのデータの操作方法の一部の詳細は、データ取得元またはデータ取得先に固有です。詳細は、選択したトリガやアクションによっても異なります。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+ユーザ名とパスワード::
+
+Salesforce にログインするために使用したユーザ名とパスワード。
+データ取得元がコンポーザを操作するのと同じ Salesforce 組織であっても、接続を作成する必要があります。
+ただし、コンポーザで再びパスワードが要求されることはありません。代わりに、認証承認ダイアログが表示されます。
+
+URL::
+
+Salesforce にログインするために使用した URL。例: `myOrg.salesforce.com`​。
+
+=== Salesforce 接続アプリケーションの制限
+
+Salesforce では、各ユーザが一度に 5 件までの接続アプリケーションへのアクセス権を付与できます。
+この制限が原因で、同じ Salesforce 組織へのコンポーザ接続を 6 件以上作成すると、認証されたトークン数が 5 件に戻るまで、Salesforce によって通知なしに一番古いものから最後に作成されたものの順でトークンが取り消されます。
+
+この問題を回避するために、可能であれば、ユーザおよび Salesforce 組織ごとに 1 件の接続のみを作成するようにしてください。
+
+Salesforce 接続アプリケーションと認証についての詳細は、&#8203;https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm を参照してください。
+
+=== IP 制限の緩和
+
+組織で IP 制限が設定されている場合、IP 参照のエラーや OAuth エラーが発生する場合があります。このエラーを解決するには、IP 制限を緩和します。
+
+Salesforce への接続で IP 制限を緩和する手順は、次のとおりです。
+
+. Salesforce 組織にログインします。その組織の Salesforce システム管理者である必要があります。
+. *[Setup (設定)] > [Connected Apps OAuth Usage (接続アプリケーションの OAuth の利用状況)]*​ に移動します。
+. *[MuleSoft OCS app for KPROD (KPROD 用 MuleSoft OCS アプリケーション)]*​ という説明が付いたリストで ​*[MuleSoft Platform (MuleSoft プラットフォーム)]*​ を見つけ、​*[Install (インストール)]*​ をクリックします。
+. 認証ダイアログで ​*[Install (インストール)]*​ をクリックします。
++
+これにより、接続アプリケーション (作成した接続) が IP 制限を緩和するために使用可能になります。コンポーザアプリケーションは再インストールされません。
+. *[Edit Policies (ポリシーを編集)]*​ をクリックします。
+. [IP Relaxation (IP 制限)] を ​*[Relax IP Restrictions (IP 制限を緩和)]*​ に変更して、変更内容を保存します。
+
+これで、接続の IP 制限が緩和されます。
+
+=== 接続を変更する
+
+接続を変更する手順は、次のとおりです。
+
+. フローを開きます。
+. トリガ、または Sandbox に接続するすべてのアクションの変更アイコンをクリックします。
++
+image::images/change-connection.png[接続コントロールの変更, 500]
+. 新しい接続を選択し、変更内容を保存します。
+
+=== Salesforce の Sandbox 組織と本番組織
+
+Salesforce の Sandbox 組織および本番組織に接続できます。
+
+本番組織を保護する手順は、次のとおりです。
+
+. フローを作成してテストするときに Sandbox 組織に接続します。
+. テストが完了したら、本番組織に接続し、新しい接続でフローをテストして、フローをアクティブ化します。
++
+Sandbox 接続を使用するすべてのトリガおよびアクションで、忘れずに接続を Sandbox から本番に変更してください。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New record::
+
+10 分おきに新規レコードをチェックします。
+
+New or updated record::
+
+10 分おきに指定されたオブジェクト種別の新規または更新済みレコードをチェックします。
+
+Deleted record::
+
+論理削除されたレコードをチェックします。論理削除されたレコードは約 15 日間、Salesforce に保存されます。
++
+レコードは通常、約 15 日間保存された後で、物理削除され、取得できなくなります。
+* 論理削除タイムスタンプは変更できません。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create new record::
+
+標準またはカスタムレコードを作成します。
+
+Update record::
+
+外部 ID で指定されているように標準またはカスタムレコードを更新します。
+
+Get records::
+
+指定した検索語に一致するすべてのレコードを返します。
++
+image::images/query-builder.png[クエリビルダー UI、500]
++
+* アクションで取得する項目は ​*[Result fields (結果項目)]*​ セクションで選択できます。
+* 1 つ以上の条件を追加して、​*[Filter records (レコードを絞り込む)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。
+* 返されるレコードの並び替え順は [Sort records (レコードを並び替え)] セクションで制御できます。レコードは指定した項目の昇順または降順で並び替えることができます。
+
+*Get records*​ アクションから返されたレコードを追加するときは、​xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each ループ]​をフローに追加する必要があります。
+
+*Get Records*​ がフローのステップであり、項目レベルの暗号化が有効で暗号化された項目での絞り込みを行おうとしている場合は、次の文字列操作のみがサポートされます: `equals`​、​`not equals`​、または空。項目レベルの暗号化では ​`contains`​、​`starts with`​、または ​`ends with`​ はサポートされません。 
+
+項目レベルの暗号化についての詳細は、&#8203;https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce のドキュメント]を参照してください。
+
+Create or update record::
+
+レコード ID で指定されているように標準またはカスタムレコードを更新します。
+レコード ID が見つからない場合、レコードを作成します。
+
+Delete record::
+
+そのオブジェクト種別とレコード ID で指定されたレコードを削除します。
+
+== オブジェクト
+
+すべての標準およびカスタム Salesforce オブジェクトが使用できます。
+
+Marketing Cloud と Commerce Cloud の一部の製品では Salesforce レコードに保存されないデータを使用しているため、Salesforce 接続では使用できません。
+
+include::_partials/see-also.adoc[]

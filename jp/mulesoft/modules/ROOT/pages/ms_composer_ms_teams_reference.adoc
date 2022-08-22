@@ -1,0 +1,33 @@
+= Microsoft Teams Connector リファレンス
+
+Microsoft Teams は、メッセージを組織内で送信したり、直接的な組織外の顧客に送信したりするために使用する SaaS エンタープライズ通信システムです。
+
+MuleSoft Composer を使用して Microsoft Teams メッセージを送信するには、アクティブな Microsoft 365 Business ライセンス、Enterprise ライセンス、または Education ライセンスが必要です。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+Microsoft 365 にログインするために使用するユーザ名。
+
+Password (パスワード)::
+
+Microsoft 365 にログインするために使用するパスワード。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Send message to channel (チャネルへのメッセージの送信)::
+
+特定の Microsoft Teams チャネルのメンバーであるすべてのユーザにメッセージを送信します。次の項目は必須です。
+
+* Team ID (チーム ID)
+* Channel ID (チャネル ID)
+* Message (メッセージ)
+
+include::_partials/see-also.adoc[]

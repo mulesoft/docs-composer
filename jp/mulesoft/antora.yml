@@ -1,0 +1,5 @@
+name: composer
+title: Composer
+version: master
+nav:
+- modules/ROOT/nav.adoc

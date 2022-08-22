@@ -1,0 +1,63 @@
+= Stripe Connector リファレンス
+
+Stripe などのオンライン支払処理プラットフォームを使用している企業が増えています。Stripe では、あらゆる規模の企業が顧客と支払の情報の同期を保つことで、API を通じて支払を処理できます。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+API key (API キー)::
+
+この項目の値はスペシャリストコネクタの ​`Authorization`​ 項目にマップされ、Stripe でユーザ名として機能します。API への認証は、HTTP 基本認証を使用して実行されます。API キーはユーザ名であり、パスワードは不要です。API キーは  https://stripe.com/docs/api/authentication[[Stripe Dashboard (Stripe ダッシュボード)]]​ で確認できます。Stripe API では、次の動作になります。
+
+* API キーを使用して要求を認証します。
+* プレフィックス ​`sk_test_`​ を持つテストモードキーと、プレフィックス ​`sk_live_`​ を持つライブモードの秘密鍵を指定します。
+* ユーザが制限された API キーを使用してよりきめ細かい権限を実現します。
+* すべての API 要求が HTTPS を通じて行われていることを確認します。
+
+https://stripe.com/docs/connect/oauth-reference[Stripe Connect]​ では OAuth 認証がサポートされますが、Stripe ではサポートされません。Stripe での OAuth 認証についての詳細は、&#8203;https://www.similartech.com/compare/stripe-vs-stripe-connect を参照してください。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New charge::
+
+支払元に対する新規の請求をチェックします。
+
+New refund::
+
+新しい返金が作成されたときに実行します。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create charge::
+
+新しい請求を作成します。新しい請求を作成するときは、次の点に注意してください。
+
+* `Amount`​ 項目の値は整数です。たとえば、1.00 は 100 になります。
+* 次の項目には値が必要です。
+** `Source`​ 項目または ​`Customer`​ 項目
+** `Customer ID` +
+ベストプラクティスとしては、[Customer ID (顧客 ID)] 項目の値を Stripe の既存のアカウントから取得するようにします。例: `cus_JQ1BWAcXfKuswb`​。
+** 配送項目が存在する場合、一部の配送項目は必須になります。 +
+
+Stripe での Create Charge アクションについての詳細は、&#8203;https://stripe.com/docs/api/charges/create を参照してください。
+
+Create customer::
+
+新しい顧客を作成します。新しい顧客を作成する場合、​`Phone`​ 項目は顧客の電話番号であり、配送先電話番号ではありません。
+
+Find customer::
+
+`Customer ID`​ で既存の顧客を検索します。
+
+Create product::
+
+新しい Product オブジェクトを作成します。次の項目は必須です: *Name (名前)*​。
+
+include::_partials/see-also.adoc[]

@@ -1,0 +1,95 @@
+= Jira Connector リファレンス
+
+Jira は、開発を改善するためにユーザが商品の課題を計画、追跡、リリース、報告できるようにサポートする強力なプロジェクト管理ツールおよびチケットシステムです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+Jira にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Jira にログインするために使用する OAuth パスワード。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New issue with Custom Fields::
+
+Jira で作成されたカスタム項目を使用して新しい課題をチェックします。
+
+New issue with Standard Fields only::
+
+Jira で作成された標準項目を使用して新しい課題をチェックします。
+
+Update issue with Custom Fields::
+
+Jira のカスタム項目を使用して更新された課題をチェックします。
+
+Update issue with Standard Fields only::
+
+Jira の標準項目を使用して更新された課題をチェックします。
+
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create issue with custom fields::
+
+選択されたプロジェクト内に新しい課題を作成します。次の項目の値を指定します。
+
+* *Project (プロジェクト)*​
+* *Key (キー)*​
+* *Summary (概要)*​
+* *Type (型)*​
+* *Status (状況)*​
+* *Priority (優先度)*
+
+Update issue with custom fields::
+
+指定されたカスタム項目の値を更新します。次の項目の値を指定します。
+
+* *Issue ID or Key (課題 ID またはキー)*​
+* *Notify Users (ユーザに通知)*
+
+Update issue with standard fields only::
+
+指定された標準項目値を更新します。次の項目の値を指定します。
+
+* *Issue ID or Key (課題 ID またはキー)*​
+* *Notify Users (ユーザに通知)*
+
+Assign user to issue::
+
+指定された課題にユーザを割り当てます。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
+
+Add watcher to issue::
+
+既存の Jira の課題にウォッチャーを追加します。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
+
+Get issue::
+
+特定の課題の詳細を返します。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
+
+Add comment to issue::
+
+コメントを作成して既存の課題課題に追加します。次の項目の値を指定します。
+* *Issue ID or Key (課題 ID またはキー)*​
+* *Comment Text (コメントテキスト)*
+
+Get account IDs for users::
+
+`key`​ または ​`username`​ パラメータで指定されたユーザのアカウント ID を返します。複数の ​`key`​ または ​`username`​ パラメータを指定できます。
+
+== カスタム項目
+
+MuleSoft Composer を使用して、Jira の課題で設定したアクションおよびトリガの標準項目やカスタム項目の値にアクセスできます。
+
+include::_partials/see-also.adoc[]

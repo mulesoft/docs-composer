@@ -1,0 +1,29 @@
+Connection Display Name (接続表示名)::
+
+接続表示名は、接続を識別するために選択する一意の名前です。
+
+Account (アカウント)::
+
+*[Setup (設定)] > [Integration (インテグレーション)] > [SOAP Web Services Preferences (SOAP Web サービスプリファレンス)]*​ にアクセスすることで、NetSuite インスタンスにリストされるアカウント ID。この値は文字と数値の文字列です (例: `TESTME1234567`​)。
++
+文字は常に大文字で入力します。
+
+Consumer Key (コンシューマキー)::
+
+*[Setup (設定)] > [Integration (インテグレーション)] > [Manage Integrations (インテグレーションの管理)]*​ にアクセスすることで、NetSuite で生成されたコンシューマキー。
+
+Consumer Secret (コンシューマシークレット)::
+
+コンシューマキーと共に NetSuite で生成されたコンシューマシークレット。
+
+Token ID (トークン ID)::
+
+NetSuite で生成されたトークン ID。
+
+Token Secret (トークンシークレット)::
+
+NetSuite でトークン ID を使用して生成されたトークンシークレット。
+
+SOAP Port (SOAP ポート)::
+
+現時点では、この値は編集できません。

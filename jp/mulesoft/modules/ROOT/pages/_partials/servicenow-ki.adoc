@@ -1,0 +1,11 @@
+==== ServiceNow
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|ServiceNow Connector - Mule 4 では標準テーブルのみがサポートされる。 | なし |なし
+
+|===

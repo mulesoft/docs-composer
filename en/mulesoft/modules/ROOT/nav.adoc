@@ -20,6 +20,7 @@
 ** xref:ms_composer_http_reference.adoc[HTTP]
 ** xref:ms_composer_hubspot_reference.adoc[HubSpot]
 ** xref:ms_composer_jira_reference.adoc[Jira]
+** xref:ms_composer_ms_dynamics_365_business_central_reference.adoc[Microsoft Dynamics 365 Business Central]
 ** xref:ms_composer_ms_teams_reference.adoc[Microsoft Teams]
 ** xref:ms_composer_netsuite_reference.adoc[NetSuite]
 ** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]

@@ -1,0 +1,116 @@
+= Microsoft Dynamics 365 Business Central Connector Reference
+
+Microsoft Dynamics 365 Business Central is an ERP tool that provides a consolidated way of managing sales, marketing, purchasing, inventory, manufacturing, and shipping logistics. Microsoft Dynamics 365 Business Central also contains a limited set of CRM tools for managing contacts, interactions, segments, opportunities, and marketing campaigns.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+Connection Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies this connection from others.
++
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Username::
+
+The OAuth username that you use to log into Microsoft Dynamics 365 Business Central.
+
+Password::
+
+The OAuth password that you use to log into Microsoft Dynamics 365 Business Central.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New or Updated Sales Order::
+
+Checks for a new or updated sales order. Provide a value for *Company*.
+
+New or Updated Item::
+
+Checks for a new or updated item. Provide a value for *Company*.
+
+New or Updated Customer::
+
+Checks for a new or updated customer. Provide a value for *Company*.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create Sales Order::
+
+Create a single sales order. Provide a value for the following fields:
+
+* *Company*
+* *Customer Number*
+
+Update Sales Order::
+
+Update a single sales order. Provide a value for the following fields:
+
+* *Company*
+* *Entity ID*
+* *ETag*
+
+Get Sales Orders::
+
+Retrieve a filtered list of sales orders. Provide a value for *Company*.
+
+Create Customer::
+
+Create a single customer. Provide a value for *Company*.
+
+Update Customer::
+
+Update a single customer. Provide a value for the following fields:
+
+* *Company*
+* *Entity ID*
+* *ETag*
+
+Get Customers::
+
+Retrieve a filtered list of customers. Provide a value for *Company*.
+
+Create Item::
+
+Create a single Item. Provide a value for *Company*.
+
+Update Item::
+
+Update a single Item. Provide a value for the following fields:
+
+* *Company*
+* *Entity ID*
+* *ETag*
+
+Get Items::
+
+Retrieve a filtered list of Items. Provide a value for *Company*.
+
+Create Item Variant::
+
+Create a single Item Variant. Provide a value for the following fields:
+
+* *Company*
+* *Code*
+
+Update Item Variant::
+
+Update a single Item Variant. Provide a value for the following fields:
+
+* *Company*
+* *Entity ID*
+* *ETag*
+
+Get Item Variants::
+
+Retrieve a filtered list of Item Variants. Provide a value for *Company*.
+
+include::_partials/see-also.adoc[]

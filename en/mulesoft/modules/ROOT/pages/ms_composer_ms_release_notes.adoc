@@ -15,6 +15,8 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
+* Data Pill Search is now available. You can use this feature to find where a particular data pill is used in your flow.
+
 ==== Composer Platform
 
 [%header%autowidth.spread]

@@ -232,9 +232,9 @@ When there are null values in custom expressions and are:
 
 === Create a Picklist Mapping
 
-Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This allows you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
+Using Picklist Mapping, you can map data from one application to the corresponding data needed by another application and then reuse those mappings in different flows in your organization. This allows you to connect two applications that have different values for similar fields and to align the values in those fields across applications. This enables you to determine how the possible values of an output field (data pill) map to the possible values of an input field.
 
-For example, you can map a data pill from the *Country* field in a Salesforce record and provide the same values in the *Country* field of the NetSuite record or create a global mapping for the *Country* field.
+For example, you can map a data pill from the *Country* field in a Salesforce record and provide the same values in the *Country* field of the NetSuite record.
 
 [%header%autowidth.spread]
 |===
@@ -275,17 +275,17 @@ The *Picklist Mapping* window appears.
 . In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to be mapped to the value in the *Target* field, and then click *Next*.
 . In the *Global Picklist Selection* section:
 .. To create a new picklist, click *Create new picklist*.
-... In the Global picklist name field, enter a unique name for the picklist.
+... In the *Global picklist name* field, enter a unique name for the picklist.
 ... Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
 `This maps [Source Field Name] from [Source Connection Name] to [Target Field Name] from [Target Connection Name]`
 ... In the table, select the source fields and their target mappings.
-... Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the dropdown.
+... Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the drop-down.
 ... Once you have added all applicable field mappings, click *Create Picklist*.
 ... Click *Apply*. +
 The *<Picklist Name>* section appears, displaying a table of values and their mappings.
-.. To select an existing picklist, select a picklist from the list. Note that all edits made to an existing picklist will impact all fields in which that picklist is currently used.
-... Optionally, in the *<Picklist Name>* section, to edit the values, select the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.
-... Optionally, in the *<Picklist Name>* section, to delete the picklist, select the trashcan. Note that deleting a global picklist will affect all flows currently using that picklist.
+.. To select an existing picklist, select a picklist from the list. Note that all edits made to an existing picklist will impact all flows in which that picklist is currently used.
+... Optionally, in the *<Picklist Name>* section, to edit the values, click the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.
+... Optionally, in the *<Picklist Name>* section, to delete the picklist, click the trashcan. Note that deleting a global picklist will affect all flows currently using that picklist.
 ... Click *Apply*. +
 The action card appears.
 

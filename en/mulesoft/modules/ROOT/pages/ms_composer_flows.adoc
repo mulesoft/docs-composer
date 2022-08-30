@@ -261,7 +261,7 @@ When mapping source data fields:
 
 * The source field must be a data pill with a fixed list of values.
 * The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field.
-* The default mapping specifies the value in the target system if any other unmapped value from the source system is found. If you do not specify a default value, then the original value from the source field is passed to the target field.
+* If any other unmapped value from the source system is found, the default mapping specifies the value in the target system . If you do not specify a default value, the original value from the source field is passed to the target field.
 * The mapping is stored at the organization level and can be reused across flows.
 * The mapping must have a unique name.
 * Mappings are available to everyone in your organization.

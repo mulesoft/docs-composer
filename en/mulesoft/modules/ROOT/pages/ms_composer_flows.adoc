@@ -268,7 +268,7 @@ When mapping source data fields:
 
 To map source data fields to target fields:
 
-. From the *Composer Flows* tab, open a flow.
+. From the *Composer Flows* tab, open a flow and click *Edit*.
 . Click *Edit*.
 . In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the drop-down menu. +
 The *Picklist Mapping* window appears.

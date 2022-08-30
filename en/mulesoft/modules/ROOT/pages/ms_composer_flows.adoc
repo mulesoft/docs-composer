@@ -272,7 +272,7 @@ To map source data fields to target fields:
 . Click *Edit*.
 . In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the drop-down menu. +
 The *Picklist Mapping* window appears.
-. In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to be mapped to the value in the *Target* field, and then click *Next*.
+. In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to  map to the value in the *Target* field, and then click *Next*.
 . In the *Global Picklist Selection* section:
 .. To create a new picklist, click *Create new picklist*.
 ... In the *Global picklist name* field, enter a unique name for the picklist.

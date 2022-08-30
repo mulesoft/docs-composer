@@ -287,7 +287,7 @@ The *<Picklist Name>* section appears, displaying a table of values and their ma
 ... Optionally, in the *<Picklist Name>* section, to edit the values, click the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.
 ... Optionally, in the *<Picklist Name>* section, to delete the picklist, click the trashcan. Note that deleting a global picklist will affect all flows currently using that picklist.
 ... Click *Apply*. +
-The action card appears.
+The action card appears. 
 
 == Create a Flow Control
 

@@ -5,8 +5,6 @@ The connection display name is a unique name that you choose to identify the con
 Account::
 
 The account ID as listed in your NetSuite instance by accessing *Setup > Integration > SOAP Web Services Preferences*. The value is a string of letters and numbers, for example: `TESTME1234567`.
-+
-Always enter the letters in upper case.
 
 Consumer Key::
 

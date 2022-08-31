@@ -230,6 +230,74 @@ When there are null values in custom expressions and are:
 * Fields without attributes, the null value is ignored. If the value in a required field, an error message occurs. If the value is in an optional field, the value is ignored and not sent to the connector. +
 * Fields with attributes, the value is ignored and not sent to the connector.
 
+=== Create a Picklist Mapping
+
+Using Picklist Mapping, you can map data from one application to the corresponding data needed by another application and then reuse those mappings in different flows in your organization. This enables you to connect two applications that have different values for similar fields and to align the values in those fields across applications. You can then determine how the possible values of an output field (data pill) map to the possible values of an input field.
+
+For example, you can map a data pill from the *Country* field in a Salesforce record and provide the same values in the *Country* field of the NetSuite record.
+
+[%header%autowidth.spread]
+|===
+|Country (Salesforce) | Country (NetSuite)
+|US |_unitedStates
+|CA |_canada
+|DE |_germany
+|AR |_argentina
+|===
+
+In this example, the *Status* field in a case in Salesforce is mapped to the *Status* field in a ticket in Zendesk to create continuity in field values across systems.
+
+[%header%autowidth.spread]
+|===
+|Status (Salesforce) | Status (NetSuite)
+|New |New
+|Working |Open
+|Waiting on Customer |On-Hold
+|Escalated |Open
+|Closed |Closed
+|===
+
+When mapping source data fields:
+
+* The source field must be a data pill with a fixed list of values.
+* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field.
+* If any other unmapped value from the source system is found, the default mapping specifies the value in the target system . If you do not specify a default value, the original value from the source field is passed to the target field.
+* The mapping is stored at the organization level and can be reused across flows.
+* The mapping must have a unique name.
+* Mappings are available to everyone in your organization.
+
+To map source data fields to target fields:
+
+. From the *Composer Flows* tab, open a flow and click *Edit*.
+. In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the drop-down menu. +
+The *Picklist Mapping* window appears.
+. In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to  map to the value in the *Target* field, and then click *Next*.
+. In the *Global Picklist Selection* section, create a new picklist or choose an existing picklist.
+
+=== Create a new picklist
+
+To create a new picklist:
+
+. Click *Create new picklist*.
+. In the *Global picklist name* field, enter a unique name for the picklist.
+. Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
+`This maps [Source Field Name] from [Source Connection Name] to [Target Field Name] from [Target Connection Name]`
+. In the table, select the source fields and their target mappings.
+. Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the drop-down.
+. Once you have added all applicable field mappings, click *Create Picklist*.
+. Click *Apply*. +
+The *<Picklist Name>* section appears, displaying a table of values and their mappings.
+
+=== Choose an existing picklist
+
+To choose an existing picklist:
+
+. Select a picklist from the list. Note that all edits made to an existing picklist will impact all flows in which that picklist is currently used.
+. Optionally, in the *<Picklist Name>* section, to edit the values, click the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.
+. Optionally, in the *<Picklist Name>* section, to delete the picklist, click the trashcan. Note that deleting a global picklist will affect all flows currently using that picklist.
+. Click *Apply*. +
+The action card appears.
+
 == Create a Flow Control
 
 If you need to perform some logic before an action, select a flow control first:

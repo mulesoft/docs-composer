@@ -245,7 +245,7 @@ For example, you can map a data pill from the *Country* field in a Salesforce re
 |AR |_argentina
 |===
 
-In this example, the *Status* field in a Case in Salesforce is mapped to the *Status* field in a Ticket in Zendesk to create continuity in field values across systems.
+In this example, the *Status* field in a case in Salesforce is mapped to the *Status* field in a ticket in Zendesk to create continuity in field values across systems.
 
 [%header%autowidth.spread]
 |===
@@ -272,21 +272,27 @@ To map source data fields to target fields:
 . In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the drop-down menu. +
 The *Picklist Mapping* window appears.
 . In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to  map to the value in the *Target* field, and then click *Next*.
-. In the *Global Picklist Selection* section:
-.. To create a new picklist, click *Create new picklist*.
-... In the *Global picklist name* field, enter a unique name for the picklist.
-... Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
+. In the *Global Picklist Selection* section, create a new picklist or choose an existing picklist.
+
+=== Create a new picklist
+
+. Click *Create new picklist*.
+. In the *Global picklist name* field, enter a unique name for the picklist.
+. Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
 `This maps [Source Field Name] from [Source Connection Name] to [Target Field Name] from [Target Connection Name]`
-... In the table, select the source fields and their target mappings.
-... Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the drop-down.
-... Once you have added all applicable field mappings, click *Create Picklist*.
-... Click *Apply*. +
+. In the table, select the source fields and their target mappings.
+. Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the drop-down.
+. Once you have added all applicable field mappings, click *Create Picklist*.
+. Click *Apply*. +
 The *<Picklist Name>* section appears, displaying a table of values and their mappings.
-.. To select an existing picklist, select a picklist from the list. Note that all edits made to an existing picklist will impact all flows in which that picklist is currently used.
-... Optionally, in the *<Picklist Name>* section, to edit the values, click the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.
-... Optionally, in the *<Picklist Name>* section, to delete the picklist, click the trashcan. Note that deleting a global picklist will affect all flows currently using that picklist.
-... Click *Apply*. +
-The action card appears. 
+
+=== Choose an existing picklist
+
+. Select a picklist from the list. Note that all edits made to an existing picklist will impact all flows in which that picklist is currently used.
+. Optionally, in the *<Picklist Name>* section, to edit the values, click the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.
+. Optionally, in the *<Picklist Name>* section, to delete the picklist, click the trashcan. Note that deleting a global picklist will affect all flows currently using that picklist.
+. Click *Apply*. +
+The action card appears.
 
 == Create a Flow Control
 

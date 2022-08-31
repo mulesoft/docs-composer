@@ -276,6 +276,8 @@ The *Picklist Mapping* window appears.
 
 === Create a new picklist
 
+To create a new picklist:
+
 . Click *Create new picklist*.
 . In the *Global picklist name* field, enter a unique name for the picklist.
 . Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
@@ -287,6 +289,8 @@ The *Picklist Mapping* window appears.
 The *<Picklist Name>* section appears, displaying a table of values and their mappings.
 
 === Choose an existing picklist
+
+To choose an existing picklist:
 
 . Select a picklist from the list. Note that all edits made to an existing picklist will impact all flows in which that picklist is currently used.
 . Optionally, in the *<Picklist Name>* section, to edit the values, click the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.

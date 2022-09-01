@@ -48,7 +48,7 @@ Adds a file to a folder in Box. Provide a value for the following fields:
 
 Download File::
 
-Returns the binary contents of the specified file and version.
+Returns the binary contents of the specified file and version. Provide a value for the following fields:
 
 * *File ID*
 * *Version*

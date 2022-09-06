@@ -16,6 +16,8 @@ Password::
 
 The OAuth password that you use to log in to Box.
 
+include::_partials/binary-data.adoc[]
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
@@ -35,14 +37,21 @@ Adds a file to a folder in Box which is referenced by a publicly-shared URL. Pro
 * *Folder ID*
 * *Source URL*
 
-Add file to folder using file content::
+Upload File::
 
 Adds a file to a folder in Box. Provide a value for the following fields:
 
-* *File content*
-* *Folder ID* or *Source URL*
-+
-If a file exists in the folder, enter a value in the *Folder ID* field to overwrite the existing file. To create a new file in the folder, enter a value in the *File Name* field.
+* *File Name*
+* *File contents*
+* *Folder ID*
+* *Existing File ID*
+
+Download File::
+
+Returns the binary contents of the specified file and version. Provide a value for the following fields:
+
+* *File ID*
+* *Version*
 
 Create folder::
 

@@ -30,6 +30,8 @@ include::_partials/trigger-definition.adoc[]
 New or Updated Record::
 
 Checks for new or updated records in the ServiceNow `record_type` table. Provide a value for *Table name*.
++
+Note that *ServiceNow Time Zone* must be set to the same time zone as your ServiceNow instance.
 
 == Actions
 

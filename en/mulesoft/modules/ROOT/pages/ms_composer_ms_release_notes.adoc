@@ -9,6 +9,18 @@ New versions are automatically available once they are released; you don't need 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Box instances, you can download binary file content from one instance and later upload that same file content to another instance.
+* The `jackson.databind` library is upgraded to version 2.13.4 to address reported security vulnerabilities for HTTP Connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in HTTP Connector in which the test connectivity was not triggering a refresh with an OCS connection. |W-11469764
+|Fixed the issue in HTTP Connector in which OAuth 2.0 refresh tokens from Shopify were not valid. |W-11437322
+|Fixed the issue in HTTP Connector in which fields containing an escape sequence (for example, `\r` for a carriage return) were not properly parsed. |W-11072611
+|Fixed an issue in Quickbooks Connector where Sample Data output returned more than one record, even in the case of arrays that are nested fields. |W-11388800
+|===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

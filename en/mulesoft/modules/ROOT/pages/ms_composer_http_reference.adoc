@@ -45,6 +45,37 @@ The following authorization options are available:
   ** *Base URL*
   ** *Token*
 
+=== Connect Your Target System in Composer Using OAuth 2.0
+
+Using HTTP Connector, you can establish a connection with an https://auth0.com/intro-to-iam/what-is-oauth-2/#grant-types-in-oauth-20[OAuth 2.0 Authorization Code Grant] to enable authorization. With this authorization, you can then access resources hosted by other apps such as Salesforce, Gmail, or Outlook 365.
+
+Before establishing a connection, you must create an OAuth Client in the target system.  The process for creating an OAuth Client depends on each target system.
+
+The following tables provide configuration examples and details about required fields when connecting an OAuth Client to a target system:
+
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+|Connect to your HTTP Account |*Connection Display Name* | | |
+| |*Authorization Type*| | |
+| |*Base URL* | | |
+| |*Client ID* | | |
+| |*Client Secret* | | |
+| |*Scopes* | | |
+| |*Authorization URL* | | |
+| |*Authorization URL Query Parameters* | | |
+| |*Token Exchange URL* | | |
+| |*Token Refresh URL* | | |
+| |*Token Revoke URL* | | |
+| |*Access Token Expired Code* | | |
+|Test HTTP Connection |*Request Method* | | |
+| |*Request Path* | | |
+
+
+|===
+
 === Test the Connection
 
 After you establish a connection method, you can test the connection. While Composer tests other connectors  automatically in the background, you must test HTTP Connector. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.

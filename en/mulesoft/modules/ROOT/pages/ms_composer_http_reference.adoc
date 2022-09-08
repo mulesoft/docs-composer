@@ -51,27 +51,28 @@ Using HTTP Connector, you can establish a connection with an https://auth0.com/i
 
 Before establishing a connection, you must create an OAuth Client in the target system.  The process for creating an OAuth Client depends on each target system.
 
-The following tables provide configuration examples and details about required fields when connecting an OAuth Client to a target system:
+The following tables provide configuration examples and details about required fields when connecting to a target system using an OAuth client:
 
+==== Gmail
 [%header%autowidth.spread]
 
 |===
 
 |Step |Field |Example Value |Notes
-|Connect to your HTTP Account |*Connection Display Name* | | |
-| |*Authorization Type*| | |
-| |*Base URL* | | |
-| |*Client ID* | | |
-| |*Client Secret* | | |
-| |*Scopes* | | |
-| |*Authorization URL* | | |
-| |*Authorization URL Query Parameters* | | |
-| |*Token Exchange URL* | | |
-| |*Token Refresh URL* | | |
-| |*Token Revoke URL* | | |
-| |*Access Token Expired Code* | | |
-|Test HTTP Connection |*Request Method* | | |
-| |*Request Path* | | |
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters* | |
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
 
 
 |===

@@ -66,7 +66,17 @@ The following tables provide configuration examples and details about required f
 |*Client Secret* | |
 |*Scopes* | |
 |*Authorization URL* | |
-|*Authorization URL Query Parameters* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
 |*Token Exchange URL* | |
 |*Token Refresh URL* | |
 |*Token Revoke URL* | |
@@ -74,6 +84,269 @@ The following tables provide configuration examples and details about required f
 .2+|Test HTTP Connection |*Request Method* | |
 |*Request Path* | |
 
+|===
+
+==== Google Calendar
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
+
+|===
+
+==== Google Sheets
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
+
+|===
+
+==== Hubspot
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
+
+|===
+
+==== Microsoft Teams
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
+
+|===
+
+==== Outlook 365
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
+
+|===
+
+==== Salesforce
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
+
+|===
+
+==== Slack
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
+
+|===
+
+==== Xero
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.12+|Connect to your HTTP Account |*Connection Display Name* | |
+|*Authorization Type*| |
+|*Base URL* | |
+|*Client ID* | |
+|*Client Secret* | |
+|*Scopes* | |
+|*Authorization URL* | |
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*
+* *Value*
+
+Parameter 2:
+
+* *Key*
+* *Value* |
+
+|*Token Exchange URL* | |
+|*Token Refresh URL* | |
+|*Token Revoke URL* | |
+|*Access Token Expired Code* | |
+.2+|Test HTTP Connection |*Request Method* | |
+|*Request Path* | |
 
 |===
 

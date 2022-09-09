@@ -100,7 +100,7 @@ Parameter 2:
 |*Scopes*
 a|
 * `+https://www.googleapis.com/auth/calendar.events+`
-* `+https://www.googleapis.com/auth/calendar.readonly+` | For all available scopes, see https://developers.google.com/identity/protocols/oauth2/scopes[OAuth 2.0 Scopes for Google APIs].
+* `+https://www.googleapis.com/auth/calendar.readonly+` | For all available scopes, see https://developers.google.com/identity/protocols/oauth2/scopes[OAuth 2.0 Scopes for Google APIs^].
 |*Authorization URL* |`+https://accounts.google.com/o/oauth2/v2/auth+` |
 |*Authorization URL Query Parameters*
 a|Parameter 1:

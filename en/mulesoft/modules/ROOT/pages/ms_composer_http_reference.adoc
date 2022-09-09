@@ -82,7 +82,7 @@ Parameter 2:
 |*Token Revoke URL* | `+https://oauth2.googleapis.com/revoke+` |
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
-|*Request Path* | `+/gmail/v1/users/me/profile+` | For more information, see the https://developers.google.com/gmail/api[Gmail API documentation].
+|*Request Path* | `+/gmail/v1/users/me/profile+` | For more information, see the https://developers.google.com/gmail/api[Gmail API documentation^].
 
 |===
 

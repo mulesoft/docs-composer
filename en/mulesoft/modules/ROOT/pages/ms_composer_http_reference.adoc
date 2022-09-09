@@ -64,7 +64,7 @@ The following tables provide configuration examples and details about required f
 |*Base URL* | `+https://gmail.googleapis.com+` |
 |*Client ID* | `181298210352-mt5.apps.googleusercontent.com` |
 |*Client Secret* |`YmmkNirf6zDc512u7MvPoJebP...` |
-|*Scopes* | `+https://www.googleapis.com/auth/gmail.send https://www.googleapis.com/auth/gmail.readonly+`| For all available scopes, see https://developers.google.com/identity/protocols/oauth2/scopes[OAuth 2.0 Scopes for Google APIs].
+|*Scopes* | `+https://www.googleapis.com/auth/gmail.send https://www.googleapis.com/auth/gmail.readonly+`| For all available scopes, see https://developers.google.com/identity/protocols/oauth2/scopes[OAuth 2.0 Scopes for Google APIs^].
 |*Authorization URL* | `+https://accounts.google.com/o/oauth2/v2/auth+` |
 |*Authorization URL Query Parameters*
 a|Parameter 1:

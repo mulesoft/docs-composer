@@ -190,7 +190,7 @@ Parameter 2:
 * `contacts/v1/lists/all/contacts/all?count=1`
 * `+https://api.hubapi.com/application/settings/test/v1/actions/accounts-fetch+`
 
- |For more information, see the https://developers.hubspot.com/docs/api/oauth-quickstart-guide[Hubspot OAuth] documentation.
+ |For more information, see the https://developers.hubspot.com/docs/api/oauth-quickstart-guide[Hubspot OAuth 2.0] documentation.
 
 |===
 
@@ -357,14 +357,15 @@ When creating an OAuth 2.0 Authorization Code connection with the HTTP Connector
 To establish an OAuth 2.0 Connection:
 
 . Open a flow or create a new flow.
-. In the What Should Start This Flow? dialog, select HTTP.
-. In the Connect to your HTTP Account window, in the Authorization Type field, select OAuth 2.0 Authorization Code and provide values for the following fields:
-.. Authorization URL: The URL that starts the OAuth 2.0 flow.
-.. Authorization URL Query Parameters: The key-value pairs that appear after the question mark in the URL. Under the OAuth Authorization Code Grant type, the authorization request sends data as query parameters.  Composer handles these query parameters automatically, but sometimes additional ones are convenient or necessary. For example, the Google API needs access_token=offline to emit a refresh token. Without this parameter, a connection will expire after an hour.
-.. Token Exchange URL: The URL where the authorization code can be exchanged for an access token.
-.. Token Refresh URL (Optional): The URL where the token can be refreshed.  This field is only applicable if the application marks the tokens as expired after a certain period of time.
-.. Token Revoke URL (Optional): The URL where the token can be revoked or removed.
-. Click Next. +
+. Select a trigger or use the scheduler.
+. Click or create an HTTP connection for the action.
+. In the *Connect to your HTTP Account* window, in the *Authorization Type* field, select *OAuth 2.0 Authorization Code* and provide values for the following fields:
+.. *Authorization URL*: The URL that starts the OAuth 2.0 flow.
+.. *Authorization URL Query Parameters*: The key-value pairs that appear after the question mark in the URL. Under the OAuth Authorization Code Grant type, the authorization request sends data as query parameters.  Composer handles these query parameters automatically, but sometimes additional ones are convenient or necessary. For example, the Google API needs access_token=offline to emit a refresh token. Without this parameter, a connection will expire after an hour.
+.. *Token Exchange URL*: The URL where the authorization code can be exchanged for an access token.
+.. *Token Refresh URL (Optional)*: The URL where the token can be refreshed.  This field is only applicable if the application marks the tokens as expired after a certain period of time.
+.. *Token Revoke URL (Optional)*: The URL where the token can be revoked or removed.
+. Click *Next*. +
 The OAuth 2.0 Authorization Code Connection is configured. You can now test the connection.
 
 

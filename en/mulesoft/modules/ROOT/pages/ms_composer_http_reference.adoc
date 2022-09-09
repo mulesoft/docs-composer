@@ -158,7 +158,7 @@ Parameter 2:
 |*Token Revoke URL* | `+https://oauth2.googleapis.com/revoke+` |
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
-|*Request Path* |`/drive/v3/about?fields=user` | For more information, see the https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive API-specific authorization and authentication information] documentation.
+|*Request Path* |`/drive/v3/about?fields=user` | For more information, see the https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive API-specific authorization and authentication information^] documentation.
 
 |===
 
@@ -171,7 +171,7 @@ Parameter 2:
 .10+|Connect to your HTTP Account |*Connection Display Name* | `Hubspot Composer DEMO org` | Including the Hubspot organization name aids in identifying the connection from a list.
 |*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
 |*Base URL* |`+https://api.hubapi.com/+` |
-|*Client ID* |`63ddf8b7-c7b0-40f9-804...` | For more information, see the https://developers.hubspot.com/docs/api/working-with-oauth[Hubspot documentation].
+|*Client ID* |`63ddf8b7-c7b0-40f9-804...` | For more information, see the https://developers.hubspot.com/docs/api/working-with-oauth[Hubspot documentation^].
 |*Client Secret* |`2100f863-944c-433c-a...` |
 |*Scopes* a|
 
@@ -190,7 +190,7 @@ Parameter 2:
 * `contacts/v1/lists/all/contacts/all?count=1`
 * `+https://api.hubapi.com/application/settings/test/v1/actions/accounts-fetch+`
 
- |For more information, see the https://developers.hubspot.com/docs/api/oauth-quickstart-guide[Hubspot OAuth 2.0] documentation.
+ |For more information, see the https://developers.hubspot.com/docs/api/oauth-quickstart-guide[Hubspot OAuth 2.0^] documentation.
 
 |===
 
@@ -276,7 +276,7 @@ a|
 |*Token Revoke URL* | `+https://login.salesforce.com/services/oauth2/revoke+` |
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
-|*Request Path* | ``/services/data/v55.0/`` | For more information, see the https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_code.htm[Salesforce REST API Developer Guide] documentation.
+|*Request Path* | ``/services/data/v55.0/`` | For more information, see the https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_code.htm[Salesforce REST API Developer Guide^] documentation.
 
 |===
 
@@ -323,7 +323,7 @@ a|
 * `accounting.reports.read`
 * `accounting.settings`
 * `accounting.contacts`
-* `accounting.journals.read` | For more information, see the https://developer.xero.com/documentation/guides/oauth2/scopes[Xero Developer] documentation.
+* `accounting.journals.read` | For more information, see the https://developer.xero.com/documentation/guides/oauth2/scopes[Xero Developer^] documentation.
 |*Authorization URL* | `+https://login.xero.com/identity/connect/authorize+` |
 |*Token Exchange URL* | `+https://identity.xero.com/connect/token+` |
 |*Token Refresh URL* | `+https://identity.xero.com/connect/token+` |
@@ -334,8 +334,8 @@ a|
 
 a|For more information, see the Xero documentation:
 
-* https://developer.xero.com/documentation/guides/oauth2/overview/[OAuth 2.0 for Xero]
-* https://developer.xero.com/documentation/guides/oauth2/auth-flow[Standard authorization code flow for Xero]
+* https://developer.xero.com/documentation/guides/oauth2/overview/[OAuth 2.0 for Xero^]
+* https://developer.xero.com/documentation/guides/oauth2/auth-flow[Standard authorization code flow for Xero^]
 
 |*Request Path Headers*
 a|
@@ -345,8 +345,8 @@ a|
 
 a| For more information, see the the following:
 
-* https://api-explorer.xero.com/accounting/users/getusers[Xero login]
-* https://developer.xero.com/documentation/guides/oauth2/auth-flow[Standard authorization code flow for Xero]
+* https://api-explorer.xero.com/accounting/users/getusers[Xero login^]
+* https://developer.xero.com/documentation/guides/oauth2/auth-flow[Standard authorization code flow for Xero^]
 
 |===
 
@@ -361,7 +361,7 @@ To establish an OAuth 2.0 Connection:
 . Click or create an HTTP connection for the action.
 . In the *Connect to your HTTP Account* window, in the *Authorization Type* field, select *OAuth 2.0 Authorization Code* and provide values for the following fields:
 .. *Authorization URL*: The URL that starts the OAuth 2.0 flow.
-.. *Authorization URL Query Parameters*: The key-value pairs that appear after the question mark in the URL. 
+.. *Authorization URL Query Parameters*: The key-value pairs that appear after the question mark in the URL.
 +
 Under the OAuth Authorization Code Grant type, the authorization request sends data as query parameters.  Composer handles these query parameters automatically, but sometimes additional parameters are useful. For example, the Google API needs `access_token=offline` to emit a refresh token. Without this parameter, a connection will expire after an hour.
 .. *Token Exchange URL*: The URL where the authorization code can be exchanged for an access token.

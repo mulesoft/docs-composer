@@ -59,30 +59,30 @@ The following tables provide configuration examples and details about required f
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
-|*Base URL* | |
-|*Client ID* | |
-|*Client Secret* | |
-|*Scopes* | |
-|*Authorization URL* | |
+.12+|Connect to your HTTP Account |*Connection Display Name* | `Gmail john.smith@gmail.com connection` | Including the Gmail email address aids in identifying the connection from a list.
+|*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
+|*Base URL* | `https://gmail.googleapis.com` |
+|*Client ID* | `181298210352-mt5.apps.googleusercontent.com` |
+|*Client Secret* |`YmmkNirf6zDc512u7MvPoJebP...` |
+|*Scopes* | `https://www.googleapis.com/auth/gmail.send https://www.googleapis.com/auth/gmail.readonly`| For all available scopes, see https://developers.google.com/identity/protocols/oauth2/scopes[OAuth 2.0 Scopes for Google APIs].
+|*Authorization URL* | `https://accounts.google.com/o/oauth2/v2/auth` |
 |*Authorization URL Query Parameters*
 a|Parameter 1:
 
-* *Key*
-* *Value*
+* *Key*: `access_type`
+* *Value*: `offline`
 
 Parameter 2:
 
-* *Key*
-* *Value* |
+* *Key*: `prompt`
+* *Value*: `consent` |
 
-|*Token Exchange URL* | |
-|*Token Refresh URL* | |
-|*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
-|*Request Path* | |
+|*Token Exchange URL* | `https://oauth2.googleapis.com/token` |
+|*Token Refresh URL* | `https://oauth2.googleapis.com/token` |
+|*Token Revoke URL* | `https://oauth2.googleapis.com/revoke` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `/gmail/v1/users/me/profile` | For more information, see the https://developers.google.com/gmail/api[Gmail API documentation].
 
 |===
 

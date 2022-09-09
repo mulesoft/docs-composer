@@ -137,7 +137,7 @@ The following record types are supported.
 |===
 
 [NOTE]
-The PAYMENT_ITEM object is not supported by the GET RECORDS action.
+The CURRENCY and PAYMENT_ITEM objects are not supported by the GET RECORDS action.
 
 == Custom Fields
 

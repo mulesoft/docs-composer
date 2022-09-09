@@ -139,7 +139,7 @@ Parameter 2:
 * `+https://www.googleapis.com/auth/drive.readonly+`
 * `+https://www.googleapis.com/auth/drive.metadata.readonly+`
 
-| For more information, see the https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive API-specific authorization and authentication information] documentation.
+| For more information, see the https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive API-specific authorization and authentication information^] documentation.
 
 |*Authorization URL* | `+https://accounts.google.com/o/oauth2/v2/auth+` |
 |*Authorization URL Query Parameters*

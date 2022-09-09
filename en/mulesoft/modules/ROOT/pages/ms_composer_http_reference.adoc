@@ -92,30 +92,33 @@ Parameter 2:
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
-|*Base URL* | |
-|*Client ID* | |
-|*Client Secret* | |
-|*Scopes* | |
-|*Authorization URL* | |
+.12+|Connect to your HTTP Account |*Connection Display Name* | `Calendar at john.smith@gmail.com`| Including the Gmail email address aids in identifying the connection from a list.
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
+|*Base URL* | `https://www.googleapis.com/calendar` |
+|*Client ID* | `181298210352-mt5.apps.googleusercontent.com` |
+|*Client Secret* | `YmmkNirf6zDc512u7MvPoJebP...` |
+|*Scopes*
+a|
+* `https://www.googleapis.com/auth/calendar.events`
+* `https://www.googleapis.com/auth/calendar.readonly` | For all available scopes, see https://developers.google.com/identity/protocols/oauth2/scopes[OAuth 2.0 Scopes for Google APIs].
+|*Authorization URL* |`https://accounts.google.com/o/oauth2/v2/auth` |
 |*Authorization URL Query Parameters*
 a|Parameter 1:
 
-* *Key*
-* *Value*
+* *Key*: `access_type`
+* *Value*: `offline`
 
 Parameter 2:
 
-* *Key*
-* *Value* |
+* *Key*: `prompt`
+* *Value*: `consent` |
 
-|*Token Exchange URL* | |
-|*Token Refresh URL* | |
-|*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
-|*Request Path* | |
+|*Token Exchange URL* |`https://oauth2.googleapis.com/token` |
+|*Token Refresh URL* | `https://oauth2.googleapis.com/token` |
+|*Token Revoke URL* | `https://oauth2.googleapis.com/revoke` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `/v3/users/me/settings` | For more information, see the https://developers.google.com/calendar/api[Google Calendar API] documentation.
 
 |===
 
@@ -125,30 +128,37 @@ Parameter 2:
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
-|*Base URL* | |
-|*Client ID* | |
-|*Client Secret* | |
-|*Scopes* | |
-|*Authorization URL* | |
+.12+|Connect to your HTTP Account |*Connection Display Name* |`Google Sheets at john.smith@gmail.com` | Including the Gmail email address aids in identifying the connection from a list.
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
+|*Base URL* |`https://www.googleapis.com` |
+|*Client ID* |`181298210352-mt5.apps.googleusercontent.com` |
+|*Client Secret* | `YmmkNirf6zDc512u7MvPoJebP...` |
+|*Scopes* a|
+
+* `https://www.googleapis.com/auth/spreadsheets`
+* `https://www.googleapis.com/auth/drive.readonly`
+* `https://www.googleapis.com/auth/drive.metadata.readonly`
+
+| For more information, see the https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive API-specific authorization and authentication information] documentation.
+
+|*Authorization URL* | `https://accounts.google.com/o/oauth2/v2/auth` |
 |*Authorization URL Query Parameters*
 a|Parameter 1:
 
-* *Key*
-* *Value*
+* *Key*: `access_type`
+* *Value*: `offline`
 
 Parameter 2:
 
-* *Key*
-* *Value* |
+* *Key*: `prompt`
+* *Value*: `consent` |
 
-|*Token Exchange URL* | |
-|*Token Refresh URL* | |
-|*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
-|*Request Path* | |
+|*Token Exchange URL* |`https://oauth2.googleapis.com/token` |
+|*Token Refresh URL* | `https://oauth2.googleapis.com/token` |
+|*Token Revoke URL* | `https://oauth2.googleapis.com/revoke` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* |`/drive/v3/about?fields=user` | For more information, see the https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive API-specific authorization and authentication information] documentation.
 
 |===
 
@@ -158,30 +168,29 @@ Parameter 2:
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
-|*Base URL* | |
-|*Client ID* | |
-|*Client Secret* | |
-|*Scopes* | |
-|*Authorization URL* | |
-|*Authorization URL Query Parameters*
-a|Parameter 1:
+.10+|Connect to your HTTP Account |*Connection Display Name* | `Hubspot Composer DEMO org` | Including the Hubspot organization name aids in identifying the connection from a list.
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
+|*Base URL* |`https://api.hubapi.com/` |
+|*Client ID* |`63ddf8b7-c7b0-40f9-804...` | For more information, see the https://developers.hubspot.com/docs/api/working-with-oauth[Hubspot documentation].
+|*Client Secret* |`2100f863-944c-433c-a...` |
+|*Scopes* a|
 
-* *Key*
-* *Value*
+* settings.users.read
+* crm.lists.read
+* settings.users.teams.read
+* crm.schemas.contacts.read |
 
-Parameter 2:
+|*Authorization URL* | `https://app.hubspot.com/oauth/authorize` |
+|*Token Exchange URL* | `https://api.hubapi.com/oauth/v1/token` |
+|*Token Refresh URL* | `https://api.hubapi.com/oauth/v1/token` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* a|
 
-* *Key*
-* *Value* |
+* `contacts/v1/lists/all/contacts/all?count=1`
+* `https://api.hubapi.com/application/settings/test/v1/actions/accounts-fetch`
 
-|*Token Exchange URL* | |
-|*Token Refresh URL* | |
-|*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
-|*Request Path* | |
+ |For more information, see the https://developers.hubspot.com/docs/api/oauth-quickstart-guide[Hubspot OAuth] documentation.
 
 |===
 
@@ -191,30 +200,23 @@ Parameter 2:
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
-|*Base URL* | |
-|*Client ID* | |
-|*Client Secret* | |
-|*Scopes* | |
-|*Authorization URL* | |
-|*Authorization URL Query Parameters*
-a|Parameter 1:
+.11+|Connect to your HTTP Account |*Connection Display Name* | `My Microsoft Teams connection` | Including the Microsoft Teams instance name aids in identifying the connection from a list.
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
+|*Base URL* | `https://graph.microsoft.com` |
+|*Client ID* | `1c325c1c-8fd5-419f-85dc-a69cc2f30a21` |
+|*Client Secret* | `P8M8Q~nAXXckZeqGxR-gE3WJIOsw~rIkjdG8jc7G` |
+|*Scopes* a|
 
-* *Key*
-* *Value*
-
-Parameter 2:
-
-* *Key*
-* *Value* |
-
-|*Token Exchange URL* | |
-|*Token Refresh URL* | |
-|*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
-|*Request Path* | |
+* `https://graph.microsoft.com/Mail.Read`
+* `https://graph.microsoft.com/User.Read`
+* `offline_access` |
+|*Authorization URL* | `https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/authorize` | Tenant ID value:
+`https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/authorize`
+|*Token Exchange URL* | `https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token` |
+|*Token Refresh URL* | `https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `/v1.0/me` |
 
 |===
 
@@ -224,30 +226,29 @@ Parameter 2:
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
-|*Base URL* | |
-|*Client ID* | |
-|*Client Secret* | |
-|*Scopes* | |
-|*Authorization URL* | |
-|*Authorization URL Query Parameters*
-a|Parameter 1:
+.10+|Connect to your HTTP Account |*Connection Display Name* | `My Outlook 365 connection`| Including the Outlook instance name aids in identifying the connection from a list.
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
+|*Base URL* |`https://graph.microsoft.com` |
+|*Client ID* | `1c325c1c-8fd5-419f-85dc-a69cc2f30a21` |
+|*Client Secret* | `P8M8Q~nAXXckZeqGxR-gE3WJIOsw~rIkjdG8jc7G` |
+|*Scopes* a|
 
-* *Key*
-* *Value*
+* `https://graph.microsoft.com/Mail.Read`
+* `https://graph.microsoft.com/User.Read`
+* `offline_access` |
 
-Parameter 2:
+|*Authorization URL* |`https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/authorize` |
+|*Token Exchange URL* | `https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token` |
+|*Token Refresh URL* | `https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* a|
 
-* *Key*
-* *Value* |
+`/v1.0/me`
 
-|*Token Exchange URL* | |
-|*Token Refresh URL* | |
-|*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
-|*Request Path* | |
+-OR-
+
+`/v1.0/me/mailfolders/inbox/messages?$select=subject,from,receivedDateTime&$top=25&$orderby=receivedDateTime%20DESC` |
 
 |===
 
@@ -258,7 +259,7 @@ Parameter 2:
 
 |Step |Field |Example Value |Notes
 .12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
 |*Base URL* | |
 |*Client ID* | |
 |*Client Secret* | |
@@ -278,8 +279,8 @@ Parameter 2:
 |*Token Exchange URL* | |
 |*Token Refresh URL* | |
 |*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
 |*Request Path* | |
 
 |===
@@ -291,7 +292,7 @@ Parameter 2:
 
 |Step |Field |Example Value |Notes
 .12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
 |*Base URL* | |
 |*Client ID* | |
 |*Client Secret* | |
@@ -311,8 +312,8 @@ Parameter 2:
 |*Token Exchange URL* | |
 |*Token Refresh URL* | |
 |*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
 |*Request Path* | |
 
 |===
@@ -324,7 +325,7 @@ Parameter 2:
 
 |Step |Field |Example Value |Notes
 .12+|Connect to your HTTP Account |*Connection Display Name* | |
-|*Authorization Type*| |
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
 |*Base URL* | |
 |*Client ID* | |
 |*Client Secret* | |
@@ -344,8 +345,8 @@ Parameter 2:
 |*Token Exchange URL* | |
 |*Token Refresh URL* | |
 |*Token Revoke URL* | |
-|*Access Token Expired Code* | |
-.2+|Test HTTP Connection |*Request Method* | |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
 |*Request Path* | |
 
 |===

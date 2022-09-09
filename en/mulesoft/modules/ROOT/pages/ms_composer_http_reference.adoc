@@ -118,7 +118,7 @@ Parameter 2:
 |*Token Revoke URL* | `+https://oauth2.googleapis.com/revoke+` |
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
-|*Request Path* | `/v3/users/me/settings` | For more information, see the https://developers.google.com/calendar/api[Google Calendar API] documentation.
+|*Request Path* | `/v3/users/me/settings` | For more information, see the https://developers.google.com/calendar/api[Google Calendar API^] documentation.
 
 |===
 

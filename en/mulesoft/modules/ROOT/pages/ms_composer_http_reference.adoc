@@ -47,7 +47,7 @@ The following authorization options are available:
 
 === Connect Your Target System in Composer Using OAuth 2.0
 
-Using HTTP Connector, you can establish a connection with an https://auth0.com/intro-to-iam/what-is-oauth-2/#grant-types-in-oauth-20[OAuth 2.0 Authorization Code Grant] to enable authorization. With this authorization, you can then access resources hosted by other apps such as Salesforce, Gmail, or Outlook 365.
+Using HTTP Connector, you can establish a connection with an https://auth0.com/intro-to-iam/what-is-oauth-2/#grant-types-in-oauth-20[OAuth 2.0 Authorization Code Grant^] to enable authorization. With this authorization, you can then access resources hosted by other apps such as Salesforce, Gmail, or Outlook 365.
 
 Before establishing a connection, you must create an OAuth Client in the target system.  The process for creating an OAuth Client depends on each target system.
 

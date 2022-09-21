@@ -89,8 +89,6 @@ it's likely that you need to purchase Composer for your Salesforce org or that y
 
 When the Composer page displays, you're ready to create your first flow. If you'd like to learn more before using Composer, review the other topics in this section.
 
-Note that flows are private and cannot be shared.
-
 == Enable Flow Failure Notifications
 
 As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, Composer sends an email to the owner of the flow.

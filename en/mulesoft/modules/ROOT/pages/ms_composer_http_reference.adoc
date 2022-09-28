@@ -361,6 +361,36 @@ a|
 
 |===
 
+==== Shopify
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.9+|Connect to your HTTP Account |*Connection Display Name* | `+Shopify at dpelaez+shopifydev@mulesoft.com (QA)+` | For more information, see the https://partners.shopify.com/[Shopify Partner Program^].
+|*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
+|*Base URL* | `+https://myowndevelopmentstore1.myshopify.com+` |
+|*Client ID* | `04bad9ea727686d3a61a47cc23772587` |
+|*Client Secret* |`668ca7383d2558aa9f4270550a4dff62` |
+|*Scopes* a|
+
+* `write_customers`
+* `write_orders`
+* `write_products` |
+
+|*Authorization Headers* a|
+
+* *Name*: `X-Shopify-Access-Token`
+* *Value Prefix*: None
+* *Custom Value Prefix*: None |
+
+|*Token Exchange URL* | `+https://myowndevelopmentstore1.myshopify.com/admin/oauth/access_token+` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `+/admin/api/2022-07/shop.json+` |
+
+|===
+
 ==== Slack
 [%header%autowidth.spread]
 

@@ -128,7 +128,7 @@ Parameter 2:
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* |`+Google Sheets at john.smith@gmail.com+`` | Including the Gmail email address aids in identifying the connection from a list.
+.12+|Connect to your HTTP Account |*Connection Display Name* |`+Google Sheets at john.smith@gmail.com+` | Including the Gmail email address aids in identifying the connection from a list.
 |*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
 |*Base URL* |`+https://www.googleapis.com+` |
 |*Client ID* |`181298210352-mt5.apps.googleusercontent.com` |

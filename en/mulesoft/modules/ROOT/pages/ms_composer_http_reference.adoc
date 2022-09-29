@@ -128,7 +128,7 @@ Parameter 2:
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* |`+Google Sheets at john.smith@gmail.com+`` | Including the Gmail email address aids in identifying the connection from a list.
+.12+|Connect to your HTTP Account |*Connection Display Name* |`+Google Sheets at john.smith@gmail.com+` | Including the Gmail email address aids in identifying the connection from a list.
 |*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
 |*Base URL* |`+https://www.googleapis.com+` |
 |*Client ID* |`181298210352-mt5.apps.googleusercontent.com` |
@@ -175,10 +175,10 @@ Parameter 2:
 |*Client Secret* |`2100f863-944c-433c-a...` |
 |*Scopes* a|
 
-* settings.users.read
-* crm.lists.read
-* settings.users.teams.read
-* crm.schemas.contacts.read |
+* `settings.users.read`
+* `crm.lists.read`
+* `settings.users.teams.read`
+* `crm.schemas.contacts.read` |
 
 |*Authorization URL* | `+https://app.hubspot.com/oauth/authorize+` |
 |*Token Exchange URL* | `+https://api.hubapi.com/oauth/v1/token+` |
@@ -191,6 +191,45 @@ Parameter 2:
 * `+https://api.hubapi.com/application/settings/test/v1/actions/accounts-fetch+`
 
  |For more information, see the https://developers.hubspot.com/docs/api/oauth-quickstart-guide[Hubspot OAuth 2.0^] documentation.
+
+|===
+
+==== Jira
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.11+|Connect to your HTTP Account |*Connection Display Name* | `+Jira at ocs.citizen.demo@gmail.com (STG)+` | Including the Gmail email address aids in identifying the connection from a list.
+|*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
+|*Base URL* | `+https://api.atlassian.com/ex/jira/077bc6b6-f2ab-4cd6-a694-c469cb2d058d/rest/api/3+` | The value in this field is the *Cloud ID* for your Jira account, which is the *Tenant ID* parameter in the *Base URL* field.
+|*Client ID* | `SgPehF9AZ5ECD63iUJpG2aPO3j9qNvXM` |
+|*Client Secret* |`Yf8q-wbEJjeJIhx5iuE-BiydpL1oCj7wVy2gaoYDEMCe4xwWO_Q2vbjyJg6rGmD7L` |
+|*Scopes* a|
+
+* `offline_access`
+* `read:jira-work`
+* `manage:jira-project`
+* `read:jira-user`
+* `write:jira-work` |
+
+|*Authorization URL* | `+https://auth.atlassian.com/authorize+` | You must register your callback URL when creating a Jira account.  As a result, these credentials only work in staging environments.
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*: `audience`
+* *Value*: `api.atlassian.com`
+
+Parameter 2:
+
+* *Key*: `prompt`
+* *Value*: `consent` |
+
+|*Token Exchange URL* | `+https://auth.atlassian.com/oauth/token+` |
+|*Token Refresh URL* | `+https://auth.atlassian.com/oauth/token+` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `+/myself+` |
 
 |===
 
@@ -252,6 +291,48 @@ Parameter 2:
 
 |===
 
+==== Procore (Production Environment)
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.10+|Connect to your HTTP Account |*Connection Display Name* | `Procore Demo Org` |
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
+|*Base URL* |`+https://api.procore.com+` |
+|*Client ID* | `43a4c94b7e225ad7a8d99cb4a0ae0de26efa298…` |
+|*Client Secret* | `e84ee4db2f944a7b585ca110ac20793b5e6c0…` |
+|*Authorization URL* | `+https://login.procore.com/oauth/authorize+` |
+|*Token Exchange URL* | `+https://login.procore.com/oauth/token+` |
+|*Token Refresh URL* | `+https://login.procore.com/oauth/token+` |
+|*Token Revoke URL* | `+https://login.procore.com/oauth/revoke+` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | ``/rest/v1.0/me`` |
+
+|===
+
+==== Procore (Sandbox Environment)
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.10+|Connect to your HTTP Account |*Connection Display Name* | `Procore Sandbox Demo Org` |
+|*Authorization Type*| `OAuth 2.0 Authorization Code`| The value in this field is fixed.
+|*Base URL* |`+https://sandbox.procore.com+` |
+|*Client ID* | `43a4c94b7e225ad7a8d99cb4a0ae0de26efa298…` |
+|*Client Secret* | `e84ee4db2f944a7b585ca110ac20793b5e6c0…` |
+|*Authorization URL* | `+https://login-sandbox.procore.com/oauth/authorize+` |
+|*Token Exchange URL* | `+https://login-sandbox.procore.com/oauth/token+` |
+|*Token Refresh URL* | `+https://login-sandbox.procore.com/oauth/token+` |
+|*Token Revoke URL* | `+https://login-sandbox.procore.com/oauth/revoke+` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | ``/rest/v1.0/me`` |
+
+|===
+
 ==== Salesforce
 [%header%autowidth.spread]
 
@@ -277,6 +358,36 @@ a|
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
 |*Request Path* | ``/services/data/v55.0/`` | For more information, see the https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_code.htm[Salesforce REST API Developer Guide^] documentation.
+
+|===
+
+==== Shopify
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.9+|Connect to your HTTP Account |*Connection Display Name* | `+Shopify at my.account@example.com (QA)+` | For more information, see the https://partners.shopify.com/[Shopify Partner Program^].
+|*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
+|*Base URL* | `+https://myowndevelopmentstore1.myshopify.com+` |
+|*Client ID* | `04bad9ea727686d3a61a47cc23772587` |
+|*Client Secret* |`668ca7383d2558aa9f4270550a4dff62` |
+|*Scopes* a|
+
+* `write_customers`
+* `write_orders`
+* `write_products` |
+
+|*Authorization Headers* a|
+
+* *Authorization Header Name*: `X-Shopify-Access-Token`
+* *Authorization Header Value Prefix*: `Bearer Prefix`
+* *Authorization Header Custom Value Prefix*: None |
+
+|*Token Exchange URL* | `+https://myowndevelopmentstore1.myshopify.com/admin/oauth/access_token+` |
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `+/admin/api/2022-07/shop.json+` |
 
 |===
 

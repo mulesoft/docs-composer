@@ -367,7 +367,7 @@ a|
 |===
 
 |Step |Field |Example Value |Notes
-.9+|Connect to your HTTP Account |*Connection Display Name* | `+Shopify at dpelaez+shopifydev@mulesoft.com (QA)+` | For more information, see the https://partners.shopify.com/[Shopify Partner Program^].
+.9+|Connect to your HTTP Account |*Connection Display Name* | `+Shopify at my.account@example.com (QA)+` | For more information, see the https://partners.shopify.com/[Shopify Partner Program^].
 |*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
 |*Base URL* | `+https://myowndevelopmentstore1.myshopify.com+` |
 |*Client ID* | `04bad9ea727686d3a61a47cc23772587` |

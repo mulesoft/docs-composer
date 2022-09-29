@@ -380,7 +380,7 @@ a|
 
 |*Authorization Headers* a|
 
-* *Name*: `X-Shopify-Access-Token`
+* *Header Name*: `X-Shopify-Access-Token`
 * *Value Prefix*: None
 * *Custom Value Prefix*: None |
 

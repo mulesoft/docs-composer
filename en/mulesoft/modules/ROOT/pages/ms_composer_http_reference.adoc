@@ -380,9 +380,9 @@ a|
 
 |*Authorization Headers* a|
 
-* *Header Name*: `X-Shopify-Access-Token`
-* *Value Prefix*: None
-* *Custom Value Prefix*: None |
+* *Authorization Header Name*: `X-Shopify-Access-Token`
+* *Authorization Header Value Prefix*: `Bearer Prefix`
+* *Authorization Header Custom Value Prefix*: None |
 
 |*Token Exchange URL* | `+https://myowndevelopmentstore1.myshopify.com/admin/oauth/access_token+` |
 |*Access Token Expired Code* | `401` |

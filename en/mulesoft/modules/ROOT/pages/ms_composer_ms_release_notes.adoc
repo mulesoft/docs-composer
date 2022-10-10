@@ -11,7 +11,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 [%header%autowidth.spread]
 |===
 |Issue |ID
-|Fixed the issue in which the *Run History* page in Composer unnecessarily displayed an error and sent an email notification for an expired access token. Now the error does not appear and no email is sent. To implement this change, deactivate and then reactivate your flow. |W-11649482
+|Fixed the issue in which the *Run History* page in Composer unnecessarily displayed an error and sent an email notification for an expired access token. Now the error does not appear and no email is sent. To implement this fix, deactivate and then reactivate your flow. |W-11649482
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

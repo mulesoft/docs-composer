@@ -43,6 +43,42 @@ include::_partials/tableau-ki.adoc[]
 
 include::_partials/workday-ki.adoc[]
 
+== October 6, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in Google Sheets Connector in which an `InterruptedException` occurred during an MUnit test. |W-10887516
+|Fixed the issue in Google Sheets Connector in which the *Create row* action did not work properly when the first column without a header contained values. |W-10933097
+|In Google Sheets Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4. |W-11719209
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
 == September 29, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

@@ -38,7 +38,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 [%header%autowidth.spread]
 |===
 |Issue |ID
-|Fixed the issue in Google Sheets Connector in which an InterruptedException occurred during an MUnit test. |W-10887516
+|Fixed the issue in Google Sheets Connector in which an `InterruptedException` occurred during an MUnit test. |W-10887516
 |Fixed the issue in Google Sheets Connector in which the *Create row* action did not work properly when the first column without a header contained values. |W-10933097
 |In Google Sheets Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4. |W-11719209
 |===

@@ -13,7 +13,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* When looping over a selected List of Strings in a For Each loop, you can now use a single string value across multiple cards in the loop.
+* When looping over a selected list of strings in a for each loop, you can now use a single string value across multiple cards in the loop.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

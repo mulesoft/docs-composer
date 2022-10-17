@@ -8,28 +8,41 @@ xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to y
 
 == Create a Flow
 
-You can create a new flow or clone an existing flow.
+You can create a new flow (from scratch or from template) or clone an existing flow.
 
 [[create-a-new-flow]]
-=== Create a New Flow
+=== Create a New Flow From Scratch
 
-To create a new flow:
+To create a new flow from scratch:
 
 ifeval::["{product}"=="salesforce"]
-. From the Composer *Home* page, click *Create New Flow*. +
+. From the Composer *Home* page, click *Create New Flow > Create Flow from Scratch*. +
 Your flow is named automatically.
 . Optionally, click the pencil icon next to *_flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-. From the Composer *Home* page, click *Create new flow*. +
+. From the Composer *Home* page, click *Create new flow > Create Flow from Scratch*. +
 Your flow is named automatically.
 . To change the name automatically created for your new flow, click the pencil icon next to *Untitled Flow* and create a custom name using any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
 
 Now you are ready to create a flow trigger.
+
+[[create-a-new-flow-from-template]]
+=== Create a New Flow From Template
+
+To create a new flow from template:
+
+. From the Composer *Home* page, click *Create new Flow > Create Flow from Template*.
+. Explore the template options and select the template you want to use.
+. Ensure you meet the prerequisites and if so, click *Use this Template*.
+. Configure your connections and information required by the flow.
+. Click *Create flow*.
+
+Now you are ready to use your flow. For more information about templates, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
 
 === Clone an Existing Flow
 

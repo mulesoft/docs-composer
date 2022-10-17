@@ -34,6 +34,10 @@
           "file" : "ms_composer_flows.adoc",
           "title": "Build a Flow"
         },
+          {
+            "file" : "ms_composer_build_a_flow_using_templates.adoc",
+            "title": "Build a Flow Using Templates"
+          },
         {
           "file" : "ms_composer_custom_expression_editor.adoc",
           "title": "Build Formulas for Flows"

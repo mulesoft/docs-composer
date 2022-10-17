@@ -6,6 +6,7 @@
 ** xref:ms_composer_about_flows.adoc[How Composer Works]
 ** xref:ms_composer_checklist.adoc[Preparation Checklist]
 * xref:ms_composer_flows.adoc[Build a Flow]
+** xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates]
 * xref:ms_composer_custom_expression_editor.adoc[Build Formulas for Flows]
 * xref:ms_composer_test_flow.adoc[Test a Flow]
 * xref:ms_composer_activation.adoc[Activate a Flow]

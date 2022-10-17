@@ -16,7 +16,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 [%header%autowidth.spread]
 |===
 |Issue |ID
-|In Jira Connector, in the *Get Issue in Jira* action, fixed the Composer test failure that occurred when no fields in the action were selected. |W-11649482
+|In Jira Connector, in the *Get Issue in Jira* action, removed the unnecessary *Select Fields* button. |W-11649482
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

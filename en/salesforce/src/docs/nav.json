@@ -123,6 +123,10 @@
               "title": "Slack"
             },
             {
+              "file" : "ms_composer_snowflake_reference.adoc",
+              "title": "Snowflake"
+            },
+            {
               "file" : "ms_composer_stripe_reference.adoc",
               "title": "Stripe"
             },

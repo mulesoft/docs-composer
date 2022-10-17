@@ -29,6 +29,7 @@
 ** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]
 ** xref:ms_composer_slack_reference.adoc[Slack]
+** xref:ms_composer_snowflake_reference.adoc[Snowflake]
 ** xref:ms_composer_stripe_reference.adoc[Stripe]
 ** xref:ms_composer_tableau_reference.adoc[Tableau]
 ** xref:ms_composer_twilio_reference.adoc[Twilio]

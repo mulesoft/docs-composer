@@ -249,7 +249,7 @@ In this example, the *Status* field in a case in Salesforce is mapped to the *St
 
 [%header%autowidth.spread]
 |===
-|Status (Salesforce) | Status (NetSuite)
+|Status (Salesforce) | Status (Zendesk)
 |New |New
 |Working |Open
 |Waiting on Customer |On-Hold

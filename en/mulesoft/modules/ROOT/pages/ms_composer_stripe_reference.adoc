@@ -44,9 +44,11 @@ Create a new charge. When creating a new charge, note that:
 ** Either the `Source` or the `Customer` field
 ** `Customer ID` +
 Note that best practice dictates that the value in the Customer ID field should come from an existing account in Stripe. For example, `cus_JQ1BWAcXfKuswb`.
-** Some shipping fields are required if any shipping fields are present. +
+** Some shipping fields are required if any shipping fields are present.
 
-For more information on the Create Charge action in Stripe, see https://stripe.com/docs/api/charges/create.
++
+
+For more information on the *Create Charge* action in Stripe, see https://stripe.com/docs/api/charges/create.
 
 Create customer::
 

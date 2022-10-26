@@ -20,13 +20,15 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In HubSpot Connector, tooltips are now updated and improved for both triggers and actions.
 
-//include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+* In Stripe Connector, the *Find Customer* action now supports dynamic metadata.
 
-//[%header%autowidth.spread]
-//|===
-//|Issue |ID
-//| |
-//|===
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In Stripe Connector, fixed security vulnerability found in componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2. |W-11853409
+|===
 
 iinclude::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

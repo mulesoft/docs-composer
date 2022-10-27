@@ -349,7 +349,7 @@ To create an If/Else block:
 [[use-custom-logic]]
 == Use Custom Logic
 
-Custom logic uses the row number for each condition in the If statement block of an If/Else Statement and `OR`, `AND`, and `NOT` to create complex expressions.  When you select the custom logic option, each condition is assigned a number and you can then use that number to customize the order of operations for the conditions.
+Custom logic uses the row number for each condition in the If statement block of an If/Else statement and `OR`, `AND`, and `NOT` to create complex expressions.  When you select the custom logic option, each condition is assigned a number and you can then use that number to customize the order of operations for the conditions.
 
 When using custom logic, all conditions defined must be referenced in the expression for the expression to be validated. For example, if there are three defined conditions and you enter “1 and (2 or 1)”, the expression is invalid because “3” is not referenced.
 

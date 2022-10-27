@@ -353,7 +353,7 @@ Custom logic uses the row number for each condition in the If statement block of
 
 When using custom logic, all conditions defined must be referenced in the expression for the expression to be validated. For example, if there are three defined conditions and you enter “1 and (2 or 1)”, the expression is invalid because “3” is not referenced.
 
- Using custom logic, you can have up to 20 conditions and a condition can be referenced  more than once.
+ Using custom logic, you can have up to 20 conditions and a condition can be referenced more than once.
 
 [[create-and-test-a-for-each-loop]]
 === Create a For Each Loop

@@ -8,7 +8,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now add custom logic, such as `and`, `or`, or `not`, in conditional statements when building an action and in If/Else Statements.
+* You can now add custom logic, such as `and`, `or`, or `not`, in conditional statements when building an action and in If/Else statements.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

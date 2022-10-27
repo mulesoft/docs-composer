@@ -339,7 +339,7 @@ To create an If/Else block:
 . Click the plus sign after the trigger or the last action in your flow.
 . Click *Add Action*.
 . Click *If/Else Block* to define the first branch.
-. Enter the requested criteria. You can specify that `all conditions should be met (AND)`, `any condition can be met (OR)`, or define <<use-custom-logic,custom logic>> to customize the order and grouping of your conditions.
+. Enter the requested criteria. You can specify that `all conditions should be met (AND)`, `any condition can be met (OR)`, or <<use-custom-logic,customize>> the order and grouping of your conditions.
 . Click *+* to add an action to that branch. Every branch must have an action, also called a _step_.
 . If you want to add another branch, click *Add If* and repeat the previous steps for every If/Else branch you create.
 . If you want to set criteria for how the flow executes if none of the criteria for the existing branches are met, click *Add Else* and repeat the previous steps for the final branch.

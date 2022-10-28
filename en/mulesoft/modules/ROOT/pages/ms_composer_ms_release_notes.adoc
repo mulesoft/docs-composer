@@ -10,6 +10,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now add custom logic, such as `and`, `or`, or `not`, in conditional statements when building an action and in If/Else statements.
 
+* In RPA Connector, you can now test an RPA process using sample data without actually invoking the RPA process.
+
+* In RPA Connector, if you are connected to your RPA organization but no processes appear in the dropdown for the *RPA Process* field, you can now connect directly to your RPA Organization to see your processes by clicking the *Create an invokable run config from MuleSoft RPA* button.
+
+* In RPA Connector, when you select the RPA Process dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*. 
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 ==== Composer Platform

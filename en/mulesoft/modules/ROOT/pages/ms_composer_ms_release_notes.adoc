@@ -14,7 +14,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In RPA Connector, you can now connect directly to your RPA Organization to see your processes by clicking the *Create an invokable run config from MuleSoft RPA* button when you are connected to your RPA organization and no processes appear in the dropdown for the *RPA Process* field.
 
-* In RPA Connector, when you select the RPA Process dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*. 
+* In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*. 
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

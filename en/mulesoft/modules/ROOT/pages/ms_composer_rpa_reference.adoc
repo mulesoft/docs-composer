@@ -73,7 +73,7 @@ Invokes a process in RPA. Provide a value for *RPA Process Name*. Additionally, 
 
 == Test RPA Process
 
-You can test your RPA Process instantly without actually invoking the process.
+You can test your RPA Process instantly without invoking the process.
 
 To test your RPA Process:
 

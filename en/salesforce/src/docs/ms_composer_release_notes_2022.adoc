@@ -9,6 +9,57 @@ New versions are automatically available once they are released; you don't need 
 //| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
+== October 31, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now create new flows from templates. This release includes support for the following templates:
+** Create Or Update Jira Issue for Associated Change Request in Salesforce
+** Create Or Update Jira Issue for Associated Work Plan in Salesforce
+** Create Or Update Jira Issue for Associated Work Step in Salesforce
+** Create Change Request in Salesforce for Associated Jira Issue
+** Update Change Request in Salesforce for Associated Jira Issue
+** Create Work Plan in Salesforce for Associated Jira Issue
+** Update Work Plan in Salesforce for Associated Jira Issue
+** Create Work Step in Salesforce for Associated Jira Issue
+** Update Work Step in Salesforce for Associated Jira Issue
+** Create or Update Incident and Asset for Associated ServiceNow Incident
+** Create or Update ServiceNow Incident for Associated Incident in Salesforce
+** Create Configuration Item for Associated Incident Asset in Salesforce
+** Create or Update Netsuite Credit Memo for Associated Posted Credit Memo in Salesforce
+** Create or Update Netsuite Customer for Associated Account in Salesforce
+** Create or Update Netsuite Customer Payment for Associated Processed Payment in Salesforce
+** Create or Update NetSuite Inventory Item for Associated Active Product in Salesforce
+** Create or Update Netsuite Invoice for Associated Posted Invoice in Salesforce
+** Create or Update Netsuite Sales Order for Associated Activated Order in Salesforce
+
++
+Templates are patterns that you can leverage to build a flow. All of the steps and field mappings are predefined, so you can select the template and enter the missing information for the various connectors used (such as connection secrets) to create a flow you can later customize. Since templates are pre-built flows, templates not only reduce the barrier to entry and accelerate the time to activate the flow, but also include the best practices for flows.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
 == October 27, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -19,7 +70,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In RPA Connector, you can now connect directly to your RPA Organization to see your processes by clicking the *Create an invokable run config from MuleSoft RPA* button when you are connected to your RPA organization and no processes appear in the dropdown for the *RPA Process* field.
 
-* In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*. 
+* In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*.
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

@@ -1,6 +1,6 @@
 = Build a Flow Using Templates
 
-You can create a new flow from a template. Additional templates will continue to roll out each quarter.
+You can create a new flow from a template.
 
 Templates are patterns that you can leverage to build a flow. All of the steps and field mappings are predefined, so you can select the template and enter the missing information for the various connectors used (such as connection secrets) to create a flow you can later customize to meet your business needs. For example, you might still need to add required fields specific to your connection, map additional fields, or add or delete steps to meet your use case. You will likely still need to make a few changes before activating the flow.
 

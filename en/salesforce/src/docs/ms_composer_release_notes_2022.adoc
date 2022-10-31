@@ -13,7 +13,7 @@ New versions are automatically available once they are released; you don't need 
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now create new flows from templates. This release includes support for the following templates. Additional templates will continue to roll out each quarter.
+* You can now create new flows from templates. This release includes support for the following templates:
 ** Create Or Update Jira Issue for Associated Change Request in Salesforce
 ** Create Or Update Jira Issue for Associated Work Plan in Salesforce
 ** Create Or Update Jira Issue for Associated Work Step in Salesforce

@@ -70,6 +70,10 @@ Remember to change the connection from sandbox to production in every trigger an
 
 include::_partials/null-values.adoc[]
 
+== Transfer Binary Files
+
+You can transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance. The recommended file size limit per transfer is 25MB and files transferred across systems cannot be truncated.
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
@@ -88,6 +92,18 @@ Checks for soft-deleted records. Soft-deleted records are stored in Salesforce f
 +
 Records are typically stored for approximately 15 days before being hard-deleted and irretrievable.
 * You can't modify the soft-delete timestamp.
+
+=== Trigger Conditions
+
+You can add trigger conditions to specify which conditions should trigger a workflow, for example, you can restrict a workflow to trigger only when a specific field meets the conditions you specify.
+
+To add a trigger condition:
+
+. Select a trigger.
+. In the *Trigger Conditions* section, click on the *Criteria* dropdown menu and select either *All Conditions Must Be Met (AND)* or *Any Condition Must Be Met (OR)*.
+. Specify your conditions for specific fields.
+
+To add more trigger conditions, click *Add Condition*.
 
 == Actions
 
@@ -125,6 +141,14 @@ If the record ID isn't found, create the record.
 Delete record::
 
 Delete a record specified by its object type and record ID.
+
+Upload file::
+
+Adds a file to a folder in Salesforce.
+
+Download file::
+
+Returns the binary contents of the specified file.
 
 == Objects
 

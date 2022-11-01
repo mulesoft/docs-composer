@@ -104,8 +104,8 @@ The following record types are supported.
 |CASH_REFUND |X |X
 |CONTACT |X |X
 |CREDIT_MEMO |X |X
-|CURRENCY |X |X
-|CURRENCY_RATE |X |X
+|CURRENCY | |X
+|CURRENCY_RATE | |X
 |CUSTOMER |X |X
 |CUSTOMER_DEPOSIT |X |X
 |CUSTOMER_PAYMENT |X |X
@@ -116,25 +116,36 @@ The following record types are supported.
 |INVENTORY_ITEM |X |X
 |INVOICE |X |X
 |JOURNAL_ENTRY |X |X
-|LOT_NUMBERED_INVENTORY_ITEM |X |
+|LEAD |X |X
+|LOT_NUMBERED_INVENTORY_ITEM |X |X
 |NON_INVENTORY_PURCHASE_ITEM |X |X
 |NON_INVENTORY_RESALE_ITEM |X |X
 |NON_INVENTORY_SALE_ITEM |X |X
 |OPPORTUNITY |X |X
+|PARTNER |X |X
 |PAYMENT_ITEM | |X
+|PROSPECT |X |X
 |PURCHASE_ORDER |X |X
 |RETURN_AUTHORIZATION |X |X
 |SALES_ORDER |X |X
 |SERVICE_PURCHASE_ITEM |X |X
+|SERVICE_RESALE_ITEM |X |X
 |SERVICE_SALE_ITEM |X |X
 |SUPPORT_CASE |X |X
+|TIME_BILL |X |X
+|TIME_SHEET |X |X
 |VENDOR |X |X
 |VENDOR_BILL |X |X
 
 |===
 
 [NOTE]
-The PAYMENT_ITEM object is not supported by the GET RECORDS action.
+====
+The CURRENCY and PAYMENT_ITEM objects are not supported by the GET RECORDS action.
+
+The LEAD and PROSPECT objects are supported only by the GET RECORDS action. The LEAD and PROSPECT objects are subtypes of the CUSTOMER object, so to use the LEAD and PROSPECT objects for other actions, you can set the object type to CUSTOMER and set the `internalId` of `entityStatus` to the corresponding value according to the NetSuite documentation.
+
+====
 
 == Custom Fields
 

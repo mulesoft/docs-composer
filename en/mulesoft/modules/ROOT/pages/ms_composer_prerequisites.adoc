@@ -344,7 +344,7 @@ Before sharing APIs from Anypoint Platform to MuleSoft Composer, ensure that:
 * Your organization uses Anypoint Platform for API Management.
 * Your organization has xref:exchange::to-create-an-asset.adoc#create-an-api-asset[Rest APIs] managed by API Manager that conform to the following:
 
-** API specifications use either RAML or OpenAPI
+** API specifications use either RAML or OpenAPI.
 ** API uses basic authentication, bearer token, or API Key in conjunction with a Client ID and Secret.
 
 * Composer organizations are <<connect-composer-to-anypoint-platform,linked to Anypoint organizations>>.

@@ -17,15 +17,6 @@ Username and password::
 
 The username and password that you use to log in to Slack
 
-== Triggers
-
-include::_partials/trigger-definition.adoc[]
-
-On New Message::
-
-When this trigger fires, attachments from a new message are available as data pills for subsequent steps.
-
-
 == Actions
 
 include::_partials/action-definition.adoc[]

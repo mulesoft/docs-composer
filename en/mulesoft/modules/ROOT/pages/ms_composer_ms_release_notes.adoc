@@ -4,6 +4,109 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== November 1, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In Slack Connector, the *On New Message* trigger has been disabled and is no longer available. |W-11972430
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== October 31, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now create new flows from templates. This release includes support for the following templates:
+** Create Or Update Jira Issue for Associated Change Request in Salesforce
+** Create Or Update Jira Issue for Associated Work Plan in Salesforce
+** Create Or Update Jira Issue for Associated Work Step in Salesforce
+** Create Change Request in Salesforce for Associated Jira Issue
+** Update Change Request in Salesforce for Associated Jira Issue
+** Create Work Plan in Salesforce for Associated Jira Issue
+** Update Work Plan in Salesforce for Associated Jira Issue
+** Create Work Step in Salesforce for Associated Jira Issue
+** Update Work Step in Salesforce for Associated Jira Issue
+** Create or Update Incident and Asset for Associated ServiceNow Incident
+** Create or Update ServiceNow Incident for Associated Incident in Salesforce
+** Create Configuration Item for Associated Incident Asset in Salesforce
+** Create or Update Netsuite Credit Memo for Associated Posted Credit Memo in Salesforce
+** Create or Update Netsuite Customer for Associated Account in Salesforce
+** Create or Update Netsuite Customer Payment for Associated Processed Payment in Salesforce
+** Create or Update NetSuite Inventory Item for Associated Active Product in Salesforce
+** Create or Update Netsuite Invoice for Associated Posted Invoice in Salesforce
+** Create or Update Netsuite Sales Order for Associated Activated Order in Salesforce
+
++
+Templates are patterns that you can leverage to build a flow. All of the steps and field mappings are predefined, so you can select the template and enter the missing information for the various connectors used (such as connection secrets) to create a flow you can later customize. Since templates are pre-built flows, templates not only reduce the barrier to entry and accelerate the time to activate the flow, but also include the best practices for flows.
+
+* MuleSoft Anypoint Platform customers can now share externally available APIs managed in Anypoint Platform with business users for consumption in a MuleSoft Composer flow. This enhancement creates integrations that span beyond out-of-the-box connectors.
+* You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== October 27, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now add custom logic, such as `and`, `or`, or `not`, in conditional statements when building an action and in If/Else statements.
+
+* In RPA Connector, you can now test an RPA process using sample data without invoking the RPA process.
+
+* In RPA Connector, you can now connect directly to your RPA Organization to see your processes by clicking the *Create an invokable run config from MuleSoft RPA* button when you are connected to your RPA organization and no processes appear in the dropdown for the *RPA Process* field.
+
+* In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
 == October 26, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -15,14 +118,15 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In HubSpot Connector, tooltips are now updated and improved for both triggers and actions.
 
+* In Stripe Connector, the *Find Customer* action now supports dynamic metadata.
 
-//include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
-//[%header%autowidth.spread]
-//|===
-//|Issue |ID
-//| |
-//|===
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In Stripe Connector, fixed security vulnerability found in `componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2`. |W-11853409
+|===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 

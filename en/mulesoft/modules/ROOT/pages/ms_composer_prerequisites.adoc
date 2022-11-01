@@ -297,23 +297,93 @@ To enable email notifications:
 . Toggle the button to enable email notifications.
 . Click *Save*.
 
+[[connect-composer-to-anypoint-platform]]
 == Connect Composer to Anypoint Platform
 
 Organizations that use both MuleSoft Composer and Anypoint Platform can connect the two products.
 
 To link Composer to Anypoint Platform:
 
-* Log in to Anypoint Platform.
-* In the navigation bar or the main Anypoint Platform page, click *Access Management*.
-* In the xref:access-management::managing-your-account.adoc[Access Management] navigation menu, click *Composer Sync*.
-* In the *Composer Sync Orgs* page, click *Add Composer Orgs*.
-* In the *Add organization* window, in the *Organization ID* box, enter your Composer organization and then click *Add*.
-+
-[NOTE]
+. In MuleSoft Composer, in the navigation pane, click *Settings* > *Account*. +
+The *Account* page appears.
 
-You can locate your Composer Organization ID by navigating to *Composer* > *Settings* > *Account* > *General Information*.
-+
-An email is generated and sent to the Composer organization admin that provides a link to sync Anypoint Platform to Composer.
+. On the *Account* page, copy the value in the *Organization ID* field.
+
+. Log in to the Anypoint Platform organization that you want to connect to MuleSoft Composer. +
+The *Anypoint Platform* page appears.
+
+. In the navigation pane, click xref:access-management::managing-your-account.adoc[*Access Management*]. +
+The *Access Management* page appears.
+
+. In the *Access Management* page, in the navigation pane, click *Composer Sync*. +
+The *Add Composer Organization* window appears.
+
+. In the *Add Composer Organization* window, in the *Organization ID* field, paste the *Organization ID* that you copied from the *Account* page of MuleSoft Composer and then click *Add*.
+
+. Open MuleSoft Composer and refresh the page.
+
+. In MuleSoft Composer, in the navigation pane, click *Settings* > *Account*. +
+The *Account* page appears, displaying a linking request from Anypoint Platform.
+
+. Click *Review and Confirm*.
+
+. In the *Access Token* section, click *Authenticate in Anypoint*. +
+The Anypoint Platform login page appears.
+
+. Log in to Anypoint Platform.
+
+. In the *Client App* section, click *Create Client App*. +
+The Composer organization is now linked to the Anypoint organization.
+
+== API Sharing
+
+MuleSoft Anypoint Platform customers can share externally available APIs managed in Anypoint Platform with business users for consumption in a MuleSoft Composer flow.
+
+Before sharing APIs from Anypoint Platform to MuleSoft Composer, ensure that:
+
+* Your organization uses Anypoint Platform for API Management.
+* Your organization has xref:exchange::to-create-an-asset.adoc#create-an-api-asset[Rest APIs] managed by API Manager that conform to the following:
+
+** The API specifications use either RAML or OpenAPI.
+** The API uses basic authentication, bearer token, or API Key in conjunction with a Client ID and Secret.
+
+* Composer organizations are <<connect-composer-to-anypoint-platform,linked to Anypoint organizations>>.
+* The API must be accessible from the public internet.
+
+=== Share an API Instance with Composer
+
+If you manage your APIs with Anypoint API Manager, you can share those APIs with MuleSoft Composer.
+
+To share an API Instance with MuleSoft Composer:
+
+. xref:2.x@api-manager::create-instance-task.adoc[Create an API Instance in Anypoint Platform].
+
+. In Anypoint Platform, in the navigation pane, click *Exchange*.
+
+. In the list, find the API instance that you want to share, click *Request access*, and then click the Client App that was created by MuleSoft Composer. +
+The *Request access* window appears.
+
+. In the *Request access* window, click *Request access*.
+
+. Open MuleSoft Composer and then open the flow to ensure that the shared API appears in the *Shared Apps* section of the canvas.
+
+=== Disconnect Composer Connection to Anypoint Platform
+
+You can disconnect your connection from MuleSoft Composer to Anypoint Platform; however, removing this connection does not delete existing configurations.
+
+To disconnect your MuleSoft Composer connection to Anypoint Platform:
+
+. Log in to the Anypoint Platform organization containing the connection to MuleSoft Composer that you want to disconnect. +
+The *Anypoint Platform* page appears.
+
+. In the navigation pane, click xref:access-management::managing-your-account.adoc[*Access Management*]. +
+The *Access Management* page appears.
+
+. In the navigation pane, click *Connected Apps*. +
+The *Connected Apps* page appears.
+
+. In the *Owned Apps* tab, next to *Composer API Sharing*, click the options button, and then click *Delete*. +
+MuleSoft Composer is now disconnected from Anypoint Platform.
 
 endif::[]
 

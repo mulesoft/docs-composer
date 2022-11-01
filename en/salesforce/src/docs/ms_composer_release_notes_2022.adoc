@@ -70,6 +70,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 Templates are patterns that you can leverage to build a flow. All of the steps and field mappings are predefined, so you can select the template and enter the missing information for the various connectors used (such as connection secrets) to create a flow you can later customize. Since templates are pre-built flows, templates not only reduce the barrier to entry and accelerate the time to activate the flow, but also include the best practices for flows.
 
+* You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 include::_partials/platform-ki-July22.adoc[]

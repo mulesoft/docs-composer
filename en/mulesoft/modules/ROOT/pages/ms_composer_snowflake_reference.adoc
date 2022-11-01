@@ -17,7 +17,7 @@ Only you can see the connection. Other users in your Composer app must create th
 
 Username and password::
 
-The username and password that you used to log in to Salesforce. You’ll need to create a connection even if the data source is the same Salesforce org where you operate Composer. However, Composer won’t ask for your password again. Instead, it displays an authentication approval dialog.
+The username and password that you used to log in to Snowflake.
 
 Account Name::
 
@@ -29,11 +29,39 @@ The name of the Snowflake warehouse to use.
 
 Database::
 
-The Snowflake database to connect to.
+The Snowflake database to which you want to connect.
 
 Schema::
 
 The Snowflake database schema to use.
+
+== Data Types
+
+The following data types are supported by Snowflake Connector:
+
+* INT
+* NUMBER
+* DECIMAL
+* BIGINT
+* TINYINT
+* NUMERIC
+* INTEGER
+* BYTEINT
+* FLOAT
+* FLOAT4
+* FLOAT8
+* DOUBLE
+* REAL
+* VARCHAR
+* CHAR
+* CHARACTER
+* STRING
+* TEXT
+* BOOLEAN
+* DATE
+* DATETIME
+* TIMESTAMP
+* TIMESTAMP_NTZ
 
 == Triggers
 
@@ -44,15 +72,27 @@ On New Row::
 Returns all new rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
 
 * *Table*
-* *Watermark Column*
+* *New Watermark Column*: The following column data types are available for this field:
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
 
 On New or Updated Row::
 
 Returns all new or updated rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
 
 * *Table*
-* *Watermark Column*
-* *Update Watermark Column*
+* *New Watermark Column*: The following column data types are available for this field:
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
+* *Update Watermark Column*: The following column data types are available for this field:
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
 
 == Actions
 
@@ -72,6 +112,6 @@ Deletes a set of rows. Provide a value for *Query*.
 
 Select Rows::
 
-SELECT can be used in both a statement and a clause within a SELECT statement. As a statement, the SELECT statement is the most commonly executed SQL statement; it queries the database and retrieves a set of rows. As a clause, SELECT defines the set of columns returned by a query. Provide a value for *Query*.
+Retrieves a set of rows. Provide a value for *Query*.
 
 include::_partials/see-also.adoc[]

@@ -27,6 +27,6 @@ The `This field does not exist with your connection` message appears if the inpu
 
 === Value Does Not Exist With Your Connection
 
-The `This value does not exist with your connection` message appears if the output field (data pill) is not present in your connection. For example, when creating custom fields defined in the prerequisites, the ID of the custom field saved in the template is different from the ID of the custom field created in the instance (even if the name is the same), which causes an error to occur in the flow. You can remove the data pill that is mapped in and select your custom field from the dropdown.
+The `This value does not exist with your connection` message appears if the output field (data pill) is not present in your connection. For example, when creating custom fields defined in the prerequisites, the ID of the custom field saved in the template differs from the ID of the custom field created in the instance (even if the name is the same), which causes an error to occur in the flow. You can remove the mapped data pill and select your custom field from the dropdown.
 
 include::_partials/see-also.adoc[]

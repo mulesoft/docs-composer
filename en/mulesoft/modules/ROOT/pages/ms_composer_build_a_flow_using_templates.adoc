@@ -23,7 +23,7 @@ Your instance might have fields that are different from the template. For exampl
 
 === Field Does Not Exist With Your Connection
 
-The `This field does not exist with your connection` message appears if the input field is not present in your connection. For example, when creating custom fields defined in the prerequisites, the ID of the custom field saved in the template is different from the ID of the custom field created in the instance (even if the name is the same), which causes an error to occur in the flow. You can delete the custom field saved in the template and then re-add your custom field from the field selector.
+The `This field does not exist with your connection` message appears if the input field is not present in your connection. For example, when creating custom fields defined in the prerequisites, the ID of the custom field saved in the template differs from the ID of the custom field created in the instance (even if the name is the same), which causes an error to occur in the flow. You can delete the custom field saved in the template and then re-add your custom field from the field selector.
 
 === Value Does Not Exist With Your Connection
 

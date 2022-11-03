@@ -15,7 +15,7 @@ For more information about how to create a new flow from template, refer to xref
 
 == Customizing Your Template
 
-Since you will likely need to further customize your flow from a template, consider the following recommendations and guidelines when encountering messages while customizing your flow from template.
+Since you will likely need to further customize your flow from a template, consider the following recommendations and guidelines when encountering messages while customizing your flow from a template.
 
 === Instance Requires Different Fields
 

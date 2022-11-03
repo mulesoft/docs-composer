@@ -19,7 +19,7 @@ Since you will likely need to further customize your flow from a template, consi
 
 === Instance Requires Different Fields
 
-Your instance might have fields that are different from the template. For example, you might need to add a required field that is not used or delete a field used in the template that does not exist in your connection. These will be presented as errors that need to be resolved before testing the flow.
+Your instance might have fields that are different from the template. For example, you might need to add a required field that is not used or delete a field used in the template that does not exist in your connection. These errors must be resolved before testing the flow.
 
 === Field Does Not Exist With Your Connection
 

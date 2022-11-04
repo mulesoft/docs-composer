@@ -22,7 +22,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 |Issue |ID
 |In NetSuite Connector, the Jackson Databind library is upgraded to version 2.13.4.2 to address reported security vulnerabilities. |W-11963381
-|Fixed the issue in HTTP Connector in which if an error occurred when connected to Jira, the HTTP Connector did not retrieve the error reason; however, the error reason was provided in the Jira log. |W-11816468
+|When connected to Jira, HTTP Connector now retrieves error messages when errors occur. Previoulsy errors were only recorded in the Jira log. |W-11816468
 |When connected to Shopify, HTTP Connector flow tests no longer run indefinitely and return errors. |W-11821763, W11819981
 |===
 

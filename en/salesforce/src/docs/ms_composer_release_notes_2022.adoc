@@ -19,12 +19,16 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** PRICE_LEVEL
 ** SUBSIDIARY
 
+* In HTTP Connector, connectivity tests for the OAuth2 Authorization Code Connection Provider are now enabled.
+
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
 [%header%autowidth.spread]
 |===
 |Issue |ID
 |In NetSuite Connector, the Jackson Databind library is upgraded to version 2.13.4.2 to address reported security vulnerabilities. |W-11963381
+|Fixed the issue in HTTP Connector in which if an error occurred when connected to Jira, the HTTP Connector did not retrieve the error reason; however, the error reason was provided in the Jira log. |W-11816468
+|Fixed the issue in HTTP Connector that occurred in which flow tests ran indefinitely and returned errors when connected to Shopify. |W-11821763, W11819981
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

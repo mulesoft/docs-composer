@@ -93,6 +93,10 @@
               "title": "Jira"
             },
             {
+              "file" : "ms_composer_marketo.adoc",
+              "title": "Marketo"
+            },
+            {
               "file" : "ms_composer_ms_dynamics_365_business_central_reference.adoc",
               "title": "Microsoft Dynamics 365 Business Central"
             },

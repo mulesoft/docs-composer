@@ -32,12 +32,14 @@
         },
         {
           "file" : "ms_composer_flows.adoc",
-          "title": "Build a Flow"
-        },
+          "title": "Build a Flow",
+          "topics": [
           {
             "file" : "ms_composer_build_a_flow_using_templates.adoc",
             "title": "Build a Flow Using Templates"
-          },
+          }
+          ]
+        },
         {
           "file" : "ms_composer_custom_expression_editor.adoc",
           "title": "Build Formulas for Flows"
@@ -89,6 +91,10 @@
             {
               "file" : "ms_composer_jira_reference.adoc",
               "title": "Jira"
+            },
+            {
+              "file" : "ms_composer_marketo.adoc",
+              "title": "Marketo"
             },
             {
               "file" : "ms_composer_ms_dynamics_365_business_central_reference.adoc",

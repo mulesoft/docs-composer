@@ -150,6 +150,29 @@ Templates are patterns that you can leverage to build a flow. All of the steps a
 
 * You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
 
+* The following new actions are now available for Jira Connector:
+
+** *Create project*
+** *Get project*
+** *Update project*
+** *List attachments*
+** *Upload attachments*
+** *Get attachments*
+
+* The following triggers have been renamed in Jira Connector:
+
+** *Issue updated with Custom Fields* has been renamed to *Issue with Custom Fields was updated or created*
+** *Issue updated with Standard Fields only* was renamed to *Issue with Standard Fields only was updated or created*
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the Result filter has been removed and now tests no longer fail when fields are selected. |W-11510054
+|In Jira Connector, the number of Jira projects that appeared in a dropdown was limited. Now, all Jira projects are retrieved in the dropdown. |W-11912169
+|===
+
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
 include::_partials/platform-ki-July22.adoc[]

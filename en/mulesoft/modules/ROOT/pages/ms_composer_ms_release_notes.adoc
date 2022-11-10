@@ -4,6 +4,33 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== October blah blah blah 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following new actions are now available for Jira Connector:
+
+** *Create project*
+** *Get project*
+** *Update project*
+** *List attachments*
+** *Upload attachments*
+** *Get attachments*
+
+* The following triggers have been renamed in Jira Connector:
+
+** *Issue updated with Custom Fields* has been renamed to *Issue with Custom Fields was updated or created*
+** *Issue updated with Standard Fields only* was renamed to *Issue with Standard Fields only was updated or created*
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in Jira Connector in which tests fail when fields are selected by removing the Result Filter. |W-11510054
+|Fixed the issue in Jira Connector in which the number of Jira projects that appeared in a dropdown was limited. Now, all projects are retrieved. |W-11912169
+|===
+
 == November 8, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

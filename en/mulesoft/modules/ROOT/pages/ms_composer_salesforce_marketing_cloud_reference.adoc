@@ -2,6 +2,18 @@
 
 Salesforce Marketing Cloud is a marketing platform that supports capabilities such as real-time customer engagement, email and marketing automation, social media engagement, mobile (SMS) messaging and push notifications, and customer marketing analytics.
 
+== Create Package and Permissions
+
+To use the Salesforce Marketing Cloud Connector, you must first create packages and permissions. 
+
+To create packages and permissions:
+
+. In Composer, click the gear icon in the upper right corner. +
+The *Setup* page appears.
+.  In the navigation pane, under *Platform Tools*, click *Apps* > *Packaging* > *Installed Packages*. +
+The *Installed Packages* page appears.
+.
+
 == Connections
 
 To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with that system's required credentials. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.

@@ -297,6 +297,24 @@ SAML 2.0 のファイルベースの設定はサポートされていません�
 . メール通知を有効にするようにボタンを切り替えます。
 . *[Save (保存)]*​ をクリックします。
 
+== Anypoint Platform へのコンポーザの接続
+
+MuleSoft Composer と Anypoint Platform の両方を使用している組織は 2 つの製品を接続できます。
+
+Anypoint Platform にコンポーザをリンクする手順は、次のとおりです。
+
+* Anypoint Platform にログインします。
+* ナビゲーションバーまたは Anypoint Platform のメインページで、​*[Access Management (アクセス管理)]*​ をクリックします。
+* xref:access-management::managing-your-account.adoc[[Access Management (アクセス管理)]]​ ナビゲーションメニューで、​*[Composer Sync (コンポーザ同期)]*​ をクリックします。
+* *[Composer Sync Orgs (コンポーザ同期組織)]*​ ページで、​*[Add Composer Orgs (コンポーザ組織を追加)]*​ をクリックします。
+* *[Add organization (組織を追加)]*​ ウィンドウの ​*[Organization ID (組織 ID)]*​ ボックスに、コンポーザ組織を入力して ​*[Add (追加)]*​ をクリックします。
++
+[NOTE]
+
+コンポーザ組織 ID は、​*[Composer (コンポーザ)]*​ > ​*[Settings (設定)]*​ > ​*[Account (アカウント)]*​ > ​*[General Information (一般情報)]*​ に移動して確認できます。
++
+Anypoint Platform をコンポーザに同期するリンクが記載されたメールが生成され、コンポーザ組織管理者に送信されます。
+
 endif::[]
 
 ifeval::["​{product}​"=="salesforce"]

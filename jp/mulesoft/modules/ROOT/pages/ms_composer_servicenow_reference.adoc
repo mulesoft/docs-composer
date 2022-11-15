@@ -27,30 +27,30 @@ ServiceNow にログインするために使用するパスワード。
 
 include::_partials/trigger-definition.adoc[]
 
-New or updated record::
+New or updated record (新規または更新済みレコード)::
 
-ServiceNow ​`record_type`​ テーブルで新規または更新済みレコードをチェックします。​*[Table Name (テーブル名)]*​ の値を指定します。
+ServiceNow ​`record_type`​ テーブルで新規または更新済みレコードをチェックします。​*[Table name (テーブル名)]*​ の値を指定します。
 
 == アクション
 
 include::_partials/action-definition.adoc[]
 
-Search record::
+Search Record::
 
 レコードタイプ条件を指定するクエリ文字列を使用して既存のレコードを検索します。次の項目の値を指定します。
-* *Table Name (テーブル名)*​
+* *Table name (テーブル名)*​
 * *Query (クエリ)*​
 +
-*[Table Name (テーブル名)]*​ 項目が ​`sysparm_no_count`​ の場合、この値はデフォルトで ​`True`​ に設定されます。詳細は、ServiceNow のドキュメント (https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI#r_TableAPI-GET) を参照してください。
+*[Table name (テーブル名)]*​ 項目が ​`sysparm_no_count`​ の場合、この値はデフォルトで ​`True`​ に設定されます。詳細は、ServiceNow のドキュメント (https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI#r_TableAPI-GET) を参照してください。
 
-Create record::
+Create Record::
 
-ServiceNow で選択されたレコードタイプのテーブルの新しいエントリを作成します。​*[Table Name (テーブル名)]*​ の値を指定します。
+ServiceNow で選択されたレコードタイプのテーブルの新しいエントリを作成します。​*[Table name (テーブル名)]*​ の値を指定します。
 
-Update record::
+Update Record::
 
 ServiceNow で選択されたレコードタイプのテーブルの既存のレコードを更新します。次の項目に値を入力します。
-* *Table Name (テーブル名)*​
+* *Table name (テーブル名)*​
 * *Sys ID (システム ID)*
 
 include::_partials/see-also.adoc[]

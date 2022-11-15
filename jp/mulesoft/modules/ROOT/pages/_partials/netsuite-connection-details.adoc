@@ -5,8 +5,6 @@ Connection Display Name (接続表示名)::
 Account (アカウント)::
 
 *[Setup (設定)] > [Integration (インテグレーション)] > [SOAP Web Services Preferences (SOAP Web サービスプリファレンス)]*​ にアクセスすることで、NetSuite インスタンスにリストされるアカウント ID。この値は文字と数値の文字列です (例: `TESTME1234567`​)。
-+
-文字は常に大文字で入力します。
 
 Consumer Key (コンシューマキー)::
 

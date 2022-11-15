@@ -1,6 +1,6 @@
 = Slack Connector リファレンス
 
-Slack をデータ取得先として使用します。たとえば、Salesforce 商談が成立したときに Slack メッセージを送信できます。
+Slack をデータ取得元またはデータ取得先として使用します。たとえば、Salesforce 商談が成立したときに Slack メッセージを送信できます。
 フローでのデータの操作方法の一部の詳細は、このシステム、および選択したアクションに固有です。
 
 == Connections (接続)
@@ -19,9 +19,12 @@ Slack にログインするために使用するユーザ名とパスワード�
 
 == トリガ
 
-スケジューラを使用して、フローがトリガされるタイミング (15 分ごとなど) を指定します。
+include::_partials/trigger-definition.adoc[]
 
-Slack への接続を使用してフローをトリガすることはできません。
+On New Message (新規メッセージ)::
+
+このトリガが起動すると、新規メッセージからの添付ファイルを以降のステップのデータピルとして使用できます。
+
 
 == アクション
 
@@ -56,5 +59,13 @@ Get user by email address::
 *[Email (メール)]*​ 項目にメールアドレスを入力して Slack ユーザを検索します。
 +
 ユーザの ID を動的に取得するには、このアクションを挿入すれば、別のシステムからメールアドレスによって Slack ユーザが取得されます。このアクションで返された ​*[ID]*​ データピルを使用して、メッセージを受信するユーザを指定します。
+
+//Post message to channel::
+
+//When a message is posted to a channel, you can specify a list of attachments to include in the message.
+
+//Sent a direct message to a user::
+
+//When a direct message is sent, you can specify a list of attachments to include in the message.
 
 include::_partials/see-also.adoc[]

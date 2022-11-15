@@ -66,6 +66,8 @@ Salesforce の Sandbox 組織および本番組織に接続できます。
 +
 Sandbox 接続を使用するすべてのトリガおよびアクションで、忘れずに接続を Sandbox から本番に変更してください。
 
+include::_partials/null-values.adoc[]
+
 == トリガ
 
 include::_partials/trigger-definition.adoc[]
@@ -84,6 +86,18 @@ Deleted record::
 +
 レコードは通常、約 15 日間保存された後で、物理削除され、取得できなくなります。
 * 論理削除タイムスタンプは変更できません。
+
+=== トリガ条件
+
+トリガ条件を追加して、ワークフローをトリガする条件を指定できます。たとえば、特定の項目が指定した条件を満たす場合のみトリガするようにワークフローを制限できます。
+
+トリガ条件を追加する手順は、次のとおりです。
+
+. トリガを選択します。
+. *[Trigger Conditions (トリガ条件)]*​ セクションで、​*[Criteria (条件)]*​ ドロップダウンメニューをクリックして ​*[All Conditions Must Be Met (AND) (すべての条件を満たす必要がある (AND))]*​ または ​*[Any Condition Must Be Met (OR) (いずれかの条件を満たす必要がある (OR))]*​ を選択します。
+. 特定の項目の条件を指定します。
+
+トリガ条件を追加するには、​*[Add Condition (条件を追加)]*​ をクリックします。
 
 == アクション
 
@@ -109,7 +123,7 @@ image::images/query-builder.png[クエリビルダー UI、500]
 
 *Get records*​ アクションから返されたレコードを追加するときは、​xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each ループ]​をフローに追加する必要があります。
 
-*Get Records*​ がフローのステップであり、項目レベルの暗号化が有効で暗号化された項目での絞り込みを行おうとしている場合は、次の文字列操作のみがサポートされます: `equals`​、​`not equals`​、または空。項目レベルの暗号化では ​`contains`​、​`starts with`​、または ​`ends with`​ はサポートされません。 
+*Get Records*​ がフローのステップであり、項目レベルの暗号化が有効で暗号化された項目での絞り込みを行おうとしている場合は、次の文字列操作のみがサポートされます: `equals`​、​`not equals`​、または空。項目レベルの暗号化では ​`contains`​、​`starts with`​、または ​`ends with`​ はサポートされません。
 
 項目レベルの暗号化についての詳細は、&#8203;https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce のドキュメント]を参照してください。
 

@@ -76,3 +76,5 @@ Get Organization by ID::
 Search users::
 
 指定された条件に基づいてユーザを検索し、これらの条件に一致するユーザのリストを返します。
+
+include::_partials/see-also.adoc[]

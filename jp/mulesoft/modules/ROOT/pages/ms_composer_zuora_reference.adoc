@@ -18,8 +18,7 @@ Zuora に登録されている OAuth クライアントシークレット。
 
 Environment (環境)::
 
-Zuora テナントのベース URI。
-
+Zuora テナントのベース URI。詳細は  https://www.zuora.com/developer/api-reference/#section/Introduction/Access-to-the-API[Zuora のドキュメント]​を参照してください。
 
 == アクション
 

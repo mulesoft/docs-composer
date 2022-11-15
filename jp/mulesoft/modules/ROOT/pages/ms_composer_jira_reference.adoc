@@ -2,6 +2,8 @@
 
 Jira は、開発を改善するためにユーザが商品の課題を計画、追跡、リリース、報告できるようにサポートする強力なプロジェクト管理ツールおよびチケットシステムです。
 
+コンポーザで Jira Connector を使用するには、​_[Administrator Jira (Jira システム管理者)]_​ グローバル権限が必要です。詳細は  https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira のドキュメント]​を参照してください。
+
 == Connections (接続)
 
 include::_partials/connection-definition.adoc[]

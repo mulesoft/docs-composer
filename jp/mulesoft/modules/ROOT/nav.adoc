@@ -3,7 +3,8 @@
 * xref:ms_composer_ms_release_notes.adoc[リリースノート]
 
 * xref:ms_composer_prerequisites.adoc[はじめに]
-* xref:ms_composer_about_flows.adoc[準備チェックリスト]
+** xref:ms_composer_about_flows.adoc[コンポーザのしくみ]​
+** xref:ms_composer_checklist.adoc[準備チェックリスト]​
 * xref:ms_composer_flows.adoc[フローのビルド]
 * xref:ms_composer_custom_expression_editor.adoc[フローの数式のビルド]
 * xref:ms_composer_test_flow.adoc[フローのテスト]
@@ -17,11 +18,15 @@
 ** xref:ms_composer_google_calendar_reference.adoc[Google カレンダー]​
 ** xref:ms_composer_googlesheets_reference.adoc[Google スプレッドシート]​
 ** xref:ms_composer_http_reference.adoc[HTTP]​
+** xref:ms_composer_hubspot_reference.adoc[HubSpot]​
 ** xref:ms_composer_jira_reference.adoc[Jira]​
+** xref:ms_composer_ms_dynamics_365_business_central_reference.adoc[Microsoft Dynamics 365 Business Central]​
 ** xref:ms_composer_ms_teams_reference.adoc[Microsoft Teams]​
 ** xref:ms_composer_netsuite_reference.adoc[NetSuite]​
 ** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]​
+** xref:ms_composer_rpa_reference.adoc[MuleSoft RPA]​
 ** xref:ms_composer_salesforce_reference.adoc[Salesforce]​
+** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]​
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]​
 ** xref:ms_composer_slack_reference.adoc[Slack]​
 ** xref:ms_composer_stripe_reference.adoc[Stripe]​

@@ -29,7 +29,7 @@ include::_partials/trigger-definition.adoc[]
 
 New email::
 
-このトリガは、ユーザの受信箱で新規メールを受信したときに起動します。
+https://developers.google.com/gmail/api/guides/labels[検索条件^]​を指定しない場合、このトリガはすべてのメールで起動されます (受信、送信済み、ドラフト)。
 
 == アクション
 

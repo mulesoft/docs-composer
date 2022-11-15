@@ -50,6 +50,8 @@ NetSuite データおよび NetSuite ユーザインターフェースへのア�
 * *[Execute As Role (ロールとして実行)]*​ 項目が ​`Administrator`​ に設定されている必要があります。
 * *[Log Level (ログレベル)]*​ 項目が ​`Debug`​ に設定されている必要があります。
 
+include::_partials/null-values.adoc[]
+
 == トリガ
 
 include::_partials/trigger-definition.adoc[]
@@ -102,6 +104,8 @@ Get Records::
 |CASH_REFUND |X |X
 |CONTACT |X |X
 |CREDIT_MEMO |X |X
+|CURRENCY | |X
+|CURRENCY_RATE | |X
 |CUSTOMER |X |X
 |CUSTOMER_DEPOSIT |X |X
 |CUSTOMER_PAYMENT |X |X
@@ -112,6 +116,7 @@ Get Records::
 |INVENTORY_ITEM |X |X
 |INVOICE |X |X
 |JOURNAL_ENTRY |X |X
+|LOT_NUMBERED_INVENTORY_ITEM |X |X
 |NON_INVENTORY_PURCHASE_ITEM |X |X
 |NON_INVENTORY_RESALE_ITEM |X |X
 |NON_INVENTORY_SALE_ITEM |X |X
@@ -121,8 +126,11 @@ Get Records::
 |RETURN_AUTHORIZATION |X |X
 |SALES_ORDER |X |X
 |SERVICE_PURCHASE_ITEM |X |X
+|SERVICE_RESALE_ITEM |X |X
 |SERVICE_SALE_ITEM |X |X
 |SUPPORT_CASE |X |X
+|TIME_BILL |X |X
+|TIME_SHEET |X |X
 |VENDOR |X |X
 |VENDOR_BILL |X |X
 

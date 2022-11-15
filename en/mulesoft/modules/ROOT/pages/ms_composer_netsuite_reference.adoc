@@ -111,23 +111,30 @@ The following record types are supported.
 |CUSTOMER_PAYMENT |X |X
 |CUSTOMER_REFUND |X |X
 |CUSTOM_RECORD_TYPES |X |X
+|DEPARTMENT | |X
 |ESTIMATE |X |X
 |EMPLOYEE |X |X
 |INVENTORY_ITEM |X |X
 |INVOICE |X |X
 |JOURNAL_ENTRY |X |X
+|LEAD |X |X
+|LOCATION | |X
 |LOT_NUMBERED_INVENTORY_ITEM |X |X
 |NON_INVENTORY_PURCHASE_ITEM |X |X
 |NON_INVENTORY_RESALE_ITEM |X |X
 |NON_INVENTORY_SALE_ITEM |X |X
 |OPPORTUNITY |X |X
+|PARTNER |X |X
 |PAYMENT_ITEM | |X
+|PRICE_LEVEL | |X
+|PROSPECT |X |X
 |PURCHASE_ORDER |X |X
 |RETURN_AUTHORIZATION |X |X
 |SALES_ORDER |X |X
 |SERVICE_PURCHASE_ITEM |X |X
 |SERVICE_RESALE_ITEM |X |X
 |SERVICE_SALE_ITEM |X |X
+|SUBSIDIARY | |X
 |SUPPORT_CASE |X |X
 |TIME_BILL |X |X
 |TIME_SHEET |X |X
@@ -137,7 +144,14 @@ The following record types are supported.
 |===
 
 [NOTE]
-The PAYMENT_ITEM object is not supported by the GET RECORDS action.
+====
+The CURRENCY and PAYMENT_ITEM objects are not supported by the GET RECORDS action.
+
+The LEAD and PROSPECT objects are supported only by the GET RECORDS action. The LEAD and PROSPECT objects are subtypes of the CUSTOMER object, so to use the LEAD and PROSPECT objects for other actions, you can set the object type to CUSTOMER and set the `internalId` of `entityStatus` to the corresponding value according to the NetSuite documentation.
+
+The DEPARTMENT, LOCATION, PRICE_LEVEL, and SUBSIDIARY objects are supported only by the GET RECORDS action.
+
+====
 
 == Custom Fields
 

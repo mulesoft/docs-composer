@@ -8,28 +8,41 @@ xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to y
 
 == Create a Flow
 
-You can create a new flow or clone an existing flow.
+You can create a new flow (from scratch or from template) or clone an existing flow.
 
 [[create-a-new-flow]]
-=== Create a New Flow
+=== Create a New Flow From Scratch
 
-To create a new flow:
+To create a new flow from scratch:
 
 ifeval::["{product}"=="salesforce"]
-. From the Composer *Home* page, click *Create New Flow*. +
+. From the Composer *Home* page, click *Create New Flow > Create Flow from Scratch*. +
 Your flow is named automatically.
 . Optionally, click the pencil icon next to *_flow name_* to rename the flow. Valid characters: A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-. From the Composer *Home* page, click *Create new flow*. +
+. From the Composer *Home* page, click *Create new flow > Create Flow from Scratch*. +
 Your flow is named automatically.
 . To change the name automatically created for your new flow, click the pencil icon next to *Untitled Flow* and create a custom name using any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
 . Click *Save*.
 endif::[]
 
 Now you are ready to create a flow trigger.
+
+[[create-a-new-flow-from-template]]
+=== Create a New Flow From Template
+
+To create a new flow from template:
+
+. From the Composer *Home* page, click *Create new Flow > Create Flow from Template*.
+. Explore the template options and select the template you want to use.
+. Ensure you meet the prerequisites and if so, click *Use this Template*.
+. Configure your connections and information required by the flow.
+. Click *Create flow*.
+
+Now you are ready to use your flow. For more information about templates, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
 
 === Clone an Existing Flow
 
@@ -230,6 +243,74 @@ When there are null values in custom expressions and are:
 * Fields without attributes, the null value is ignored. If the value in a required field, an error message occurs. If the value is in an optional field, the value is ignored and not sent to the connector. +
 * Fields with attributes, the value is ignored and not sent to the connector.
 
+=== Create a Picklist Mapping
+
+Using Picklist Mapping, you can map data from one application to the corresponding data needed by another application and then reuse those mappings in different flows in your organization. This enables you to connect two applications that have different values for similar fields and to align the values in those fields across applications. You can then determine how the possible values of an output field (data pill) map to the possible values of an input field.
+
+For example, you can map a data pill from the *Country* field in a Salesforce record and provide the same values in the *Country* field of the NetSuite record.
+
+[%header%autowidth.spread]
+|===
+|Country (Salesforce) | Country (NetSuite)
+|US |_unitedStates
+|CA |_canada
+|DE |_germany
+|AR |_argentina
+|===
+
+In this example, the *Status* field in a case in Salesforce is mapped to the *Status* field in a ticket in Zendesk to create continuity in field values across systems.
+
+[%header%autowidth.spread]
+|===
+|Status (Salesforce) | Status (Zendesk)
+|New |New
+|Working |Open
+|Waiting on Customer |On-Hold
+|Escalated |Open
+|Closed |Closed
+|===
+
+When mapping source data fields:
+
+* The source field must be a data pill with a fixed list of values.
+* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field.
+* If any other unmapped value from the source system is found, the default mapping specifies the value in the target system . If you do not specify a default value, the original value from the source field is passed to the target field.
+* The mapping is stored at the organization level and can be reused across flows.
+* The mapping must have a unique name.
+* Mappings are available to everyone in your organization.
+
+To map source data fields to target fields:
+
+. From the *Composer Flows* tab, open a flow and click *Edit*.
+. In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the drop-down menu. +
+The *Picklist Mapping* window appears.
+. In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to  map to the value in the *Target* field, and then click *Next*.
+. In the *Global Picklist Selection* section, create a new picklist or choose an existing picklist.
+
+=== Create a new picklist
+
+To create a new picklist:
+
+. Click *Create new picklist*.
+. In the *Global picklist name* field, enter a unique name for the picklist.
+. Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
+`This maps [Source Field Name] from [Source Connection Name] to [Target Field Name] from [Target Connection Name]`
+. In the table, select the source fields and their target mappings.
+. Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the drop-down.
+. Once you have added all applicable field mappings, click *Create Picklist*.
+. Click *Apply*. +
+The *<Picklist Name>* section appears, displaying a table of values and their mappings.
+
+=== Choose an existing picklist
+
+To choose an existing picklist:
+
+. Select a picklist from the list. Note that all edits made to an existing picklist will impact all flows in which that picklist is currently used.
+. Optionally, in the *<Picklist Name>* section, to edit the values, click the pencil. Once you have edited the values, click *Save Picklist* and then click *Apply*.
+. Optionally, in the *<Picklist Name>* section, to delete the picklist, click the trashcan. Note that deleting a global picklist will affect all flows currently using that picklist.
+. Click *Apply*. +
+The action card appears.
+
 == Create a Flow Control
 
 If you need to perform some logic before an action, select a flow control first:
@@ -271,12 +352,21 @@ To create an If/Else block:
 . Click the plus sign after the trigger or the last action in your flow.
 . Click *Add Action*.
 . Click *If/Else Block* to define the first branch.
-. Enter the requested criteria.
+. Enter the requested criteria. You can specify that `all conditions should be met (AND)`, `any condition can be met (OR)`, or <<use-custom-logic,customize>> the order and grouping of your conditions.
 . Click *+* to add an action to that branch. Every branch must have an action, also called a _step_.
 . If you want to add another branch, click *Add If* and repeat the previous steps for every If/Else branch you create.
 . If you want to set criteria for how the flow executes if none of the criteria for the existing branches are met, click *Add Else* and repeat the previous steps for the final branch.
 . If you want to add additional conditions to your If/Else block, click *Add condition*.
 . After you add all the branches, click *Save*.
+
+[[use-custom-logic]]
+== Use Custom Logic
+
+Custom logic uses the row number for each condition in the If statement block of an If/Else statement and `OR`, `AND`, and `NOT` to create complex expressions.  When you select the custom logic option, each condition is assigned a number and you can then use that number to customize the order of operations for the conditions.
+
+When using custom logic, all conditions defined must be referenced in the expression for the expression to be validated. For example, if there are three defined conditions and you enter “1 and (2 or 1)”, the expression is invalid because “3” is not referenced.
+
+ Using custom logic, you can have up to 20 conditions and a condition can be referenced more than once.
 
 [[create-and-test-a-for-each-loop]]
 === Create a For Each Loop

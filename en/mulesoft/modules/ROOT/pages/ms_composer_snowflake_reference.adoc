@@ -1,0 +1,117 @@
+= Snowflake Connector Reference
+
+Snowflake is a fully managed, cloud-based data warehouse solution that operates under a Software as a Service (SaaS) business model. This allows clients to store data and run analytics without the need for an on-premise solution.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+Connection Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies this connection from others.
++
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Username and password::
+
+The username and password that you used to log in to Snowflake.
+
+Account Name::
+
+The account name that is provided when registering for the Snowflake account.
+
+Warehouse::
+
+The name of the Snowflake warehouse to use.
+
+Database::
+
+The Snowflake database to which you want to connect.
+
+Schema::
+
+The Snowflake database schema to use.
+
+== Data Types
+
+The following data types are supported by Snowflake Connector:
+
+* INT
+* NUMBER
+* DECIMAL
+* BIGINT
+* TINYINT
+* NUMERIC
+* INTEGER
+* BYTEINT
+* FLOAT
+* FLOAT4
+* FLOAT8
+* DOUBLE
+* REAL
+* VARCHAR
+* CHAR
+* CHARACTER
+* STRING
+* TEXT
+* BOOLEAN
+* DATE
+* DATETIME
+* TIMESTAMP
+* TIMESTAMP_NTZ
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+On New Row::
+
+Returns all new rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
+
+* *Table*
+* *Created date column*: The following column data types are available for this field:
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
+
+On New or Updated Row::
+
+Returns all new or updated rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
+
+* *Table*
+* *Created date column*: The following column data types are available for this field:
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
+* *Last modified date column*: The following column data types are available for this field:
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Insert Rows::
+
+Updates a table by inserting one or more rows into the table. Provide a value for *Query*.
+
+Update Rows::
+
+Updates a set of rows. Provide a value for *Query*.
+
+Delete Rows::
+
+Deletes a set of rows. Provide a value for *Query*.
+
+Select Rows::
+
+Retrieves a set of rows. Provide a value for *Query*.
+
+include::_partials/see-also.adoc[]

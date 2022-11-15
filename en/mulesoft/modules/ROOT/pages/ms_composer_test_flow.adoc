@@ -22,4 +22,6 @@ To test a flow:
 . Click *Test*. +
 Composer notifies you when the test is complete. The execution results from the test appear on the card.
 
+NOTE: If you need to contact Support for troubleshooting purposes, you can export your flow as a JSON file to share your flow by clicking the wrench icon and selecting *Export*.
+
 include::_partials/see-also.adoc[]

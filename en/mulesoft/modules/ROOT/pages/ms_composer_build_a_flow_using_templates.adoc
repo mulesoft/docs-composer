@@ -1,0 +1,32 @@
+= Build a Flow Using Templates
+
+You can create a new flow from a template.
+
+Templates are patterns that you can leverage to build a flow. All of the steps and field mappings are predefined, so you can select the template and enter the missing information for the various connectors used (such as connection secrets) to create a flow you can later customize to meet your business needs. For example, you might still need to add required fields specific to your connection, map additional fields, or add or delete steps to meet your use case. You will likely still need to make a few changes before activating the flow.
+
+Since templates are pre-built flows, templates not only reduce the barrier to entry and accelerate the time to activate the flow, but also include the best practices for flows.
+
+Some examples of templates include:
+
+* Cloud-specific templates, such as Service Cloud or Revenue Cloud
+* Connector-specific templates, such as Salesforce, ServiceNow, NetSuite, or Jira
+
+For more information about how to create a new flow from template, refer to xref:ms_composer_flows.adoc#create-a-new-flow-from-template[Create a New Flow From Template].
+
+== Customizing Your Template
+
+Since you will likely need to further customize your flow from a template, consider the following recommendations and guidelines when encountering messages while customizing your flow from a template.
+
+=== Instance Requires Different Fields
+
+Your instance might have fields that are different from the template. For example, you might need to add a required field that is not used or delete a field used in the template that does not exist in your connection. These errors must be resolved before testing the flow.
+
+=== Field Does Not Exist With Your Connection
+
+The `This field does not exist with your connection` message appears if the input field is not present in your connection. For example, when creating custom fields defined in the prerequisites, the ID of the custom field saved in the template differs from the ID of the custom field created in the instance (even if the name is the same), which causes an error to occur in the flow. You can delete the custom field saved in the template and then re-add your custom field from the field selector.
+
+=== Value Does Not Exist With Your Connection
+
+The `This value does not exist with your connection` message appears if the output field (data pill) is not present in your connection. For example, when creating custom fields defined in the prerequisites, the ID of the custom field saved in the template differs from the ID of the custom field created in the instance (even if the name is the same), which causes an error to occur in the flow. You can remove the mapped data pill and select your custom field from the dropdown.
+
+include::_partials/see-also.adoc[]

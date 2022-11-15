@@ -19,6 +19,23 @@ Bearer token::
 
 The HubSpot account access token.
 
+== Triggers
+
+Each flow starts with a scheduler that specifies a time span for how frequently the flow starts or with a trigger that you define, such as "each time a new record is created." Triggers provide multiple options related to the data in your system.
+
+Triggers execute every fifteen seconds.
+//different from the partial - written out here
+
+This system provides the following trigger options:
+
+On New Record::
+
+Triggers when a new Company or Contact record is created.
+
+On New or Updated Record::
+
+Triggers when a new Company or Contact record is created or updated. 
+
 == Actions
 
 include::_partials/action-definition.adoc[]

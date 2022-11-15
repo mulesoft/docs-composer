@@ -9,6 +9,751 @@ New versions are automatically available once they are released; you don't need 
 //| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
+== November 8, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to two new systems: Marketo and Snowflake. +
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== November 3, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following record types are now available for NetSuite Connector:
+** DEPARTMENT
+** LOCATION
+** PRICE_LEVEL
+** SUBSIDIARY
+
+* In HTTP Connector, connectivity tests for the OAuth2 Authorization Code Connection Provider are now enabled.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In NetSuite Connector, the Jackson Databind library is upgraded to version 2.13.4.2 to address reported security vulnerabilities. |W-11963381
+|When connected to Jira, HTTP Connector now retrieves error messages when errors occur. Previously errors were only recorded in the Jira log.  |W-11816468
+|When connected to Shopify, HTTP Connector flow tests no longer run indefinitely and return errors. |W-11821763, W-11819981
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== November 1, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In Slack Connector, the *On New Message* trigger has been disabled and is no longer available. |W-11972430
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 31, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now create new flows from templates. This release includes support for the following templates:
+** Create Or Update Jira Issue for Associated Change Request in Salesforce
+** Create Or Update Jira Issue for Associated Work Plan in Salesforce
+** Create Or Update Jira Issue for Associated Work Step in Salesforce
+** Create Change Request in Salesforce for Associated Jira Issue
+** Update Change Request in Salesforce for Associated Jira Issue
+** Create Work Plan in Salesforce for Associated Jira Issue
+** Update Work Plan in Salesforce for Associated Jira Issue
+** Create Work Step in Salesforce for Associated Jira Issue
+** Update Work Step in Salesforce for Associated Jira Issue
+** Create or Update Incident and Asset for Associated ServiceNow Incident
+** Create or Update ServiceNow Incident for Associated Incident in Salesforce
+** Create Configuration Item for Associated Incident Asset in Salesforce
+** Create or Update Netsuite Credit Memo for Associated Posted Credit Memo in Salesforce
+** Create or Update Netsuite Customer for Associated Account in Salesforce
+** Create or Update Netsuite Customer Payment for Associated Processed Payment in Salesforce
+** Create or Update NetSuite Inventory Item for Associated Active Product in Salesforce
+** Create or Update Netsuite Invoice for Associated Posted Invoice in Salesforce
+** Create or Update Netsuite Sales Order for Associated Activated Order in Salesforce
+
++
+Templates are patterns that you can leverage to build a flow. All of the steps and field mappings are predefined, so you can select the template and enter the missing information for the various connectors used (such as connection secrets) to create a flow you can later customize. Since templates are pre-built flows, templates not only reduce the barrier to entry and accelerate the time to activate the flow, but also include the best practices for flows.
+
+* You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
+
+* The following new actions are now available for Jira Connector:
+
+** *Create project*
+** *Get project*
+** *Update project*
+** *List attachments*
+** *Upload attachments*
+** *Get attachments*
+
+* The following triggers have been renamed in Jira Connector:
+
+** *Issue updated with Custom Fields* has been renamed to *Issue with Custom Fields was updated or created*
+** *Issue updated with Standard Fields only* was renamed to *Issue with Standard Fields only was updated or created*
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the Result filter has been removed and now tests no longer fail when fields are selected. |W-11510054
+|In Jira Connector, the number of Jira projects that appeared in a dropdown was limited. Now, all Jira projects are retrieved in the dropdown. |W-11912169
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 27, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now add custom logic, such as `and`, `or`, or `not`, in conditional statements when building an action and in If/Else statements.
+
+* In RPA Connector, you can now test an RPA process using sample data without invoking the RPA process.
+
+* In RPA Connector, you can now connect directly to your RPA Organization to see your processes by clicking the *Create an invokable run config from MuleSoft RPA* button when you are connected to your RPA organization and no processes appear in the dropdown for the *RPA Process* field.
+
+* In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 26, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following new triggers are now available for HubSpot Connector:
+
+** *On New Record*
+** *On New or Updated Record*
+
+* In HubSpot Connector, tooltips are now updated and improved for both triggers and actions.
+
+* In Stripe Connector, the *Find Customer* action now supports dynamic metadata.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In Stripe Connector, fixed security vulnerability found in `componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2`. |W-11853409
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 20, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Workday Connector, in the *On New or Updated Records* trigger and the *Get Worker Details ID* action, the following fields, which enable array values of complex objects from Workday APIs, are now available for the *WORKER* object:
+
+** *Email Addresses*
+** *Job Addresses*
+** *Persona Addresses*
+** *Supervisor Organization Chain*
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 17, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In Jira Connector, in the *Get Issue in Jira* action, removed the unnecessary *Select Fields* button. |W-11649482
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 13, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now export a flow as a JSON file to share your flow with Support for troubleshooting purposes by clicking the wrench icon and selecting *Export*.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 12, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When looping over a selected list of strings in a for each loop, you can now use a single string value across multiple cards in the loop.
+* The following record types are now available for NetSuite Connector:
+ ** PARTNER
+ ** LEAD
+ ** PROSPECT
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 10, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In RPA Connector, the JSON Sanitizer has been implemented to prevent JSON injection.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in which the *Run History* page in Composer unnecessarily displayed an error and sent an email notification for an expired access token. Now the error does not appear and no email is sent. To implement this fix, deactivate and then reactivate your flow. |W-11649482
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== October 6, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in Google Sheets Connector in which an `InterruptedException` occurred during an MUnit test. |W-10887516
+|Fixed the issue in Google Sheets Connector in which the *Create row* action did not work properly when the first column without a header contained values. |W-10933097
+|In Google Sheets Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4. |W-11719209
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== September 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The OAuth 2.0 Authorization Code grant for authentication in HTTP Connector now supports customizing the *Authorization Header Name*, *Authorization Header Value Prefix*, and *Authorization Header Custom Value Prefix* fields for the Authorization Header.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== September 9, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector now supports the OAuth 2.0 Authorization Code grant for authentication.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in NetSuite Connector in which the CURRENCY and CURRENCY_RATE objects did not work for the *Get Records* action. |W-11722063
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== September 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in which users could not activate or delete some flows created by other users. |W-11668733
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== September 6, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Box instances, you can download binary file content from one instance and later upload that same file content to another instance.
+* The `jackson.databind` library is upgraded to version 2.13.4 to address reported security vulnerabilities for HTTP Connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|Fixed the issue in HTTP Connector in which the test connectivity was not triggering a refresh with an OCS connection. |W-11469764
+|Fixed the issue in HTTP Connector in which OAuth 2.0 refresh tokens from Shopify were not valid. |W-11437322
+|Fixed the issue in HTTP Connector in which fields containing an escape sequence (for example, `\r` for a carriage return) were not properly parsed. |W-11072611
+|Fixed the issue in Quickbooks Connector where Sample Data output returned more than one record, even in the case of arrays that are nested fields. |W-11388800
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== August 31, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Picklist Mapping is now enabled for fields in an action that supports Pick from List. Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This allows you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== August 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: Microsoft Dynamics 365 Business Central.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* Data Pill Search is now available. You can use this feature to find where a particular data pill is used in your flow.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
+== August 19, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In ServiceNow Connector, the *Read Timeout* field is updated from 5 seconds to 15 seconds to avoid timeouts on large tables. |W-11601586
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
 == August 15, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

@@ -1,0 +1,13 @@
+==== Workday
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|*Invoice*​ オブジェクトで、金額のデータ型 ​`number`​ を含むすべての項目が文字列として送信される。 | カスタム式エディタを使用すると、型キャスト関数 ​`fromStringToNumber`​ を使用して、データ型を ​`string`​ から ​`number`​ に変更できます。次に例を示します。 +
+
+`Unit Cost=fromStringToNumber(Sales Price)`​ + |
+
+|===

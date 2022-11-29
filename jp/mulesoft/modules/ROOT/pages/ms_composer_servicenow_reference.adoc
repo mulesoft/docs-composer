@@ -1,0 +1,56 @@
+= ServiceNow Connector リファレンス
+
+ServiceNow は、IT 組織が従業員からのサービス要求や報告されたインシデントに加えて、パートナー、ベンダー、顧客からのサービス要求を管理するのを支援する IT Service Management (ITSM) システムです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+接続を作成できるのは、ServiceNow ​`soap_admin`​ ロールを持つユーザのみです。詳細は、ServiceNow ヘルプを参照してください: https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958
+
+Instance URL (インスタンス URL)::
+
+ServiceNow インスタンスの URL または ID。
+
+Username (ユーザ名)::
+
+ServiceNow にログインするために使用するユーザ名。
+
+Password (パスワード)::
+
+ServiceNow にログインするために使用するパスワード。
+
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New or updated record (新規または更新済みレコード)::
+
+ServiceNow ​`record_type`​ テーブルで新規または更新済みレコードをチェックします。​*[Table name (テーブル名)]*​ の値を指定します。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Search Record::
+
+レコードタイプ条件を指定するクエリ文字列を使用して既存のレコードを検索します。次の項目の値を指定します。
+* *Table name (テーブル名)*​
+* *Query (クエリ)*​
++
+*[Table name (テーブル名)]*​ 項目が ​`sysparm_no_count`​ の場合、この値はデフォルトで ​`True`​ に設定されます。詳細は、ServiceNow のドキュメント (https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI#r_TableAPI-GET) を参照してください。
+
+Create Record::
+
+ServiceNow で選択されたレコードタイプのテーブルの新しいエントリを作成します。​*[Table name (テーブル名)]*​ の値を指定します。
+
+Update Record::
+
+ServiceNow で選択されたレコードタイプのテーブルの既存のレコードを更新します。次の項目に値を入力します。
+* *Table name (テーブル名)*​
+* *Sys ID (システム ID)*
+
+include::_partials/see-also.adoc[]

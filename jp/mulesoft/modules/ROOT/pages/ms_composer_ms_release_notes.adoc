@@ -1,0 +1,821 @@
+= MuleSoft Composer リリースノート
+
+MuleSoft Composer を使用すると、コネクテッドエクスペリエンスをすばやく構築できます。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
+
+新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
+
+== 2022/08/29
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Microsoft Dynamics 365 Business Central を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+* データピル検索が使用できるようになりました。この機能を使用して、特定のデータピルがフローで使用されている場所を確認できます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== 2022/08/19
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|ServiceNow Connector で、大規模なテーブルでのタイムアウトを回避するために ​*[Read Timeout (読み取りタイムアウト)]*​ 項目が 5 ～ 15 秒ごとに更新される。 |W-11601586
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== 2022年8月8日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+ ** SERVICE_RESALE_ITEM​
+ ** TIME_SHEET​
+ ** TIME_BILL
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|NetSuite Connector で、​`[Account ID (アカウント ID)]`​ 項目で小文字の値が使用されている接続が失敗しなくなりました。 |W-11469671
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== 2022年8月3日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである MuleSoft Robotic Process Automation (RPA) を接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== 2022年8月2日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Salesforce Connector で、トリガの条件を指定できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|表示ラベルが ServiceNow Connector で正しく大文字化されるようになりました。 |W-10575461
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+== 2022年7月29日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *On New Message*​ トリガが Slack Connector に使用できるようになりました。
+
+* 新しいシステムである Salesforce Marketing Cloud Connector を接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+== 2022年7月28日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである HubSpot を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+* コンポーザの必須項目がアスタリスク (*) で示されるようになりました。以前は、コンポーザで項目を追加するときに、省略可能な項目のみがモーダルに表示されていました。現在は、次のようになっています。
+
+ ** 親項目を選択または選択解除した際に、必須の子項目があると、デフォルトでこれらの子項目も選択または選択解除されます。
+ ** 項目を選択または選択解除した際に、必須の親項目があると、デフォルトでこれらの親項目も選択または選択解除されます。
+ ** 省略可能な項目を選択すると、タイプする必須項目 (1 つ以上の親項目を含む) も選択されます。
+ +
+必須項目を削除するには、モーダル内で選択解除しなければなりません。
+
+* HTTP Connector でページ分割された要求がサポートされるようになりました。オブジェクトのコレクションをリモートシステムから取得するときに、ページ分割された要求を使用してすべてのデータページが返されるようにします。
+
+* スケジューラに基づくフローでスケジューラの現在および過去のタイムスタンプにアクセスできるようになりました。
+* NetSuite Connector で過剰な再試行がサポートされるようになり、同時実行制限エラーが防止されます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。その接続を使用するフローが存在する場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+
+== 2022年7月27日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のオブジェクトが NetSuite Connector で使用できるようになりました。
+** 通貨
+** Currency Rate (通貨レート)
+** ロット番号が付いた在庫品目
++
+オブジェクトはすべて大文字で表示され、アンダースコアが付けられます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。その接続を使用するフローが存在する場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+== 2022年7月13日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 接続を削除すると、選択した接続を使用しているアクティブなフローと非アクティブなフローのリストが表示されるようになりました。このリストを使用して、接続の状況に応じて、異なる操作を実行します。
+** どのフローでも使用されていない場合、接続を削除できます。
+** 無効なフローで使用されている場合、この接続を使用している無効なフローの名前と数が記載されたリストが表示されます。この接続を削除すると、リストに記載されたフローの影響します。非アクティブなフローを再び開いた場合は、新しい接続を選択する必要があります。
+** アクティブなフローと非アクティブなフローで使用されている場合、この接続を使用しているアクティブなフローと非アクティブなフローの名前、数、状況が記載されたリストが表示されます。接続を削除することを選択すると、再度の確認が表示されます。接続を削除する前に、コンポーザで最初にフローの停止が試みられます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。その接続を使用するフローが存在する場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+== 2022年6月28日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector と Salesforce Connector で、空の項目値はデフォルトで無視されます。空の値をクリアするには、​`[Clear on Null Values (null 値でクリア)]`​ オプションを選択できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+== 2022年6月21日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer と Anypoint Platform の両方を使用している組織は [Access Management (アクセス管理)] を使用して 2 つの組織を接続できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+
+== 2022年6月6日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|Workday Connector で、ユーザが ​`Performance_Management`​ サービスにアクセスできない場合でも接続検証に成功するようになりました。 |W-11193505
+|Spring Framework ライブラリを ​`org.springframework:spring-context:5.3.18`​ から ​`org.springframework:spring-context:5.3.20`​ にアップグレードすることで、Workday Connector の報告されていたセキュリティの脆弱性が修正されました。 |W-11195299
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+
+== 2022年5月31日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で、空の項目値はデフォルトで無視されます。空の値をクリアするには、​`[Clear on Null Values (null 値でクリア)]`​ オプションを選択できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+== 2022/05/20
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|*[Description (説明)]*​ 項目に空白値があると無効な入力エラーが返される Jira Connector の問題が修正されました。 |W-11107531
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+
+== 2022/05/17
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|プレーンテキスト文字列のマークアップをクリーンアップすると null ポインタ例外が発生する Slack Connector の問題が修正されました。 |W-11031313
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+
+== 2022/05/11
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|ServiceNow Connector で、WebService でアクセスできるすべてのテーブルのメタデータが自動的に読み込まれるようになりました。 |W-10919969
+|ServiceNow Connector で、連動関係のセキュリティの脆弱性にパッチ (​`org.springframework : spring-beans : 5.3.17`​) が適用されました。 |W-10981860
+|ServiceNow Connector で、連動関係のセキュリティの脆弱性にパッチ (​`org.springframework : spring-context : 5.2.7.RELEASE`​) が適用されました。 |W-11001899
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+== 2022/05/05
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のオブジェクトが NetSuite Connector で使用できるようになりました。
+
+** Service Item for Sale
+** Service Item for Purchase
+** Return Authorization
+
+[NOTE]
+オブジェクトは、すべて大文字で表示され、アンダースコアが付きます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|カスタムオブジェクトを選択するために以前に変更されたトリガを使用する場合に NetSuite Connector で発生する null ポインタ例外の問題が修正されました。 |W-10995359
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+== 2022/04/29
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Workday 財務管理サービスを有効にするために次のアクションが Workday Connector に追加されました。
+
+** *Create Object*​
+** *Update Object*​
+** *Get Object*
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+
+|file (ファイル) データ型の値が含まれる項目を絞り込むことができない Workday Connector の問題が修正されました。 | W-10574439 COCN-667
+
+|Workday Connector で、​*Job Requisition*​ アクションを編集するときに ​*[Position Time Type (役職時間種別)]*​ 項目をリストとして選択するか、データピルとして設定できるようになりました。 | W-10574489 COCN-605
+
+|Workday Connector の API から汎用エラーメッセージが返されるときに、コンポーザに有益なエラーメッセージが表示されるようになりました。 | W-10574413 COCN-705
+
+|Workday Connector の検証エラーメッセージがより具体的なコンテンツになるように改善されました。 | W-10574467 COCN-632
+
+|Workday Connector の ​*Create Worker*​ アクションで ​*[Position Title (肩書)]*​、​*[Supervisory Organization (監督組織)]*​、​*[Location (場所)]*​ 項目が省略可能になりました。ただし、​*Position*​ オブジェクトで ​*[Location (場所)]*​ 値が設定されていない場合、​*[Location (場所)]*​ 項目は必須です。この項目がないと、Create Worker API 操作に失敗します。 | W-10574483 COCN-612
+
+|Jira Connector でページネーションが有効になり、​*Create issue with custom fields*​ アクションを使用するときに ​*[Reporter (報告者)]*​ および ​*[Assignee (割り当て先)]*​ 項目ですべての割り当て可能なユーザをフェッチできるようになりました。 |W-10934109
+
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/workday-ki.adoc[]
+
+== 2022/04/28
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである HTTP を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+* 複数の ID プロバイダ (IDP) を追加して、組織でシングルサインオン (SSO) を有効にできるようになりました。次の ID プロバイダを使用できるようになりました。
+
+** OpenID Connect IDP
+** SAML 2.0 ID
+
+== 2022/04/26
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 有効になっていると、15 分ごとまたはフローの実行時に実行をチェックします。フローが失敗すると、コンポーザはフローのオーナーにメールを送信します。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+
+|JIRA Connector で、引用符が含まれる文字列値を ​*[Description (説明)]*​ 項目に入力しても、無効な JSON 解析要求が発生しないくなりました。  | W-11037529
+
+|===
+
+== 2022/04/22
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Google スプレッドシートおよび Slack Connector で、特定のトリガ、アクション、項目にマウスポインタを置いて、アプリケーション内コンテキストヘルプを表示できるようになりました。
+
+== 2022/04/18
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *カスタム式エディタ*​で、数式を使用してデータ型を変換し、正確に書式設定できるようになりました。
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|*[Custom Expression Editor (カスタム式エディタ)]*​ で ​*[fromDateToTime]*​ または ​*[fromStringToDateTime]*​ 関数を使用すると、返される値が 1 日ずれる。たとえば、「​`04/27/2022 T00:00:00Z`​」と入力すると、返される値が ​`4/26/2022 5:00:00 PM`​ になる。 | |
+|===
+
+== 2022/04/12
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| ​*Update Job Requisition*​ アクションの ​*[Currency (通貨)]*​ および ​*[Pay Plan (支払プラン)]*​ 項目の値がアルファベット順に並び替えられない Workday Connector の問題が修正されました。  | W-10663753
+
+|===
+
+== 2022/04/04
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Google カレンダーを接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2022/03/31
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Gmail を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| ​*Create Row*​ アクションの空のリスト項目に関する Google Sheets Connector のエラーメッセージが更新されました。  | W-10574328
+| ヘッダーのない列にヘッダーのある次の列のヘッダーが正しく割り当てられない Google Sheets Connector の問題が修正されました。 | W-10899109
+
+|===
+
+== 2022/03/28
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のオブジェクトが NetSuite Connector で使用できるようになりました。
+
+** Vendor
+** Vendor Bill
+** Purchase Order
+
+== 2022/03/23
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Xero Connector で ​*On New or Update Invoice*​ トリガおよび ​*Get Invoices*​ アクションを使用できるようになりました。
+
+== 2022/03/22
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コンポーザで​*カスタム式エディタ*​を使用して式を作成し、関数を適用できるようになりました。このリリースでは、基本的な算術演算子と関数 (string、date、number など) がサポートされています。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| 項目値にスペースが含まれているとフロートリガがアクティブ化されない Jira Connector の問題が修正されました。 | W-10830185、W-10824255
+
+|===
+
+== 2022/03/14
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| デフォルト値が設定されていないブール項目が含まれているオブジェクトでメタデータが返されない Salesforce Connector の問題が修正されました。 | W-10808550
+
+|===
+
+== 2022/03/09
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| アクセストークンを削除した後に ​*[Session Management (セッション管理)]*​ ページで残りのアクセストークンが更新されない Salesforce Connector の問題が修正されました。 | W-10718676
+
+|===
+
+== 2022/03/02
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Zendesk Connector で ​*Get Organization by ID*​ アクションを使用できるようになりました。このアクションは、指定された ID 検索条件に基づいて組織を返します。
+
+== 2022/02/21
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| ​*[Type of Record (レコードタイプ)]*​ 項目が ​`NON_INVENTORY_SALE_ITEM`​ に設定されているトリガで他のレコードタイプのデータが返される NetSuite Connector の問題が修正されました。 | W-10674134
+
+|===
+
+== 2022/02/07
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Stripe Connector の ​*Create Product*​ アクションで ​*[Images (画像)]*​ 項目が使用できるようになりました。この項目では、アクションに追加される最大 8 個の画像の URL をアタッチできます。
+
+* QuickBooks Connector の ​*Create Invoice*​ アクションで次の項目が使用できるようになりました。
+
+** *Transaction Tax Code (トランザクション税コード)*​
+** *Item Tax Code (品目税コード)*
+
+== 2022/01/27
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 日時ピッカーを使用できるようになりました。データ型が ​`date`​ (日付) または ​`time`​ (時刻) の項目で ​*[Pick from Calendar (カレンダーから選択)]*​ または ​*[Search Data Pills (データピルを検索)]*​ を実行できるようになりました。デフォルトでは、日時ピッカーはブラウザで設定されたタイムゾーンを使用します。
+
+* *[Flow Details (フローの詳細)]*​ ページの ​*[Created on (作成日)]*​ および ​*[Last Modified (最終更新日)]*​ の日付がブラウザで設定されたタイムゾーンで表示されるようになりました。
+
+* エラーが発生したときにエラーに関する追加情報がある場合、エラーメッセージの ​*[More details (詳細)]*​ リンクをクリックできます。​*[Error (エラー)]*​ ウィンドウの情報を使用して、問題をトラブルシューティングしたり、​*[Trace ID (トレース ID)]*​ をコピーしてサポートに提供したりできます。​*[Contact MuleSoft Support Team (MuleSoft サポートチームに問い合わせる)]*​ ボタンをクリックしてサポートに直接問い合わせることもできます。
+
+== 2022/01/25
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Google Sheets Connector の ​*Update row*​ アクションでデータピルが ​*[Row number (行番号)]*​ 項目の入力として受け入れられません。 | COCN-910
+
+|===
+
+== 2022/01/19
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| ライブラリの連動関係がアップグレードされました。 | COCN-873
+
+|===
+
+== 2022/01/13
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| ライブラリの連動関係がアップグレードされました。 | COCN-894
+
+|===
+
+== 2022/01/07
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer で [​`list of strings`​ (文字列のリスト)] データピルがサポートされるようになりました。文字、日付、ブール、数値を項目に入力できるようになりました。一致する文字列のリストがドロップダウンで返されます。
+
+== 2022/01/05
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| NetSuite Connector のメタデータの解決が失敗し、空のエラーメッセージが表示される問題が修正されました。このエラーが発生しなくなりました。 | COCN-875
+
+|===
+
+== 2021/12/21
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| コネクタとコンポーザ間の接続を確立するときにエラーが表示される Asana Connector の問題が修正されました。 | SE-12452
+
+|===
+
+== 2021/12/16
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Google Sheets Connector で Create/Update Row アクション使用するときに複数のデータ行を転送できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| これまで、Google Sheets Connector では、Google スプレッドシートがトリガである場合、割り当てられたデータ型 (​`int`​ (整数) や ​` `​bool` (ブール)) に関係なく、すべての出力項目が ​`text`​ (テキスト) として返されていました。そのため、アクションでトリガデータピルをテキスト以外の項目にマップしようとすると、エラーが発生していました。現在、トリガ項目で元のデータ型が保持されるようになり、後続のアクションで適切にマップできます。 | SE-227701、COCN-575
+| スペースが含まれるドキュメントのメタデータが失敗する Google Sheets Connector の問題が修正されました。  | COCN-742
+| ライブラリの連動関係がアップグレードされました。 | |
+// | Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
+
+|===
+
+== 2021/12/09
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Xero Connector のメタデータページネーションの問題が修正されました。 | CSCA-1106
+| Xero Connector の ​*Get contact by ID*​ および ​*Search contacts*​ アクションのサンプルデータ要求が失敗する問題が修正されました。 | CSCA-1044
+| Xero API の対応する項目名に合わせて Xero Connector の項目表示ラベルが修正されました。 | CSCA-1043
+| Xero Connector の項目表示ラベルが修正されました。  | CSCA-1040
+
+|===
+
+== 2021/12/02
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で ​*[Job (ジョブ)]*​ レコードタイプがサポートされるようになりました。
+
+* NetSuite Connector で ​*Update Record*​ アクションの ​*[ID Type (ID 種別)]*​ 項目の ​*[External (外部)]*​ 値がサポートされるようになりました。
+
+* NetSuite Connector で ​*Delete Record*​ アクションの ​*[ID Type (ID 種別)]*​ 値がサポートされるようになりました。
+
+* NetSuite Connector で ​*[Assembly Item (アセンブリ項目)]*​ レコードタイプがサポートされるようになりました。
+
+* Jira Connector のすべての操作の入力項目でスペースがサポートされるようになりました。
+
+* Jira Connector のアクションで [​`Comment`​ (コメント)] 項目がサポートされるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| 一部のメタデータサブカテゴリが空の場合、フローでメタデータが更新されることがあります。 | SE-23496
+| 空の値が含まれるカスタム項目を処理するときの問題が修正されました。 | SE-23068
+| NetSuite XML 要求で runServerSuiteScriptAndTriggerWorkflows フラグが必要なくなりました。 | SE-22758
+| 日時カスタム項目を処理するときの問題が修正されました。 | COCN-735
+
+|===
+
+== 2021/11/23
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Salesforce Connector で For Each ブロックをフローコントロールに追加するときに、For Each ブロックにオブジェクト API 参照名ではなくオブジェクト表示ラベル名が表示されます。 | COCN-745
+
+|===
+
+
+== 2021/11/05
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+MuleSoft Composer が正式リリースされました。
+
+//include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+//[%header,cols="2,1", width="70”]
+//|===
+//|Issue|ID
+//|Message Flows now appear in chronological order. |SE-12345
+//|Batch jobs no longer hang while using persistent queues. |SE-54321
+//|`NullPointerException` errors no longer occur when using HTTP Connector inside a connector built with XML SDK. |SE-18335
+//|===
+
+//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+//include::_partials/release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
+
+== 関連リソース
+* https://help.mulesoft.com/s/[MuleSoft ヘルプセンター]
+* https://www.mulesoft.com/support-and-services[MuleSoft サービス]

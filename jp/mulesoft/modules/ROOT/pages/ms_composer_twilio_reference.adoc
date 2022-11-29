@@ -1,0 +1,50 @@
+= Twilio Connector リファレンス
+
+Twilio は、ユーザが通話の発信と受信を行い、テキストメッセージを送受信して、Web サービス API を使用して他のコミュニケーション機能を実行するための SaaS クラウドコミュニケーションプラットフォームです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Account SID (アカウント SID)::
+
+Twilio にログインするために使用するアカウント SID。
+
+Auth Token (認証トークン)::
+
+Twilio にログインするために使用する認証トークン。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Send Message::
+
+受信者にメッセージを送信します。次の項目では値が必須です。
+
+* *To (宛先)*​: この項目の値は、メッセージ受信者の E.164 形式の電話番号、SIP アドレス、またはチャネルユーザアドレス (WhatsApp や Facebook Messenger チャネルなど) である必要があります。
+
+* *From (送信元)*​: この項目の値は、メッセージ開始者の E.164 形式の電話番号、SIP アドレス、またはチャネルユーザアドレス (WhatsApp や Facebook Messenger チャネルなど) である必要があります。
+
++
+メッセージを送信するには、次のいずれかの項目に値を入力する必要があります。
+
+* *Message Text (メッセージテキスト)*​: SMS メッセージを送信するにはこの項目に値を入力します。この項目の値は 1600 文字までです。
+
+* *Media URL (メディア URL)*​: メディアメッセージを送信するにはこの項目に値を入力します。メディアメッセージは米国とカナダでのみ使用できます。米国とカナダ以外の受信者にメディアメッセージを送信した場合は、URL リンクの付いた SMS メッセージとして表示されます。
+
+Make a Phone Call::
+
+通話を開始します。次の項目では値が必須です。
+
+* *To (宛先)*​: この項目の値は、通話受信者の E.164 形式の電話番号、SIP アドレス、またはクライアント識別子である必要があります。
+
+* *From (発信元)*​: この項目の値は、通話開始者の E.164 形式の電話番号、SIP アドレス、またはクライアント識別子である必要があります。
+
+* *TwiML URL*​: この項目の値は、一連の TwiML 手順をホストする URL です。
++
+TwiML の詳細は、Twilio のドキュメント (https://www.twilio.com/docs/voice/twiml) を参照してください。
+
+include::_partials/see-also.adoc[]

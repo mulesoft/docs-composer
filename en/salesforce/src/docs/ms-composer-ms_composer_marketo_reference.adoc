@@ -1,1 +1,0 @@
-../../../mulesoft/modules/ROOT/pages/ms-composer-ms_composer_marketo_reference.adoc

@@ -62,7 +62,7 @@ NOTE: To use the same *Client ID* and *Client Secret* in different flows, use th
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | `+Fort Nox at admin@1342287+` | This should be your user.
+.13+|Connect to your HTTP Account |*Connection Display Name* | `+Fort Nox at admin@1342287+` | This should be your user.
 |*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
 |*Base URL* | `+https://api.fortnox.se+` |
 |*Client ID* | `NmE4OTUzY2...` |
@@ -399,7 +399,7 @@ NOTE: Add the `Accept: application/json` HTTP header to your requests since Quic
 |===
 
 |Step |Field |Example Value |Notes
-.12+|Connect to your HTTP Account |*Connection Display Name* | `+My QuickBooks connection+` |
+.14+|Connect to your HTTP Account |*Connection Display Name* | `+My QuickBooks connection+` |
 |*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
 |*Base URL* | `+https://sandbox-quickbooks.api.intuit.com+` | In your QuickBooks account, check for the realm ID or company ID. For example: `4620816365253449610`.
 |*Client ID* | `ABOCnl9CHHDDpZ0RASkhadwSVBa1...` |

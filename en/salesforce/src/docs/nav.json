@@ -167,6 +167,10 @@
           ]
         },
         {
+          "file" : "ms_composer_automation_credits.adoc",
+          "title": "MuleSoft Automation Credits"
+        },
+        {
           "file" : "ms_composer_glossary.adoc",
           "title": "Glossary"
         }

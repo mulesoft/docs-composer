@@ -73,7 +73,7 @@ NOTE: To use the same *Client ID* and *Client Secret* in different flows, use th
 a|Parameter 1:
 
 * *Key*: `access_type`
-* *Value*: `offline` |
+* *Value*: `offline`
 
 |*Token Exchange URL* | `+https://apps.fortnox.se/oauth-v1/token+` |
 |*Token Exchange Headers*
@@ -89,7 +89,7 @@ Fortnox requires a Basic authentication header in the `Basic CREDENTIALS` format
 * *Credentials*: `OFZ1cnRNR0RUZUFJOnlGS3dtZThMRVE=`
 
 For more information, see https://developer.fortnox.se/general/authentication[Authentication].
-|
+
 |*Token Refresh URL* | `+https://apps.fortnox.se/oauth-v1/token+` |
 |*Token Refresh Headers*
 a|Parameter 1:
@@ -412,7 +412,7 @@ a|Parameter 1:
 
 * *Key*
 * *Value*
-|
+
 |*Token Refresh URL* | `+https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer+` |
 |*Token Refresh Headers*
 a|Parameter 1:
@@ -420,7 +420,6 @@ a|Parameter 1:
 * *Key*
 * *Value*
 
-|
 |*Token Revoke URL* | `+https://developer.api.intuit.com/v2/oauth2/tokens/revoke+` |
 |*Token Revoke Headers*
 a|Parameter 1:

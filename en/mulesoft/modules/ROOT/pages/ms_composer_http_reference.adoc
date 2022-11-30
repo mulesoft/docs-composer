@@ -53,6 +53,63 @@ Before establishing a connection, you must create an OAuth Client in the target 
 
 The following tables provide configuration examples and details about required fields when connecting to a target system using an OAuth client:
 
+==== Fortnox
+
+NOTE: To use the same *Client ID* and *Client Secret* in different flows, use the same Composer connection and consider the allowed requests per minute. To use different Composer connections, use different Fortnox environments.
+
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.13+|Connect to your HTTP Account |*Connection Display Name* | `+Fort Nox at admin@1342287+` | This should be your user.
+|*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
+|*Base URL* | `+https://api.fortnox.se+` |
+|*Client ID* | `NmE4OTUzY2...` |
+|*Client Secret* |`wMTUtZWV...` |
+|*Scopes* | `+companyinformation+`| For all available scopes, see https://developer.fortnox.se/general/authentication[OAuth 2.0 Scopes for Fortnox APIs^].
+|*Authorization URL* | `+https://apps.fortnox.se/oauth-v1/auth+` | You must register your callback URL on the Fortnox account created application. Fortnox allows you to specify only one callback URL by application, so you must create different applications to specify different environment callback URLs.
+|*Authorization URL Query Parameters*
+a|Parameter 1:
+
+* *Key*: `access_type`
+* *Value*: `offline` |
+
+|*Token Exchange URL* | `+https://apps.fortnox.se/oauth-v1/token+` |
+|*Token Exchange Headers*
+a|Parameter 1:
+
+* *Key*: `Authorization`
+* *Value*: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
+
+Fortnox requires a Basic authentication header in the `Basic CREDENTIALS` format, where CREDENTIALS is the Base64 encoding of *Client ID* and *Client Secret*, separated with a colon. For example:
+
+* *Client ID*: `8VurtMGDTeAI`
+* *Client Secret*: `yFKwme8LEQ`
+* *Credentials*: `OFZ1cnRNR0RUZUFJOnlGS3dtZThMRVE=`
+
+For more information, see https://developer.fortnox.se/general/authentication[Authentication].
+
+|*Token Refresh URL* | `+https://apps.fortnox.se/oauth-v1/token+` |
+|*Token Refresh Headers*
+a|Parameter 1:
+
+* *Key*: `Authorization`
+* *Value*: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
+
+Fortnox requires a Basic authentication header in the `Basic CREDENTIALS` format, where CREDENTIALS is the Base64 encoding of *Client ID* and *Client Secret*, separated with a colon. For example:
+
+* *Client ID*: `8VurtMGDTeAI`
+* *Client Secret*: `yFKwme8LEQ`
+* *Credentials*: `OFZ1cnRNR0RUZUFJOnlGS3dtZThMRVE=`
+
+For more information, see https://developer.fortnox.se/general/authentication[Authentication].
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `+/3/companyinformation+` |
+
+|===
+
 ==== Gmail
 [%header%autowidth.spread]
 
@@ -333,6 +390,49 @@ Parameter 2:
 
 |===
 
+==== QuickBooks
+
+NOTE: Add the `Accept: application/json` HTTP header to your requests since QuickBooks returns HTML by default.
+
+[%header%autowidth.spread]
+
+|===
+
+|Step |Field |Example Value |Notes
+.14+|Connect to your HTTP Account |*Connection Display Name* | `+My QuickBooks connection+` |
+|*Authorization Type*| `OAuth 2.0 Authorization Code` | The value in this field is fixed.
+|*Base URL* | `+https://sandbox-quickbooks.api.intuit.com+` | In your QuickBooks account, check for the realm ID or company ID. For example: `4620816365253449610`.
+|*Client ID* | `ABOCnl9CHHDDpZ0RASkhadwSVBa1...` |
+|*Client Secret* |`qwDPs7K1huLWn2ZfdeVHQgpyYr...` |
+|*Scopes* | `+com.intuit.quickbooks.accounting+`| For more information about scopes, check your QuickBooks account. When you create your QuickBooks account, you have two scopes depending on the URLs you need to use.
+|*Authorization URL* | `+https://appcenter.intuit.com/connect/oauth2+` | You must register your callback URL in your QuickBooks account in your application configuration. QuickBooks allows you to register multiple callback URLs, so you can create one application for all your environments.
+|*Token Exchange URL* | `+https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer+` |
+|*Token Exchange Headers*
+a|Parameter 1:
+
+* *Key*
+* *Value* |
+
+|*Token Refresh URL* | `+https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer+` |
+|*Token Refresh Headers*
+a|Parameter 1:
+
+* *Key*
+* *Value* |
+
+|*Token Revoke URL* | `+https://developer.api.intuit.com/v2/oauth2/tokens/revoke+` |
+|*Token Revoke Headers*
+a|Parameter 1:
+
+* *Key*
+* *Value* |
+
+|*Access Token Expired Code* | `401` |
+.2+|Test HTTP Connection |*Request Method* | `Get` |
+|*Request Path* | `+/v3/company/{realmId}/companyinfo/{realmId}+` |
+
+|===
+
 ==== Salesforce
 [%header%autowidth.spread]
 
@@ -463,7 +563,7 @@ a| For more information, see the the following:
 
 ==== Configure an OAuth 2.0 Authorization Code Connection
 
-When creating an OAuth 2.0 Authorization Code connection with the HTTP Connector, you must provide additional information to establish the connection.
+When creating an OAuth 2.0 Authorization Code connection with HTTP Connector, you must provide additional information to establish the connection.
 
 To establish an OAuth 2.0 Connection:
 
@@ -476,8 +576,17 @@ To establish an OAuth 2.0 Connection:
 +
 Under the OAuth Authorization Code Grant type, the authorization request sends data as query parameters.  Composer handles these query parameters automatically, but sometimes additional parameters are useful. For example, the Google API needs `access_token=offline` to emit a refresh token. Without this parameter, a connection will expire after an hour.
 .. *Token Exchange URL*: The URL where the authorization code can be exchanged for an access token.
+* Optionally, if you click *Add Headers*, provide a value for the following fields:
+** *Key*
+** *Value*
 .. *Token Refresh URL (Optional)*: The URL where the token can be refreshed. This field is applicable only if the application marks the tokens as expired after a certain period of time.
+* Optionally, if you click *Add Headers*, provide a value for the following fields:
+** *Key*
+** *Value*
 .. *Token Revoke URL (Optional)*: The URL where the token can be revoked or removed.
+* Optionally, if you click *Add Headers*, provide a value for the following fields:
+** *Key*
+** *Value*
 . Click *Next*. +
 The OAuth 2.0 Authorization Code Connection is configured. You can now test the connection.
 
@@ -534,7 +643,7 @@ The following fields are applicable for HTTP Connector:
 
 |*Array Path* |String |The path to the JSON array. The value from the *Array Path* field is selected by default, but a different value can be selected from the dropdown. This value only appears if the value in the *Action* field is set to *Paginated Request*.
 
-|*Pagination Type* |String |The type of pagination for the request. The following Pagination Types are available:
+|*Pagination Type* |String a|The type of pagination for the request. The following Pagination Types are available:
 
 * *Page Number*: If this value is selected, provide a value in the *Page Number Parameter Name* field.
 * *Marker*: If this value is selected, provide a value in the *Marker Parameter Name* field.

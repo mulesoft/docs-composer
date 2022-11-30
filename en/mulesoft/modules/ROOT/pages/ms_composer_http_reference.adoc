@@ -104,7 +104,6 @@ Fortnox requires a Basic authentication header in the `Basic CREDENTIALS` format
 * *Credentials*: `OFZ1cnRNR0RUZUFJOnlGS3dtZThMRVE=`
 
 For more information, see https://developer.fortnox.se/general/authentication[Authentication].
-|
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
 |*Request Path* | `+/3/companyinformation+` |
@@ -432,7 +431,7 @@ a|Parameter 1:
 |
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
-|*Request Path* | `+/v3/company/{realmId}/companyinfo/{realmId}+` | 
+|*Request Path* | `+/v3/company/{realmId}/companyinfo/{realmId}+` |
 
 |===
 

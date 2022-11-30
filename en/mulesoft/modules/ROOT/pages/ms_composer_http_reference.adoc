@@ -428,7 +428,6 @@ a|Parameter 1:
 * *Key*
 * *Value*
 
-|
 |*Access Token Expired Code* | `401` |
 .2+|Test HTTP Connection |*Request Method* | `Get` |
 |*Request Path* | `+/v3/company/{realmId}/companyinfo/{realmId}+` |

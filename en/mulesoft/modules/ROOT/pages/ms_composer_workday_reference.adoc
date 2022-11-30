@@ -18,8 +18,6 @@ For example, if the URL where you log into Workday is `na.workday.com/wday/authg
 User Name::
 
 The username that you use to log in to Workday.
-+
-For Composer to successfully authenticate a Workday user account, the Workday user requires full user roles. Composer does not authenticate API User roles.
 
 Password::
 

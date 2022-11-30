@@ -80,7 +80,7 @@ a|Parameter 1:
 a|Parameter 1:
 
 * *Key*: `Authorization`
-* *Value*: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` |
+* *Value*: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
 
 Fortnox requires a Basic authentication header in the `Basic CREDENTIALS` format, where CREDENTIALS is the Base64 encoding of *Client ID* and *Client Secret*, separated with a colon. For example:
 
@@ -95,7 +95,7 @@ For more information, see https://developer.fortnox.se/general/authentication[Au
 a|Parameter 1:
 
 * *Key*: `Authorization`
-* *Value*: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` |
+* *Value*: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
 
 Fortnox requires a Basic authentication header in the `Basic CREDENTIALS` format, where CREDENTIALS is the Base64 encoding of *Client ID* and *Client Secret*, separated with a colon. For example:
 

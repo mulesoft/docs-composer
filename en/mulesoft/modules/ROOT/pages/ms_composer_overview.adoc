@@ -88,11 +88,11 @@ You can experiment with a flow until you've got it working just right, and you c
 ifeval::["{product}"=="salesforce"]
 == Access Composer
 
-Access the homepage to start using Composer for your business needs:
+Access the home page to start using Composer for your business needs:
 
 image::images/overview_page_sf.png[Mulesoft Composer Home]
 
-. *Home*: Composer home page.
+. *Home*: View the Composer home page.
 . *Templates*: Explore pre-built templates which you can leverage to build your flow. For more information, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
 . *Composer Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].
 . *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits].
@@ -100,11 +100,12 @@ endif::[]
 
 ifeval::["{product}"=="mulesoft"]
 == Access Composer
-Access the homepage to start using Composer for your business needs:
+
+Access the home page to start using Composer for your business needs:
 
 image::images/overview_page_ms.png[Mulesoft Composer Home]
 
-. *Overview*: Composer home page.
+. *Overview*: View the Composer home page.
 . *Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].
 . *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits].
 . *Templates*: Explore pre-built templates which you can leverage to build your flow. For more information, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].

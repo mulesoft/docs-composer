@@ -95,10 +95,7 @@ image::images/overview_page_sf.png[Mulesoft Composer Home]
 . *Home*: Composer home page.
 . *Templates*: Explore pre-built templates which you can leverage to build your flow. For more information, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
 . *Composer Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].
-. *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to MuleSoft Automation Credits.
-//ADD LINK
-
-
+. *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits].
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
@@ -109,8 +106,7 @@ image::images/overview_page_ms.png[Mulesoft Composer Home]
 
 . *Overview*: Composer home page.
 . *Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].
-. *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to MuleSoft Automation Credits.
-//ADD LINK
+. *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits].
 . *Templates*: Explore pre-built templates which you can leverage to build your flow. For more information, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
 . *Help*: Learn about Composer, explore the product documentation, join the MuleSoft community, or visit the Help center.
 endif::[]

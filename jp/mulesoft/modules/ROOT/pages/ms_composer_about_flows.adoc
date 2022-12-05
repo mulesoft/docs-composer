@@ -1,0 +1,202 @@
+= コンポーザのしくみ
+
+フローでは、2 つ以上のシステム間の自動化プロセスを定義します。自動化プロセス全体のスキーマと考えてください。たとえば、コンポーザを使用して次のアクションを自動化できます。
+
+* すべての新しいレコードを 1 つの Salesforce 組織にコピーし、別の組織に複製する。
+* Workday で従業員レコードまたは求職票を作成し、一部の項目に別のシステムのデータを入力する。
+//* Send a Slack message every time a Google Sheet is updated.
+* 15 分ごとにデータ取得元を確認し、データが変更された場合は、それらの変更を Tableau データ取得元にコピーする。
+
+また、Salesforce レコードを複製してから、レコードタイプに基づいて特定のチャネルに Slack メッセージを送信するなど、複数のアクションを 1 つのフローに組み合わせることができます。フローの基本的な構成要素がどのように連携するかを理解すると、自信を持って容易にフローをビルドおよびテストできます。フローのビルドは、トリガ、および自動化プロセスを完了するために実行するすべてのアクションを追加するだけです。
+
+== トリガ
+
+フローの最初のステップは常にトリガです。使用可能なオプションは、選択した接続またはスケジュールによって異なります。
+
+* イベントの代わりに期間を選択した場合、オプションは表示されません。トリガが終了し、このフローの動作を定義するアクションを作成できます。
+* 接続を選択する場合は、フローをトリガして取得するデータの種類を定義し、次に定義するアクションで使用できるようにします。
+
+次の例は、接続を使用するトリガを示しています。
+
+image::images/trigger-example.png[トリガの例, 500]
+
+* *[Trigger (トリガ)]*​ はトリガの名前で、ユーザが指定した名前です。
+* *[Salesforce Org HQ (Salesforce 組織 HQ)]*​ は、このトリガがデータ取得元として使用する接続の名前です。
+トリガはデータ取得元をリスンし、次の項目で指定されたイベントが発生したとき、または期間に達したときに開始します。
+* *[Start this flow when: (このフローを開始する条件:)]*​ は、選択した接続のフローを開始できるアクションのリストです。テキストボックスをクリックして、オプションのリストを表示します。
+* *[Object type (オブジェクト種別)]*​ は、Salesforce 接続の取引先や商談など、選択できるオブジェクトのリストです。ここでの表示ラベルと提供される選択肢は、接続によって異なります。
+* *[Result fields (結果項目)]*​ には、デフォルトでフローがトリガされるたびにフローで使用できる項目の数がリストされます。一部のレコード項目のみを操作するには、​*[Select Fields (項目を選択)]*​ をクリックします。
+* *[Sample Output (サンプル出力)]*​ には、接続したデータ取得元の実際のレコードから取得した項目名とサンプル値が表示されます。サンプル出力をチェックして、正しいアカウントに接続していることを確認します。また、操作できるデータを理解するのにも役立ちます。
++
+項目の API 参照名を表示するには、各項目名の横にある情報バブルにマウスポインタを置きます。
+
+トリガをテストし、必要に応じて調整できます。​*[Test (テスト)]*​ をクリックするだけで、システムイベントが発生します。この例では、新しい Salesforce 取引先責任者を作成します。テストがエラーなしで完了した場合、次のステップに進むことができます。トリガされた後にこのフローで実行するアクションを定義します。
+
+=== 接続またはスケジューラのどちらを使用するかの選択
+
+フローを作成して名前を付けたら、Salesforce や Workday などのシステムのイベント (接続の作成)、または「every fifteen minutes (15 分ごと)」などのスケジューラによって指定された期間のどちらでフローをトリガするかを選択します。
+
+イベントによるフローのトリガは接続を使用して行われ、時間のスケジュールによるトリガはスケジューラを使用して行われます。
+
+image::images/connection-example.png[接続ダイアログの例, 400]
+
+==== 接続を使用したフローのトリガ
+
+接続を使用してフローをトリガすると、ログイン情報が保護され、データ取得元に簡単にアクセスできます。
+
+* 自分で作成した接続は自分にのみ表示されます。
+* 接続を作成してログイン情報を置き換えた後は、そのログイン情報が公開されたり、アクセスされたりすることはありません。
+* デプロイされたフローで使用された後に接続の名前を変更することはできません。
+
+フローをトリガする最初のステップは、トリガが発生するシステムに接続することです。​*[What Should Start This Flow (このフローの開始元)]*​ ダイアログで、トリガ作成の最初のステップとして接続を選択または作成します。
+
+* リストから既存の接続を選択します。
+* *[Add New Connection (新しい接続の追加)]*​ をクリックして、作成後に自動的に選択される新しい接続を作成します。
+* 接続名を変更したり接続を削除したりして、接続を管理します。
+
+//After you choose a connection, Composer displays a dialog for you to finish defining the trigger.
+//From this dialog, you can change the connection to another of the same system.
+
+==== スケジューラを使用したフローのトリガ
+
+接続を使用してフローをトリガする代わりに、​*[Scheduler (スケジューラ)]*​ コントロールを使用して、フローをトリガする期間を作成できます。
+
+image::images/connection-scheduler.png[期間を使用した新しいトリガ, 500]
+
+== アクション
+
+アクションはフロー内のステップです。トリガの直後にフローの最初のアクションを作成し、トリガと同様に接続を選択できます。トリガによって取得されたデータと、以前のアクションにもアクセスできます。
+
+ただし、アクションの前にフローコントロールを開始することもできます。
+
+image:images/create-an-action.png[[Add Action (アクションを追加)] ダイアログ, 400]
+
+次の例では、アクションの上部のバナーに表示されているように、Salesforce システム管理者がアクションを作成して名前を付け、Google スプレッドシートへの接続を選択しています。システム管理者はアクションも定義しました。この場合、スプレッドシートに新しい行を作成し、フロートリガからいくつかの項目を入力します (各新規取引先責任者レコード)。
+
+image::images/action-step1.png[アクション例, 600]
+
+* *[Action (アクション)]*​ は、実行するタスクです。選択できるアクションは、選択した接続によって異なります。
++
+このセクションの残りの項目は、接続種別と選択したアクションによって異なります。
+* *[Spreadsheet ID (スプレッドシート ID)]*​ は、このアクションが使用するスプレッドシートの名前です。接続の作成に使用したログイン情報を使用してアクセスできる、任意のスプレッドシートを検索および選択できます。
+* *[Worksheet (ワークシート)]*​ は、行を追加するワークシートの名前です。
+
+* *[Columns (列)]*​ は、トリガ項目をスプレッドシートの列にマップする領域です。他の領域と同様に、この領域はシステムによって異なります。この例では、​*[Add Columns (列を追加)]*​ をクリックして、リストされたスプレッドシートのすべての列を表示し、ここで操作する列を選択します。
++
+image::images/action-step2.png[アクション例, 600]
++
+操作する列を選択し、トリガで取得した項目または前のアクションを次のようにマップします。
++
+image::images/action-step3.png[アクション例, 600]
++
+トリガによって提供された項目を選択したスプレッドシートの行にマップします。この例では、​*[Email]*​、​*[FirstName]*​、​*[LastName]*​ が Google スプレッドシートの列 ​*[Email (メール)]*​、​*[First Name (名)]*​、​*[Last Name (姓)]*​ にマップされます。アクションまたはトリガ接続で取得されたすべての項目をマップする必要はありません。
++
+選択ペイン (​*[Columns (列)]*​) は、このアクションの接続と他の選択肢によって異なる点に注意してください。各接続での有効なアクションのリストについては、関心のあるシステムのリファレンストピックを参照してください。
+
+これは完全なアクションで、テストする準備ができています。
+
+image::images/action-overview.png[アクション例, 600]
+
+Google スプレッドシートの項目にマップされる Salesforce の項目は、項目 (または接続によっては他のリソース) に含まれる可能性があるすべてのコンテナであるデータピルです。
+
+== データピル
+
+データピルには複雑なデータ構造が含まれるため、トリガや以前のアクションからのデータを簡単にマップできます。データピルを使用して、必要に応じてデータマッピングをシンプルにすることも複雑にすることもできます。
+
+* 2 つ以上のデータピルを同じ項目、列、または他のデータ取得先にマップすることで、連結できます。
+
+* *[Custom Express fx (カスタム式 fx)]*​ を選択すると、単純にデータピルをデータ取得先にマップする代わりに、カスタム式を作成できます。たとえば、検査用にフラグを設定するために、データピルの後にテキスト (​`Copied from Salesforce`​ など) を追加できます。
+
+* 複数のカンマ区切りのデータピルと手動で入力した文字列値を使用して、文字列のリストを作成できます。1 つのデータピルを入力すると、コンポーザによってそのデータピルが自動的にリストに変換されます。​`list of strings`​ データピルを使用するときに、データ型 ​`string`​、​`number`​、​`boolean`​、または ​`date`​ のデータピルも選択すると、それらのデータピルは既存のリストに追加され、文字列以外のデータピルは ​`string`​ データ型に変換されます。
+
+データピルが null または空白の値を含む項目であり、それを省略可能な項目にマップすると、コンポーザによってその項目がフローから削除されます。必須項目にマップすると、値は必須であるためエラーが発生します。
+
+//== Supported Data Types
+
+//The value that a field can accept for a value is a data type. In Composer, the following data types are available:
+
+//[%header%autowidth.spread]
+
+//|===
+
+//|Data Type |Definition
+
+//|Array | Provides a collection of a fixed number of components of the same data type.
+
+//|Boolean | Evaluates to true or false. Possible values: `true`, `false`
+
+//|Date | Stores a year, month, and day as ``yyyy-MM-dd.
+
+//|DateTime | Stores a date and time within a time zone, where a time zone is the time relative to Greenwich Mean Time (GMT). A time zone must include a + or a -. For example, `03:00:00` is a time, while +03:00 is a time zone. Example that represents 12:30 p.m. on June 1, 2019 in Macau: `2019-06-01T12:30:00+08:00`
+
+//|Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
+
+//|Number | Stores a float number, which can range from 1.40129846432481707e-45 to 3.40282346638528860e+38 and include a decimal point, or an integer.
+
+//|Object | Refers to a reference of data of any type (`boolean`, `date`, `number`, etc.).
+
+//|String | Stores text, numbers (not `number` data types), or a combination of both. Examples: "94u0sfjlk*(f!`lkkjd", "18005555555", "Fred"
+
+//|===
+
+== フローコントロール
+
+基本アクション以外のロジックをフローに追加する必要がある場合は、For Each ループまたは If/Else ブロックを使用できます。フローコントロールを定義し、以前に取得したデータに適用されるロジックに基づいて実行するアクションを指定します。
+
+=== For Each ループ
+
+For Each ループは、リスト内の各レコードに対して実行されます。たとえば、フローが Salesforce から一連の取引先責任者を取得する場合、リスト全体をループして各レコードを Google スプレッドシートの行にコピーできます。
+
+image::images/for-each-example.png[For Each の例, 500]
+
+*[Input list (入力リスト)]*​ は、前のアクションで使用可能なレコードのリストから選択されます。この例では、前のアクションで 1 つの取引先に関連付けられたすべての取引先責任者レコードが取得されました。
+
+残りのステップは、リスト内の各レコードに対して実行されるアクションです。この例では、アクションは取引先責任者を Google スプレッドシートに 1 行に 1 レコードずつ書き込みます。
+
+=== If/Else ブロック
+
+If/Else ブロックは 1 つのレコードを取り、指定した条件を満たしているかどうかを確認します。満たしている場合、実行するアクションを定義します。
+
+image::images/if-else-example.png[If Else の例, 500]
+
+この例では、1 つの If 分岐のみが示されています。レコードの電話番号が ​`702`​ で始まる場合、名と姓が Google スプレッドシートの行にコピーされます。レコードが条件を満たさない場合、1 つの分岐しかないため、アクションは実行されず、フローは次のアクションに進みます。
+
+分岐ごとに最大 20 個の条件と、分岐ごとに必要な数のアクションを追加できます。​*[Add If (If を追加)]*​ をクリックして分岐を追加します。必要な分岐をすべて指定したら、​*[Add Else (Else を追加)]*​ でフォールスルーアクションを指定できます。
+
+If ステートメントの順序に注意してください。条件が満たされた最初の分岐によって指定されたアクションは、If/Else ブロックで実行される唯一のアクションです。
+
+== 各ステップのテスト
+
+すべてのトリガとアクションの後に作業をテストできます。テストするときに、トリガ、アクション、フローコントロールを追加または削除できます。トリガまたはアクションで使用する接続を同じシステム種別の別の接続に変更することもできます。
+
+テストが完了したら、フローをアクティブ化できます。
+
+== 関連リソース
+
+ifeval::["​{product}​"=="salesforce"]
+* xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: 概要]
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+* xref:ms_composer_overview.adoc[MuleSoft Composer: 概要]
+endif::[]
+
+ifeval::["​{product}​"=="salesforce"]
+* xref:ms_composer_prerequisites.adoc[MuleSoft Composer for Salesforce: はじめに]
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+* xref:ms_composer_prerequisites.adoc[MuleSoft Composer: はじめに]
+endif::[]
+
+* xref:ms_composer_flows.adoc[フローのビルドとテスト]
+* xref:ms_composer_activation.adoc[フローのアクティブ化]
+* xref:ms_composer_monitoring.adoc[フローの監視]
+
+ifeval::["​{product}​"=="salesforce"]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+* https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]

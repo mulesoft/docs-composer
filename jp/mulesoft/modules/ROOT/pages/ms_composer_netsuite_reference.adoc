@@ -1,0 +1,163 @@
+= NetSuite Connector リファレンス
+
+NetSuite をデータ取得元として使用している (たとえば、新しい NetSuite の連絡先を取得して Salesforce にコピーする) か、データ取得先として使用している (Salesforce の商談が完了したときに NetSuite の販売注文を作成する) かにかかわらず、フローでデータを操作する方法の詳細は、データ取得元またはデータ取得先に固有です。
+
+== 接続の詳細
+
+MuleSoft Composer を介して NetSuite に接続する場合、NetSuite で次の点を確認します。
+
+* *[Setup (設定)]*​ > ​*[Integration Management (インテグレーション管理)]*​ > ​*[Manage Integration (インテグレーションを管理)]*​ > ​*[Authentication (認証)]*​ に移動してトークンベースの認証が有効になっていることを確認します。
+* *[Setup (設定)]*​ > ​*[User/Roles (ユーザ/ロール)]*​ > ​*[Two-Factor Authentication Roles (2 要素認証ロール)]*​ に移動して、インテグレーションで使用するロールで 2 要素認証が使用されていないことを確認します。
+
+コンポーザでは NetSuite 2020.2 がサポートされています。
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
++
+NetSuite には同時ユーザ (cWSU) ではなく正規ユーザ (WSU) として接続する必要があります。
+
+include::_partials/netsuite-connection-details.adoc[]
+
+//When creating a connection, note the following connection fields in NetSuite:
+
+//* *Account ID*: The *Account ID* value associated with your NetSuite instance. You can view the account ID by navigating to *Setup* > *Integration* > *SOAP Web Services Preferences*.
+//* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate a value for consumer key by navigating to *Setup* > *Integration* > *Manage Integrations*.
+//* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for *Consumer Key*.
+//* *Token ID*: The *Token ID* value generated in NetSuite.
+//* *Token Secret*: The *Token Secret* value generated with the token ID in NetSuite.
+
+=== NetSuite 接続の確立
+
+MuleSoft Composer を使用して NetSuite 接続を確立するには、次が必要です。
+
+* `perform integration tasks`​ のための「MuleSoft Composer User (Mulesoft Composer ユーザ)」権限セット。
+
+* NetSuite 内の関連付けられた顧客の内部 ID を保存する Salesforce 内の取引先。カスタム項目 ​*[NetSuite ID]*​ が組織の取引先オブジェクトに作成されていることを確認する必要があります。
+
+=== NetSuite 権限の設定
+
+NetSuite データおよび NetSuite ユーザインターフェースへのアクセス権はユーザ、ロール、および権限に基づきます。
+
+ユーザ、ロール、および権限についての詳細は、 https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite ドキュメント]​を参照してください。
+
+
+=== サーバの SuiteScript を実行してワークフローをトリガ
+
+サーバの SuiteScript を実行してワークフローをトリガするように NetSuite 設定が定義されている場合、次の条件が必要です。
+
+* *[Audience (オーディエンス)]*​ 項目ですべてのロールが選択されている必要があります。
+* *[Execute As Role (ロールとして実行)]*​ 項目が ​`Administrator`​ に設定されている必要があります。
+* *[Log Level (ログレベル)]*​ 項目が ​`Debug`​ に設定されている必要があります。
+
+include::_partials/null-values.adoc[]
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+On Updated Records::
+
+レコードが作成されるか、既存のレコードが更新される。
+
+On New Records::
+
+新しいレコードが NetSuite に作成される。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Update Record::
+
+レコードが変更されます。
+
+Create Record::
+
+レコードが作成されます。
+
+Upsert Record::
+
+レコードが作成または更新されます。
+
+Delete Record::
+
+レコードが削除されます。
+
+Get Records::
+
+特定の検索条件に基づいて最大 500 個のレコードのリストを返します。次の項目は必須です。
+
+* Object type (オブジェクト種別)
+* Filter records (レコードを絞り込む)
+
+== レコードタイプ
+
+次のレコードタイプがサポートされています。
+
+[%header%autowidth.spread]
+|===
+
+|Record Type (レコードタイプ) |トリガ |アクション
+
+|CASH_SALE |X |X
+|CASH_REFUND |X |X
+|CONTACT |X |X
+|CREDIT_MEMO |X |X
+|CURRENCY | |X
+|CURRENCY_RATE | |X
+|CUSTOMER |X |X
+|CUSTOMER_DEPOSIT |X |X
+|CUSTOMER_PAYMENT |X |X
+|CUSTOMER_REFUND |X |X
+|CUSTOM_RECORD_TYPES |X |X
+|ESTIMATE |X |X
+|EMPLOYEE |X |X
+|INVENTORY_ITEM |X |X
+|INVOICE |X |X
+|JOURNAL_ENTRY |X |X
+|LOT_NUMBERED_INVENTORY_ITEM |X |X
+|NON_INVENTORY_PURCHASE_ITEM |X |X
+|NON_INVENTORY_RESALE_ITEM |X |X
+|NON_INVENTORY_SALE_ITEM |X |X
+|OPPORTUNITY |X |X
+|PAYMENT_ITEM | |X
+|PURCHASE_ORDER |X |X
+|RETURN_AUTHORIZATION |X |X
+|SALES_ORDER |X |X
+|SERVICE_PURCHASE_ITEM |X |X
+|SERVICE_RESALE_ITEM |X |X
+|SERVICE_SALE_ITEM |X |X
+|SUPPORT_CASE |X |X
+|TIME_BILL |X |X
+|TIME_SHEET |X |X
+|VENDOR |X |X
+|VENDOR_BILL |X |X
+
+|===
+
+[NOTE]
+PAYMENT_ITEM​ オブジェクトは GET RECORDS アクションではサポートされていません。
+
+== カスタム項目
+
+MuleSoft Composer を使用して、NetSuite レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+
+//== Objects
+
+//The following objects are available:
+
+//* Service Sale Item
+//* Service Purchase Item
+//* Return Authorization
+//kept but commented out the above Objects section in case I misunderstood Jan's instructions
+
+== リストオブジェクト
+
+リストオブジェクトがサポートされます。
+
+== カスタム選択リスト
+
+値名を使用して値をカスタム選択リストにマップできます。値をカスタム選択リストにマップするのに内部 ID は不要です。
+
+include::_partials/see-also.adoc[]

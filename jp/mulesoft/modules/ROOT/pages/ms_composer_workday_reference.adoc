@@ -1,0 +1,94 @@
+= Workday Connector リファレンス
+
+Workday をデータ取得元またはデータ取得先として使用します。
+フローでのデータの操作方法の一部の詳細は、データ取得元またはデータ取得先、および選択した特定のトリガまたはアクションに固有です。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Tenant Name (テナント名)::
+
+Workday テナントの名前または ID。
++
+たとえば、Workday にログインする URL が ​`na.workday.com/wday/authgwy/global-modern/`​ の場合、テナント名は ​`global-modern`​ になります。
+
+User Name (ユーザ名)::
+
+Workday にログインするために使用するユーザ名。
++
+コンポーザで Workday ユーザアカウントを正常に認証するには、Workday ユーザに完全なユーザロールが必要です。コンポーザでは API ユーザロールが認証されません。
+
+Password (パスワード)::
+
+Workday にログインするために使用するパスワード。
++
+コンポーザで Workday ユーザアカウントを正常に認証するには、Workday ユーザに完全なユーザロールが必要です。コンポーザでは API ユーザロールが認証されません。
+
+Host Name (ホスト名)::
+
+Workday インスタンスのホスト名。例: `wd2-impl-services1.workday.com`​。
+
+== トリガ
+
+New or updated object::
+
+このトリガでは、Workday 財務管理で新規または更新済みオブジェクトをチェックします。次の項目では値が必須です: *Object (オブジェクト)*​。
+
+== アクション
+
+Get Worker Details by ID::
+
+このアクションでは、指定した従業員の ​`Workday ID`​ に対応するワーカーの詳細を返します。
+
+Create Worker::
+
+このアクションでは、新しいワーカーを作成します。
+
+Update Job Requisition::
+
+このアクションでは、ジョブの必要条件に関する詳細を更新します。
+
+Get Customer::
+
+このアクションでは、指定した顧客 ID に対応する顧客の詳細を返します。
+
+Create Object::
+
+このアクションでは、Workday 財務管理で新しいオブジェクトを作成します。​*[Object (オブジェクト)]*​ の値を指定します。
+
+Update Object (オブジェクトを更新)::
+
+このアクションでは、Workday 財務管理で既存のオブジェクトを更新します。次の項目の値を指定します。
+
+* *Object*​
+* *Unique ID (一意の ID)*
+
+Get Object::
+
+このアクションでは、Workday 財務管理で既存のオブジェクトを返します。次の項目の値を指定します。
+
+* *Object*​
+* *ID*
+
+== Object Types (オブジェクト種別)
+
+次のオブジェクト種別が使用できます。
+
+* トリガ
+    ** JOB_REQUISITIONS​
+    ** WORKER
+
+* アクション
+    ** COMPANY
+    ** CONTRACT
+    ** CUSTOMER
+    ** INVOICE
+    ** JOB_REQUISITIONS​
+    ** PROJECT
+    ** SALES_ITEM​
+    ** WORKER
+
+include::_partials/see-also.adoc[]

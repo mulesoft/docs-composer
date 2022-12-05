@@ -1,0 +1,80 @@
+= Zendesk Connector リファレンス
+
+Zendesk は、カスタマーサービス用のツールを提供するヘルプデスク管理ソリューションです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Connection Display Name (接続表示名)::
+
+Zendesk にログインするために使用する接続表示名。
+
+ベース URI::
+
+Zendesk にログインするために使用するベース URI。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New/updated ticket::
+
+新規または更新済みチケットをチェックします。
+
+New/updated organization::
+
+Zendesk で新しい組織が作成されるか既存の組織が更新されたときに起動します。
+
+New/updated user::
+
+Zendesk で新しいユーザが作成されるか既存のユーザが更新されたときに起動します。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create a ticket::
+
+新しいチケットを作成します。次の項目の値を指定します。
+
+* *Subject (件名)*​
+* *Comment (コメント)*
+
+Update a ticket::
+
+既存のチケットを更新します。次の項目の値を指定します。
+
+* *Ticket ID (チケット ID)*​
+* *Description (説明)*
+
+Search tickets::
+
+指定された条件に基づいてチケットを検索します。
+
+Create or update an organization::
+
+新しい組織を作成するか、既存の組織を更新します。
+
+Create or update a user::
+
+新しいユーザを作成するか、既存のユーザを更新します。次の項目の値を指定します。
+
+* *ID type (ID 種別)*​
+* *Name (名前)*
+
+Search organizations::
+
+指定された条件に基づいて組織を検索し、これらの条件に一致する組織のリストを返します。
+
+Get Organization by ID::
+
+指定された ID 検索条件に基づいて組織を返します。
+
+Search users::
+
+指定された条件に基づいてユーザを検索し、これらの条件に一致するユーザのリストを返します。
+
+include::_partials/see-also.adoc[]

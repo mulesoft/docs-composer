@@ -1,0 +1,29 @@
+// Headings for rn-template
+// tag::whatsNew[]
+= 新機能
+// end::whatsNew[]
+
+// tag::compatibility[]
+= 互換性
+// end::compatibility[]
+
+// tag::fixedIssues[]
+= 修正された問題
+// end::fixedIssues[]
+
+// tag::knownIssues[]
+= 既知の問題
+// end::knownIssues[]
+
+// tag::upgrade[]
+= Upgrade (アップグレード)
+// end::upgrade[]
+
+// tag::seeAlso[]
+ifeval::[​{platform}​ == 'salesforce']
+= 関連リソース
+endif::[]
+ifeval::[​{platform}​ == 'mulesoft']
+= 関連リソース
+endif::[]
+// end::seeAlso[]

@@ -1,0 +1,119 @@
+ifeval::["​{product}​"=="salesforce"]
+= Mulesoft Composer for Salesforce
+endif::[]
+ifeval::["​{product}​"=="mulesoft"]
+= MuleSoft Composer
+endif::[]
+
+ifeval::["​{product}​"=="salesforce"]
+MuleSoft Composer for Salesforce (コンポーザ) を使用すると、Salesforce 組織内からコードではなくクリックでデータのプロセスの自動化を容易に作成できます。
+さまざまなシステムに保存された情報を接続する安全なプロセスを作成する場合、顧客とビジネスのリアルタイムの統合ビューを作成します。
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+MuleSoft Composer (コンポーザ) を使用すると、コードではなくクリックでデータのプロセスの自動化を容易に作成できます。
+さまざまなシステムに保存された情報を接続する安全なプロセスを作成する場合、顧客とビジネスのリアルタイムの統合ビューを作成します。
+endif::[]
+
+コンポーザを使用してプロセスを自動化するには、プロセスのすべてのステップが含まれるフローを作成します。
+
+* Google スプレッドシート、Tableau、Workday、Salesforce 組織など、システムから指定するデータを選択する
+* データを別のシステムにコピーするなど、データに対するアクションを実行する
+
+フローをいつトリガするかを選択します。レコードや行の変更など、何かが発生したときや、指定する時間間隔でフローをトリガできます。フローはビジネスニーズに応じて単純にも複雑にもなります。
+
+== 例
+
+地域の Slack ユーザグループがその地域のメンバーをスプレッドシートで追跡するとします。まず Slack ユーザを全国組織に登録します。全国オフィスでは Salesforce を使用してメンバーシップを追跡しているため、新しいメンバーを地域のシートに自動的にプッシュすると、すべてのユーザの多くの時間が節約されます。Salesforce システム管理者はコンポーザを使用して、このタスクをほぼリアルタイムで自動的に実行する 1 つのフローを作成できます。
+
+image::images/overview1.png[データサイロ間のデータの同期の維持、600]
+
+この簡単なフローを拡張してより複雑なアクションを実行できます。たとえば、新規ユーザの郵便番号に基づいて異なるシートに書き込んだり、既存のユーザの変更を伝播したりできます。
+
+== フローを作成する手順
+
+コンポーザで正常に機能するリアルタイムインテグレーションを作成するのにコーディング操作は不要です。
+単にコンポーザを開き、ポイント A からポイント B へのデータの取得に必要なすべてのステップが含まれるフローを作成します。
+
+ステップ 1: 接続を選択または作成する::
+
+接続とは、操作するデータへのアクセスに使用するユーザ名とパスワードおよび URL であり、この URL には通常これらのログイン情報が入力されます。一部のシステムでは、いくつかの追加の情報 (セキュリティトークンなど) が必要です。
++
+接続を定義したら、同じフローまたは作成する異なるフローでその接続を何度でも使用できます。
+コンポーザではログイン情報は一切公開されません。また、接続は、他のユーザがフローを作成している場合でも自分のみが使用できます。
++
+接続の代わりに、フローを実行する時間 (10 分ごとなど) をスケジュールするように選択できます。
+
+ステップ 2: トリガを選択する::
+
+接続を使用するすべてのフローはトリガ (新規レコードの作成などのイベント) により開始されます。
+常にこのイベントによりフローがトリガされ、実行されます。フローのトリガに使用できるイベントは、選択する接続に応じて異なります。
++
+接続の代わりにスケジュールされた時間を選択した場合、選択した間隔でフローが実行されるため、トリガは不要です。
+
+ステップ 3: 実行するアクションを定義する::
+
+トリガにより取得されたデータに対してどのようなアクションを実行するかと、どのような場合にそのアクションを実行するかを定義して、たとえば、特定の期間のすべてのレコードを取得し、変更されたレコードまたは新規レコードのみをコピーします。レコード全体ではなく各レコードから一部の情報のみをコピーすることもできます。
++
+コンポーザのトリガとアクションを使用して、必要に応じてフローを精巧にしたり、単純にしたりできます。
++
+接続を選択する代わりに指定した時間間隔でフローを開始する場合、最初のアクションの一部としてデータを取得します。
+
+ステップ 4: 1 つのレコードでフローをテストする::
+
+トリガとアクションを定義したら、適切な手順を構築していることを確認するのに役立つサンプルデータが表示されます。
+各変更をテストしてから次の変更を行うことができるため、フローの問題を容易に見つけて修正することができます。
+変更は、フローをアクティブ化するまで表示されません。
+
+ステップ 5: フローをアクティブ化する::
+
+テストしたら、本番組織でフローをアクティブ化します。
+フローをアクティブ化すると、トリガの条件が満たされたときにフローが自動的に実行されます。
+
+ステップ 6: フローの動作を監視する::
+
+コンポーザのフローの詳細ページで提供されているデータを参照することで、フローで何が実行されているかを確認できます。
+
+システム間のデータをマッピングし、適切なアクションを適切なタイミングで正確に実行することは複雑に思われる場合がありますが、コンポーザを使用すると、ロジックを必要なステップに分割することができます。
+フローが適切に機能するまでフローを試すことができ、新しいユースケースが見つかったらフローの複雑さを増すことができます。
+
+ifeval::["​{product}​"=="salesforce"]
+== 次のステップ
+
+. xref:ms_composer_about_flows.adoc[「コンポーザのしくみ」]​を確認して、プロセスを自動化するためにフローの各部分がどのように連携しているかを理解してください。さらにヘルプが必要な場合は、Salesforce Trailhead を使用するか、コンポーザに関する MuleSoft ブログ投稿にアクセスすることができます。
+. xref:ms_composer_checklist.adoc[チェックリスト]​を使用して、最初のフローの計画を作成します。
+. Salesforce 組織でコンポーザを開き、最初のフローを作成します。
+
+== 他の学習リソース
+
+* https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config/[Trailhead: MuleSoft Composer Installation and Configuration (MuleSoft Composer のインストールと設定)^]
+* https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics/[Trailhead: MuleSoft Composer Basics (MuleSoft Composer の基礎)^]
+* https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft ブログ投稿^]
+
+== 関連リソース
+
+* xref:ms_composer_prerequisites.adoc[はじめに]
+* xref:ms_composer_reference.adoc[Composer Connector リファレンス]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+== 次のステップ
+
+. xref:ms_composer_about_flows.adoc[「コンポーザのしくみ」]​を確認して、プロセスを自動化するためにフローの各部分がどのように連携しているかを理解してください。
+. xref:ms_composer_checklist.adoc[チェックリスト]​を使用して、最初のフローの計画を作成します。
+. コンポーザを開き、最初のフローを作成します。
+
+== 関連リソース
+
+* https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[Mulesoft Composer トレーニング^]
+* xref:ms_composer_prerequisites.adoc[はじめに]
+* xref:ms_composer_reference.adoc[Composer Connector リファレンス]
+ifeval::["​{product}​"=="salesforce"]
+
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+* https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]

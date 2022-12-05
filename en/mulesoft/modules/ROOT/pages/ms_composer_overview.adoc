@@ -86,6 +86,30 @@ however, using Composer helps you break down the logic into the steps required.
 You can experiment with a flow until you've got it working just right, and you can add complexity to it as you discover new use cases.
 
 ifeval::["{product}"=="salesforce"]
+== Access Composer
+
+Access the homepage to start using Composer for your business needs:
+
+. *Home*: Composer home page.
+. *Templates*: Explore pre-built templates which you can leverage to build your flow. For more information, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
+. *Composer Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].
+. *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to MuleSoft Automation Credits.
+//ADD LINK
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+== Access Composer
+Access the homepage to start using Composer for your business needs:
+
+. *Overview*: Composer home page.
+. *Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].
+. *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to MuleSoft Automation Credits.
+//ADD LINK
+. *Templates*: Explore pre-built templates which you can leverage to build your flow. For more information, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
+. *Help*: Learn about Composer, explore the product documentation, join the MuleSoft community, or visit the Help center.
+endif::[]
+
+ifeval::["{product}"=="salesforce"]
 == Next Steps
 
 . Review xref:ms_composer_about_flows.adoc[How Composer Works] to understand how the different parts of a flow work together to automate processes. If you want more help, you can use Salesforce Trailhead or visit the MuleSoft blog post about Composer.

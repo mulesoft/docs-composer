@@ -1,4 +1,4 @@
-:product: salesforce
+:product: mulesoft
 ifeval::["{product}"=="salesforce"]
 = MuleSoft Composer for Salesforce
 endif::[]
@@ -108,11 +108,14 @@ Access the home page to start using Composer for your business needs:
 
 image::images/overview-page-ms.png[Mulesoft Composer Home]
 
+[calloutlist]
 . *Overview*: View the Composer home page.
-. *Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].
-. *Usage Summary*: View your monthly tasks and credit usage per flow for your organization. For more information, refer to xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits].
-. *Templates*: Explore pre-built templates which you can leverage to build your flow. For more information, refer to xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates].
+. *Flows*: Create, test, activate, and monitor your xref:ms_composer_flows.adoc[flows].
+. *Usage Summary*: View your xref:ms_composer_automation_credits.adoc[monthly tasks and credit usage per flow] for your organization.
+. *Templates*: Leverage xref:ms_composer_build_a_flow_using_templates.adoc[pre-built Composer templates] to build your flow.
 . *Help*: Learn about Composer, explore the product documentation, join the MuleSoft community, or visit the Help center.
+. *Create new flow*: Create your new flow xref:ms_composer_flows.adoc#create-a-flow[from scratch or from a template].
+
 endif::[]
 
 ifeval::["{product}"=="salesforce"]

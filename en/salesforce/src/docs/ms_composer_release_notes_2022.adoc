@@ -9,6 +9,40 @@ New versions are automatically available once they are released; you don't need 
 //| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
+== December 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Previously, if a deactivated flow was reactivated, that flow would erroneously pick up events that occurred while the flow was deactivated. Now, when a flow is deactivated, the object store data for that flow is erased so that the flow will start fresh upon reactivation. |W-12120985
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+include::_partials/platform-ki-July22.adoc[]
+
+include::_partials/google-sheets-ki.adoc[]
+
+include::_partials/http-ki.adoc[]
+
+include::_partials/jira-ki.adoc[]
+
+include::_partials/netsuite-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+include::_partials/salesforce-ki.adoc[]
+
+include::_partials/servicenow-ki.adoc[]
+
+include::_partials/slack-ki.adoc[]
+
+include::_partials/tableau-ki.adoc[]
+
+include::_partials/workday-ki.adoc[]
+
 == November 29, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -220,7 +254,7 @@ Templates are patterns that you can leverage to build a flow. All of the steps a
 
 * You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
 
-* To facilitate MuleSoft Automation, the subscription pricing method has been reevaluated for MuleSoft Composer for Salesforce. To enable this enhancement, a new tab, *Usage Summary*, has been added to the MuleSoft Composer for Salesforce landing page. On the *Usage Summary* tab, you can view your monthly tasks and credit usage per flow for your organization. 
+* To facilitate MuleSoft Automation, the subscription pricing method has been reevaluated for MuleSoft Composer for Salesforce. To enable this enhancement, a new tab, *Usage Summary*, has been added to the MuleSoft Composer for Salesforce landing page. On the *Usage Summary* tab, you can view your monthly tasks and credit usage per flow for your organization.
 
 * The following new actions are now available for Jira Connector:
 

@@ -4,6 +4,33 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== December 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Previously, if a deactivated flow was reactivated, that flow would erroneously pick up events that occurred while the flow was deactivated. Now, when a flow is deactivated, the object store data for that flow is erased so that the flow will start fresh upon reactivation. |W-12120985
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
 == November 29, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -205,7 +232,7 @@ Templates are patterns that you can leverage to build a flow. All of the steps a
 
 * You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
 
-* To facilitate MuleSoft Automation, the subscription pricing method has been reevaluated for MuleSoft Composer. To enable this enhancement, a new menu, *Usage Summary*, has been added to the navigation pane. On the *Usage Summary* page, you can view your monthly tasks and credit usage per flow for your organization. 
+* To facilitate MuleSoft Automation, the subscription pricing method has been reevaluated for MuleSoft Composer. To enable this enhancement, a new menu, *Usage Summary*, has been added to the navigation pane. On the *Usage Summary* page, you can view your monthly tasks and credit usage per flow for your organization.
 
 * The following new actions are now available for Jira Connector:
 

@@ -91,7 +91,7 @@ ifeval::["{product}"=="salesforce"]
 
 Access the home page to start using Composer for your business needs:
 
-image::images/overview_page_sf.png[Mulesoft Composer Home]
+image::images/overview-page-sf.png[Mulesoft Composer Home]
 
 [calloutlist]
 . *Home*: View the Composer home page.
@@ -106,7 +106,7 @@ ifeval::["{product}"=="mulesoft"]
 
 Access the home page to start using Composer for your business needs:
 
-image::images/overview_page_ms.png[Mulesoft Composer Home]
+image::images/overview-page-ms.png[Mulesoft Composer Home]
 
 . *Overview*: View the Composer home page.
 . *Flows*: Create, test, activate, and monitor your flows. For more information, refer to xref:ms_composer_flows.adoc[Build a Flow].

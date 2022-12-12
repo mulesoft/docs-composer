@@ -16,8 +16,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 [%header%autowidth.spread]
 |===
 |Issue Resolution |ID
-|The com.fasterxml.jackson.core library is upgraded to version 2.13.4.1 to address reported security vulnerabilities.| W-11933496
-|The connection no longer breaks when Zendesk triggers are idle for long durations when deployed on CloudHub.| W-12040415
+|In Zendesk Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4.1 to address reported security vulnerabilities.| W-11933496
+|In Zendesk Connector, the connection no longer breaks when Zendesk triggers are idle for long durations when deployed on CloudHub.| W-12040415
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

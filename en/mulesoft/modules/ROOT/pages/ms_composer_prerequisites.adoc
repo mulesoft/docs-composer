@@ -347,9 +347,11 @@ Before sharing APIs from Anypoint Platform to MuleSoft Composer, ensure that:
 
 ** The API specifications use either RAML or OpenAPI.
 ** The API uses basic authentication, bearer token, or API Key in conjunction with a Client ID and Secret.
+** The API has a value for the *Consumer Endpoint* field in API Manager.
 
 * Composer organizations are <<connect-composer-to-anypoint-platform,linked to Anypoint organizations>>.
 * The API must be accessible from the public internet.
+* The API must be published to a xref:exchange::to-share-api-asset-to-portal.adoc[public portal].
 
 For more information on how to connect externally available APIs, refer to xref:ms_composer_rest_consumer_reference.adoc[Rest Consumer Connector].
 

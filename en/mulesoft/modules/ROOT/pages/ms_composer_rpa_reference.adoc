@@ -25,7 +25,7 @@ Update customer information automatically across different systems that do not h
 
 When invoking short-running RPA processes from Composer, invoke a single flow by choosing the *Use response in this flow* button. The RPA execution is retrieved by the RPA step and subsequent steps can use the RPA step datapills.
 
-If the *Use the response in the same flow option* is enabled and the process takes longer than three minutes to respond, the process stops and the an error message appears indicating that the polling process timed out.
+If the *Use the response in the same flow option* is enabled and the process takes longer than three minutes to respond, the process stops and an error message appears indicating that the polling process timed out.
 
 == Invoke Long-Running RPA Processes
 

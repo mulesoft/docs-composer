@@ -41,6 +41,28 @@ Access to NetSuite data and to the NetSuite user interface is based on users, ro
 
 For more information on users, roles, and permissions, see the https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite documentation].
 
+MuleSoft provides a bundle that contains a role that has the necessary permissions required for your Composer integration to NetSuite. To install the bundle, follow these steps:
+
+. Go to *Customization > SuiteBundler > Search & Install Bundles*.
+. Type `462515` in the keyword search.
+. Click on *MuleSoft Composer* and review the *Components* tab.
+. Click *Install* and then *Install Bundle*. The installation takes a few minutes.
+
+After installing the bundle, generate credentials to configure the connection to Composer. Store the credentials securely since the credentials are visible only once for security purposes. If you need additional information, contact your NetSuite administrator. To generate credentials in the form of tokens, follow these steps:
+
+* Assign the newly created *MuleSoft Composer* role to the desired user.
+. Go to *Setup > Users/Roles > Manage Users*.
+. Click on the user who will host the integration. You can use a generic account such as `it@company.com` that doesn't necessarily need its own license.
+* Create an integration.
+. Go to *Setup > Integration > Manage Integration > New*.
+. Enter a name and appropriate concurrency for the integration. You can start low and use 1-2 units lower than the maximum concurrency allowed.
+. Check the *Token-Based Authentication* box.
+* Generate access tokens.
+. Go to *Setup > Users/Roles > User Management > Access Tokens*. 
+. Set the application to the integration created in the previous step.
+. Assign the user and click *Save*.
+* Identify the NetSuite account ID.
+. Go to *Setup > Company > Company Information*. You can see the account ID here.
 
 === Run Server SuiteScript to Trigger Workflows
 

@@ -58,7 +58,7 @@ To generate credentials in the form of tokens, follow these steps:
 * Create an integration.
 . Go to *Setup > Integration > Manage Integration > New*.
 . Enter a name and appropriate concurrency for the integration. You can start low and use 1-2 units lower than the maximum concurrency allowed.
-. Check the *Token-Based Authentication* box.
+. Select the *Token-Based Authentication* box.
 * Generate access tokens.
 . Go to *Setup > Users/Roles > User Management > Access Tokens*. 
 . Set the application to the integration created in the previous step.

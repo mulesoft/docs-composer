@@ -41,7 +41,7 @@ Access to NetSuite data and to the NetSuite user interface is based on users, ro
 
 For more information on users, roles, and permissions, see the https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite documentation].
 
-MuleSoft provides a bundle that contains a role that has the necessary permissions required for your Composer integration to NetSuite. To install the bundle, follow these steps:
+MuleSoft provides a bundle that contains a role with the permissions required for integrating Composer with NetSuite. To install the bundle, follow these steps:
 
 . Go to *Customization > SuiteBundler > Search & Install Bundles*.
 . Type `462515` in the keyword search.

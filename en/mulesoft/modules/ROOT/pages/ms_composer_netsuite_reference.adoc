@@ -48,7 +48,9 @@ MuleSoft provides a bundle that contains a role with the permissions required fo
 . Click on *MuleSoft Composer* and review the *Components* tab.
 . Click *Install* and then *Install Bundle*. The installation takes a few minutes.
 
-After installing the bundle, generate credentials to configure the connection to Composer. Store the credentials securely since the credentials are visible only once for security purposes. If you need additional information, contact your NetSuite administrator. To generate credentials in the form of tokens, follow these steps:
+After installing the bundle, generate credentials to configure the connection to Composer. Store the credentials securely since the credentials are visible only once for security purposes. If you need additional information, contact your NetSuite administrator. 
+
+To generate credentials in the form of tokens, follow these steps:
 
 * Assign the newly created *MuleSoft Composer* role to the desired user.
 . Go to *Setup > Users/Roles > Manage Users*.

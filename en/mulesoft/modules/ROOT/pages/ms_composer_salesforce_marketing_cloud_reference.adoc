@@ -3,7 +3,7 @@
 Salesforce Marketing Cloud is a marketing platform that supports capabilities such as real-time customer engagement, email and marketing automation, social media engagement, mobile (SMS) messaging and push notifications, and customer marketing analytics.
 
 
-== Create API Integration Package and Set Permissions
+== Create an API Integration Package and Set Permissions
 
 To use the Salesforce Marketing Cloud Connector, you must first create an API Integration package and set permissions for email and SMS communication.
 

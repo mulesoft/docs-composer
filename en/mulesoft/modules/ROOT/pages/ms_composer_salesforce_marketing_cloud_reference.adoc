@@ -10,12 +10,12 @@ To use the Salesforce Marketing Cloud Connector, you must first create an API In
 To create a package and set the permissions:
 
 . In Composer, click the gear icon in the upper right corner. +
-The Setup page appears.
+The *Setup* page appears.
 
-. In the navigation pane, under *Platform Tools*, click *Apps* > *Packaging* > *Installed Packages*. +
+. On the left navigation pane, under *Platform Tools*, click *Apps* > *Packaging* > *Installed Packages*. +
 The *Installed Packages* page appears.
 
-In the upper-right corner of the *Installed Packages* page, click *New*. +
+. In the upper-right corner of the *Installed Packages* page, click *New*. +
 The *Package Details* window appears.
 
 . In the *Package Details* window, complete the following fields:
@@ -27,13 +27,13 @@ The *Summary* page appears displaying the details of the new package.
 
 . In the *Summary* page, click *Add Component*. +
 The *Add Component* window appears.
- 
+
 . In the *Add Component* window, select *API Integration* > *Server-to-Server*. +
-The Set *Server-to-Server* section appears.
+The *Set Server-to-Server* section appears.
 
 . In the *Set Server-to-Server* section, under *Channels*, click the checkboxes next to the following:
-.. *Email*: Read, Write, Send
-.. *SMS*: Read, Write, Send
+.. In the *Email* column: *Read*, *Write*, *Send*
+.. In the *SMS* column: *Read*, *Write*, *Send*
 
 . Click *Save*. +
 The API Integration package is created and the permissions for email and SMS communication are set.

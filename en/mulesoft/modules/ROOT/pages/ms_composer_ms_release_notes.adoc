@@ -4,6 +4,121 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+== December 23, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, the *Upload file* and *Download file* actions no longer incorrectly throw a `NullPointerException` when using an OAuth 2.0 connection. | W-12236769
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== December 14, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If you attempt to use a data pill in a scope where the value could be null or empty, a message alerting the user now appears.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== December 13, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Salesforce Connector, Composer logging now includes enhanced error codes and messages when the API returns `ApiFault` errors.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In ServiceNow Connector, the *New/Updated Record* trigger now picks up messages for all appropriate timestamps.| W-12176039
+|In ServiceNow Connector, sudden disconnections in high workload scenarios no longer occur. | W-12035222
+|In ServiceNow Connector, the componentorg.apache.commons library is upgraded to version 1.10.0 to address reported security vulnerabilities.| W-11913979
+|In ServiceNow Connector, the org.springframework library is upgraded to version 5.3.20 to address reported security vulnerabilities. | W-12150392
+|In Salesforce Connector, the triggers and the *Get records* action now support the `isTrue` and `isFalse` operators for boolean parameters. | W-11752116
+|In Salesforce Connector, the *Delete record* action no longer incorrectly throws a `Retrieving metadata for the step failed. Try saving and refreshing the page.` error. | W-12211471
+|In Salesforce Connector, the triggers no longer have a potential data loss when the watermark is not used properly. | W-12128874
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
+== December 12, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Zendesk Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4.1 to address reported security vulnerabilities.| W-11933496
+|In Zendesk Connector, the connection no longer breaks when Zendesk triggers are idle for long durations when deployed on CloudHub.| W-12040415
+|===
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
 == December 7, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

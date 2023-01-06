@@ -31,7 +31,7 @@ The *Add Component* window appears.
 . In the *Add Component* window, select *API Integration* > *Server-to-Server*. +
 The *Set Server-to-Server* section appears.
 
-. In the *Set Server-to-Server* section, under *Channels*, click the checkboxes next to the following:
+. In the *Set Server-to-Server* section, under *Channels*, select the checkboxes next to the following:
 .. In the *Email* column: *Read*, *Write*, *Send*
 .. In the *SMS* column: *Read*, *Write*, *Send*
 

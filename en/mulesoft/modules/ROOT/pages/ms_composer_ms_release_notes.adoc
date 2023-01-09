@@ -72,6 +72,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Salesforce Connector, the triggers and the *Get records* action now support the `isTrue` and `isFalse` operators for boolean parameters. | W-11752116
 |In Salesforce Connector, the *Delete record* action no longer incorrectly throws a `Retrieving metadata for the step failed. Try saving and refreshing the page.` error. | W-12211471
 |In Salesforce Connector, the triggers no longer have a potential data loss when the watermark is not used properly. | W-12128874
+|In Jira Connector, the com.fasterxml.jackson.core library is upgraded to version 2.14.1 to address reported security vulnerabilities. |W-11933499
+|In Jira Connector, the org.apache.commons-text library is upgraded to version 1.10.0 to address reported security vulnerabilities. |W-12004679
 |===
 
 include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]

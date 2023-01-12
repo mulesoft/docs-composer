@@ -42,14 +42,6 @@ a| Complete the following steps:
 
 |Known Issue|Workaround |ID
 
-|The *Already editing somewhere?* dialog appears, but you aren't editing the flow in another tab. | Log out of Composer and log back in to resume work. |CAPO-47
-
-|The *New Flow* button does not appear on the *Recently Viewed* list page. | Switch to the *All* page. | CAPP-1625
-
-|A blank area appears on the *Home* page when you first log in to Composer |Clear your browser cookies and reload. | CAPP-2051
-
-|When using the *fromDateToTime* or the *fromStringToDateTime* function in the *Custom Expression Editor*, the value returned is off by one day. For example, if you enter `04/27/2022 T00:00:00Z`, the value returned is `4/26/2022 5:00:00 PM`. | |
-
 |When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
 |===
 
@@ -192,10 +184,6 @@ a|Custom fields containing the following list components fail to render: +
 |Known Issue|Workaround |ID
 
 |The *Already editing somewhere?* dialog appears, but you aren't editing the flow in another tab. | Log out of Composer and log back in to resume work. |CAPO-47
-
-|The *New Flow* button does not appear on the *Recently Viewed* list page. | Switch to the *All* page. | CAPP-1625
-
-|A blank area appears on the *Home* page when you first log in to Composer |Clear your browser cookies and reload. | CAPP-2051
 
 |When using the *fromDateToTime* or the *fromStringToDateTime* function in the *Custom Expression Editor*, the value returned is off by one day. For example, if you enter `04/27/2022 T00:00:00Z`, the value returned is `4/26/2022 5:00:00 PM`. | |
 |===

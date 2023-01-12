@@ -6,39 +6,214 @@ include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2
 
 == August 3, 2022
 
-include::_partials/rpa-ki.adoc[]
+//include::_partials/rpa-ki.adoc[]
+==== RPA
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|If connecting to a different RPA than one for which that the existing flow was built, the current RPA process is not automatically mapped to the processes in the new org.
+
+a| Complete the following steps:
+
+. Delete the step in the flow.
+. Re-add the step in the flow.
+. Refresh the process list.
+. Select the new process.
+| None
+
+|When getting a JSON from RPA, you can pass a list of objects to a connector supporting lists. For example, you can pass the list of order line items to NetSuite. |None | None.
+
+|When getting a JSON from RPA, you cannot use primitive values of a list when iterating the list. For example, a list of strings can be iterated, but you cannot do anything with the resulting values. |None |None
+
+|===
 
 == July 13, 2022
 
-include::_partials/platform-ki-July22.adoc[]
+//include::_partials/platform-ki-July22.adoc[]
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|The *Already editing somewhere?* dialog appears, but you aren't editing the flow in another tab. | Log out of Composer and log back in to resume work. |CAPO-47
+
+|The *New Flow* button does not appear on the *Recently Viewed* list page. | Switch to the *All* page. | CAPP-1625
+
+|A blank area appears on the *Home* page when you first log in to Composer |Clear your browser cookies and reload. | CAPP-2051
+
+|When using the *fromDateToTime* or the *fromStringToDateTime* function in the *Custom Expression Editor*, the value returned is off by one day. For example, if you enter `04/27/2022 T00:00:00Z`, the value returned is `4/26/2022 5:00:00 PM`. | |
+
+|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
 
 == April 29, 2022
 
-include::_partials/workday-ki.adoc[]
+//include::_partials/workday-ki.adoc[]
+==== Workday
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|In the *Invoice* object, all fields containing the data type `number` for amounts are sent as strings. | Using the Custom Expression Editor, you can use the typecasting function, `fromStringToNumber`, to change the field type from `string` to `number`. For example: +
+
+`Unit Cost=fromStringToNumber(Sales Price)` + |
+
+|===
 
 == April 28, 2022
 
-include::_partials/http-ki.adoc[]
+//include::_partials/http-ki.adoc[]
+==== HTTP
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|After changing the text in the *Example Request* field, the *HTTP Request* fields do not clear. |Rebuild the action. |W-11052290
+
+|Some API endpoints expect a list as input. Composer only supports creating one list from another. |Add a previous step that returns a list to your flow and use it as a basis for the list required in the HTTP request. |
+
+|When testing a connection, the *Request Body* field appears even if the *Request Method* field is set to `GET`. |None |
+
+|===
 
 == January 5, 2022
 
-include::_partials/netsuite-ki.adoc[]
+//include::_partials/netsuite-ki.adoc[]
+==== NetSuite
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|An error occurs in Composer when testing your flow.
+a|In your Chrome browser, click *Developer Tools* and then click *Network*. In the *Network* tab in Chrome, test your flow again. If you encounter the `INSUFFICIENT PERMISSIONS` error, complete the following steps: +
+
+. In NetSuite, access your role configuration.
+. Click *Permissions* and then click *Setup*.
+. Ensure that the following permissions are set to *Full*:
+
+** Control SuiteScript and Workflow Triggers in Web Service Request
+** SOAP Web Service
+** User Access Tokens
+** Custom Body Fields
+** Custom Column Fields
+** Custom Entity
+** Custom Item Fields
+** Custom Item Number Fields
+** Custom Lists
+** Custom Record Types
+** Custom Transaction Fields
+
+. Reestablish the NetSuite connection. If the error continues to appear, contact Support.
+ |None
+
+|===
 
 == July 19, 2021
 
-include::_partials/servicenow-ki.adoc[]
+//include::_partials/servicenow-ki.adoc[]
+==== ServiceNow
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|ServiceNow Connector - Mule 4 supports only standard tables. | None |None
+
+|===
 
 == July 1, 2021
 
-include::_partials/jira-ki.adoc[]
+//include::_partials/jira-ki.adoc[]
+==== Jira
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+a|The following standard fields are not supported at this time: +
+
+** *Affects version*
+** *Fix version*
+** *Environment*
+** *Component*
+
+| None |None
+
+a|Custom fields containing the following list components fail to render: +
+
+** *Text field (multi-line)*
+** *Labels*
+** *Checkboxes*
+** *Radio Buttons*
+** *Select list (multiple-choice)*
+** *Select list (cascading)*
+
+| None |None
+
+|In the *Status* field, the *In Progress* value sometimes appears twice. |None |None
+
+|After creating a case in Jira, the *Update issue* action does not update the value in the *Reporter* field. Additionally, the value in this field must be blank for the *Update issue* action to succeed. |To update the value in the *Reporter* field, you can manually update the case record in Jira. |None
+
+|Custom fields fail to appear. |Reset your Jira connection by deleting the connection and re-authenticating your Jira account. |None
+
+|When you create an issue, you may encounter a 400 error in the output metadata. | Disregard this error. |None
+
+|===
 
 == June 2, 2021
 
-include::_partials/platform-ki.adoc[]
+//include::_partials/platform-ki.adoc[]
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|The *Already editing somewhere?* dialog appears, but you aren't editing the flow in another tab. | Log out of Composer and log back in to resume work. |CAPO-47
+
+|The *New Flow* button does not appear on the *Recently Viewed* list page. | Switch to the *All* page. | CAPP-1625
+
+|A blank area appears on the *Home* page when you first log in to Composer |Clear your browser cookies and reload. | CAPP-2051
+
+|When using the *fromDateToTime* or the *fromStringToDateTime* function in the *Custom Expression Editor*, the value returned is off by one day. For example, if you enter `04/27/2022 T00:00:00Z`, the value returned is `4/26/2022 5:00:00 PM`. | |
+|===
 
 == May 19, 2021
 
-include::_partials/slack-ki.adoc[]
+//include::_partials/slack-ki.adoc[]
+==== Slack
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|If you select the *Create Message* action in Slack, only public channels appear. | None |CCONN-765
+
+|===
 
 == April 13, 2021
 
@@ -83,8 +258,41 @@ If you want to change the instance of the same data source, but the connection f
 
 |===
 
-include::_partials/google-sheets-ki.adoc[]
+//include::_partials/google-sheets-ki.adoc[]
+==== Google Sheets
 
-include::_partials/salesforce-ki.adoc[]
+[%header%autowidth.spread]
 
-include::_partials/tableau-ki.adoc[]
+|===
+
+|Known Issue|Workaround |ID
+
+|A space in the name of your Google Sheet worksheet can cause an error during testing. |Remove the space and rerun the test. |CCONN-735
+
+|===
+
+//include::_partials/salesforce-ki.adoc[]
+==== Salesforce
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|Composer doesn't set the value of some required Boolean fields on the User object. You must set these values in the relevant step. |None |CAPP-2009
+
+|===
+
+//include::_partials/tableau-ki.adoc[]
+==== Tableau
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|Only one flow can append to the same Tableau data source. If more than one flow or app outside of Composer accesses the data source at the approximate same time, a Composer error occurs. | None |CCONN-714
+
+|===

@@ -645,10 +645,13 @@ The following fields are applicable for HTTP Connector:
 
 |*Pagination Type* |String a|The type of pagination for the request. The following Pagination Types are available:
 
-* *Page Number*: If this value is selected, provide a value in the *Page Number Parameter Name* field.
-* *Marker*: If this value is selected, provide a value in the *Marker Parameter Name* field.
-* *Marker*: If this value is selected, provide a value in the *Marker Parameter Name* field.
 * *Link Header*: If this value is selected, provide a value in the *Link Relation* field.
+* *Marker*: If this value is selected, provide a value in the following fields: +
+  ** *Marker Parameter Name*
+  ** *Next Marker Expression*
+* *Next URL*: If this value is selected, provide a value in the *Next URL Expression* field.
+* *Offset*: If this value is selected, provide a value in the *Offset Parameter Name* field.
+* *Page Number*: If this value is selected, provide a value in provide a value in the *Page Number Parameter Name* field.
 
 |*Maximum Number of Pages* |Number |The maximum number of pages returned from the API in requests.
 

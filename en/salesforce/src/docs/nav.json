@@ -17,7 +17,10 @@
         },
           {
           "file" : "ms_composer_release_notes_2021.adoc"
-        }
+        },
+        {
+        "file" : "ms_composer_release_notes_ki.adoc"
+      }
         ]
       },
         {

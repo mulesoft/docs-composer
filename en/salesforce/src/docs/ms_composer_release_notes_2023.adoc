@@ -6,8 +6,14 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
 
-== January 12, 2022
+== January 12, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * HTTP Connector now supports the following pagination type for fields: *Offset*.
+
+== January 11, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* ServiceNow Connector now supports the Tokyo release.

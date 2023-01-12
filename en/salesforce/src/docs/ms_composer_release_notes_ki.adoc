@@ -42,47 +42,46 @@ include::_partials/slack-ki.adoc[]
 
 == April 13, 2021
 
-* If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows.
-//CPLAT-1288
+==== NetSuite
 
-* If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start.
-//CPLAT-1292
+[%header%autowidth.spread]
 
-* If you see the "Already editing somewhere?" dialog, but you aren't editing the flow in another tab, log out of Composer and log back in to resume work.
-//CAPO-47
+|===
+
+|Known Issue|Workaround |ID
+|If a NetSuite data pill is used in a Slack message that also contains text, testing fails for the NetSuite to Slack flows. |None. |CPLAT-1288
+|If a user has not completed any field mappings in the NetSuite *Update Record* action, then testing will not start. |None. |CPLAT-1292
+|===
 
 == March 15, 2021
 
-* If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page.
-//CAPP-1625
+==== Composer Platform
 
-* If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload.
-//CAPP-2051
+[%header%autowidth.spread]
 
-* You can't access the *Add Connection* button from a trigger or action once it has been created.
-+
-To change a connection to a new connection of the same system type:
-+
+|===
+
+|Known Issue |Workaround |ID
+|If you don't see the *New Flow* button on the *Recently Viewed* list page, switch to the *All* page. |None. |CAPP-1625
+|If you see a blank area instead of the *Home* page contents when you first log in to Composer, clear your browser cookies and reload. |None. |CAPP-2051
+|You can't access the *Add Connection* button from a trigger or action once it has been created. a|To change a connection to a new connection of the same system type: +
+
 . Add an action to the end of your flow, which displays the *Add Connection* button.
 . Create your new connection.
 . Delete the action you added.
 . In the trigger or action where you want to change to the new connection, click the change icon (three dots).
 . Click *Change Connection*. The new connection is listed.
+|
+|After you create a trigger, you can't delete that step. a|If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
 
-* After you create a trigger, you can't delete that step.
-+
-To change to a new connection on a trigger that has already been created, use one of the following workarounds:
-//CAPP-1550
-+
-** If you want to change the data source, for example switching from Salesforce to Workday, create a new flow.
-** If you want to change the instance of the same data source, but the connection for that source doesn't exist yet:
-+
+If you want to change the instance of the same data source, but the connection for that source doesn't exist yet: +
+
 . Add an action to the end of your flow. In the action, create the connection you need.
 . Delete the action.
-. Open the trigger and use *Change Connection* to change to the new connection.
+. Open the trigger and use *Change Connection* to change to the new connection. |CAPP-1550
+|As part of the Salesforce action *Get records*, you can't query based on a Date field. |None. |CPLAT-1126
 
-* As part of the Salesforce action *Get records*, you can't query based on a Date field.
-//CPLAT-1126
+|===
 
 include::_partials/google-sheets-ki.adoc[]
 

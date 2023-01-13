@@ -9,6 +9,8 @@ New versions are automatically available once they are released; you don't need 
 //| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
+See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
+
 == December 23, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -19,29 +21,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Salesforce Connector, the *Upload file* and *Download file* actions no longer incorrectly throw a `NullPointerException` when using an OAuth 2.0 connection. | W-12236769
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == December 14, 2022
 
@@ -49,29 +28,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * If you attempt to use a data pill in a scope where the value could be null or empty, a message alerting the user now appears.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == December 13, 2022
 
@@ -95,29 +51,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Jira Connector, the org.apache.commons-text library is upgraded to version 1.10.0 to address reported security vulnerabilities. |W-12004679
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == December 12, 2022
 
@@ -130,29 +63,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Zendesk Connector, the connection no longer breaks when Zendesk triggers are idle for long durations when deployed on CloudHub.| W-12040415
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == December 7, 2022
 
@@ -164,29 +74,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Previously, if a deactivated flow was reactivated, that flow would erroneously pick up events that occurred while the flow was deactivated. Now, when a flow is deactivated, the object store data for that flow is erased so that the flow will start fresh upon reactivation. |W-12120985
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == November 29, 2022
 
@@ -196,29 +83,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 Some systems, such as Fortnox and QuickBooks, require sending credentials as request headers during the OAuth dance. With custom request headers, you can now connect to these systems using HTTP Connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == November 17, 2022
 
@@ -234,29 +98,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In NetSuite Connector, mapping now works properly when the same custom list field is between multiple items in one record. |W-12041041
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == November 8, 2022
 
@@ -266,29 +107,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == November 3, 2022
 
@@ -312,29 +130,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |When connected to Shopify, HTTP Connector flow tests no longer run indefinitely and return errors. |W-11821763, W-11819981
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == November 1, 2022
 
@@ -346,29 +141,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Slack Connector, the *On New Message* trigger has been disabled and is no longer available. |W-11972430
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 31, 2022
 
@@ -424,29 +196,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Jira Connector, the number of Jira projects that appeared in a dropdown was limited. Now, all Jira projects are retrieved in the dropdown. |W-11912169
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 27, 2022
 
@@ -460,29 +209,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 26, 2022
 
@@ -505,29 +231,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Stripe Connector, fixed security vulnerability found in `componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2`. |W-11853409
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 20, 2022
 
@@ -540,29 +243,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** *Persona Addresses*
 ** *Supervisor Organization Chain*
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 17, 2022
 
@@ -574,29 +254,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Jira Connector, in the *Get Issue in Jira* action, removed the unnecessary *Select Fields* button. |W-11649482
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 13, 2022
 
@@ -604,29 +261,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now export a flow as a JSON file to share your flow with Support for troubleshooting purposes by clicking the wrench icon and selecting *Export*.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 12, 2022
 
@@ -638,29 +272,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
  ** LEAD
  ** PROSPECT
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 10, 2022
 
@@ -668,29 +279,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In RPA Connector, the JSON Sanitizer has been implemented to prevent JSON injection.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 7, 2022
 
@@ -702,29 +290,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Fixed the issue in which the *Run History* page in Composer unnecessarily displayed an error and sent an email notification for an expired access token. Now the error does not appear and no email is sent. To implement this fix, deactivate and then reactivate your flow. |W-11649482
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == October 6, 2022
 
@@ -738,29 +303,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Google Sheets Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4. |W-11719209
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == September 29, 2022
 
@@ -768,29 +310,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The OAuth 2.0 Authorization Code grant for authentication in HTTP Connector now supports customizing the *Authorization Header Name*, *Authorization Header Value Prefix*, and *Authorization Header Custom Value Prefix* fields for the Authorization Header.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == September 9, 2022
 
@@ -806,29 +325,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Fixed the issue in NetSuite Connector in which the CURRENCY and CURRENCY_RATE objects did not work for the *Get Records* action. |W-11722063
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == September 7, 2022
 
@@ -840,29 +336,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Fixed the issue in which users could not activate or delete some flows created by other users. |W-11668733
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == September 6, 2022
 
@@ -882,29 +355,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Fixed the issue in Quickbooks Connector where Sample Data output returned more than one record, even in the case of arrays that are nested fields. |W-11388800
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == August 31, 2022
 
@@ -912,29 +362,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Picklist Mapping is now enabled for fields in an action that supports Pick from List. Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This allows you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == August 29, 2022
 
@@ -947,29 +374,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 * Data Pill Search is now available. You can use this feature to find where a particular data pill is used in your flow.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == August 19, 2022
 
@@ -981,29 +385,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In ServiceNow Connector, the *Read Timeout* field is updated from 5 seconds to 15 seconds to avoid timeouts on large tables. |W-11601586
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == August 15, 2022
 
@@ -1022,29 +403,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == August 8, 2022
 
@@ -1066,29 +424,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == August 3, 2022
 
@@ -1098,29 +433,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == August 2, 2022
 
@@ -1139,137 +451,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
-
-== July 29, 2022
-
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
-* The *On New Message* trigger is now available for Slack Connector.
-
-* You can now connect a new system: Salesforce Marketing Cloud Connector.
-+
-
-See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
-
-== July 28, 2022
-
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
-* You can now connect a new system: HubSpot.
-+
-
-See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-* Required fields in Composer are now denoted with an asterisk (*). Previously, when adding fields in Composer, only optional fields appeared in the modals. Now:
-
- ** When a parent field is selected or deselected and it has required child fields, those child fields are also selected or deselected by default.
- ** When a field is selected or deselected and it has required parent fields, those parent fields are also selected or deselected by default.
- ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
- +
-Required fields can be removed only by deselecting them within the modal.
-
-* HTTP Connector now supports Paginated Requests. When retrieving collections of objects from remote systems, use Paginated Requests to ensure that all data pages are returned.
-
-* Flows based on a scheduler now have access to the scheduler's current and previous timestamps.
-* NetSuite Connector now supports exponential retries, which prevent concurrency limit errors.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
-
-== July 27, 2022
-
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
-
-* The following objects are now available for NetSuite Connector:
-** Currency
-** Currency Rate
-** Lot Numbered Inventory Item
-+
-Note that the objects will appear in all caps and with underscores.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 
 == July 13, 2022
@@ -1281,27 +462,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** Used in inactive flows, a list containing the name and count of inactive flows using this connection appears. Deleting this connection will affect the listed flows. If you reopen the inactive flow, you must select a new connection.
 ** Used in active and inactive flows, a list containing the name, count, and status of active and inactive flows using this connection appears. If you choose to delete the connection, secondary confirmation appears. Prior to deleting the connection, Composer will first attempt to stop the flows.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki-July22.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == June 28, 2022
 
@@ -1309,27 +470,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In NetSuite Connector and Salesforce Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == June 6, 2022
 
@@ -1345,27 +486,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == May 31, 2022
 
@@ -1373,27 +494,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In NetSuite Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == May 20, 2022
 
@@ -1408,27 +509,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == May 17, 2022
 
@@ -1443,27 +524,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == May 11, 2022
 
@@ -1480,27 +541,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 == May 5, 2022
 
@@ -1525,27 +566,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 
 == April 29, 2022
@@ -1580,27 +601,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-include::_partials/workday-ki.adoc[]
 
 
 == April 28, 2022
@@ -1612,25 +613,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/http-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == April 26, 2022
 
@@ -1650,23 +633,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == April 22, 2022
 
@@ -1674,23 +641,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In the Google Sheets and Slack Connectors, you can now hover over certain triggers, actions, and fields to view in-app contextual help.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == April 18, 2022
 
@@ -1698,23 +649,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Using the *Custom Expression Editor*, you can now use formulas to transform data from one data type to another and format it accurately.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == April 12, 2022
 
@@ -1730,23 +665,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == April 4, 2022
 
@@ -1757,23 +676,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == March 31, 2022
 
@@ -1797,23 +700,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 
 == March 28, 2022
@@ -1826,23 +713,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** Vendor Bill
 ** Purchase Order
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == March 23, 2022
 
@@ -1850,23 +721,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The *On New or Update Invoice* trigger and the *Get Invoices* action are now available for Xero Connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == March 22, 2022
 
@@ -1886,23 +741,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == March 14, 2022
 
@@ -1918,23 +757,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == March 9, 2022
 
@@ -1950,23 +773,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == March 2, 2022
 
@@ -1974,23 +781,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The *Get Organization by ID* action is now available for Zendesk Connector. This action returns an organization based on specified ID search criteria.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == February 21, 2022
 
@@ -2006,23 +797,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == February 7, 2022
 
@@ -2035,23 +810,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** *Transaction Tax Code*
 ** *Item Tax Code*
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == January 27, 2022
 
@@ -2063,23 +822,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * When an error occurs, if there is additional information about the error, you can click the *More details* link in the error message. In the *Error* window, you can troubleshoot the issue or copy the *Trace ID* to provide to support. You can also click the *Contact MuleSoft Support Team* button to contact support directly.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == January 25, 2022
 
@@ -2095,23 +838,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == January 19, 2022
 
@@ -2127,23 +854,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == January 13, 2022
 
@@ -2159,23 +870,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 == January 7, 2022
 
@@ -2183,23 +878,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * MuleSoft Composer for Salesforce now supports the `list of strings` data pill. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
 
 
 == January 5, 2022
@@ -2215,21 +894,3 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 | Fixed the issue in which NetSuite Connector’s metadata resolution fails and produces an empty error message. The error no longer occurs. | COCN-875
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]

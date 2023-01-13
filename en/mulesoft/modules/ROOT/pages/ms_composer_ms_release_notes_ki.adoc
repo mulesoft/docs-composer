@@ -1,0 +1,62 @@
+= Known Issues for MuleSoft Composer
+
+The following list displays Known Issues for MuleSoft Composer. The list is sorted by the date in which the issue appeared.
+
+== August 3, 2022
+
+//include::_partials/rpa-ki.adoc[]
+=== RPA
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|If connecting to a different RPA than one for which that the existing flow was built, the current RPA process is not automatically mapped to the processes in the new org.
+
+a| Complete the following steps:
+
+. Delete the step in the flow.
+. Re-add the step in the flow.
+. Refresh the process list.
+. Select the new process.
+| None
+
+|When getting a JSON from RPA, you can pass a list of objects to a connector supporting lists. For example, you can pass the list of order line items to NetSuite. |None | None.
+
+|When getting a JSON from RPA, you cannot use primitive values of a list when iterating the list. For example, a list of strings can be iterated, but you cannot do anything with the resulting values. |None |None
+
+|===
+
+
+== July 13, 2022
+
+=== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+== April 29, 2022
+
+//include::_partials/workday-ki.adoc[]
+
+=== Workday
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|In the *Invoice* object, all fields containing the data type `number` for amounts are sent as strings. | Using the Custom Expression Editor, you can use the typecasting function, `fromStringToNumber`, to change the field type from `string` to `number`. For example: +
+
+`Unit Cost=fromStringToNumber(Sales Price)` + |
+
+|===

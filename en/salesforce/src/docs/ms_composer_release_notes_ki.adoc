@@ -2,12 +2,10 @@
 
 The following list displays Known Issues for Composer for Salesforce. The list is sorted by the date in which the issue appeared.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
-
 == August 3, 2022
 
 //include::_partials/rpa-ki.adoc[]
-==== RPA
+=== RPA
 
 [%header%autowidth.spread]
 
@@ -34,7 +32,7 @@ a| Complete the following steps:
 == July 13, 2022
 
 //include::_partials/platform-ki-July22.adoc[]
-==== Composer Platform
+=== Composer Platform
 
 [%header%autowidth.spread]
 
@@ -48,7 +46,7 @@ a| Complete the following steps:
 == April 29, 2022
 
 //include::_partials/workday-ki.adoc[]
-==== Workday
+=== Workday
 
 [%header%autowidth.spread]
 
@@ -65,7 +63,7 @@ a| Complete the following steps:
 == April 28, 2022
 
 //include::_partials/http-ki.adoc[]
-==== HTTP
+=== HTTP
 
 [%header%autowidth.spread]
 
@@ -84,7 +82,7 @@ a| Complete the following steps:
 == January 5, 2022
 
 //include::_partials/netsuite-ki.adoc[]
-==== NetSuite
+=== NetSuite
 
 [%header%autowidth.spread]
 
@@ -119,7 +117,7 @@ a|In your Chrome browser, click *Developer Tools* and then click *Network*. In t
 == July 19, 2021
 
 //include::_partials/servicenow-ki.adoc[]
-==== ServiceNow
+=== ServiceNow
 
 [%header%autowidth.spread]
 
@@ -134,7 +132,7 @@ a|In your Chrome browser, click *Developer Tools* and then click *Network*. In t
 == July 1, 2021
 
 //include::_partials/jira-ki.adoc[]
-==== Jira
+=== Jira
 
 [%header%autowidth.spread]
 
@@ -175,7 +173,7 @@ a|Custom fields containing the following list components fail to render: +
 == June 2, 2021
 
 //include::_partials/platform-ki.adoc[]
-==== Composer Platform
+=== Composer Platform
 
 [%header%autowidth.spread]
 
@@ -191,7 +189,7 @@ a|Custom fields containing the following list components fail to render: +
 == May 19, 2021
 
 //include::_partials/slack-ki.adoc[]
-==== Slack
+=== Slack
 
 [%header%autowidth.spread]
 
@@ -205,7 +203,7 @@ a|Custom fields containing the following list components fail to render: +
 
 == April 13, 2021
 
-==== NetSuite
+=== NetSuite
 
 [%header%autowidth.spread]
 
@@ -218,7 +216,7 @@ a|Custom fields containing the following list components fail to render: +
 
 == March 15, 2021
 
-==== Composer Platform
+=== Composer Platform
 
 [%header%autowidth.spread]
 
@@ -247,7 +245,7 @@ If you want to change the instance of the same data source, but the connection f
 |===
 
 //include::_partials/google-sheets-ki.adoc[]
-==== Google Sheets
+=== Google Sheets
 
 [%header%autowidth.spread]
 
@@ -260,7 +258,7 @@ If you want to change the instance of the same data source, but the connection f
 |===
 
 //include::_partials/salesforce-ki.adoc[]
-==== Salesforce
+=== Salesforce
 
 [%header%autowidth.spread]
 
@@ -273,7 +271,7 @@ If you want to change the instance of the same data source, but the connection f
 |===
 
 //include::_partials/tableau-ki.adoc[]
-==== Tableau
+=== Tableau
 
 [%header%autowidth.spread]
 

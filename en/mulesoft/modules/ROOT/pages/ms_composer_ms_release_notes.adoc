@@ -77,6 +77,36 @@ include::_partials/workday-ki.adoc[]
 
 include::_partials/rpa-ki.adoc[]
 
+== December 15, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *On New Message* trigger is once again available for Slack Connector. The following enhancements have been made to the trigger:
+
+** The *Created* field now supports a date picker.
+** The *Limit* field now supports only numeric values.
+** The *Limit* field now defaults to `100`.
+** Messages returned by the trigger now appear in ascending order by time.
+
+* In Slack Connector, the *Conversation ID* field has been renamed to *Conversation Name*. Additionally, this field is now supported by a dropdown.
+
+include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+
+==== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|Workaround |ID
+
+|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
+|===
+
+include::_partials/workday-ki.adoc[]
+
+include::_partials/rpa-ki.adoc[]
+
 == December 14, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

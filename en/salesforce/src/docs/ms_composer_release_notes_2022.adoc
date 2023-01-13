@@ -21,6 +21,18 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Salesforce Connector, the *Upload file* and *Download file* actions no longer incorrectly throw a `NullPointerException` when using an OAuth 2.0 connection. | W-12236769
 |===
 
+== December 15, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *On New Message* trigger is once again available for Slack Connector. The following enhancements have been made to the trigger:
+
+** The *Created* field now supports a date picker.
+** The *Limit* field now supports only numeric values.
+** The *Limit* field now defaults to `100`.
+** Messages returned by the trigger now appear in ascending order by time.
+
+* In Slack Connector, the *Conversation ID* field has been renamed to *Conversation Name*. Additionally, this field is now supported by a dropdown.
 
 == December 14, 2022
 

@@ -31,6 +31,15 @@ New email::
 
 If you don't specify a  https://developers.google.com/gmail/api/guides/labels[filter^], this trigger fires on all emails (received, sent, or drafts).
 
+The following fields are supported:
+
+* From
+* Id
+* SenderName
+* Subject
+* To
+* Body > Value 
+
 == Actions
 
 include::_partials/action-definition.adoc[]

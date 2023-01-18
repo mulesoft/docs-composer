@@ -1,0 +1,111 @@
+= Sage Intacct Connector Reference
+
+Sage Intacct is a best-in-class enterprise resource planning solution built to create and automate important financial processes and enable real-time visibility into business performance.
+
+== Prerequisites
+
+To use the Sage Intacct Connector in Composer, you must first complete the following actions within Sage Intaact:
+
+* https://developer.intacct.com/web-services/[Subscribe to Web Services]
+* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the allowed list].
+* If you are using role-based permissions, you must https://developer.intacct.com/api/company-console/roles/[create a new role and provide the required permissions for that role].
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Company ID::
+
+The customer Company ID. In the field, enter the following: `Salesforce.comMPP`
+
+User ID::
+
+The user ID that you use to log in to Sage Intacct.
+
+User Password::
+
+The password that you use to log into Sage Intacct.
+
+Entity ID::
+
+The entity to which you want to connect. To connect to the top level of the company, leave this field blank.
+
+To locate a specific entity ID within Sage Intaact, go to *Company* > *Setup* > *Entities* and copy the required entity ID from Sage Intaact. You can then paste this entity ID into the *Entity ID* field in Composer.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New customer::
+
+Checks for a new customer record.
+
+New or updated customer::
+
+Checks for new or updated customer record.
+
+New order::
+
+Checks for a new order record.
+
+New or updated order::
+
+Checks for a new or updaded order record.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create customer::
+
+Create a new customer record. Provide a value for the following:
+
+* *Customer ID*
+* *Display Contact*
+* *Print as*
+
+Update customer::
+
+Update a customer record. Provide a value for *Customer ID*.
+
+Get customer::
+
+Returns a list of customer records. Provide a value for *Customer ID*.
+
+Create order::
+
+Create a new order record. Provide a value for the following:
+
+* *Transaction Type*
+* *Date Created*
+
+Update order::
+
+Update an order record.
+
+Get order::
+
+Returns a list of order records.
+
+Create product::
+
+Create a new product record. Provide a value for the following:
+* *Item ID*
+* *Name*
+* *Item Type*
+
+Update product::
+
+Update a product record.
+
+Get product::
+
+Returns a list of product records.
+
+== Custom Fields
+
+If your Composer flow automation requires custom fields, please see the https://developer.intacct.com/customization-services/#custom-fields[Sage Intacct documentation].
+
+include::_partials/see-also.adoc[]

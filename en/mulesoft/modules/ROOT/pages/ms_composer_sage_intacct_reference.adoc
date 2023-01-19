@@ -109,10 +109,10 @@ Get Order::
 Returns a list of order records. Provide a value for one of the following fields:
 
 * *Order ID*
-* *Customer ID
+* *Customer ID*
 * *Document ID* +
 
-Note that the *Doc ID* value is the *Key* value returned by the *Create Order* action.
+Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 
 Create product::
 

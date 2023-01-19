@@ -4,10 +4,10 @@ Sage Intacct is a best-in-class enterprise resource planning solution built to c
 
 == Prerequisites
 
-To use the Sage Intacct Connector in Composer, you must first complete the following actions within Sage Intaact:
+To use the Sage Intacct Connector in Composer, you must first complete the following actions within Sage Intaact to complete the integration with Composer:
 
-* https://developer.intacct.com/web-services/[Subscribe to Web Services]
-* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the allowed list].
+* https://developer.intacct.com/web-services/[Subscribe to Web Services] to allow Composer to interact with the Sage Intaact API.
+* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the allowed list]. The *Sender ID* identifies Composer to the Sage Intaact API.
 * If you are using role-based permissions, you must https://developer.intacct.com/api/company-console/roles/[create a new role and provide the required permissions for that role].
 
 == Connections
@@ -18,7 +18,7 @@ include::_partials/connection-name.adoc[]
 
 Company ID::
 
-The customer Company ID. In the field, enter the following: `Salesforce.comMPP`
+The customer Company ID. In the field, enter the ID of your Sage Intaact instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intaact documentation].
 
 User ID::
 
@@ -30,9 +30,7 @@ The password that you use to log into Sage Intacct.
 
 Entity ID::
 
-The entity to which you want to connect. To connect to the top level of the company, leave this field blank.
-
-To locate a specific entity ID within Sage Intaact, go to *Company* > *Setup* > *Entities* and copy the required entity ID from Sage Intaact. You can then paste this entity ID into the *Entity ID* field in Composer.
+The entity to which you want to connect. To connect to the top level of the company, leave this field blank. For more information, see the https://developer.intacct.com/api/company-console/api-sessions/[Sage Intaact documentation].
 
 == Triggers
 
@@ -63,46 +61,65 @@ Create customer::
 Create a new customer record. Provide a value for the following:
 
 * *Customer ID*
-* *Display Contact*
+* *Primary Contact*
 * *Print as*
 
 Update customer::
 
-Update a customer record. Provide a value for *Customer ID*.
+Update a customer record. Provide a value for *ID*.
 
 Get customer::
 
-Returns a list of customer records. Provide a value for *Customer ID*.
+Returns a list of customer records. Provide a value for *Customer ID* or *Customer Name*.
 
 Create order::
 
-Create a new order record. Provide a value for the following:
+Create a new order record and returns a value for the *Key* field. Provide a value for the following:
 
-* *Transaction Type*
+* *Order Type*
 * *Date Created*
+* *Transaction Currency*
+* *Base Currency*
+* *Exchange Rate Type*
+* In the *Entries* > *Sotransitem* section, provide a value in the following:
+  ** *Sotransitem List*
+  ** *Item ID*
+  ** *Quantity*
+  ** *Location ID* +
 
-Update order::
+Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the Location ID is `100-United States` then enter `100` in the *Location ID* field.
 
-Update an order record.
+  ** *Price*
+  ** *Unit*
+  ** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*.
 
-Get order::
+Update Order::
 
-Returns a list of order records.
+Updates a customer record. Provide a value for the following:
+
+* *Document ID* +
+
+Note that the *Doc ID* value is the *Key* value returned by the *Create Order* action.
+
+*  In the *Entries* > *Updatesotransitem* > *Line number* section, provide a value in the following:
+**
+
+Get Order::
+
+Returns a list of order records. Provide a value for one of the following fields:
+
+* *Order ID*
+* *Customer ID
+* *Document ID* +
+
+Note that the *Doc ID* value is the *Key* value returned by the *Create Order* action.
 
 Create product::
 
-Create a new product record. Provide a value for the following:
+Create a new product record and returns the *Item ID* and *Record Number*. Provide a value for the following:
 * *Item ID*
 * *Name*
 * *Item Type*
-
-Update product::
-
-Update a product record.
-
-Get product::
-
-Returns a list of product records.
 
 == Custom Fields
 

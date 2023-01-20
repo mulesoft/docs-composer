@@ -18,7 +18,7 @@ include::_partials/connection-name.adoc[]
 
 Company ID::
 
-The customer Company ID. In the field, enter the ID of your Sage Intaact instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intaact documentation].
+The customer company ID. In the field, enter the ID of your Sage Intaact instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intaact documentation].
 
 User ID::
 
@@ -86,8 +86,7 @@ Create a new order record and returns a value for the *Key* field. Provide a val
   ** *Item ID*
   ** *Quantity*
   ** *Location ID* +
-
-Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the Location ID is `100-United States` then enter `100` in the *Location ID* field.
+Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States` then enter `100` in the *Location ID* field.
 
   ** *Price*
   ** *Unit*
@@ -98,14 +97,12 @@ Update Order::
 Updates a customer record. Provide a value for the following:
 
 * *Document ID* +
-
 Note that the *Doc ID* value is the *Key* value returned by the *Create Order* action.
 
 *  In the *Entries* > *Updatesotransitem* > *Line number* section:
 ** If the source list _contains_ a matching Sage Intacct line item, the Sage Intacct line item is _updated_.
 ** If the source list _does not_ contain a matching Sage Intacct line item, the Sage Intacct line item is _deleted_.
 ** If the source list contains a line item that _does not exist_ in Sage Intacct, the line item is _created_. +
-
 Note that when reordering a line item, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intaact UI, the line order changes.To avoid synchronizing the wrong Sage Intacct order line item, you must account for possible order line item changes.
 
 Get Order::
@@ -115,7 +112,6 @@ Returns a list of order records. Provide a value for one of the following fields
 * *Order ID*
 * *Customer ID*
 * *Document ID* +
-
 Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 
 Create product::

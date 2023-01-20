@@ -99,10 +99,14 @@ Updates a customer record. Provide a value for the following:
 
 * *Document ID* +
 
-Note that the *Doc ID* value is the *Key* value returned by the *Create Order* action. Additionally, when reordering a line item, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intaact UI, the line order changes.To avoid synchronizing the wrong Sage Intacct order line item, you must account for possible order line item changes.
+Note that the *Doc ID* value is the *Key* value returned by the *Create Order* action.
 
-*  In the *Entries* > *Updatesotransitem* > *Line number* section, provide a value in the following:
-**
+*  In the *Entries* > *Updatesotransitem* > *Line number* section:
+** If the source list _contains_ a matching Sage Intacct line item, the Sage Intacct line item is _updated_.
+** If the source list _does not_ contain a matching Sage Intacct line item, the Sage Intacct line item is _deleted_.
+** If the source list contains a line item that _does not exist_ in Sage Intacct, the line item is _created_. +
+
+Note that when reordering a line item, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intaact UI, the line order changes.To avoid synchronizing the wrong Sage Intacct order line item, you must account for possible order line item changes.
 
 Get Order::
 

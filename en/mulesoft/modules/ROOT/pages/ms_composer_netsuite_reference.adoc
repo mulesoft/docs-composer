@@ -123,10 +123,10 @@ The following record types are supported.
 
 |Record Type |Trigger |Action
 
-|BILLING_SCHEDULE |X |X
+|BILLING_SCHEDULE | |X
 |CASH_SALE |X |X
 |CASH_REFUND |X |X
-|CLASSIFICATION |X |X
+|CLASSIFICATION | |X
 |CONTACT |X |X
 |CREDIT_MEMO |X |X
 |CURRENCY | |X

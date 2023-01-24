@@ -123,8 +123,10 @@ The following record types are supported.
 
 |Record Type |Trigger |Action
 
+|BILLING_SCHEDULE | |X
 |CASH_SALE |X |X
 |CASH_REFUND |X |X
+|CLASSIFICATION | |X
 |CONTACT |X |X
 |CREDIT_MEMO |X |X
 |CURRENCY | |X
@@ -137,26 +139,35 @@ The following record types are supported.
 |DEPARTMENT | |X
 |ESTIMATE |X |X
 |EMPLOYEE |X |X
+|GIFT_CERTIFICATE_ITEM |X |X
+|INVENTORY_ADJUSTMENT |X |X
 |INVENTORY_ITEM |X |X
 |INVOICE |X |X
 |ITEM_FULFILLMENT |X |X
 |ITEM_GROUP |X |X
+|ITEM_RECEIPT |X |X
 |JOURNAL_ENTRY |X |X
 |KIT_ITEM |X |X
 |LEAD |X |X
 |LOCATION | |X
+|LOT_NUMBERED_ASSEMBLY_ITEM |X |X
 |LOT_NUMBERED_INVENTORY_ITEM |X |X
 |NON_INVENTORY_PURCHASE_ITEM |X |X
 |NON_INVENTORY_RESALE_ITEM |X |X
 |NON_INVENTORY_SALE_ITEM |X |X
 |OPPORTUNITY |X |X
+|OTHER_CHARGE_PURCHASE_ITEM |X |X
+|OTHER_CHARGE_RESALE_ITEM |X |X
+|OTHER_CHARGE_SALE_ITEM |X |X
 |PARTNER |X |X
-|PAYMENT_ITEM | |X
+|PAYMENT_ITEM |X |X
 |PRICE_LEVEL | |X
 |PROSPECT |X |X
 |PURCHASE_ORDER |X |X
 |RETURN_AUTHORIZATION |X |X
 |SALES_ORDER |X |X
+|SERIALIZED_ASSEMBLY_ITEM |X |X
+|SERIALIZED_INVENTORY_ITEM |X |X
 |SERVICE_PURCHASE_ITEM |X |X
 |SERVICE_RESALE_ITEM |X |X
 |SERVICE_SALE_ITEM |X |X
@@ -164,6 +175,7 @@ The following record types are supported.
 |SUPPORT_CASE |X |X
 |TIME_BILL |X |X
 |TIME_SHEET |X |X
+|TRANSFER_ORDER |X |X
 |VENDOR |X |X
 |VENDOR_BILL |X |X
 
@@ -195,6 +207,13 @@ Using MuleSoft Composer, you can access custom field values for actions and trig
 == List Objects
 
 List objects are supported.
+
+The following list objects are supported for the *Get Records* action:
+
+* Department
+* Locations
+* Price Level
+* Subsidiary
 
 == Custom Picklists
 

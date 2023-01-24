@@ -6,6 +6,24 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer] for a list of known issues by date.
 
+== January 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following record types are now available for NetSuite Connector:
+** BILLING_SCHEDULE
+** CLASSIFICATION
+** GIFT_CERTIFICATE_ITEM
+** INVENTORY_ADJUSTMENT
+** ITEM_RECEIPT
+** LOT_NUMBERED_ASSEMBLY_ITEM
+** OTHER_CHARGE_PURCHASE_ITEM
+** OTHER_CHARGE_RESALE_ITEM
+** OTHER_CHARGE_SALE_ITEM
+** SERIALIZED_ASSEMBLY_ITEM
+** SERIALIZED_INVENTORY_ITEM
+** TRANSFER_ORDER
+
 == January 13, 2023
 
 * You can now connect to two new system: Sage Intaact. +

@@ -160,7 +160,7 @@ The following record types are supported.
 |OTHER_CHARGE_RESALE_ITEM |X |X
 |OTHER_CHARGE_SALE_ITEM |X |X
 |PARTNER |X |X
-|PAYMENT_ITEM | |X
+|PAYMENT_ITEM |X |X
 |PRICE_LEVEL | |X
 |PROSPECT |X |X
 |PURCHASE_ORDER |X |X
@@ -207,6 +207,13 @@ Using MuleSoft Composer, you can access custom field values for actions and trig
 == List Objects
 
 List objects are supported.
+
+The following list objects are supported for the *Get Records* action:
+
+* Department
+* Locations
+* Price Level
+* Subsidiary
 
 == Custom Picklists
 

@@ -35,6 +35,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** SERIALIZED_INVENTORY_ITEM
 ** TRANSFER_ORDER
 
+== January 16, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Snowflake Connector, the *Select Rows* action now includes enhanced sample data resolution.
+
 == January 13, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

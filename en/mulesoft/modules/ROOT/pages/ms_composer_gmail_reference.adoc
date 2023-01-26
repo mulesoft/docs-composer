@@ -46,7 +46,7 @@ include::_partials/action-definition.adoc[]
 
 Send email::
 
-Sends an email with up to one attachment link. The following fields are required:
+Sends an email. The following fields are required:
 
 * To
 * Subject

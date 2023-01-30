@@ -7,6 +7,21 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
 
+== January 30, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Quickbooks Online Connector now supports custom fields for actions and triggers.
+
+* The following actions are now available for Quickbooks Online Connector:
+** *Create Estimate*
+** *Get Estimate*
+** *Update Estimate*
+
+* The following triggers are now available for Quickbooks Online Connector:
+** *On New Estimate*
+** *On New or Updated Estimate*
+
 == January 26, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

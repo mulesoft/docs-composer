@@ -10,7 +10,7 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer fo
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* The *Composer Administrator* permission set is now available. During the installation of Composer, the user completing the installation will automatically be assigned this permission. With this permission set, you can adjust the permissions of other users within your organization and view the *Settings* page.
+* The *Composer Administrator* permission set is now available. During the installation of Composer, the user completing the installation is automatically assigned this permission. With this permission set, you can adjust the permissions of other users within your organization and view the *Settings* page.
 
 * The *Settings* page is now available for those with the *Composer Administrator* permission set.  On this page, you can view and edit email notification settings.
 

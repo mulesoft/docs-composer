@@ -389,7 +389,7 @@ The *Access Management* page appears.
 . In the navigation pane, click *Connected Apps*. +
 The *Connected Apps* page appears.
 
-. Optionally, on the *Connected Apps* page, if you would like to remove Composer’s access to a single API, click the options button next to the API and then click *Remove*.
+. Optionally, on the *Connected Apps* page, if you want to remove Composer’s access to a single API, click the options button for the API and then click *Remove*.
 
 . In the *Owned Apps* tab, next to *Composer API Sharing*, click the options button, and then click *Delete*. +
 MuleSoft Composer is now disconnected from Anypoint Platform.

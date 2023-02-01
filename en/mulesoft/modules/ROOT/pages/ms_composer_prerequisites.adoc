@@ -315,7 +315,7 @@ The *Anypoint Platform* page appears.
 . In the navigation pane, click xref:access-management::managing-your-account.adoc[*Access Management*]. +
 The *Access Management* page appears.
 
-. In the *Access Management* page, in the navigation pane, click *Composer Sync*. If the *Composer Sync* button is not available, first click *Try New Features* to enable the button.+
+. In the *Access Management* page, in the navigation pane, click *Composer Sync*. If the *Composer Sync* button is not available, first click *Try New Features* to enable the button. +
 The *Add Composer Organization* window appears.
 
 . In the *Add Composer Organization* window, in the *Organization ID* field, paste the *Organization ID* that you copied from the *Account* page of MuleSoft Composer and then click *Add*.

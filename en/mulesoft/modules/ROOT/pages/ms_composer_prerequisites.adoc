@@ -66,7 +66,7 @@ Salesforce certificates expire after one year. To renew an expired certificate, 
 +
 MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
-   .. Click *Composer User*.
+   .. Click *Composer User* or *Composer Administrator*.
    .. Click *Manage Assignments*, and then *Add Assignments*.
    .. Select the checkbox next to each user who will receive permission to use Composer.
    .. Click *Add*. You can assign or revoke this permission set at any time.
@@ -330,7 +330,7 @@ The *Account* page appears, displaying a linking request from Anypoint Platform.
 . In the *Access Token* section, click *Authenticate in Anypoint*. +
 The Anypoint Platform login page appears.
 
-. Log in to Anypoint Platform.
+. Log in to Anypoint Platform. Ensure that the user logging into Anypoint Platform has the right https://docs.mulesoft.com/api-manager/2.x/access-client-app-id-task[permissions to create a client app].
 
 . In the *Client App* section, click *Create Client App*. +
 The Composer organization is now linked to the Anypoint organization.
@@ -343,6 +343,8 @@ MuleSoft Anypoint Platform customers can share externally available APIs managed
 Before sharing APIs from Anypoint Platform to MuleSoft Composer, ensure that:
 
 * Your organization uses Anypoint Platform for API Management.
+* Your Anypoint organization doesn’t employ https://docs.mulesoft.com/api-manager/2.x/configure-multiple-credential-providers#how-using-multiple-external-client-providers-works[external client providers].
+* Your Anypoint organization doesn’t currently have a client app named “Composer”.
 * Your organization has xref:exchange::to-create-an-asset.adoc#create-an-api-asset[Rest APIs] managed by API Manager that conform to the following:
 
 ** The API specifications use either RAML or OpenAPI.
@@ -386,6 +388,8 @@ The *Access Management* page appears.
 
 . In the navigation pane, click *Connected Apps*. +
 The *Connected Apps* page appears.
+
+. Optionally, on the *Connected Apps* page, if you would like to remove Composer’s access to a single API, click the options button next to the API and then click *Remove*.
 
 . In the *Owned Apps* tab, next to *Composer API Sharing*, click the options button, and then click *Delete*. +
 MuleSoft Composer is now disconnected from Anypoint Platform.

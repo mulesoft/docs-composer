@@ -6,8 +6,11 @@ Sage Intacct is a best-in-class enterprise resource planning solution built to c
 
 To use the Sage Intacct Connector in Composer, you must first complete the following actions within Sage Intaact to complete the integration with Composer:
 
-* https://developer.intacct.com/web-services/[Subscribe to Web Services] to allow Composer to interact with the Sage Intaact API.
-* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the allowed list]. The *Sender ID* identifies Composer to the Sage Intaact API.
+* https://developer.intacct.com/web-services/[Enable Web Services subscription] in the *Subscription* section of Sage Intaact. The *Web Services Subscription* is required for Mulesoft Composer to interact with the Sage Intaact API.
+* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the *Web Services Authorizations*] section of Sage Intaact. The *Sender ID* identifies Composer to the Sage Intaact API. You must authorize Mulesoft Sender ID for your Sage Intacct instance.
+* Create and assign the permissions required to connect to Sage Intaact. To assure account security, restrict the permissions to only the modules that you need Composer to access. For quote to cash, enable permissions for *Order Entry* module.
+
+
 * If you are using role-based permissions, you must https://developer.intacct.com/api/company-console/roles/[create a new role and provide the required permissions for that role].
 
 == Connections

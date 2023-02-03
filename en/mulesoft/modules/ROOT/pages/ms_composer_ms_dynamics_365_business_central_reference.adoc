@@ -27,15 +27,15 @@ The OAuth password that you use to log into Microsoft Dynamics 365 Business Cent
 
 include::_partials/trigger-definition.adoc[]
 
-New or Updated Sales Order::
+On New or Updated Sales Order::
 
-Checks for a new or updated sales order. Provide a value for *Company*.
+Checks for a new or updated sales order or a new or updated sales order line. Provide a value for *Company*.
 
-New or Updated Item::
+On New or Updated Item::
 
 Checks for a new or updated item. Provide a value for *Company*.
 
-New or Updated Customer::
+On New or Updated Customer::
 
 Checks for a new or updated customer. Provide a value for *Company*.
 
@@ -45,14 +45,14 @@ include::_partials/action-definition.adoc[]
 
 Create Sales Order::
 
-Create a single sales order. Provide a value for the following fields:
+Create a single sales order and, if provided, a list of sales order lines. Provide a value for the following fields:
 
 * *Company*
 * *Customer Number*
 
 Update Sales Order::
 
-Update a single sales order. Provide a value for the following fields:
+Update a single sales order and, if provided, a list of sales order lines. Provide a value for the following fields:
 
 * *Company*
 * *Entity ID*
@@ -60,7 +60,7 @@ Update a single sales order. Provide a value for the following fields:
 
 Get Sales Orders::
 
-Retrieve a filtered list of sales orders. Provide a value for *Company*.
+Retrieve a filtered list of sales orders in addition to corresponding sales order lines. Provide a value for *Company*.
 
 Create Customer::
 

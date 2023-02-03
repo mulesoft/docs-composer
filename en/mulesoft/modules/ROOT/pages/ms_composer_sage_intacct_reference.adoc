@@ -119,7 +119,7 @@ Creates a new Order record and returns a value for the *Key* field. Provide a va
   ** *Item ID*
   ** *Quantity*
   ** *Location ID* +
-Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States` then enter `100` in the *Location ID* field.
+Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States`, then enter `100` in the *Location ID* field.
 
   ** *Price*
   ** *Unit*

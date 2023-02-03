@@ -29,7 +29,7 @@ The user ID that you use to log in to Sage Intacct.
 
 User Password::
 
-The password that you use to log into Sage Intacct.
+The password that you use to log in to Sage Intacct.
 
 Entity ID::
 

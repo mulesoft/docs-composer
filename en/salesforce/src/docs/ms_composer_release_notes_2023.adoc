@@ -16,7 +16,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** The *Update Sales Order* action now enables users to update a list of sales order lines in addition to the sales order object.
 ** The *Get Sales Orders* action now enables users to retrieve sales order lines corresponding to a filtered list of sales orders.
 ** The *On New or Updated Sales Order* trigger now checks for new or updated sales order lines in addition to new or updated sales orders.
-** If you are using a *Display Name* for the company, the *Display Name* is now populated in the *Company ID* dropdown instead of the *Company Name*.
+** If you use a *Display Name* for the company, the *Display Name* is now populated in the *Company ID* dropdown instead of the *Company Name*.
 
 == February 1, 2023
 

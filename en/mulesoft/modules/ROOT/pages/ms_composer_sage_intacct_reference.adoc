@@ -129,7 +129,8 @@ Note that the *Location ID* field is determined by the numbers preceding the loc
 
 Update Order::
 
-Updates an Order record. +
+Updates an Order record.
++
 Note that when updating or reordering line items for an existing order, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intacct UI, the line order changes. To avoid synchronizing the wrong Sage Intacct line order item, you must account for possible order line item changes. Prior to executing the *Update Order* action, identify the current *Line Number* and store it in a custom field within Sage Intacct. To delete a line item from an existing order, use the *Delete Order Line Item* action. +
 Provide a value for the following:
 

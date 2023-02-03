@@ -10,7 +10,7 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now connect to two new system: Sage Intaact. +
+* You can now connect to a new system: Sage Intaact. +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 

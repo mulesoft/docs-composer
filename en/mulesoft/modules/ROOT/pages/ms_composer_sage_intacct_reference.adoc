@@ -21,7 +21,7 @@ include::_partials/connection-name.adoc[]
 
 Company ID::
 
-The customer's company ID. In the field, enter the ID of your Sage Intacct instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intacct documentation].
+The customer's company ID. Enter the ID of your Sage Intacct instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intacct documentation].
 
 User ID::
 

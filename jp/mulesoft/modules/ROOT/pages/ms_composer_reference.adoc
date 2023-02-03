@@ -1,0 +1,26 @@
+= Composer Connector リファレンス
+
+ifeval::["​{product}​"=="salesforce"]
+MuleSoft Composer for Salesforce (コンポーザ) に接続する各システムの動作は、取得または操作する情報がシステムにどのように保存されているかに応じて異なります。各システムリファレンスページを参照して、使用可能なトリガとアクションを確認してください。
+
+このドキュメントに記載されたコネクタは、MuleSoft Composer for Salesforce (コンポーザ) で使用できます。
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+MuleSoft Composer (コンポーザ) に接続する各システムの動作は、取得または操作する情報がシステムにどのように保存されているかに応じて異なります。各システムリファレンスページを参照して、使用可能なトリガとアクションを確認してください。
+
+このドキュメントに記載されたコネクタは、MuleSoft Composer (コンポーザ) で使用できます。
+endif::[]
+
+== 関連リソース
+
+* xref:ms_composer_overview.adoc[概要]
+* xref:ms_composer_prerequisites.adoc[はじめに]
+
+ifeval::["​{product}​"=="salesforce"]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]
+
+ifeval::["​{product}​"=="mulesoft"]
+* https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]

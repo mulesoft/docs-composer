@@ -26,25 +26,33 @@ New Invoice::
 
 Triggers when a new invoice is created.
 
-Updated Invoice::
+New or Updated Invoice::
 
-Triggers when an existing invoice is updated.
+Triggers when an invoice is created or when an existing invoice is updated.
 
 New Customer::
 
 Triggers when a new customer is created.
 
-Updated Customer::
+New or Updated Customer::
 
-Triggers when an existing customer is updated.
+Triggers when a customer is created or when an existing customer is updated.
 
 New Item::
 
 Triggers when a new item is created.
 
-Updated Item::
+New or Updated Item::
 
-Triggers when an existing item is updated.
+Triggers when an item is created or when an existing item is updated.
+
+New Estimate::
+
+Triggers when an estimate is created.
+
+New or Updated Estimate::
+
+Triggers when an estimate is created or when an existing estimate is updated.
 
 == Actions
 
@@ -52,11 +60,11 @@ include::_partials/action-definition.adoc[]
 
 Create Invoice::
 
-Creates a new invoice. The following field is required: *Customer ID*.
+Creates a new invoice. Provide a value for *Customer ID*.
 
 Update Invoice::
 
-Updates an existing invoice. The following field is required: *Invoice ID*.
+Updates an existing invoice. Provide a value for *Invoice ID*.
 
 Create Customer::
 
@@ -64,7 +72,7 @@ Creates a new customer.
 
 Update Customer::
 
-Updates an existing customer. The following field is required: *Customer ID*.
+Updates an existing customer. Provide a value for *Customer ID*.
 
 Create Item::
 
@@ -125,15 +133,38 @@ Searches for an existing item. One or more of the following fields must be popul
 
 Get Invoice::
 
-Returns an invoice. The following field is required: *Customer ID*.
+Returns an invoice. Provide a value for *Customer ID*.
 
 
 Get Customer::
 
-Returns a customer.  The following field is required: *Customer ID*.
+Returns a customer.  Provide a value for *Customer ID*.
 
 Get Item::
 
-Returns an item. The following field is required: *Item ID*.
+Returns an item. Provide a value for *Item ID*.
+
+Create Estimate::
+
+Creates an estimate record. Provide a value for the following fields:
+
+* *Customer ID*
+* *Estimate Parameters*
+
+Get Estimate::
+
+Returns an estimate. Provide a value for *Estimate ID*.
+
+Update  Estimate::
+
+Updates the estimate record. Provide a value for the following fields:
+* *Estimate ID*
+* *Estimate Parameters*
+
+== Custom Fields
+
+Using MuleSoft Composer, you can access custom field values for actions and triggers that you set in the Quickbooks Online record.
+
+Note that the QuickBooks Online API only returns the first three custom fields created for the type `string`. Any subsequent custom string fields or any fields of another data type, such as `date` or `picklist`, are not writable fields within Composer. For more information, see the https://developer.intuit.com/app/developer/qbo/docs/workflows/create-custom-fields[Quickbooks Online documentation].
 
 include::_partials/see-also.adoc[]

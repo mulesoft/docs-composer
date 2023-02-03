@@ -1,0 +1,49 @@
+= Asana Connector リファレンス
+
+Asana は、あらゆる規模のチームが日常業務、スケジュール、成果物を管理できるようにする SaaS ベースのプロジェクト管理ツールです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
++
+
+定期的に使用していない場合、古い接続が期限切れになることがあります。Asana によって、接続が有効な時間が設定されます。
+
+Username (ユーザ名)::
+
+Asana にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Asana にログインするために使用する OAuth パスワード。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New or updated task (新規または更新されたタスク)::
+
+タスクが作成されたとき、または既存のタスクが更新されたときに起動します。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create new task (新規タスクの作成)::
+
+新しいタスクレコードを作成します。
++
+新しいタスクレコードを作成する場合、ユーザ ID とタスク ID の両方の値をソースシステムに保存し、それをタスクレコードの更新時に使用します。
+
+Update task (タスクの更新)::
+
+完了して更新されたタスクレコードを返します。
+
+カードにコンポーネントを追加します。::
+
+タスクにコメントして、質問したり、追加情報を提供したり、インサイトを提供したりします。コメントはカードに表示されます。
+
+include::_partials/see-also.adoc[]

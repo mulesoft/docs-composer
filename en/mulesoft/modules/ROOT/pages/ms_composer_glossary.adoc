@@ -10,6 +10,8 @@ activate:: The process of starting a flow.
 
 clone:: The process of copying a flow, including all actions and triggers, in its entirety.
 
+Composer Task:: A Composer Task is any action executed on a Composer Connector, including but not limited to read, create, update, and delete.
+
 connection:: The credentials that give you access to a system where you want to access data: the username and password, and the URL where you enter them to gain access. Some systems require additional information such as a security token.
 
 copy:: The process of duplicating a portion of a flow. You can copy records, triggers, and actions.
@@ -43,6 +45,10 @@ monitor:: The process of reviewing activated flows to ensure that they are runni
 record:: A collection of fields and data types in Composer.  A flow triggers either on a schedule or as a result of a change on a record. That record is then processed through each step in the flow.
 
 repair:: An action to refresh the access token to reconnect your OAuth connection.
+
+RPA API Calls:: Robotic Process Automation (RPA) API Call occur when a customer invokes an API to perform an operation, including, but not limited to lookup, validate, create, update, or delete data in a system as part of an RPA process.
+
+RPA Bot Minutes:: Robotic Process Automation (RPA) Bot Minutes are the number of minutes running process automations across all bot sessions. A single bot may run multiple parallel sessions, with RPA Bot Minutes counting for each parallel session. Multiple bots may be configured to run the same process, with RPA Bot Minutes counting for each of these separate bot sessions. Test runs or process runs in the test phase are also counted towards RPA Bot Minutes.
 
 //sample type::
 

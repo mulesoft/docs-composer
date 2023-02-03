@@ -1,0 +1,46 @@
+= HubSpot Connector リファレンス
+
+HubSpot では、マーケティング、セールス、カスタマーサービス、CRM ソフトウェアの包括的なプラットフォームに加えて、ビジネスの成長を後押しする手法、リソース、サポートを提供しています。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name (接続表示名)::
+
+この接続の詳細を把握するのに役立つ接続名を入力します。
+1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。そのため、この接続を他の接続と簡単に区別できる名前を付けると役立ちます。
++
+接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+
+Bearer token (ベアラートークン)::
+
+HubSpot アカウントアクセストークン。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create new record::
+
+HubSpot で会社またはコンタクトを作成します。
++
+新しい会社を作成するには、​*[Company Name (会社名)]*​ の値を指定します。
++
+新しいコンタクトを作成するには、​*[Contact Name (コンタクト名)]*​ の値を指定します。
+
+Update a record::
+
+外部 ID で指定されているように HubSpot で会社またはコンタクトを更新します。
++
+会社またはコンタクトを作成するには、​*[HubSpot ID]*​ の値を指定します。
+
+Create or update record::
+
+1 回の手順で HubSpot で会社またはコンタクトを作成または更新します。
++
+会社を作成または更新するには、​*[HubSpot ID]*​ の値を指定します。
++
+コンタクトを作成または更新するには、​*[External ID Field to Match (照合する外部 ID 項目)]*​ の値を指定します。
+
+include::_partials/see-also.adoc[]

@@ -1,0 +1,50 @@
+= Gmail Connector リファレンス
+
+Gmail は、多くのコミュニケーションの目的に対応する最も一般的なメールサービスです。このコネクタでは、ユーザの受信箱を他のシステム (Google スプレッドシート、Salesforce、Slack など) に接続することで生産性を向上させることができます。
+
+== 始める前に
+
+Composer Gmail Connector では、Google の制限されたデータにアクセスするために、サードパーティアプリケーションのアクセス権が必要です。コネクタを使用する前に、Google ワークスペース管理者は、&#8203;https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[設定されたアプリケーションのリストに次のいずれかのクライアント ID を追加^]して、コンポーザとの Gmail OAuth 接続を作成する必要があります。
+
+* 米国の本番環境: `14294369739-rn5ftpjat2mnofvp3gevkvmik0roioe7.apps.googleusercontent.com`​
+* 欧州の本番環境: `14294369739-028kk1tl316tgo3a59rtpl6qq6u22d25.apps.googleusercontent.com`
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+Google にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Google にログインするために使用する OAuth パスワード。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New email::
+
+https://developers.google.com/gmail/api/guides/labels[検索条件^]​を指定しない場合、このトリガはすべてのメールで起動されます (受信、送信済み、ドラフト)。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Send email::
+
+最大 1 個の添付ファイルリンクが含まれるメールを送信します。次の項目は必須です。
+
+* To (宛先)
+* Subject (件名)
+* Body (本文)
+
+Google Gmail Connector による Google API から受信した情報の使用および他のアプリケーションへの転送には、 https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[「Google API サービスのユーザーデータに関するポリシー」]​ (制限付き使用の要件を含む) が適用されます。
+
+*Gmail™ は Google LLC の商標です。*​
+
+include::_partials/see-also.adoc[]

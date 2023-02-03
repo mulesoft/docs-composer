@@ -1,0 +1,118 @@
+= Xero Connector リファレンス
+
+Xero は、主に中小規模のビジネスで請求書の作成や追跡、支払の受領や追跡、在庫の管理、顧客連絡先の保存、発注書や見積の作成などの会計機能に使用されている SaaS ベースの会計アプリケーションです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+コンポーザから Xero への接続を確立するには、​*[Organization (組織)]*​ 項目で接続する Xero 組織を選択する必要があります。
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+Xero にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Xero にログインするために使用する OAuth パスワード。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New or updated Contact::
+
+新規または更新済み取引先責任者レコードをチェックします。次の項目の値を指定します。
+
+* *組織*​
+* *Contact Type (取引先責任者種別)*
+
+New or updated item::
+
+新規または更新済み項目レコードをチェックします。次の項目の値を指定します。
+
+* *組織*​
+* *Is purchased (購入)*​
+* *Is sold (販売)*​
+* *Is tracked as inventory (在庫として追跡)*
+
+New or updated payment (新規または更新済み支払)::
+
+新規または更新済み支払をチェックします。​*[Organization (組織)]*​ 項目の値を指定します。
+
+On New or Update Invoice (新規または更新済み請求書)::
+
+新規または更新済み請求書をチェックします。次の項目の値を指定します。
+
+* *組織*​
+* *Invoice type (請求書種別)*​
+* *Invoice status (請求書の状況)*
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create or update contact::
+
+新しい取引先責任者レコードを作成するか、既存の取引先責任者レコードを更新します。次の項目の値を指定します。
+
+* *組織*​
+* *Contact name (取引先責任者名)*​
+* 別の取引先責任者を追加する場合は、​*[Email address (メールアドレス)]*​ 項目の値を指定する必要もあります。
+
+Search contacts::
+
+入力された値に基づいて取引先責任者レコードのリストを返します。​*[Organization (組織)]*​ の値を指定します。
+
+Get contact by ID::
+
+ID 値に基づいて 1 件の取引先責任者レコードを返します。次の項目の値を指定します。
+
+* *組織*​
+* *Contact ID (取引先責任者 ID)*
+
+Create or update invoice::
+
+請求書レコードを作成または更新します。次の項目の値を指定します。
+
+* *組織*​
+* *Invoice type (請求書種別)*​
+* *Contact name (取引先責任者名)*​
+* *Items (項目)*
+
+Update invoice headers::
+
+請求書レコードの特定の項目を更新します。次の項目の値を指定します。
+
+* *組織*​
+* *Invoice Reference Type (請求書参照種別)*​
+* *Invoice Reference (請求書参照)*
+
+//Create Item::
+
+//Creates an item record. Provide a value for the following fields:
+
+//* *Organization*
+//* *Item Code*
+//* If a value is specified in the *Inventory Asset Account Code* field, then a value is required in the *Purchase Account Code* field.
+
+Create or update item::
+
+項目レコードの項目を作成または更新します。次の項目の値を指定します。
+
+* *組織*​
+* *Item Code (項目コード)*
+
+Get Invoices::
+
+新規または更新済み請求書レコードを返します。​*[Organization (組織)]*​ の値を指定します。
+
+== オブジェクト
+
+アクション: *Create or update invoice*​ オブジェクトが使用できます。
+
+//* Field: *Contact persons*
+
+include::_partials/see-also.adoc[]

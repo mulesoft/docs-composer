@@ -1,0 +1,95 @@
+= Salesforce Marketing Cloud Connector Reference
+
+Salesforce Marketing Cloud is a marketing platform that supports capabilities such as real-time customer engagement, email and marketing automation, social media engagement, mobile (SMS) messaging and push notifications, and customer marketing analytics.
+
+To use the Salesforce Marketing Cloud Connector, you must first create an API Integration package and set permissions for email and SMS communication.
+
+== Create an API Integration Package and Set Permissions
+
+To create a package and set the permissions:
+
+. In Composer, click the gear icon in the upper right corner. +
+The *Setup* page appears.
+
+. On the left navigation pane, under *Platform Tools*, click *Apps* > *Packaging* > *Installed Packages*. +
+The *Installed Packages* page appears.
+
+. In the upper-right corner of the *Installed Packages* page, click *New*. +
+The *Package Details* window appears.
+
+. In the *Package Details* window, complete the following fields:
+.. *Name*: Enter a unique name for the new package.
+.. *Description*: Enter a description of the package.
+
+. Click *Save*. +
+The *Summary* page appears displaying the details of the new package.
+
+. In the *Summary* page, click *Add Component*. +
+The *Add Component* window appears.
+
+. In the *Add Component* window, select *API Integration* > *Server-to-Server*. +
+The *Set Server-to-Server* section appears.
+
+. In the *Set Server-to-Server* section, under *Channels*, select the checkboxes next to the following:
+.. In the *Email* column: *Read*, *Write*, *Send*
+.. In the *SMS* column: *Read*, *Write*, *Send*
+
+. Click *Save*. +
+The API Integration package is created and the permissions for email and SMS communication are set.
+
+
+== Connections
+
+To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with that system's required credentials. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
+
+For more information on how to create an API integration in Installed Packages, refer to https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/integration-s2s-client-credentials.html[Server-to-Server Integrations with Client Credentials Grant Type].
+
+This system requires the following credential information for its connections:
+
+Connection Display Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies this connection from others.
++
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Client ID::
+
+Enter the Client ID from the Installed Package.
+
+Client Secret::
+
+Enter the Client Secret from the Installed Package.
+
+Authentication URI::
+
+Enter the Authentication Base URI from the Installed Package.
+
+Scopes::
+
+(Optional) Enter the scopes MuleSoft Composer should have access to. This is helpful if your package has access to a larger number of scopes than are needed here.
+Minimum scope required: offline, email_send, sms_send, list_and_subscribers_read
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Send email::
+
+Sends an email to the customer using a specific template. Provide a value for the following fields:
+
+* Email Definition
+* Contact Key
+* Email
+
+Send SMS::
+
+Sends an SMS to the customer using a specific template. Provide a value for the following fields:
+
+* SMS Definition
+* Contact Key
+* Recipient’s Phone Number
+
+include::_partials/see-also.adoc[]

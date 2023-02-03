@@ -302,6 +302,7 @@ time: String |DateTime
 
 |===
 
+[[data-types]]
 == Data Types
 
 The value that a Composer field can accept for a value is a _data type_. In Composer, the following data types are available:

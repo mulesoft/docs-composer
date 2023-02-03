@@ -1,0 +1,70 @@
+= MuleSoft RPA Connector リファレンス
+
+https://docs.mulesoft.com/rpa-home/[Mulesoft Robotic Process Automation (RPA)]​ は、ロボティクスとオートメーションを組み合わせて反復作業を実行するソフトウェアテクノロジです。RPA ではソフトウェアボットを使用して、1 つ以上のアプリケーションユーザインターフェースを使用したテキストの入力や項目の更新などの手動の反復作業を自動化することで、人間が実行するアクションを模倣します。
+
+//For more information on metering and billing for Composer and RPA, see xref:ms_composer_task_metering.adoc[MuleSoft Automation Credits].
+
+== RPA のユースケース
+
+RPA をプロセスに実装することによるメリットはさまざまで、時間を節約できることもあればコストを削減できることもあり、手入力によるミスを防止できることもあります。
+
+RPA の最も一般的なユースケースには次のようなものがあります。
+
+* データ抽出とデータ入力 +
+PDF、CSV などのファイル形式からデータを抽出して、このデータを他のシステムに送信します。
+* 給与処理 +
+給与データ入力を自動化して、複数のシステムの情報を検証します。
+* 価格比較 +
+仕入れ価格や競合他社の価格の監視を自動化します。
+* 返金の処理 +
+顧客の返金要求の処理を自動化して短時間で処理します。
+* 顧客情報の更新 +
+API が使用されておらず、UI を使用してアクセスするしかないさまざまなシステムで顧客情報を自動的に更新します。
+
+== RPA 用の 2 つのコンポーザフローの呼び出し
+
+コンポーザから RPA プロセスを呼び出す場合、2 つのフローのコンポーザシナリオが必要になるのは、RPA プロセスの処理に 3 分間という許可された完了タイムアウト期間より長い時間がかかる場合のみです。
+
+長時間実行されるプロセスでは、コンポーザフローのタイムアウト期間内に完了する 2 つのフローを設定することで、他のイベントが処理のキューに登録されるのをブロックできます。
+
+複数のユーザが同じプロセスで呼び出しフローまたはポーリングフローを作成した場合は、外部データベースから実行 ID を追跡します。自分で処理できるのはポーリングトリガフローの実行のみであり、他のユーザの実行は処理できません。
+
+フローを作成したら、​xref:ms_composer_test_flow.adoc[フローをテスト]​して RPA プロセスが各フローについて 3 分以内に完了することを確認します。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name (接続表示名)::
+
+この接続の詳細を覚えておけるように接続名を入力します。1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。この接続を他の接続と簡単に区別できる名前を付けてください。
++
+接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+
+RPA API URL::
+
+コンポーザを使用して統合するプロセスを作成する RPA システム管理者が指定する URL。​*RPA API URL*​ は RPA Manager URL に ​`/rpa/api/v1`​ が付加されたものです。たとえば、RPA Manager URL が ​`https://myOrg.rpa.mulesoft.com`​ だとすると、​*[RPA API URL]*​ 項目の値は ​`https://myOrg.rpa.mulesoft.com/rpa/api/v1`​ になります。
+
+API key (API キー)::
+
+ユーザの認証コード。API キーは  https://docs.mulesoft.com/rpa-manager/usermanagement-connect#create-an-api-key-for-a-user[[RPA User Management (RPA ユーザ管理)]]​ モジュールで生成されます。
+
+== Triggered (トリガ)
+
+include::_partials/trigger-definition.adoc[]
+
+RPA Process Execution Completed (RPA プロセス実行完了)::
+
+特定の RPA プロセスの状況をチェックするリスナを作成します。RPA プロセスが実行を完了すると、ポーリングトリガによって設定済みのアクティビティがコンポーザフローで処理されます。実行の​_成功_​と​_失敗_​のどちらのリスナが必要かを選択する必要があります。両方の通知を受信することはできません。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Invoke RPA Process (RPA プロセスを呼び出す)::
+
+RPA でプロセスを呼び出します。​*[RPA Process Name (RPA プロセス名)]*​ の値を指定します。さらに、設定するアクティビティパラメータを選択してこれらのパラメータの値を設定します。
+
+include::_partials/see-also.adoc[]
+
+* https://docs.mulesoft.com/rpa-home/[Mulesoft Robotic Process Automation (RPA)]

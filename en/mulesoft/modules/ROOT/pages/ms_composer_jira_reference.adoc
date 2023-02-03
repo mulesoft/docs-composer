@@ -40,14 +40,13 @@ New issue with Standard Fields only::
 
 Checks for a new issue with Standard fields created in Jira.
 
-Update issue with Custom Fields::
+Update issue with Custom Fields was updated or created::
 
-Checks for updated issues with Custom fields in Jira.
+Checks for updated or created issues with Custom fields in Jira.
 
-Update issue with Standard Fields only::
+Update issue with Standard Fields only was updated or created::
 
-Checks for updated issues with Standard fields in Jira.
-
+Checks for updated or created issues with Standard fields in Jira.
 
 == Actions
 
@@ -99,6 +98,38 @@ Creates and adds a comment to an existing issue. Provide a value for the followi
 Get account IDs for users::
 
 Returns the account IDs for the users specified in the `key` or `username` parameters. You can specify multiple `key` or `username` parameters.
+
+Create project::
+
+Creates a new project based on a project type template in Jira. Provide a value for the following fields:
+
+* *Key*
+* *Name*
+* *Lead Account ID*
+* *Project Type Key*: The value in this field must begin with an uppercase letter followed by one or more uppercase letters or numbers.
+
+Get project::
+
+Returns the project details in Jira. Provide a value for *Project ID* or *Key*.
+
+Update project::
+
+Updates the project details for an existing project in Jira. Provide a value for *Project ID* or *Key*.
+
+Retrieve attachments for an issue::
+
+Returns all attachments for this issue. This returns the files' metadata but not the contents of the files. The files are ordered by the date that they were uploaded. Provide a value for *Project ID* or *Key*.
+
+Retrieve attachment::
+
+Returns a URL redirect to the raw file for a specified file attachment. Provide a value for *Attachment ID*.
+
+Upload attachment to an issue::
+
+Uploads attachment to a Jira issue. Provide a value for the following fields:
+
+* *Issue ID or Key*
+* *File Name*
 
 == Custom Fields
 

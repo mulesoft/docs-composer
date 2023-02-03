@@ -1,0 +1,47 @@
+= Google Calendar Connector リファレンス
+
+Google カレンダーは、個人およびチームの生産性向上に重点を置いたカレンダーおよびタスク計画アプリケーションです。Google カレンダーを使用すれば、個人は簡単にタスクやミーティングをスケジュールできます。また、使いやすいカレンダーインターフェースを使用してイベントを同僚と共有することもできます。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+Google にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Google にログインするために使用する OAuth パスワード。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create a new event::
+
+イベントを作成します。次の項目は必須です。
+
+* Calendar ID (カレンダー ID)
+* Start Time (開始時刻)
+* End Time (終了時刻)
+
+Update an event::
+
+イベントを更新します。次の項目は必須です。
+
+* Calendar ID (カレンダー ID)
+* Event ID (イベント ID)
+* Start Time (開始時刻)
+* End Time (終了時刻) +
+
+カスタム dateTime データピルを入力する場合、入力した時間で UTC +0 ("Zulu") タイムゾーンが使用されていることを確認します。
+たとえば、太平洋標準時間 (UTC-7) の 2022 年 1 月 1 日午前 9 時は、​*「2022-01-01, 04:00pm」*​のように入力されます。
+
+Google Calendar Connector による Google API から受信した情報の使用および他のアプリケーションへの転送には、 https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[「Google API サービスのユーザーデータに関するポリシー」]​ (制限付き使用の要件を含む) が適用されます。
+
+*Google カレンダー™ は Google LLC の商標です。*​
+
+include::_partials/see-also.adoc[]

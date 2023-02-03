@@ -6,7 +6,6 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
 
-
 //include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 //* The *Composer Administrator* permission set is now available. During the installation of Composer, the user completing the installation is automatically assigned this permission. With this permission set, you can adjust the permissions of other users within your organization and view the *Settings* page.

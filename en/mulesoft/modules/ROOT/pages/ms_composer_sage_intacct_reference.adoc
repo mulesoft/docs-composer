@@ -4,13 +4,14 @@ Sage Intacct is a best-in-class enterprise resource planning solution built to c
 
 == Prerequisites
 
-To use the Sage Intacct Connector in Composer, you must first complete the following actions within Sage Intaact to complete the integration with Composer:
+To complete the integration of Sage Intacct Connector to Composer, you must first complete the following actions within Sage Intacct:
 
-* https://developer.intacct.com/web-services/[Enable Web Services subscription] in the *Subscription* section of Sage Intaact. The *Web Services Subscription* is required for Mulesoft Composer to interact with the Sage Intaact API.
-* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the *Web Services Authorizations*] section of Sage Intaact. The *Sender ID* identifies Composer to the Sage Intaact API. You must authorize Mulesoft Sender ID for your Sage Intacct instance.
-* https://developer.intacct.com/api/company-console/roles/[Create and assign the permissions required] to connect to Sage Intaact. To assure account security, restrict the permissions to only the modules that you need Composer to access. For quote to cash, enable permissions for *Order Entry* module. In Sage Intaact:
+* https://developer.intacct.com/web-services/[Enable Web Services subscription] in the *Subscription* section of Sage Intacct. The *Web Services Subscription* is required for Composer to interact with the Sage Intacct API.
+* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the *Web Services Authorizations*] section of Sage Intacct. The *Sender ID* identifies Composer to the Sage Intacct API. You must authorize the Mulesoft *Sender ID* for your Sage Intacct instance.
+* https://developer.intacct.com/api/company-console/roles/[Create and assign the permissions required] to connect to Sage Intacct. To assure account security, restrict the permissions to only the modules that you need Composer to access. In Sage Intacct:
 ** If you are using role-based permissions, create a new role, assign the required permissions for that role, and then create a Sage Intacct Web Service Account to assign to the role.
-** If you are using subscription-based permissions, create a Web Services Account and assign permissions to the role in the *Subscription* section.
+** If you are using subscription-based permissions, create a Web Services Account and assign permissions to the role in the *Subscription* section. +
+Additionally, for quote to cash, enable permissions for the *Order Entry* module.
 
 == Connections
 
@@ -20,7 +21,7 @@ include::_partials/connection-name.adoc[]
 
 Company ID::
 
-The customer company ID. In the field, enter the ID of your Sage Intaact instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intaact documentation].
+The customer's company ID. In the field, enter the ID of your Sage Intacct instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intacct documentation].
 
 User ID::
 
@@ -32,27 +33,27 @@ The password that you use to log into Sage Intacct.
 
 Entity ID::
 
-The Sage Intaact entity to which you want to connect. To connect at the entity level, please enter the *Entity ID*.To connect to the top level of the organization, leave this field blank. For more information, see the https://developer.intacct.com/api/company-console/api-sessions/[Sage Intaact documentation].
+The Sage Intacct entity to which you want to connect. To connect at the entity level, enter the *Entity ID*. To connect to the top level of the organization, leave this field blank. For more information, see the https://developer.intacct.com/api/company-console/api-sessions/[Sage Intacct documentation].
 
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
 
-New customer::
+New Customer::
 
-Checks for a new customer record.
+Checks for a new Customer record.
 
-New or updated customer::
+New or Updated Customer::
 
-Checks for new or updated customer record.
+Checks for new or updated Customer record.
 
-New order::
+New Order::
 
-Checks for a new order record.
+Checks for a new Order record.
 
-New or updated order::
+New or Updated Order::
 
-Checks for a new or updated order record.
+Checks for a new or updated Order record.
 
 == Actions
 
@@ -60,13 +61,13 @@ include::_partials/action-definition.adoc[]
 
 Create Attachment::
 
-Creates a new Attachment record. In Sage Intacct, attachments are entities that contain files. An attachment object can be empty or have files. You can add files to an attachment when you create it or you can add attachments later. Provide a value for the following:
+Creates a new Attachment record. In Sage Intacct, attachments are entities that contain files. An attachment object can be empty or have files. You can add files to an attachment when you create the record or you can add attachments later. Provide a value for the following:
 * *Attachment Name*
 * *Folder*
 * When adding files to an attachment, use a list as the source of the files, and specify a value in the following fields:
-** *File binary data*
-** *File extension*
-** *File name*
+** *File Binary Data*
+** *File Extension*
+** *File Name*
 
 Update Attachment::
 
@@ -78,25 +79,25 @@ Returns a list of Attachment records. To filter the list, provide a value for *A
 
 Create Attachment Folder::
 
-Creates a new folder for attachments. Provide a value for the *Name*.
+Creates a new folder for attachments. Provide a value for *Name*.
 
 Get Attachment Folders::
 
 Returns a list of attachment folders. To filter the list, provide a value for *Folder Name* to filter. To return the entire list, leave the fields blank.
 
-Create customer::
+Create Customer::
 
 Create a new Customer record. Provide a value for the following:
 
 * *Customer ID*
 * *Primary Contact*
-* *Print as*
+* *Print As*
 
-Update customer::
+Update Customer::
 
 Update a Customer record. Provide a value for *ID*.
 
-Get customer::
+Get Customer::
 
 Returns a list of Customer records. To filter the list, provide a value for *Customer ID* or *Customer Name*. To return the entire list, leave the fields blank.
 
@@ -104,9 +105,9 @@ Delete Customer::
 
 Deletes a Customer record. Provide a value for *Customer ID*.
 
-Create order::
+Create Order::
 
-Create a new Order record and returns a value for the *Key* field. Provide a value for the following:
+Creates a new Order record and returns a value for the *Key* field. Provide a value for the following:
 
 * *Order Type*
 * *Date Created*
@@ -126,7 +127,9 @@ Note that the *Location ID* field is determined by the numbers preceding the loc
 
 Update Order::
 
-Updates a Customer record. Provide a value for the following:
+Updates an Order record. +
+Note that when updating or reordering line items for an existing order, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intacct UI, the line order changes. To avoid synchronizing the wrong Sage Intacct line order item, you must account for possible order line item changes. Prior to executing the *Update Order* action, identify the current *Line Number* and store it in a custom field within Sage Intacct. To delete a line item from an existing order, use the *Delete Order Line Item* action. +
+Provide a value for the following:
 
 * *Document ID* +
 Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
@@ -142,15 +145,13 @@ Note that the *Location ID* field is determined by the numbers preceding the loc
 ** *Unit*
 ** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*. +
 
-Note that when updating line items for an existing order, when reordering a line item, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intaact UI, the line order changes.To avoid synchronizing the wrong Sage Intacct order line item, you must account for possible order line item changes. You can do this by first identifying the current *Line Number* (store it in a custom field on the SAAS you are synchronizing with) then execute the *Update Order* action. To delete a line item from an existing order, use the *Delete Order Line Item* action.
-
 Delete Order Line Item::
 
 Deletes an order line item. Provide a value for *Line Item ID (Record Number)*.
 
 Get Order::
 
-Returns a list of order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank. Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
+Returns a list of Order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank. Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 
 Delete Order::
 

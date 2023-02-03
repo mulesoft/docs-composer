@@ -58,9 +58,35 @@ Checks for a new or updated order record.
 
 include::_partials/action-definition.adoc[]
 
+Create Attachment::
+
+Creates a new Attachment record. In Sage Intacct, attachments are entities that contain files. An attachment object can be empty or have files. You can add files to an attachment when you create it or you can add attachments later. Provide a value for the following:
+* *Attachment Name*
+* *Folder*
+* When adding files to an attachment, use a list as the source of the files, and specify a value in the following fields:
+** *File binary data*
+** *File extension*
+** *File name*
+
+Update Attachment::
+
+Updates an Attachment record. When updating an attachment, you can update the attachment properties or add new files from a list. Provide a value for *Attachment ID*.
+
+Get Attachments::
+
+Returns a list of Attachment records. To filter the list, provide a value for *Attachment ID*, *Attachment Name*, or *Folder Name*. To return the entire list, leave the fields blank.
+
+Create Attachment Folder::
+
+Creates a new folder for attachments. Provide a value for the *Name*.
+
+Get Attachment Folders::
+
+Returns a list of attachment folders. To filter the list, provide a value for *Folder Name* to filter. To return the entire list, leave the fields blank.
+
 Create customer::
 
-Create a new customer record. Provide a value for the following:
+Create a new Customer record. Provide a value for the following:
 
 * *Customer ID*
 * *Primary Contact*
@@ -68,15 +94,19 @@ Create a new customer record. Provide a value for the following:
 
 Update customer::
 
-Update a customer record. Provide a value for *ID*.
+Update a Customer record. Provide a value for *ID*.
 
 Get customer::
 
-Returns a list of customer records. Provide a value for *Customer ID* or *Customer Name*.
+Returns a list of Customer records. To filter the list, provide a value for *Customer ID* or *Customer Name*. To return the entire list, leave the fields blank.
+
+Delete Customer::
+
+Deletes a Customer record. Provide a value for *Customer ID*.
 
 Create order::
 
-Create a new order record and returns a value for the *Key* field. Provide a value for the following:
+Create a new Order record and returns a value for the *Key* field. Provide a value for the following:
 
 * *Order Type*
 * *Date Created*
@@ -96,32 +126,96 @@ Note that the *Location ID* field is determined by the numbers preceding the loc
 
 Update Order::
 
-Updates a customer record. Provide a value for the following:
+Updates a Customer record. Provide a value for the following:
 
-* *Document ID* +
-Note that the *Doc ID* value is the *Key* value returned by the *Create Order* action.
-
-*  In the *Entries* > *Updatesotransitem* > *Line number* section:
-** If the source list _contains_ a matching Sage Intacct line item, the Sage Intacct line item is _updated_.
-** If the source list _does not_ contain a matching Sage Intacct line item, the Sage Intacct line item is _deleted_.
-** If the source list contains a line item that _does not exist_ in Sage Intacct, the line item is _created_. +
-Note that when reordering a line item, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intaact UI, the line order changes.To avoid synchronizing the wrong Sage Intacct order line item, you must account for possible order line item changes.
-
-Get Order::
-
-Returns a list of order records. Provide a value for one of the following fields:
-
-* *Order ID*
-* *Customer ID*
 * *Document ID* +
 Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 
-Create product::
+*  In the *Entries* > *Updatesotransitem* section, provide a value for the following:
+** *Sotransitem List*
+** *Item ID*
+** *Quantity*
+** *Location ID* +
+Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States` then enter `100` in the *Location ID* field.
+
+** *Price*
+** *Unit*
+** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*. +
+
+Note that when updating line items for an existing order, when reordering a line item, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intaact UI, the line order changes.To avoid synchronizing the wrong Sage Intacct order line item, you must account for possible order line item changes. You can do this by first identifying the current *Line Number* (store it in a custom field on the SAAS you are synchronizing with) then execute the *Update Order* action. To delete a line item from an existing order, use the *Delete Order Line Item* action.
+
+Delete Order Line Item::
+
+Deletes an order line item. Provide a value for *Line Item ID (Record Number)*.
+
+Get Order::
+
+Returns a list of order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank. Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
+
+Delete Order::
+
+Deletes an Order record. Provide a value for *Order ID*.
+
+Create Product::
 
 Create a new product record and returns the *Item ID* and *Record Number*. Provide a value for the following:
 * *Item ID*
 * *Name*
 * *Item Type*
+
+Update Product::
+
+Updates a Product record. Provide a value for *Item ID*.
+
+Get Products::
+
+Returns a list of Product records. To filter the list, provide a value for *Item ID*, *Name*, or *Item Type*. To return the entire list, leave the fields blank.
+
+Delete Product::
+
+Deletes a Product record. Provide a value for *Product ID*.
+
+Create Price List::
+
+Creates a new Price List record. Provide a value for the following:
+* *Type*
+* *Price List Name*
+
+Update Price List::
+
+Updates a Price List record. Provide a value for the following:
+* *Type*
+* *Price List Name*
+
+Get Price Lists::
+
+Returns a list of Price List records. To filter the list, provide a value for *Type*. To return the entire list, leave the fields blank.
+
+Delete Price List::
+
+Deletes a Price List record. Provide a value for *Price List ID*.
+
+Create Price List Entry::
+
+Creates a new Price List Entry record for a price list and returns the *Key* value. Provide a value for the following:
+* *Price List ID*
+* *Start Date*
+* *End Date*
+* *Fixed*
+* *Value*
+* *Value Type*
+
+Update Price List Entry::
+
+Updates a Price List Entry record. Provide a value for *Record Number*.
+
+Get Price List Entries::
+
+Returns a list of Price List Entry records. To filter the list, provide a value for *Entry ID*, *Price List ID*, or *Item ID*. To return the entire list, leave the fields blank.
+
+Delete Price List Entry::
+
+Deletes a Price List Entry record. Provide a value for the *Price List Entry ID*.
 
 == Custom Fields
 

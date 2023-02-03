@@ -142,7 +142,8 @@ Note that the *Document ID* value is the *Key* value returned by the *Create Ord
 ** *Sotransitem List*
 ** *Item ID*
 ** *Quantity*
-** *Location ID* +
+** *Location ID* 
++
 Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States` then enter `100` in the *Location ID* field.
 
 ** *Price*

@@ -36,6 +36,24 @@ image::images/overview1.png[Keeping data in sync between data silos, 600]
 This simple flow can be expanded to perform more complex actions, such as writing to different sheets based on
 the zip code of the new user or propagating changes for existing users.
 
+== Use Cases 
+
+Some common use cases for Composer include:
+
+* *Quote to Cash (ERP Integration)*
++
+Drive efficiency and improve sales productivity by automating and streamlining quote-to-cash processes. For example, automatically create sales orders in NetSuite once a Salesforce opportunity closes and automatically notify billing teams in Slack. For more information, refer to the https://trailhead.salesforce.com/content/learn/modules/netsuite-data-sync-with-mulesoft-composer[NetSuite Automation with MuleSoft Composer^] Trailhead module. 
+
+* *Case Escalation (Ticketing System Integration)*
++
+Escalate and resolve cases faster by automating support case management and notification. For example, automatically create a JIRA ticket and automatically send a Slack notification to organize and prioritize urgent support cases from Service Cloud or Zendesk to streamline communication between agents, engineering, and DevOps. For more information, refer to the https://trailhead.salesforce.com/content/learn/modules/jira-data-sync-with-mulesoft-composer[Jira Automation with MuleSoft Composer^] Trailhead module.
+
+* *Salesforce to Salesforce*
++
+Connect and synchronize data between multiple Salesforce orgs. For example, create or 
+update an object in one Salesforce org and sync the changes to another Salesforce org. 
+For more information, refer to the https://trailhead.salesforce.com/content/learn/modules/data-sync-between-orgs-with-mulesoft-composer[Automation Between Orgs with MuleSoft Composer^] Trailhead module. 
+
 == Steps To Create a Flow
 
 To create a functioning, real-time integration in Composer, you don't need coding experience.

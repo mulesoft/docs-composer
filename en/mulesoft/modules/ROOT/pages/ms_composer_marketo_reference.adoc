@@ -1,0 +1,67 @@
+= Marketo Connector Reference
+
+Marketo is marketing automation software that aids marketing practitioners, executives, and sales reps to score, nurture, and understand leads. Marketo empowers users with marketing automation, email marketing, lead management, and revenue attribution.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Token URL::
+
+The URL of the endpoint that provides the access token for Marketo.
+
+Client ID::
+
+The OAuth Client ID that you use to log in to Marketo.
+
+Client Secret::
+
+The OAuth Client Secret that you use to log into Marketo.
+
+REST API Endpoint::
+
+The base URL of your Marketo instance.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New Lead::
+
+Returns a list of new lead activities after a given datetime.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create Lead::
+
+Creates a lead to the target audience. Provide a value for *Push Lead to Market to Request*.
+
+Update Lead::
+
+Updates a lead to the target audience. Provide a value for *Push Lead to Market to Request*.
+
+Get/Find Lead::
+
+Retrieves a single lead record through its Marketo ID.
+
+Add Lead to List::
+
+Adds a Person record to a target static list.
+
+Update Lead Program Status::
+
+Changes the program member status of a lead in a target program. Provide a value for *Change Lead Program Status Request*.
+
+Create Custom Object::
+
+Create a custom object record for the target audience. Provide a value for *Sync Custom Object Request*.
+
+Update Custom Object::
+
+Update a custom object record for the target audience. Provide a value for *Sync Custom Object Request*. 
+
+include::_partials/see-also.adoc[]

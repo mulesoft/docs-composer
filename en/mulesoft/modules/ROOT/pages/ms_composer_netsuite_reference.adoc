@@ -9,7 +9,7 @@ When connecting to NetSuite via MuleSoft Composer, in NetSuite:
 * Ensure that token-based authentication is enabled by navigating to *Setup* > *Integration Management* > *Manage Integration* > *Authentication*.
 * Ensure that the role used in the integration is not using two-factor authentication by navigating to *Setup* > *User/Roles* > *Two-Factor Authentication Roles*.
 
-Composer supports NetSuite 2020.2 instances.
+Composer supports NetSuite instances of 2020.2 and later.
 
 include::_partials/connection-definition.adoc[]
 
@@ -39,8 +39,31 @@ To use MuleSoft Composer to establish a NetSuite connection, you must have:
 
 Access to NetSuite data and to the NetSuite user interface is based on users, roles, and permissions.
 
-For more information on users, roles, and permissions, see the https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite documentation].
+For more information about users, roles, and permissions, see the https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite documentation].
 
+MuleSoft provides a bundle that contains a role with the permissions required for integrating Composer with NetSuite. To install the bundle, follow these steps:
+
+. Go to *Customization > SuiteBundler > Search & Install Bundles*.
+. Type `462515` in the keyword search.
+. Click on *MuleSoft Composer* and review the *Components* tab.
+. Click *Install* and then *Install Bundle*. The installation takes a few minutes.
+
+After installing the bundle, generate credentials to configure the connection to Composer. Store the credentials securely since the credentials are visible only once for security purposes. If you need additional information, contact your NetSuite administrator.
+
+To generate credentials in the form of tokens, follow these steps:
+
+. Assign the newly created *MuleSoft Composer* role to the desired user:
+.. Go to *Setup > Users/Roles > Manage Users*.
+.. Click on the user who will host the integration. You can use a generic account such as `it@company.com` that doesn't need its own license.
+. Create an integration:
+.. Go to *Setup > Integration > Manage Integration > New*.
+.. Enter a name and appropriate concurrency for the integration. You can start low and use 1-2 units lower than the maximum concurrency allowed.
+.. Select the *Token-Based Authentication* box.
+. Generate access tokens:
+.. Go to *Setup > Users/Roles > User Management > Access Tokens*.
+.. Set the application to the integration created in the previous step.
+.. Assign the user and click *Save*.
+. Identify the NetSuite account ID by going to *Setup > Company > Company Information*.
 
 === Run Server SuiteScript to Trigger Workflows
 
@@ -49,6 +72,8 @@ If your NetSuite configuration preferences are set to run server SuiteScript and
 * The *Audience* field must have all roles selected.
 * The *Execute As Role* field must be set to `Administrator`.
 * The *Log Level* field must be set to `Debug`.
+
+include::_partials/null-values.adoc[]
 
 == Triggers
 
@@ -98,38 +123,73 @@ The following record types are supported.
 
 |Record Type |Trigger |Action
 
+|BILLING_SCHEDULE | |X
 |CASH_SALE |X |X
 |CASH_REFUND |X |X
+|CLASSIFICATION | |X
 |CONTACT |X |X
 |CREDIT_MEMO |X |X
+|CURRENCY | |X
+|CURRENCY_RATE | |X
 |CUSTOMER |X |X
 |CUSTOMER_DEPOSIT |X |X
 |CUSTOMER_PAYMENT |X |X
 |CUSTOMER_REFUND |X |X
 |CUSTOM_RECORD_TYPES |X |X
+|DEPARTMENT | |X
 |ESTIMATE |X |X
 |EMPLOYEE |X |X
+|GIFT_CERTIFICATE_ITEM |X |X
+|INVENTORY_ADJUSTMENT |X |X
 |INVENTORY_ITEM |X |X
 |INVOICE |X |X
+|ITEM_FULFILLMENT |X |X
+|ITEM_GROUP |X |X
+|ITEM_RECEIPT |X |X
 |JOURNAL_ENTRY |X |X
+|KIT_ITEM |X |X
+|LEAD |X |X
+|LOCATION | |X
+|LOT_NUMBERED_ASSEMBLY_ITEM |X |X
+|LOT_NUMBERED_INVENTORY_ITEM |X |X
 |NON_INVENTORY_PURCHASE_ITEM |X |X
 |NON_INVENTORY_RESALE_ITEM |X |X
 |NON_INVENTORY_SALE_ITEM |X |X
 |OPPORTUNITY |X |X
-|PAYMENT_ITEM | |X
+|OTHER_CHARGE_PURCHASE_ITEM |X |X
+|OTHER_CHARGE_RESALE_ITEM |X |X
+|OTHER_CHARGE_SALE_ITEM |X |X
+|PARTNER |X |X
+|PAYMENT_ITEM |X |X
+|PRICE_LEVEL | |X
+|PROSPECT |X |X
 |PURCHASE_ORDER |X |X
 |RETURN_AUTHORIZATION |X |X
 |SALES_ORDER |X |X
+|SERIALIZED_ASSEMBLY_ITEM |X |X
+|SERIALIZED_INVENTORY_ITEM |X |X
 |SERVICE_PURCHASE_ITEM |X |X
+|SERVICE_RESALE_ITEM |X |X
 |SERVICE_SALE_ITEM |X |X
+|SUBSIDIARY | |X
 |SUPPORT_CASE |X |X
+|TIME_BILL |X |X
+|TIME_SHEET |X |X
+|TRANSFER_ORDER |X |X
 |VENDOR |X |X
 |VENDOR_BILL |X |X
 
 |===
 
 [NOTE]
-The PAYMENT_ITEM object is not supported by the GET RECORDS action.
+====
+The CURRENCY and PAYMENT_ITEM objects are not supported by the GET RECORDS action.
+
+The LEAD and PROSPECT objects are supported only by the GET RECORDS action. The LEAD and PROSPECT objects are subtypes of the CUSTOMER object, so to use the LEAD and PROSPECT objects for other actions, you can set the object type to CUSTOMER and set the `internalId` of `entityStatus` to the corresponding value according to the NetSuite documentation.
+
+The DEPARTMENT, LOCATION, PRICE_LEVEL, and SUBSIDIARY objects are supported only by the GET RECORDS action.
+
+====
 
 == Custom Fields
 
@@ -147,6 +207,13 @@ Using MuleSoft Composer, you can access custom field values for actions and trig
 == List Objects
 
 List objects are supported.
+
+The following list objects are supported for the *Get Records* action:
+
+* Department
+* Locations
+* Price Level
+* Subsidiary
 
 == Custom Picklists
 

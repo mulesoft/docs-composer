@@ -1,0 +1,415 @@
+= Release Notes for MuleSoft Composer for Salesforce - 2021
+
+Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
+
+New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
+
+See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
+
+== December 21, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Fixed an issue in Asana Connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
+
+|===
+
+== December 16, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Google Sheets Connector, when using the Create/Update Row action, you can now transfer multiple rows of data.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+| Issue |ID
+
+| Previously, in Google Sheets Connector when Google Sheets was the trigger, all output fields were returned as `text` regardless of the assigned data type (for example, `int` or` `bool`). As a result, if you attempted to map the trigger data pills to non-text fields in the action, you encountered an error. Now, trigger fields retain their original data types and you can map them appropriately in subsequent actions. | SE-227701, COCN-575
+| Fixed an issue in Google Sheets Connector in which metadata from a document containing a space failed.  | COCN-742
+| Upgraded library dependencies. | |
+// | Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
+
+|===
+
+== December 9, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| Fixed metadata pagination issues in Xero Connector. | CSCA-1106
+| Fixed failing sample data requests for the *Get contact by ID* and *Search contacts* actions in Xero Connector. | CSCA-1044
+| Fixed the field labels in Xero Connector to match the corresponding field names in the Xero APIs. | CSCA-1043
+| Fixed field labels in Xero Connector.  | CSCA-1040
+
+|===
+
+== December 2, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector now supports the *Job* record type.
+
+* The NetSuite connector now supports the *External* value in the *ID Type* field for the *Update Record* action.
+
+* The NetSuite connector now supports *ID Type* values for the *Delete Record* action.
+
+* The NetSuite connector now supports the *Assembly Item* record type.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| When some metadata subcategories are empty, metadata can be refreshed in the flow. | SE-23496
+| Fixed the issue when processing custom fields with empty values. | SE-23068
+| The NetSuite XML request no longer requires the runServerSuiteScriptAndTriggerWorkflows flag. | SE-22758
+| Fixed the issue when processing date/time custom fields. | COCN-735
+
+|===
+
+== December 1, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Jira Connector now supports spaces in input fields for all operations.
+
+* Actions in Jira Connector now support the `Comment` field.
+
+== November 23, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| When adding a For Each block to a flow control in Salesforce Connector, the For Each block shows the object label name instead of the object API name. | COCN-745
+
+|===
+
+
+== November 8, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
+
+== November 4, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+| On the action card in the Jira connector, the *Summary* field now appears under the *Priority* field. | CSCA-1055
+
+|===
+
+== October 28, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* On the *Composer Flows* page, if a flow fails to execute, a detailed error message now appears to help you troubleshoot the issue.
+
+* You can now connect to a new system: Zuora.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+
+== October 27, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Restrictions for mapping a list of objects have been lifted in the connectors. You can now map any top-level field, not just fields coming from the list of objects you've selected.
+
+== October 21, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now create and edit your custom expressions in actions with the *Custom Expression Editor* window that appears when selecting 'fx' from the menu.
+
+== October 20, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Stripe Connector now supports a new action, *Create Product*, and a new trigger, *New Refund*.
+
+
+== October 14, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: QuickBooks Online.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+
+== October 7, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Zendesk.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+|If you encounter an error while testing, instructions and a link now appear in the *Test stopped unexpectedly* window to download the debugging information file and to contact support. | CAPO-364
+
+|===
+
+== September 27, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector now allows users to map values to custom picklists, using the named custom value, without the use of internal IDs.
+
+== September 14, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce now supports the *Pick from Calendar* option for selecting values in date fields.
+
+== September 9, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+* You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+
+|===
+
+|Issue|ID
+
+|Fixed issue that occurred when updating or creating 500 contact records for a service organization in Salesforce Connector, a portion of the records did not process. | COCN-446
+
+|Fixed issue that occurred when using *Create Record* action in Salesforce Connector on an *Invoice* object, the *Invoice* fields were not available. | COCN-530
+
+|===
+
+== September 8, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Workday Connector now supports the Workday R1.2021 version.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+|Fixed issues with validation errors. |COCN-43, COCN-37
+
+|Fixed issue that caused the *Reason* field to be invisible. |COCN-600
+
+|===
+
+== September 2, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Slack Connector now supports markdown for text formatting.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+|When using the *Create Message* action in a workspace that contains more than 10,000 channels, selecting the channel name no longer fails. |COCN-512
+
+|===
+
+== August 30, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue|ID
+
+|In Slack Connector, when you connect to a workspace that contains hundreds of channels, selecting the channel name no longer fails during the *Create message* action. |COCN-539
+
+|===
+
+== August 17, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
+
+== August 11, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
+
+* The following Jira connector triggers and actions were renamed:
+** Triggers
+*** *Update issue* to *Update issue with Custom Fields*
+*** *New issue* to *New issue with Custom Fields*
+** Action: *Update/edit issue* to *Update issue with Custom Fields*
+
+* The Jira connector now supports the following triggers and actions:
+** Triggers
+*** *Updated issue with Standard Fields only*
+*** *New issue with Standard Fields only*
+** Action: *Update issue with Standard Fields only*
+
+* Xero Connector now supports the *Contact persons* field in the *Create or update contact* action.
+
+== August 6, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Xero Connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
+
+== July 22, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
+
+== July 15, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Get records* action is now available for NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+
+== July 19, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: ServiceNow.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== July 15, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Get records* action is now available for NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
+
+== July 8, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Xero.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* The following triggers are now available in Google Sheets Connector:
+
+** New row in sheet
+** Updated row in sheet
+** New spreadsheet
+
+== June 4, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Microsoft Teams.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== July 1, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Jira.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* The NetSuite connector now supports Custom Record Types for actions and triggers.
+
+== June 4, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Microsoft Teams.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== June 2, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to the following systems: Asana and Twilio.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== May 19, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+You can now connect to a new system: Stripe.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== May 6, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+You can now expand all cards or collapse all cards on the canvas using the *Expand all* or the *Collapse all* button.
+
+== April 13, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+You can now connect to the following systems: Slack and NetSuite.
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* The user interface for creating a connection is easier to understand.
+
+== March 25, 2021
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+You can delete and replace a trigger step in any unactivated flow.
+
+== March 15, 2021
+
+MuleSoft Composer for Salesforce is generally available.

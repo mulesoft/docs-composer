@@ -1,0 +1,139 @@
+= QuickBooks Online Connector リファレンス
+
+QuickBooks Online はコアビジネスプロセス、ERP 財務、E コマース、在庫などを組織で管理できるようにするクラウドベースの会計ソフトウェアを提供しています。
+
+QuickBooks Online Connector では、 https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API マイナーバージョン 62]​ を使用します。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+QuickBooks Online にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+QuickBooks Online にログインするために使用する OAuth パスワード。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New Invoice::
+
+新しい請求書が作成されたときにトリガします。
+
+Updated Invoice::
+
+既存の請求書が更新されたときにトリガします。
+
+New Customer::
+
+新しい顧客が作成されたときにトリガします。
+
+Updated Customer::
+
+既存の顧客が更新されたときにトリガします。
+
+New Item::
+
+新しい項目が作成されたときにトリガします。
+
+Updated Item::
+
+既存の項目が更新されたときにトリガします。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create Invoice::
+
+新しい請求書を作成します。必須項目: *Customer ID (顧客 ID)*​。
+
+Update Invoice::
+
+既存の請求書を更新します。必須項目: *Invoice ID (請求書 ID)*​。
+
+Create Customer::
+
+新しい顧客を作成します。
+
+Update Customer::
+
+既存の顧客を更新します。必須項目: *Customer ID (顧客 ID)*​。
+
+Create Item::
+
+新しい項目を作成します。次の項目は必須です。
+
+* *Name (名前)*​
+* *Type (型)*​
+* *[Track Quantity on Hand (手持ち数量を追跡)]*​ の値が ​`True`​ の場合、次の項目は必須です。
+** *Asset Account Reference (アセットアカウント参照)*​
+** *Invoice Start Date (請求書開始日)*​
+** *Quantity on Hand (手持ち数量)*
+
+Update Item::
+
+既存の項目を更新します。次の項目は必須です。
+
+* *Item ID (項目 ID)*​
+* *[Track Quantity on Hand (手持ち数量を追跡)]*​ の値が ​`True`​ の場合、次の項目は必須です。
+** *Asset Account Reference (アセットアカウント参照)*​
+** *Invoice Start Date (請求書開始日)*​
+** *Quantity on Hand (手持ち数量)*
+
+Query Invoice::
+
+既存の請求書を検索します。結果を返すには、次の 1 つ以上の項目に入力する必要があります。
+
+* *Invoice ID Equals (請求書 ID が次に等しい)*​
+* *Customer ID Equals (顧客 ID が次に等しい)*​
+* *Due Date Greater Or Equal (期日が次以上)*​
+* *Date Created Greater or Equal (作成日が次以上)*​
+* *Last Updated Date Greater or Equal (最終更新日が次以上)*
+
+Query Customer::
+
+既存の顧客を検索します。結果を返すには、次の 1 つ以上の項目に入力する必要があります。
+
+* *Customer ID Equals (顧客 ID が次に等しい)*​
+* *Customer Display Name Equals (顧客表示名が次に等しい)*​
+* *Customer Display Name Like (顧客表示名が次に似ている)*​
+* *Active Equals (アクティブが次に等しい)*​
+* *Primary Email Address Equals (プライマリメールアドレスが次に等しい)*​
+* *Primary Email Address Like (プライマリメールアドレスが次に似ている)*​
+* *Balance Greater Or Equal (残高が次以上)*​
+* *Date Created Greater or Equal (作成日が次以上)*​
+* *Last Updated Date Greater or Equal (最終更新日が次以上)*
+
+Query Item::
+
+既存の項目を検索します。結果を返すには、次の 1 つ以上の項目に入力する必要があります。
+
+* *Item ID Equals (項目 ID が次に等しい)*​
+* *Name Equals (名前が次に等しい)*​
+* *Name Like (名前が次に似ている)*​
+* *Active Equals (アクティブが次に等しい)*​
+* *Type Equals (種別が次に等しい)*​
+* *Date Created Greater or Equal (作成日が次以上)*​
+* *Last Updated Date Greater or Equal (最終更新日が次以上)*
+
+Get Invoice::
+
+請求書を返します。必須項目: *Customer ID (顧客 ID)*​。
+
+
+Get Customer::
+
+顧客を返します。  必須項目: *Customer ID (顧客 ID)*​。
+
+Get Item::
+
+項目を返します。必須項目: *Item ID (項目 ID)*​。
+
+include::_partials/see-also.adoc[]

@@ -4,6 +4,613 @@ Use MuleSoft Composer to build connected experiences faster. You don't need to w
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
+See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer] for a list of known issues by date.
+
+== February 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following enhancements have been made for Microsoft Dynamics 365 Business Central Connector:
+** The *Create Sales Order* action now enables users to create a list of sales order lines within the sales order object.
+** The *Update Sales Order* action now enables users to update a list of sales order lines in addition to the sales order object.
+** The *Get Sales Orders* action now enables users to retrieve sales order lines corresponding to a filtered list of sales orders.
+** The *On New or Updated Sales Order* trigger now checks for new or updated sales order lines in addition to new or updated sales orders.
+** If you use a *Display Name* for the company, the *Display Name* is now populated in the *Company ID* dropdown instead of the *Company Name*.
+
+== February 1, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the metadata output for the `labels` property now returns an array of strings instead of an array of empty objects. |W-11899482
+|In Jira Connector, the *Retrieve attachment* action now shows the detailed error message returned by the Jira endpoint. |W-12282452
+|===
+
+== January 30, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Quickbooks Online Connector now supports custom fields for actions and triggers.
+
+* The following actions are now available for Quickbooks Online Connector:
+** *Create Estimate*
+** *Get Estimate*
+** *Update Estimate*
+
+* The following triggers are now available for Quickbooks Online Connector:
+** *On New Estimate*
+** *On New or Updated Estimate* 
+
+== January 26, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, metadata load logging is now enhanced. |W-12412287, W-12244102
+|In NetSuite Connector, records now show custom segments as intended. |W-12244102
+|===
+
+== January 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following record types are now available for NetSuite Connector:
+** BILLING_SCHEDULE
+** CLASSIFICATION
+** GIFT_CERTIFICATE_ITEM
+** INVENTORY_ADJUSTMENT
+** ITEM_RECEIPT
+** LOT_NUMBERED_ASSEMBLY_ITEM
+** OTHER_CHARGE_PURCHASE_ITEM
+** OTHER_CHARGE_RESALE_ITEM
+** OTHER_CHARGE_SALE_ITEM
+** SERIALIZED_ASSEMBLY_ITEM
+** SERIALIZED_INVENTORY_ITEM
+** TRANSFER_ORDER
+
+== January 16, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Snowflake Connector, the *Select Rows* action now includes enhanced sample data resolution.
+
+== January 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following record types are now available for NetSuite Connector:
+** ITEM_FULFILLMENT
+** ITEM_GROUP
+** KIT_ITEM
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In NetSuite Connector, `NullFieldsList` is no longer included in the metadata. |W-12029245
+|In NetSuite Connector, *External ID* is now shown in custom fields when creating or updating a record. |W-11951099
+|In NetSuite Connector, errors are no longer overridden when warnings are present. |W-12165594
+|===
+
+== January 12, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector now supports the following pagination type for fields: *Offset*.
+
+== January 11, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* ServiceNow Connector now supports the Tokyo release.
+
+== December 23, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, the *Upload file* and *Download file* actions no longer incorrectly throw a `NullPointerException` when using an OAuth 2.0 connection. | W-12236769
+|===
+
+== December 15, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *On New Message* trigger is once again available for Slack Connector. The following enhancements have been made to the trigger:
+
+** The *Created* field now supports a date picker.
+** The *Limit* field now supports only numeric values.
+** The *Limit* field now defaults to `100`.
+** Messages returned by the trigger now appear in ascending order by time.
+
+* In Slack Connector, the *Conversation ID* field has been renamed to *Conversation Name*. Additionally, this field is now supported by a dropdown.
+
+== December 14, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If you attempt to use a data pill in a scope where the value could be null or empty, a message alerting the user now appears.
+
+== December 13, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Salesforce Connector, Composer logging now includes enhanced error codes and messages when the API returns `ApiFault` errors.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In ServiceNow Connector, the *New/Updated Record* trigger now picks up messages for all appropriate timestamps.| W-12176039
+|In ServiceNow Connector, sudden disconnections in high workload scenarios no longer occur. | W-12035222
+|In ServiceNow Connector, the componentorg.apache.commons library is upgraded to version 1.10.0 to address reported security vulnerabilities.| W-11913979
+|In ServiceNow Connector, the org.springframework library is upgraded to version 5.3.20 to address reported security vulnerabilities. | W-12150392
+|In Salesforce Connector, the triggers and the *Get records* action now support the `isTrue` and `isFalse` operators for boolean parameters. | W-11752116
+|In Salesforce Connector, the *Delete record* action no longer incorrectly throws a `Retrieving metadata for the step failed. Try saving and refreshing the page.` error. | W-12211471
+|In Salesforce Connector, the triggers no longer have a potential data loss when the watermark is not used properly. | W-12128874
+|In Jira Connector, the com.fasterxml.jackson.core library is upgraded to version 2.14.1 to address reported security vulnerabilities. |W-11933499
+|In Jira Connector, the org.apache.commons-text library is upgraded to version 1.10.0 to address reported security vulnerabilities. |W-12004679
+|===
+
+== December 12, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Zendesk Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4.1 to address reported security vulnerabilities.| W-11933496
+|In Zendesk Connector, the connection no longer breaks when Zendesk triggers are idle for long durations when deployed on CloudHub.| W-12040415
+|===
+
+== December 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Previously, if a deactivated flow was reactivated, that flow would erroneously pick up events that occurred while the flow was deactivated. Now, when a flow is deactivated, the object store data for that flow is erased so that the flow will start fresh upon reactivation. |W-12120985
+|===
+
+== November 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In HTTP Connector, the OAuth 2.0 Authorization Code Grant connection provider now supports the ability to set custom request headers for *Token Exchange*, *Token Refresh*, and *Token Revoke*.
++
+Some systems, such as Fortnox and QuickBooks, require sending credentials as request headers during the OAuth dance. With custom request headers, you can now connect to these systems using HTTP Connector.
+
+== November 21, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* All users now have permission to view and manage all flows within your organizations.
+
+
+== November 17, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When an error occurs, the *Run History* page now provides the step name, step number, connector type, and the error message to enable you to troubleshoot issues within your flow.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, mapping now works properly when the same custom list field is between multiple items in one record. |W-12041041
+|===
+
+== November 8, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to two new systems: Marketo and Snowflake. +
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== November 3, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following record types are now available for NetSuite Connector:
+** DEPARTMENT
+** LOCATION
+** PRICE_LEVEL
+** SUBSIDIARY
+
+* In HTTP Connector, connectivity tests for the OAuth2 Authorization Code Connection Provider are now enabled.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, the Jackson Databind library is upgraded to version 2.13.4.2 to address reported security vulnerabilities. |W-11963381
+|When connected to Jira, HTTP Connector now retrieves error messages when errors occur. Previously errors were only recorded in the Jira log. |W-11816468
+|When connected to Shopify, HTTP Connector flow tests no longer run indefinitely and return errors. |W-11821763, W-11819981
+|===
+
+== November 1, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Slack Connector, the *On New Message* trigger has been disabled and is no longer available. |W-11972430
+|===
+
+== October 31, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now create new flows from templates. This release includes support for the following templates:
+** Create Or Update Jira Issue for Associated Change Request in Salesforce
+** Create Or Update Jira Issue for Associated Work Plan in Salesforce
+** Create Or Update Jira Issue for Associated Work Step in Salesforce
+** Create Change Request in Salesforce for Associated Jira Issue
+** Update Change Request in Salesforce for Associated Jira Issue
+** Create Work Plan in Salesforce for Associated Jira Issue
+** Update Work Plan in Salesforce for Associated Jira Issue
+** Create Work Step in Salesforce for Associated Jira Issue
+** Update Work Step in Salesforce for Associated Jira Issue
+** Create or Update Incident and Asset for Associated ServiceNow Incident
+** Create or Update ServiceNow Incident for Associated Incident in Salesforce
+** Create Configuration Item for Associated Incident Asset in Salesforce
+** Create or Update Netsuite Credit Memo for Associated Posted Credit Memo in Salesforce
+** Create or Update Netsuite Customer for Associated Account in Salesforce
+** Create or Update Netsuite Customer Payment for Associated Processed Payment in Salesforce
+** Create or Update NetSuite Inventory Item for Associated Active Product in Salesforce
+** Create or Update Netsuite Invoice for Associated Posted Invoice in Salesforce
+** Create or Update Netsuite Sales Order for Associated Activated Order in Salesforce
+
++
+Templates are patterns that you can leverage to build a flow. All of the steps and field mappings are predefined, so you can select the template and enter the missing information for the various connectors used (such as connection secrets) to create a flow you can later customize. Since templates are pre-built flows, templates not only reduce the barrier to entry and accelerate the time to activate the flow, but also include the best practices for flows.
+
+* MuleSoft Anypoint Platform customers can now share externally available APIs managed in Anypoint Platform with business users for consumption in a MuleSoft Composer flow. This enhancement creates integrations that span beyond out-of-the-box connectors.
+
+* You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
+
+* To facilitate MuleSoft Automation, the subscription pricing method has been reevaluated for MuleSoft Composer. To enable this enhancement, a new menu, *Usage Summary*, has been added to the navigation pane. On the *Usage Summary* page, you can view your monthly tasks and credit usage per flow for your organization.
+
+* The following new actions are now available for Jira Connector:
+
+** *Create project*
+** *Get project*
+** *Update project*
+** *List attachments*
+** *Upload attachments*
+** *Get attachments*
+
+* The following triggers have been renamed in Jira Connector:
+
+** *Issue updated with Custom Fields* has been renamed to *Issue with Custom Fields was updated or created*
+** *Issue updated with Standard Fields only* was renamed to *Issue with Standard Fields only was updated or created*
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the Result filter has been removed and now tests no longer fail when fields are selected. |W-11510054
+|In Jira Connector, the number of Jira projects that appeared in a dropdown was limited. Now, all Jira projects are retrieved in the dropdown. |W-11912169
+|===
+
+== October 27, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now add custom logic, such as `and`, `or`, or `not`, in conditional statements when building an action and in If/Else statements.
+
+* In RPA Connector, you can now test an RPA process using sample data without invoking the RPA process.
+
+* In RPA Connector, you can now connect directly to your RPA Organization to see your processes by clicking the *Create an invokable run config from MuleSoft RPA* button when you are connected to your RPA organization and no processes appear in the dropdown for the *RPA Process* field.
+
+* In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*.
+
+== October 26, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following new triggers are now available for HubSpot Connector:
+
+** *On New Record*
+** *On New or Updated Record*
+
+* In HubSpot Connector, tooltips are now updated and improved for both triggers and actions.
+
+* In Stripe Connector, the *Find Customer* action now supports dynamic metadata.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Stripe Connector, fixed security vulnerability found in `componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2`. |W-11853409
+|===
+
+== October 20, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Workday Connector, in the *On New or Updated Records* trigger and the *Get Worker Details ID* action, the following fields, which enable array values of complex objects from Workday APIs, are now available for the *WORKER* object:
+
+** *Email Addresses*
+** *Job Addresses*
+** *Persona Addresses*
+** *Supervisor Organization Chain*
+
+== October 17, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, in the *Get Issue in Jira* action, removed the unnecessary *Select Fields* button. |W-11649482
+|===
+
+== October 13, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now export a flow as a JSON file to share your flow with Support for troubleshooting purposes by clicking the wrench icon and selecting *Export*.
+
+== October 12, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When looping over a selected list of strings in a for each loop, you can now use a single string value across multiple cards in the loop.
+* The following record types are now available for NetSuite Connector:
+ ** PARTNER
+ ** LEAD
+ ** PROSPECT
+
+== October 10, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In RPA Connector, the JSON Sanitizer has been implemented to prevent JSON injection.
+
+== October 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Fixed the issue in which the *Run History* page in Composer unnecessarily displayed an error and sent an email notification for an expired access token. Now the error does not appear and no email is sent. To implement this fix, deactivate and then reactivate your flow. |W-11649482
+|===
+
+== October 6, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Fixed the issue in Google Sheets Connector in which an `InterruptedException` occurred during an MUnit test. |W-10887516
+|Fixed the issue in Google Sheets Connector in which the *Create row* action did not work properly when the first column without a header contained values. |W-10933097
+|In Google Sheets Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4. |W-11719209
+|===
+
+== September 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The OAuth 2.0 Authorization Code grant for authentication in HTTP Connector now supports customizing the *Authorization Header Name*, *Authorization Header Value Prefix*, and *Authorization Header Custom Value Prefix* fields for the Authorization Header.
+
+== September 9, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector now supports the OAuth 2.0 Authorization Code grant for authentication.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Fixed the issue in NetSuite Connector in which the CURRENCY and CURRENCY_RATE objects did not work for the *Get Records* action. |W-11722063
+|===
+
+== September 6, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Box instances, you can download binary file content from one instance and later upload that same file content to another instance.
+* The `jackson.databind` library is upgraded to version 2.13.4 to address reported security vulnerabilities for HTTP Connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Fixed the issue in HTTP Connector in which the test connectivity was not triggering a refresh with an OCS connection. |W-11469764
+|Fixed the issue in HTTP Connector in which OAuth 2.0 refresh tokens from Shopify were not valid. |W-11437322
+|Fixed the issue in HTTP Connector in which fields containing an escape sequence (for example, `\r` for a carriage return) were not properly parsed. |W-11072611
+|Fixed the issue in Quickbooks Connector where Sample Data output returned more than one record, even in the case of arrays that are nested fields. |W-11388800
+|===
+
+== August 31, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Picklist Mapping is now enabled for fields in an action that supports Pick from List. Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This allows you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
+
+== August 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: Microsoft Dynamics 365 Business Central.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* Data Pill Search is now available. You can use this feature to find where a particular data pill is used in your flow.
+
+== August 19, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In ServiceNow Connector, the *Read Timeout* field is updated from 5 seconds to 15 seconds to avoid timeouts on large tables. |W-11601586
+|===
+
+== August 8, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following record types are now available for NetSuite Connector:
+ ** SERVICE_RESALE_ITEM
+ ** TIME_SHEET
+ ** TIME_BILL
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue Resolution |ID
+|In NetSuite Connector, connections using lowercase values in the `Account ID` field no longer fail. |W-11469671
+
+|===
+
+== August 3, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: MuleSoft Robotic Process Automation (RPA).
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== August 2, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Salesforce Connector, you can now specify conditions for triggers.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue Resolution |ID
+|Labels are now properly capitalized in ServiceNow Connector. |W-10575461
+
+|===
+
+== July 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *On New Message* trigger is now available for Slack Connector.
+
+* You can now connect a new system: Salesforce Marketing Cloud Connector.
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== July 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect a new system: HubSpot.
++
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+* Required fields in Composer are now denoted with an asterisk (*). Previously, when adding fields in Composer, only optional fields appeared in the modals. Now:
+
+ ** When a parent field is selected or deselected and it has required child fields, those child fields are also selected or deselected by default.
+ ** When a field is selected or deselected and it has required parent fields, those parent fields are also selected or deselected by default.
+ ** When an optional field is selected, the corresponding required fields (including one or more parent fields) are also selected.
+ +
+Required fields can be removed only by deselecting them within the modal.
+
+* HTTP Connector now supports Paginated Requests. When retrieving collections of objects from remote systems, use Paginated Requests to ensure that all data pages are returned.
+
+* Flows based on a scheduler now have access to the scheduler's current and previous timestamps.
+* NetSuite Connector now supports exponential retries, which prevent concurrency limit errors.
+
+== July 27, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following objects are now available for NetSuite Connector:
+** Currency
+** Currency Rate
+** Lot Numbered Inventory Item
++
+Note that the objects will appear in all caps and with underscores.
+
+== July 13, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When deleting a connection, a list of active and inactive flows using the selected connection now appears. Using this list, if the connection is:
+** Not used in any flows, you can delete the connection.
+** Used in inactive flows, a list containing the name and count of inactive flows using this connection appears. Deleting this connection will affect the listed flows. If you reopen the inactive flow, you must select a new connection.
+** Used in active and inactive flows, a list containing the name, count, and status of active and inactive flows using this connection appears. If you choose to delete the connection, secondary confirmation appears. Prior to deleting the connection, Composer will first attempt to stop the flows.
+
+== June 28, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In NetSuite Connector and Salesforce Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
+
+== June 21, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Organizations that use both MuleSoft Composer and Anypoint Platform can now connect the two organizations through Access Management.
+
+== June 6, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue Resolution |ID
+|In Workday Connector, the connection validation now succeeds even if the user does not have access to the `Performance_Management` service. |W-11193505
+|Fixed reported security vulnerabilities in Workday Connector by upgrading the Spring Framework library from `org.springframework:spring-context:5.3.18` to `org.springframework:spring-context:5.3.20`. |W-11195299
+
+|===
+
+== May 31, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In NetSuite Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
+
+== May 20, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|Issue Resolution |ID
+|Fixed the issue in Jira Connector in which a blank value in the *Description* field incorrectly returned an invalid input error. |W-11107531
+
+|===
+
 == May 17, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -12,15 +619,10 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-|Issue |ID
+|Issue Resolution |ID
 |Fixed the issue in Slack Connector in which a null pointer exception occurred after cleaning up markup in a plain text string. |W-11031313
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
 
 == May 11, 2022
 
@@ -30,16 +632,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-|Issue |ID
+|Issue Resolution |ID
 |ServiceNow Connector now loads metadata for all WebService accessible tables automatically. |W-10919969
 |In ServiceNow Connector, patched security vulnerability in dependency `org.springframework : spring-beans : 5.3.17`. |W-10981860
 |In ServiceNow Connector, patched security vulnerability in dependency `org.springframework : spring-context : 5.2.7.RELEASE`. |W-11001899
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
 
 == May 5, 2022
 
@@ -60,14 +658,10 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-|Issue |ID
+|Issue Resolution |ID
 |Fixed the null pointer exception issue that occurred in NetSuite Connector using a trigger that had been previously modified to select a custom object. |W-10995359
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
 
 == April 29, 2022
 
@@ -85,7 +679,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-|Issue |ID
+|Issue Resolution |ID
 
 |Fixed the issue in Workday Connector in which you could not filter fields containing values with the file data type. | W-10574439 COCN-667
 
@@ -100,10 +694,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Jira Connector, pagination is now enabled to fetch all assignable users in the *Reporter* and *Assignee* fields when using the *Create issue with custom fields* action. |W-10934109
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
 
 == April 28, 2022
 
@@ -131,7 +721,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-|Issue |ID
+|Issue Resolution |ID
 
 |In the JIRA Connector, entering a string value containing quotes in the *Description* field no longer causes an invalid JSON parsing request.  | W-11037529
 
@@ -471,20 +1061,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 MuleSoft Composer is generally available.
-
-//include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
-
-//[%header,cols="2,1", width="70”]
-//|===
-//|Issue|ID
-//|Message Flows now appear in chronological order. |SE-12345
-//|Batch jobs no longer hang while using persistent queues. |SE-54321
-//|`NullPointerException` errors no longer occur when using HTTP Connector inside a connector built with XML SDK. |SE-18335
-//|===
-
-//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-//include::_partials/release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
 
 == Related Resources
 * https://help.mulesoft.com/s/[MuleSoft Help Center]

@@ -1,0 +1,162 @@
+{
+  "description": "MuleSoft Composer for Salesforce ドキュメントセット",
+  "topics": [
+    {
+      "file": "ms_composer_overview.adoc",
+      "title": "Mulesoft Composer for Salesforce",
+      "topics": [
+        {
+          "file": "ms_composer_release_notes.adoc",
+          "title": "リリースノート",
+          "topics": [
+            {
+              "file": "ms_composer_release_notes_2022.adoc"
+            },
+            {
+              "file": "ms_composer_release_notes_2021.adoc"
+            }
+          ]
+        },
+        {
+          "file": "ms_composer_prerequisites.adoc",
+          "title": "はじめに",
+          "topics": [
+            {
+              "file": "ms_composer_about_flows.adoc"
+            },
+            {
+              "file": "ms_composer_checklist.adoc",
+              "title": "準備チェックリスト"
+            }
+          ]
+        },
+        {
+          "file": "ms_composer_flows.adoc",
+          "title": "フローのビルド"
+        },
+        {
+          "file": "ms_composer_custom_expression_editor.adoc",
+          "title": "フローの数式のビルド"
+        },
+        {
+          "file": "ms_composer_test_flow.adoc",
+          "title": "フローのテスト"
+        },
+        {
+          "file": "ms_composer_activation.adoc",
+          "title": "フローのアクティブ化"
+        },
+        {
+          "file": "ms_composer_monitoring.adoc",
+          "title": "フローの監視"
+        },
+        {
+          "file": "ms_composer_reference.adoc",
+          "title": "Composer Connector リファレンス",
+          "topics": [
+            {
+              "file": "ms_composer_asana_reference.adoc",
+              "title": "Asana"
+            },
+            {
+              "file": "ms_composer_box_reference.adoc",
+              "title": "Box"
+            },
+            {
+              "file": "ms_composer_gmail_reference.adoc",
+              "title": "Gmail"
+            },
+            {
+              "file": "ms_composer_google_calendar_reference.adoc",
+              "title": "Google カレンダー"
+            },
+            {
+              "file": "ms_composer_googlesheets_reference.adoc",
+              "title": "Google スプレッドシート"
+            },
+            {
+              "file": "ms_composer_http_reference.adoc",
+              "title": "HTTP"
+            },
+            {
+              "file": "ms_composer_hubspot_reference.adoc",
+              "title": "HubSpot"
+            },
+            {
+              "file": "ms_composer_jira_reference.adoc",
+              "title": "Jira"
+            },
+            {
+              "file": "ms_composer_ms_dynamics_365_business_central_reference.adoc",
+              "title": "Microsoft Dynamics 365 Business Central"
+            },
+            {
+              "file": "ms_composer_ms_teams_reference.adoc",
+              "title": "Microsoft Teams"
+            },
+            {
+              "file": "ms_composer_netsuite_reference.adoc",
+              "title": "NetSuite"
+            },
+            {
+              "file": "ms_composer_quickbooks_reference.adoc",
+              "title": "QuickBooks Online"
+            },
+            {
+              "file": "ms_composer_rpa_reference.adoc",
+              "title": "MuleSoft RPA"
+            },
+            {
+              "file": "ms_composer_salesforce_reference.adoc",
+              "title": "Salesforce"
+            },
+            {
+              "file": "ms_composer_salesforce_marketing_cloud_reference.adoc",
+              "title": "Salesforce Marketing Cloud"
+            },
+            {
+              "file": "ms_composer_servicenow_reference.adoc",
+              "title": "ServiceNow"
+            },
+            {
+              "file": "ms_composer_slack_reference.adoc",
+              "title": "Slack"
+            },
+            {
+              "file": "ms_composer_stripe_reference.adoc",
+              "title": "Stripe"
+            },
+            {
+              "file": "ms_composer_tableau_reference.adoc",
+              "title": "Tableau"
+            },
+            {
+              "file": "ms_composer_twilio_reference.adoc",
+              "title": "Twilio"
+            },
+            {
+              "file": "ms_composer_workday_reference.adoc",
+              "title": "Workday"
+            },
+            {
+              "file": "ms_composer_xero_reference.adoc",
+              "title": "Xero"
+            },
+            {
+              "file": "ms_composer_zendesk_reference.adoc",
+              "title": "Zendesk"
+            },
+            {
+              "file": "ms_composer_zuora_reference.adoc",
+              "title": "Zuora"
+            }
+          ]
+        },
+        {
+          "file": "ms_composer_glossary.adoc",
+          "title": "用語集"
+        }
+      ]
+    }
+  ]
+}

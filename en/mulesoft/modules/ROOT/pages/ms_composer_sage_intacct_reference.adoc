@@ -8,10 +8,9 @@ To use the Sage Intacct Connector in Composer, you must first complete the follo
 
 * https://developer.intacct.com/web-services/[Enable Web Services subscription] in the *Subscription* section of Sage Intaact. The *Web Services Subscription* is required for Mulesoft Composer to interact with the Sage Intaact API.
 * https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the *Web Services Authorizations*] section of Sage Intaact. The *Sender ID* identifies Composer to the Sage Intaact API. You must authorize Mulesoft Sender ID for your Sage Intacct instance.
-* Create and assign the permissions required to connect to Sage Intaact. To assure account security, restrict the permissions to only the modules that you need Composer to access. For quote to cash, enable permissions for *Order Entry* module.
-
-
-* If you are using role-based permissions, you must https://developer.intacct.com/api/company-console/roles/[create a new role and provide the required permissions for that role].
+* https://developer.intacct.com/api/company-console/roles/[Create and assign the permissions required] to connect to Sage Intaact. To assure account security, restrict the permissions to only the modules that you need Composer to access. For quote to cash, enable permissions for *Order Entry* module. In Sage Intaact:
+** If you are using role-based permissions, create a new role, assign the required permissions for that role, and then create a Sage Intacct Web Service Account to assign to the role.
+** If you are using subscription-based permissions, create a Web Services Account and assign permissions to the role in the *Subscription* section.
 
 == Connections
 
@@ -33,7 +32,7 @@ The password that you use to log into Sage Intacct.
 
 Entity ID::
 
-The entity to which you want to connect. To connect to the top level of the company, leave this field blank. For more information, see the https://developer.intacct.com/api/company-console/api-sessions/[Sage Intaact documentation].
+The Sage Intaact entity to which you want to connect. To connect at the entity level, please enter the *Entity ID*.To connect to the top level of the organization, leave this field blank. For more information, see the https://developer.intacct.com/api/company-console/api-sessions/[Sage Intaact documentation].
 
 == Triggers
 
@@ -53,7 +52,7 @@ Checks for a new order record.
 
 New or updated order::
 
-Checks for a new or updaded order record.
+Checks for a new or updated order record.
 
 == Actions
 

@@ -156,7 +156,9 @@ Deletes an order line item. Provide a value for *Line Item ID (Record Number)*.
 
 Get Order::
 
-Returns a list of Order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank. Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
+Returns a list of Order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank. 
++
+Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 
 Delete Order::
 

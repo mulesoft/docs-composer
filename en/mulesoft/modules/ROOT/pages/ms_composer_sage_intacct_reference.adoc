@@ -61,7 +61,7 @@ include::_partials/action-definition.adoc[]
 
 Create Attachment::
 
-Creates a new Attachment record. In Sage Intacct, attachments are entities that contain files. An attachment object can be empty or have files. You can add files to an attachment when you create the record or you can add attachments later. Provide a value for the following:
+Creates a new Attachment record. In Sage Intacct, attachments are entities that contain files. An attachment object can be empty or can have files. You can add files to an attachment when you create the record or you can add attachments later. Provide a value for the following:
 * *Attachment Name*
 * *Folder*
 * When adding files to an attachment, use a list as the source of the files, and specify a value in the following fields:

@@ -1,5 +1,3 @@
-
-:product: salesforce
 = Build a Composer Flow
 
 After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow or cloning an existing flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.

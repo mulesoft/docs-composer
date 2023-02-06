@@ -1,10 +1,35 @@
 
+:product: salesforce
 = Build a Composer Flow
 
 After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow or cloning an existing flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
 
 xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
+ifeval::["{product}"=="salesforce"]
+== Flow Details Page 
+
+Access the *Flow Details* page to see details about your flow:
+
+image::images/flow-details-sf.png[*Flow Details* page]
+
+[calloutlist]
+. The name of the flow. 
+. Details about the flow:
+.. *Created On*: The date on which the flow was created. 
+.. *Flow ID*: The ID of the flow. 
+.. *Flow Owner*: The owner of the flow. 
+.. *Last Modified*: The date on which the flow was last modified.  
+.. *Status*: The status or the flow. The status can be either active or inactive.
+. The *Run History* of the flow:
+.. *Start Date*: The date on which the flow started.  
+.. *End Date*: The date on which the flow ended. 
+.. *Status*: The status or the flow. The status can be either _SUCCESS_ or _FAILED_.  
+.. *Error*: If a flow fails, the error message for the failure appears.  
+. The flow actions. You can _delete_, _clone_, or _view_ an active flow.  Note that if the flow is inactive, you can _edit_ the flow.
+. The *Run History* actions. You can refresh the *Run History* section or filter the section by specified criteria. 
+
+endif::[]
 
 == Create a Flow
 

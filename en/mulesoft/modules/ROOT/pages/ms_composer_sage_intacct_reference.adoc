@@ -115,34 +115,37 @@ Creates a new Order record and returns a value for the *Key* field. Provide a va
 * *Transaction Currency*
 * *Base Currency*
 * *Exchange Rate Type*
-* In the *Entries* > *Sotransitem* section, provide a value in the following:
-  ** *Sotransitem List*
+* In the *Entries* > *Sotransitem (Create Line Order Items)* section, provide a value in the following:
+  ** *Sotransitem (Create Line Order Items) List*
   ** *Item ID*
   ** *Quantity*
-  ** *Location ID* 
+  ** *Location ID*
   +
 Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States`, then enter `100` in the *Location ID* field.
 
   ** *Price*
   ** *Unit*
-  ** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*.
+  ** *Warehouse ID*: Provide a value if your order contains inventory type items or a mix of inventory and non-inventory items.
 
 Update Order::
 
 Updates an Order record.
 +
-Note that when updating or reordering line items for an existing order, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intacct UI, the line order changes. To avoid synchronizing the wrong Sage Intacct line order item, you must account for possible order line item changes. Prior to executing the *Update Order* action, identify the current *Line Number* and store it in a custom field within Sage Intacct. To delete a line item from an existing order, use the *Delete Order Line Item* action. +
+Note that when updating or reordering line items for an existing order, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intacct UI, the line order changes.
++
+To avoid synchronizing the wrong Sage Intacct line order item, you must account for possible order line item changes. Prior to executing the *Update Order* action, identify the current *Line Number* and store it in a custom field within Sage Intacct. To delete a line item from an existing order, use the *Delete Order Line Item* action.
++
 Provide a value for the following:
 
-* *Document ID* 
+* *Document ID*
 +
 Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 
-*  In the *Entries* > *Updatesotransitem* section, provide a value for the following:
-** *Sotransitem List*
+*  In the *Entries* > *Updatesotransitem (Update Line Order Items)* section, provide a value for the following:
+** *Sotransitem (Create Line Order Items) List*
 ** *Item ID*
 ** *Quantity*
-** *Location ID* 
+** *Location ID*
 +
 Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States` then enter `100` in the *Location ID* field.
 
@@ -156,7 +159,7 @@ Deletes an order line item. Provide a value for *Line Item ID (Record Number)*.
 
 Get Order::
 
-Returns a list of Order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank. 
+Returns a list of Order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank.
 +
 Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 

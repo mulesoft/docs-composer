@@ -29,6 +29,7 @@
 ** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]
 ** xref:ms_composer_rpa_reference.adoc[MuleSoft RPA]
 ** xref:ms_composer_rest_consumer_reference.adoc[Rest Consumer]
+** xref:ms_composer_sage_intacct_reference.adoc[Sage Intacct]
 ** xref:ms_composer_salesforce_reference.adoc[Salesforce]
 ** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]

@@ -1,0 +1,232 @@
+= Sage Intacct Connector Reference
+
+Sage Intacct is a best-in-class enterprise resource planning solution built to create and automate important financial processes and enable real-time visibility into business performance.
+
+== Prerequisites
+
+To complete the integration of Sage Intacct Connector to Composer, you must first complete the following actions within Sage Intacct:
+
+* https://developer.intacct.com/web-services/[Enable Web Services subscription] in the *Subscription* section of Sage Intacct. The *Web Services Subscription* is required for Composer to interact with the Sage Intacct API.
+* https://developer.intacct.com/web-services/[Add your company’s *Sender ID* to the *Web Services Authorizations*] section of Sage Intacct. The *Sender ID* identifies Composer to the Sage Intacct API. You must authorize the Mulesoft *Sender ID* for your Sage Intacct instance.
+* https://developer.intacct.com/api/company-console/roles/[Create and assign the permissions required] to connect to Sage Intacct. To assure account security, restrict the permissions to only the modules that you need Composer to access. In Sage Intacct:
+** If you are using role-based permissions, create a new role, assign the required permissions for that role, and then create a Sage Intacct Web Service Account to assign to the role.
+** If you are using subscription-based permissions, create a Web Services Account and assign permissions to the role in the *Subscription* section.
++
+Additionally, for quote to cash, enable permissions for the *Order Entry* module.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Company ID::
+
+The customer's company ID. Enter the ID of your Sage Intacct instance. For more information, see the https://developer.intacct.com/web-services/[Sage Intacct documentation].
+
+User ID::
+
+The user ID that you use to log in to Sage Intacct.
+
+User Password::
+
+The password that you use to log in to Sage Intacct.
+
+Entity ID::
+
+The Sage Intacct entity to which you want to connect. To connect at the entity level, enter the *Entity ID*. To connect to the top level of the organization, leave this field blank. For more information, see the https://developer.intacct.com/api/company-console/api-sessions/[Sage Intacct documentation].
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+New Customer::
+
+Checks for a new Customer record.
+
+New or Updated Customer::
+
+Checks for a new or updated Customer record.
+
+New Order::
+
+Checks for a new Order record.
+
+New or Updated Order::
+
+Checks for a new or updated Order record.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create Attachment::
+
+Creates a new Attachment record. In Sage Intacct, attachments are entities that contain files. An attachment object can be empty or can have files. You can add files to an attachment when you create the record or you can add attachments later. Provide a value for the following:
+* *Attachment Name*
+* *Folder*
+* When adding files to an attachment, use a list as the source of the files, and specify a value in the following fields:
+** *File Binary Data*
+** *File Extension*
+** *File Name*
+
+Update Attachment::
+
+Updates an Attachment record. When updating an attachment, you can update the attachment properties or add new files from a list. Provide a value for *Attachment ID*.
+
+Get Attachments::
+
+Returns a list of Attachment records. To filter the list, provide a value for *Attachment ID*, *Attachment Name*, or *Folder Name*. To return the entire list, leave the fields blank.
+
+Create Attachment Folder::
+
+Creates a new folder for attachments. Provide a value for *Name*.
+
+Get Attachment Folders::
+
+Returns a list of attachment folders. To filter the list, provide a value for *Folder Name* to filter. To return the entire list, leave the fields blank.
+
+Create Customer::
+
+Creates a new Customer record. Provide a value for the following:
+
+* *Customer ID*
+* *Primary Contact*
+* *Print As*
+
+Update Customer::
+
+Update a Customer record. Provide a value for *ID*.
+
+Get Customer::
+
+Returns a list of Customer records. To filter the list, provide a value for *Customer ID* or *Customer Name*. To return the entire list, leave the fields blank.
+
+Delete Customer::
+
+Deletes a Customer record. Provide a value for *Customer ID*.
+
+Create Order::
+
+Creates a new Order record and returns a value for the *Key* field. Provide a value for the following:
+
+* *Order Type*
+* *Date Created*
+* *Transaction Currency*
+* *Base Currency*
+* *Exchange Rate Type*
+* In the *Entries* > *Sotransitem* section, provide a value in the following:
+  ** *Sotransitem List*
+  ** *Item ID*
+  ** *Quantity*
+  ** *Location ID* 
+  +
+Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States`, then enter `100` in the *Location ID* field.
+
+  ** *Price*
+  ** *Unit*
+  ** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*.
+
+Update Order::
+
+Updates an Order record.
++
+Note that when updating or reordering line items for an existing order, the line order can change. For example, if you drag a line item from the number two position to the number three position in the Sage Intacct UI, the line order changes. To avoid synchronizing the wrong Sage Intacct line order item, you must account for possible order line item changes. Prior to executing the *Update Order* action, identify the current *Line Number* and store it in a custom field within Sage Intacct. To delete a line item from an existing order, use the *Delete Order Line Item* action. +
+Provide a value for the following:
+
+* *Document ID* 
++
+Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
+
+*  In the *Entries* > *Updatesotransitem* section, provide a value for the following:
+** *Sotransitem List*
+** *Item ID*
+** *Quantity*
+** *Location ID* 
++
+Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States` then enter `100` in the *Location ID* field.
+
+** *Price*
+** *Unit*
+** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*. +
+
+Delete Order Line Item::
+
+Deletes an order line item. Provide a value for *Line Item ID (Record Number)*.
+
+Get Order::
+
+Returns a list of Order records. To filter the list, provide a value for *Order ID*, *Customer ID* or *Document ID*. To return the entire list, leave the fields blank. 
++
+Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
+
+Delete Order::
+
+Deletes an Order record. Provide a value for *Order ID*.
+
+Create Product::
+
+Create a new product record and returns the *Item ID* and *Record Number*. Provide a value for the following:
+* *Item ID*
+* *Name*
+* *Item Type*
+
+Update Product::
+
+Updates a Product record. Provide a value for *Item ID*.
+
+Get Products::
+
+Returns a list of Product records. To filter the list, provide a value for *Item ID*, *Name*, or *Item Type*. To return the entire list, leave the fields blank.
+
+Delete Product::
+
+Deletes a Product record. Provide a value for *Product ID*.
+
+Create Price List::
+
+Creates a new Price List record. Provide a value for the following:
+* *Type*
+* *Price List Name*
+
+Update Price List::
+
+Updates a Price List record. Provide a value for the following:
+* *Type*
+* *Price List Name*
+
+Get Price Lists::
+
+Returns a list of Price List records. To filter the list, provide a value for *Type*. To return the entire list, leave the fields blank.
+
+Delete Price List::
+
+Deletes a Price List record. Provide a value for *Price List ID*.
+
+Create Price List Entry::
+
+Creates a new Price List Entry record for a price list and returns the *Key* value. Provide a value for the following:
+* *Price List ID*
+* *Start Date*
+* *End Date*
+* *Fixed*
+* *Value*
+* *Value Type*
+
+Update Price List Entry::
+
+Updates a Price List Entry record. Provide a value for *Record Number*.
+
+Get Price List Entries::
+
+Returns a list of Price List Entry records. To filter the list, provide a value for *Entry ID*, *Price List ID*, or *Item ID*. To return the entire list, leave the fields blank.
+
+Delete Price List Entry::
+
+Deletes a Price List Entry record. Provide a value for the *Price List Entry ID*.
+
+== Custom Fields
+
+If your Composer flow automation requires custom fields, see the https://developer.intacct.com/customization-services/#custom-fields[Sage Intacct documentation].
+
+include::_partials/see-also.adoc[]

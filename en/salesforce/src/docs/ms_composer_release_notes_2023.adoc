@@ -11,6 +11,10 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer fo
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
+* You can now connect to a new system: Sage Intaact. +
+
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
 * The following enhancements have been made for Microsoft Dynamics 365 Business Central Connector:
 ** The *Create Sales Order* action now enables users to create a list of sales order lines within the sales order object.
 ** The *Update Sales Order* action now enables users to update a list of sales order lines in addition to the sales order object.

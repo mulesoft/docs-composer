@@ -27,17 +27,10 @@ endif::[]
 . The *Run History* of the flow:
 .. *Start Date*: The date on which the flow started.  
 .. *End Date*: The date on which the flow ended. 
-<<<<<<< HEAD
 .. *Status*: The status of the flow. The status can be either `SUCCESS` or `FAILED`.  
 .. *Error*: If a flow fails, the error message for the failure appears.  
-. The flow actions. You can delete, clone, or view an active flow.  Note that if the flow is inactive, you can _edit_ the flow.
-=======
-.. *Status*: The status or flow. The status can be either _SUCCESS_ or _FAILED_.  
-.. *Error*: If a flow fails, the error message for the failure appears.  
-. The flow actions. You can _delete_, _clone_, or _view_ an active flow.  If the flow is inactive, you can _edit_ the flow.
->>>>>>> 9fe2d067de1c66bebd395b27244b88410461f4bb
+. The flow actions. You can delete, clone, or view an active flow.  Note that if the flow is inactive, you can edit the flow.
 . The *Run History* actions. You can refresh the *Run History* section or filter the section by specified criteria. 
-
 
 == Create a Flow
 

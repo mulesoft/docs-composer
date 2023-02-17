@@ -47,6 +47,8 @@ Sends an email. The following fields are required:
 * Subject
 * Body
 
++
+
 To send an email with attachments, the following additional fields are required:
 
 * Attachment content

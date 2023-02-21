@@ -12,6 +12,59 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer fo
 
 //* The *Settings* page is now available for those with the *Composer Administrator* permission set.  On this page, you can view and edit email notification settings.
 
+== February 17, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Gmail Connector, the *On New Email* trigger and the *Send email* action now support attachments.
+* The *Get Attachments* action is now available for Gmail Connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Zendesk Connector, the external ID value is now represented as a string instead of a number as per the Zendesk API. |W-12360287
+|===
+
+== February 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In HTTP Connector, the correct payload is now sent when a top-level array is defined in the API specification endpoint. |W-12373559
+|===
+
+== February 8, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Now, when you open a flow, all steps aside from *If/Else Blocks* and *For Each Loops* are collapsed to provide a navigable outline of the flow. |W-12515426
+|===
+
+== February 7, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Rest Consumer Connector, the correct payload is now sent when a top-level array is defined in the API specification endpoint. |W-12373559
+|===
+
+== February 6, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Sage Intacct. 
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
 == February 3, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

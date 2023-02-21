@@ -123,6 +123,10 @@
               "title": "MuleSoft RPA"
             },
             {
+              "file" : "ms_composer_sage_intacct_reference.adoc",
+              "title": "Sage Intacct"
+            },
+            {
               "file" : "ms_composer_salesforce_reference.adoc",
               "title": "Salesforce"
             },

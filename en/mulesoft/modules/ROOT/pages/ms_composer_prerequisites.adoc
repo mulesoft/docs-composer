@@ -67,6 +67,8 @@ Salesforce certificates expire after one year. To renew an expired certificate, 
 MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
    .. Click *Composer User* or *Composer Administrator*.
+   ... *Composer User* has general acces to Composer funcionality such as building and managing flows. 
+   ... *Composer Administrator* has access to the *Settings* page and can manage email preferences and API Sharing. 
    .. Click *Manage Assignments*, and then *Add Assignments*.
    .. Select the checkbox next to each user who will receive permission to use Composer.
    .. Click *Add*. You can assign or revoke this permission set at any time.
@@ -93,15 +95,17 @@ When the Composer page displays, you're ready to create your first flow. If you'
 
 As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, Composer sends an email to the owner of the flow.
 
-//Note that:
+Note that:
 
-//* A maximum of four consecutive emails are sent for the same error.
-//* The error log for the flow resets every 24 hours.
-//* The error log only runs while the flow runs.
+* A maximum of four consecutive emails are sent for the same error.
+* The error log for the flow resets every 24 hours.
+* The error log only runs while the flow runs.
 
 To enable email notifications:
 
-. In the Composer sidebar, click *Settings* > *Email notifications*.
+. In the Composer *Home* page, click *Settings*. +
+The *Account* page appears. 
+. In the sidebar, click *Email Notifications*.
 . In the *Receive email notifications when flows fail to run* row, toggle the button to enable email notifications.
 
 endif::[]
@@ -285,7 +289,9 @@ The default value for this setting for newly configured identity provider config
 
 == Enable Flow Failure Notifications
 
-As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, Composer sends an email to the owner of the flow. Note that:
+As administrator, you can enable flow failure notifications via email. When enabled, checks run every 15 minutes on running flows. If any flow fails, Composer sends an email to the owner of the flow.
+
+Note that:
 
 * A maximum of four consecutive emails are sent for the same error.
 * The error log for the flow resets every 24 hours.
@@ -293,9 +299,10 @@ As administrator, you can enable flow failure notifications via email. When enab
 
 To enable email notifications:
 
-. In the Composer sidebar, click *Settings* and then click *Email notifications*.
-. Toggle the button to enable email notifications.
-. Click *Save*.
+. In the Composer *Home* page, click *Settings*. +
+The *Account* page appears. 
+. In the sidebar, click *Email Notifications*.
+. In the *Receive email notifications when flows fail to run* row, toggle the button to enable email notifications.
 
 [[connect-composer-to-anypoint-platform]]
 == Connect Composer to Anypoint Platform

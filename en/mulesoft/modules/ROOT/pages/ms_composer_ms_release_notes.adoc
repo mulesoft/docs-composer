@@ -1,5 +1,5 @@
 = MuleSoft Composer Release Notes
-:page-revdate: February 17, 2023
+:page-revdate: February 21, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -17,6 +17,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The *Settings* page is now available for those with the *Composer Administrator* permission set.  On this page, you can view and edit email notification settings.
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Fixed the possible null pointer exception that sometimes occurred when custom fields were not specified. |W-12572592
+|===
+
 == February 17, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -30,6 +38,16 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 |Issue Resolution |ID
 |In Zendesk Connector, the external ID value is now represented as a string instead of a number as per the Zendesk API. |W-12360287
+|===
+
+== February 15, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Tableau Connector, the native libraries were upgraded to address reported security vulnerabilities. |W-11453219
 |===
 
 == February 13, 2023

@@ -6,6 +6,12 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
 
+== February 27, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If a Compposer connector supports a default value for a field, that value now appears and is selected in the Composer UI; however, the user can choose to override the default value.
+
 == February 21, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

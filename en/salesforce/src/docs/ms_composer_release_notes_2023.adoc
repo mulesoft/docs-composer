@@ -10,7 +10,7 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer fo
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* If a Compposer connector supports a default value for a field, that value now appears and is selected in the Composer UI; however, the user can choose to override the default value.
+* If a Composer connector supports a default value for a field, that value now appears and is selected in the Composer UI; however, the user can choose to override the default value.
 
 == February 21, 2023
 

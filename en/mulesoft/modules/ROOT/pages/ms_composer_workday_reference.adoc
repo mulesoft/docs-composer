@@ -8,6 +8,20 @@ Some details of how to work with data in a flow are specific to the data source 
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
++
+To validate and test connectivity, Workday Connector uses a `Performance_Management` service with the `Get_Degrees` operation. You must ensure that your service account has the required permissions to operate on that service:
++
+[%header%autowidth.spread]
+|===
+|Security Policy|Domain/Functional Areas|Permitted Security Groups
+|Set Up: Skills and Experience |Worker Profile and Skills a| * HR Administrator
+* HR System
+* Implementers
+* Job and Position Administrator
+* Learning Management System
+| |Implementation| Implementers
+|Special OX Web Services|Implementation|
+|===
 
 Tenant Name::
 
@@ -22,8 +36,6 @@ The username that you use to log in to Workday.
 Password::
 
 The password that you use to log in to Workday.
-+
-For Composer to successfully authenticate a Workday user account, the Workday user requires full user roles. Composer does not authenticate API User roles.
 
 Host Name::
 

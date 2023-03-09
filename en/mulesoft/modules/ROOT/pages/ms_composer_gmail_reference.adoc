@@ -56,7 +56,7 @@ To send an email with attachments, the following additional fields are required:
 
 Get Attachments::
 
-Retrieves all attachments from an email. The following field is required:
+Retrieves all attachments from an email. Images that are attached to an email using the clip icon are considered attachments, but images that are dragged and dropped into the body of an email are considered embedded images and not attachments. The following field is required:
 
 * Message Id
 

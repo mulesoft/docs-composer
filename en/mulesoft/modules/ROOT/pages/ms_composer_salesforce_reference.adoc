@@ -162,7 +162,7 @@ To set an error from action preference:
 .. *Stop Flow* 
 .. *Continue to next step* 
 .. *Create an error branch*
-.. *Continue to another branch* + 
+.. *Continue to another branch* 
 
 The error from action preference is set. If an error occurs, the selected preference is enacted in the flow.  
 

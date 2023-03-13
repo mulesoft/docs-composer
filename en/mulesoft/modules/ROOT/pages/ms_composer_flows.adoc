@@ -124,13 +124,13 @@ The *Select Flow* dialog box appears.
 . Click *Select flow*. +
 Your files appear. 
 . Navigate to and select the JSON file that you want to upload and then click *Open*. +
-The selected file appears in the *Selet Flow* dialog box. 
+The selected file appears in the *Select Flow* dialog box. 
 . In the *Connect with <Connector Name>* drop down, choose an existing connection or create a new one:
 
 * Click an existing connection to select it.
 * Click *Add new <Connector Name> Connection* to create a new connection and select it. +
 
-. Click *Import Flow*. +
+. Click *Import Flow*. Note that importing a flow will replace the existing flow. +
 The flow is imported and appears on the *<Flow Name>* page. 
 . Click *Save*. +
 The flow is imported. 
@@ -138,7 +138,7 @@ endif::[]
 
 ifeval::["{product}"=="mulesoft"]
 . <<create-a-new-flow,Create a new flow>> or open an existing flow.  +
-The *<Flow Name>* page appear.
+The *<Flow Name>* page appears.
 . Click *View*. +
 The *<Flow Name>* page appears.
 . Click the wrench icon > *Import - Beta*. +
@@ -146,18 +146,17 @@ The *Select Flow* dialog box appears.
 . Click *Select flow*. +
 Your files appear. 
 . Navigate to and select the JSON file that you want to upload and then click *Open*. +
-The selected file appears in the *Selet Flow* dialog box. 
+The selected file appears in the *Select Flow* dialog box. 
 . In the *Connect with <Connector Name>* drop down, choose an existing connection or create a new one:
 
 * Click an existing connection to select it.
 * Click *Add new <Connector Name> Connection* to create a new connection and select it. +
 
-. Click *Import Flow*. +
+. Click *Import Flow*. Note that importing a flow will replace the existing flow. +
 The flow is imported and appears on the *<Flow Name>* page. 
 . Click *Save*. +
 The flow is imported. 
 endif::[]
-
 
 == Refresh a Flow
 

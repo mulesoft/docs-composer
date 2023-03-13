@@ -150,6 +150,23 @@ Download file::
 
 Returns the binary contents of the specified file.
 
+== Set Error from Action Preferences
+
+If an error occurs within your flow, the error details appear on the *Run History* page. The *Run History* page displays the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. Using this information, you can troubleshoot issues within your flow. However, you can proactively set preferences in advance for handling errors that may occur.
+
+To set an error from action preference: 
+
+. Select an action. 
+. In the *If an error occurs section*, select one of the following: 
+
+.. *Stop Flow* 
+.. *Continue to next step* 
+.. *Create an error branch*
+.. *Continue to another branch* 
+
+The error from action preference is set. If an error occurs, the selected preference is enacted in the flow.  
+
+
 == Objects
 
 All standard and custom Salesforce objects are available.

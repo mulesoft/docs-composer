@@ -1,4 +1,3 @@
-:product: salesforce
 = Build a Composer Flow
 
 After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow or cloning an existing flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
@@ -106,7 +105,11 @@ The flow is exported as a JSON file.
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-
+. Open an existing flow.  +
+The *<Flow Name>* page appears.
+. Click *View*. 
+. Click the wrench icon > *Export*. +
+The flow is exported as a JSON file. 
 endif::[]
 
 == Import a Flow 
@@ -134,13 +137,25 @@ The flow is imported.
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-. From the sidebar, click *Flows*.
-. On the *Flows* page, click the name of the flow you want to clone.
-. Click *Clone*.
-+
-Composer copies the existing flow and opens the copy in the Flow Details page. Notice that the flow is named *Copy of _original flow name_*.
-. If you want to rename the flow, click the pencil icon next to *Copy of _original flow name_* and use any of the characters A-Z, a-z, 0-9, space, hyphen ( - ), dot ( . ), and underscore ( _ ).
-. Click *Save*.
+. <<create-a-new-flow,Create a new flow>> or open an existing flow.  +
+The *<Flow Name>* page appear.
+. Click *View*. +
+The *<Flow Name>* page appears.
+. Click the wrench icon > *Import - Beta*. +
+The *Select Flow* dialog box appears. 
+. Click *Select flow*. +
+Your files appear. 
+. Navigate to and select the JSON file that you want to upload and then click *Open*. +
+The selected file appears in the *Selet Flow* dialog box. 
+. In the *Connect with <Connector Name>* drop down, choose an existing connection or create a new one:
+
+* Click an existing connection to select it.
+* Click *Add new <Connector Name> Connection* to create a new connection and select it. +
+
+. Click *Import Flow*. +
+The flow is imported and appears on the *<Flow Name>* page. 
+. Click *Save*. +
+The flow is imported. 
 endif::[]
 
 

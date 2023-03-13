@@ -92,6 +92,72 @@ Composer copies the existing flow and opens the copy in the Flow Details page. N
 . Click *Save*.
 endif::[]
 
+== Export a Flow 
+
+To export a flow as a JSON file: 
+
+ifeval::["{product}"=="salesforce"]
+. Open an existing flow.  +
+The *<Flow Name>* page appears.
+. Click *Edit*. 
+. Click the wrench icon > *Export*. +
+The flow is exported as a JSON file. 
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. Open an existing flow.  +
+The *<Flow Name>* page appears.
+. Click *View*. 
+. Click the wrench icon > *Export*. +
+The flow is exported as a JSON file. 
+endif::[]
+
+== Import a Flow 
+
+To import a flow as JSON file: 
+
+ifeval::["{product}"=="salesforce"]
+. <<create-a-new-flow,Create a new flow>> or open an existing flow.  +
+The *<Flow Name>* page appears.
+. Click the wrench icon > *Import - Beta*. +
+The *Select Flow* dialog box appears. 
+. Click *Select flow*. +
+Your files appear. 
+. Navigate to and select the JSON file that you want to upload and then click *Open*. +
+The selected file appears in the *Select Flow* dialog box. 
+. In the *Connect with <Connector Name>* drop down, choose an existing connection or create a new one:
+
+* Click an existing connection to select it.
+* Click *Add new <Connector Name> Connection* to create a new connection and select it. +
+
+. Click *Import Flow*. Note that importing a flow will replace the existing flow. +
+The flow is imported and appears on the *<Flow Name>* page. 
+. Click *Save*. +
+The flow is imported. 
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. <<create-a-new-flow,Create a new flow>> or open an existing flow.  +
+The *<Flow Name>* page appears.
+. Click *View*. +
+The *<Flow Name>* page appears.
+. Click the wrench icon > *Import - Beta*. +
+The *Select Flow* dialog box appears. 
+. Click *Select flow*. +
+Your files appear. 
+. Navigate to and select the JSON file that you want to upload and then click *Open*. +
+The selected file appears in the *Select Flow* dialog box. 
+. In the *Connect with <Connector Name>* drop down, choose an existing connection or create a new one:
+
+* Click an existing connection to select it.
+* Click *Add new <Connector Name> Connection* to create a new connection and select it. +
+
+. Click *Import Flow*. Note that importing a flow will replace the existing flow. +
+The flow is imported and appears on the *<Flow Name>* page. 
+. Click *Save*. +
+The flow is imported. 
+endif::[]
+
 == Refresh a Flow
 
 When building a flow, you may need to refresh the flow to view updated data at either the object level or the field level.

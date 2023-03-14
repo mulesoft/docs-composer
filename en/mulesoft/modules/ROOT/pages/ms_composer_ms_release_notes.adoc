@@ -11,13 +11,13 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now import a flow as a JSON file by clicking the wrench icon and selecting *Import*. The import flows feature is in open beta.
+* You can now import a flow as a JSON file by clicking the wrench icon and selecting *Import*. The import flows feature is in open beta.
 
 == March 9, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-In Salesforce Connector, the *Run History* page now displays detailed error log information to enable effective troubleshooting. Error logs now include the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. 
+* In Salesforce Connector, the *Run History* page now displays detailed error log information to enable effective troubleshooting. Error logs now include the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. 
 
 == March 2, 2023
 

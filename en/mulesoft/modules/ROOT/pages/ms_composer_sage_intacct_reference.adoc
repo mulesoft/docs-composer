@@ -115,7 +115,7 @@ Creates a new Order record and returns a value for the *Key* field. Provide a va
 * *Transaction Currency*
 * *Base Currency*
 * *Exchange Rate Type*
-* In the *Entries* > *Sotransitem* section, provide a value in the following:
+* In the *Entries* > *Sotransitem (Order line items)* section, provide a value in the following:
   ** *Sotransitem List*
   ** *Item ID*
   ** *Quantity*

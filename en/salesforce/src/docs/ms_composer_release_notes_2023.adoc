@@ -6,17 +6,26 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
 
+== March 14, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Anypoint Platform customers can now share externally available APIs managed in Anypoint Platform with business users for consumption in a MuleSoft Composer for Salesforce flow. This enhancement creates integrations that span beyond out-of-the-box connectors.
+
+* Organizations that use both MuleSoft Composer for Salesforce and Anypoint Platform can now connect the two organizations through Access Management.
+
+
 == March 13, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-You can now import a flow as a JSON file by clicking the wrench icon and selecting *Import*. The import flows feature is in open beta.
+* You can now import a flow as a JSON file by clicking the wrench icon and selecting *Import*. The import flows feature is in open beta.
 
 == March 9, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-In Salesforce Connector, the *Run History* page now displays detailed error log information to enable effective troubleshooting. Error logs now include the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. 
+* In Salesforce Connector, the *Run History* page now displays detailed error log information to enable effective troubleshooting. Error logs now include the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. 
 
 == March 2, 2023
 

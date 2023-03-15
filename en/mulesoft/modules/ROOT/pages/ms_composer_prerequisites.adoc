@@ -1,3 +1,4 @@
+:product: salesforce
 ifeval::["{product}"=="salesforce"]
 = MuleSoft Composer for Salesforce: Getting Started
 endif::[]
@@ -115,8 +116,11 @@ Organizations that use both MuleSoft Composer for Salesforce and Anypoint Platfo
 
 To link MuleSoft Composer for Salesforce to Anypoint Platform:
 
-. In MuleSoft Composer for Salesforce, in the navigation pane, click *Settings* > *Account*. +
-The *Account* page appears.
+. In MuleSoft Composer for Salesforce, in the top of the page, click the gear icon. +
+The *Setup* page appears. 
+
+. In the navigation pane, under *Platform Tools*, select *MuleSoft* > *Services*.  
+The *MuleSoft Services* page appears.
 
 . On the *Account* page, copy the value in the *Organization ID* field.
 

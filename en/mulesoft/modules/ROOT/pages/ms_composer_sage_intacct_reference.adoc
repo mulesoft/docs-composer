@@ -116,7 +116,7 @@ Creates a new Order record and returns a value for the *Key* field. Provide a va
 * *Base Currency*
 * *Exchange Rate Type*
 * In the *Entries* > *Sotransitem (Order line items)* section, provide a value in the following:
-  ** *Sotransitem List*
+  ** *Sotransitem (Order line items) List* 
   ** *Item ID*
   ** *Quantity*
   ** *Location ID* 
@@ -138,8 +138,12 @@ Provide a value for the following:
 +
 Note that the *Document ID* value is the *Key* value returned by the *Create Order* action.
 
-*  In the *Entries* > *Updatesotransitem* section, provide a value for the following:
-** *Sotransitem List*
+*  For line itmes to be added to an order, in the *Entries* > Sotransitem (Order line items)* section, provide a value for the following:
+** *Sotransitem (Order line items) List*
+** *Line Number*
++
+Note that if no value or a null value is provide for this field, the item is created. If a value is provided, the item is skipped. If the datapill mapped to the *Line Number* field is empty for items to be created and has a value for items to be updated, the items containing values are created and the rest of the items are ignored. 
+
 ** *Item ID*
 ** *Quantity*
 ** *Location ID* 
@@ -150,6 +154,21 @@ Note that the *Location ID* field is determined by the numbers preceding the loc
 ** *Unit*
 ** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*. +
 
+*  For line itmes to be updated in an order, in the *Entries* > *Updatesotransitem (Order line items)* section, provide a value for the following:
+** *Updatesotransitem (Order line items) List*
+** *Line Number*
++
+Note that if no value or a null value is provide for this field, the item is updated. If a value is provided, the item is skipped. If the datapill mapped to the *Line Number* field is empty for items to be updated and has a value for items to be created, the items containing values are updated and the rest of the items are ignored. 
+
+** *Item ID*
+** *Quantity*
+** *Location ID* 
++
+Note that the *Location ID* field is determined by the numbers preceding the location description. For example, if the location ID is `100-United States` then enter `100` in the *Location ID* field.
+
+** *Price*
+** *Unit*
+** If your order contains inventory type items or a mix of inventory and non-inventory items, provide a value for *Warehouse ID*. +
 Delete Order Line Item::
 
 Deletes an order line item. Provide a value for *Line Item ID (Record Number)*.

@@ -142,7 +142,7 @@ Note that the *Document ID* value is the *Key* value returned by the *Create Ord
 ** *Sotransitem (Order line items) List*
 ** *Line Number*
 +
-Note that if no value or a null value is provide for this field, the item is created. If a value is provided, the item is skipped. If the datapill mapped to the *Line Number* field is empty for items to be created and has a value for items to be updated, the items containing values are created and the rest of the items are ignored. 
+Note that if no value or a null value is provided for this field, the item is created. If a value is provided, the item is skipped. If the datapill mapped to the *Line Number* field is empty for items to be created and has a value for items to be updated, the items containing values are created and the rest of the items are ignored. 
 
 ** *Item ID*
 ** *Quantity*

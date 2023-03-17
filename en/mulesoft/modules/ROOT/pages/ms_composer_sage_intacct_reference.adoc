@@ -158,7 +158,7 @@ Note that the *Location ID* field is determined by the numbers preceding the loc
 ** *Updatesotransitem (Order line items) List*
 ** *Line Number*
 +
-Note that if no value or a null value is provide for this field, the item is updated. If a value is provided, the item is skipped. If the datapill mapped to the *Line Number* field is empty for items to be updated and has a value for items to be created, the items containing values are updated and the rest of the items are ignored. 
+Note that if no value or a null value is provided for this field, the item is updated. If a value is provided, the item is skipped. If the datapill mapped to the *Line Number* field is empty for items to be updated and has a value for items to be created, the items containing values are updated and the rest of the items are ignored. 
 
 ** *Item ID*
 ** *Quantity*

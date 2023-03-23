@@ -17,6 +17,7 @@
 ** xref:ms_composer_asana_reference.adoc[Asana]
 ** xref:ms_composer_box_reference.adoc[Box]
 ** xref:ms_composer_gmail_reference.adoc[Gmail]
+** xref:ms_composer_google_bigquery_reference.adoc[Google BigQuery]
 ** xref:ms_composer_google_calendar_reference.adoc[Google Calendar]
 ** xref:ms_composer_googlesheets_reference.adoc[Google Sheets]
 ** xref:ms_composer_http_reference.adoc[HTTP]

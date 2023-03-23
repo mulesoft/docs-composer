@@ -2,6 +2,19 @@
 
 The following list displays Known Issues for MuleSoft Composer. The list is sorted by the date in which the issue appeared.
 
+== March 22, 2023
+
+=== Google BigQuery
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|ID
+
+|Input parameter values of String or date data types must be provided between single quotes using the expression editor. | W-12696210
+|===
+
 == August 3, 2022
 
 //include::_partials/rpa-ki.adoc[]

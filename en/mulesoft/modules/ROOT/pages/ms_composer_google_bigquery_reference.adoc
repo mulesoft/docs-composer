@@ -21,11 +21,11 @@ The project ID from Google BigQuery.
 
 Username::
 
-The OAuth username that you use to log into Microsoft Dynamics 365 Business Central.
+The OAuth username that you use to log into Google BigQuery.
 
 Password::
 
-The OAuth password that you use to log into Microsoft Dynamics 365 Business Central.
+The OAuth password that you use to log into Google BigQuery.
 
 == Data Types
 

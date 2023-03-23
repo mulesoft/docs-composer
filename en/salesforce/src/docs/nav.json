@@ -79,6 +79,10 @@
               "title": "Gmail"
             },
             {
+              "file" : "ms_composer_google_bigquery_reference.adoc",
+              "title": "Google BigQuery"
+            },
+            {
               "file" : "ms_composer_google_calendar_reference.adoc",
               "title": "Google Calendar"
             },

@@ -93,8 +93,8 @@ Retrieves a set of rows. Provide a value for *SQL string*.
 
 == Input Parameters
 
-Query statements can include parameter values by adding `:` before the parameter name, for example, `Select field from dataset.table where field = :param1`. You can define a value for the parameter in the *Input Parameters* section, for example, if you define `param1` as `12345`, the query statement is `Select field from dataset.table where field = 12345`.
+Query statements can include parameter values by adding `:` before the parameter name, such as `Select field from dataset.table where field = :param1`. You can define a value for the parameter in the *Input Parameters* section. For example, if you define `param1` as `12345`, the query statement is `Select field from dataset.table where field = 12345`.
 
-You must define a value for the parameter as either a literal string or an output value from previous actions. Note that input parameter values of String or date data types must be provided between single quotes using the expression editor. For literal strings, add the single quotes to the value in the editor, for example, `’12345’`. For an output value from previous actions, select the custom expression option, add the single quotes to the custom expression in the editor, and apply the changes, for example, `’Field From Previous Step’`.
+You must define a value for the parameter as either a literal string or an output value from previous actions. Note that input parameter values of String or date data types must be provided between single quotes using the expression editor. For literal strings, add the single quotes to the value in the editor, such as, `’12345’`. For an output value from previous actions, select the custom expression option, add the single quotes to the custom expression in the editor, and apply the changes, such as, `’Field From Previous Step’`.
 
 include::_partials/see-also.adoc[]

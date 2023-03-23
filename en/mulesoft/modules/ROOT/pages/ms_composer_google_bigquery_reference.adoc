@@ -54,12 +54,9 @@ Returns all new rows of a table based on a watermark every 15 seconds. Provide a
 
 * *Dataset name*
 * *Table name*
-* *New Watermark Column*
-+
-The following column data types are available for this field: 
-+
-* DATE
-* DATETIME
+* *New Watermark Column*: The following column data types are available for this field: 
+** DATE
+** DATETIME
 
 On New or Updated Row Source::
 
@@ -67,17 +64,12 @@ Returns all new or updated rows of a table based on a watermark every 15 seconds
 
 * *Dataset name*
 * *Table name*
-* *New Watermark Column*
-+
-The following column data types are available for this field: 
-+
-* DATE
-* DATETIME
-* *Update Watermark Column*
-+
-The following column data types are available for this field: 
-* DATE
-* DATETIME
+* *New Watermark Column*: The following column data types are available for this field: 
+** DATE
+** DATETIME
+* *Update Watermark Column*: The following column data types are available for this field: 
+** DATE
+** DATETIME
 
 == Actions
 

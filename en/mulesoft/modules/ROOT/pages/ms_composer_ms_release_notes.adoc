@@ -7,6 +7,14 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer] for a list of known issues by date.
 
+== March 23, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Previously, boolean fields that supported expressions rendered as either text fields or as picklists. All boolean fields that support expressions now render as a hybrid field that supports both text fields and picklists. Additionally, if you manually enter `true` or `false` into a text field, the field automatically selects the corresponding dropdown value regardless of letter case. 
+
+* When hovering over data type icons for fields, informational tooltips now appear.
+
 == March 22, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

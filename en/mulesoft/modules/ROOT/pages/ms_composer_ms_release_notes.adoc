@@ -1,11 +1,31 @@
 = MuleSoft Composer Release Notes
-:page-revdate: March 22, 2023
+:page-revdate: March 24, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer] for a list of known issues by date.
+
+== March 24, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In NetSuite Connector, the log on time metadata is now registered to each record. 
+
+* In NetSuite Connector, the metadata for the *File* object is now available for the *Create Actions* record. 
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, the *Get Records* action no longer returns the incorrect record for the *LOT_NUMBERED_ASSEMBLY_ITEM* record type. |W-12473442
+|In NetSuite Connector, the *USER_ERROR: Invalid log in attempt* error no longer occurs.|W-12619973
+|In NetSuite Connector, the *Name* field no longer appears in write operations. |W-12428757
+|In NetSuite Connector, the *Type* dropdown in the *Get Records* action no longer causes a *NETSUITE_SOAP_FAULT* error. |W-12572300
+|The NetSuite Connector no longer fails to parse the *com.sun.xml.internal.stream.events.EndElementEvent* error response. |W-12573323
+|===
 
 == March 23, 2023
 

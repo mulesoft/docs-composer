@@ -1,11 +1,17 @@
 = MuleSoft Composer Release Notes
-:page-revdate: March 24, 2023
+:page-revdate: March 28, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer] for a list of known issues by date.
+
+== March 28, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If a connector update or bug fix may cause interruptions to your flows, you will now receive an email describing these updates and outlining which flows should be stopped and reactivated to avoid flow failures.
 
 == March 24, 2023
 

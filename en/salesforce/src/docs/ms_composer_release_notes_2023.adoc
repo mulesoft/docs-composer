@@ -6,6 +6,12 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
 
+== March 28, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If a connector update or bug fix may cause interruptions to your flows, you will now receive an email describing these updates and outlining which flows should be stopped and reactivated to avoid flow failures.
+
 == March 24, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

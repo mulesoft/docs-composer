@@ -11,7 +11,7 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* If a connector update or bug fix may cause interruptions to your flows, you will now receive an email describing these updates and outlining which flows should be stopped and reactivated to avoid flow failures.
+* If a connector update or bug fix may cause interruptions to your flows, you now receive an email describing these updates and outlining which flows you should stop and reactivate to avoid flow failures.
 
 == March 24, 2023
 

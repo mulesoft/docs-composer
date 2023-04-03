@@ -72,7 +72,7 @@ Creates a public or private channel-based conversation. This action requires a n
 +
 * *Name*: The name of the channel to create.
 * *Is Private*: Determines whether the channel to create is private or public.
-* *Team Id*: The encoded team ID to create the channel in, which is required if the org token is used.
+* *Team Id*: The encoded ID of the team in which to create the channel. This ID is required if the org token is used.
 
 Send direct message to multiple users::
 
@@ -86,12 +86,12 @@ Sends a direct message to a multi-person direct message channel. Provide a value
 * *Icon Url*: The URL to an image to use as the icon for the message.
 * *Link Names*: Find and link user groups. 
 * *Metadata*: JSON object presented as a URL-encoded string.
-* *Mrkdwn*: Disable Slack markup parsing by setting this field to false.
+* *Mrkdwn*: Disable Slack markup parsing by setting this field to `false`.
 * *Parse*: Change how messages are parsed.
 * *Reply broadcast*: Indicates whether the reply is visible to everyone in the channel or conversation. Used in conjunction with *Thread ts*.
 * *Thread ts*: Provide another message’s ts value to make this message a reply. Avoid using a reply’s ts value and use its parent’s ts value instead.
-* *Unfurl links*: Enable unfurling of primarily text-based content by setting this field to true.
-* *Unfurl media*: Enable unfurling of media content by setting this field to true.
+* *Unfurl links*: Enable the unfurling of primarily text-based content by setting this field to `true`.
+* *Unfurl media*: Enable the unfurling of media content by setting this field to `true`.
 * *Username*: Set your bot’s username. 
 
 //Post message to channel::

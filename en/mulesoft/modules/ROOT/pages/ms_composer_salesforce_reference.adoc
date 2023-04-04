@@ -72,7 +72,15 @@ include::_partials/null-values.adoc[]
 
 == Transfer Binary Files
 
-You can transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance. The recommended file size limit per transfer is 25MB and files transferred across systems cannot be truncated.
+You can transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance. 
+
+The following Salesforce objects support binary transfers: 
+
+* `Content` 
+* `Version Document`
+* `Attachment`
+
+The recommended file size limit per transfer is 25MB and files transferred across systems cannot be truncated.
 
 == Triggers
 

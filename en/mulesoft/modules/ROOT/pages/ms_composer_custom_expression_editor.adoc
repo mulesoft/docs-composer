@@ -96,6 +96,15 @@ locale: String |DateTime
 `fromStringToNumber(0.05) = 0.05` |
 NA |text: String |Number
 
+|emptyString | Returns an empty string. +
+
+The emptyString function can be used wherever an empty string is needed, including as an input parameter in other functions. | | | |
+
+
+|substring |Returns a substring that spans from the character at the specified `from` index to the last character before the `until` index. | `substring(Hello Composer, 6, 14) = Composer` |A substring includes one of the following: `text`, `from`, or `until`. | text: String
+from: Number
+until: Number | String
+
 |===
 
 It is important to note that in a `string` field, you can use `number` expressions selected from the operator list; however, the expressions must be enclosed within parentheses. For example, you can enter `abc(9+9)` where the `+` is selected from the operator list. This string renders as `abc18`.

@@ -98,10 +98,10 @@ NA |text: String |Number
 
 |emptyString | Returns an empty string. +
 
-The emptyString function can be used wherever an empty string is needed, including as an input parameter in other functions. | | | |
+The emptyString function can be used wherever an empty string is needed, including as an input parameter in other functions. |`-` |`-` | String|
 
 
-|substring |Returns a substring that spans from the character at the specified `from` index to the last character before the `until` index. | `substring(Hello Composer, 6, 14) = Composer` |A substring includes one of the following: `text`, `from`, or `until`. | text: String
+|substring |Returns a substring that spans from the character at the specified `from` index to the last character before the `until` index. | `substring(Hello Composer, 6, 14) = Composer` |N/A | text: String
 from: Number
 until: Number | String
 

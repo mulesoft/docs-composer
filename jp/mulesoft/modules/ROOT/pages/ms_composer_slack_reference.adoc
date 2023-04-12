@@ -17,15 +17,6 @@ Slack ワークスペース名 (例: `my-workspace.slack.com`​)。
 
 Slack にログインするために使用するユーザ名とパスワード。
 
-== トリガ
-
-include::_partials/trigger-definition.adoc[]
-
-On New Message (新規メッセージ)::
-
-このトリガが起動すると、新規メッセージからの添付ファイルを以降のステップのデータピルとして使用できます。
-
-
 == アクション
 
 include::_partials/action-definition.adoc[]

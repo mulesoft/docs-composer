@@ -18,8 +18,6 @@ Workday テナントの名前または ID。
 User Name (ユーザ名)::
 
 Workday にログインするために使用するユーザ名。
-+
-コンポーザで Workday ユーザアカウントを正常に認証するには、Workday ユーザに完全なユーザロールが必要です。コンポーザでは API ユーザロールが認証されません。
 
 Password (パスワード)::
 
@@ -63,14 +61,14 @@ Update Object (オブジェクトを更新)::
 
 このアクションでは、Workday 財務管理で既存のオブジェクトを更新します。次の項目の値を指定します。
 
-* *Object*​
+* *Object*
 * *Unique ID (一意の ID)*
 
 Get Object::
 
 このアクションでは、Workday 財務管理で既存のオブジェクトを返します。次の項目の値を指定します。
 
-* *Object*​
+* *Object*
 * *ID*
 
 == Object Types (オブジェクト種別)
@@ -78,7 +76,7 @@ Get Object::
 次のオブジェクト種別が使用できます。
 
 * トリガ
-    ** JOB_REQUISITIONS​
+    ** JOB_REQUISITIONS
     ** WORKER
 
 * アクション
@@ -86,9 +84,9 @@ Get Object::
     ** CONTRACT
     ** CUSTOMER
     ** INVOICE
-    ** JOB_REQUISITIONS​
+    ** JOB_REQUISITIONS
     ** PROJECT
-    ** SALES_ITEM​
+    ** SALES_ITEM
     ** WORKER
 
 include::_partials/see-also.adoc[]

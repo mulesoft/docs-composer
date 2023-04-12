@@ -26,7 +26,7 @@ Salesforce では、各ユーザが一度に 5 件までの接続アプリケー
 
 この問題を回避するために、可能であれば、ユーザおよび Salesforce 組織ごとに 1 件の接続のみを作成するようにしてください。
 
-Salesforce 接続アプリケーションと認証についての詳細は、&#8203;https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm を参照してください。
+Salesforce 接続アプリケーションと認証についての詳細は、 https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm を参照してください。
 
 === IP 制限の緩和
 
@@ -67,6 +67,10 @@ Salesforce の Sandbox 組織および本番組織に接続できます。
 Sandbox 接続を使用するすべてのトリガおよびアクションで、忘れずに接続を Sandbox から本番に変更してください。
 
 include::_partials/null-values.adoc[]
+
+== バイナリファイルの転送
+
+コンポーザフロー内からデータピルを使用して、項目入力としてバイナリファイルを転送できます。たとえば、Salesforce インスタンス間でファイルの同期を維持する場合、あるインスタンスからバイナリファイルコンテンツをダウンロードし、後でその同じファイルコンテンツを別のインスタンスにアップロードできます。転送あたりの推奨ファイルサイズ制限は 25MB で、システム間で転送されるファイルは切り捨てられません。
 
 == トリガ
 
@@ -125,7 +129,7 @@ image::images/query-builder.png[クエリビルダー UI、500]
 
 *Get Records*​ がフローのステップであり、項目レベルの暗号化が有効で暗号化された項目での絞り込みを行おうとしている場合は、次の文字列操作のみがサポートされます: `equals`​、​`not equals`​、または空。項目レベルの暗号化では ​`contains`​、​`starts with`​、または ​`ends with`​ はサポートされません。
 
-項目レベルの暗号化についての詳細は、&#8203;https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce のドキュメント]を参照してください。
+項目レベルの暗号化についての詳細は、 https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce ドキュメント]​を参照してください。
 
 Create or update record::
 
@@ -135,6 +139,14 @@ Create or update record::
 Delete record::
 
 そのオブジェクト種別とレコード ID で指定されたレコードを削除します。
+
+ファイルのアップロード::
+
+Salesforce のフォルダにファイルを追加します。
+
+Download file::
+
+指定されたファイルのバイナリコンテンツを返します。
 
 == オブジェクト
 

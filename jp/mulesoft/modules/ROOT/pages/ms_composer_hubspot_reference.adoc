@@ -17,6 +17,23 @@ Bearer token (ベアラートークン)::
 
 HubSpot アカウントアクセストークン。
 
+== トリガ
+
+各フローは、フローが開始される頻度の期間を指定するスケジューラ、または「each time a new record is created (新規レコードが作成されるたび)」などの定義したトリガで開始されます。 トリガには、システム内のデータに関連する複数のオプションがあります。
+
+トリガは 15 秒ごとに実行されます。
+//different from the partial - written out here
+
+このシステムでは、次のトリガオプションが提供されます。
+
+On New Records::
+
+新しい会社または取引先責任者レコードが作成されたときにトリガされます。
+
+On New or Updated Record::
+
+新しい会社または取引先責任者レコードが作成または更新されたときにトリガされます。 
+
 == アクション
 
 include::_partials/action-definition.adoc[]

@@ -1,0 +1,115 @@
+= Snowflake Connector リファレンス
+
+Snowflake は、Software as a Service (SaaS) ビジネスモデルで動作する、完全に管理されたクラウドベースのデータウェアハウスソリューションです。これにより、クライアントはオンプレミスソリューションを必要とせずにデータを保存し、分析を実行できます。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+Connection Name (接続名)::
+
+この接続の詳細を把握するのに役立つ接続名を入力します。
+1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。そのため、この接続を他の接続と簡単に区別できる名前を付けると役立ちます。
++
+接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+
+ユーザ名とパスワード::
+
+Snowflake にログインするために使用したユーザ名とパスワード。
+
+Account Name (アカウント名)::
+
+Snowflake アカウントの登録時に指定されたアカウント名。
+
+Warehouse (ウェアハウス)::
+
+使用する Snowflake ウェアハウスの名前。
+
+Database (データベース)::
+
+接続する Snowflake データベース。
+
+Schema (スキーマ)::
+
+使用する Snowflake データベーススキーマ。
+
+== データ型
+
+Snowflake Connector では、次のデータ型がサポートされています。
+
+* INT
+* NUMBER
+* DECIMAL
+* BIGINT
+* TINYINT
+* NUMERIC
+* INTEGER
+* BYTEINT
+* FLOAT
+* FLOAT4
+* FLOAT8
+* DOUBLE
+* REAL
+* VARCHAR
+* CHAR
+* CHARACTER
+* STRING
+* TEXT
+* BOOLEAN
+* DATE
+* DATETIME
+* TIMESTAMP
+* TIMESTAMP_NTZ
+
+== Triggered (トリガ)
+
+include::_partials/trigger-definition.adoc[]
+
+On New Row::
+
+15 秒ごとにウォーターマークに基づいてテーブルのすべての新しい行を返します。次の項目の値を指定します。
+
+* *Table (テーブル)*
+* *Created date column (作成日列)*​: この項目では、次の列のデータ型を使用できます。
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
+
+On New or Updated Row::
+
+15 秒ごとにウォーターマークに基づいてテーブルのすべての新しい行または更新された行を返します。次の項目の値を指定します。
+
+* *Table (テーブル)*
+* *Created date column (作成日列)*​: この項目では、次の列のデータ型を使用できます。
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
+* *Last modified date column (最終更新日列)*​: この項目では、次の列のデータ型を使用できます。
+** DATE
+** DATETIME
+** TIMESTAMP
+** TIMESTAMP_NTZ
+
+== Actions (アクション)
+
+include::_partials/action-definition.adoc[]
+
+Insert Rows::
+
+1 つ以上の行をテーブルに挿入してテーブルを更新します。​*[Query (クエリ)]*​ の値を指定します。
+
+Update Rows::
+
+行のセットを更新します。​*[Query (クエリ)]*​ の値を指定します。
+
+Delete Rows::
+
+行のセットを削除します。​*[Query (クエリ)]*​ の値を指定します。
+
+Select Rows::
+
+行のセットを取得します。​*[Query (クエリ)]*​ の値を指定します。
+
+include::_partials/see-also.adoc[]

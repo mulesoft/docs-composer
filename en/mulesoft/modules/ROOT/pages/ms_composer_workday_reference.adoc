@@ -43,6 +43,8 @@ The host name of your Workday instance. For example, `wd2-impl-services1.workday
 
 == Triggers
 
+include::_partials/trigger-definition.adoc[]
+
 New or updated object::
 
 This trigger checks for a new or updated object in Workday Financial Management. A value is required in the following field: *Object*.

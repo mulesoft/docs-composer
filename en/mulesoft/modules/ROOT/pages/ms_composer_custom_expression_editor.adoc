@@ -98,7 +98,7 @@ NA |text: String |Number
 
 |emptyString | Returns an empty string. +
 
-The emptyString function can be used wherever an empty string is needed, including as an input parameter in other functions. |`-` |`-` | String|
+You can use the emptyString function wherever an empty string is needed, including as an input parameter in other functions. |`-` |`-` | String|
 
 
 |substring |Returns a substring that spans from the character at the specified `from` index to the last character before the `until` index. | `substring(Hello Composer, 6, 14) = Composer` |N/A | text: String

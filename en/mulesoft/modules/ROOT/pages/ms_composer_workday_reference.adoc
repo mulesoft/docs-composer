@@ -40,6 +40,12 @@ The password that you use to log in to Workday.
 Host Name::
 
 The host name of your Workday instance. For example, `wd2-impl-services1.workday.com`.
++
+To find your host name:
+
+. Log into Workday via the web interface.
+. Go to *Public Web Service*.
+. Click on *...* and select *Web Service > View WSDL*. Check `soapbind:address` to ensure you are using the correct host name, for example, `<soapbind:address location=”https://hostname/ccx/.... />`. The tenant name is displayed in the upper bar.
 
 == Triggers
 

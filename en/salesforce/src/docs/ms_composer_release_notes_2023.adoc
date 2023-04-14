@@ -14,6 +14,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** `emptyString`
 ** `substring`
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In QuickBooks Online Connector, an exception with an unknown description no longer occurs when custom fields are not specified. |W-12724854
+|===
+
 == April 11, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

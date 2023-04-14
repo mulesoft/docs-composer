@@ -41,13 +41,13 @@ Host Name::
 
 The host name of your Workday instance. For example, `wd2-impl-services1.workday.com`.
 
-To find your host name:
+* To find your host name:
 
 . Log into Workday via the web interface.
 . In the search box, type `Public Web Service` and then select *Public Web Service* from the search results.
 . Click on *...* and select *Web Service > View WSDL*. Check `soapbind:address` to ensure you are using the correct host name, for example, `<soapbind:address location=”https://hostname/ccx/.... />`. 
 
-To obtain the tenant name from the sandbox:
+* To obtain the tenant name from the sandbox:
 
 . View the upper left corner of the page, in which the tenant details are displayed in the format `Sandbox Type - Tenant Name`.
 

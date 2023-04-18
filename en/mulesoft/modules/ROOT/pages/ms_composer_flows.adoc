@@ -4,6 +4,7 @@ After you collect the information described in xref:ms_composer_checklist.adoc[t
 
 xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
+[[flow-details-page]]
 == Flow Details Page 
 
 Access the *Flow Details* page to see details about your flow:
@@ -497,9 +498,10 @@ To designate how Composer handles errors encountered in your flow:
 
 You can now watch a step or configure Composer to handle errors. 
 
+[[watch-a-step]]
 === Watch a Step 
 
-You can watch specific steps for errors in connection or logic. If an error occurs, the flow stops processing steps in this section. You can add one or more steps in this section.
+You can watch specific steps for errors in connection or logic. If an error occurs, the flow stops processing steps in this section. You can add one or more steps in  this section.
 
 To watch a step: 
 
@@ -510,5 +512,41 @@ The selected action appears in the *Watch* section. If an error occurs, the flow
 
 
 === Configure Composer to Handle Errors 
+
+You can configure Composer to handle errors encountered in the *Watch* section. If an error occurs in a watched action, the *On Error* begins processing the flow based on your configuration.  You can add one or more steps to run in the *On Error* section. 
+
+To add steps to the *On Error* section of your flow: 
+
+==== Before You Begin 
+
+* By default, the *On Error* section allows for one condition to be met; however, you can add as many conditions as you want in this section. 
+* When adding a new condition, the *On Error* condition field value is set to `None` by default.  Leaving this value set to `None` processes any errors that may occur in the *Watch* section and processes all steps inside this *On Error* section. 
+* When a condition is met in the *On Error* section, the Error Handler processes the conditions in sequential order and fulfills the first condition met. After the first condition is met, any subsequent steps are skipped. If you want the process to continue, you can add an additional *On Error* section inside your existing *On Error* section (i.e., nest) and set the condition to run. 
+* When xref:ms_composer_test_flow.adoc[testing your flow], any errors caught by the Error Handler appear in the right pane of the action card. Successful steps are marked with a green check and failed steps will be marked with a red x. 
+* When an error occurs in a watched action, the error information is saved as a data pill that can then be used for subsequent notification or record-updating actions. For example, if an error occurs, the error information is saved as a data pill. You can then create an action to send an email to your team containing error information for anything that fails in the Error Handler.
+
+==== Steps 
+
+. <<watch-a-step,Select a step to watch>>.
+. In the *Error Handler* card, in the *On Error* section: 
+.. In the *Conditions to run this branch* drop-down, select one of the following conditions and then enter the requested criteria: 
+... `AND`: All conditions must be met.
+... `OR`: Any conditions can be met.
+... `None`: No conditions must be met and all errors are returned.
+... `Custom Logic`: <<use-custom-logic,Customize logic>> to designate how conditions will be met. 
+.. In the *After Running* drop-down, select: 
+... *Stop*: After processing all steps in the *On Error* section, errors are flagged and the flow stops. the *Status* field of the flow is marked as `FAILED` on the <<flow-history-page,*Run History*>> page.  
+... *Continue*: After processing all steps in the *On Error* section, errors are dismissed and the flow continues. If no other errors occur, the *Status* field of the flow is marked as `SUCCESS` on the <<flow-history-page,*Run History*>> page.  
+. If you want to add additional conditions to this *On Error* section, click *Add Condition*. 
+. If you want to look for a specific error condition and designate how it is handled within your existing *On Error* section, click *Add On Error* to add a new branch with steps. When adding a branch to the *On Error* section, in the *After Running* section, select: 
+.. *Continue*:  Processes *On Error* steps and then continues on the next step within the parent step, 
+.. *Propagate*:  Processes *On Error* steps and then pushes the error to the parent Error Handler section. The child step then stops processing and returns to the parent step. 
+. Optionally, in the *On Error* section, click the plus button to add additional steps to handle an error: 
+.. In the *Next Step* window, select *System Action*. 
+.. Select an action to be completed when an error occurs. For example, you can add an action that will send a notification email with the Record ID and error information to your team or you can update the source record with error information. 
+.. Configure the action. 
+. Save the flow. 
+. xref:ms_composer_test_flow.adoc[Test the flow].
+. xref:ms_composer_activation.adoc[Activate the flow].
 
 include::_partials/see-also.adoc[]

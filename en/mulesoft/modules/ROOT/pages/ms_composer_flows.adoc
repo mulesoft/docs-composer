@@ -459,7 +459,7 @@ When using custom logic, all conditions defined must be referenced in the expres
  Using custom logic, you can have up to 20 conditions and a condition can be referenced more than once.
 
 [[create-and-test-a-for-each-loop]]
-=== Create a For Each Loop
+== Create a For Each Loop
 
 To create a For Each Loop:
 
@@ -471,5 +471,44 @@ To create a For Each Loop:
 . After you complete the action, click *Save*.
 
 You can add logic and actions in different patterns, depending on what your flow needs to do.
+
+== Designate Error Handling 
+
+When executing a flow, you can configure additional actions or steps to occur in the event of an error. 
+
+[[access-error-handling]]
+=== Access Error Handling 
+
+Review your flow and determine to which steps you want to add an Error Handler. These steps could be steps in which, when they fail,  you want additional actions to occur or to send notifications. 
+
+To designate how Composer handles errors encountered in your flow:
+
+. <<create-a-new-flow,Create a new flow>> or open an existing flow.
+. If you create a new flow:
+.. Select the connector or system to start your flow.
+.. Select and configure a trigger. 
+.. Select and configure an action.
+.. Directly before the step to which you want to add an Error Handler, click the plus button. 
+.. In the *What Should Start This Flow?* window, click *Error Handler (Beta)*.
+. If you add a step to an existing flow:
+.. Open your flow.
+.. Directly before the step to which you want to add an Error Handler, click the plus button. 
+.. In the *Next Step* window, click *Error Handler (Beta)*. +
+
+You can now watch a step or configure Composer to handle errors. 
+
+=== Watch a Step 
+
+You can watch specific steps for errors in connection or logic. If an error occurs, the flow stops processing steps in this section. You can add one or more steps in this section.
+
+To watch a step: 
+
+. <<access-error-handling,Access the Error Handler in your flow>>.
+.  In the *Error Handler* card, in the *Watch* section, click the plus sign and select the action in your flow that you want to watch or drag the step that you want to watch into the *Watch* section. +
+The selected action appears in the *Watch* section. If an error occurs, the flow moves to the actions selected in the *On Error* section.
+. To add additional actions to watch, repeat the previous step.
+
+
+=== Configure Composer to Handle Errors 
 
 include::_partials/see-also.adoc[]

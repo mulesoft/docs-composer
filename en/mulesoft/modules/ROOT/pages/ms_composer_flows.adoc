@@ -536,7 +536,7 @@ To add steps to the *On Error* section of your flow:
 . If you want to look for a specific error condition and designate how it is handled within your existing *On Error* section, click *Add On Error* to add a new branch with steps. When adding a branch to the *On Error* section, in the *After Running* section, select: 
 .. *Continue*:  Processes *On Error* steps and then continues on the next step within the parent step. 
 .. *Propagate*:  Processes *On Error* steps and then pushes the error to the parent Error Handler section. The child step then stops processing and the Error Handler process returns to the parent step. 
-. Optionally, in the *On Error* section, click the plus button to add additional steps to handle an error: 
+. Optionally, in the *On Error* section, click the plus button to add steps to handle an error: 
 .. In the *Next Step* window, select *System Action*. 
 .. Select an action to be completed when an error occurs. For example, you can add an action that will send a notification email with the *Record ID* and error information to your team or you can update the source record with error information. 
 .. Configure the action. 

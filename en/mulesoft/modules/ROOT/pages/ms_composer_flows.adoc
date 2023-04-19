@@ -4,6 +4,7 @@ After you collect the information described in xref:ms_composer_checklist.adoc[t
 
 xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
+[[flow-details-page]]
 == Flow Details Page 
 
 Access the *Flow Details* page to see details about your flow:
@@ -27,9 +28,9 @@ endif::[]
 . The *Run History* of the flow:
 .. *Start Date*: The date on which the flow started in the time zone set in your browser.
 .. *End Date*: The date on which the flow ended in the time zone set in your browser.
-.. *Status*: The status of the flow. The status can be either `SUCCESS` or `FAILED`.  
-.. *Error*: If a flow fails, the error message for the failure appears.  
-. The flow actions. You can delete, clone, or view an active flow.  Note that if the flow is inactive, you can edit the flow.
+.. *Status*: The status of the flow. The status can be either `SUCCESS` or `FAILED`. 
+.. *Error*: If a flow fails, the error message for the failure appears. 
+. The flow actions. You can delete, clone, or view an active flow. Note that if the flow is inactive, you can edit the flow.
 . The *Run History* actions. You can refresh the *Run History* section or filter the section by specified criteria. 
 
 == Create a Flow
@@ -97,7 +98,7 @@ endif::[]
 To export a flow as a JSON file: 
 
 ifeval::["{product}"=="salesforce"]
-. Open an existing flow.  +
+. Open an existing flow. +
 The *<Flow Name>* page appears.
 . Click *Edit*. 
 . Click the wrench icon > *Export*. +
@@ -105,7 +106,7 @@ The flow is exported as a JSON file.
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-. Open an existing flow.  +
+. Open an existing flow. +
 The *<Flow Name>* page appears.
 . Click *View*. 
 . Click the wrench icon > *Export*. +
@@ -117,7 +118,7 @@ endif::[]
 To import a flow as JSON file: 
 
 ifeval::["{product}"=="salesforce"]
-. <<create-a-new-flow,Create a new flow>> or open an existing flow.  +
+. <<create-a-new-flow,Create a new flow>> or open an existing flow. +
 The *<Flow Name>* page appears.
 . Click the wrench icon > *Import - Beta*. +
 The *Select Flow* dialog box appears. 
@@ -137,7 +138,7 @@ The flow is imported.
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-. <<create-a-new-flow,Create a new flow>> or open an existing flow.  +
+. <<create-a-new-flow,Create a new flow>> or open an existing flow. +
 The *<Flow Name>* page appears.
 . Click *View*. +
 The *<Flow Name>* page appears.
@@ -374,7 +375,7 @@ To map source data fields to target fields:
 . From the *Composer Flows* tab, open a flow and click *Edit*.
 . In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the drop-down menu. +
 The *Picklist Mapping* window appears.
-. In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to  map to the value in the *Target* field, and then click *Next*.
+. In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to map to the value in the *Target* field, and then click *Next*.
 . In the *Global Picklist Selection* section, create a new picklist or choose an existing picklist.
 
 === Create a new picklist
@@ -417,7 +418,7 @@ You can create an If/Else block to set conditions and execute actions only when 
 
 Branches are logic-based steps that run vertically in a flow. You can add multiple steps inside each branch. Each branch is then executed in sequential order.
 
-When adding decision steps, the values in the *Field* list are populated based on values selected when you designate the previous steps of your flow. After the *Field* value is selected, all compatible value options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and the list is populated based on the values you selected when defining the trigger. In the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
+When adding decision steps, the values in the *Field* list are populated based on values selected when you specify the previous steps of your flow. After the *Field* value is selected, all compatible value options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and the list is populated based on the values you selected when defining the trigger. In the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
 
 For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
 
@@ -429,7 +430,7 @@ The following operators are supported when building conditions in an If/Else blo
 |Function | Supported Data Type | Value Required? | Notes
 |Equals/Does not equal | All | Yes |The value in this field is case-sensitive for strings.
 |Contains/Does not contain | Array, String | Yes | None
-|Greater than/Less than |  Date, Number | Yes | In the *Date* field, the *Greater than* value is equal to a later date and the *Less than* value is equal to an earlier date.
+|Greater than/Less than | Date, Number | Yes | In the *Date* field, the *Greater than* value is equal to a later date and the *Less than* value is equal to an earlier date.
 |Greater than or equal/Less than or equal | Date, Number | Yes | In the *Date* field, the *Greater than or equal* value is equal to a later date or the current date and the *Less than or equal* value is equal to an earlier date or the current date.
 |Is empty/Is not empty |Array, String, Object | No | None
 |Starts with/Ends with | String | Yes | A string value for this field is required.
@@ -452,14 +453,14 @@ To create an If/Else block:
 [[use-custom-logic]]
 == Use Custom Logic
 
-Custom logic uses the row number for each condition in the If statement block of an If/Else statement and `OR`, `AND`, and `NOT` to create complex expressions.  When you select the custom logic option, each condition is assigned a number and you can then use that number to customize the order of operations for the conditions.
+Custom logic uses the row number for each condition in the If statement block of an If/Else statement and `OR`, `AND`, and `NOT` to create complex expressions. When you select the custom logic option, each condition is assigned a number and you can then use that number to customize the order of operations for the conditions.
 
 When using custom logic, all conditions defined must be referenced in the expression for the expression to be validated. For example, if there are three defined conditions and you enter “1 and (2 or 1)”, the expression is invalid because “3” is not referenced.
 
  Using custom logic, you can have up to 20 conditions and a condition can be referenced more than once.
 
 [[create-and-test-a-for-each-loop]]
-=== Create a For Each Loop
+== Create a For Each Loop
 
 To create a For Each Loop:
 
@@ -471,5 +472,77 @@ To create a For Each Loop:
 . After you complete the action, click *Save*.
 
 You can add logic and actions in different patterns, depending on what your flow needs to do.
+
+== Configure Error Handling 
+
+When executing a flow, you can watch for connection or logic errors in specific steps of your flow and then specify logic to handle the errors. You can also configure steps to complete additional actions or to send notifications if an error occurs.  
+
+[[access-error-handling]]
+=== Access Error Handling 
+
+To access the error handler:
+
+. <<create-a-new-flow,Create a new flow>> or open an existing flow.
+.. If you create a new flow:
+... Select the connector or system to start your flow.
+... Select and configure a trigger. 
+... Select and configure an action.
+... Directly before the step to which you want to add an error handler, click the plus button. 
+... In the *What Should Start This Flow?* window, click *Error Handler (Beta)*.
+.. If you add a step to an existing flow:
+... Open your flow.
+... Directly before the step to which you want to add an error handler, click the plus button. 
+... In the *Next Step* window, click *Error Handler (Beta)*. 
+
+[[watch-a-step]]
+=== Watch a Step 
+
+You can watch specific steps for connection or logic errors. If an error occurs, the flow stops normal processing and begins processing the steps in the error handler. You can add one or more steps to watch in this section.
+
+To watch a step: 
+
+. <<access-error-handling,Access the error handler in your flow>>.
+. In the *Error Handler* card, in the *Watch* section, click the plus sign and select the action to watch or drag the step to watch into the *Watch* section. +
+The selected action appears in the *Watch* section. If an error occurs, the flow moves to the actions selected in the *On Error* section.
+. To add additional actions to watch, repeat the previous step.
+
+=== Configure Composer to Handle Errors 
+
+You can configure Composer to handle errors encountered in the *Watch* section. If an error occurs in a watched action, the *On Error* section begins processing the flow based on your configuration. You can add one or more steps to run in the *On Error* section. 
+
+==== Error Handling Behavior
+
+* By default, the *On Error* section allows for one condition to be met; however, you can add as many conditions as you want in this section. 
+* When adding a new condition, the *On Error* condition field value is set to `None` by default. Leaving this value set to `None` returns any errors that may occur in the *Watch* section and processes all steps inside this *On Error* section. 
+* When a condition is met in the *On Error* section, the error handler processes the conditions in sequential order and stops once the first condition is met. After the first condition is met, any subsequent steps are skipped. If you want the process to continue, you can add an additional *On Error* section branch inside your existing *On Error* section.
+* When xref:ms_composer_test_flow.adoc[testing your flow], any errors caught by the error handler appear in the right pane of the action card. Successful steps are marked with a green check and failed steps are marked with a red X. 
+* When an error occurs in a watched action, the error information is saved as a data pill that can then be used for subsequent notification or record-updating actions. For example, if an error occurs, you can specify an action to send an email to your team containing the error information from the data pill.
+
+==== Add Steps to the On Error Section 
+
+To add steps to the *On Error* section of your flow: 
+
+. <<watch-a-step,Select a step to watch>>.
+. In the *Error Handler* card, in the *On Error* section: 
+.. In the *Conditions to run this branch* drop-down, select one of the following conditions and then enter the requested criteria: 
+*** `AND`: Meets all conditions.
+*** `OR`: Meets any conditions.
+*** `None`: Returns all errors without meeting any conditions.
+*** `Custom Logic`: Specify <<use-custom-logic,custom logic>> to meet conditions. 
+.. In the *After Running* drop-down, select: 
+*** *Stop*: After processing all steps in the *On Error* section, Composer flags errors and stops the flow. On the <<flow-details-page,*Run History*>> page, the _Status_ field of the flow shows `FAILED`. 
+*** *Continue*: After processing all steps in the *On Error* section, Composer dismisses errors and the flow continues. If no other errors occur, on the <<flow-details-page,*Run History*>> page, the _Status_ field of the flow shows `SUCCESS`.
+. If you want to add additional conditions to this *On Error* section, click *Add Condition*. 
+. If you want to look for a specific error condition and specify how it is handled within your existing *On Error* section, click *Add On Error* to add a new branch with steps. +
+When adding a branch to the *On Error* section, in the *After Running* section, select: 
+** *Continue*: Processes *On Error* steps and then continues to the next step within the parent step. 
+** *Propagate*: Processes *On Error* steps and then pushes the error to the parent error handler section. The child step then stops processing and the error handler process returns to the parent step. 
+. Optionally, in the *On Error* section, click the plus button to add steps to handle an error: 
+.. In the *Next Step* window, select *System Action*. 
+.. Select an action to complete when an error occurs. For example, add an action to send a notification email with the *Record ID* and error information to your team or update the source record with error information. 
+.. Configure the action. 
+. Save the flow. 
+. xref:ms_composer_test_flow.adoc[Test the flow].
+. xref:ms_composer_activation.adoc[Activate the flow].
 
 include::_partials/see-also.adoc[]

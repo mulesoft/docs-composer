@@ -502,7 +502,7 @@ You can watch specific steps for errors in connection or logic. If an error occu
 To watch a step: 
 
 . <<access-error-handling,Access the Error Handler in your flow>>.
-.  In the *Error Handler* card, in the *Watch* section, click the plus sign and select the action in your flow that you want to watch or drag the step that you want to watch into the *Watch* section. +
+. In the *Error Handler* card, in the *Watch* section, click the plus sign and select the action to watch or drag the step to watch into the *Watch* section. +
 The selected action appears in the *Watch* section. If an error occurs, the flow moves to the actions selected in the *On Error* section.
 . To add additional actions to watch, repeat the previous step.
 

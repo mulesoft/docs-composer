@@ -534,7 +534,7 @@ To add steps to the *On Error* section of your flow:
 ... *Continue*: After processing all steps in the *On Error* section, errors are dismissed and the flow continues. If no other errors occur, the *Status* field of the flow is marked as `SUCCESS` on the <<flow-details-page,*Run History*>> page.  
 . If you want to add additional conditions to this *On Error* section, click *Add Condition*. 
 . If you want to look for a specific error condition and designate how it is handled within your existing *On Error* section, click *Add On Error* to add a new branch with steps. When adding a branch to the *On Error* section, in the *After Running* section, select: 
-.. *Continue*:  Processes *On Error* steps and then continues on the next step within the parent step. 
+.. *Continue*: Processes *On Error* steps and then continues to the next step within the parent step. 
 .. *Propagate*:  Processes *On Error* steps and then pushes the error to the parent Error Handler section. The child step then stops processing and the Error Handler process returns to the parent step. 
 . Optionally, in the *On Error* section, click the plus button to add steps to handle an error: 
 .. In the *Next Step* window, select *System Action*. 

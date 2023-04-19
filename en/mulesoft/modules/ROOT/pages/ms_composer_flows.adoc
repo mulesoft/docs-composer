@@ -518,7 +518,7 @@ You can configure Composer to handle errors encountered in the *Watch* section. 
 * When xref:ms_composer_test_flow.adoc[testing your flow], any errors caught by the error handler appear in the right pane of the action card. Successful steps are marked with a green check and failed steps are marked with a red X. 
 * When an error occurs in a watched action, the error information is saved as a data pill that can then be used for subsequent notification or record-updating actions. For example, if an error occurs, you can specify an action to send an email to your team containing the error information from the data pill.
 
-==== Steps 
+==== Add Steps to the On Error Section 
 
 To add steps to the *On Error* section of your flow: 
 

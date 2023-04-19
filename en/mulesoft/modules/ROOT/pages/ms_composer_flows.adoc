@@ -538,7 +538,7 @@ To add steps to the *On Error* section of your flow:
 .. *Propagate*:  Processes *On Error* steps and then pushes the error to the parent Error Handler section. The child step then stops processing and the Error Handler process returns to the parent step. 
 . Optionally, in the *On Error* section, click the plus button to add steps to handle an error: 
 .. In the *Next Step* window, select *System Action*. 
-.. Select an action to be completed when an error occurs. For example, you can add an action that will send a notification email with the *Record ID* and error information to your team or you can update the source record with error information. 
+.. Select an action to complete when an error occurs. For example, add an action to send a notification email with the *Record ID* and error information to your team or update the source record with error information. 
 .. Configure the action. 
 . Save the flow. 
 . xref:ms_composer_test_flow.adoc[Test the flow].

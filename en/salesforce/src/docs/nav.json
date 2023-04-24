@@ -123,6 +123,10 @@
               "title": "QuickBooks Online"
             },
             {
+              "file" : "ms_composer_rest_consumer_reference.adoc",
+              "title": "Rest Consumer"
+            },
+            {
               "file" : "ms_composer_rpa_reference.adoc",
               "title": "MuleSoft RPA"
             },

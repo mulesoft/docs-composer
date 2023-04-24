@@ -1,11 +1,23 @@
 = MuleSoft Composer Release Notes
-:page-revdate: April 17, 2023
+:page-revdate: April 20, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues for MuleSoft Composer] for a list of known issues by date.
+
+== April 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Error messages in HTTP Connector now display more precise error types. |
+|Fixed the issue in Rest Consumer Connector in which, even if the *Operation Values* field was completed, an error occurred indicating that a value was required. |W-12648223
+|Rest Consumer Connector now properly recognizes the values provided in the *client-secret* and *client-ID* fields while using API Sharing. |W-12601570
+|===
 
 == April 17, 2023
 

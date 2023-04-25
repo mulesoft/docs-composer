@@ -88,11 +88,11 @@ include::_partials/trigger-definition.adoc[]
 
 New record::
 
-Checks for a new record every 10 minutes.
+Checks for a new record every 15 seconds.
 
 New or updated record::
 
-Checks for new or updated records of the specified object type every 10 minutes.
+Checks for new or updated records of the specified object type every 15 seconds.
 
 Deleted record::
 

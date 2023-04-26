@@ -24,7 +24,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 [%header%autowidth.spread]
 |===
 |Issue Resolution |ID
-|Error messages in HTTP Connector now display more precise error types. |
+|Error messages in HTTP Connector now display more precise error types. |W-12483461
 |When you complete the *Operation Values* field in REST Consumer Connector, an error indicating that a value is required no longer occurs. |W-12648223
 |Rest Consumer Connector now properly recognizes the values provided in the *Client Secret* and *Client ID* fields while using API Sharing. |W-12601570
 |===

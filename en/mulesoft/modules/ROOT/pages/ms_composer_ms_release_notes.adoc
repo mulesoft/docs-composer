@@ -15,6 +15,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 |Issue Resolution |ID
 |Snowflake Connector now validates account names by checking for invalid special characters. |W-12598991
+|In NetSuite Connector, the *Get Records* action now correctly supports the *OTHER_CHARGE_SALE_ITEM* record type. |W-13001785
 |===
 
 == April 20, 2023

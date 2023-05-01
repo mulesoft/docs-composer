@@ -23,7 +23,7 @@ include::_partials/trigger-definition.adoc[]
 
 On New Message::
 
-When this trigger fires, new messages are available for subsequent steps. To use this trigger, the Composer app must be added to the specific channel you want to use. For more information, see the https://slack.com/help/articles/202035138-Add-apps-to-your-Slack-workspace[Slack Documentation]. 
+When this trigger fires, new messages are available for subsequent steps. To use this trigger, you must add the Composer app to the specific channel you want to use. For more information, see the https://slack.com/help/articles/202035138-Add-apps-to-your-Slack-workspace[Slack documentation^]. 
 
 == Actions
 

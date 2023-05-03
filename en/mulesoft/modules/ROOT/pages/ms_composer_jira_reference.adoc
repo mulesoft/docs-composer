@@ -12,14 +12,14 @@ include::_partials/connection-name.adoc[]
 
 OPTIONAL: Organization Site URL::
 
-Enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect. If you do not specify a value in the *Organization Site URL* field, the connection will use the first URL listed in the `/resources` endpoint of the Atlassian API.  For more information about Jira organizations, see the https://support.atlassian.com/organization-administration/docs/get-started-with-an-atlassian-organization/[Jira documentation^]. 
-
+Enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect. If you do not specify a value in the *Organization Site URL* field, the connection uses the first URL listed in the `/resources` endpoint of the Atlassian API.  For more information about Jira organizations, see the https://support.atlassian.com/organization-administration/docs/get-started-with-an-atlassian-organization/[Jira documentation^]. 
++
 To connect to a Jira organization via an Atlassian account: 
 
-. In the *Connect to your Jira Account* window, in the *Organization Site URL* field, enter the Jira organization URL. For example, `https://orgname.atlassian.net`.  
+. In the *Connect to your Jira Account* window, in the *Organization Site URL* field, enter the Jira organization URL. For example, `+https://orgname.atlassian.net+`.  
 . Click *Connect*. +
 An Atlassian window appears, indicating that Composer is requesting access to an Atlassian account. 
-. In the window, in the *Authorize for site* drop-down, select the organization you want to use and then click *Accept*.
+. In the window, in the *Authorize for site* dropdown, select the organization you want to use and then click *Accept*. +
 Composer is now connected to your Jira organization.  
 
 Username::

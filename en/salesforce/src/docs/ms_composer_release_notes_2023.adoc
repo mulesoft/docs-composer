@@ -10,7 +10,7 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer fo
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-A new optional field, *Organization Site URL*, appears when creating a connection for Jira Connector. The *Organization Site URL* field enables you to enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect.
+An optional new field, *Organization Site URL*, appears when creating a connection for Jira Connector. The *Organization Site URL* field enables you to enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect.
 
 == April 25, 2023
 

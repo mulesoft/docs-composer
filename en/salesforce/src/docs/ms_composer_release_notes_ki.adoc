@@ -1,6 +1,6 @@
-= Known Issues for MuleSoft Composer for Salesforce
+= Known Issues and Limitations for MuleSoft Composer for Salesforce
 
-The following list displays Known Issues for Composer for Salesforce. The list is sorted by the date in which the issue appeared.
+The following list displays Known Issues and Limitations for Composer for Salesforce. The list is sorted by the date in which the issue or limitation appeared.
 
 == August 3, 2022
 

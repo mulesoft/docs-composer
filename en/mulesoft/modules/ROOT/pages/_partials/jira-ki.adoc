@@ -4,7 +4,7 @@
 
 |===
 
-|Known Issue|Workaround |ID
+|Known Issue/Limitations|Workaround |ID
 
 a|The following standard fields are not supported at this time: +
 

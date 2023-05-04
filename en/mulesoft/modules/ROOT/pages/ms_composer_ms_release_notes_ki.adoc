@@ -1,6 +1,6 @@
 = Known Issues and Limitations for MuleSoft Composer
 
-The following list displays Known Issues and Limitations for MuleSoft Composer. The list is sorted by the date in which the known issue or limitation appeared.
+The following list displays known issues and limitations for MuleSoft Composer. The list is sorted by the date in which the known issue or limitation appeared.
 
 == March 22, 2023
 

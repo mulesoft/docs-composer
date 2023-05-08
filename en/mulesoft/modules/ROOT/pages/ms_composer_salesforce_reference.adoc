@@ -127,19 +127,19 @@ Update any standard or custom record as specified by an external ID.
 
 Get records::
 
-Return all the records that match specified search terms:
+Return all the records that match specified criteria:
 +
-image::images/query-builder.png[Query builder UI, 500]
+image::images/get-records-salesforce.png[Query builder UI, 500]
 +
-* You can choose which fields that the action fetches in the *Result fields* section.
-* You can add one or more conditions to specify which types of records should be returned in the *Filter records* section. For example, you could specify that the last name begin with "B."
-* You can control the sort order of the returned records in the "Sort records" section. Records can be sorted in ascending or descending order of a field that you specify.
+* You can choose which fields the action fetches in the *Result fields* section.
+* You can add one or more conditions to specify which types of records should be returned in the *Criteria* section. For example, you could specify that the last name begin with "B."
+* You can control the sort order of the returned records in the *Sort records* section. Records can be sorted in ascending or descending order of a field that you specify. 
+* You can select *All records* in the *How Many Records to Retrieve* section to retrieve a list of records that match your criteria. The *All records* option is selected by default. If you want to access a single record from the list, you must add a xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow. 
+* If you have filtered your search with a unique identifier, you can select *Only the first record* in the *How Many Records to Retrieve* section to return a single record. Returning a single record will change the output of the search from a _list_ to a _single_ record. The *Get records* action searches for all records and returns only the first record in the list. +
+If you previously selected *All records* and then changed your selection to *Only the first record*, data pills in your existing flow could be invalidated.   
 
-When you add a record that was returned from the *Get records* action, you must add a xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow.
-
-When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`.
-
-For more information on Field-Level Encryption, see the https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce documentation].
++
+When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`. For more information on Field-Level Encryption, see the https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce documentation].
 
 Create or update record::
 

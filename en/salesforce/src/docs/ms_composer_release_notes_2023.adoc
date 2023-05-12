@@ -6,6 +6,16 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
 
+== May 12, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, custom metadata objects are no longer shown as metadata keys for the *Create new record*, *Update record*, and *Create or update record* actions as intended.|W-13182376
+|===
+
 == May 9, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

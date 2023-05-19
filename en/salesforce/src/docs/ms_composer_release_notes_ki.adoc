@@ -114,21 +114,6 @@ a|In your Chrome browser, click *Developer Tools* and then click *Network*. In t
 
 |===
 
-== July 19, 2021
-
-//include::_partials/servicenow-ki.adoc[]
-=== ServiceNow
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|ServiceNow Connector - Mule 4 supports only standard tables. | None |None
-
-|===
-
 == July 1, 2021
 
 //include::_partials/jira-ki.adoc[]

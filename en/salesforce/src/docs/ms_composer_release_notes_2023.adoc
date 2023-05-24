@@ -13,7 +13,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 [%header%autowidth.spread]
 |===
 |Issue Resolution |ID
-|In Sage Intacct Connector, the *New or Updated Customer* trigger now uses the correct watermark time pattern which prevents errors in processing the request.|W-13119901
+|In Sage Intacct Connector, the *New or Updated Customer* trigger now uses the correct watermark time pattern, which prevents errors in processing the request.|W-13119901
 |===
 
 == May 17, 2023

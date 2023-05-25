@@ -1,11 +1,17 @@
 = MuleSoft Composer Release Notes
-:page-revdate: May 24, 2023
+:page-revdate: May 25, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
+
+== May 25, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When adding a trigger or an action, you can now use the new search bar in the *System Action* and *System Event* windows to enter the specific name of a connector or shared API to use in your flow.
 
 == May 24, 2023
 
@@ -221,7 +227,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** The *Composer Administrator* has access to the *Settings* page and can manage email preferences and API Sharing.
 ** The *Composer User* has general access to Composer functionality such as building and managing flows.
 
-* The *Settings* page is now available for those with the *Composer Administrator* permission set.  On this page, you can view and edit email notification settings.
+* The *Settings* page is now available for those with the *Composer Administrator* permission set. On this page, you can view and edit email notification settings.
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 

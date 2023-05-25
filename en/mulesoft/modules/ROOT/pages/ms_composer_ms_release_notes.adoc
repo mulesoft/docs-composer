@@ -11,7 +11,7 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* When adding a trigger or an action, a search bar now appears in the *System Action* and *System Event* windows. This search bar enables you to enter the specific name of connectors or shared APIs. You can then select the returned connector or shared API for use in your flow.  
+* When adding a trigger or an action, you can now use the new search bar in the *System Action* and *System Event* windows to enter the specific name of a connector or shared API to use in your flow.
 
 == May 24, 2023
 

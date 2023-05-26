@@ -55,4 +55,8 @@ Updates an existing entry of the selected record type table in ServiceNow. Provi
 * *Table name*
 * *Sys ID*
 
+== Custom Fields 
+
+Custom fields are not supported. Using MuleSoft Composer, you can access standard field values for actions and triggers that you set in the ServiceNow record.
+
 include::_partials/see-also.adoc[]

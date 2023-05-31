@@ -143,6 +143,10 @@
               "title": "Salesforce Marketing Cloud"
             },
             {
+              "file" : "ms_composer_sap_s4hana_reference.adoc",
+              "title": "SAP S/4HANA Cloud"
+            },
+            {
               "file" : "ms_composer_servicenow_reference.adoc",
               "title": "ServiceNow"
             },

@@ -1,0 +1,83 @@
+= SAP S/4HANA Cloud Connector Reference
+
+SAP S/4HANA is an enterprise resource planning (ERP) software used for application and IT infrastructure security, asset operation and maintenance, business planning and consolidation, logistics and order fulfillment, and more. This connector is based on the SAP S/4HANA OData API.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies this connection from others.
++
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Base URL::
+
+The URL for your SAP S/4HANA instance, for example, `\https://{YourInstance}.s4hana.ondemand.com`.
+
+Username::
+
+The OAuth username that you use to log in to SAP S/4HANA.
+
+Password::
+
+The OAuth password that you use to log into SAP S/4HANA.
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+On New or Updated Entity::
+
+Triggers when a new object of the record subtype is created or updated. Provide a value for the following fields:
+
+* *Service*
+* *Entity type*
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Create Entity::
+
+Creates a record of the specified record type. Provide a value for the following fields:
+
+* *Service*
+* *Entity type*
+* *Entity*
+
+Get Entity::
+
+Retrieves a record of the specified record type. Provide a value for the following fields:
+
+* *Service*
+* *Entity type*
+* *Entity key*
+
+Update Entity::
+
+Updates a record of the specified record type. Provide a value for the following fields:
+
+* *Service*
+* *Entity type*
+* *Entity*
+
+Delete Entity::
+
+Deletes a record of the specified record type. Provide a value for the following fields:
+
+* *Service*
+* *Entity type*
+* *Entity key*
+
+== Custom Fields
+
+Using MuleSoft Composer, you can access custom field values for actions and triggers that you set in the SAP S/4HANA record.
+
+include::_partials/see-also.adoc[]
+
+

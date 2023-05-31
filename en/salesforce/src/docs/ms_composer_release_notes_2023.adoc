@@ -14,6 +14,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |===
 |Issue Resolution |ID
 |QuickBooks Connector now includes an enhanced implementation for input parameters, such as better mapping when input parameters are not specified or are `null`.|W-13280661
+|In NetSuite Connector, custom fields now appear as intended.|W-13222742, W-13304252, W-13481333
 |===
 
 == May 25, 2023

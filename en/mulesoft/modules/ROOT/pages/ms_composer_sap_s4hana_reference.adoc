@@ -25,7 +25,7 @@ The OAuth username that you use to log in to SAP S/4HANA.
 
 Password::
 
-The OAuth password that you use to log into SAP S/4HANA.
+The OAuth password that you use to log in to SAP S/4HANA.
 
 == Triggers
 

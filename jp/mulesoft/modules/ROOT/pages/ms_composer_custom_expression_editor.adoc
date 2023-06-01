@@ -78,9 +78,9 @@ locale: String +
 
 |fromStringToDateTime |文字列入力値を日時値に変換します。
 形式とロケールを受け入れます。形式パラメータは、入力文字列の形式を表します。
-デフォルトの形式は ​`uuuu-MM-dd'T'HH:mm:ss'Z`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。 |`fromStringToDateTime(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z,US) =  2021-03-15T23:57:59Z` +
+デフォルトの形式は ​`uuuu-MM-dd'T'HH:mm:ssz`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。 |`fromStringToDateTime(2021-03-15T23:57:59Z,uuuu-MM-dd'T'HH:mm:ssz,US) =  2021-03-15T23:57:59Z` +
 
-`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz, en-US) = 2021-03-15T23:57:59Z`​
+`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz,en-US) = 2021-03-15T23:57:59Z`​
 
 |Format (形式): 形式パラメータは、入力文字列の形式を表します。このパラメータでは、ISO-8601 に基づいた Java 文字パターンを受け入れます。​`2011-12-03T10:15:30.000000+01:00`​ などの日時値の形式は ​`uuuu-MM-dd HH:mm:ssz`​ となります。 +
 
@@ -276,9 +276,9 @@ format: String +
 
 locale: String |String (文字列)
 
-|fromDateTimeToString |日時入力値を文字列値に変換します。形式とロケールを受け入れます。形式パラメータは、出力文字列の目的の形式を表します。デフォルトの形式は ​`uuuu-MM-dd'T'HH:mm:ss'Z`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。 |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z, en-US) = 2021-03-15T23:57:59Z` +
+|fromDateTimeToString |日時入力値を文字列値に変換します。形式とロケールを受け入れます。形式パラメータは、出力文字列の目的の形式を表します。デフォルトの形式は ​`uuuu-MM-dd'T'HH:mm:ss'Z'`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。 |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z', en-US) = 2021-03-15T23:57:59Z` +
 
-`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format (形式): 日時で使用する ISO-8601 形式。出力文字列の目的の形式を表します。たとえば、このパラメータでは Java 8 の java.time.format に基づいた文字パターンを受け入れます。デフォルト形式は ​`uuuu-MM-dd'T'HH:mm:ss'Z`​ です。
+`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format (形式): 日時で使用する ISO-8601 形式。出力文字列の目的の形式を表します。たとえば、このパラメータでは Java 8 の java.time.format に基づいた文字パターンを受け入れます。デフォルト形式は ​`uuuu-MM-dd'T'HH:mm:ss'Z'`​ です。
  +
 
 Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。​`eeee`​ や ​`MMMM`​ などの翻訳可能な形式を渡すと、ロケール (​`ES`​ など) は対応する数値をローカライズ済みの文字列に変換します。|dateTime: DateTime +

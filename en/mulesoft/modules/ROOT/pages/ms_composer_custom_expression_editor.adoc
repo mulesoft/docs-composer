@@ -78,9 +78,9 @@ locale: String +
 
 |fromStringToDateTime |Transforms a string input value into a dateTime value.
 Accepts a format and locale. The format parameter represents the format of the input string.
-The default format is `uuuu-MM-dd'T'HH:mm:ss'Z` and the default locale is en-US; however, these defaults can be modified. |`fromStringToDateTime(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z,US) =  2021-03-15T23:57:59Z` +
+The default format is `uuuu-MM-dd'T'HH:mm:ssz` and the default locale is en-US; however, these defaults can be modified. |`fromStringToDateTime(2021-03-15T23:57:59Z,uuuu-MM-dd'T'HH:mm:ssz,US) =  2021-03-15T23:57:59Z` +
 
-`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz, en-US) = 2021-03-15T23:57:59Z`
+`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz,en-US) = 2021-03-15T23:57:59Z`
 
 |Format: The format parameter represents the format of the input string. This parameter accepts Java character patterns based on ISO-8601. A DateTime value, such as `2011-12-03T10:15:30.000000+01:00`, has the format `uuuu-MM-dd HH:mm:ssz`. +
 
@@ -285,10 +285,10 @@ format: String +
 
 locale: String |String
 
-|fromDateTimeToString |Transforms a dateTime input value into a string value. Accepts a format and locale. The format parameter represents the desired format of the output string. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z`
- and the default locale is en-US; however, these defaults can be modified. |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z, en-US) = 2021-03-15T23:57:59Z` +
+|fromDateTimeToString |Transforms a dateTime input value into a string value. Accepts a format and locale. The format parameter represents the desired format of the output string. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z'`
+ and the default locale is en-US; however, these defaults can be modified. |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z', en-US) = 2021-03-15T23:57:59Z` +
 
-`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format: The ISO-8601 formatting to use on the DateTime. It represents the desired format of the output string. For example, this parameter accepts character patterns based on the Java 8 java.time.format. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z`.
+`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format: The ISO-8601 formatting to use on the DateTime. It represents the desired format of the output string. For example, this parameter accepts character patterns based on the Java 8 java.time.format. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z'`.
  +
 
 Locale: Optional ISO 3166 country code to use, such as `en-US`, `AR`, or `ES`. When you pass a translatable format, such as `eeee` and `MMMM`, a locale (such as `ES`) transforms the corresponding numeric values to a localized string. |dateTime: DateTime +

@@ -10,9 +10,9 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-OPTIONAL: Organization Site URL::
+Organization Site URL::
 
-Enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect. If you do not specify a value in the *Organization Site URL* field, the connection uses the first URL listed in the `/resources` endpoint of the Atlassian API. For more information about Jira organizations, see the https://support.atlassian.com/organization-administration/docs/get-started-with-an-atlassian-organization/[Jira documentation^]. 
+Enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect. If you do not specify a value in the *Organization Site URL* field, the connection uses the first URL listed in the `/resources` endpoint of the Atlassian API. Set the *Organization Site URL* field for every connection if you want the connection to use a specific organization instead of a default organization. For more information about Jira organizations, see the https://support.atlassian.com/organization-administration/docs/get-started-with-an-atlassian-organization/[Jira documentation^]. 
 +
 To connect to a Jira organization via an Atlassian account: 
 

@@ -488,11 +488,11 @@ To access the error handler:
 ... Select and configure a trigger. 
 ... Select and configure an action.
 ... Directly before the step to which you want to add an error handler, click the plus button. 
-... In the *What Should Start This Flow?* window, click *Error Handler (Beta)*.
+... In the *What Should Start This Flow?* window, click *Error Handler*.
 .. If you add a step to an existing flow:
 ... Open your flow.
 ... Directly before the step to which you want to add an error handler, click the plus button. 
-... In the *Next Step* window, click *Error Handler (Beta)*. 
+... In the *Next Step* window, click *Error Handler*. 
 
 [[watch-a-step]]
 === Watch a Step 

@@ -517,6 +517,14 @@ You can configure Composer to handle errors encountered in the *Watch* section. 
 * When a condition is met in the *On Error* section, the error handler processes the conditions in sequential order and stops once the first condition is met. After the first condition is met, any subsequent steps are skipped. If you want the process to continue, you can add an additional *On Error* section branch inside your existing *On Error* section.
 * When xref:ms_composer_test_flow.adoc[testing your flow], any errors caught by the error handler appear in the right pane of the action card. Successful steps are marked with a green check and failed steps are marked with a red X. 
 * When an error occurs in a watched action, the error information is saved as a data pill that can then be used for subsequent notification or record-updating actions. For example, if an error occurs, you can specify an action to send an email to your team containing the error information from the data pill.
+* When configuring the error handler, you can establish different patterns to meet your requirements. You can: 
+** Add all steps in one error handler. +
+This pattern is useful if you have the same *On Error* process for any errors or if you can configure multiple *On Error* with error conditions to handle specific types of errors. If any error occurs in the step inside the *Watch* section, the remaining steps in the same *Watch* section will not proceed.
+** Add more than one error handler in a flow, you can group steps into the Error Handlers or each step can have its own Error Handler. +
+This pattern gives you the flexibility to easily configure specific On Error steps to handle the steps.
+** Put Error Handler inside a For-Each loop. +
+This pattern allows you to continue the loop iteration if an error occurs inside the loop. You must set the On Error to ‘Continue’ after running. It’s best to add a step to update the failed record for troubleshooting and reprocessing, if needed.
+
 
 ==== Add Steps to the On Error Section 
 

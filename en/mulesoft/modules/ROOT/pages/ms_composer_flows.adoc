@@ -517,6 +517,13 @@ You can configure Composer to handle errors encountered in the *Watch* section. 
 * When a condition is met in the *On Error* section, the error handler processes the conditions in sequential order and stops once the first condition is met. After the first condition is met, any subsequent steps are skipped. If you want the process to continue, you can add an additional *On Error* section branch inside your existing *On Error* section.
 * When xref:ms_composer_test_flow.adoc[testing your flow], any errors caught by the error handler appear in the right pane of the action card. Successful steps are marked with a green check and failed steps are marked with a red X. 
 * When an error occurs in a watched action, the error information is saved as a data pill that can then be used for subsequent notification or record-updating actions. For example, if an error occurs, you can specify an action to send an email to your team containing the error information from the data pill.
+* When configuring error handling, you can establish different sequences to meet your requirements. You can: 
+** Add all steps in one error handler. +
+If you have the same *On Error* process for any errors or if you can configure multiple *On Error* processes with error conditions to handle specific types of errors, then add all steps in one error handler. As a result, if any error occurs in the step inside the *Watch* section, the remaining steps in the same *Watch* section stop.
+** Add more than one error handler in a flow. +
+You can group steps into seperate error handlers or each step can have its own error handler. This provides the flexibility to configure different steps when errors occur.
+** Place an error handler inside a For Each loop. +
+If an error occurs inside a For Each loop, adding an error handler in the for each loop allows the loop to continue past an error. To set an error handler to continue after an error occurs, in the *After running* drop down, select *Continue*.  To provide further clarity on the error, add a step to update the failed record for troubleshooting. 
 
 ==== Add Steps to the On Error Section 
 

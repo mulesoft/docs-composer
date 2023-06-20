@@ -111,7 +111,7 @@ It is important to note that in a `string` field, you can use `number` expressio
 
 === Number Functions
 
-In the *Custom Expression Editor*, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or use xref:keyboard-shortcuts[keyboard shortcuts].
+In the *Custom Expression Editor*, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or type and select them using the Enter key, Tab key, or mouse with typeahead. 
 
 The *Custom Expression Editor* supports the following `number` formulas and operators:
 
@@ -344,12 +344,6 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 |===
 
-[[keyboard-shortcuts]]
-== Supported Keyboard Shortcuts
-
-The *Custom Expression Editor*  enables you to use keyboard shortcuts for mathematical operators. When inserting mathematical operators, press one of *Control + Shift + <+, (, ), or *>*. For example, to enter a operator, press *Control + Shift +*.
-
-For */* and *-*, the Shift key is not required. For example, to insert a */*, you can press *Control + /*.
 
 == Access the Custom Expression Editor
 

@@ -25,7 +25,7 @@ endif::[]
 .. *Flow Owner*: The owner of the flow. 
 .. *Last Modified*: The date on which the flow was last modified in the time zone set in your browser.
 .. *Status*: The status or the flow. The status can be either active or inactive.
-. The *Run History* of the flow. Composer currently stores up to 1000 records per flow and no more than the last two weeks of data. For example, for a flow that produces 10 records per day, you can see the run history for the last two weeks of data (14 x 10 = 140 records). For a flow that produces 100 records per hour, you can see no more than 10 hours of history.
+. The *Run History* of the flow. Composer currently stores up to 1000 records per flow and no more than the last two weeks of data. For example, for a flow that produces 10 records per day, you can see the run history for the last two weeks of data (14 x 10 = 140 records). For a flow that produces 100 records per hour, you can see no more than 10 hours of the run history.
 .. *Start Date*: The date on which the flow started in the time zone set in your browser.
 .. *End Date*: The date on which the flow ended in the time zone set in your browser.
 .. *Status*: The status of the flow. The status can be either `SUCCESS` or `FAILED`. 

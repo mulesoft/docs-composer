@@ -336,7 +336,7 @@ When there are null values in custom expressions and are:
 
 == Define a Variable
 
-You can define variables in your Composer flow. Defining a variable allows you to complete certain use cases like aggregating calculations and storing values. Variables are defined locally within a flow and can be used anywhere within that flow. 
+You can define variables in your Composer flow. Defining a variable enables you to complete certain use cases, such as aggregating calculations and storing values. You define variables locally within a flow and use them anywhere within that flow. 
 
 [[access-the-variable-step]]
 === Access the Variable Step 

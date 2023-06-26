@@ -12,6 +12,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now define a variable as temporary storage in your flow and use it as a data pill. Defining a variable enables you to complete certain use cases like aggregating calculations and storing values. You define variables locally within a flow and use them anywhere within that flow. 
 
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, custom fields are now visible in projects with no issues created. | W-13498207
+|===
+
 == June 21, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

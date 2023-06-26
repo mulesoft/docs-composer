@@ -424,7 +424,7 @@ The properties are entered into the *JSON Schema* window. For example:
 . Optionally, to add additional variables in the JSON Schema, enter them in the window.
 . Click *Apply*. +
 The *Create Variables* window appears, displaying one or more new variables added to the flow. 
-. Optionally, to make changes to the new variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
+. Optionally, to change the variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
 . Complete the initial value for each variable. The default value is defined under each variable. If the field is empty, the value is set to the default value for that data type. You can enter a value manually, select any existing data pill (including variables) from your flow, or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. 
 +
 === Update a Variable 

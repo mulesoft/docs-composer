@@ -335,24 +335,24 @@ When there are null values in custom expressions and are:
 * Fields with attributes, the value is ignored and not sent to the connector.
 
 == Define a Variable
-+
+
 You can define variables in your Composer flow. Defining a variable enables you to complete certain use cases, such as aggregating calculations and storing values. You define variables locally within a flow and use them anywhere within that flow. 
-+
+
 [[access-the-variable-step]]
 === Access the Variable Step 
-+
+
 To access the *Variable* step: 
-+
+
 . <<create-a-new-flow,Create a new flow>> or open an existing flow. +
-. In *<Flow Name>* page, click *Edit*. 
+. In the *<Flow Name>* page, click *Edit*. 
 . Locate the position in your flow where you want access the *Variable* step and click the plus button. 
 . In the *Next Step* window, click *Variable*. +
 The *Variable* step appears. 
-+
+
 === Create a Variable Using the Visual Editor 
-+
+
 To create one or more new variables using the *Visual Editor* window: 
-+
+
 . <<access-the-variable-step,Access the *Variable* step.>> 
 . Select *Action* > *Create Variable*.
 . From the *Variable* section, click *Add Variable*. 
@@ -365,27 +365,27 @@ The name entered is unique only to this step. You can duplicate values in the *L
 The *Create Variables* window appears, displaying one or more new variables added to the flow. 
 . Optionally, to change the variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema. 
 . Specify the initial value for each variable. The default value is defined under each variable. If the field is empty, the value is set to the default value for that data type. You can manually enter a value, select any existing data pill (including variables) from your flow, or select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. 
-+
+
 === Create a Variable Using the JSON Schema
-+
+
 To create one or more new variables using the *JSON Schema* window: 
-+
+
 . <<access-the-variable-step,Access the *Variable* step.>> 
 . In the *Action* dropdown, click *Create Variable*.
 . In the *Variable* section, click *Create Schema*. 
 . In the *JSON Schema* window, enter the properties for the variable to create. 
 +
-Note that: 
-.. Each variable is defined within a `Properties`  object with a `Variable Unique ID`.  The `Variable Unique ID` enables the variable to be tracked within your flow. The `Variable Unique ID` can contain only alphanumeric characters, hyphens, and underscores. When using the Visual Editor, this ID is automatically generated for you.
-Each variable must specify the `Name` and data type. To set the properties for the variable definition, complete the following:
+Note that each variable is defined within a `Properties`  object with a `Variable Unique ID`.  The `Variable Unique ID` enables the variable to be tracked within your flow. The `Variable Unique ID` can contain only alphanumeric characters, hyphens, and underscores. When using the Visual Editor, this ID is automatically generated for you.
+Each variable must specify the `Name` and data type. To set the properties for the variable definition, complete the following: +
+
 ... `Variable Label (Title)`: The display label for the variable. (Required) 
 ... `Type`: The data type of the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, and `Boolean`. To define a `Date` or `DateTime` variable, the data type should be set to `String` and the `Format` property should be defined. (Required) 
 ... `Format`:  The qualifier for `String` properties that can specify additional data types not natively supported in JSON. For variables, this value must be set when defining `Date` or `DateTime` variables as `date` or `date-time` respectively. (Optional)
 
-//this should be a result statement... but how?! The Dev insisted that we have this section but I have no idea how to format it and I really don't even know how to introduce it.
-The properties and values appear in the *JSON Schema* window. For example: 
 +
+The properties and values appear in the *JSON Schema* window. For example: 
 
++
 [source,JSON]
 ----
 {
@@ -415,17 +415,17 @@ The properties and values appear in the *JSON Schema* window. For example:
 }
 }
 ----
-//Does anyone have any idea how to indent this block and make the step numbers continue instead of restart?! 
+
 . Optionally, to add variables in the JSON Schema, enter them in the window.
 . Click *Apply*. +
 The *Create Variables* window appears, displaying one or more new variables added to the flow. 
 . Optionally, to change the variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
 . Complete the initial value for each variable. The default value is defined under each variable. If the field is empty, the value is set to the default value for that data type. You can enter a value manually, select any existing data pill (including variables) from your flow, or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. 
-+
+
 === Update a Variable 
-+
+
 To update one or more variables: 
-+
+
 . <<access-the-variable-step,Access the *Variable* step.>> 
 . In the *Action* dropdown, click *Update Variable*.
 . In the *Variable* section, click *Select Variables*. +
@@ -434,7 +434,7 @@ The *Select Variables* window appears, displaying a list of all variables includ
 . Click *Apply*. +
 The *Update Variable* step appears. 
 . Update the value for each variable. You can enter a value manually, select any existing data pill (including variables) from your flow, or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. Note that if you are updating a variable with a value created from another variable, do not update them in the same step. Variables are not necessarily updated in the same order in which they are listed. To avoid unexpected behavior, update each variable in a separate steps. 
-+
+
 === Create a Picklist Mapping
 
 Using Picklist Mapping, you can map data from one application to the corresponding data needed by another application and then reuse those mappings in different flows in your organization. This enables you to connect two applications that have different values for similar fields and to align the values in those fields across applications. You can then determine how the possible values of an output field (data pill) map to the possible values of an input field.

@@ -389,7 +389,7 @@ Each variable must specify the `Name` and data type. To set the properties for t
 
 >>>>>>> e31c2332b79f42fe88a2ad701154cfbd3c5f7699
 //this should be a result statement... but how?! The Dev insisted that we have this section but I have no idea how to format it and I really don't even know how to introduce it.
-The properties are entered into the *JSON Schema* window. For example: 
+The properties and values appear in the *JSON Schema* window. For example: 
 +
 [source,JSON]
 ----

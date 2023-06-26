@@ -386,7 +386,7 @@ Each variable must specify the `Name` and data type. To set the properties for t
 The properties and values appear in the *JSON Schema* window.  
 
 +
-.Example *JSON Schema* window
+.Example: Properties and values in the *JSON Schema* window
 [%collapsible]
 ====
 [source,JSON]

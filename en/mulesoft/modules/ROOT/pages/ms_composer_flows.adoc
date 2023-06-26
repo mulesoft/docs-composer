@@ -381,7 +381,7 @@ Note that:
 Each variable must specify the `Name` and data type. To set the properties for the variable definition, complete the following:
 ... `Variable Label (Title)`: The display label for the variable. A value is required. 
 ... `Type`: The data type of the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, and `Boolean`. To define a `Date` or `DateTime` variable, the data type should be set to `String` and the `Format` property should be defined. A value is required. 
-... `Format`:  The qualifier for `String` properties that can specify additional data types not natively supported in JSON. For variables, this must be set when defining `Date` or `DateTime` variables as `date` or `date-time` respectively. A value in this field is optional. 
+... `Format`:  The qualifier for `String` properties that can specify additional data types not natively supported in JSON. For variables, this value must be set when defining `Date` or `DateTime` variables as `date` or `date-time` respectively. (Optional)
 
 //this should be a result statement... but how?! The Dev insisted that we have this section but I have no idea how to format it and I really don't even know how to introduce it.
 The properties are entered into the *JSON Schema* window. For example: 

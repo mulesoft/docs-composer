@@ -421,7 +421,7 @@ The properties and values appear in the *JSON Schema* window. For example:
 }
 ----
 //Does anyone have any idea how to indent this block and make the step numbers continue instead of restart?! 
-. Optionally, to add additional variables in the JSON Schema, enter them in the window.
+. Optionally, to add variables in the JSON Schema, enter them in the window.
 . Click *Apply*. +
 The *Create Variables* window appears, displaying one or more new variables added to the flow. 
 . Optionally, to change the variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.

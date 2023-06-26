@@ -374,7 +374,9 @@ To create one or more new variables using the *JSON Schema* window:
 . <<access-the-variable-step,Access the *Variable* step.>> 
 . In the *Action* dropdown, click *Create Variable*.
 . In the *Variable* section, click *Create Schema*. 
-. In the *JSON Schema* window, enter the properties for the variable you want to create. Note that: 
+. In the *JSON Schema* window, enter the properties for the variable to create. 
++
+Note that: 
 .. Each variable is defined within a `Properties`  object with a `Variable Unique ID`.  The `Variable Unique ID` enables the variable to be tracked within your flow. The `Variable Unique ID` can contain only alphanumeric characters, hyphens, and underscores. When using the Visual Editor, this ID is automatically generated for you.
 Each variable must specify the `Name` and data type. To set the properties for the variable definition, complete the following:
 ... `Variable Label (Title)`: The display label for the variable. A value is required. 

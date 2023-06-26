@@ -371,7 +371,7 @@ The *Create Variables* window appears, displaying one or more new variables adde
 To create one or more new variables using the *JSON Schema* window: 
 
 . <<access-the-variable-step,Access the *Variable* step.>> 
-. In the *Action* dropdown, click *Create Variable*.
+. Select *Action* > *Create Variable*.
 . In the *Variable* section, click *Create Schema*. 
 . In the *JSON Schema* window, enter the properties for the variable to create. 
 +
@@ -431,7 +431,7 @@ The *Create Variables* window appears, displaying one or more new variables adde
 To update one or more variables: 
 
 . <<access-the-variable-step,Access the *Variable* step.>> 
-. In the *Action* dropdown, click *Update Variable*.
+. Select *Action* > *Update Variable*.
 . In the *Variable* section, click *Select Variables*. +
 The *Select Variables* window appears, displaying a list of all variables included in your flow before this step. 
 . Select the checkbox next to one or more variables or click *Select all <Number> variables* to select all variables in the list.
@@ -483,7 +483,7 @@ The *Picklist Mapping* window appears.
 . In the *Picklist Source* section, in the *Source* field, select the value from the list that you want to map to the value in the *Target* field, and then click *Next*.
 . In the *Global Picklist Selection* section, create a new picklist or choose an existing picklist.
 
-=== Create a new picklist
+=== Create A New Picklist
 
 To create a new picklist:
 
@@ -497,7 +497,7 @@ To create a new picklist:
 . Click *Apply*. +
 The *<Picklist Name>* section appears, displaying a table of values and their mappings.
 
-=== Choose an existing picklist
+=== Choose An Existing Picklist
 
 To choose an existing picklist:
 
@@ -517,7 +517,7 @@ If you need to perform some logic before an action, select a flow control first:
 . Click *Save*.
 
 [[create-an-if-else-block]]
-=== Add an If/Else Block
+=== Add An If/Else Block
 
 You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
 
@@ -565,7 +565,7 @@ When using custom logic, all conditions defined must be referenced in the expres
  Using custom logic, you can have up to 20 conditions and a condition can be referenced more than once.
 
 [[create-and-test-a-for-each-loop]]
-== Create a For Each Loop
+== Create A For Each Loop
 
 To create a For Each Loop:
 

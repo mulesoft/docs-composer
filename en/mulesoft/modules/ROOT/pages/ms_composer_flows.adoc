@@ -383,9 +383,12 @@ Each variable must specify the `Name` and data type. To set the properties for t
 ... `Format`:  The qualifier for `String` properties that can specify additional data types not natively supported in JSON. For variables, this value must be set when defining `Date` or `DateTime` variables as `date` or `date-time` respectively. (Optional)
 
 +
-The properties and values appear in the *JSON Schema* window. For example: 
+The properties and values appear in the *JSON Schema* window.  
 
 +
+.Example *JSON Schema* window
+[%collapsible]
+====
 [source,JSON]
 ----
 {
@@ -415,6 +418,7 @@ The properties and values appear in the *JSON Schema* window. For example:
 }
 }
 ----
+====
 
 . Optionally, to add variables in the JSON Schema, enter them in the window.
 . Click *Apply*. +

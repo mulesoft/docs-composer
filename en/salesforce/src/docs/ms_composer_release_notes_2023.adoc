@@ -44,6 +44,16 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The Error Handler is now generally available. You can use this feature to watch for errors in connection or logic in specific steps of your flow and then designate logic to handle the errors that may occur.
 
+== June 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, the *Get records* action no longer throws an error when the value of a condition contains an apostrophe.|W-13192901
+|===
+
 == June 8, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

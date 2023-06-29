@@ -6,6 +6,16 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
 
+== June 28, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In RPA Connector, if a connection exception occurs, the *RPA Process Execution Completed* trigger now reconnects. | W-13280827
+|===
+
 == June 27, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

@@ -17,7 +17,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The following enhancements appear on the *Flow Details* page: 
-** The *Last Triggered* field now appears in the heading of the *Flow Details* page. This field displays the last time that a flow was triggered. Refreshing the *Flow Details* page will also refresh the value in the *Last Triggered* field. 
+** The *Last Triggered* field now appears in the heading of the *Flow Details* page. This field displays the last time that a flow was triggered. Refreshing the *Flow Details* page also refreshes the value in the *Last Triggered* field. 
 ** The *Reference ID* field now appears in the *Run History* section. For Event triggers, the value in this field is the corresponding *Record ID*. For events triggered by the Scheduler, a unique *Execution ID* value is created for the run instance. 
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

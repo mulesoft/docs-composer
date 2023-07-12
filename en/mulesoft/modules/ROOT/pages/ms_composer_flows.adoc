@@ -25,10 +25,13 @@ endif::[]
 .. *Flow Owner*: The owner of the flow. 
 .. *Last Modified*: The date on which the flow was last modified in the time zone set in your browser.
 .. *Status*: The status or the flow. The status can be either active or inactive.
-. The *Run History* of the flow. Composer stores up to 1000 records per flow and can include only the last two weeks of data. For example, for a flow that produces 10 records per day, you can see the Run History for the last two weeks of data (14 x 10 = 140 records). For a flow that produces 100 records per hour, you can see no more than 10 hours of the Run History.
+.. *Last Triggered*: The date on which the flow was most recently triggered. This field displays the last time the flow was triggered by either an Event poll or the Scheduler. 
+. The *Run History* of the flow. Composer stores up to 1000 records per flow and can include only the last two weeks of data. For example, for a flow that produces 10 records per day, you can see the Run History for the last two weeks of data (14 x 10 = 140 records). For a flow that produces 100 records per hour, you can see no more than 10 hours of the Run History. Triggering a flow via the Scheduler always creates an entry in the Run History. An entry in the Run History is only added by an Event trigger when a record is either created or updated and passes any filter condition. 
+
 .. *Start Date*: The date on which the flow started in the time zone set in your browser.
 .. *End Date*: The date on which the flow ended in the time zone set in your browser.
 .. *Status*: The status of the flow. The status can be either `SUCCESS` or `FAILED`. 
+.. *Reference ID*: The ID of the record or execution that triggered the flow. For Event triggers, the value in this field is the corresponding *Record ID*. For events triggered by the Scheduler, a unique *Execution ID* value is created for the run instance.  
 .. *Error*: If a flow fails, the error message for the failure appears. 
 . The flow actions. You can delete, clone, or view an active flow. Note that if the flow is inactive, you can edit the flow.
 . The *Run History* actions. You can refresh the *Run History* section or filter the section by specified criteria. 

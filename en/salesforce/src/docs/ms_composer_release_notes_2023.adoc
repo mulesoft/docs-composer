@@ -10,7 +10,7 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for Mule
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* In Stripe Connector, in the *On New Refund* trigger now outputs the following fields:
+* In Stripe Connector, the *On New Refund* trigger now outputs the following fields:
 
 ** *Balance Transaction*
 ** *Payment Intent*

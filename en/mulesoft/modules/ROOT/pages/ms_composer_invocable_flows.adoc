@@ -22,6 +22,16 @@ To create a Composer flow, you must:
 [[set-up-salesforce-for-invocable-flows]]
 == Set Up Salesforce for Invocable Flows
 
+=== Before you begin 
+Connect Salesforce org to Anypoint Platform 
+
+
+https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_external_credential.htm&type=5[create and edit an external credential]
+
+https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[create and edit a named credential]
+
+https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[oaste the JSON-formatted schema into your browser]
+
 [[set-up-flow-builder]]
 == Set Up Flow Bulder
 

@@ -1,0 +1,28 @@
+= Invoke a Composer Flow 
+
+Invoke a Composer flow in Flow Builder to enable deeper interoperability and integrated capabilities across Salesforce. For example, use Flow Builder to call an invocable Composer flow that gets real-time credit scores when a user goes through a screen flow.
+
+== Invoke a Composer Flow in Flow Builder
+
+To invoke a Composer flow in Flow Builder, you must:
+
+. <<create-your-composer-flow,Create your Composer flow>>.
+. <<set-up-salesforce-for-invocable-flows,Set up Salesforce for invocable flows>>.
+. <<set-up-flow-builder,Set up Flow Builder>>.
+
+[[create-your-composer-flow]]
+== Create your Composer Flow
+
+To create a Composer flow, you must: 
+
+. xref:ms_composer_flows.adoc[Build a Composer flow]. 
+. xref:ms_composer_test_flows.adoc[Test your Composer flow]. 
+. xref:ms_composer_flows.adoc[Activate your Composer flow]. 
+
+[[set-up-salesforce-for-invocable-flows]]
+== Set Up Salesforce for Invocable Flows
+
+[[set-up-flow-builder]]
+== Set Up Flow Bulder
+
+include::_partials/see-also.adoc[]

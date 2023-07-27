@@ -61,11 +61,14 @@ OAuth 2.0 Authorization::
 
 You can use OAuth 2.0 Client credentials to obtain an access token from a user-defined path. Provide a value for the following: 
 
+* *RPA API URL*: The URL provided by the RPA Admin creating the processes that you want to integrate with Composer. The *RPA API URL* value is the RPA Manager URL with `/rpa/api/v2` appended to the end. For example, if your RPA Manager URL is `+https://myOrg.rpa.mulesoft.com+`, then the value in the *RPA API URL* field is `+https://myOrg.rpa.mulesoft.com/rpa/api/v2+`.
 * *Client ID*: The OAuth Client ID that you use to log in to MuleSoft RPA.
-* *Token URL*: The URL of the endpoint that provides the access token for MuleSoft RPA.
-* *RPA API URL*: The URL to which subsequent RPA requests will be made to invoke RPA operations.
 * *Client Secret*: The OAuth Client Secret that you use to log in to MuleSoft RPA.
-* *Anypoint Profile URL*: The URL of your Anypoint profile containing your Organization ID. 
+* *Token URL*: The URL of the endpoint that provides the access token for MuleSoft RPA. For users in the United States, enter: `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`. For users in the European Union, enter: `+https://eu1.anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
+* *Scopes*: The OAuth scopes. Enter the following OAuth scopes for full access to the RPA API: 
+** `RPA Integrator` 
+** `RPA Invocable Process`
+
 
 == Triggers
 

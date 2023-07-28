@@ -7,31 +7,35 @@ Invoke a Composer flow in Flow Builder to enable deeper interoperability and int
 To invoke a Composer flow in Flow Builder, you must:
 
 . <<configure-your-composer-flow,Configure your Composer flow>>.
-. <<test-your-invocable-flow,Test your invokable Composer flow.>>
+. <<test-your-invocable-flow,Test your invokable Composer flow>>.
 . <<activate-your-invocable-flow,Activate your invocable Composer flow.>>
 . <<set-up-salesforce-for-invocable-flows,Set up Salesforce for invocable flows>>.
 . <<set-up-flow-builder,Set up Flow Builder>>.
 
 [[configure-your-composer-flow]]
-== Configure your Composer Flow
-
-To create a Composer flow, you must: 
-
-. xref:ms_composer_flows.adoc[Build a Composer flow]. 
-. xref:ms_composer_test_flows.adoc[Test your Composer flow]. 
-. xref:ms_composer_flows.adoc[Activate your Composer flow]. 
+=== Configure your Composer Flow
 
 [[test-your-invocable-composer-flow]]
-== Test Your Invoocable Composer Flow 
+=== Test Your Invoocable Composer Flow 
 
 [[activate-your-invocable-composer-flow]]
-== Activate Your Invoocable Composer Flow 
+=== Activate Your Invoocable Composer Flow 
 
 [[set-up-salesforce-for-invocable-flows]]
 == Set Up Salesforce for Invocable Flows
 
-=== Before you begin 
-Connect Salesforce org to Anypoint Platform 
+[[set-up-flow-builder]]
+=== Set Up Flow Bulder
+
+== Troubleshooting 
+
+When Flow Builder successfully invokes a Composer flow, an HTTP 200 response occurs. To troubleshoot invocable flows, become familiar with the information about interpreting commonly thrown exception messages.
+
+== Missing Required Input Parameters
+If a Composer flow requires input fields and Flow Builder does not pass these required input fields, an HTTP 400 response occurs.
+
+== Invalid Credentials 
+If a Composer flow has invalid credentials, an HTTP 401 response occurs.
 
 
 https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_external_credential.htm&type=5[create and edit an external credential]
@@ -40,8 +44,7 @@ https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.
 
 https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[oaste the JSON-formatted schema into your browser]
 
-[[set-up-flow-builder]]
-== Set Up Flow Bulder
+
 
 include::_partials/see-also.adoc[]
 * https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder[Trail: Build Flows with Flow Builder]

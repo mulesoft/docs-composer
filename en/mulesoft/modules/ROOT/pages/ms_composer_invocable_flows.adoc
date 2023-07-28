@@ -27,7 +27,7 @@ To invoke a Composer flow in Flow Builder, you must:
 To configure an invocable Composer flow:
 
 . Access Composer.
-. xref:ms_composer_flows.adoc#reate-a-new-flow[Create a new flow from scratch].
+. xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
 . In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Invoke* to create an invocable flow. + 
 The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
 . Optionally, add input fields. For example, you can add an `Opportunity ID` input that returns a value if Salesforce passes the value of an Opportunity ID to the Composer flow. To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
@@ -60,8 +60,7 @@ The number of input fields you added appears next to *Input Fields*, displaying 
 ----
 ====
 +
-Unlike the Visual Editor, the Sample JSON Editor supports objects, arrays, and 
-null values. 
+Unlike the Visual Editor, the Sample JSON Editor supports objects, arrays, and null values. 
 +
 .Example: Example: Complex JSON sample in the *Sample JSON Editor* window
 [%collapsible]
@@ -128,7 +127,7 @@ After creating your Composer flow, set up your Salesforce org to invoke flows in
 
 . Access your Salesforce org. 
 . Go to *Setup* > *MuleSoft* > *Services* and click *Log In* to securely connect Anypoint Platform with your Salesforce org and grant access.
-. Create a new set of credentials that use the same credentials that you use for Composer. You must create an external credential and a named credential. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credentia] and https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Using Basic Authentication with Named Credentials].  +
+. Create a new set of credentials that use the same credentials that you use for Composer. You must create an external credential and a named credential. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credentials] and https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Using Basic Authentication with Named Credentials].  +
 If your invocable Composer flow does not contain input fields, you must add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
 . Register your external service by copying the API specification from the Composer flow. For more information, refer to Paste the https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[JSON-formatted Schema Into Your Browser]. 
 

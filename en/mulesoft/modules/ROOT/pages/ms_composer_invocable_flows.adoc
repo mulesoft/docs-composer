@@ -11,11 +11,12 @@ For example, use invocable flows to build integrations in Flow Builder that conn
 * Creates a Jira issue when a record is created in Salesforce.
 * Retrieves an order status from NetSuite and posts a message in Slack.
 * Gets real-time credit scores when a user goes through a screen flow.
+* Retrieves an order status from NetSuite when a user enters an order ID in the screen flow.
 
 To invoke a Composer flow in Flow Builder, you must:
 
 . <<configure-your-invocable-composer-flow,Configure your invocable Composer flow>>.
-. <<test-your-invocable-composer-flow,Test your invokable Composer flow>>.
+. <<test-your-invocable-composer-flow,Test your invocable Composer flow>>.
 . <<activate-your-invocable-composer-flow,Activate your invocable Composer flow>>.
 . <<set-up-salesforce-for-invocable-flows,Set up Salesforce for invocable flows>>.
 . <<set-up-flow-builder-for-invocable-flows,Set up Flow Builder for invocable flows>>.
@@ -87,7 +88,7 @@ The number of input fields you added appears next to *Input Fields*, displaying 
 If you need to delete an invocable step in your flow: 
 
 . Access the flow containing the invocable flow step that you want to delete. 
-. In the left corner of the step, click … > *Delete step*. +
+. In the left corner of the step, click *…* > *Delete step*. +
 The step is deleted.
  
 [[test-your-invocable-composer-flow]]
@@ -103,7 +104,7 @@ The testing output appears. Using this output, you can verify if the flow return
 
 
 [[activate-your-invocable-composer-flow]]
-=== Activate Your Invoocable Composer Flow 
+=== Activate Your Invocable Composer Flow 
 
 To activate your invocable Composer flow: 
 
@@ -143,7 +144,7 @@ After setting up Salesforce for invocable flows, you can call the Composer flow 
 . Configure the start of the flow. If you create a record-triggered flow, you must select the *Run Asynchronously* checkbox to avoid errors.
 . Add an assignment. Click *+* to add a new element and then click *Assignment*.
 . Enter a *Label* and *API Name*.
-. Set variable values. For example, to set a value from a Salesforce record to an opportunity ID variable, the *Variable* is {!OpportunityId.opportunityId}, the *Operator* is `equals`, and the *Value* is {!$Record.id}.
+. Set variable values. For example, to set a value from a Salesforce record to an opportunity ID variable, the *Variable* is `{!OpportunityId.opportunityId}`, the *Operator* is `equals`, and the *Value* is `{!$Record.id}`.
 . Set up an invocable action. Click *+* to add a new element and then click *Action*.
 . In *Filter By*, select *Type* and click *External Service*. 
 . Select the action of the invocable flow from the external service.
@@ -154,16 +155,16 @@ To set the input value, click New Resource and ensure the following fields have 
 .. *API Name*: Enter a name for the API.
 .. *Data Type*: Select a data type.
 .. *Apex Class*: Search for an Apex class.
-.. *Availability Outside the Flow*: Select Available for input and Available for output if needed. +
-
+.. *Availability Outside the Flow*: Select Available for input and Available for output if needed. 
++
 For example, if Salesforce passes the value of an opportunity ID to the Composer flow, 
 the field values are: 
-
-.. *Resource Type*: Variable
-.. *API Name*: OpportunityId
-.. *Data Type*: Apex-Defined
-.. *Apex Class*: ExternalService__InvocableFlowTest_invoke_IN_body
-.. *Availability Outside the Flow*: Available for input and Available for output
++
+... *Resource Type*: `Variable`
+... *API Name*: `OpportunityId`
+... *Data Type*: `Apex-Defined`
+... *Apex Class*: `ExternalService__InvocableFlowTest_invoke_IN_body`
+... *Availability Outside the Flow*: `Available for input and Available for output`
 
 . Click *Done*. +
 The invocable action is set up. 
@@ -174,26 +175,15 @@ The invocable action is set up.
 . Test the flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.flow_test.htm&type=5[Test a Flow]. 
 . Activate the flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.flow_distribute_activate.htm&type=5[Activate or Deactivate a Flow].  
 
-
-
 == Troubleshooting 
 
 When Flow Builder successfully invokes a Composer flow, an HTTP 200 response occurs. To troubleshoot invocable flows, become familiar with the information about interpreting commonly thrown exception messages.
 
-== Missing Required Input Parameters
+=== Missing Required Input Parameters
 If a Composer flow requires input fields and Flow Builder does not pass these required input fields, an HTTP 400 response occurs.
 
-== Invalid Credentials 
+=== Invalid Credentials 
 If a Composer flow has invalid credentials, an HTTP 401 response occurs.
-
-
-https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_external_credential.htm&type=5[create and edit an external credential]
-
-https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[create and edit a named credential]
-
-https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[oaste the JSON-formatted schema into your browser]
-
-
 
 include::_partials/see-also.adoc[]
 * https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder[Trail: Build Flows with Flow Builder]

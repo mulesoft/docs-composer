@@ -1,8 +1,16 @@
 = Invoke a Composer Flow 
 
-Invoke a Composer flow in Flow Builder to enable deeper interoperability and integrated capabilities across Salesforce. For example, use Flow Builder to call an invocable Composer flow that gets real-time credit scores when a user goes through a screen flow.
+Invoke a Composer flow from external systems directly from Flow Builder to enable deeper interoperability and integrated capabilities across Salesforce. You can also authenticate every invocable flow for a secure and protected automation experience, create API-compatible invocable actions for seamless integration with diverse systems and applications, and build powerful automations by leveraging the built-in support for input fields.
 
 == Invoke a Composer Flow in Flow Builder
+
+Invoke a Composer flow directly from Flow Builder to build integrations without writing a single line of code.
+
+For example, use invocable flows to build integrations in Flow Builder that connect to third-party systems such as NetSuite, Jira, and Workday. Some use cases include using Flow Builder to call an invocable Composer flow that:
+
+* Creates a Jira issue when a record is created in Salesforce.
+* Retrieves an order status from NetSuite and posts a message in Slack.
+* Gets real-time credit scores when a user goes through a screen flow.
 
 To invoke a Composer flow in Flow Builder, you must:
 
@@ -15,8 +23,75 @@ To invoke a Composer flow in Flow Builder, you must:
 [[configure-your-invocable-composer-flow]]
 === Configure your Invocable Composer Flow
 
+To configure an invocable Composer flow:
+
+. Access Composer.
+. xref:ms_composer_flows.adoc#reate-a-new-flow[Create a new flow from scratch].
+. In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Invoke* to create an invocable flow. + 
+The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
+. Optionally, add input fields. For example, you can add an `Opportunity ID` input that returns a value if Salesforce passes the value of an Opportunity ID to the Composer flow. To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
+
+.. To define input fields using the *Visual Editor*:
+... In the *Input Name* field, enter a unique name for the input field.
+... In the *Data Type* dropdown, select the data type you want to use for the input field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, `DateTime`.
+... Optionally, add a *Sample Value* or *Help Text* to test the flow. 
+... To add more input fields, click *Add Input*.
+... Click *Apply*. +
+The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
+... Optionally, to change the input fields, click *Add Input Fields* to open the *Visual Editor* to edit the input fields.
+
+.. To define input fields using the Sample *JSON Editor*:
+... In the *Example Request* window, paste or enter the JSON sample. 
+
++
+.Example: JSON sample in the *Sample JSON Editor* window
+[%collapsible]
+====
+[source,JSON]
+----
+{
+{    
+"name": "ben",
+"age": 100
+}
+}
+----
+====
+
+Unlike the Visual Editor, the Sample JSON Editor supports objects, arrays, and 
+null values. 
+
++
+.Example: Example: Complex JSON sample in the *Sample JSON Editor* window
+[%collapsible]
+====
+[source,JSON]
+----
+{
+"data": {
+"favoriteNumbers": [3, 7, 13, 17, 23]
+}
+}
+----
+====
+
+... Click *Apply*. +
+The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
+... Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
+
+. Complete the flow. For example, configure system actions for the flow, define variables, or create flow controls. For more information, see xref:ms_composer_flows.adoc[Build a Composer Flow]. 
+. Click *Save* to save your flow.
+
+=== Delete an Invocable Flow Step
+
+If you need to delete an invocable step in your flow: 
+
+. Access the flow containing the invocable flow step that you want to delete. 
+. In the left corner of the step, click … > *Delete step*. +
+The step is deleted.
+ 
 [[test-your-invocable-composer-flow]]
-=== Test Your Invoocable Composer Flow 
+=== Test Your Invocable Composer Flow 
 
 To test your invocable Composer flow: 
 

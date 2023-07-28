@@ -6,14 +6,14 @@ Invoke a Composer flow in Flow Builder to enable deeper interoperability and int
 
 To invoke a Composer flow in Flow Builder, you must:
 
-. <<configure-your-composer-flow,Configure your Composer flow>>.
-. <<test-your-invocable-flow,Test your invokable Composer flow>>.
-. <<activate-your-invocable-flow,Activate your invocable Composer flow.>>
+. <<configure-your-invocable-composer-flow,Configure your invocable Composer flow>>.
+. <<test-your-invocable-composer-flow,Test your invokable Composer flow>>.
+. <<activate-your-invocable-composer-flow,Activate your invocable Composer flow>>.
 . <<set-up-salesforce-for-invocable-flows,Set up Salesforce for invocable flows>>.
-. <<set-up-flow-builder,Set up Flow Builder>>.
+. <<set-up-flow-builder-for-invocable-flows,Set up Flow Builder for invocable flows>>.
 
-[[configure-your-composer-flow]]
-=== Configure your Composer Flow
+[[configure-your-invocable-composer-flow]]
+=== Configure your Invocable Composer Flow
 
 [[test-your-invocable-composer-flow]]
 === Test Your Invoocable Composer Flow 
@@ -33,8 +33,8 @@ The testing output appears. Using this output, you can verify if the flow return
 [[set-up-salesforce-for-invocable-flows]]
 == Set Up Salesforce for Invocable Flows
 
-[[set-up-flow-builder]]
-=== Set Up Flow Bulder
+[[set-up-flow-builder-for-invocable-flows]]
+=== Set Up Flow Bulder for Invocable Flows 
 
 == Troubleshooting 
 

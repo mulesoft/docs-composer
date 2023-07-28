@@ -31,25 +31,26 @@ To configure an invocable Composer flow:
 The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
 . Optionally, add input fields. For example, you can add an `Opportunity ID` input that returns a value if Salesforce passes the value of an Opportunity ID to the Composer flow. To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
 
-.. To define input fields using the *Visual Editor*:
-... In the *Input Name* field, enter a unique name for the input field.
-... In the *Data Type* dropdown, select the data type you want to use for the input field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, `DateTime`.
-... Optionally, add a *Sample Value* or *Help Text* to test the flow. 
-... To add more input fields, click *Add Input*.
-... Click *Apply*. +
+* To define input fields using the *Visual Editor*:
+
+.. In the *Input Name* field, enter a unique name for the input field.
+.. In the *Data Type* dropdown, select the data type you want to use for the input field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, `DateTime`.
+.. Optionally, add a *Sample Value* or *Help Text* to test the flow. 
+.. To add more input fields, click *Add Input*.
+.. Click *Apply*. +
 The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
-... Optionally, to change the input fields, click *Add Input Fields* to open the *Visual Editor* to edit the input fields.
+.. Optionally, to change the input fields, click *Add Input Fields* to open the *Visual Editor* to edit the input fields.
 
-.. To define input fields using the Sample *JSON Editor*:
-... In the *Example Request* window, paste or enter the JSON sample. 
+* To define input fields using the Sample *JSON Editor*:
 
+.. In the *Example Request* window, paste or enter the JSON sample. 
 +
 .Example: JSON sample in the *Sample JSON Editor* window
 [%collapsible]
 ====
 [source,JSON]
 ----
-{
+{ 
 {    
 "name": "ben",
 "age": 100
@@ -57,10 +58,9 @@ The number of input fields you added appears next to *Input Fields*, displaying 
 }
 ----
 ====
-
++
 Unlike the Visual Editor, the Sample JSON Editor supports objects, arrays, and 
 null values. 
-
 +
 .Example: Example: Complex JSON sample in the *Sample JSON Editor* window
 [%collapsible]
@@ -74,11 +74,11 @@ null values.
 }
 ----
 ====
-
-... Click *Apply*. +
++
+.. Click *Apply*. +
 The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
-... Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
-
+.. Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
++
 . Complete the flow. For example, configure system actions for the flow, define variables, or create flow controls. For more information, see xref:ms_composer_flows.adoc[Build a Composer Flow]. 
 . Click *Save* to save your flow.
 

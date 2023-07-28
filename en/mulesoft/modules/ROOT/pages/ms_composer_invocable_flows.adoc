@@ -123,6 +123,14 @@ manually share the new client secret to external systems, such as Flow Builder, 
 [[set-up-salesforce-for-invocable-flows]]
 == Set Up Salesforce for Invocable Flows
 
+After creating your Composer flow, set up your Salesforce org to invoke flows in Composer: 
+
+. Access your Salesforce org. 
+. Go to *Setup* > *MuleSoft* > *Services* and click *Log In* to securely connect Anypoint Platform with your Salesforce org and grant access.
+. Create a new set of credentials that use the same credentials that you use for Composer. You must create an external credential and a named credential. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credentia] and https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Using Basic Authentication with Named Credentials].  +
+If your invocable Composer flow does not contain input fields, you must add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
+. Register your external service by copying the API specification from the Composer flow. For more information, refer to Paste the https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[JSON-formatted Schema Into Your Browser]. 
+
 [[set-up-flow-builder-for-invocable-flows]]
 === Set Up Flow Bulder for Invocable Flows 
 

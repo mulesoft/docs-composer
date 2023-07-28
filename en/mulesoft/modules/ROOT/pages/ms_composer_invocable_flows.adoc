@@ -105,6 +105,21 @@ The testing output appears. Using this output, you can verify if the flow return
 [[activate-your-invocable-composer-flow]]
 === Activate Your Invoocable Composer Flow 
 
+To activate your invocable Composer flow: 
+
+. In your invocable flow, click *Activate*. +
+The flow details page appears with a message indicating that the flow is now active. 
+. Click *Flow Credentials* to view the flow data that is used to invoke the flow from Flow Builder.
+. Optionally, you can reset the flow credentials periodically to ensure continuous security. In the *Flow Credentials* window, click *Reset Client Secret*. +
+The Client Secret field is updated. You can click the clipboard icon next to the field to copy the new Client Secret value. Once the client secret is reset, the previous client secret no longer works. You must 
+manually share the new client secret to external systems, such as Flow Builder, that invoke this Composer flow. 
+. Ensure that the following fields have values: 
+.. *URL*: The unique URL of the flow you are invoking. 
+.. *Client ID*: The username or unique identifier to authenticate this flow.
+.. *Client Secret*: The password or secret to authenticate this flow. 
+.. *OpenAPI Specification*: The OpenAPI specification that describes the structure of the underlying API of this flow.
+. Click *Close*. 
+
 [[set-up-salesforce-for-invocable-flows]]
 == Set Up Salesforce for Invocable Flows
 

@@ -18,6 +18,15 @@ To invoke a Composer flow in Flow Builder, you must:
 [[test-your-invocable-composer-flow]]
 === Test Your Invoocable Composer Flow 
 
+To test your invocable Composer flow: 
+
+. In your invocable flow, click *Test*.
+. If you have added input fields, the *Test Flow* window appears.
+. Enter a sample value for the input field or review the complex JSON to test the flow.
+. Click *Test Flow*. +
+The testing output appears. Using this output, you can verify if the flow returns the expected values in the sample output of the main canvas. 
+
+
 [[activate-your-invocable-composer-flow]]
 === Activate Your Invoocable Composer Flow 
 

@@ -269,7 +269,7 @@ When an external system successfully invokes a Composer flow, an HTTP 200 respon
 
 === Missing Required Input Parameters
 
-If a Composer flow requires input fields and the external system does not pass these required input fields, an HTTP 400 response occurs.
+If a Composer flow requires input fields and the external system does not pass these fields, an HTTP 400 response occurs.
 
 === Invalid Credentials 
 

@@ -4,7 +4,7 @@ Invoke a Composer flow from external systems to enable deeper interoperability a
 
 When your invocable flow is activated, Composer exposes a unique flow URL and a unique pair of client credentials (client ID and client secret) so that your flow can be invoked from external systems. You can reset these credentials for security best practices. Invoke invocable flows by using an HTTP call to the flow URL and using the flow client credentials as authentication. 
 
-To invoke a Composer flow, you must:
+To invoke a Composer flow:
 
 . <<create-an-invocable-composer-flow, Create an invocable Composer flow.>> 
 . <<invoke-the-composer-flow-from-an-external-system, Invoke the Composer flow from an external system.>>

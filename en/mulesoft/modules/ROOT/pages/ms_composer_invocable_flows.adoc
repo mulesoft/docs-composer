@@ -154,7 +154,7 @@ Ensure that the following fields have these values:
 +
 For more information, refer to xref:ms_composer_http_reference.adoc#test-the-connection[Test the Connection]. 
 +
-Ensure the following fields have these values:
+Ensure that the following fields have these values:
 
 * *Request Method*: `POST`
 * *Request Path*: `/`

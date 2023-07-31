@@ -19,7 +19,7 @@ Create an invocable Composer flow so you can later invoke it from an external sy
 . <<activate-your-invocable-composer-flow, Activate your invocable Composer flow.>>
 
 [[configure-your-invocable-composer-flow]]
-=== Configure your Invocable Composer Flow
+=== Configure Your Invocable Composer Flow
 
 To configure an invocable Composer flow:
 
@@ -27,7 +27,9 @@ To configure an invocable Composer flow:
 . xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
 . In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Invoke* to create an invocable flow. + 
 The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
-. Optionally, add input fields. For example, you can add an `Opportunity ID` input that returns a value if Salesforce passes the value of an opportunity ID to the Composer flow. To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
+. Optionally, add input fields. For example, you can add an `Opportunity ID` input that returns a value if Salesforce passes the value of an opportunity ID to the Composer flow. 
++
+To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
 
 * To define input fields using the *Visual Editor*:
 
@@ -90,8 +92,8 @@ The step is deleted.
 
 To test your invocable Composer flow: 
 
-. In your invocable flow, click *Test*.
-. If you have added input fields, the *Test Flow* window appears.
+. In your invocable flow, click *Test*. +
+If you have added input fields, the *Test Flow* window appears.
 . Enter a sample value for the input field or review the complex JSON to test the flow.
 . Click *Test Flow*. +
 The testing output appears. Using this output, you can verify if the flow returns the expected values in the sample output of the main canvas. 
@@ -159,16 +161,19 @@ After creating your Composer flow, set up your Salesforce org to invoke flows in
 
 . Access your Salesforce org. 
 . Go to *Setup* > *MuleSoft* > *Services* and click *Log In* to securely connect Anypoint Platform with your Salesforce org and grant access.
-. Create a new set of credentials that use the same credentials that you use for Composer. Create an external credential and a named credential. You must:
+. Create a new set of credentials that use the same credentials that you use for Composer. Create an external credential and a named credential. If your invocable Composer flow does not contain input fields, you must add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
++
+To create an external credential and a named credential, you must:
+
 .. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credential].
 .. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable External Credential Principals].
 .. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use Basic Authentication with Named Credentials].  
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and Edit a Named Credential]. +
-If your invocable Composer flow does not contain input fields, you must add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and Edit a Named Credential]. 
+
 . Register your external service by copying the API specification from the Composer flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 
 [[set-up-flow-builder-for-invocable-flows]]
-=== Set Up Flow Bulder for Invocable Flows 
+==== Set Up Flow Builder for Invocable Flows 
 
 After setting up Salesforce for invocable flows, you can call the Composer flow from Flow Builder:
 
@@ -187,21 +192,21 @@ In *Set Input Values*, for *body*, set the input value to the external service t
 +
 To set the input value, click *New Resource* and ensure the following fields have values:
 
-.. *Resource Type*: Select a resource type.
-.. *API Name*: Enter a name for the API.
-.. *Data Type*: Select a data type.
-.. *Apex Class*: Search for an Apex class.
-.. *Availability Outside the Flow*: Select *Available for input* and *Available for output* if needed. 
+* *Resource Type*: Select a resource type.
+* *API Name*: Enter a name for the API.
+* *Data Type*: Select a data type.
+* *Apex Class*: Search for an Apex class.
+* *Availability Outside the Flow*: Select *Available for input* and *Available for output* if needed. 
 
 +
 For example, if Salesforce passes the value of an opportunity ID to the Composer flow, 
 the values are: 
 
-... *Resource Type*: `Variable`
-... *API Name*: `InvocableFlowInputPayload`
-... *Data Type*: `Apex-Defined`
-... *Apex Class*: `ExternalService__InvocableFlowTest_invoke_IN_body`
-... *Availability Outside the Flow*: *Available for input* and *Available for output*
+* *Resource Type*: `Variable`
+* *API Name*: `InvocableFlowInputPayload`
+* *Data Type*: `Apex-Defined`
+* *Apex Class*: `ExternalService__InvocableFlowTest_invoke_IN_body`
+* *Availability Outside the Flow*: *Available for input* and *Available for output*
 
 . Click *Done*. +
 The invocable action is set up. 
@@ -209,15 +214,15 @@ The invocable action is set up.
 . Add an assignment. Click *+* above the action to add a new element and then click *Assignment*.
 . Enter a *Label* and *API Name*. 
 . Set variable values:
-.. *Variable*: Enter the *API Name* of the new resource from step 10.
-.. *Operator*: Select the operator to indicate or change the value. 
-.. *Value*: The value is assigned to the input fields when creating the invocable flow.
+* *Variable*: Enter the *API Name* of the new resource from step 10.
+* *Operator*: Select the operator to indicate or change the value. 
+* *Value*: The value is assigned to the input fields when creating the invocable flow.
 
 +
 For example, to set a value from a Salesforce record to an opportunity ID variable, the values are: 
-.. *Variable*: `{!InvocableFlowInputPayload.opportunityId}`
-.. *Operator*: `equals` 
-.. *Value*: `{!$Record.id}`
+* *Variable*: `{!InvocableFlowInputPayload.opportunityId}`
+* *Operator*: `equals` 
+* *Value*: `{!$Record.id}`
 
 . Save the flow. Enter a *Flow Label* and *Flow API Name*. 
 . Click *Save*.

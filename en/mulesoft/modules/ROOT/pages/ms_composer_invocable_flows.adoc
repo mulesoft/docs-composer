@@ -131,9 +131,16 @@ To invoke a Composer flow from another Composer flow:
 
 . Access Composer.
 . xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
-. In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Scheduler*. Select a value for *Every*.
 . Click *+* and click *System Action*. Select *HTTP*.
-. Configure your HTTP connection. For *Authorization Type*, select OAuth 2.0 Client Credentials. For *Client ID* and *Client Secret*, enter the client ID and client secret of the invocable flow. For more information about configuring your HTTP connection, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
+. Configure your HTTP connection. For more information about configuring your HTTP connection, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
++
+Ensure the following fields have these values:
+
+* *Authorization Type*: `Basic Authentication`
+* *Base URL*: The URL of the invocable flow
+* *Username*: Client ID of the invocable flow
+* *Password*: Client secret of the invocable flow
+
 . Click *Next*.
 . Configure the fields to test your HTTP connection. For more information about testing your HTTP connection, refer to xref:ms_composer_http_reference.adoc#test-the-connection[Test the Connection]. 
 +

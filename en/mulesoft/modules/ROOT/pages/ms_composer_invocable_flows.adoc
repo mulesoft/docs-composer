@@ -12,7 +12,7 @@ To invoke a Composer flow:
 [[create-an-invocable-composer-flow]]
 == Create an Invocable Composer Flow
 
-Create an invocable Composer flow so you can later invoke it from an external system. To create your invocable Composer flow, you must:
+Create an invocable Composer flow so that you can invoke it later from an external system:
 
 . <<configure-your-invocable-composer-flow, Configure your invocable Composer flow.>>
 . <<test-your-invocable-composer-flow, Test your invocable Composer flow.>>

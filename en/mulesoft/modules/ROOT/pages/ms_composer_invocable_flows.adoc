@@ -25,7 +25,8 @@ To configure an invocable Composer flow:
 
 . Access Composer.
 . xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
-. In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Invoke* to create an invocable flow. + 
+. In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Invoke* to create an invocable flow. 
++
 The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
 . Optionally, add input fields. For example, you can add an `Opportunity ID` input field that returns a value if Salesforce passes the value of an opportunity ID to the Composer flow. 
 +

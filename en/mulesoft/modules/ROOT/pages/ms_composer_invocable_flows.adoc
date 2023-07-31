@@ -135,8 +135,18 @@ To invoke a Composer flow from another Composer flow:
 . Click *+* and click *System Action*. Select *HTTP*.
 . Configure your HTTP connection. For *Authorization Type*, select OAuth 2.0 Client Credentials. For *Client ID* and *Client Secret*, enter the client ID and client secret of the invocable flow. For more information about configuring your HTTP connection, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
 . Click *Next*.
-. Configure the fields to test your HTTP connection. For *Request Body*, enter the input fields of the invocable flow. For more information about testing your HTTP connection, refer to xref:ms_composer_http_reference.adoc#test-the-connection[Test the Connection]. 
-. Click *Connect*.
+. Configure the fields to test your HTTP connection. For more information about testing your HTTP connection, refer to xref:ms_composer_http_reference.adoc#test-the-connection[Test the Connection]. 
++
+Ensure the following fields have these values:
+
+* *Request Method*: `POST`
+* *Request Path*: `/`
+* *Request Headers*
+** *Key*: `Content-Type`
+** *Value*: `application/json`
+* *Request Body*: Input fields of the invocable flow
+
+. Click *Connect*. After the connection is created, a flow can invoke another invocable flow. 
 
 === Invoke a Composer Flow from Flow Builder
 
@@ -165,10 +175,10 @@ After creating your Composer flow, set up your Salesforce org to invoke flows in
 +
 To create an external credential and a named credential, you must:
 
-. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credential].
-. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable External Credential Principals].
-. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use Basic Authentication with Named Credentials].  
-. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and Edit a Named Credential]. 
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credential].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable External Credential Principals].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use Basic Authentication with Named Credentials].  
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and Edit a Named Credential]. 
 
 . Register your external service by copying the API specification from the Composer flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 

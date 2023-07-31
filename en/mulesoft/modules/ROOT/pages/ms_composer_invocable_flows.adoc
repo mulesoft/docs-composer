@@ -41,7 +41,7 @@ To add input fields, click *Add Input Fields*. You can define input fields by us
 The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
 .. To change the input fields, click *Add Input Fields* to open the *Visual Editor*.
 
-* To define input fields using the Sample *JSON Editor*:
+* To define input fields by using the Sample *JSON Editor*:
 
 .. In the *Example Request* window, paste or enter the JSON sample. 
 +

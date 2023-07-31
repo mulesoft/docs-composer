@@ -78,7 +78,9 @@ Unlike the *Visual Editor*, the *Sample JSON Editor* supports objects, arrays, a
 The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
 .. Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
 +
-. Complete the flow. For example, configure system actions for the flow, define variables, or create flow controls. For more information, refer to xref:ms_composer_flows.adoc[Build a Composer Flow]. 
+. Complete the flow. 
++
+For example, configure system actions for the flow, define variables, or create flow controls. For more information, refer to xref:ms_composer_flows.adoc[Build a Composer Flow]. 
 . Click *Save* to save your flow.
 
 If you need to delete an invocable step from your flow: 

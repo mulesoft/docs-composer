@@ -51,6 +51,10 @@
           "title": "Build Formulas for Flows"
         },
         {
+          "file" : "ms_composer_invocable_flows.adoc",
+          "title": "Invoke a Composer Flow"
+        },
+        {
           "file" : "ms_composer_test_flow.adoc",
           "title": "Test a Flow"
         },

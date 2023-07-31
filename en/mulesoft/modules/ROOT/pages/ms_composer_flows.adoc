@@ -189,11 +189,7 @@ After you create or clone a flow, define the trigger: the event or time interval
 To define a trigger based on an event:
 
 . Open a flow if it is not already open. The *What Should Start This Flow?* dialog is displayed.
-+
-image:images/connection-example.png[What Should Start This Flow dialog, 500]
 . Select the connector where the triggering event occurs. Your existing connections are displayed.
-+
-image:images/list-of-connections.png[List of connections, 500]
 +
 You can choose an existing connection or create a new one:
 
@@ -268,13 +264,16 @@ If you don't choose a connection, you can schedule a flow to start at regular in
 To create a flow control:
 
 . In a new flow, from the *What Should Start This Flow?* dialog, look in the Flow Control section and click *Scheduler*.
-+
-image:images/connection-example.png[What Should Start This Flow dialog, 500]
 . Choose one of the time intervals, from 15 minutes to 30 days.
 +
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 . Click *Save*. +
 After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an <<create-an-if-else-block,If/Else block>> or <<create-and-test-a-for-each-loop,For Each>> loop.
+
+[[invoke-a-flow]]
+== Invoke a Flow 
+
+You can invoke a Composer flow directly from Flow Builder to enable deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
 
 == Open Access for Flows
 

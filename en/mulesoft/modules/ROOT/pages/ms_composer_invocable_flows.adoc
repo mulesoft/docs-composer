@@ -36,10 +36,11 @@ To add input fields, click *Add Input Fields*. You can define input fields by us
 
 .. In the *Input Name* field, enter a unique name for the input field. The name must begin with a letter and cannot contain spaces.
 .. In the *Data Type* dropdown, select the data type you want to use for the input field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, and `DateTime`.
-.. Optionally, add a *Sample Value* or *Help Text* to test the flow. 
+.. Optionally, add a value for *Sample Value* or *Help Text* to test the flow. 
 .. To add more input fields, click *Add Input*.
-.. Click *Apply*. +
-The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
+.. Click *Apply*. 
++
+The count of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
 .. To change the input fields, click *Add Input Fields* to open the *Visual Editor*.
 
 * To define input fields by using the Sample *JSON Editor*:
@@ -81,13 +82,13 @@ The number of input fields you added appears next to *Input Fields*, displaying 
 +
 . Complete the flow. 
 +
-For example, configure system actions for the flow, define variables, or create flow controls. For more information, refer to xref:ms_composer_flows.adoc[Build a Composer Flow]. 
+For example, configure system actions for the flow, define variables, or create flow controls as described in xref:ms_composer_flows.adoc[Build a Composer Flow]. 
 . Click *Save*.
 
 To delete an invocable step from your flow: 
 
 . Access the flow that contains the invocable flow step to delete. 
-. In the left corner of the step, click *…* > *Delete step*. +
+. In the corner of the step, click *…* > *Delete step*. +
  
 [[test-your-invocable-composer-flow]]
 === Test Your Invocable Composer Flow 
@@ -117,7 +118,7 @@ The *Client Secret* field is updated.
 Click the clipboard icon next to the field to copy the new *Client Secret* value. 
 +
 Once the client secret is reset, the previous client secret no longer works. You must manually share the new client secret to external systems that invoke this Composer flow. 
-. Ensure that the following fields have values: 
+. Ensure the following fields have values: 
 * *URL*: The unique URL of the flow you are invoking. 
 * *Client ID*: The username or unique identifier to authenticate this flow.
 * *Client Secret*: The password or secret to authenticate this flow. 
@@ -135,9 +136,8 @@ You can create an invocable flow in Composer and invoke it from another Composer
 
 To invoke a Composer flow from another Composer flow:
 
-. Access Composer.
 . xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
-. Click *+* and click *System Action*. Select *HTTP*.
+. Click *+* > *System Action* and select *HTTP*.
 . Configure your HTTP connection.
 +
  For more information, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
@@ -145,7 +145,7 @@ To invoke a Composer flow from another Composer flow:
 Ensure that the following fields have these values:
 
 * *Authorization Type*: `Basic Authentication`
-* *Base URL*: The URL of the invocable flow
+* *Base URL*: URL of the invocable flow
 * *Username*: Client ID of the invocable flow
 * *Password*: Client secret of the invocable flow
 
@@ -194,16 +194,14 @@ After creating your Composer flow, set up your Salesforce org to invoke flows in
 +
 Create an external credential and a named credential. If your invocable Composer flow does not contain input fields, add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
 +
-To create an external credential and a named credential, you must:
+To create an external credential and a named credential:
 
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credential].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable External Credential Principals].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use Basic Authentication with Named Credentials].  
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and Edit a Named Credential]. 
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
 
-. Register your external service by copying the API specification from the Composer flow. 
-+
-For more information, refer to https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
+. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 
 [[set-up-flow-builder-for-invocable-flows]]
 ==== Set Up Flow Builder for Invocable Flows 
@@ -222,7 +220,7 @@ If you create a record-triggered flow, select *Run Asynchronously* to avoid erro
 Click *+* to add a new element and then click *Action*.
 . In *Filter By*, select *Type* and click *External Service*. 
 . Select the action of the invocable flow from the external service.
-. Enter a *Label* and *API Name*. 
+. Enter a value for the *Label* and *API Name* fields. 
 . If you are invoking a Composer flow with inputs, follow these steps: 
 +
 In *Set Input Values*, for *body*, set the input value to the external service that triggers the Composer flow. +
@@ -248,7 +246,7 @@ the values are:
 . Click *Done*. +
 The invocable action is set up. 
 . Click *Done*. 
-. Add an assignment. Click *+* above the action to add a new element and then click *Assignment*.
+. Add an assignment by clicking *+* above the action to add a new element and then click *Assignment*.
 . Enter a *Label* and *API Name*. 
 . Set variable values:
 * *Variable*: Enter the *API Name* of the new resource from step 10.
@@ -263,9 +261,9 @@ For example, to set a value from a Salesforce record to an opportunity ID variab
 
 . Save the flow. Enter a *Flow Label* and *Flow API Name*. 
 . Click *Save*.
-. Debug the flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.flow_test_debug.htm&type=5[Debug a Flow in Flow Builder].
-. Test the flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.flow_test.htm&type=5[Test a Flow]. 
-. Activate the flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.flow_distribute_activate.htm&type=5[Activate or Deactivate a Flow].  
+. Debug the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test_debug.htm&type=5[Debug a Flow in Flow Builder].
+. Test the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test.htm&type=5[Test a Flow]. 
+. Activate the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_distribute_activate.htm&type=5[Activate or Deactivate a Flow].  
 
 == Troubleshooting 
 

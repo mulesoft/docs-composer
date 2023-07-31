@@ -201,7 +201,9 @@ To create an external credential and a named credential, you must:
 .. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use Basic Authentication with Named Credentials].  
 .. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and Edit a Named Credential]. 
 
-. Register your external service by copying the API specification from the Composer flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
+. Register your external service by copying the API specification from the Composer flow. 
++
+For more information, refer to https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 
 [[set-up-flow-builder-for-invocable-flows]]
 ==== Set Up Flow Builder for Invocable Flows 

@@ -87,7 +87,6 @@ If you need to delete an invocable step from your flow:
 
 . Access the flow that contains the invocable flow step to delete. 
 . In the left corner of the step, click *…* > *Delete step*. +
-The step is deleted.
  
 [[test-your-invocable-composer-flow]]
 === Test Your Invocable Composer Flow 

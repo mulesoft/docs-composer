@@ -29,7 +29,7 @@ To configure an invocable Composer flow:
 The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
 . Optionally, add input fields. For example, you can add an `Opportunity ID` input field that returns a value if Salesforce passes the value of an opportunity ID to the Composer flow. 
 +
-To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
+To add input fields, click *Add Input Fields*. You can define input fields by using the *Visual Editor* or *Sample JSON Editor*. 
 
 * To define input fields using the *Visual Editor*:
 

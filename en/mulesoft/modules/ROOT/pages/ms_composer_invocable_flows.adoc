@@ -112,7 +112,9 @@ The flow details page appears with a message indicating that the flow is now act
 . You can reset the flow credentials periodically to ensure continuous security. 
 +
 In the *Flow Credentials* window, click *Reset Client Secret*. +
-The *Client Secret* field is updated. You can click the clipboard icon next to the field to copy the new *Client Secret* value. 
+The *Client Secret* field is updated. 
++
+Click the clipboard icon next to the field to copy the new *Client Secret* value. 
 +
 Once the client secret is reset, the previous client secret no longer works. You must manually share the new client secret to external systems that invoke this Composer flow. 
 . Ensure that the following fields have values: 

@@ -163,7 +163,9 @@ Ensure the following fields have these values:
 ** *Value*: `application/json`
 * *Request Body*: Input fields of the invocable flow
 
-. Click *Connect*. After the connection is created, a flow can invoke another invocable flow. 
+. Click *Connect*. 
++
+After the connection is created, a flow can invoke another invocable flow. 
 
 === Invoke a Composer Flow from Flow Builder
 

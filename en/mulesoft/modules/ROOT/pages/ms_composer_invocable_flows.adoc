@@ -190,7 +190,9 @@ After creating your Composer flow, set up your Salesforce org to invoke flows in
 
 . Access your Salesforce org. 
 . Go to *Setup* > *MuleSoft* > *Services* and click *Log In* to securely connect Anypoint Platform with your Salesforce org and grant access.
-. Create a new set of credentials that use the same credentials that you use for Composer. Create an external credential and a named credential. If your invocable Composer flow does not contain input fields, you must add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
+. Create a new set of credentials that use the same credentials that you use for Composer. 
++
+Create an external credential and a named credential. If your invocable Composer flow does not contain input fields, add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
 +
 To create an external credential and a named credential, you must:
 

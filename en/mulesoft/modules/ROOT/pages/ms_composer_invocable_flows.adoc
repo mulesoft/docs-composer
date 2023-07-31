@@ -1,25 +1,22 @@
 = Invoke a Composer Flow 
 
-Invoke a Composer flow from external systems directly from Flow Builder to enable deeper interoperability and integrated capabilities across Salesforce. You can also authenticate every invocable flow for a secure and protected automation experience, create API-compatible invocable actions for seamless integration with diverse systems and applications, and build powerful automations by leveraging the built-in support for input fields.
+Invoke a Composer flow from external systems to enable deeper interoperability and integrated capabilities across Salesforce. You can also authenticate every invocable flow for a secure and protected automation experience, create API-compatible invocable actions for seamless integration with diverse systems and applications, and build powerful automations by leveraging the built-in support for input fields.
 
-== Invoke a Composer Flow in Flow Builder
+When your invocable flow is activated, Composer exposes a unique flow URL and a unique pair of client credentials (client ID and client secret) so that your flow can be invoked from external systems. You can also reset these credentials for security best practices. Invocable flows are invoked by using an HTTP call to the flow URL and by using the flow client credentials as authentication. 
 
-Invoke a Composer flow directly from Flow Builder to build integrations without writing a single line of code.
+To invoke a Composer flow, you must:
 
-For example, use invocable flows to build integrations in Flow Builder that connect to third-party systems such as NetSuite, Jira, and Workday. Some use cases include using Flow Builder to call an invocable Composer flow that:
+. <<create-an-invocable-composer-flow, Create an invocable Composer flow.>> 
+. <<invoke-the-composer-flow-from-an-external-system, Invoke the Composer flow from an external system.>>
 
-* Creates a Jira issue when a record is created in Salesforce.
-* Retrieves an order status from NetSuite and posts a message in Slack.
-* Gets real-time credit scores when a user goes through a screen flow.
-* Retrieves an order status from NetSuite when a user enters an order ID in the screen flow.
+[[create-an-invocable-composer-flow]]
+== Create an Invocable Composer Flow
 
-To invoke a Composer flow in Flow Builder, you must:
+Create an invocable Composer flow so you can later invoke it from an external system. To create your invocable Composer flow, you must:
 
-. <<configure-your-invocable-composer-flow,Configure your invocable Composer flow>>.
-. <<test-your-invocable-composer-flow,Test your invocable Composer flow>>.
-. <<activate-your-invocable-composer-flow,Activate your invocable Composer flow>>.
-. <<set-up-salesforce-for-invocable-flows,Set up Salesforce for invocable flows>>.
-. <<set-up-flow-builder-for-invocable-flows,Set up Flow Builder for invocable flows>>.
+. <<configure-your-invocable-composer-flow, Configure your invocable Composer flow.>>
+. <<test-your-invocable-composer-flow, Test your invocable Composer flow.>>
+. <<activate-your-invocable-composer-flow, Activate your invocable Composer flow.>>
 
 [[configure-your-invocable-composer-flow]]
 === Configure your Invocable Composer Flow
@@ -30,12 +27,12 @@ To configure an invocable Composer flow:
 . xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
 . In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Invoke* to create an invocable flow. + 
 The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
-. Optionally, add input fields. For example, you can add an `Opportunity ID` input that returns a value if Salesforce passes the value of an Opportunity ID to the Composer flow. To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
+. Optionally, add input fields. For example, you can add an `Opportunity ID` input that returns a value if Salesforce passes the value of an opportunity ID to the Composer flow. To add input fields, click *Add Input Fields*. You can define input fields using the *Visual Editor* or the *Sample JSON Editor*. 
 
 * To define input fields using the *Visual Editor*:
 
-.. In the *Input Name* field, enter a unique name for the input field.
-.. In the *Data Type* dropdown, select the data type you want to use for the input field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, `DateTime`.
+.. In the *Input Name* field, enter a unique name for the input field. The name must begin with a letter and cannot contain spaces.
+.. In the *Data Type* dropdown, select the data type you want to use for the input field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, and `DateTime`.
 .. Optionally, add a *Sample Value* or *Help Text* to test the flow. 
 .. To add more input fields, click *Add Input*.
 .. Click *Apply*. +
@@ -60,9 +57,9 @@ The number of input fields you added appears next to *Input Fields*, displaying 
 ----
 ====
 +
-Unlike the Visual Editor, the Sample JSON Editor supports objects, arrays, and null values. 
+Unlike the *Visual Editor*, the *Sample JSON Editor* supports objects, arrays, and null values. 
 +
-.Example: Example: Complex JSON sample in the *Sample JSON Editor* window
+.Example: Complex JSON sample in the *Sample JSON Editor* window
 [%collapsible]
 ====
 [source,JSON]
@@ -79,12 +76,10 @@ Unlike the Visual Editor, the Sample JSON Editor supports objects, arrays, and n
 The number of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
 .. Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
 +
-. Complete the flow. For example, configure system actions for the flow, define variables, or create flow controls. For more information, see xref:ms_composer_flows.adoc[Build a Composer Flow]. 
+. Complete the flow. For example, configure system actions for the flow, define variables, or create flow controls. For more information, refer to xref:ms_composer_flows.adoc[Build a Composer Flow]. 
 . Click *Save* to save your flow.
 
-=== Delete an Invocable Flow Step
-
-If you need to delete an invocable step in your flow: 
+If you need to delete an invocable step from your flow: 
 
 . Access the flow containing the invocable flow step that you want to delete. 
 . In the left corner of the step, click *…* > *Delete step*. +
@@ -109,10 +104,11 @@ To activate your invocable Composer flow:
 
 . In your invocable flow, click *Activate*. +
 The flow details page appears with a message indicating that the flow is now active. 
-. Click *Flow Credentials* to view the flow data that is used to invoke the flow from Flow Builder.
+. Click *Flow Credentials* to view the flow data that is used to invoke the flow from the external system.
 . Optionally, you can reset the flow credentials periodically to ensure continuous security. In the *Flow Credentials* window, click *Reset Client Secret*. +
-The Client Secret field is updated. You can click the clipboard icon next to the field to copy the new Client Secret value. Once the client secret is reset, the previous client secret no longer works. You must 
-manually share the new client secret to external systems, such as Flow Builder, that invoke this Composer flow. 
+The *Client Secret* field is updated. You can click the clipboard icon next to the field to copy the new *Client Secret* value. 
++
+Once the client secret is reset, the previous client secret no longer works. You must manually share the new client secret to external systems that invoke this Composer flow. 
 . Ensure that the following fields have values: 
 .. *URL*: The unique URL of the flow you are invoking. 
 .. *Client ID*: The username or unique identifier to authenticate this flow.
@@ -120,16 +116,56 @@ manually share the new client secret to external systems, such as Flow Builder, 
 .. *OpenAPI Specification*: The OpenAPI specification that describes the structure of the underlying API of this flow.
 . Click *Close*. 
 
+[[invoke-the-composer-flow-from-an-external-system]]
+== Invoke the Composer Flow from an External System
+
+After creating an invocable flow in Composer, you can invoke it from an external system.
+
+=== Invoke a Composer Flow from Another Composer Flow 
+
+You can create an invocable flow in Composer and invoke it from another Composer flow.
+
+To invoke a Composer flow from another Composer flow:
+
+. Access Composer.
+. xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
+. In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Scheduler*. Select a value for *Every*.
+. Click *+* and click *System Action*. Select *HTTP*.
+. Configure your HTTP connection. For *Authorization Type*, select OAuth 2.0 Client Credentials. For *Client ID* and *Client Secret*, enter the client ID and client secret of the invocable flow. For more information about configuring your HTTP connection, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
+. Click *Next*.
+. Configure the fields to test your HTTP connection. For *Request Body*, enter the input fields of the invocable flow. For more information about testing your HTTP connection, refer to xref:ms_composer_http_reference.adoc#test-the-connection[Test the Connection]. 
+. Click *Connect*.
+
+=== Invoke a Composer Flow from Flow Builder
+
+Invoke a Composer flow directly from Flow Builder to build integrations without writing a single line of code.
+
+For example, use invocable flows to build integrations in Flow Builder that connect to third-party systems such as NetSuite, Jira, and Workday. Some use cases include using Flow Builder to call an invocable Composer flow that:
+
+* Creates a Jira issue when a record is created in Salesforce.
+* Retrieves an order status from NetSuite and posts a message in Slack.
+* Gets real-time credit scores when a user goes through a screen flow.
+* Retrieves an order status from NetSuite when a user enters an order ID in the screen flow.
+
+To invoke a Composer flow from Flow Builder, you must:
+
+. <<set-up-salesforce-for-invocable-flows,Set up Salesforce for invocable flows>>.
+. <<set-up-flow-builder-for-invocable-flows,Set up Flow Builder for invocable flows>>.
+
 [[set-up-salesforce-for-invocable-flows]]
-== Set Up Salesforce for Invocable Flows
+==== Set Up Salesforce for Invocable Flows
 
 After creating your Composer flow, set up your Salesforce org to invoke flows in Composer: 
 
 . Access your Salesforce org. 
 . Go to *Setup* > *MuleSoft* > *Services* and click *Log In* to securely connect Anypoint Platform with your Salesforce org and grant access.
-. Create a new set of credentials that use the same credentials that you use for Composer. You must create an external credential and a named credential. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credentials] and https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Using Basic Authentication with Named Credentials].  +
+. Create a new set of credentials that use the same credentials that you use for Composer. Create an external credential and a named credential. You must:
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and Edit a Custom Authentication External Credential].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable External Credential Principals].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use Basic Authentication with Named Credentials].  
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and Edit a Named Credential]. +
 If your invocable Composer flow does not contain input fields, you must add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
-. Register your external service by copying the API specification from the Composer flow. For more information, refer to Paste the https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[JSON-formatted Schema Into Your Browser]. 
+. Register your external service by copying the API specification from the Composer flow. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 
 [[set-up-flow-builder-for-invocable-flows]]
 === Set Up Flow Bulder for Invocable Flows 
@@ -141,7 +177,7 @@ After setting up Salesforce for invocable flows, you can call the Composer flow 
 . Click *New Flow* to create a new flow in Flow Builder. 
 . Select the type of flow you want to create, for example, a *Record-Triggered Flow*, and then click *Create*.
 . Configure the start of the flow. If you create a record-triggered flow, you must select the *Run Asynchronously* checkbox to avoid errors.
-. Set up an invocable action. Click *+* to add a new element and then click *Assignment*.
+. Set up an invocable action. Click *+* to add a new element and then click *Action*.
 . In *Filter By*, select *Type* and click *External Service*. 
 . Select the action of the invocable flow from the external service.
 . Enter a *Label* and *API Name*. 
@@ -159,7 +195,7 @@ To set the input value, click *New Resource* and ensure the following fields hav
 
 +
 For example, if Salesforce passes the value of an opportunity ID to the Composer flow, 
-the field values are: 
+the values are: 
 
 ... *Resource Type*: `Variable`
 ... *API Name*: `InvocableFlowInputPayload`
@@ -170,7 +206,7 @@ the field values are:
 . Click *Done*. +
 The invocable action is set up. 
 . Click *Done*. 
-. Add an assignment. Click *+*. above the action to add a new element and then click *Assignment*.
+. Add an assignment. Click *+* above the action to add a new element and then click *Assignment*.
 . Enter a *Label* and *API Name*. 
 . Set variable values:
 .. *Variable*: Enter the *API Name* of the new resource from step 10.
@@ -178,10 +214,10 @@ The invocable action is set up.
 .. *Value*: The value is assigned to the input fields when creating the invocable flow.
 
 +
-For example, to set a value from a Salesforce record to an opportunity ID variable the values are: 
-.. *Variable*: `{!OpportunityId.opportunityId}`
+For example, to set a value from a Salesforce record to an opportunity ID variable, the values are: 
+.. *Variable*: `{!InvocableFlowInputPayload.opportunityId}`
 .. *Operator*: `equals` 
-.. *Value*: `{!$Record.id}`.
+.. *Value*: `{!$Record.id}`
 
 . Save the flow. Enter a *Flow Label* and *Flow API Name*. 
 . Click *Save*.
@@ -191,12 +227,14 @@ For example, to set a value from a Salesforce record to an opportunity ID variab
 
 == Troubleshooting 
 
-When Flow Builder successfully invokes a Composer flow, an HTTP 200 response occurs. To troubleshoot invocable flows, become familiar with the information about interpreting commonly thrown exception messages.
+When an external system successfully invokes a Composer flow, an HTTP 200 response occurs. To troubleshoot invocable flows, become familiar with the information about interpreting commonly thrown exception messages.
 
 === Missing Required Input Parameters
-If a Composer flow requires input fields and Flow Builder does not pass these required input fields, an HTTP 400 response occurs.
+
+If a Composer flow requires input fields and the external system does not pass these required input fields, an HTTP 400 response occurs.
 
 === Invalid Credentials 
+
 If a Composer flow has invalid credentials, an HTTP 401 response occurs.
 
 include::_partials/see-also.adoc[]

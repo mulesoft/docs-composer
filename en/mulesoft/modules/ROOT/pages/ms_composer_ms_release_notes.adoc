@@ -11,7 +11,7 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* You can now invoke a Composer flow from an external system such as Flow Builder. This feature enables deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
+* You can now invoke a Composer flow from external systems such as Flow Builder or another Composer flow. This feature enables deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
 
 == July 27, 2023 
 

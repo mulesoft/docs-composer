@@ -85,7 +85,7 @@ For example, configure system actions for the flow, define variables, or create 
 
 If you need to delete an invocable step from your flow: 
 
-. Access the flow containing the invocable flow step that you want to delete. 
+. Access the flow that contains the invocable flow step to delete. 
 . In the left corner of the step, click *…* > *Delete step*. +
 The step is deleted.
  

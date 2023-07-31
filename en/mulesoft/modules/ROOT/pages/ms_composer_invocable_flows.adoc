@@ -112,10 +112,10 @@ The *Client Secret* field is updated. You can click the clipboard icon next to t
 +
 Once the client secret is reset, the previous client secret no longer works. You must manually share the new client secret to external systems that invoke this Composer flow. 
 . Ensure that the following fields have values: 
-.. *URL*: The unique URL of the flow you are invoking. 
-.. *Client ID*: The username or unique identifier to authenticate this flow.
-.. *Client Secret*: The password or secret to authenticate this flow. 
-.. *OpenAPI Specification*: The OpenAPI specification that describes the structure of the underlying API of this flow.
+* *URL*: The unique URL of the flow you are invoking. 
+* *Client ID*: The username or unique identifier to authenticate this flow.
+* *Client Secret*: The password or secret to authenticate this flow. 
+* *OpenAPI Specification*: The OpenAPI specification that describes the structure of the underlying API of this flow.
 . Click *Close*. 
 
 [[invoke-the-composer-flow-from-an-external-system]]

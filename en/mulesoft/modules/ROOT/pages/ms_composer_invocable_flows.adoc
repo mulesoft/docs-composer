@@ -2,7 +2,7 @@
 
 Invoke a Composer flow from external systems to enable deeper interoperability and integrated capabilities across Salesforce. You can also authenticate every invocable flow for a secure and protected automation experience, create API-compatible invocable actions for seamless integration with diverse systems and applications, and build powerful automations by leveraging the built-in support for input fields.
 
-When your invocable flow is activated, Composer exposes a unique flow URL and a unique pair of client credentials (client ID and client secret) so that your flow can be invoked from external systems. You can also reset these credentials for security best practices. Invocable flows are invoked by using an HTTP call to the flow URL and by using the flow client credentials as authentication. 
+When your invocable flow is activated, Composer exposes a unique flow URL and a unique pair of client credentials (client ID and client secret) so that your flow can be invoked from external systems. You can reset these credentials for security best practices. Invoke invocable flows by using an HTTP call to the flow URL and using the flow client credentials as authentication. 
 
 To invoke a Composer flow, you must:
 

@@ -214,7 +214,9 @@ After setting up Salesforce for invocable flows, you can call the Composer flow 
 . Go to *Setup* > *Process Automation* > *Flows*.
 . Click *New Flow* to create a new flow in Flow Builder. 
 . Select the type of flow you want to create, for example, a *Record-Triggered Flow*, and then click *Create*.
-. Configure the start of the flow. If you create a record-triggered flow, you must select the *Run Asynchronously* checkbox to avoid errors.
+. Configure the start of the flow. 
+
+If you create a record-triggered flow, select *Run Asynchronously* to avoid errors.
 . Set up an invocable action.
 +
 Click *+* to add a new element and then click *Action*.

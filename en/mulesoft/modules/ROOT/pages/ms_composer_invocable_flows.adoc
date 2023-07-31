@@ -108,7 +108,7 @@ To activate your invocable Composer flow:
 
 . In your invocable flow, click *Activate*. +
 The flow details page appears with a message indicating that the flow is now active. 
-. Click *Flow Credentials* to view the flow data that is used to invoke the flow from the external system.
+. Click *Flow Credentials* to view the flow data that invokes the flow from the external system.
 . Optionally, you can reset the flow credentials periodically to ensure continuous security. In the *Flow Credentials* window, click *Reset Client Secret*. +
 The *Client Secret* field is updated. You can click the clipboard icon next to the field to copy the new *Client Secret* value. 
 +

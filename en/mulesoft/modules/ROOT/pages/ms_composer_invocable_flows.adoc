@@ -178,7 +178,7 @@ For example, use invocable flows to build integrations in Flow Builder that conn
 * Gets real-time credit scores when a user goes through a screen flow.
 * Retrieves an order status from NetSuite when a user enters an order ID in the screen flow.
 
-To invoke a Composer flow from Flow Builder, you must:
+To invoke a Composer flow from Flow Builder:
 
 . <<set-up-salesforce-for-invocable-flows,Set up Salesforce for invocable flows>>.
 . <<set-up-flow-builder-for-invocable-flows,Set up Flow Builder for invocable flows>>.

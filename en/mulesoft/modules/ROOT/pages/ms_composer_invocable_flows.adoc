@@ -84,7 +84,7 @@ The number of input fields you added appears next to *Input Fields*, displaying 
 For example, configure system actions for the flow, define variables, or create flow controls. For more information, refer to xref:ms_composer_flows.adoc[Build a Composer Flow]. 
 . Click *Save*.
 
-If you need to delete an invocable step from your flow: 
+To delete an invocable step from your flow: 
 
 . Access the flow that contains the invocable flow step to delete. 
 . In the left corner of the step, click *…* > *Delete step*. +

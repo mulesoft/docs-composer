@@ -138,7 +138,9 @@ To invoke a Composer flow from another Composer flow:
 . Access Composer.
 . xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
 . Click *+* and click *System Action*. Select *HTTP*.
-. Configure your HTTP connection. For more information about configuring your HTTP connection, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
+. Configure your HTTP connection.
++
+ For more information, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
 +
 Ensure the following fields have these values:
 

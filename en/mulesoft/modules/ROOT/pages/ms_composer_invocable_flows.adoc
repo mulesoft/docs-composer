@@ -147,18 +147,20 @@ After setting up Salesforce for invocable flows, you can call the Composer flow 
 . Enter a *Label* and *API Name*. 
 . If you are invoking a Composer flow with inputs, follow these steps: 
 +
-. In *Set Input Values*, for *body*, set the input value to the external service that triggers the Composer flow. +
+In *Set Input Values*, for *body*, set the input value to the external service that triggers the Composer flow. +
++
+To set the input value, click *New Resource* and ensure the following fields have values:
 
-To set the input value, click New Resource and ensure the following fields have values:
 .. *Resource Type*: Select a resource type.
 .. *API Name*: Enter a name for the API.
 .. *Data Type*: Select a data type.
 .. *Apex Class*: Search for an Apex class.
 .. *Availability Outside the Flow*: Select *Available for input* and *Available for output* if needed. 
+
 +
 For example, if Salesforce passes the value of an opportunity ID to the Composer flow, 
 the field values are: 
-+
+
 ... *Resource Type*: `Variable`
 ... *API Name*: `InvocableFlowInputPayload`
 ... *Data Type*: `Apex-Defined`
@@ -174,6 +176,7 @@ The invocable action is set up.
 .. *Variable*: Enter the *API Name* of the new resource from step 10.
 .. *Operator*: Select the operator to indicate or change the value. 
 .. *Value*: The value is assigned to the input fields when creating the invocable flow.
+
 +
 For example, to set a value from a Salesforce record to an opportunity ID variable the values are: 
 .. *Variable*: `{!OpportunityId.opportunityId}`

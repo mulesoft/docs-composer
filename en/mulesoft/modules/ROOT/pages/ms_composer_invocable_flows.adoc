@@ -142,7 +142,7 @@ To invoke a Composer flow from another Composer flow:
 +
  For more information, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 
 +
-Ensure the following fields have these values:
+Ensure that the following fields have these values:
 
 * *Authorization Type*: `Basic Authentication`
 * *Base URL*: The URL of the invocable flow

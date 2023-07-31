@@ -150,7 +150,9 @@ Ensure that the following fields have these values:
 * *Password*: Client secret of the invocable flow
 
 . Click *Next*.
-. Configure the fields to test your HTTP connection. For more information about testing your HTTP connection, refer to xref:ms_composer_http_reference.adoc#test-the-connection[Test the Connection]. 
+. Configure the fields to test your HTTP connection. 
++
+For more information, refer to xref:ms_composer_http_reference.adoc#test-the-connection[Test the Connection]. 
 +
 Ensure the following fields have these values:
 

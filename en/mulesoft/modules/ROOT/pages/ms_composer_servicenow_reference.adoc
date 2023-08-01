@@ -33,6 +33,8 @@ Checks for new or updated records in the ServiceNow `record_type` table. Provide
 +
 Note that *ServiceNow Time Zone* must be set to the same time zone as your ServiceNow instance.
 
+NOTE: To view custom or extended parent tables in ServiceNow Connector, select the *Allow access to this table via web services* and *Allow configuration* options in the table definition.
+
 == Actions
 
 include::_partials/action-definition.adoc[]
@@ -54,5 +56,11 @@ Update Record::
 Updates an existing entry of the selected record type table in ServiceNow. Provide a value in the following fields:
 * *Table name*
 * *Sys ID*
+
+NOTE: To view custom or extended parent tables in ServiceNow Connector, select the *Allow access to this table via web services* and *Allow configuration* options in the table definition.
+
+== Custom Fields 
+
+Custom fields are not supported. Using MuleSoft Composer, you can access standard field values for actions and triggers that you set in the ServiceNow record.
 
 include::_partials/see-also.adoc[]

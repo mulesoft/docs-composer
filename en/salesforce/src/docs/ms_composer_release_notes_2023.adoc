@@ -4,7 +4,289 @@ Use MuleSoft Composer for Salesforce to build connected experiences faster. You 
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
-See xref:ms_composer_release_notes_ki.adoc[Known Issues for MuleSoft Composer for Salesforce] for a list of known issues by date.
+See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
+
+== July 31, 2023 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now invoke a Composer flow from external systems such as Flow Builder or another Composer flow. This feature enables deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
+
+== July 27, 2023 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* To enhance connectivity, you can now use OAuth 2.0 Client Credentials to create a connection in Composer to MuleSoft RPA Connector. 
+
+== July 14, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Stripe Connector, the *On New Refund* trigger now outputs the following fields:
+
+** *Balance Transaction*
+** *Payment Intent*
+** *Charge ID*
+
+== July 12, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, design metadata errors are now shown to the user. | W-13587716
+|===
+
+== July 10, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* To improve discoverability, you can now refresh the value providers and other fields in a step within your flow by clicking the refresh button on the step header. This button appears when you hover above the refresh button for the step.
+
+== July 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following enhancements appear on the *Flow Details* page: 
+** The *Last Triggered* field now appears in the heading of the *Flow Details* page. This field displays the last time that a flow was triggered. Refreshing the *Flow Details* page also refreshes the value in the *Last Triggered* field. 
+** The *Reference ID* field now appears in the *Run History* section. For Event triggers, the value in this field is the corresponding *Record ID*. For events triggered by the Scheduler, a unique *Execution ID* value is created for the run instance. 
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In RPA Connector, the *RPA Process Execution Completed* trigger no longer fails every few seconds with an `UNKNOWN ERROR` message. |  W-13697777
+|===
+
+== June 28, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In RPA Connector, if a connection exception occurs, the *RPA Process Execution Completed* trigger now reconnects. | W-13280827
+|===
+
+== June 27, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now define a variable as temporary storage in your flow and use it as a data pill. Defining a variable enables you to complete certain use cases like aggregating calculations and storing values. You define variables locally within a flow and use them anywhere within that flow. 
+
+== June 26, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, custom fields are now visible in projects with no issues created. | W-13498207
+|===
+
+== June 21, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Salesforce Connector now properly displays required DateTime fields. | W-13606652
+|===
+
+== June 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Custom Expression Editor* now supports typeahead. You can now type math operators in the *Custom Expression Editor* and select them using the Enter key, Tab key, or mouse with typeahead. You no longer need to toggle the operator tab and manually select the math operator from the list.
+
+== June 15, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The Error Handler is now generally available. You can use this feature to watch for errors in connection or logic in specific steps of your flow and then designate logic to handle the errors that may occur.
+
+== June 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, the *Get records* action no longer throws an error when the value of a condition contains an apostrophe.|W-13192901
+|===
+
+== June 8, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, custom fields now appear as intended.|W-13552619
+|===
+
+== June 6, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|The *fromStringToDateTime* function now preserves the timezone as intended. Active flows receive this change when they are deactivated. Inactive flows show an error and you must manually change the format parameter of the formula to `uuuu-MM-dd'T'HH:mm:ssz`.|W-13488568
+|===
+
+== June 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, custom fields now appear as intended for the RETURN_AUTHORIZATION record type.|W-13484699
+|===
+
+== May 31, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: SAP S/4HANA Cloud. 
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|QuickBooks Connector now includes an enhanced implementation for input parameters, such as better mapping when input parameters are not specified or are `null`.|W-13280661
+|In NetSuite Connector, custom fields now appear as intended.|W-13222742, W-13304252, W-13481333
+|===
+
+== May 25, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When adding a trigger or an action, you can now use the new search bar in the *System Action* and *System Event* windows to enter the specific name of a connector or shared API to use in your flow.
+
+== May 24, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Sage Intacct Connector, the *New or Updated Customer* trigger now uses the correct watermark time pattern, which prevents errors in processing the request.|W-13119901
+|===
+
+== May 17, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the exception message is now more clear when there is an invalid organization site URL.|W-13143023
+|===
+
+== May 12, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, custom metadata objects are no longer shown as metadata keys for the *Create new record*, *Update record*, and *Create or update record* actions as intended.|W-13182376
+|===
+
+== May 9, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Sage Connector now automatically reconnects when there is a session timeout.|W-13003862
+|===
+
+== May 8, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* A new option, *Only the first record*, is now enabled for the *Get records* action in Salesforce and NetSuite Connectors. Using this option, you can return a single record by using a unique identifier in your search criteria. When selected, the *Get records* action searches for all records that meet the selected criteria and returns the first record in the list that meets the criteria. 
+
+== May 5, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|To resolve metadata load errors caused by timeouts, requests to retrieve metadata from the API in NetSuite Connector are now optimized. |W-12411817
+|===
+
+== May 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* An optional new field, *Organization Site URL*, appears when creating a connection for Jira Connector. The *Organization Site URL* field enables you to enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect.
+
+== April 25, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Snowflake Connector now validates account names by checking for invalid special characters. |W-12598991
+|In NetSuite Connector, the *Get Records* action now correctly supports the *OTHER_CHARGE_SALE_ITEM* record type. |W-13001785
+|===
+
+== April 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Error messages in HTTP Connector now display more precise error types. |W-12483461
+|When you complete the *Operation Values* field in REST Consumer Connector, an error indicating that a value is required no longer occurs. |W-12648223
+|Rest Consumer Connector now properly recognizes the values provided in the *Client Secret* and *Client ID* fields while using API Sharing. |W-12601570
+|===
+
+== April 17, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The Error Handler (Beta) is now available. You can use this feature to watch for errors in connection or logic in specific steps of your flow and then designate logic to handle the errors that may occur.
+
+== April 12, 2023 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Custom Expression Editor* now supports the following `string` functions:
+** `emptyString`
+** `substring`
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In QuickBooks Online Connector, an exception with an unknown description no longer occurs when custom fields are not specified. |W-12724854
+|===
+
+== April 11, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Xero Connector, fixed the issue in which a flow using the *Create or Update Invoice* object was not triggered when testing. |W-12670939
+|===
 
 == April 4, 2023
 

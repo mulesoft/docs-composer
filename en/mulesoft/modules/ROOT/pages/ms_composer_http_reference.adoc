@@ -2,6 +2,7 @@
 
 HTTP Connector connects cloud applications that are not currently supported through dedicated connectors. Use HTTP Connector to connect to systems that Composer does not currently support to extend the capabilities of the systems that Composer does support. HTTP Connector for Composer uses https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP] 1.1 to handle JSON data.
 
+[[connections]]
 == Connections
 
 To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with the required credentials of that system. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
@@ -590,7 +591,7 @@ Under the OAuth Authorization Code Grant type, the authorization request sends d
 . Click *Next*. +
 The OAuth 2.0 Authorization Code Connection is configured. You can now test the connection.
 
-
+[[test-the-connection]]
 === Test the Connection
 
 After you establish a connection method, you can test the connection. While Composer tests other connectors  automatically in the background, you must test HTTP Connector. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.

@@ -1,6 +1,21 @@
-= Known Issues for MuleSoft Composer
+= Known Issues and Limitations for MuleSoft Composer
 
-The following list displays Known Issues for MuleSoft Composer. The list is sorted by the date in which the issue appeared.
+The following list displays known issues and limitations for MuleSoft Composer. The list is sorted by the date in which the known issue or limitation appeared.
+
+== May 31, 2023
+
+=== SAP S/4HANA Cloud
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|When adding an action or a trigger, the *Service* field dropdown menu might appear empty, which prevents completing the connector configuration.
+
+Similarly, during configuration, the `Retrieving metadata for the step failed` error might occur. | This is an intermittent issue that should resolve after a brief period of time. | W-13527982
+|===
 
 == March 22, 2023
 

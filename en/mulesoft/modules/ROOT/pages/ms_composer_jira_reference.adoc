@@ -2,13 +2,25 @@
 
 Jira is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
 
-To use Jira Connector with Composer, you must have the _Administrator Jira_ global permission. For more information, see the https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira documentation].
+To use Jira Connector with Composer, you must have the _Administrator Jira_ global permission. For more information, see the https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira documentation^].
 
 == Connections
 
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
+
+Organization Site URL::
+
+Enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect. If you do not specify a value in the *Organization Site URL* field, the connection uses the first URL listed in the `/resources` endpoint of the Atlassian API. Set the *Organization Site URL* field for every connection if you want the connection to use a specific organization instead of a default organization. For more information about Jira organizations, see the https://support.atlassian.com/organization-administration/docs/get-started-with-an-atlassian-organization/[Jira documentation^]. 
++
+To connect to a Jira organization via an Atlassian account: 
+
+. In the *Connect to your Jira Account* window, in the *Organization Site URL* field, enter the Jira organization URL. For example, `+https://orgname.atlassian.net+`.  
+. Click *Connect*. +
+An Atlassian window appears, indicating that Composer is requesting access to an Atlassian account. 
+. In the window, in the *Authorize for site* dropdown, select the organization you want to use and then click *Accept*. +
+Composer is now connected to your Jira organization.  
 
 Username::
 
@@ -123,6 +135,24 @@ Uploads attachment to a Jira issue. Provide a value for the following fields:
 
 == Custom Fields
 
-Using MuleSoft Composer, you can access Standard  custom field values in Jira for actions and triggers that you set in the Jira issue.
+Using MuleSoft Composer, you can access Standard custom field values in Jira for actions and triggers that you set in the Jira issue.
+
+Custom fields containing the following list components are not currently supported:
+
+* Text fields (multi-line)
+* Labels
+* Checkboxes
+* Radio buttons
+* Select lists (multiple-choice)
+* Select lists (cascading)
+
+== Standard Fields
+
+The following standard fields are not supported at this time: 
+
+* *Affects version*
+* *Fix version*
+* *Environment*
+* *Component*
 
 include::_partials/see-also.adoc[]

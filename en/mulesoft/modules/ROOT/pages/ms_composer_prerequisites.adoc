@@ -67,7 +67,7 @@ Salesforce certificates expire after one year. To renew an expired certificate, 
 MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
    .. Click *Composer User* or *Composer Administrator*.
-   ... *Composer User* has general access to Composer funcionality such as building and managing flows. 
+   ... *Composer User* has general access to Composer functionality such as building and managing flows. 
    ... *Composer Administrator* has access to the *Settings* page and can manage email preferences and API Sharing. 
    .. Click *Manage Assignments*, and then *Add Assignments*.
    .. Select the checkbox next to each user who will receive permission to use Composer.

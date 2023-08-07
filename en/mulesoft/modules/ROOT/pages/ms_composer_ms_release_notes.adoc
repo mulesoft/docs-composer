@@ -11,7 +11,7 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* In the *Custom Expression Editor*, you can now update any `List<Primitive>` (for example, `List<String>` or `List<Number>`)  and manually build a list using commas and the typeahead feature. You cannot build the list in-line; however, you can select an existing `List` data pill of that data type to build your list. 
+* In the *Custom Expression Editor*, you can now update any `List<Primitive>` (for example, `List<String>` or `List<Number>`) and manually build a list using commas and the typeahead feature. You cannot build the list in-line; however, you can select an existing `List` data pill of that data type to build your list. 
 
 * The following `List` functions are now available for the *Custom Expression Editor*: 
 ** `joinBy`: Merges a list into a single string value and uses the provided string as a separator between each item in the list.

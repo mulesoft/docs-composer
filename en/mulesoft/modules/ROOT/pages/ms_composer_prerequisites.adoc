@@ -140,7 +140,7 @@ The *Account* page appears, displaying a linking request from Anypoint Platform.
 . In the *Access Token* section, click *Authenticate in Anypoint*. +
 The Anypoint Platform login page appears.
 
-. Log in to Anypoint Platform. Ensure that the user logging into Anypoint Platform has the right https://docs.mulesoft.com/api-manager/2.x/access-client-app-id-task[permissions to create a client app^].
+. Log in to Anypoint Platform. Ensure that the user logging into Anypoint Platform has the right https://docs.mulesoft.com/api-manager/2.x/access-client-app-id-task[permissions to create a client app].
 
 . In the *Client App* section, click *Create Client App*. +
 The Composer organization is now linked to the Anypoint organization.

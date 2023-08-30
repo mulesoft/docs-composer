@@ -2,6 +2,19 @@
 
 The following list displays known issues and limitations for Composer for Salesforce. The list is sorted by the date in which the known issue or limitation appeared.
 
+== August 29, 2023
+
+=== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|Some Composer flows appear stuck since the access token fails to refresh, which prevents events from being triggered as intended. This error can show up in different ways, such as `Failed to send request to`, `Failed to get next element`, or `UNKNOWN ERROR` exceptions. | Refresh the affected Composer flows manually. | W-13628406
+|===
+
 == May 31, 2023
 
 === SAP S/4HANA Cloud

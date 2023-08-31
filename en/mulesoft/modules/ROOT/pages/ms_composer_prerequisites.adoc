@@ -34,7 +34,7 @@ Before anyone can use Composer, a Salesforce admin must set it up, including ins
 
 === Find the Composer Setup Page
 
-. Log in to your Salesforce org as an admin.
+. Log in to your Salesforce org as an admin with the `System Administrator` profile. Do not use cloned or adjusted profiles even if they have more privileges.
 . Click the Setup gear icon, and then choose *Setup*.
 . Enter `composer` in the search bar.
 . Select *MuleSoft Composer* from the search results.

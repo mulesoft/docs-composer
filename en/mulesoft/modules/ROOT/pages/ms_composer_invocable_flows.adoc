@@ -330,7 +330,7 @@ global class GcalComposer_invoke_IN_body {
 ----
 +
 You can view all of the Apex classes created automatically by Salesforce under the *Apex Classes* section.
-
++
 The only additional step is to write Apex code to use the external service Apex classes created automatically by Salesforce. Continuing with the previous example, the following code calls out to the invocable flow to create the Google Calendar meeting:
 +
 ----

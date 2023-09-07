@@ -273,7 +273,7 @@ After creating the trigger, add one or more actions to the flow. To apply logic 
 [[invoke-a-flow]]
 == Invoke a Flow 
 
-You can invoke a Composer flow from external systems, such as Flow Builder or another Composer flow, to enable deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
+You can invoke a Composer flow from external systems, such as Flow Builder, another Composer flow, or an Apex callout, to enable deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
 
 == Open Access for Flows
 

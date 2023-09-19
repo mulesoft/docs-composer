@@ -28,6 +28,11 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 * When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
 * Composer fields with date values use the following format: YYYY-MM-DDThh:mmZ.
 
+[[available-regions-sf]]
+== Available Regions
+
+In MuleSoft Composer for Salesforce, the Anypoint Platform control and runtime planes for an organization are pre-selected based on the data center in which the pod of the Salesforce instance is located. The mapping is done internally and users cannot change the mapping. All US and APAC pods use US East (N. Virginia) and all EU pods use EU (Frankfurt).
+
 == Set Up Composer
 
 Before anyone can use Composer, a Salesforce admin must set it up, including installation, permissions assignments, and a few adjustments to your Salesforce org settings.
@@ -64,7 +69,7 @@ Four more steps are revealed when the installation is complete. As the admin per
 +
 Salesforce certificates expire after one year. To renew an expired certificate, click *Initiate Configuration*.
 +
-MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
+MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer. When MuleSoft creates and configures an instance of Anypoint Platform, MuleSoft automatically chooses the region when provisioning the org based on the pod of the Salesforce instance. For more information, refer to <<available-regions-sf, Available Regions>>.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
    .. Click *Composer User* or *Composer Administrator*.
    ... *Composer User* has general access to Composer functionality such as building and managing flows. 
@@ -222,6 +227,11 @@ IP addresses used by Composer are dynamic; therefore, MuleSoft can't provide a l
 * If you use Firefox or Chrome, allow third-party cookies.
 * When you connect to another system, follow the requirements and restrictions applicable to that connection.
 * Composer fields with date values use the format _YYYY-MM-DDThh:mmZ_.
+
+[[available-regions-ms]]
+== Available Regions
+
+In MuleSoft Composer, the Anypoint Platform control and runtime planes for an organization are selected by the AE at provisioning time (during the quoting process). Users cannot change the mapping. MuleSoft Composer is available in the US East (N. Virginia) and EU (Frankfurt) regions.
 
 == Set Up Composer
 

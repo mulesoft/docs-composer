@@ -231,7 +231,7 @@ IP addresses used by Composer are dynamic; therefore, MuleSoft can't provide a l
 [[available-regions-ms]]
 == Available Regions
 
-In MuleSoft Composer, the Anypoint Platform control and runtime plane for an organization is selected by the AE at provisioning time (during the quoting process). Users cannot change the mapping. MuleSoft Composer is available in the US East (N. Virginia) and EU (Frankfurt) regions.
+In MuleSoft Composer, the Anypoint Platform control and runtime planes for an organization are selected by the AE at provisioning time (during the quoting process). Users cannot change the mapping. MuleSoft Composer is available in the US East (N. Virginia) and EU (Frankfurt) regions.
 
 == Set Up Composer
 

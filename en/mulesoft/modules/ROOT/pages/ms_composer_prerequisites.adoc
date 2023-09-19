@@ -31,7 +31,7 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 [[available-regions-sf]]
 == Available Regions
 
-In MuleSoft Composer for Salesforce, the Anypoint Platform control and runtime plane for an organization is pre-selected based on the data center in which the pod of the Salesforce instance is located. The mapping is done internally and users cannot change the mapping. All US and APAC pods use US East (N. Virginia) and all EU pods use EU (Frankfurt).
+In MuleSoft Composer for Salesforce, the Anypoint Platform control and runtime planes for an organization are pre-selected based on the data center in which the pod of the Salesforce instance is located. The mapping is done internally and users cannot change the mapping. All US and APAC pods use US East (N. Virginia) and all EU pods use EU (Frankfurt).
 
 == Set Up Composer
 

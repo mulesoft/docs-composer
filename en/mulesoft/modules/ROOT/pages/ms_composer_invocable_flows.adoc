@@ -242,7 +242,7 @@ For example, to set a value from a Salesforce record to an opportunity ID variab
 * *Operator*: `equals` 
 * *Value*: `{!$Record.id}`
 
-. If you are invoking a Composer flow with outputs, you can use the invocable flow output in your Salesforce flow:
+. If you are invoking a Composer flow with outputs, you can use the invocable flow output in your Salesforce flow.
 +
 For example, if your invocable flow returns an opportunity ID, you can use the *Update Records* flow element to assign this opportunity ID to any record field. In the *Set Field Values for the Account Record* section, in the *Value* field dropdown, your invocable flow output is available by selecting the `Outputs from ActionName > 200 > [Available Output Values]` option, in which `ActionName` is the Label or API Name from step 9 and `Available Output Values` is the outputs from the flow, as interpreted from the API specification added in the external service. Then, in the *Field* field, you can select any field on the record that you want to update.
 

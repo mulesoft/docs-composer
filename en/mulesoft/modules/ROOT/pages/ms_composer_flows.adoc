@@ -471,7 +471,7 @@ In this example, the *Status* field in a case in Salesforce is mapped to the *St
 When mapping source data fields:
 
 * The source field must be a data pill with a fixed list of values.
-* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field.
+* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field or any string field.
 * If any other unmapped value from the source system is found, the default mapping specifies the value in the target system . If you do not specify a default value, the original value from the source field is passed to the target field.
 * The mapping is stored at the organization level and can be reused across flows.
 * The mapping must have a unique name.
@@ -480,7 +480,7 @@ When mapping source data fields:
 To map source data fields to target fields:
 
 . From the *Composer Flows* tab, open a flow and click *Edit*.
-. In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the menu. +
+. In an action card, in a field that supports *Pick from List* or any string field, select *Picklist Mapping* from the menu. +
 The *Picklist Mapping* window appears.
 . In the *Picklist Source* section, in the *Source* field, select the value from the list that you want to map to the value in the *Target* field, and then click *Next*.
 . In the *Global Picklist Selection* section, create a new picklist or choose an existing picklist.
@@ -494,7 +494,10 @@ To create a new picklist:
 . Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
 `This maps [Source Field Name] from [Source Connection Name] to [Target Field Name] from [Target Connection Name]`
 . In the table, select the source fields and their target mappings.
-. Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the dropdown.
+. Optionally, to add additional field mappings, click *Add Row* and if the additional field mapping is a:
+.. *Pick from List* field, enter the source field values manually (with a row representing each value) and select the target mappings from the dropdown.
+.. String field, manually define the value in the target field. 
+
 . Once you have added all applicable field mappings, click *Create Picklist*.
 . Click *Apply*. +
 The *<Picklist Name>* section appears, displaying a table of values and their mappings.

@@ -1,6 +1,6 @@
 = Invoke a Composer Flow 
 
-Invoke a Composer flow from external systems to enable deeper interoperability and integrated capabilities across Salesforce. You can also authenticate every invocable flow for a secure and protected automation experience, create API-compatible invocable actions for seamless integration with diverse systems and applications, and build powerful automations by leveraging the built-in support for input fields.
+Invoke a Composer flow from external systems to enable deeper interoperability and integrated capabilities across Salesforce. You can also authenticate every invocable flow for a secure and protected automation experience, create API-compatible invocable actions for seamless integration with diverse systems and applications, and build powerful automations by leveraging the built-in support for input and output fields.
 
 When your invocable flow is activated, Composer exposes a unique flow URL and a unique pair of client credentials (client ID and client secret) so that your flow can be invoked from external systems. You can reset these credentials for security best practices. Invoke invocable flows by using an HTTP call to the flow URL and using the flow client credentials as authentication. 
 
@@ -41,7 +41,7 @@ To add input fields, click *Add Input Fields*. You can define input fields by us
 .. Click *Apply*. 
 +
 The count of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
-.. To change the input fields, click *Add Input Fields* to open the *Visual Editor*.
+.. Optionally, to change the input fields, click *Add Input Fields* to open the *Visual Editor*.
 
 * To define input fields by using the Sample *JSON Editor*:
 
@@ -81,6 +81,16 @@ Unlike the *Visual Editor*, the *Sample JSON Editor* supports objects, arrays, a
 The count of the of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
 .. Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
 +
+. Optionally, add output fields. If specified, output fields are returned as the JSON response. For example, if there is an `Opportunity ID` input field, you can add `{"opportunityId": "<id>"}` as an output field. 
++
+To add output fields: 
++
+.. Click *Add Output Fields*.
+.. In the *Label* field, enter a unique name for the output field. The name must begin with a letter. Avoid including spaces in this field since spaces are escaped and replaced with x20.
+.. In the *Data Type* dropdown, select the data type you want to use for the output field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, and `DateTime`.
+.. Click *Apply*.
+.. Once output fields are added, you can then map data pills, custom expressions, or plain text. For example, map an input field to the output field.
+.. Optionally to change the output fields, click *Add Output Fields* to open the editor to edit the output fields.
 . Complete the flow. 
 +
 For example, configure system actions for the flow, define variables, or create flow controls as described in xref:ms_composer_flows.adoc[Build a Composer Flow]. 
@@ -113,7 +123,7 @@ To activate your invocable Composer flow:
 . In your invocable flow, click *Activate*. 
 +
 The flow details page appears with a message indicating that the flow is now active. When an invocable flow is activated for the first time, the org admin receives an email. 
-. Click *Flow Credentials* to view the flow data that invokes the flow from the external system.
+. Click *Flow Credentials* to view the flow data that invokes the flow from the external system. If your flow is deactivated for more than 30 days, the flow credentials will expire. New flow credentials are generated the next time your flow is activated.
 . You can reset the flow credentials periodically to ensure continuous security. 
 +
 In the *Flow Credentials* window, click *Reset Client Secret*. 
@@ -232,6 +242,11 @@ For example, to set a value from a Salesforce record to an opportunity ID variab
 * *Operator*: `equals` 
 * *Value*: `{!$Record.id}`
 
+. If you are invoking a Composer flow with outputs, you can use the invocable flow output in your Salesforce flow.
++
+For example, if your invocable flow returns an opportunity ID, you can use the *Update Records* flow element to assign this opportunity ID to any record field. In the *Set Field Values for the Account Record* section, in the *Value* field dropdown, your invocable flow output is available by selecting the `Outputs from ActionName > 200 > [Available Output Values]` option, in which `ActionName` is the Label or API Name from step 9 and `Available Output Values` is the outputs from the flow, as interpreted from the API specification added in the external service. Then, in the *Field* field, you can select any field on the record that you want to update.
+
+
 . Save the flow. Enter a *Flow Label* and *Flow API Name*. 
 . Click *Save*.
 . Debug the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test_debug.htm&type=5[Debug a Flow in Flow Builder].
@@ -246,7 +261,7 @@ You can create an invocable flow in Composer and invoke it from another Composer
 To invoke a Composer flow from another Composer flow:
 
 . xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
-. Click *+* > *System Action* and select *HTTP*.
+. Click *+* > *System Event* and select *HTTP*.
 . Configure your HTTP connection.
 +
 For more information, refer to HTTP Connector xref:ms_composer_http_reference.adoc#connections[Connections]. 

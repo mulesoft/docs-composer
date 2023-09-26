@@ -28,13 +28,18 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 * When you create a connection to another system, check for the requirements and limitations listed in the Composer reference section for each connection.
 * Composer fields with date values use the following format: YYYY-MM-DDThh:mmZ.
 
+[[available-regions-sf]]
+== Available Regions
+
+In MuleSoft Composer for Salesforce, the Anypoint Platform control and runtime planes for an organization are pre-selected based on the data center in which the pod of the Salesforce instance is located. The mapping is done internally and users cannot change the mapping. All US and APAC pods use US East (N. Virginia) and all EU pods use EU (Frankfurt).
+
 == Set Up Composer
 
 Before anyone can use Composer, a Salesforce admin must set it up, including installation, permissions assignments, and a few adjustments to your Salesforce org settings.
 
 === Find the Composer Setup Page
 
-. Log in to your Salesforce org as an admin.
+. Log in to your Salesforce org as an admin with the `System Administrator` profile. Do not use cloned or adjusted profiles even if they have more privileges.
 . Click the Setup gear icon, and then choose *Setup*.
 . Enter `composer` in the search bar.
 . Select *MuleSoft Composer* from the search results.
@@ -64,10 +69,10 @@ Four more steps are revealed when the installation is complete. As the admin per
 +
 Salesforce certificates expire after one year. To renew an expired certificate, click *Initiate Configuration*.
 +
-MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer.
+MuleSoft creates and configures an instance of Anypoint Platform to provide a dedicated environment for Composer. When MuleSoft creates and configures an instance of Anypoint Platform, MuleSoft automatically chooses the region when provisioning the org based on the pod of the Salesforce instance. For more information, refer to <<available-regions-sf, Available Regions>>.
 . In the *Assign Users to MuleSoft Composer* section, click the *Assign Users* button to go directly to the Salesforce *Permission Sets* page:
    .. Click *Composer User* or *Composer Administrator*.
-   ... *Composer User* has general access to Composer funcionality such as building and managing flows. 
+   ... *Composer User* has general access to Composer functionality such as building and managing flows. 
    ... *Composer Administrator* has access to the *Settings* page and can manage email preferences and API Sharing. 
    .. Click *Manage Assignments*, and then *Add Assignments*.
    .. Select the checkbox next to each user who will receive permission to use Composer.
@@ -140,7 +145,7 @@ The *Account* page appears, displaying a linking request from Anypoint Platform.
 . In the *Access Token* section, click *Authenticate in Anypoint*. +
 The Anypoint Platform login page appears.
 
-. Log in to Anypoint Platform. Ensure that the user logging into Anypoint Platform has the right xref:2.x@api-manager::access-client-app-id-task[permissions to create a client app].
+. Log in to Anypoint Platform. Ensure that the user logging into Anypoint Platform has the right https://docs.mulesoft.com/api-manager/2.x/access-client-app-id-task[permissions to create a client app].
 
 . In the *Client App* section, click *Create Client App*. +
 The Composer organization is now linked to the Anypoint organization.
@@ -222,6 +227,11 @@ IP addresses used by Composer are dynamic; therefore, MuleSoft can't provide a l
 * If you use Firefox or Chrome, allow third-party cookies.
 * When you connect to another system, follow the requirements and restrictions applicable to that connection.
 * Composer fields with date values use the format _YYYY-MM-DDThh:mmZ_.
+
+[[available-regions-ms]]
+== Available Regions
+
+In MuleSoft Composer, the Anypoint Platform control and runtime planes for an organization are selected by the AE at provisioning time (during the quoting process). Users cannot change the mapping. MuleSoft Composer is available in the US East (N. Virginia) and EU (Frankfurt) regions.
 
 == Set Up Composer
 
@@ -363,7 +373,9 @@ Note that the file-based configuration of a SAML 2.0 is not supported.
 * *Sign Off URL*: The URL to redirect sign-out requests, so users both sign out of MuleSoft Composer and have their SAML user’s status set to `signed out`.
 * *Issuer*: The ID of the identity provider instance that sends SAML assertions.
 * *Public Key*: The Public key provided by the identity provider, which is used to sign the SAML assertion. It is the `X509Certificate` value in the SAML response.
-* *Audience*: An arbitrary string value that identifies your MuleSoft Composer organization. The typical value for this string is `<organizationDomain>.composer.mulesoft.com`.
+* *Audience*: An arbitrary string value that identifies your MuleSoft Composer organization. The typical value for this string is `<organizationDomain>.composer.mulesoft.com`. 
++
+To find your `organizationDomain`, log in to MuleSoft Composer and go to *Settings > Multiple IdP*. At the bottom of the page, you can see the statement `Users can sign in through external IdPs by visiting your organization domain:` followed by a URL. The part after the last `/` in the URL is the `organizationDomain`. For example, if the statement says `Users can sign in through external IdPs by visiting your organization domain: \https://composer.mulesoft.com/login/domain/composer123`, the `organizationDomain` is `composer123`.
 * *Single Sign On Initiation*: Specify whether SSO can be initiated by MuleSoft Composer, your identity provider (for example, Okta), or both.
 
 ** The *Service Provider Only* option allows only MuleSoft Composer to initiate SSO.
@@ -433,7 +445,7 @@ The *Account* page appears, displaying a linking request from Anypoint Platform.
 . In the *Access Token* section, click *Authenticate in Anypoint*. +
 The Anypoint Platform login page appears.
 
-. Log in to Anypoint Platform. Ensure that the user logging into Anypoint Platform has the right xref:2.x@api-manager::access-client-app-id-task[permissions to create a client app].
+. Log in to Anypoint Platform. Ensure that the user logging into Anypoint Platform has the right xref:2.x@api-manager::access-client-app-id-task.adoc[permissions to create a client app].
 
 . In the *Client App* section, click *Create Client App*. +
 The Composer organization is now linked to the Anypoint organization.

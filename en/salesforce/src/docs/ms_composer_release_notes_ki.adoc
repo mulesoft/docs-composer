@@ -1,6 +1,47 @@
-= Known Issues for MuleSoft Composer for Salesforce
+= Known Issues and Limitations for MuleSoft Composer for Salesforce
 
-The following list displays Known Issues for Composer for Salesforce. The list is sorted by the date in which the issue appeared.
+The following list displays known issues and limitations for MuleSoft Composer for Salesforce. The list is sorted by the date in which the known issue or limitation appeared.
+
+== August 29, 2023
+
+=== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|Some Composer flows appear stuck because the access token fails to refresh, which prevents events from being triggered as intended. This error can show up in different ways, such as `Failed to send request to`, `Failed to get next element`, or `UNKNOWN ERROR` exceptions. | Refresh the affected Composer flows manually. | W-13628406
+|===
+
+== May 31, 2023
+
+=== SAP S/4HANA Cloud
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|When adding an action or a trigger, the *Service* field dropdown menu might appear empty, which prevents completing the connector configuration.
+
+Similarly, during configuration, the `Retrieving metadata for the step failed` error might occur. | This is an intermittent issue that should resolve after a brief period of time. | W-13527982
+|===
+
+== March 22, 2023
+
+=== Google BigQuery
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue|ID
+
+|Input parameter values of String or date data types must be provided between single quotes using the expression editor. | W-12696210
+|===
 
 == August 3, 2022
 
@@ -111,21 +152,6 @@ a|In your Chrome browser, click *Developer Tools* and then click *Network*. In t
 
 . Reestablish the NetSuite connection. If the error continues to appear, contact Support.
  |None
-
-|===
-
-== July 19, 2021
-
-//include::_partials/servicenow-ki.adoc[]
-=== ServiceNow
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|ServiceNow Connector - Mule 4 supports only standard tables. | None |None
 
 |===
 

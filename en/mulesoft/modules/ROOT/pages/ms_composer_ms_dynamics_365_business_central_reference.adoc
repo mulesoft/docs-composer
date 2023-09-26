@@ -6,7 +6,7 @@ Microsoft Dynamics 365 Business Central is an ERP tool that provides a consolida
 
 include::_partials/connection-definition.adoc[]
 
-Connection Name::
+Connection Display Name::
 
 Enter a connection name that will help you remember the details of this connection.
 You can reuse connections multiple times in a single flow, and in more than one flow,
@@ -14,6 +14,10 @@ and the credentials are hidden after you create the connection. Therefore, it's 
 to provide a name that easily identifies this connection from others.
 +
 Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Base URI::
+
+The parameter base URI, for example, `\https://api.businesscentral.dynamics.com/v2.0/<tenantId>/<environmentname>/api/v2.0`. Each instance or tenant gets its own parameter base URI. 
 
 Username::
 

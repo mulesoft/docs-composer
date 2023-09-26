@@ -47,4 +47,8 @@ Initiates a phone call. Values are required in the following fields:
 +
 For more information on TwiML, see the Twilio documentation: https://www.twilio.com/docs/voice/twiml.
 
+== Custom Fields 
+
+Custom fields are not supported. Using MuleSoft Composer, you can access standard field values for actions and triggers that you set in the Twilio record.
+
 include::_partials/see-also.adoc[]

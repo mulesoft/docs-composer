@@ -2,6 +2,12 @@
 
 Google BigQuery is a cloud data warehouse that enables customers to store and access their data while also offering tooling to run real-time analytics across datasets. 
 
+== Before You Begin   
+
+To use Google BigQuery Connector, you must have a https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google Workspace] account. Connections from Composer to personal Google accounts are not permitted. 
+
+When you connect to your Google Workspace account, a message appears indicating that the Composer is an https://support.google.com/cloud/answer/7454865?hl=en[unverified app]. This behavior is expected. To bypass this message and use the connector, on the *Google hasn’t verified this app* dialog, click *Advanced* > *Use anyway*.
+
 == Connections
 
 include::_partials/connection-definition.adoc[]
@@ -96,5 +102,7 @@ Retrieves a set of rows. Provide a value for *SQL string*.
 Query statements can include parameter values by adding `:` before the parameter name, such as `Select field from dataset.table where field = :param1`. You can define a value for the parameter in the *Input Parameters* section. For example, if you define `param1` as `12345`, the query statement is `Select field from dataset.table where field = 12345`.
 
 You must define a value for the parameter as either a literal string or an output value from previous actions. Note that input parameter values of String or date data types must be provided between single quotes using the expression editor. For literal strings, add the single quotes to the value in the editor, such as `’12345’`. For an output value from previous actions, select the custom expression option, add the single quotes to the custom expression in the editor, and apply the changes, such as `’Field From Previous Step’`.
+
+*Google BigQuery™ is a trademark of Google LLC.*
 
 include::_partials/see-also.adoc[]

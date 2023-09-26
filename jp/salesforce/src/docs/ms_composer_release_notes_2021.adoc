@@ -4,7 +4,9 @@ MuleSoft Composer for Salesforce を使用して、コネクテッドエクス�
 
 新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
 
-== 2021年12月21日
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題」]​を参照してください。
+
+== 2021 年 12 月 21 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -18,25 +20,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年12月16日
+== 2021 年 12 月 16 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -57,25 +41,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年12月9日
+== 2021 年 12 月 9 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -92,25 +58,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年12月2日
+== 2021 年 12 月 2 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -121,7 +69,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * NetSuite Connector で ​*Delete Record*​ アクションの ​*[ID Type (ID 種別)]*​ 値がサポートされるようになりました。
 
 * NetSuite Connector で ​*[Assembly Item (アセンブリ項目)]*​ レコードタイプがサポートされるようになりました。
-
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -138,25 +85,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年12月1日
+== 2021 年 12 月 1 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -164,25 +93,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Jira Connector のアクションで [​`Comment`​ (コメント)] 項目がサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年11月23日
+== 2021 年 11 月 23 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -196,49 +107,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年11月8日
+== 2021 年 11 月 8 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * MuleSoft Composer for Salesforce を使用して、再接続が不要な更新トークンを発行することで、失われた OAuth 接続を修正できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年11月4日
+== 2021 年 11 月 4 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -252,25 +128,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年10月28日
+== 2021 年 10 月 28 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -281,98 +139,26 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年10月27日
+== 2021 年 10 月 27 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * コネクタでオブジェクトのリストのマッピングの制限が引き上げられました。選択したオブジェクトのリストの項目だけでなく、任意の最上位項目をマッピングできるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年10月21日
+== 2021 年 10 月 21 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * メニューから [fx] を選択したときに表示される ​*[Custom Expression Editor (カスタム式エディタ)]*​ ウィンドウを使用してアクションのカスタム式を作成および編集できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年10月20日
+== 2021 年 10 月 20 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Stripe Connector で新しいアクション ​*Create Product*​ と新しいトリガ ​*New Refund*​ がサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-
-== 2021年10月14日
+== 2021 年 10 月 14 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -381,26 +167,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-
-== 2021年10月7日
+== 2021 年 10 月 7 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -420,74 +188,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-
-== 2021年9月27日
+== 2021 年 9 月 27 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * NetSuite Connector で、ユーザは内部 ID を使用せずに指定カスタム値を使用して、値をカスタム選択リストにマップできるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年9月14日
+== 2021 年 9 月 14 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * MuleSoft Composer for Salesforce で、日付項目の値を選択するための ​*[Pick from Calendar (カレンダーから選択)]*​ オプションがサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年9月9日
+== 2021 年 9 月 9 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -503,28 +216,9 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |*[Invoice (請求書)]*​ オブジェクトの Salesforce Connector で ​*Create Record*​ アクションを使用したときに ​*[Invoice (請求書)]*​ 項目が使用できなかった問題が修正されました。 | COCN-530
 
-
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年9月8日
+== 2021 年 9 月 8 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -542,28 +236,9 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |*[Reason (理由)]*​ 項目が表示されない原因となっていた問題が修正されました。 |COCN-600
 
-
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年9月2日
+== 2021 年 9 月 2 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -581,25 +256,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年8月30日
+== 2021 年 8 月 30 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -617,49 +274,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年8月17日
+== 2021 年 8 月 17 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * リストが返されるフローでステップをテストする場合、そのリストの最大項目数は 5 個です。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年8月11日
+== 2021 年 8 月 11 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -673,102 +294,31 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Jira Connector で次のトリガおよびアクションがサポートされるようになりました。
 ** トリガ
-*** *Updated issue with Standard Fields only*​
-*** *New issue with Standard Fields only*​
+*** *Updated issue with Standard Fields only*
+*** *New issue with Standard Fields only*
 ** アクション: *Update issue with Standard Fields only*
 
 * Xero Connector で ​*Create or update contact*​ アクションの ​*[Contact persons (取引先責任者の個人)]*​ 項目がサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年8月6日
+== 2021 年 8 月 6 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Xero Connector で ​*Create or update invoice*​ アクションがサポートされるようになりました。さらに、​*[Contact persons (取引先責任者の個人)]*​ 項目が ​*Create or update contact*​ アクションでサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年7月22日
+== 2021 年 7 月 22 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * ドラッグアンドドロップまたはモーダルを使用してコンポーザキャンバスのカードを再編成できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-
-== 2021年7月15日
+== 2021 年 7 月 15 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * *Get records*​ アクションが NetSuite Connector で使用できるようになりました。このアクションでは、指定された条件に基づいて NetSuite レコードのリストを返し、カスタム検索を有効にします。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年7月19日
+== 2021 年 7 月 19 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -776,47 +326,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/servicenow-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年7月15日
+== 2021 年 7 月 15 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * *Get records*​ アクションが NetSuite Connector で使用できるようになりました。このアクションでは、指定された条件に基づいて NetSuite レコードのリストを返し、カスタム検索を有効にします。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年7月8日
+== 2021 年 7 月 8 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -830,21 +346,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** Updated row in sheet
 ** New spreadsheet
 
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年6月4日
+== 2021 年 6 月 4 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -852,21 +354,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年7月1日
+== 2021 年 7 月 1 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -876,23 +364,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * NetSuite Connector でアクションおよびトリガにカスタムレコードタイプがサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/jira-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年6月4日
+== 2021 年 6 月 4 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -900,21 +372,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年6月2日
+== 2021 年 6 月 2 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -922,21 +380,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/platform-ki.adoc[]
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年5月19日
+== 2021 年 5 月 19 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -944,101 +388,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-* Slack の ​*[Create Message (メッセージを作成)]*​ アクションを選択すると、公開チャネルのみが表示される。
-//CCONN-765
-
-* NetSuite データピルがテキストも含まれる Slack メッセージで使用されていると、Slack フローへの NetSuite のテストが失敗します。
-//CPLAT-1288
-
-* ユーザが NetSuite の ​*Update Record*​ アクションで項目のマッピングを完了していない場合は、テストが開始されません。
-//CPLAT-1292
-
-* 「Already editing somewhere? (すでにどこかで編集していますか?)」ダイアログが表示されるが別のタブでフローを編集していない場合は、コンポーザからログアウトしてもう一度ログインして作業を再開してください。
-//CAPO-47
-
-* *[Recently Viewed (最近参照したデータ)]*​ リストページに ​*[New Flow (新規フロー)]*​ ボタンが表示されない場合は、​*[All (すべて)]*​ ページに切り替えてください。
-//CAPP-1625
-
-* コンポーザに最初にログインしたときに ​*[Home (ホーム)]*​ ページコンテンツではなく空白領域が表示された場合は、ブラウザの Cookie をクリアして再読み込みしてください。
-//CAPP-2051
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/slack-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年5月6日
+== 2021 年 5 月 6 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 *[Expand all (すべて展開)]*​ または ​*[Collapse all (すべて折りたたむ)]*​ ボタンを使用して、キャンバスですべてのカードを展開したりすべてのカードを折りたたんだりできるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-* Slack の ​*[Create Message (メッセージを作成)]*​ アクションを選択すると、公開チャネルのみが表示される。
-//CCONN-765
-
-* NetSuite データピルがテキストも含まれる Slack メッセージで使用されていると、Slack フローへの NetSuite のテストが失敗します。
-//CPLAT-1288
-
-* ユーザが NetSuite の ​*Update Record*​ アクションで項目のマッピングを完了していない場合は、テストが開始されません。
-//CPLAT-1292
-
-* 「Already editing somewhere? (すでにどこかで編集していますか?)」ダイアログが表示されるが別のタブでフローを編集していない場合は、コンポーザからログアウトしてもう一度ログインして作業を再開してください。
-//CAPO-47
-
-* *[Recently Viewed (最近参照したデータ)]*​ リストページに ​*[New Flow (新規フロー)]*​ ボタンが表示されない場合は、​*[All (すべて)]*​ ページに切り替えてください。
-//CAPP-1625
-
-* コンポーザに最初にログインしたときに ​*[Home (ホーム)]*​ ページコンテンツではなく空白領域が表示された場合は、ブラウザの Cookie をクリアして再読み込みしてください。
-//CAPP-2051
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年4月29日
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-* Slack の ​*[Create Message (メッセージを作成)]*​ アクションを選択すると、公開チャネルのみが表示される。
-//CCONN-765
-
-* NetSuite データピルがテキストも含まれる Slack メッセージで使用されていると、Slack フローへの NetSuite のテストが失敗します。
-//CPLAT-1288
-
-* ユーザが NetSuite の ​*Update Record*​ アクションで項目のマッピングを完了していない場合は、テストが開始されません。
-//CPLAT-1292
-
-* 「Already editing somewhere? (すでにどこかで編集していますか?)」ダイアログが表示されるが別のタブでフローを編集していない場合は、コンポーザからログアウトしてもう一度ログインして作業を再開してください。
-//CAPO-47
-
-* *[Recently Viewed (最近参照したデータ)]*​ リストページに ​*[New Flow (新規フロー)]*​ ボタンが表示されない場合は、​*[All (すべて)]*​ ページに切り替えてください。
-//CAPP-1625
-
-* コンポーザに最初にログインしたときに ​*[Home (ホーム)]*​ ページコンテンツではなく空白領域が表示された場合は、ブラウザの Cookie をクリアして再読み込みしてください。
-//CAPP-2051
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年4月13日
+== 2021 年 4 月 13 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1048,112 +404,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * 接続を作成するためのユーザインターフェースが理解しやすくなりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-* Slack の ​*[Create Message (メッセージを作成)]*​ アクションを選択すると、公開チャネルのみが表示される。
-//CCONN-765
-
-* NetSuite データピルがテキストも含まれる Slack メッセージで使用されていると、Slack フローへの NetSuite のテストが失敗します。
-//CPLAT-1288
-
-* ユーザが NetSuite の ​*Update Record*​ アクションで項目のマッピングを完了していない場合は、テストが開始されません。
-//CPLAT-1292
-
-* 「Already editing somewhere? (すでにどこかで編集していますか?)」ダイアログが表示されるが別のタブでフローを編集していない場合は、コンポーザからログアウトしてもう一度ログインして作業を再開してください。
-//CAPO-47
-
-* *[Recently Viewed (最近参照したデータ)]*​ リストページに ​*[New Flow (新規フロー)]*​ ボタンが表示されない場合は、​*[All (すべて)]*​ ページに切り替えてください。
-//CAPP-1625
-
-* コンポーザに最初にログインしたときに ​*[Home (ホーム)]*​ ページコンテンツではなく空白領域が表示された場合は、ブラウザの Cookie をクリアして再読み込みしてください。
-//CAPP-2051
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/netsuite-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-* Salesforce アクション ​*Get records*​ の一環として、[Date (日付)] 項目に基づいて照会することはできません。
-//CPLAT-1126
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年3月25日
+== 2021 年 3 月 25 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 アクティブ化されていないフローでは、トリガステップを削除して置き換えることができます。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-このリリースの時点では、次の問題が明らかになっていました。
-
-* *[Recently Viewed (最近参照したデータ)]*​ リストページに ​*[New Flow (新規フロー)]*​ ボタンが表示されない場合は、​*[All (すべて)]*​ ページに切り替えてください。
-//CAPP-1625
-
-* コンポーザに最初にログインしたときに ​*[Home (ホーム)]*​ ページコンテンツではなく空白領域が表示された場合は、ブラウザの Cookie をクリアして再読み込みしてください。
-//CAPP-2051
-
-* 作成後に、トリガまたはアクションから ​*[Add Connection (接続を追加)]*​ ボタンにアクセスできません。
-+
-接続を同じシステム種別の新しい接続に変更する手順は、次のとおりです。
-+
-. フローの最後にアクションを追加します。これにより、​*[Add Connection (接続を追加)]*​ ボタンが表示されます。
-. 新しい接続を作成します。
-. 追加したアクションを削除します。
-. 新しい接続に変更するトリガまたはアクションで、変更アイコン (3 つのドット) をクリックします。
-. *[Change Connection (接続を変更)]*​ をクリックします。新しい接続がリストされます。
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-* Salesforce アクション ​*Get records*​ の一環として、[Date (日付)] 項目に基づいて照会することはできません。
-//CPLAT-1126
-
-include::_partials/tableau-ki.adoc[]
-
-== 2021年3月15日
+== 2021 年 3 月 15 日
 
 MuleSoft Composer for Salesforce が正式リリースされました。
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-このリリースの時点では、次の問題が明らかになっていました。
-
-* *[Recently Viewed (最近参照したデータ)]*​ リストページに ​*[New Flow (新規フロー)]*​ ボタンが表示されない場合は、​*[All (すべて)]*​ ページに切り替えてください。
-//CAPP-1625
-
-* コンポーザに最初にログインしたときに ​*[Home (ホーム)]*​ ページコンテンツではなく空白領域が表示された場合は、ブラウザの Cookie をクリアして再読み込みしてください。
-//CAPP-2051
-
-* 作成後に、トリガまたはアクションから ​*[Add Connection (接続を追加)]*​ ボタンにアクセスできません。
-+
-接続を同じシステム種別の新しい接続に変更する手順は、次のとおりです。
-+
-. フローの最後にアクションを追加します。これにより、​*[Add Connection (接続を追加)]*​ ボタンが表示されます。
-. 新しい接続を作成します。
-. 追加したアクションを削除します。
-. 新しい接続に変更するトリガまたはアクションで、変更アイコン (3 つのドット) をクリックします。
-. *[Change Connection (接続を変更)]*​ をクリックします。新しい接続がリストされます。
-
-* トリガを作成したら、そのステップを削除できなくなります。
-+
-すでに作成されたトリガで新しい接続に変更するには、次の回避策のいずれかを使用します。
-//CAPP-1550
-+
-** たとえば Salesforce から Workday に切り替えるなど、データ取得元を変更するには、新しいフローを作成します。
-** 同じデータ取得元のインスタンスを変更するが、そのソースの接続がまだ存在していない場合は、次の手順を実行します。
-+
-. フローの最後にアクションを追加します。このアクションで、必要な接続を作成します。
-. アクションを削除します。
-. トリガを開いて ​*[Change Connection (接続を変更)]*​ を使用して新しい接続に変更します。
-
-include::_partials/google-sheets-ki.adoc[]
-
-include::_partials/salesforce-ki.adoc[]
-
-* Salesforce アクション ​*Get records*​ の一環として、[Date (日付)] 項目に基づいて照会することはできません。
-//CPLAT-1126
-
-include::_partials/tableau-ki.adoc[]

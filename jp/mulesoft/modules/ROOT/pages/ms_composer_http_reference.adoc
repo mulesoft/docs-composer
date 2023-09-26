@@ -618,12 +618,12 @@ HTTP Connector に適用される項目は、次のとおりです。
 
 |名前 |型 |説明
 
-|Relative URL (相対 URL) |String (文字列) |ベースパスを考慮しない、要求の対象の URL。
+|*Relative URL (相対 URL)* |String (文字列) |ベースパスを考慮しない、要求の対象の URL。
 
-|アクション |String (文字列) |要求の種別。​*[Request (要求)]*​ と ​*[Paginated Request (ページ分割された要求)]*​ のいずれかを選択する必要があります。
+|*Action (アクション)* |String (文字列) |要求の種別。​*[Request (要求)]*​ と ​*[Paginated Request (ページ分割された要求)]*​ のいずれかを選択する必要があります。
 
 
-|HTTP メソッド |String (文字列) a|要求の HTTP メソッド。次の HTTP メソッドを使用できます。
+|*HTTP メソッド* |String (文字列) a|要求の HTTP メソッド。次の HTTP メソッドを使用できます。
 
 * *GET*​: サーバから情報を取得します。
 * *POST*​: サーバに情報を送信します。
@@ -635,6 +635,8 @@ HTTP Connector に適用される項目は、次のとおりです。
 
 |*Header (ヘッダー)* |Object (オブジェクト) |ユーザやサーバが HTTP 要求または応答で追加情報を渡すことができるようにします。大文字と小文字を区別しない名前 (キー)、コロン、値の順で構成されます。ヘッダーを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
 
+*POST*​、​*PUT*​、​*PATCH*​、または ​*DELETE*​ メソッドを指定してリクエストボディを追加する場合は、​*Content-Type: application/json*​ ヘッダーを追加する必要があります。一部の API では ​*Content-Type: application/json*​ ヘッダーで必要な項目名が異なるため、接続された API でこの項目名を確認してください。
+
 |*Query Parameters (クエリパラメータ)* |Object (オブジェクト) |要求に含めるクエリパラメータ。クエリパラメータを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
 
 |*Example Request (サンプル要求)* |String (文字列) |JSON 形式のサンプル要求。この項目の値を入力すると、コンポーザはサンプルを解析して、その項目を推定します。その後、その項目を使用してデータを入力し、要求の操作を設定できます。
@@ -645,10 +647,13 @@ HTTP Connector に適用される項目は、次のとおりです。
 
 |*Pagination Type (ページネーション種別)* |String (文字列) a|要求のページネーションの種別。次のページネーション種別が使用できます。
 
-* *Page Number (ページ番号)*​: この値を選択する場合は、​*[Page Number Parameter Name (ページ番号のパラメータ名)]*​ 項目の値を指定します。
-* *Marker (マーカー)*​: この値を選択する場合は、​*[Marker Parameter Name (マーカーのパラメータ名)]*​ 項目の値を指定します。
-* *Marker (マーカー)*​: この値を選択する場合は、​*[Marker Parameter Name (マーカーのパラメータ名)]*​ 項目の値を指定します。
 * *Link Header (リンクヘッダー)*​: この値を選択する場合は、​*[Link Relation (リンクリレーション)]*​ 項目の値を指定します。
+* *Marker (マーカー)*​: この値を選択する場合は、次の項目の値を指定します。 +
+  ** *Marker Parameter Name (マーカーのパラメータ名)*​
+  ** *Next Marker Expression (次のマーカー式)*​
+* *Next URL (次の URL)*​: この値を選択する場合は、​*[Next URL Expression (次の URL 式)]*​ 項目の値を指定します。
+* *Offset (オフセット)*​: この値を選択する場合は、​*[Offset Parameter Name (オフセットのパラメータ名)]*​ 項目の値を指定します。
+* *Page Number (ページ番号)*​: この値を選択する場合は、​*[Page Number Parameter Name (ページ番号のパラメータ名)]*​ 項目の値を指定します。
 
 |*Maximum Number of Pages (ページの最大数)* |Number (数値) |要求で API から返されるページの最大数。
 

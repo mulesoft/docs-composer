@@ -1,10 +1,318 @@
-= MuleSoft Composer リリースノート
+= MuleSoft Composer リリースノート:page-revdate: 2023 年 4 月 17 日
 
 MuleSoft Composer を使用すると、コネクテッドエクスペリエンスをすばやく構築できます。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
 
 新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
 
-== 2022/12/23
+日付別の既知の問題のリストは、​xref:ms_composer_ms_release_notes_ki.adoc[「MuleSoft Composer の既知の問題」]​を参照してください。
+
+== 2023 年 4 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* エラーハンドラ (ベータ) を使用できるようになりました。この機能を使用して、フローの特定のステップの接続エラーやロジックエラーを監視し、発生したエラーを処理するためのロジックを指定できます。
+
+== 2023 年 4 月 12 日 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *カスタム式エディタ*​は、次の ​`string`​ 関数をサポートするようになりました。
+** `emptyString`
+** `substring`
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|QuickBooks Online Connector で、カスタム項目を指定しなかった場合の未知の記述の例外は発生しなくなりました。 |W-12724854
+|===
+
+== 2023 年 4 月 11 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Xero Connector で、​*[Create or Update Invoice (請求書の作成または更新)]*​ オブジェクトがテスト時にトリガされなかった問題が修復されました。 |W-12670939
+|===
+
+== 2023 年 4 月 4 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、​*[Type (種別)]*​ 項目に空白スペースが含まれていても、​*[Get issues (問題を取得)]*​ アクションは意図したとおりに機能するようになりました。 |W-12760964
+|===
+
+== 2023 年 4 月 3 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のアクションが Slack Connector で使用できるようになりました。
+** *Add users to channel (チャネルへのユーザの追加)*
+** *Create channel (チャネルの作成)*
+** *Send direct message to multiple users (ダイレクトメッセージをユーザに送信)*
+
+== 2023 年 3 月 28 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コネクタの更新やバグ修正によってフローが中断された場合には、これらの更新について説明するメールが届き、フローエラーを回避するためにどのフローを停止して再アクティブ化する必要があるのかが示されるようになりました。
+
+== 2023 年 3 月 24 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で、ログオン時刻のメタデータが各レコードに登録されるようになりました。 
+
+* NetSuite Connector で、​*[File (ファイル)]*​ オブジェクトオブジェクトのメタデータが ​*[Create Actions (アクションの作成)]*​ レコードで使用できるようになりました。 
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で、​*[Get Records (レコードの取得)]*​ アクションが ​*LOT_NUMBERED_ASSEMBLY_ITEM*​ レコードタイプに対して間違ったレコードを返さなくなりました。 |W-12473442
+|NetSuite Connector で​*USER_ERROR​: Invalid log in attempt (不正なログイン試行)*​ エラーが発生しなくなりました。|W-12619973
+|NetSuite Connector の書き込み操作時に ​*[Name (名前)]*​ 項目が表示されなくなりました。 |W-12428757
+|NetSuite Connector の ​*[Get Records (レコードの取得)]*​ アクションの ​*[Type (種別)]*​ ドロップダウンで ​*NETSUITE_SOAP_FAULT*​ エラーが発生しなくなりました。 |W-12572300
+|NetSuite Connector で、​*com.sun.xml.internal.stream.events.EndElementEvent*​ エラー応答の解析エラーが発生しなくなりました。 |W-12573323
+|===
+
+== 2023 年 3 月 23 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 以前は、式をサポートするブール項目がテキスト項目または選択リストとして表示されていました。式をサポートするすべてのブール項目は、テキスト項目と選択リストの両方をサポートするハイブリッド項目として表示されるようになりました。また、テキスト項目に ​`true`​ または ​`false`​ と手動で入力すると、大文字または小文字のどちらで入力したかには関係なく、対応するドロップダウン値がその項目で自動的に選択されます。 
+
+* 項目のデータ型アイコンにマウスポインタを置くと、情報ツールチップが表示されるようになりました。
+
+== 2023 年 3 月 22 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Google BigQuery に接続できるようになりました。 
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2023 年 3 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* レンチアイコンをクリックして ​*[Import (インポート)]*​ を選択することで、フローを JSON ファイルとしてインポートできるようになりました。フローのインポート機能は進行中のベータです。
+
+== 2023 年 3 月 9 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Salesforce Connector で、​*[Run History (実行履歴)]*​ ページに詳細なエラーログ情報が表示され、より効果的なトラブルシューティングが可能になりました。新しいエラーログには、エラーが発生した日時、エラーの説明、フロー内のエラー発生場所が含まれます。 
+
+== 2023 年 3 月 2 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、パラメータの ​`project`​ 項目のコンテンツがデータプロバイダ間で一致しない場合に発生していた問題を修復しました。 |W-12270412
+|===
+
+== 2023 年 2 月 27 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コンポーザのコネクタが項目のデフォルト値をサポートしている場合は、コンポーザ UI にその値が選択された状態で表示されるようになりました。ただし、ユーザはデフォルト値を変更できます。
+
+== 2023 年 2 月 21 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *「Composer Administrator (コンポーザ管理者)」*​権限を使用できるようになりました。システム管理者は、コンポーザをインストールした後で、次の権限をユーザに割り当てることができます。 
+** *「Composer Administrator (コンポーザ管理者)」*​権限では、​*[Settings (設定)]*​ ページにアクセスして、メール設定や API 共有を管理できます。
+** *「Composer User (コンポーザユーザ)」*​権限では、フローの作成と管理など、コンポーザ機能全体にアクセスできます。
+
+* *「Composer Administrator (Composer 管理者)」*​権限セットを持つユーザが ​*[Settings (設定)]*​ ページを使用できるようになりました。  このページでは、メール通知設定を表示および編集できます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|カスタム項目を指定しなかった場合に発生することがあった null ポインタ例外を修復しました。 |W-12572592
+|===
+
+== 2023 年 2 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Gmail Connector の ​*[On New Email (新規メール)]*​ トリガと ​*[Send email (メールの送信)]*​ アクションで添付ファイルをサポートするようになりました。
+* *[Get Attachments (添付ファイルを取得)]*​ アクションが Gmail Connector で使用できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Zendesk Connector で、Zendesk API に準拠して外部 ID 値が数値ではなく文字列として表されるようになりました。 |W-12360287
+|===
+
+== 2023 年 2 月 15 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Tableau Connector で、報告されたセキュリティの脆弱性に対処するために、ネイティブライブラリがアップグレードされました。 |W-11453219
+|===
+
+== 2023 年 2 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|HTTP Connector で、トップレベル配列が API 仕様エンドポイントで定義されている場合に、正しいペイロードが送信されるようになりました。 |W-12373559
+|===
+
+== 2023 年 2 月 8 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|フローを開くと、​*[If/Else Blocks (If/Else ブロック)]*​ と ​*[For Each Loops (各ループ)]*​ 以外のすべてのステップが折りたたまれ、ナビゲート可能なフローの概要が表示されるようになりました。 |W-12515426
+|===
+
+== 2023 年 2 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Rest Consumer Connector で、トップレベル配列が API 仕様エンドポイントで定義されている場合に、正しいペイロードが送信されるようになりました。 |W-12373559
+|===
+
+== 2023 年 2 月 6 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Sage Intacct に接続できるようになりました。 
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2023 年 2 月 3 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Microsoft Dynamics 365 Business Central Connector で、以下の機能が強化されました。
+** *[Create Sales Order (販売注文の作成)]*​ アクションでは、販売注文オブジェクト内で販売注文明細行のリストを作成できるようになりました。
+** *[Update Sales Order (販売注文の更新)]*​ アクションでは、販売注文オブジェクトに加えて販売注文明細行のリストも更新できるようになりました。
+** *[Get Sales Orders (販売注文の取得)]*​ アクションでは、絞り込んだ販売注文リストに対応する販売注文明細行を取得できるようになりました。
+** *[On New or Updated Sales Order (新規または更新済み販売注文)]*​ トリガでは、新規または更新済みの販売注文に加えて、新規または更新済みの販売注文明細行もチェックするようになりました。
+** 会社の ​*[Display Name (表示名)]*​ を使用すると、​*[Display Name (表示名)]*​ には、​*[Company Name (会社名)]*​ ではなく ​*[Company ID (会社 ID)]*​ ドロップダウンの値が表示されるようになりました。
+
+== 2023 年 2 月 1 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、​`labels`​ プロパティのメタデータ出力が、空オブジェクトの配列ではなく文字列の配列を返すようになりました。 |W-11899482
+|Jira Connector で、​*[Retrieve attachment (添付ファイルの取得)]*​ アクションが Jira エンドポイントから返された詳細なエラーメッセージを表示するようになりました。 |W-12282452
+|===
+
+== 2023 年 1 月 30 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Quickbooks Online Connector が、アクションとトリガのカスタム項目をサポートするようになりました。
+
+* 次のアクションが Quickbooks Online Connector で使用できるようになりました。
+** *Create Estimate (見積の作成)*
+** *Get Estimate (見積の取得)*
+** *Update Estimate (見積の更新)*
+
+* 次のトリガが Quickbooks Online Connector で使用できるようになりました。
+** *On New Estimate (新規見積)*
+** *On New or Updated Record (新規または更新済みレコード)*
+
+== 2023 年 1 月 26 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で、メタデータ読み込みログが強化されました。 |W-12412287、W-12244102
+|NetSuite Connector で、レコードのカスタムセグメントが意図どおりに表示されるようになりました。 |W-12244102
+|===
+
+== 2023 年 1 月 20 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+** BILLING_SCHEDULE
+** CLASSIFICATION
+** GIFT_CERTIFICATE_ITEM
+** INVENTORY_ADJUSTMENT
+** ITEM_RECEIPT
+** LOT_NUMBERED_ASSEMBLY_ITEM
+** OTHER_CHARGE_PURCHASE_ITEM
+** OTHER_CHARGE_RESALE_ITEM
+** OTHER_CHARGE_SALE_ITEM
+** SERIALIZED_ASSEMBLY_ITEM
+** SERIALIZED_INVENTORY_ITEM
+** TRANSFER_ORDER
+
+== 2023 年 1 月 16 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Snowflake Connector で、​*[Select Rows (行の選択)]*​ アクションに強化されたサンプルデータの解決が含まれるようになりました。
+
+== 2023 年 1 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+** ITEM_FULFILLMENT
+** ITEM_GROUP
+** KIT_ITEM
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|NetSuite Connector で、​`NullFieldsList`​ がメタデータに含まれなくなりました。 |W-12029245
+|NetSuite Connector で、レコードを作成または更新する場合に ​*[External ID (外部 ID)]*​ が表示されるようになりました。 |W-11951099
+|NetSuite Connector で、警告が存在する場合にエラーが上書きされなくなりました。 |W-12165594
+|===
+
+== 2023 年 1 月 12 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector で、項目に対して次のページネーション種別がサポートされるようになりました。​*Offset (オフセット)*​。
+
+== 2023 年 1 月 11 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* ServiceNow Connector で東京リリースがサポートされるようになりました。
+
+== 2022 年 12 月 23 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -14,47 +322,26 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Salesforce Connector で OAuth 2.0 接続を使用しているときに、​*Upload file*​ および ​*Download file*​ アクションで ​`NullPointerException`​ が誤ってスローされることはなくなりました。 | W-12236769
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
+== 2022 年 12 月 15 日
 
-==== コンポーザプラットフォーム
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-[%header%autowidth.spread]
+* *[On New Message (新規メッセージ)]*​ トリガが再び Slack Connector に使用できるようになりました。トリガには次の機能強化が加えられています。
 
-|===
+** *[Created (作成済み)]*​ 項目で日付ピッカーがサポートされるようになりました。
+** *[Limit (制限)]*​ 項目では数値のみがサポートされるようになりました。
+** *[Limit (制限)]*​ 項目のデフォルト値が ​`100`​ になりました。
+** トリガから返されるメッセージが時刻の昇順に表示されるようになりました。
 
-|既知の問題|回避策 |ID
+* Slack Connector で、​*[Conversation ID (会話 ID)]*​ 項目の名前が ​*[Conversation Name (会話名)]*​ に変更されました。さらに、この項目がドロップダウンでもサポートされるようになりました。
 
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/12/14
+== 2022 年 12 月 14 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * 値が null または空の可能性があるスコープでデータピルを使用しようとすると、ユーザに警告するメッセージが表示されるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/12/13
+== 2022 年 12 月 13 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -72,26 +359,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Salesforce Connector で、トリガと ​*Get records*​  アクションでブールパラメータの ​`isTrue`​ および ​`isFalse`​ 演算子がサポートされるようになりました。 | W-11752116
 |Salesforce Connector で、​*Delete record*​ アクションは ​`Retrieving metadata for the step failed. Try saving and refreshing the page.`​ (ステップのメタデータの取得に失敗しました。ページを保存して更新してみてください) エラーを誤ってスローしなくなりました。 | W-12211471
 |Salesforce Connector で、ウォーターマークが適切に使用されていない場合に、トリガでデータが失われる可能性がなくなりました。 | W-12128874
+|Jira Connector で、報告されたセキュリティの脆弱性に対処するために、com.fasterxml.jackson.core ライブラリがバージョン 2.14.1 にアップグレードされました。 |W-11933499
+|Jira Connector で、報告されたセキュリティの脆弱性に対処するために、org.apache.commons-text ライブラリがバージョン 1.10.0 にアップグレードされました。 |W-12004679
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/12/12
+== 2022 年 12 月 12 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -102,24 +374,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Zendesk Connector で、CloudHub にデプロイされているときに Zendesk トリガが長時間アイドル状態になっても、接続は切断されなくなりました。| W-12040415
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/12/07
+== 2022 年 12 月 7 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -129,24 +384,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |以前は、非アクティブ化されたフローが再度アクティブ化された場合、そのフローは、フローが非アクティブ化されている間に発生したイベントを誤って取得していました。フローが非アクティブ化されると、そのフローのオブジェクトストアデータが消去され、再アクティベーション時にそのフローが最初から開始されるようになりました。 |W-12120985
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/11/29
+== 2022 年 11 月 29 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -154,47 +392,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 Fortnox や QuickBooks などの一部のシステムでは、OAuth ダンス中にリクエストヘッダーとしてログイン情報を送信する必要があります。カスタムリクエストヘッダーで、HTTP Connector を使用してこれらのシステムに接続できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/11/21
+== 2022 年 11 月 21 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * 組織内のすべてのフローを表示および管理する権限をすべてのユーザが持つようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
 
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/11/17
+== 2022 年 11 月 17 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -208,24 +413,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |NetSuite Connector で、同じカスタムリスト項目が 1 つのレコード内の複数の項目間にある場合、マッピングが適切に機能するようになりました。 |W-12041041
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/11/08
+== 2022 年 11 月 8 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -233,24 +421,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/11/03
+== 2022 年 11 月 3 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -272,24 +443,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Shopify に接続するときに、HTTP Connector フローテストが無期限に実行されエラーが返されることはなくなりました。 |W-11821763、W-11819981
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/11/01
+== 2022 年 11 月 1 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -299,24 +453,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Slack Connector で、​*On New Message*​ トリガが無効になり、使用できなくなりました。 |W-11972430
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/31
+== 2022 年 10 月 31 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -372,24 +509,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Jira Connector で、ドロップダウンに表示される Jira プロジェクトの数は制限されていました。すべての Jira プロジェクトがドロップダウンで取得されるようになりました。 |W-11912169
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/27
+== 2022 年 10 月 27 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -401,24 +521,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * RPA Connector で、​*[RPA Process (RPA プロセス)]*​ ドロップダウンを選択すると、表示される値が ​*<カテゴリ> / <プロセス名>*​ 形式でリストされるようになりました。例: *Claims (クレーム) / Check for updates (更新の確認)*​。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/26
+== 2022 年 10 月 26 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -439,24 +542,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Stripe Connector で、​`componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2`​ で見つかったセキュリティの脆弱性が修正されました。 |W-11853409
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/20
+== 2022 年 10 月 20 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -467,24 +553,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** *Persona Addresses (ペルソナ住所)*
 ** *Supervisor Organization Chain (スーパーバイザ組織チェーン)*
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/17
+== 2022 年 10 月 17 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -494,47 +563,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Jira Connector で、​*Get Issue in Jira*​ アクションの不要な ​*[Select Fields (項目を選択)]*​ ボタンが削除されました。 |W-11649482
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/13
+== 2022 年 10 月 13 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * レンチアイコンをクリックして ​*[Export (エクスポート)]*​ を選択することで、フローを JSON ファイルとしてエクスポートして、トラブルシューティングの目的でフローをサポートと共有できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/12
+== 2022 年 10 月 12 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -544,47 +579,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
  ** LEAD
  ** PROSPECT
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/10
+== 2022 年 10 月 10 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * RPA Connector で、JSON インジェクションを防ぐために JSON サニタイザが実装されました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/07
+== 2022 年 10 月 7 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -594,24 +595,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |コンポーザの ​*[Run History (実行履歴)]*​ ページにエラーが不必要に表示され、期限切れのアクセストークンに関するメール通知が送信される問題が修正されました。このエラーは表示されず、メールは送信されないようになりました。この修正を実装するには、フローを無効にしてから再度アクティブ化します。 |W-11649482
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/10/06
+== 2022 年 10 月 6 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -623,47 +607,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Google Sheets Connector で、com.fasterxml.jackson.core ライブラリがバージョン 2.13.4 にアップグレードされました。 |W-11719209
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/09/29
+== 2022 年 9 月 29 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * HTTP Connector での認証用の OAuth 2.0 認証コード許可で、認証ヘッダーの ​*[Authorization Header Name (認証ヘッダー名)]*​、​*[Authorization Header Value Prefix (認証ヘッダー値プレフィックス)]*​、および ​*[Authorization Header Custom Value Prefix (認証ヘッダーカスタム値プレフィックス)]*​ 項目のカスタマイズがサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/09/09
+== 2022 年 9 月 9 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -677,24 +627,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |NetSuite Connecto の ​*Get Records*​ アクションで CURRENCY および ​CURRENCY_RATE​ オブジェクトが機能しない問題が修正されました。 |W-11722063
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/09/06
+== 2022 年 9 月 6 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -712,47 +645,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |ネストされた項目である配列の場合でも、サンプルデータ出力が複数のレコードを返す Quickbooks Connector の問題が修正されました。 |W-11388800
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/08/31
+== 2022 年 8 月 31 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * [Pick from List (リストから選択)] をサポートするアクションの項目で選択リストマッピングが有効になりました。選択リストマッピングを使用すると、あるアプリケーションのデータを別のアプリケーションで必要な対応するデータにマップできます。これにより、類似した項目で異なる値が含まれる 2 つのアプリケーションを接続し、それらの項目の値をアプリケーション間で調整できます。出力項目 (データピル) の可能な値が入力項目の可能な値にどのようにマップされるかを決定できます。フロー間でマッピングを再利用できます。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/08/29
+== 2022 年 8 月 29 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -763,24 +662,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * データピル検索が使用できるようになりました。この機能を使用して、特定のデータピルがフローで使用されている場所を確認できます。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022/08/19
+== 2022 年 8 月 19 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -790,24 +672,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |ServiceNow Connector で、大規模なテーブルでのタイムアウトを回避するために ​*[Read Timeout (読み取りタイムアウト)]*​ 項目が 5 ～ 15 秒ごとに更新される。 |W-11601586
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022年8月8日
+== 2022 年 8 月 8 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -827,24 +692,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022年8月3日
+== 2022 年 8 月 3 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -852,24 +700,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
-== 2022年8月2日
+== 2022 年 8 月 2 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -886,22 +717,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-== 2022年7月29日
+== 2022 年 7 月 29 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -911,22 +727,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。フローでその接続が使用されている場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-== 2022年7月28日
+== 2022 年 7 月 28 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -948,23 +749,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * スケジューラに基づくフローでスケジューラの現在および過去のタイムスタンプにアクセスできるようになりました。
 * NetSuite Connector で過剰な再試行がサポートされるようになり、同時実行制限エラーが防止されます。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。その接続を使用するフローが存在する場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-
-== 2022年7月27日
+== 2022 年 7 月 27 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -975,67 +760,28 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 オブジェクトはすべて大文字で表示され、アンダースコアが付けられます。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。その接続を使用するフローが存在する場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-== 2022年7月13日
+== 2022 年 7 月 13 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * 接続を削除すると、選択した接続を使用しているアクティブなフローと非アクティブなフローのリストが表示されるようになりました。このリストを使用して、接続の状況に応じて、異なる操作を実行します。
 ** どのフローでも使用されていない場合、接続を削除できます。
-** 無効なフローで使用されている場合、この接続を使用している無効なフローの名前と数が記載されたリストが表示されます。この接続を削除すると、リストに記載されたフローの影響します。非アクティブなフローを再び開いた場合は、新しい接続を選択する必要があります。
+** 非アクティブなフローで使用されている場合、この接続を使用している非アクティブなフローの名前と数が記載されたリストが表示されます。この接続を削除すると、リストに記載されたフローの影響します。非アクティブなフローを再び開いた場合は、新しい接続を選択する必要があります。
 ** アクティブなフローと非アクティブなフローで使用されている場合、この接続を使用しているアクティブなフローと非アクティブなフローの名前、数、状況が記載されたリストが表示されます。接続を削除することを選択すると、再度の確認が表示されます。接続を削除する前に、コンポーザで最初にフローの停止が試みられます。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== コンポーザプラットフォーム
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。その接続を使用するフローが存在する場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-== 2022年6月28日
+== 2022 年 6 月 28 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * NetSuite Connector と Salesforce Connector で、空の項目値はデフォルトで無視されます。空の値をクリアするには、​`[Clear on Null Values (null 値でクリア)]`​ オプションを選択できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-== 2022年6月21日
+== 2022 年 6 月 21 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * MuleSoft Composer と Anypoint Platform の両方を使用している組織は [Access Management (アクセス管理)] を使用して 2 つの組織を接続できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-
-== 2022年6月6日
+== 2022 年 6 月 6 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1049,22 +795,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-
-== 2022年5月31日
+== 2022 年 5 月 31 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * NetSuite Connector で、空の項目値はデフォルトで無視されます。空の値をクリアするには、​`[Clear on Null Values (null 値でクリア)]`​ オプションを選択できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-== 2022/05/20
+== 2022 年 5 月 20 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1077,12 +814,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-
-== 2022/05/17
+== 2022 年 5 月 17 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1095,12 +827,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-
-== 2022/05/11
+== 2022 年 5 月 11 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1115,11 +842,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-== 2022/05/05
+== 2022 年 5 月 5 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1143,11 +866,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-== 2022/04/29
+== 2022 年 4 月 29 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1179,11 +898,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-== 2022/04/28
+== 2022 年 4 月 28 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1197,7 +912,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** OpenID Connect IDP
 ** SAML 2.0 ID
 
-== 2022/04/26
+== 2022 年 4 月 26 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1215,13 +930,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/04/22
+== 2022 年 4 月 22 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Google スプレッドシートおよび Slack Connector で、特定のトリガ、アクション、項目にマウスポインタを置いて、アプリケーション内コンテキストヘルプを表示できるようになりました。
 
-== 2022/04/18
+== 2022 年 4 月 18 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1236,7 +951,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 |*[Custom Expression Editor (カスタム式エディタ)]*​ で ​*[fromDateToTime]*​ または ​*[fromStringToDateTime]*​ 関数を使用すると、返される値が 1 日ずれる。たとえば、「​`04/27/2022 T00:00:00Z`​」と入力すると、返される値が ​`4/26/2022 5:00:00 PM`​ になる。 | |
 |===
 
-== 2022/04/12
+== 2022 年 4 月 12 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1250,7 +965,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/04/04
+== 2022 年 4 月 4 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1259,7 +974,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-== 2022/03/31
+== 2022 年 3 月 31 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1281,7 +996,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/03/28
+== 2022 年 3 月 28 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1291,13 +1006,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** Vendor Bill
 ** Purchase Order
 
-== 2022/03/23
+== 2022 年 3 月 23 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Xero Connector で ​*On New or Update Invoice*​ トリガおよび ​*Get Invoices*​ アクションを使用できるようになりました。
 
-== 2022/03/22
+== 2022 年 3 月 22 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1315,7 +1030,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/03/14
+== 2022 年 3 月 14 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1329,7 +1044,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/03/09
+== 2022 年 3 月 9 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1343,13 +1058,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/03/02
+== 2022 年 3 月 2 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Zendesk Connector で ​*Get Organization by ID*​ アクションを使用できるようになりました。このアクションは、指定された ID 検索条件に基づいて組織を返します。
 
-== 2022/02/21
+== 2022 年 2 月 21 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1363,7 +1078,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/02/07
+== 2022 年 2 月 7 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1374,7 +1089,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** *Transaction Tax Code (トランザクション税コード)*
 ** *Item Tax Code (品目税コード)*
 
-== 2022/01/27
+== 2022 年 1 月 27 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
@@ -1384,7 +1099,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * エラーが発生したときにエラーに関する追加情報がある場合、エラーメッセージの ​*[More details (詳細)]*​ リンクをクリックできます。​*[Error (エラー)]*​ ウィンドウの情報を使用して、問題をトラブルシューティングしたり、​*[Trace ID (トレース ID)]*​ をコピーしてサポートに提供したりできます。​*[Contact MuleSoft Support Team (MuleSoft サポートチームに問い合わせる)]*​ ボタンをクリックしてサポートに直接問い合わせることもできます。
 
-== 2022/01/25
+== 2022 年 1 月 25 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1398,7 +1113,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/01/19
+== 2022 年 1 月 19 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1412,7 +1127,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/01/13
+== 2022 年 1 月 13 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1426,13 +1141,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-== 2022/01/07
+== 2022 年 1 月 7 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * MuleSoft Composer で [​`list of strings`​ (文字列のリスト)] データピルがサポートされるようになりました。文字、日付、ブール、数値を項目に入力できるようになりました。一致する文字列のリストがドロップダウンで返されます。
 
-== 2022/01/05
+== 2022 年 1 月 5 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -1549,20 +1264,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 MuleSoft Composer が正式リリースされました。
-
-//include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
-
-//[%header,cols="2,1", width="70”]
-//|===
-//|Issue|ID
-//|Message Flows now appear in chronological order. |SE-12345
-//|Batch jobs no longer hang while using persistent queues. |SE-54321
-//|`NullPointerException` errors no longer occur when using HTTP Connector inside a connector built with XML SDK. |SE-18335
-//|===
-
-//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-//include::_partials/release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
 
 == 関連リソース
 * https://help.mulesoft.com/s/[MuleSoft ヘルプセンター]

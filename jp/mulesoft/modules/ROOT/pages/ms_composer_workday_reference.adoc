@@ -8,12 +8,30 @@ Workday をデータ取得元またはデータ取得先として使用します
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
++
+接続を検証およびテストするために、Workday Connector は ​`Get_Degrees`​ 操作で ​`Performance_Management` サービスを使用します。そのサービスで操作を実行する権限がサービスアカウントにあることを確認してください。
++
+[%header%autowidth.spread]
+|===
+|セキュリティポリシー|ドメイン/機能エリア|許可されたセキュリティグループ
+|セットアップ: スキルと経験 |ワーカープロファイルとスキル a| * HR 管理者
+* HR システム
+* 実装者
+* 職務および役職管理者
+* 学習管理システム
+| |実装| 実装者
+|特殊 OX Web サービス|実装|
+|===
 
 Tenant Name (テナント名)::
 
 Workday テナントの名前または ID。
 +
 たとえば、Workday にログインする URL が ​`na.workday.com/wday/authgwy/global-modern/`​ の場合、テナント名は ​`global-modern`​ になります。
++
+Sandbox からテナント名を取得する手順は、次のとおりです。
+
+. ページの左上を確認します。そこにテナントの詳細が​`「Sandbox 種別- テナント名」`​の形式で表示されています。
 
 User Name (ユーザ名)::
 
@@ -22,14 +40,20 @@ Workday にログインするために使用するユーザ名。
 Password (パスワード)::
 
 Workday にログインするために使用するパスワード。
-+
-コンポーザで Workday ユーザアカウントを正常に認証するには、Workday ユーザに完全なユーザロールが必要です。コンポーザでは API ユーザロールが認証されません。
 
 Host Name (ホスト名)::
 
 Workday インスタンスのホスト名。例: `wd2-impl-services1.workday.com`​。
++
+ホスト名を見つける手順は、次のとおりです。
+
+. Web インターフェースから Workday にログインします。
+. 検索ボックスに​`「Public Web Service」`​ (公開 Web サービス) と入力し、検索結果から ​*[Public Web Service (公開 Web サービス)]*​ を選択します。
+. *[...]*​ をクリックし、​*[Web Service (Web サービス)] > [View WSDL (WSDL を表示)]*​ を選択します。​`soapbind:address`​ をチェックして、正しいホスト名 (例: `<soapbind:address location=”https://hostname/ccx/.... />`​) を使用していることを確認します。 
 
 == トリガ
+
+include::_partials/trigger-definition.adoc[]
 
 New or updated object::
 

@@ -20,22 +20,26 @@ Xero にログインするために使用する OAuth パスワード。
 
 == トリガ
 
-include::_partials/trigger-definition.adoc[]
+各フローは、​_スケジューラ_​または​_トリガ_​によって開始します。スケジューラは、デフォルトで 15 分ごとに実行されますが、自分のフローに最適な頻度を選択できます。トリガ (例:「each time a new record is created (新規レコードが作成されるたび)」) はユーザが定義し、システム内のデータに関連する複数のオプションがあります。
+
+トリガは、ポーリングプロセスを使用して外部システムからの最新情報を能動的にチェックします。ポーリング頻度は 5 分です。 
+
+このシステムでは、次のトリガオプションが提供されます。
 
 New or updated Contact::
 
 新規または更新済み取引先責任者レコードをチェックします。次の項目の値を指定します。
 
-* *組織*​
+* *組織*
 * *Contact Type (取引先責任者種別)*
 
 New or updated item::
 
 新規または更新済み項目レコードをチェックします。次の項目の値を指定します。
 
-* *組織*​
-* *Is purchased (購入)*​
-* *Is sold (販売)*​
+* *組織*
+* *Is purchased (購入)*
+* *Is sold (販売)*
 * *Is tracked as inventory (在庫として追跡)*
 
 New or updated payment (新規または更新済み支払)::
@@ -46,8 +50,8 @@ On New or Update Invoice (新規または更新済み請求書)::
 
 新規または更新済み請求書をチェックします。次の項目の値を指定します。
 
-* *組織*​
-* *Invoice type (請求書種別)*​
+* *組織*
+* *Invoice type (請求書種別)*
 * *Invoice status (請求書の状況)*
 
 == アクション
@@ -58,8 +62,8 @@ Create or update contact::
 
 新しい取引先責任者レコードを作成するか、既存の取引先責任者レコードを更新します。次の項目の値を指定します。
 
-* *組織*​
-* *Contact name (取引先責任者名)*​
+* *組織*
+* *Contact name (取引先責任者名)*
 * 別の取引先責任者を追加する場合は、​*[Email address (メールアドレス)]*​ 項目の値を指定する必要もあります。
 
 Search contacts::
@@ -70,24 +74,24 @@ Get contact by ID::
 
 ID 値に基づいて 1 件の取引先責任者レコードを返します。次の項目の値を指定します。
 
-* *組織*​
+* *組織*
 * *Contact ID (取引先責任者 ID)*
 
 Create or update invoice::
 
 請求書レコードを作成または更新します。次の項目の値を指定します。
 
-* *組織*​
-* *Invoice type (請求書種別)*​
-* *Contact name (取引先責任者名)*​
+* *組織*
+* *Invoice type (請求書種別)*
+* *Contact name (取引先責任者名)*
 * *Items (項目)*
 
 Update invoice headers::
 
 請求書レコードの特定の項目を更新します。次の項目の値を指定します。
 
-* *組織*​
-* *Invoice Reference Type (請求書参照種別)*​
+* *組織*
+* *Invoice Reference Type (請求書参照種別)*
 * *Invoice Reference (請求書参照)*
 
 //Create Item::
@@ -102,7 +106,7 @@ Create or update item::
 
 項目レコードの項目を作成または更新します。次の項目の値を指定します。
 
-* *組織*​
+* *組織*
 * *Item Code (項目コード)*
 
 Get Invoices::

@@ -1,0 +1,106 @@
+= Google BigQuery Connector リファレンス
+
+Google BigQuery は、データを保管してアクセスするためのウェアハウスであり、データセットをリアルタイムで分析するためのツールも提供しています。 
+
+== 始める前に   
+
+Google BigQuery Connector を使用するには、 https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google ワークスペース]​のアカウントが必要です。コンポーザから個人の Google アカウントへの接続は許可されません。 
+
+Google ワークスペースのアカウントに接続すると、コンポーザが https://support.google.com/cloud/answer/7454865?hl=en[未確認のアプリケーション]​であることを示すメッセージが表示されます。これは想定される動作です。このメッセージをバイパスしてコネクタを使用するには、​*「このアプリは Google で確認されていません」*​のダイアログで ​*[詳細]*​ ​*> [[プロジェクト名](安全ではないページ) に移動] > [許可]*​ をクリックします。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name (接続表示名)::
+
+この接続の詳細を把握するのに役立つ接続名を入力します。
+1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。そのため、この接続を他の接続と簡単に区別できる名前を付けると役立ちます。
++
+接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+
+Project ID (プロジェクト ID)::
+
+Google BigQuery から取得したプロジェクト ID。
+
+Username (ユーザ名)::
+
+Google BigQuery にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Google BigQuery にログインするために使用する OAuth パスワード。
+
+== データ型
+
+Google BigQuery では、次のデータ型がサポートされています。
+
+* INT64
+* BIGNUMERIC
+* BOOL
+* BYTES
+* DATE
+* DATETIME
+* FLOAT64
+* JSON
+* NUMERIC
+* STRING
+* TIME
+* TIMESTAMP
+
+== Triggers (トリガ)
+
+include::_partials/trigger-definition.adoc[]
+
+On New Row Source (新規行のソース)::
+
+15 秒ごとにウォーターマークに基づいてテーブルのすべての新しい行を返します。次の項目の値を指定します。 
+
+* *Dataset name (データセット名)*
+* *Table name (テーブル名)*
+* *New Watermark Column (新規ウォーターマーク列)*​: この項目では、次の列のデータ型を使用できます。 
+** DATE
+** DATETIME
+
+On New or Updated Row Source (新規または更新済み行のソース)::
+
+15 秒ごとにウォーターマークに基づいてテーブルのすべての新しい行または更新された行を返します。次の項目の値を指定します。 
+
+* *Dataset name (データセット名)*
+* *Table name (テーブル名)*
+* *New Watermark Column (新規ウォーターマーク列)*​: この項目では、次の列のデータ型を使用できます。 
+** DATE
+** DATETIME
+* *Update Watermark Column (更新ウォーターマーク列)*​: この項目では、次の列のデータ型を使用できます。 
+** DATE
+** DATETIME
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Insert Rows::
+
+1 つ以上の行をテーブルに挿入してテーブルを更新します。​*[SQL string (SQL 文字列)]*​ の値を指定します。
+
+Update Rows::
+
+行のセットを更新します。​*[SQL string (SQL 文字列)]*​ の値を指定します。
+
+Delete Rows::
+
+行のセットを削除します。​*[SQL string (SQL 文字列)]*​ の値を指定します。
+
+Select Rows::
+
+行のセットを取得します。​*[SQL string (SQL 文字列)]*​ の値を指定します。
+
+== Input Parameters (入力パラメータ)
+
+クエリステートメントにパラメータ値を含めるには、​`:`​ に続けてパラメータ名を指定します (例: `Select field from dataset.table where field = :param1`​)。パラメータの値は ​*[Input Parameters (入力パラメータ)]*​ セクションで定義します。たとえば、​`param1`​ の値を ​`12345`​ として定義すると、このクエリステートメントは ​`Select field from dataset.table where field = 12345`​ として解釈されます。
+
+パラメータの値は、リテラル文字列、または先行するアクションの出力値として定義する必要があります。String (文字列) または Date (日付) データ型の入力パラメータ値は、式エディタを使用して、単一引用符で囲んで指定する必要があります。リテラル文字列の場合は、エディタで単一引用符を ​`’12345’`​ のように値に追加します。先行するアクションからの出力値の場合は、カスタム式オプションを選択し、エディタでカスタム式を ​`’Field From Previous Step’`​ のように単一引用符で囲んで、変更を適用します。
+
+*Google BigQuery™ は Google LLC の商標です。*
+
+include::_partials/see-also.adoc[]

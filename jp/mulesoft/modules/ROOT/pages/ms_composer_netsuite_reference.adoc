@@ -9,7 +9,7 @@ MuleSoft Composer を介して NetSuite に接続する場合、NetSuite で次�
 * *[Setup (設定)]*​ > ​*[Integration Management (インテグレーション管理)]*​ > ​*[Manage Integration (インテグレーションを管理)]*​ > ​*[Authentication (認証)]*​ に移動してトークンベースの認証が有効になっていることを確認します。
 * *[Setup (設定)]*​ > ​*[User/Roles (ユーザ/ロール)]*​ > ​*[Two-Factor Authentication Roles (2 要素認証ロール)]*​ に移動して、インテグレーションで使用するロールで 2 要素認証が使用されていないことを確認します。
 
-コンポーザでは NetSuite 2020.2 がサポートされています。
+コンポーザでは NetSuite インスタンス 2020.2 以降がサポートされています。
 
 include::_partials/connection-definition.adoc[]
 
@@ -48,7 +48,7 @@ MuleSoft では、コンポーザと NetSuite を統合するために必要な�
 . *[MuleSoft Composer]*​ をクリックし、​*[Components (コンポーネント)]*​ タブを確認します。
 . *[Install (インストール)]*​ をクリックし、​*[Install Bundle (バンドルをインストール)]*​ をクリックします。インストールには数分かかります。
 
-バンドルをインストールしたら、ログイン情報を生成してコンポーザへの接続を設定します。ログイン情報はセキュリティ上の理由から一度しか表示されないため、ログイン情報を安全に保管してください。詳細は、NetSuite 管理者にお問い合わせください。 
+バンドルをインストールしたら、ログイン情報を生成してコンポーザへの接続を設定します。ログイン情報はセキュリティ上の理由から一度しか表示されないため、ログイン情報を安全に保管してください。詳細は、NetSuite 管理者にお問い合わせください。
 
 トークンの形式でログイン情報を生成する手順は、次のとおりです。
 
@@ -60,10 +60,10 @@ MuleSoft では、コンポーザと NetSuite を統合するために必要な�
 .. インテグレーションの名前と適切な同時実行値を入力します。低い値から始めて、許可されている最大同時実行値よりも 1 ～ 2 単位低い値を使用できます。
 .. *[Token-Based Authentication (トークンベース認証)]*​ ボックスをオンにします。
 . アクセストークンを生成します。
-.. *[Setup (設定)] > [Users/Roles (ユーザ/ロール)] > [User Management (ユーザ管理)] > [Access Tokens (アクセストークン)]*​ に移動します。 
+.. *[Setup (設定)] > [Users/Roles (ユーザ/ロール)] > [User Management (ユーザ管理)] > [Access Tokens (アクセストークン)]*​ に移動します。
 .. 前のステップで作成したインテグレーションにアプリケーションを設定します。
 .. ユーザを割り当て、​*[Save (保存)]*​ をクリックします。
-. *[Setup (設定)] > [Company (会社)] > [Company Information (会社情報)]*​ に移動して、NetSuite アカウント ID を特定します。 
+. *[Setup (設定)] > [Company (会社)] > [Company Information (会社情報)]*​ に移動して、NetSuite アカウント ID を特定します。
 
 === サーバの SuiteScript を実行してワークフローをトリガ
 
@@ -123,8 +123,10 @@ Get Records::
 
 |Record Type (レコードタイプ) |トリガ |アクション
 
+|BILLING_SCHEDULE | |X
 |CASH_SALE |X |X
 |CASH_REFUND |X |X
+|CLASSIFICATION | |X
 |CONTACT |X |X
 |CREDIT_MEMO |X |X
 |CURRENCY | |X
@@ -137,23 +139,35 @@ Get Records::
 |DEPARTMENT | |X
 |ESTIMATE |X |X
 |EMPLOYEE |X |X
+|GIFT_CERTIFICATE_ITEM |X |X
+|INVENTORY_ADJUSTMENT |X |X
 |INVENTORY_ITEM |X |X
 |INVOICE |X |X
+|ITEM_FULFILLMENT |X |X
+|ITEM_GROUP |X |X
+|ITEM_RECEIPT |X |X
 |JOURNAL_ENTRY |X |X
+|KIT_ITEM |X |X
 |LEAD |X |X
 |LOCATION | |X
+|LOT_NUMBERED_ASSEMBLY_ITEM |X |X
 |LOT_NUMBERED_INVENTORY_ITEM |X |X
 |NON_INVENTORY_PURCHASE_ITEM |X |X
 |NON_INVENTORY_RESALE_ITEM |X |X
 |NON_INVENTORY_SALE_ITEM |X |X
 |OPPORTUNITY |X |X
+|OTHER_CHARGE_PURCHASE_ITEM |X |X
+|OTHER_CHARGE_RESALE_ITEM |X |X
+|OTHER_CHARGE_SALE_ITEM |X |X
 |PARTNER |X |X
-|PAYMENT_ITEM | |X
+|PAYMENT_ITEM |X |X
 |PRICE_LEVEL | |X
 |PROSPECT |X |X
 |PURCHASE_ORDER |X |X
 |RETURN_AUTHORIZATION |X |X
 |SALES_ORDER |X |X
+|SERIALIZED_ASSEMBLY_ITEM |X |X
+|SERIALIZED_INVENTORY_ITEM |X |X
 |SERVICE_PURCHASE_ITEM |X |X
 |SERVICE_RESALE_ITEM |X |X
 |SERVICE_SALE_ITEM |X |X
@@ -161,6 +175,7 @@ Get Records::
 |SUPPORT_CASE |X |X
 |TIME_BILL |X |X
 |TIME_SHEET |X |X
+|TRANSFER_ORDER |X |X
 |VENDOR |X |X
 |VENDOR_BILL |X |X
 
@@ -192,6 +207,13 @@ MuleSoft Composer を使用して、NetSuite レコードで設定したアク�
 == リストオブジェクト
 
 リストオブジェクトがサポートされます。
+
+*[Get Records (レコードの取得)]*​ アクションでは、次のリストオブジェクトがサポートされます。
+
+* Department (部署)
+* Locations (場所)
+* Price Level (価格レベル)
+* Subsidiary (子会社)
 
 == カスタム選択リスト
 

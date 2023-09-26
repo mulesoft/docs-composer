@@ -32,6 +32,24 @@ image::images/overview1.png[データサイロ間のデータの同期の維持�
 
 この簡単なフローを拡張してより複雑なアクションを実行できます。たとえば、新規ユーザの郵便番号に基づいて異なるシートに書き込んだり、既存のユーザの変更を伝播したりできます。
 
+== ユースケース 
+
+Composer の一般的なユースケースのいくつかを次に挙げます。
+
+* *Quote-to-Cash (ERP の統合)*
++
+Quote-to-Cash プロセスの自動化とストリーミングによって効率と販売の生産性を高めます。たとえば、Salesforce の商談が成立したら、NetSuite で販売注文を自動的に作成して、Slack で請求チームに自動的に通知します。詳細は、Trailhead モジュールの https://trailhead.salesforce.com/content/learn/modules/netsuite-data-sync-with-mulesoft-composer[「MuleSoft Composer を使用した NetSuite オートメーション^」]​を参照してください。 
+
+* *ケースのエスカレーション (チケットシステムの統合)*
++
+サポートケースの管理と通知を自動化してケースのエスカレーションと解決をスピードアップします。たとえば、JIRA チケットを自動的に作成し、Slack 通知を自動的に送信して、Service Cloud または Zendesk から緊急のサポートケースを整理して優先付けることで、エージェント、エンジニアリング、DevOps の間のコミュニケーションを合理化します。詳細は、Trailhead モジュールの https://trailhead.salesforce.com/content/learn/modules/jira-data-sync-with-mulesoft-composer[「MuleSoft Composer を使用した Jira のオートメーション^」]​を参照してください。
+
+* *Salesforce から Salesforce*
++
+複数のSalesforce 組織を接続して、組織間でデータを同期します。たとえば、1 つの Salesforce 
+組織でオブジェクトを作成または更新し、変更内容を他の Salesforce 組織に同期します。 
+詳細は、Trailhead モジュールの https://trailhead.salesforce.com/content/learn/modules/data-sync-between-orgs-with-mulesoft-composer[「MuleSoft Composer を使用した組織間でのオートメーション^」]​を参照してください。 
+
 == フローを作成する手順
 
 コンポーザで正常に機能するリアルタイムインテグレーションを作成するのにコーディング操作は不要です。

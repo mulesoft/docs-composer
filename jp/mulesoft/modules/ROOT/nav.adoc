@@ -1,6 +1,7 @@
 * xref:ms_composer_overview.adoc[MuleSoft Composer]
 
 * xref:ms_composer_ms_release_notes.adoc[リリースノート]
+** xref:ms_composer_ms_release_notes_ki.adoc[既知の問題]
 
 * xref:ms_composer_prerequisites.adoc[はじめに]
 ** xref:ms_composer_about_flows.adoc[コンポーザのしくみ]
@@ -16,6 +17,7 @@
 ** xref:ms_composer_asana_reference.adoc[Asana]
 ** xref:ms_composer_box_reference.adoc[Box]
 ** xref:ms_composer_gmail_reference.adoc[Gmail]
+** xref:ms_composer_google_bigquery_reference.adoc[Google BigQuery]
 ** xref:ms_composer_google_calendar_reference.adoc[Google カレンダー]
 ** xref:ms_composer_googlesheets_reference.adoc[Google スプレッドシート]
 ** xref:ms_composer_http_reference.adoc[HTTP]
@@ -28,6 +30,7 @@
 ** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]
 ** xref:ms_composer_rpa_reference.adoc[MuleSoft RPA]
 ** xref:ms_composer_rest_consumer_reference.adoc[REST コンシューマ]
+** xref:ms_composer_sage_intacct_reference.adoc[Sage Intacct]
 ** xref:ms_composer_salesforce_reference.adoc[Salesforce]
 ** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]

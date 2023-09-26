@@ -25,15 +25,15 @@ Microsoft Dynamics 365 Business Central にログインするために使用す�
 
 include::_partials/trigger-definition.adoc[]
 
-New or Updated Sales Order (新規または更新済み販売注文)::
+On New or Updated Sales Order (新規または更新済み販売注文)::
 
-新規または更新済み販売注文をチェックします。​*[Company (会社)]*​ の値を指定します。
+新規または更新済み販売注文または新規または更新済み販売注文明細行をチェックします。​*[Company (会社)]*​ の値を指定します。
 
-New or Updated Item (新規または更新済み項目)::
+On New or Updated Item (新規または更新済み項目)::
 
 新規または更新済み項目をチェックします。​*[Company (会社)]*​ の値を指定します。
 
-New or Updated Customer (新規または更新済み顧客)::
+On New or Updated Customer (新規または更新済み顧客)::
 
 新規または更新済み顧客をチェックします。​*[Company (会社)]*​ の値を指定します。
 
@@ -43,22 +43,22 @@ include::_partials/action-definition.adoc[]
 
 Create Sales Order::
 
-1 件の販売注文を作成します。次の項目の値を指定します。
+販売注文と、指定されている場合は販売注文明細行のリストを作成します。次の項目の値を指定します。
 
-* *Company (会社)*​
+* *Company (会社)*
 * *Customer Number (顧客番号)*
 
 Update Sales Order::
 
-1 件の販売注文を更新します。次の項目の値を指定します。
+販売注文と、指定されている場合は販売注文明細行のリストを更新します。次の項目の値を指定します。
 
-* *Company (会社)*​
-* *Entity ID (エンティティ ID)*​
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
 * *ETag*
 
 Get Sales Orders::
 
-絞り込まれた販売注文のリストを取得します。​*[Company (会社)]*​ の値を指定します。
+絞り込み済みの販売注文のリストと、対応する販売注文明細行を取得します。​*[Company (会社)]*​ の値を指定します。
 
 顧客の作成::
 
@@ -68,8 +68,8 @@ Update Customer::
 
 1 人の顧客を更新します。次の項目の値を指定します。
 
-* *Company (会社)*​
-* *Entity ID (エンティティ ID)*​
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
 * *ETag*
 
 Get Customers::
@@ -84,8 +84,8 @@ Update Item::
 
 1 件の項目を更新します。次の項目の値を指定します。
 
-* *Company (会社)*​
-* *Entity ID (エンティティ ID)*​
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
 * *ETag*
 
 Get Items::
@@ -96,15 +96,15 @@ Create Item Variant::
 
 1 件の項目バリエーションを作成します。次の項目の値を指定します。
 
-* *Company (会社)*​
+* *Company (会社)*
 * *Code (コード)*
 
 Update Item Variant::
 
 1 件の項目バリエーションを更新します。次の項目の値を指定します。
 
-* *Company (会社)*​
-* *Entity ID (エンティティ ID)*​
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
 * *ETag*
 
 Get Item Variants::

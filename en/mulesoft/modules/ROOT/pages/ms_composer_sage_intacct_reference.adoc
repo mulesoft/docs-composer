@@ -246,6 +246,6 @@ Deletes a Price List Entry record. Provide a value for the *Price List Entry ID*
 
 == Custom Fields
 
-If your Composer flow automation requires custom fields, see the https://developer.intacct.com/customization-services/#custom-fields[Sage Intacct documentation].
+If defined in the Sage Intacct instance, Sage Intacct Connector for Composer supports adding custom fields. For details on adding Sage Intacct custom fields, see the https://developer.intacct.com/customization-services/#custom-fields[Sage Intacct documentation].
 
 include::_partials/see-also.adoc[]

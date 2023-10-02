@@ -1,0 +1,35 @@
+= Hyperautomation Package 
+
+The Hyperautomation Package enables you to login to one tenant to access MuleSoft Composer, MuleSoft Anypoint Platform, MuleSoft Robotic Process Automation (RPA), and Salesforce Flow Orchestrator. With the Hyperautomation Package, MuleSoft Composer now has everything you need to connect apps and create automations.  
+
+With the Hyperautomation Package, the following Anypoint Platform features are available to Composer users: 
+
+* Anypoint Audit Logging
+* Anypoint Exchange 
+* Anypoint Visualizer 
+* Anypoint Monitoring 
+
+For more information on the pricing and contents of each hyperautomation package, please see <WHATEVER MARKETING PAGE>
+
+== Access Composer with Hyperautomation Package 
+
+=== Admin: Grant Access to Composer Users 
+
+To access a single tenant org, the Anypoint Admin must first: 
+
+. Create an Anypoint Platform Account for the users.
+. Grant one of the following roles to each user: 
+.. *Composer Base User*: This user can create and manage their own flows. 
+.. *Composer Super User*: This user can create and manage their own flows and they can also take ownership of any flows in the Anypoint Composer org. Note that he following Composer features are are only available to those with the Composer Super User role: 
+... API Sharing 
+... Flow Sharing
+... Usage Summary 
+
+=== Access Composer with the Hyperautomation Package  
+
+To access Composer with the Hyperautomation Package: 
+
+. Log in to Anypoint Platform. 
+. On the *Anypoint Platform* page, click *Go to Composer*.  
+
+include::_partials/see-also.adoc[]

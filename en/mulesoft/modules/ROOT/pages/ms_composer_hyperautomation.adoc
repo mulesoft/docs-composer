@@ -1,13 +1,13 @@
 = Hyperautomation Package 
 
-The Hyperautomation Package enables you to login to one tenant to access MuleSoft Composer, MuleSoft Anypoint Platform, xref:rpa-home[MuleSoft Robotic Process Automation (RPA)], and https://help.salesforce.com/s/articleView?id=sf.orchestrator_flow_orchestrator.htm&type=5[Salesforce Flow Orchestrator]. 
+The Hyperautomation Package enables you to log in to Anypoint Platform to access  MuleSoft Composer, MuleSoft Anypoint Platform, xref:rpa-home::index.adoc[MuleSoft Robotic Process Automation (RPA)], and https://help.salesforce.com/s/articleView?id=sf.orchestrator_flow_orchestrator.htm&type=5[Salesforce Flow Orchestrator]. 
 
 With the Hyperautomation Package, the following Anypoint Platform features are available to Composer users: 
 
 * xref:access-management::audit-logging.adoc[Anypoint Audit Logging]
-* xref:exchange[Anypoint Exchange] 
-* xref:visualizer[Anypoint Visualizer] 
-* xref:monitoring[Anypoint Monitoring] 
+* xref:exchange::index.adoc[Anypoint Exchange] 
+* xref:visualizer::index.adoc[Anypoint Visualizer] 
+* xref:monitoring::index.adoc[Anypoint Monitoring] 
 
 For more information about the pricing and contents of each hyperautomation package, please see <WHATEVER MARKETING PAGE>
 

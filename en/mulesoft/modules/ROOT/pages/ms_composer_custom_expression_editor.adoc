@@ -326,7 +326,7 @@ The *Custom Expression Editor* supports the following `List` formulas and operat
 
 `joinBy([Mr, Max, Mule], emptyString()) = MrMaxMule`|list separator 
 
-Note that you can use a `List` data pill, a function that returns a list (such as splitBy), or a list that you build manually using [ ] as a parameter to the function.
+Note that you can use a `List` data pill, a function that returns a list (such as `splitBy`), or a list that you build manually using [ ] as a parameter to the function.
 
  |list: List<String>
 

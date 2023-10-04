@@ -1,6 +1,6 @@
 = MuleSoft Automation Package 
 
-The https://www.mulesoft.com/automation-pricing-new[MuleSoft Automation Package] enables you to log in to Anypoint Platform to access MuleSoft Composer and xref:rpa-home::index.adoc[MuleSoft Robotic Process Automation (RPA)]. With the Hyperautomation Package, MuleSoft Composer now has everything you need to connect apps and create automations.  
+The https://www.mulesoft.com/automation-pricing-new[MuleSoft Automation Package] enables you to log in to Anypoint Platform to access MuleSoft Composer and xref:rpa-home::index.adoc[MuleSoft Robotic Process Automation (RPA)]. With the MuleSoft Automation Package, MuleSoft Composer now has everything you need to connect apps and create automations.  
 
 
 With the MuleSoft Automation Package, the following Anypoint Platform features are available to Composer users: 

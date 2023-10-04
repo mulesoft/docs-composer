@@ -47,4 +47,5 @@
 ** xref:ms_composer_zuora_reference.adoc[Zuora]
 
 * xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits]
+* xref:ms_composer_hyperautomation.adoc[MuleSoft Automation Packge]
 * xref:ms_composer_glossary.adoc[Glossary]

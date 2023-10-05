@@ -79,14 +79,6 @@ Updates specified Standard field values. Provide a value for the following field
 * *Issue ID or Key*
 * *Notify Users*
 
-Assign user to issue::
-
-Assigns a user to a specified issue. Provide a value for *Issue ID or Key*.
-
-Add watcher to issue::
-
-Adds a watcher to an existing Jira issue. Provide a value for *Issue ID or Key*.
-
 Get issue::
 
 Returns details for a specific issue. Provide a value for *Issue ID or Key*.
@@ -96,10 +88,6 @@ Add comment to issue::
 Creates and adds a comment to an existing issue. Provide a value for the following fields:
 * *Issue ID or Key*
 * *Comment Text*
-
-Get account IDs for users::
-
-Returns the account IDs for the users specified in the `key` or `username` parameters. You can specify multiple `key` or `username` parameters.
 
 Create project::
 
@@ -114,9 +102,9 @@ Get project::
 
 Returns the project details in Jira. Provide a value for *Project ID* or *Key*.
 
-Update project::
+Retrieve project::
 
-Updates the project details for an existing project in Jira. Provide a value for *Project ID* or *Key*.
+Retrieves the project details for an existing project in Jira. Provide a value for *Project ID* or *Key*.
 
 Retrieve attachments for an issue::
 
@@ -126,9 +114,9 @@ Retrieve attachment::
 
 Returns a URL redirect to the raw file for a specified file attachment. Provide a value for *Attachment ID*.
 
-Upload attachment to an issue::
+Upload an attachment for an issue::
 
-Uploads attachment to a Jira issue. Provide a value for the following fields:
+Uploads an attachment for a Jira issue. Provide a value for the following fields:
 
 * *Issue ID or Key*
 * *File Name*

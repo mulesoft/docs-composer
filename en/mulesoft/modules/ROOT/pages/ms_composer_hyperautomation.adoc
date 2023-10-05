@@ -12,7 +12,7 @@ With the MuleSoft Automation Package, the following Anypoint Platform features a
 
 == Access Composer with MuleSoft Automation Package 
 
-To Access Composer with the MuleSoft Automation package, first grant access to users and then log in to Anypoint Platform and open Composer.
+To access Composer with the MuleSoft Automation package, first grant access to users and then log in to Anypoint Platform and open Composer.
 
 === Admin: Grant Access to Composer Users 
 

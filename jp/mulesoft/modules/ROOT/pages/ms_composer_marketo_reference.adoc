@@ -1,0 +1,67 @@
+= Marketo Connector リファレンス
+
+Marketo は、マーケティング担当者、役員、営業担当がリードを獲得、育成、理解するのに役立つマーケティングオートメーションソフトウェアです。Marketo は、マーケティングオートメーション、メールマーケティング、リード管理、収益属性をユーザに提供します。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Token URL (トークン URL)::
+
+Marketo のアクセストークンを提供するエンドポイントの URL。
+
+Client ID (クライアント ID)::
+
+Marketo にログインするために使用する OAuth クライアント ID。
+
+Client Secret (クライアントシークレット)::
+
+Marketo にログインするために使用する OAuth クライアントシークレット。
+
+REST API Endpoint (REST API エンドポイント)::
+
+Marketo インスタンスのベース URL。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New Lead (新規リード)::
+
+指定された日時以降の新しいリードの活動のリストを返します。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create Lead::
+
+対象者に対するリードを作成します。​*[Push Lead to Market to Request (マーケティング対象のリードのプッシュ要求)]*​ の値を指定します。
+
+Update Lead::
+
+対象者に対するリードを更新します。​*[Push Lead to Market to Request (マーケティング対象のリードのプッシュ要求)]*​ の値を指定します。
+
+Get/Find Lead::
+
+Marketo ID を介して 1 つのリードレコードを取得します。
+
+Add Lead to List::
+
+個人レコードを対象の静的リストに追加します。
+
+Update Lead Program Status::
+
+対象プログラムでリードのプログラムメンバーの状況を変更します。​*[Change Lead Program Status Request (リードプログラムの状況の変更要求)]*​ の値を指定します。
+
+Create Custom Object::
+
+対象者のカスタムオブジェクトレコードを作成します。​*[Sync Custom Object Request (カスタムオブジェクトの同期要求)]*​ の値を指定します。
+
+Update Custom Object::
+
+対象者のカスタムオブジェクトレコードを更新します。​*[Sync Custom Object Request (カスタムオブジェクトの同期要求)]*​ の値を指定します。 
+
+include::_partials/see-also.adoc[]

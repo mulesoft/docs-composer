@@ -1,0 +1,331 @@
+= MuleSoft Composer for Salesforce のリリースノート - 2023
+
+MuleSoft Composer for Salesforce を使用して、コネクテッドエクスペリエンスをすばやくビルドします。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
+
+新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
+
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題」]​を参照してください。
+
+== 2023 年 4 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* エラーハンドラ (ベータ) を使用できるようになりました。この機能を使用して、フローの特定のステップの接続エラーやロジックエラーを監視し、発生したエラーを処理するためのロジックを指定できます。
+
+== 2023 年 4 月 12 日 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *カスタム式エディタ*​は、次の ​`string`​ 関数をサポートするようになりました。
+** `emptyString`
+** `substring`
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|QuickBooks Online Connector で、カスタム項目を指定しなかった場合の未知の記述の例外は発生しなくなりました。 |W-12724854
+|===
+
+== 2023 年 4 月 11 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Xero Connector で、​*[Create or Update Invoice (請求書の作成または更新)]*​ オブジェクトがテスト時にトリガされなかった問題が修復されました。 |W-12670939
+|===
+
+== 2023 年 4 月 4 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、​*[Type (種別)]*​ 項目に空白スペースが含まれていても、​*[Get issues (問題を取得)]*​ アクションは意図したとおりに機能するようになりました。 |W-12760964
+|===
+
+== 2023 年 4 月 3 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のアクションが Slack Connector で使用できるようになりました。
+** *Add users to channel (チャネルへのユーザの追加)*
+** *Create channel (チャネルの作成)*
+** *Send direct message to multiple users (ダイレクトメッセージをユーザに送信)*
+
+== 2023 年 3 月 28 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コネクタの更新やバグ修正によってフローが中断された場合には、これらの更新について説明するメールが届き、フローエラーを回避するためにどのフローを停止して再アクティブ化する必要があるのかが示されるようになりました。
+
+== 2023 年 3 月 24 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で、ログオン時刻のメタデータが各レコードに登録されるようになりました。 
+
+* NetSuite Connector で、​*[File (ファイル)]*​ オブジェクトオブジェクトのメタデータが ​*[Create Actions (アクションの作成)]*​ レコードで使用できるようになりました。 
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で、​*[Get Records (レコードの取得)]*​ アクションが ​*LOT_NUMBERED_ASSEMBLY_ITEM*​ レコードタイプに対して間違ったレコードを返さなくなりました。 |W-12473442
+|NetSuite Connector で​*USER_ERROR​: Invalid log in attempt (不正なログイン試行)*​ エラーが発生しなくなりました。|W-12619973
+|NetSuite Connector の書き込み操作時に ​*[Name (名前)]*​ 項目が表示されなくなりました。 |W-12428757
+|NetSuite Connector の ​*[Get Records (レコードの取得)]*​ アクションの ​*[Type (種別)]*​ ドロップダウンで ​*NETSUITE_SOAP_FAULT*​ エラーが発生しなくなりました。 |W-12572300
+|NetSuite Connector で、​*com.sun.xml.internal.stream.events.EndElementEvent*​ エラー応答の解析エラーが発生しなくなりました。 |W-12573323
+|===
+
+== 2023 年 3 月 23 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 以前は、式をサポートするブール項目がテキスト項目または選択リストとして表示されていました。式をサポートするすべてのブール項目は、テキスト項目と選択リストの両方をサポートするハイブリッド項目として表示されるようになりました。また、テキスト項目に ​`true`​ または ​`false`​ と手動で入力すると、大文字または小文字のどちらで入力したかには関係なく、対応するドロップダウン値がその項目で自動的に選択されます。 
+
+* 項目のデータ型アイコンにマウスポインタを置くと、情報ツールチップが表示されるようになりました。
+
+== 2023 年 3 月 22 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Google BigQuery に接続できるようになりました。 
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2023 年 3 月 14 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Anypoint Platform ユーザは、Mulesoft Composer for Salesforce フローでのコンシューム用に Anypoint Platform で管理されている外部で利用可能な API をビジネスユーザと共有できるようになりました。この機能強化により、標準のコネクタ以外も含むインテグレーションが可能になります。
+
+* Mulesoft Composer for Salesforce と Anypoint Platform の両方を使用している組織は [Access Management (アクセス管理)] を使用して 2 つの組織を接続できるようになりました。
+
+
+== 2023 年 3 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* レンチアイコンをクリックして ​*[Import (インポート)]*​ を選択することで、フローを JSON ファイルとしてインポートできるようになりました。フローのインポート機能は進行中のベータです。
+
+== 2023 年 3 月 9 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Salesforce Connector で、​*[Run History (実行履歴)]*​ ページに詳細なエラーログ情報が表示され、より効果的なトラブルシューティングが可能になりました。新しいエラーログには、エラーが発生した日時、エラーの説明、フロー内のエラー発生場所が含まれます。 
+
+== 2023 年 3 月 2 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、パラメータの ​`project`​ 項目のコンテンツがデータプロバイダ間で一致しない場合に発生していた問題を修復しました。 |W-12270412
+|===
+
+== 2023 年 2 月 27 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コンポーザのコネクタが項目のデフォルト値をサポートしている場合は、コンポーザ UI にその値が選択された状態で表示されるようになりました。ただし、ユーザはデフォルト値を変更できます。
+
+== 2023 年 2 月 21 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *「Composer Administrator (コンポーザ管理者)」*​権限を使用できるようになりました。システム管理者は、コンポーザをインストールした後で、次の権限をユーザに割り当てることができます。 
+** *「Composer Administrator (コンポーザ管理者)」*​権限では、​*[Settings (設定)]*​ ページにアクセスして、メール設定や API 共有を管理できます。
+** *「Composer User (コンポーザユーザ)」*​権限では、フローの作成と管理など、コンポーザ機能全体にアクセスできます。
+
+* *「Composer Administrator (Composer 管理者)」*​権限を持つユーザが ​*[Settings (設定)]*​ ページを使用できるようになりました。  このページでは、メール通知設定を表示および編集できます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|カスタム項目を指定しなかった場合に発生することがあった null ポインタ例外を修復しました。 |W-12572592
+|===
+
+== 2023 年 2 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Gmail Connector の ​*[On New Email (新規メール)]*​ トリガと ​*[Send email (メールの送信)]*​ アクションで添付ファイルをサポートするようになりました。
+* *[Get Attachments (添付ファイルを取得)]*​ アクションが Gmail Connector で使用できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Zendesk Connector で、Zendesk API に準拠して外部 ID 値が数値ではなく文字列として表されるようになりました。 |W-12360287
+|===
+
+== 2023 年 2 月 15 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Tableau Connector で、報告されたセキュリティの脆弱性に対処するために、ネイティブライブラリがアップグレードされました。 |W-11453219
+|===
+
+== 2023 年 2 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|HTTP Connector で、トップレベル配列が API 仕様エンドポイントで定義されている場合に、正しいペイロードが送信されるようになりました。 |W-12373559
+|===
+
+== 2023 年 2 月 8 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|フローを開くと、​*[If/Else Blocks (If/Else ブロック)]*​ と ​*[For Each Loops (各ループ)]*​ 以外のすべてのステップが折りたたまれ、ナビゲート可能なフローの概要が表示されるようになりました。 |W-12515426
+|===
+
+== 2023 年 2 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Rest Consumer Connector で、トップレベル配列が API 仕様エンドポイントで定義されている場合に、正しいペイロードが送信されるようになりました。 |W-12373559
+|===
+
+== 2023 年 2 月 6 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Sage Intacct に接続できるようになりました。 
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2023 年 2 月 3 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Microsoft Dynamics 365 Business Central Connector で、以下の機能が強化されました。
+** *[Create Sales Order (販売注文の作成)]*​ アクションでは、販売注文オブジェクト内で販売注文明細行のリストを作成できるようになりました。
+** *[Update Sales Order (販売注文の更新)]*​ アクションでは、販売注文オブジェクトに加えて販売注文明細行のリストも更新できるようになりました。
+** *[Get Sales Orders (販売注文の取得)]*​ アクションでは、絞り込んだ販売注文リストに対応する販売注文明細行を取得できるようになりました。
+** *[On New or Updated Sales Order (新規または更新済み販売注文)]*​ トリガでは、新規または更新済みの販売注文に加えて、新規または更新済みの販売注文明細行もチェックするようになりました。
+** 会社の ​*[Display Name (表示名)]*​ を使用すると、​*[Display Name (表示名)]*​ には、​*[Company Name (会社名)]*​ ではなく ​*[Company ID (会社 ID)]*​ ドロップダウンの値が表示されるようになりました。
+
+== 2023 年 2 月 1 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、​`labels`​ プロパティのメタデータ出力が、空オブジェクトの配列ではなく文字列の配列を返すようになりました。 |W-11899482
+|Jira Connector で、​*[Retrieve attachment (添付ファイルの取得)]*​ アクションが Jira エンドポイントから返された詳細なエラーメッセージを表示するようになりました。 |W-12282452
+|===
+
+== 2023 年 1 月 30 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Quickbooks Online Connector が、アクションとトリガのカスタム項目をサポートするようになりました。
+
+* 次のアクションが Quickbooks Online Connector で使用できるようになりました。
+** *Create Estimate (見積の作成)*
+** *Get Estimate (見積の取得)*
+** *Update Estimate (見積の更新)*
+
+* 次のトリガが Quickbooks Online Connector で使用できるようになりました。
+** *On New Estimate (新規見積)*
+** *On New or Updated Record (新規または更新済みレコード)*
+
+== 2023 年 1 月 26 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決  |ID
+|NetSuite Connector で、メタデータ読み込みログが強化されました。 |W-12412287、W-12244102
+|NetSuite Connector で、レコードのカスタムセグメントが意図どおりに表示されるようになりました。 |W-12244102
+|===
+
+== 2023 年 1 月 23 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で、​*Get Records*​ アクションを強化するために次のリストオブジェクトが使用できるようになりました。
+** Department (部署)
+** Locations (場所)
+** Price Level (価格レベル)
+** Subsidiary (子会社)
+
+== 2023 年 1 月 20 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+** BILLING_SCHEDULE
+** CLASSIFICATION
+** GIFT_CERTIFICATE_ITEM
+** INVENTORY_ADJUSTMENT
+** ITEM_RECEIPT
+** LOT_NUMBERED_ASSEMBLY_ITEM
+** OTHER_CHARGE_PURCHASE_ITEM
+** OTHER_CHARGE_RESALE_ITEM
+** OTHER_CHARGE_SALE_ITEM
+** SERIALIZED_ASSEMBLY_ITEM
+** SERIALIZED_INVENTORY_ITEM
+** TRANSFER_ORDER
+
+== 2023 年 1 月 16 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Snowflake Connector で、​*[Select Rows (行の選択)]*​ アクションに強化されたサンプルデータの解決が含まれるようになりました。
+
+== 2023 年 1 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+** ITEM_FULFILLMENT
+** ITEM_GROUP
+** KIT_ITEM
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決|ID
+|NetSuite Connector で、​`NullFieldsList`​ がメタデータに含まれなくなりました。 |W-12029245
+|NetSuite Connector で、レコードを作成または更新する場合に ​*[External ID (外部 ID)]*​ が表示されるようになりました。 |W-11951099
+|NetSuite Connector で、警告が存在する場合にエラーが上書きされなくなりました。 |W-12165594
+|===
+
+== 2023 年 1 月 12 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector で、項目に対して次のページネーション種別がサポートされるようになりました。​*Offset (オフセット)*​。
+
+== 2023 年 1 月 11 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* ServiceNow Connector で東京リリースがサポートされるようになりました。

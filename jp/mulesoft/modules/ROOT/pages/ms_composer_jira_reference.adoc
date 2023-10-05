@@ -30,14 +30,13 @@ New issue with Standard Fields only::
 
 Jira で作成された標準項目を使用して新しい課題をチェックします。
 
-Update issue with Custom Fields::
+Update issue with Custom Fields was updated or created::
 
-Jira のカスタム項目を使用して更新された課題をチェックします。
+Jira のカスタム項目を使用して更新または作成された課題をチェックします。
 
-Update issue with Standard Fields only::
+Update issue with Standard Fields only was updated or created::
 
-Jira の標準項目を使用して更新された課題をチェックします。
-
+Jira の標準項目を使用して更新または作成された課題をチェックします。
 
 == アクション
 
@@ -47,25 +46,25 @@ Create issue with custom fields::
 
 選択されたプロジェクト内に新しい課題を作成します。次の項目の値を指定します。
 
-* *Project (プロジェクト)*​
-* *Key (キー)*​
-* *Summary (概要)*​
-* *Type (型)*​
-* *Status (状況)*​
+* *Project (プロジェクト)*
+* *Key (キー)*
+* *Summary (概要)*
+* *Type (型)*
+* *Status (状況)*
 * *Priority (優先度)*
 
 Update issue with custom fields::
 
 指定されたカスタム項目の値を更新します。次の項目の値を指定します。
 
-* *Issue ID or Key (課題 ID またはキー)*​
+* *Issue ID or Key (課題 ID またはキー)*
 * *Notify Users (ユーザに通知)*
 
 Update issue with standard fields only::
 
 指定された標準項目値を更新します。次の項目の値を指定します。
 
-* *Issue ID or Key (課題 ID またはキー)*​
+* *Issue ID or Key (課題 ID またはキー)*
 * *Notify Users (ユーザに通知)*
 
 Assign user to issue::
@@ -83,12 +82,44 @@ Get issue::
 Add comment to issue::
 
 コメントを作成して既存の課題課題に追加します。次の項目の値を指定します。
-* *Issue ID or Key (課題 ID またはキー)*​
+* *Issue ID or Key (課題 ID またはキー)*
 * *Comment Text (コメントテキスト)*
 
 Get account IDs for users::
 
 `key`​ または ​`username`​ パラメータで指定されたユーザのアカウント ID を返します。複数の ​`key`​ または ​`username`​ パラメータを指定できます。
+
+プロジェクトの作成::
+
+Jira のプロジェクトタイプテンプレートに基づいて新しいプロジェクトを作成します。次の項目の値を指定します。
+
+* *Key (キー)*
+* *Name (名前)*
+* *Lead Account ID (リードアカウント ID)*
+* *Project Type Key (プロジェクトタイプキー)*​: この項目の値は、大文字で始まり、1 つ以上の大文字または数字が続く必要があります。
+
+Get project::
+
+Jira のプロジェクトの詳細を返します。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
+
+Update project::
+
+Jira の既存のプロジェクトのプロジェクトの詳細を更新します。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
+
+Retrieve attachments for an issue::
+
+課題のすべての添付ファイルを返します。これはファイルのメタデータを返しますが、ファイルのコンテンツは返しません。ファイルは、アップロードされた日付順に並び替えられます。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
+
+Retrieve attachment::
+
+指定された添付ファイルの未加工ファイルへの URL リダイレクトを返します。​*[Attachment ID (添付ファイル ID)]*​ の値を指定します。
+
+Upload attachment to an issue::
+
+添付ファイルを Jira の課題にアップロードします。次の項目の値を指定します。
+
+* *Issue ID or Key (課題 ID またはキー)*
+* *File Name (ファイル名)*
 
 == カスタム項目
 

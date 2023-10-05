@@ -1,16 +1,18 @@
-ifeval::["​{product}​"=="salesforce"]
+:product: mulesoft
+ifeval::["{product}"=="salesforce"]
+
 = Mulesoft Composer for Salesforce
 endif::[]
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 = MuleSoft Composer
 endif::[]
 
-ifeval::["​{product}​"=="salesforce"]
+ifeval::["{product}"=="salesforce"]
 MuleSoft Composer for Salesforce (コンポーザ) を使用すると、Salesforce 組織内からコードではなくクリックでデータのプロセスの自動化を容易に作成できます。
 さまざまなシステムに保存された情報を接続する安全なプロセスを作成する場合、顧客とビジネスのリアルタイムの統合ビューを作成します。
 endif::[]
 
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 MuleSoft Composer (コンポーザ) を使用すると、コードではなくクリックでデータのプロセスの自動化を容易に作成できます。
 さまざまなシステムに保存された情報を接続する安全なプロセスを作成する場合、顧客とビジネスのリアルタイムの統合ビューを作成します。
 endif::[]
@@ -29,6 +31,24 @@ endif::[]
 image::images/overview1.png[データサイロ間のデータの同期の維持、600]
 
 この簡単なフローを拡張してより複雑なアクションを実行できます。たとえば、新規ユーザの郵便番号に基づいて異なるシートに書き込んだり、既存のユーザの変更を伝播したりできます。
+
+== ユースケース 
+
+Composer の一般的なユースケースのいくつかを次に挙げます。
+
+* *Quote-to-Cash (ERP の統合)*
++
+Quote-to-Cash プロセスの自動化とストリーミングによって効率と販売の生産性を高めます。たとえば、Salesforce の商談が成立したら、NetSuite で販売注文を自動的に作成して、Slack で請求チームに自動的に通知します。詳細は、Trailhead モジュールの https://trailhead.salesforce.com/content/learn/modules/netsuite-data-sync-with-mulesoft-composer[「MuleSoft Composer を使用した NetSuite オートメーション^」]​を参照してください。 
+
+* *ケースのエスカレーション (チケットシステムの統合)*
++
+サポートケースの管理と通知を自動化してケースのエスカレーションと解決をスピードアップします。たとえば、JIRA チケットを自動的に作成し、Slack 通知を自動的に送信して、Service Cloud または Zendesk から緊急のサポートケースを整理して優先付けることで、エージェント、エンジニアリング、DevOps の間のコミュニケーションを合理化します。詳細は、Trailhead モジュールの https://trailhead.salesforce.com/content/learn/modules/jira-data-sync-with-mulesoft-composer[「MuleSoft Composer を使用した Jira のオートメーション^」]​を参照してください。
+
+* *Salesforce から Salesforce*
++
+複数のSalesforce 組織を接続して、組織間でデータを同期します。たとえば、1 つの Salesforce 
+組織でオブジェクトを作成または更新し、変更内容を他の Salesforce 組織に同期します。 
+詳細は、Trailhead モジュールの https://trailhead.salesforce.com/content/learn/modules/data-sync-between-orgs-with-mulesoft-composer[「MuleSoft Composer を使用した組織間でのオートメーション^」]​を参照してください。 
 
 == フローを作成する手順
 
@@ -77,7 +97,39 @@ image::images/overview1.png[データサイロ間のデータの同期の維持�
 システム間のデータをマッピングし、適切なアクションを適切なタイミングで正確に実行することは複雑に思われる場合がありますが、コンポーザを使用すると、ロジックを必要なステップに分割することができます。
 フローが適切に機能するまでフローを試すことができ、新しいユースケースが見つかったらフローの複雑さを増すことができます。
 
-ifeval::["​{product}​"=="salesforce"]
+ifeval::["{product}"=="salesforce"]
+== コンポーザへのアクセス
+
+ホームページにアクセスして、ビジネスニーズに合わせてコンポーザの使用を開始します。
+
+image::images/overview-page-sf.png[Mulesoft Composer ホーム]
+
+[calloutlist]
+. *Home (ホーム)*​: コンポーザホームページが表示されます。
+. *Templates (テンプレート)*​: xref:ms_composer_build_a_flow_using_templates.adoc[事前ビルド済みのコンポーザテンプレート]​を活用して、フローをビルドします。
+. *Composer Flows (コンポーザフロー)*​: xref:ms_composer_flows.adoc[フロー]​を作成、テスト、アクティブ化、監視します。
+. *Usage Summary (利用状況概要)*​: 組織の​xref:ms_composer_automation_credits.adoc[フローごとに毎月のタスクとクレジットの利用状況]​が表示されます。
+. *Create New Flow (新規フローを作成)*​: xref:ms_composer_flows.adoc#create-a-flow[最初から、またはテンプレートから]​新しいフローを作成します。
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+== コンポーザへのアクセス
+
+ホームページにアクセスして、ビジネスニーズに合わせてコンポーザの使用を開始します。
+
+image::images/overview-page-ms.png[Mulesoft Composer ホーム]
+
+[calloutlist]
+. *Overview (概要)*​: コンポーザホームページが表示されます。
+. *Flows (フロー)*​: xref:ms_composer_flows.adoc[フロー]​を作成、テスト、アクティブ化、監視します。
+. *Usage Summary (利用状況概要)*​: 組織の​xref:ms_composer_automation_credits.adoc[フローごとに毎月のタスクとクレジットの利用状況]​が表示されます。
+. *Templates (テンプレート)*​: xref:ms_composer_build_a_flow_using_templates.adoc[事前ビルド済みのコンポーザテンプレート]​を活用して、フローをビルドします。
+. *Help (ヘルプ)*​: コンポーザについて学習したり、製品ドキュメントを調べたり、MuleSoft コミュニティに参加したり、ヘルプセンターにアクセスしたりできます。
+. *Create New Flow (新規フローを作成)*​: xref:ms_composer_flows.adoc#create-a-flow[最初から、またはテンプレートから]​新しいフローを作成します。
+
+endif::[]
+
+ifeval::["{product}"=="salesforce"]
 == 次のステップ
 
 . xref:ms_composer_about_flows.adoc[「コンポーザのしくみ」]​を確認して、プロセスを自動化するためにフローの各部分がどのように連携しているかを理解してください。さらにヘルプが必要な場合は、Salesforce Trailhead を使用するか、コンポーザに関する MuleSoft ブログ投稿にアクセスすることができます。
@@ -97,7 +149,7 @@ ifeval::["​{product}​"=="salesforce"]
 * https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
 endif::[]
 
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 == 次のステップ
 
 . xref:ms_composer_about_flows.adoc[「コンポーザのしくみ」]​を確認して、プロセスを自動化するためにフローの各部分がどのように連携しているかを理解してください。
@@ -109,11 +161,11 @@ ifeval::["​{product}​"=="mulesoft"]
 * https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[Mulesoft Composer トレーニング^]
 * xref:ms_composer_prerequisites.adoc[はじめに]
 * xref:ms_composer_reference.adoc[Composer Connector リファレンス]
-ifeval::["​{product}​"=="salesforce"]
+ifeval::["{product}"=="salesforce"]
 
 * https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
 endif::[]
 
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 * https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[ナレッジ記事]
 endif::[]

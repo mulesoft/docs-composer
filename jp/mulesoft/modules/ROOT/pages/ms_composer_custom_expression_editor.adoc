@@ -33,11 +33,11 @@
 |trim |文字列の先頭と末尾に空白スペースがあれば、それを削除します。
 |`trim(<long example text>) = this example long text` |なし |text: String |String (文字列)
 
-|first |文字列の先頭からの指定文字数の文字を返します。この数が文字列内の文字数以上の場合、この関数では文字列全体を返します。 |`first(Hello Composer!, 5) = Hello`​ |なし |text: String +
+|first |文字列の先頭からの指定文字数の文字を返します。この数が文字列内の文字数以上の場合、この関数では文字列全体を返します。 |`first(Hello Composer!, 5) = Hello` |なし |text: String +
 
 numCharacters: Number |String (文字列)
 
-|last (最後) |テキスト文字列の末尾からの指定文字数の文字を返します。 |`last(Hello Composer!, 9) = Composer!`​ |なし |text: String +
+|last (最後) |テキスト文字列の末尾からの指定文字数の文字を返します。 |`last(Hello Composer!, 9) = Composer!` |なし |text: String +
 
 numCharacters: Number|String (文字列)
 
@@ -64,7 +64,7 @@ replacement: String |String (文字列)
 
 |`fromStringToDate(2021-03-15, uuuu-MM-dd, en-US) = 2021-03-15` +
 
-`fromStringToDate(2021/15/03, uuuu/dd/MM, en-US) = 2021-03-15`​
+`fromStringToDate(2021/15/03, uuuu/dd/MM, en-US) = 2021-03-15`
 |Format (形式): 形式パラメータは、入力文字列の形式を表します。このパラメータでは、ISO-8601 に基づいた Java 文字パターンを受け入れます。​`2011-12-03`​ などの日付値の形式は ​`uuuu-MM-dd`​ となります。 +
 
 Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。
@@ -95,6 +95,14 @@ locale: String |DateTime (日時)
 
 `fromStringToNumber(0.05) = 0.05` |
 なし |text: String |Number (数値)
+
+|emptyString | 空の文字列を返します。 +
+
+emptyString 関数は、他の関数への入力パラメータとしての使用など、空の文字列が必要な場合に使用できます。 |`-` |`-` | String (文字列)|
+
+
+|substring |指定された ​`from`​ インデックスの文字から ​`until`​ インデックスの前の最後の文字までのサブ文字列を返します。 | `substring(Hello Composer, 6, 14) = Composer` |なし | text: Stringfrom: Number
+until: Number | String (文字列)
 
 |===
 
@@ -156,39 +164,39 @@ locale: String |DateTime (日時)
 
 |addDays |指定された日数を増分または減分した日付値を作成して返します。 |`addDays(today(), 3) = 2021-03-18` +
 
-`addDays(2021-03-15, -4) = 2021-03-11`​ |なし |date: Date +
+`addDays(2021-03-15, -4) = 2021-03-11` |なし |date: Date +
 
 numDays: number |Date (日付)
 
 |addDays |指定された日数を増分または減分した日時値を作成して返します。
 |`addDays(now(), 3) = 2021-03-18T18:23:20` +
 
-`addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20`​ |なし |dateTime: DateTime +
+`addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20` |なし |dateTime: DateTime +
 
 numDays: number |DateTime (日時)
 
 |addMonths |指定された月数を増分または減分した日付値を作成して返します。 |`addMonths(today(), 3) = 2021-06-15` +
 
-`addMonths(2021-03-15, -4) = 2020-12-15`​ |なし |date: Date +
+`addMonths(2021-03-15, -4) = 2020-12-15` |なし |date: Date +
 
 numMonths: number |Date (日付)
 
 |addMonths |指定された月数を増分または減分した日時値を作成して返します。 |`addMonths(now(), 3) = 2021-06-15T18:23:20` +
 
-`addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20`​ |なし |dateTime: DateTime +
+`addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20` |なし |dateTime: DateTime +
 
 numMonths: number |DateTime (日時)
 
 |addYears |指定された年数を増分または減分した日付値を作成して返します。 |`addYears(today(), 1) = 2022-03-15` +
 
-`addYears(2021-03-15, -1) = 2020-03-15`​ |なし |date: Date +
+`addYears(2021-03-15, -1) = 2020-03-15` |なし |date: Date +
 
 numYears: number |Date (日付)
 
 |addYears |指定された年数を増分または減分した日時値を作成して返します。
 |`addYears(now(), 3) = 2024-03-15T18:23:20` +
 
-`addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20`​ |なし |dateTime: DateTime +
+`addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20` |なし |dateTime: DateTime +
 
 numYears: number |DateTime (日時)
 
@@ -196,7 +204,7 @@ numYears: number |DateTime (日時)
 
 `addHours(2021-03-15T22:23:20, 3) = 2021-03-16T01:23:20` +
 
-`addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20`​ |なし |dateTime: DateTime +
+`addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20` |なし |dateTime: DateTime +
 
 numHours: number |DateTime (日時)
 
@@ -205,7 +213,7 @@ numHours: number |DateTime (日時)
 
 `addMinutes(2021-03-15T23:45:00,15) = 2021-03-16T00:00:00` +
 
-`addMinutes(2021-03-15T18:23:20, -30) = 2021-03-15T17:53:20`​
+`addMinutes(2021-03-15T18:23:20, -30) = 2021-03-15T17:53:20`
 |なし |dateTime: DateTime +
 
 numMinutes: number |DateTime (日時)
@@ -214,7 +222,7 @@ numMinutes: number |DateTime (日時)
 
 `addSeconds(2021-03-15T23:45:00,15) = 2021-03-15T23:45:30` +
 
-`addSeconds(2021-03-15T18:23:20, -30) = 2021-03-15T18:22:50`​
+`addSeconds(2021-03-15T18:23:20, -30) = 2021-03-15T18:22:50`
 |なし |dateTime: DateTime +
 
 numSeconds: number |DateTime (日時)
@@ -248,11 +256,11 @@ numSeconds: number |DateTime (日時)
 
 `beginningOfYear(now()) = 2021-01-01T00:00:00` |なし |dateTime: DateTime |DateTime (日時)
 
-|daysBetween |2 つの日付間の日数を返します。終了日の値が開始日の値よりも前の場合、この 2 つの日付間の日数に等しい負数が返されます。 |`daysBetween(2020-03-15, 2021-03-15) = 365`​|なし |from: Date +
+|daysBetween |2 つの日付間の日数を返します。終了日の値が開始日の値よりも前の場合、この 2 つの日付間の日数に等しい負数が返されます。 |`daysBetween(2020-03-15, 2021-03-15) = 365`|なし |from: Date +
 
 to: Date |Number (数値)
 
-|daysBetween |2 つの日時値間の日数を返します。終了日の値が開始日の値よりも前の場合、この 2 つの日時値間の日数に等しい負数が返されます。 |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365`​ |なし |from: DateTime +
+|daysBetween |2 つの日時値間の日数を返します。終了日の値が開始日の値よりも前の場合、この 2 つの日時値間の日数に等しい負数が返されます。 |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |なし |from: DateTime +
 
 to: DateTime |Number (数値)
 
@@ -270,7 +278,7 @@ to: DateTime |Number (数値)
 
 `fromDateToString(2021-03-15, eeee, dd MMMM, ES) = lunes, 15 marzo` |Format (形式): 日付で使用する ISO-8601 形式。出力文字列の目的の形式を表します。たとえば、このパラメータでは Java 8 の java.time.format に基づいた文字パターンを受け入れます。デフォルト形式は ​`uuuu-MM-dd`​ です。 +
 
-Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。​`eeee`​ や ​`MMMM`​ などの翻訳可能な形式を渡すと、ロケール (​`ES`​ など) は対応する数値をローカライズ済みの文字列に変換します。|date: Date +
+Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。​`eeee`​ や ​`MMMM`​ などの翻訳可能な形式を渡すと、ロケール (​`ES`​ など) は対応する数値をローカライズ済みの文字列に変換します。 |date: Date +
 
 format: String +
 
@@ -281,7 +289,7 @@ locale: String |String (文字列)
 `fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format (形式): 日時で使用する ISO-8601 形式。出力文字列の目的の形式を表します。たとえば、このパラメータでは Java 8 の java.time.format に基づいた文字パターンを受け入れます。デフォルト形式は ​`uuuu-MM-dd'T'HH:mm:ss'Z`​ です。
  +
 
-Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。​`eeee`​ や ​`MMMM`​ などの翻訳可能な形式を渡すと、ロケール (​`ES`​ など) は対応する数値をローカライズ済みの文字列に変換します。|dateTime: DateTime +
+Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。​`eeee`​ や ​`MMMM`​ などの翻訳可能な形式を渡すと、ロケール (​`ES`​ など) は対応する数値をローカライズ済みの文字列に変換します。 |dateTime: DateTime +
 
 format: String +
 
@@ -289,18 +297,19 @@ locale: String |String (文字列)
 
 |fromDateTimeToNumber |日時入力値を数値に変換します。数値は、選択した単位に応じてミリ秒または秒になります。デフォルト単位は秒です。 |`fromDateTimeToNumber(2015-10-01T23:57:59Z, seconds) = 1443743879` +
 
-`fromDateTimeToNumber(2015-10-01T23:57:59Z, milliseconds) = 1443743879000`​ |Unit (単位): 変換に使用する時間の単位: 「milliseconds (ミリ秒)」または「seconds (秒)」。デフォルト単位は「seconds (秒)」です。|dateTime: DateTime +
+`fromDateTimeToNumber(2015-10-01T23:57:59Z, milliseconds) = 1443743879000` |Unit (単位): 変換に使用する時間の単位: 「milliseconds (ミリ秒)」または「seconds (秒)」。デフォルト単位は「seconds (秒)」です。 |dateTime: DateTime +
 
 unit: String |Number (数値)
 
 |fromDateToDateTime |日付入力値を日時に変換します。これは、時刻の追加によって行われます。デフォルトの時刻は T00:00:00Z です。すべての手動入力は UTC で解釈されます。 |`fromDateToDateTime(2021-03-15, T00:00:00Z) = 2021-03-15T00:00:00Z` +
 
-`fromDateToDateTime(2021-03-15, T23:57:59Z) = 2021-03-15T23:57:59Z`​ |なし |date: Date +
+`fromDateToDateTime(2021-03-15, T23:57:59Z) = 2021-03-15T23:57:59Z` |なし |date: Date +
 
 time: String |DateTime (日時)
 
 |===
 
+[[data-types]]
 == データ型
 
 コンポーザ項目が値として受け入れることができる値は、​_データ型_​です。コンポーザでは、次のデータ型を使用できます。
@@ -313,7 +322,7 @@ time: String |DateTime (日時)
 
 |Array (配列) | 同じデータ型の一定数のコンポーネントのコレクションを提供します。
 
-|Boolean (ブール) | ​`true`​ または ​`false`​ に評価されます。
+|Boolean (ブール) | `true`​ または ​`false`​ に評価されます。
 
 |Date (日付) | 年、月、日を ​`yyyy-MM-dd`​ として保存します。
 
@@ -321,7 +330,7 @@ time: String |DateTime (日時)
 
 // |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
 
-|List (リスト) | ​*[Get Records (レコードの取得)]*​ アクションの出力など、オブジェクトのリストを返します。
+|List (リスト) | *[Get Records (レコードの取得)]*​ アクションの出力など、オブジェクトのリストを返します。
 //and list of strings like the *to* field in Gmail Connector
 
 
@@ -336,7 +345,7 @@ time: String |DateTime (日時)
 [[keyboard-shortcuts]]
 == サポートされるキーボードショートカット
 
-*カスタム式エディタ*​では、数学演算子のキーボードショートカットを使用できます。数学演算子を挿入するときは、​*Control + Shift + <+、(, )、または *>* のいずれかを押します。たとえば、演算子を入力するには、*​Ctrl + Shift +* を押します。
+*カスタム式エディタ*​では、数学演算子のキーボードショートカットを使用できます。数学演算子を挿入するときは、​*Control + Shift + <+、(, )、または *>* のいずれかを押します​。たとえば、演算子を入力するには、*​Ctrl + Shift +* を押します。
 
 */*​ と ​*-*​ の場合、Shift キーは必要ありません。たとえば、​*/*​ を挿入するには、​*Control + /*​ を押します。
 

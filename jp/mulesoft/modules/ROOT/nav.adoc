@@ -1,40 +1,48 @@
 * xref:ms_composer_overview.adoc[MuleSoft Composer]
 
 * xref:ms_composer_ms_release_notes.adoc[リリースノート]
+** xref:ms_composer_ms_release_notes_ki.adoc[既知の問題]
 
 * xref:ms_composer_prerequisites.adoc[はじめに]
-** xref:ms_composer_about_flows.adoc[コンポーザのしくみ]​
-** xref:ms_composer_checklist.adoc[準備チェックリスト]​
+** xref:ms_composer_about_flows.adoc[コンポーザのしくみ]
+** xref:ms_composer_checklist.adoc[準備チェックリスト]
 * xref:ms_composer_flows.adoc[フローのビルド]
+** xref:ms_composer_build_a_flow_using_templates.adoc[テンプレートを使用したフローのビルド]
 * xref:ms_composer_custom_expression_editor.adoc[フローの数式のビルド]
 * xref:ms_composer_test_flow.adoc[フローのテスト]
 * xref:ms_composer_activation.adoc[フローのアクティブ化]
 * xref:ms_composer_monitoring.adoc[フローの監視]
 
 * xref:ms_composer_reference.adoc[Composer Connector リファレンス]
-** xref:ms_composer_asana_reference.adoc[Asana]​
-** xref:ms_composer_box_reference.adoc[Box]​
-** xref:ms_composer_gmail_reference.adoc[Gmail]​
-** xref:ms_composer_google_calendar_reference.adoc[Google カレンダー]​
-** xref:ms_composer_googlesheets_reference.adoc[Google スプレッドシート]​
-** xref:ms_composer_http_reference.adoc[HTTP]​
-** xref:ms_composer_hubspot_reference.adoc[HubSpot]​
-** xref:ms_composer_jira_reference.adoc[Jira]​
-** xref:ms_composer_ms_dynamics_365_business_central_reference.adoc[Microsoft Dynamics 365 Business Central]​
-** xref:ms_composer_ms_teams_reference.adoc[Microsoft Teams]​
-** xref:ms_composer_netsuite_reference.adoc[NetSuite]​
-** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]​
-** xref:ms_composer_rpa_reference.adoc[MuleSoft RPA]​
-** xref:ms_composer_salesforce_reference.adoc[Salesforce]​
-** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]​
-** xref:ms_composer_servicenow_reference.adoc[ServiceNow]​
-** xref:ms_composer_slack_reference.adoc[Slack]​
-** xref:ms_composer_stripe_reference.adoc[Stripe]​
-** xref:ms_composer_tableau_reference.adoc[Tableau]​
-** xref:ms_composer_twilio_reference.adoc[Twilio]​
-** xref:ms_composer_workday_reference.adoc[Workday]​
-** xref:ms_composer_xero_reference.adoc[Xero]​
-** xref:ms_composer_zendesk_reference.adoc[Zendesk]​
+** xref:ms_composer_asana_reference.adoc[Asana]
+** xref:ms_composer_box_reference.adoc[Box]
+** xref:ms_composer_gmail_reference.adoc[Gmail]
+** xref:ms_composer_google_bigquery_reference.adoc[Google BigQuery]
+** xref:ms_composer_google_calendar_reference.adoc[Google カレンダー]
+** xref:ms_composer_googlesheets_reference.adoc[Google スプレッドシート]
+** xref:ms_composer_http_reference.adoc[HTTP]
+** xref:ms_composer_hubspot_reference.adoc[HubSpot]
+** xref:ms_composer_jira_reference.adoc[Jira]
+** xref:ms_composer_marketo_reference.adoc[Marketo]
+** xref:ms_composer_ms_dynamics_365_business_central_reference.adoc[Microsoft Dynamics 365 Business Central]
+** xref:ms_composer_ms_teams_reference.adoc[Microsoft Teams]
+** xref:ms_composer_netsuite_reference.adoc[NetSuite]
+** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]
+** xref:ms_composer_rpa_reference.adoc[MuleSoft RPA]
+** xref:ms_composer_rest_consumer_reference.adoc[REST コンシューマ]
+** xref:ms_composer_sage_intacct_reference.adoc[Sage Intacct]
+** xref:ms_composer_salesforce_reference.adoc[Salesforce]
+** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]
+** xref:ms_composer_servicenow_reference.adoc[ServiceNow]
+** xref:ms_composer_slack_reference.adoc[Slack]
+** xref:ms_composer_snowflake_reference.adoc[Snowflake]
+** xref:ms_composer_stripe_reference.adoc[Stripe]
+** xref:ms_composer_tableau_reference.adoc[Tableau]
+** xref:ms_composer_twilio_reference.adoc[Twilio]
+** xref:ms_composer_workday_reference.adoc[Workday]
+** xref:ms_composer_xero_reference.adoc[Xero]
+** xref:ms_composer_zendesk_reference.adoc[Zendesk]
 ** xref:ms_composer_zuora_reference.adoc[Zuora]
 
+* xref:ms_composer_automation_credits.adoc[MuleSoft Automation のクレジット]
 * xref:ms_composer_glossary.adoc[用語集]

@@ -17,7 +17,7 @@ API key (API キー)::
 * ユーザが制限された API キーを使用してよりきめ細かい権限を実現します。
 * すべての API 要求が HTTPS を通じて行われていることを確認します。
 
-https://stripe.com/docs/connect/oauth-reference[Stripe Connect]​ では OAuth 認証がサポートされますが、Stripe ではサポートされません。Stripe での OAuth 認証についての詳細は、&#8203;https://www.similartech.com/compare/stripe-vs-stripe-connect を参照してください。
+https://stripe.com/docs/connect/oauth-reference[Stripe Connect]​ では OAuth 認証がサポートされますが、Stripe ではサポートされません。Stripe での OAuth 認証についての詳細は、 https://www.similartech.com/compare/stripe-vs-stripe-connect を参照してください。
 
 == トリガ
 
@@ -44,9 +44,11 @@ Create charge::
 ** `Source`​ 項目または ​`Customer`​ 項目
 ** `Customer ID` +
 ベストプラクティスとしては、[Customer ID (顧客 ID)] 項目の値を Stripe の既存のアカウントから取得するようにします。例: `cus_JQ1BWAcXfKuswb`​。
-** 配送項目が存在する場合、一部の配送項目は必須になります。 +
+** 配送項目が存在する場合、一部の配送項目は必須になります。
 
-Stripe での Create Charge アクションについての詳細は、&#8203;https://stripe.com/docs/api/charges/create を参照してください。
++
+
+Stripe での ​*Create Charge*​ アクションについての詳細は、 https://stripe.com/docs/api/charges/create を参照してください。
 
 Create customer::
 

@@ -17,6 +17,18 @@ Bearer token (ベアラートークン)::
 
 HubSpot アカウントアクセストークン。
 
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+On New Records::
+
+新しい会社または取引先責任者レコードが作成されたときにトリガされます。
+
+On New or Updated Record::
+
+新しい会社または取引先責任者レコードが作成または更新されたときにトリガされます。 
+
 == アクション
 
 include::_partials/action-definition.adoc[]

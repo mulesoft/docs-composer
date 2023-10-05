@@ -6,6 +6,23 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
 
+== October 4, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Using typeahead, you can now create a list of primitive data types statically by using [ ] in the *Custom Expression Editor*, for example, [\name1@gmail.com, \name2@gmail.com].
+* You can now use a statically-built list as an input parameter in the `joinBy` function.
+
+== October 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|If the access token fails to refresh in a flow, you are now informed about the issue. You can now see the error in *Run History* and in an email notification (if opted-in). You must restart the flow to benefit from this fixed issue. | W-13628406
+|===
+
 == September 21, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

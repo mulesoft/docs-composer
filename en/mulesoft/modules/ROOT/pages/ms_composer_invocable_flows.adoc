@@ -81,7 +81,14 @@ Unlike the *Visual Editor*, the *Sample JSON Editor* supports objects, arrays, a
 The count of the of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
 .. Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
 +
-. Optionally, add output fields. If specified, output fields are returned as the JSON response. For example, if there is an `Opportunity ID` input field, you can add `{"opportunityId": "<id>"}` as an output field. 
+. Optionally, add output fields. If specified, output fields are returned as the JSON response. For example, if there is an `Opportunity ID` input field, you can add the value of the ID as an output field, in which the following JSON response is returned with a 200 status code:
++
+[source,JSON]
+----
+{
+"opportunityId": "<id>"
+}
+----
 +
 To add output fields: 
 +

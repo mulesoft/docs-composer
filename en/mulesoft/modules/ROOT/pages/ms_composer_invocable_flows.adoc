@@ -155,6 +155,7 @@ After creating an invocable flow in Composer, you can invoke it from an external
 * <<invoke-a-composer-flow-from-flow-builder>>
 * <<invoke-a-composer-flow-from-another-composer-flow>>
 * <<invoke-a-composer-flow-from-an-apex-callout>>
+* <<invoke-a-composer-flow-from-a-curl-command>>
 
 [[invoke-a-composer-flow-from-flow-builder]]
 === Invoke a Composer Flow from Flow Builder
@@ -381,6 +382,34 @@ trigger OpportunityUpdate on Opportunity (after update) {
 ----
 +
 For more information about Apex callout limits and limitations, refer to https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_timeouts.htm[Callout Limits and Limitations]. For more information about Apex, refer to https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dev_guide.htm[Apex Developer Guide]. 
+
+[[invoke-a-composer-flow-from-a-curl-command]]
+=== Invoke a Composer Flow from a cURL Command
+
+You can invoke a Composer flow through a cURL command. Because each invocable Composer flow generates a public URL, you can use the URL to invoke the flow from your terminal. 
+
+Invoking a Composer flow from a cURL command is beneficial because cURL commands can be used in scripts or code to automate business cases. cURL commands are also generally easy to share, modify, and test.
+
+For example, suppose there is a flow that calculates some basic math and also returns a string. The flow takes three input values (`a`, `b`, and `Message`) and returns five output values (`Output caption`, `Quotient`, `Product`, `Difference`, and `Sum`). The following cURL command invokes the Composer flow, in which `<url>` is the flow URL and `<token>` is the Base64 encoding of the client ID concatenated with a colon followed by the client secret: 
+
+----
+curl "<url>" -H "Authorization: Basic <token>" -X POST --data '
+{ "a": 100, "b": 30, "Message": "Basic Math Ops" }
+' -H "Content-Type: application/json"
+----
+
+The example response is:
+
+[source,JSON]
+----
+{
+  "Output caption": "Basic Math Ops",
+  "Quotient": 3.333333333333333333333333333333333,
+  "Product": 3000,
+  "Difference": 70,
+  "Sum": 130
+}
+----
 
 == Troubleshooting 
 

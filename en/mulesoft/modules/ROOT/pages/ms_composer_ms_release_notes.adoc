@@ -14,7 +14,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 [%header%autowidth.spread]
 |===
 |Issue Resolution |ID
-|Implemented backend changes in Hubspot Connector to support Mule Runtime 4.5.0. | W-14224733
+|Implemented backend changes in HubSpot Connector to support Mule Runtime 4.5.0. | W-14224733
 |===
 
 == October 5, 2023

@@ -1,5 +1,5 @@
 = MuleSoft Composer Release Notes
-:page-revdate: October 16, 2023
+:page-revdate: October 13, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 

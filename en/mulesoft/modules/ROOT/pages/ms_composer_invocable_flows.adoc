@@ -301,8 +301,7 @@ After setting up Salesforce for invocable flows, you can call the Composer flow 
 
 . First, <<set-up-flow-builder-for-invocable-flows, set up Flow Builder for invocable flows>> before setting up Flow Orchestration.
 . Click *New Flow* > *All + Templates* > *Flow Orchestration*. Select either *Autolaunched Orchestration (No Trigger)* or *Record-Triggered Orchestration* and click *Create*.
-. If you select a Record-Triggered Orchestration, select the object, configure the trigger, and set entry conditions. 
-. Click *Save*.
+.. If you select *Record-Triggered Orchestration*, select the object, configure the trigger, and set entry conditions. Click *Save*.
 . Click *+* to add a new element and then click *Stage*.
 . Enter a value for the *Label* and *API Name* fields and select a condition. 
 . Click *Add Step* and click *Background Step*. 

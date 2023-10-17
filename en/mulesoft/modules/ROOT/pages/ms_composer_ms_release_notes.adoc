@@ -7,6 +7,12 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
+//== October 19, 2023 - Copy to SF Composer 
+
+//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+//* When defining a variable, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your `List` variable using either dynamic or static list mappings. 
+
 == October 13, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

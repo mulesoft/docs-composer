@@ -153,6 +153,7 @@ Once the client secret is reset, the previous client secret no longer works. You
 After creating an invocable flow in Composer, you can invoke it from an external system: 
 
 * <<invoke-a-composer-flow-from-flow-builder>>
+* <<invoke-a-composer-flow-from-flow-orchestration>>
 * <<invoke-a-composer-flow-from-another-composer-flow>>
 * <<invoke-a-composer-flow-from-an-apex-callout>>
 * <<invoke-a-composer-flow-from-a-curl-command>>
@@ -260,6 +261,54 @@ For example, if your invocable flow returns an opportunity ID, you can use the *
 . Debug the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test_debug.htm&type=5[Debug a Flow in Flow Builder].
 . Test the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test.htm&type=5[Test a Flow]. 
 . Activate the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_distribute_activate.htm&type=5[Activate or Deactivate a Flow].  
+
+[[invoke-a-composer-flow-from-flow-orchestration]]
+=== Invoke a Composer Flow from Flow Orchestration
+
+Use Flow Orchestration to create complex multi-step processes. Invoke a Composer flow in Flow Orchestration to enhance workflow automation and increase scalability.
+
+To invoke a Composer flow from Flow Orchestration:
+
+. <<set-up-salesforce-for-invocable-flows-orch,Set up Salesforce for invocable flows>>.
+. <<set-up-flow-orchestration-for-invocable-flows,Set up Flow Orchestration for invocable flows>>.
+
+[[set-up-salesforce-for-invocable-flows-orch]]
+==== Set Up Salesforce for Invocable Flows
+
+After creating your Composer flow, set up your Salesforce org to invoke flows in Composer: 
+
+. Access your Salesforce org. 
+. Create a new set of credentials that use the same credentials that you use for Composer. 
++
+Create an external credential and a named credential. If your invocable Composer flow does not contain input fields, add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
++
+To create an external credential and a named credential:
++
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
++
+NOTE: You must add the *Automated Process* user to the *Permission Sets* assignments. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.perm_sets_mass_assign.htm&type=5[Assign a Permission Set to Multiple Users]. 
+
+. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
+
+[[set-up-flow-orchestration-for-invocable-flows]]
+==== Set Up Flow Orchestration for Invocable Flows
+
+After setting up Salesforce for invocable flows, you can call the Composer flow from Flow Orchestration:
+
+. First, <<set-up-flow-builder-for-invocable-flows, set up Flow Builder for invocable flows>> before setting up Flow Orchestration.
+. Click *New Flow* > *All + Templates* > *Flow Orchestration*. Select either *Autolaunched Orchestration (No Trigger)* or *Record-Triggered Orchestration* and click *Create*.
+. If you select a Record-Triggered Orchestration, select the object, configure the trigger, and set entry conditions. 
+. Click *Save*.
+. Click *+* to add a new element and then click *Stage*.
+. Enter a value for the *Label* and *API Name* fields and select a condition. 
+. Click *Add Step* and click *Background Step*. 
+. Enter a value for the *Label* and *API Name* fields and select a condition and an action. 
+. Select the *Contains external callouts or pause elements* checkbox.  
+. Click *Save*.
+. Click *Activate*. 
 
 [[invoke-a-composer-flow-from-another-composer-flow]]
 === Invoke a Composer Flow from Another Composer Flow 

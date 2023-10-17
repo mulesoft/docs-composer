@@ -288,7 +288,7 @@ To create an external credential and a named credential:
 .. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
 .. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
 .. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
-+
+
 NOTE: You must add the *Automated Process* user to the *Permission Sets* assignments. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.perm_sets_mass_assign.htm&type=5[Assign a Permission Set to Multiple Users]. 
 
 . Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 

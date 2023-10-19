@@ -14,6 +14,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now define a primitive list by mapping a `List<Object>` data pill to a primitive list value within your flow. 
 
+* You now have the option to change connections for all steps (at the flow level) instead of individually changing connections for each step. 
+
 == October 13, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

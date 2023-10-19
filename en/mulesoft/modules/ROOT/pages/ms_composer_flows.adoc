@@ -359,7 +359,7 @@ To create one or more new variables using the *Visual Editor* window:
 . <<access-the-variable-step,Access the *Variable* step.>> 
 . Select *Action* > *Create Variable*.
 . From the *Variable* section, click *Add Variable*. 
-. In the *Visual Editor*, in the *Label* field, enter a unique name for the variable.
+. In the *Label* field, enter a unique name for the variable.
 +
 The name entered is unique only to this step. You can duplicate values in the *Label* field across different Variable steps. 
 . In the *Data Type* dropdown, select the data type you want to use for the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, `DateTime` and `List`. If you select *List* in the Data Type field, in the *List Item Type* field, select:

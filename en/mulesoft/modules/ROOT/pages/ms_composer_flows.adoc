@@ -367,7 +367,7 @@ The name entered is unique only to this step. You can duplicate values in the *L
 .. *Object* to return a list of objects, for example, the output of the *Get Records* action
 
 +
-The *Label* field appears. Repeat the previous steps until you have added all the required fields. 
+Repeat the previous steps until you added all the required fields. 
 . Optionally, to add additional variables in the Visual Editor, click *Add Variable*. You can create multiple variables in each Variable step.
 . Click *Apply*. 
 +

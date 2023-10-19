@@ -11,7 +11,11 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 //include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-//* When defining a variable, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your `List` variable using either dynamic or static list mappings. 
+//* When defining a variable, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your `List` variable using dynamic or static list mappings. 
+
+//* You can now define a primitive list by mapping a `List<Object>` data pill to a primitive list value within your flow. 
+
+
 
 == October 13, 2023
 

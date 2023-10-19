@@ -390,7 +390,7 @@ Each variable must specify the title and data type. To set the properties for th
 +
 To define a `Date` or `DateTime` variable, set the data type to `String` and define the `Format` property. (Required) 
 .. `Format`:  The qualifier for `String` properties that can specify additional data types not natively supported in JSON. For variables, set this value when defining `Date` or `DateTime` variables as `date` or `date-time` respectively. (Optional)
-.. `Items`: Specifies the item type for `List` variables. `Items` is an object and accepts the following child properties: (Required only when defining List variables) 
+.. `Items`: Item type for `List` variables. `Items` is an object and accepts the following child properties: (Required only when defining List variables) 
 ... `Type`: The data type of the variable. The following data types are supported for List items:  `String`, `Number`, `Boolean`, and `Object`. If defining an `Object`, you must also define the properties of that `Object`. (Required)
 ... `Properties`: The child properties of an object. `Properties` is required if the `List Item Type` is set to `Object`. In the `Properties` object, each property key is the name of the property in the `Object List Item` and is set to an object that defines its data type. For more information in defining the data type of object child properties, refer to `Type` (step 4b) and `Format` (step 4c). (Optional)
 

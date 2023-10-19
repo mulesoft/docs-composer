@@ -212,7 +212,7 @@ Your trigger is named automatically. All triggers are named by combining the eve
 [[change-a-connection]]
 == Change a Connection
 
-You can change connections in a trigger or action for all steps (at the flow level) or for  individual steps. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
+You can change connections in a trigger or action for all steps (at the flow level) or for individual steps. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
 
 You can only change to a connection accessing the same system type. You can't change a Workday connection to a Google Sheets connection, for example.
 

@@ -363,7 +363,7 @@ To create one or more new variables using the *Visual Editor* window:
 +
 The name entered is unique only to this step. You can duplicate values in the *Label* field across different Variable steps. 
 . In the *Data Type* dropdown, select the data type to use for the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, `DateTime` and `List`. If you select *List*, in the *List Item Type* field, select:
-.. *String*, *Number*, or *Boolean* to return a list containing primitive data types. 
+.. *String*, *Number*, or *Boolean* to return a list that contains primitive data types 
 .. *Object* to return a list of objects, for example, the output of the *Get Records* action.
 
 +

@@ -441,7 +441,7 @@ The *Create Variables* window displays one or more new variables added to the fl
 
 === Initialize a Variable 
 
-After creating a variable, you may select an initial value for it:
+After creating a variable, you can initialize it:
 
 . Create a new variable using either the <<create-a-variable-using-the-visual-editor,Visual Editor>> or the <<create-a-variable-using-the-json-schema,JSON Schema>>.
 . Complete the initial value for each variable. If variable's data type is: 

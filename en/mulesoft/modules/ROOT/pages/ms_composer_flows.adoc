@@ -212,7 +212,7 @@ Your trigger is named automatically. All triggers are named by combining the eve
 [[change-a-connection]]
 == Change a Connection
 
-You can change connections in a trigger or action. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
+You can change connections in a trigger or action for all steps (at the flow level) or for individual steps. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
 
 You can only change to a connection accessing the same system type. You can't change a Workday connection to a Google Sheets connection, for example.
 
@@ -223,7 +223,23 @@ To change a connection:
 +
 image::images/change-connection.png[Change the connection control, 400]
 
-. Choose a new connection and click *Save*.
+. Change the connection to an existing connection or to a new connection.  
++
+* If you change the connection to an existing connection:
++
+.. Select the connection to change to.
+.. Optionally, if you want to change the connection for all steps that use this specific connection, select *Change all instances of XXX to XXX in this flow*. 
+.. Click *Change*.
+.. Click *Confirm*.
++
+* If you change the connection to a new connection:
++
+.. Click *Add New (Connector Name) Connection*.
+.. Enter a value for the *Connection Display Name* field.
+.. Optionally, if you want to change the connection for all steps that use this specific connection, select *Change all instances of current connection to the new connection in this flow*. 
+.. Click *Connect*.
+.. In the dialog box, log in to the system and allow access.
+
 
 == Repair a Connection
 

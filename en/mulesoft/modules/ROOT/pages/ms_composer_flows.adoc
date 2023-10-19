@@ -374,7 +374,7 @@ Repeat the previous steps until you added all the required fields.
 . Optionally, to modify the variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
 
 [[create-a-variable-using-the-json-schema]]
-=== Create a Variable Using the JSON Schema
+=== Create a Variable by Using the JSON Schema
 
 To create one or more new variables using the *JSON Schema* window: 
 

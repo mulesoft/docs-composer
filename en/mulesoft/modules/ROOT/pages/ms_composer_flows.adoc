@@ -367,7 +367,7 @@ The name entered is unique only to this step. You can duplicate values in the *L
 ** *Object* to return a list of objects, for example, the output of the *Get Records* action
 
 +
-Repeat the previous steps until you added all the required fields. 
+Repeat the steps 4 and 5 until you added all the required fields for the Variable step. 
 . To add additional variables in the Visual Editor, click *Add Variable*. You can create multiple variables in each Variable step.
 . Click *Apply*. 
 . To modify the new variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
@@ -384,11 +384,12 @@ To create one or more new variables using the *JSON Schema* window:
 . In the *JSON Schema* window, enter the properties for the variable to create. 
 +
 Note that each variable is defined within a `Properties`  object with a `Variable Unique ID`.  The `Variable Unique ID` enables the variable to be tracked within your flow. The `Variable Unique ID` can contain only alphanumeric characters, hyphens, and underscores. When using the Visual Editor, this ID is automatically generated for you.
-Each variable must specify the title and data type. To set the properties for the variable definition, complete the following: +
+Each variable must specify the title and data type. To set the properties for the variable definition, complete the following: 
 
++
 //Consider turning these into tables at a later time. 
-.. `Variable Label (Title)`: Display label for the variable. (Required) 
-.. `Type`: Data type of the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean` and `Array`. 
+** `Variable Label (Title)`: Display label for the variable. (Required) 
+** `Type`: Data type of the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean` and `Array`. 
 +
 To define a `Date` or `DateTime` variable, set the data type to `String` and define the `Format` property. (Required) 
 ** `Format`:  Qualifier for `String` properties that can specify additional data types not natively supported in JSON. For variables, set this value when defining `Date` or `DateTime` variables as `date` or `date-time` respectively. (Optional)
@@ -433,7 +434,7 @@ The properties and values appear in the *JSON Schema* window.
 }
 ----
 ====
-
++
 . To add variables in the JSON Schema, enter them in the window.
 . Click *Apply*. 
 +
@@ -470,10 +471,10 @@ The *Select Variables* window appears, displaying a list of all variables includ
 . Click *Apply*. +
 The *Update Variable* step appears. 
 . Update the value for each variable. If the data type for the variable your selected is a: 
-.. `String`, `Number`, `Boolean`, `Date`, or `DateTime`, you can enter a value manually, select any existing data pill (including variables) from your flow, select a <<create-a-picklist-mapping,Picklist Mapping>> (for `String` variables) or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression.
-.. `List`, you can add items to the start or the end of the list or replace the existing list with a new list. For primitive list types (`String`, `Number`, `Boolean`, `Date`, or `DateTime`), you can create a list statically using the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] or <<create-a-picklist-mapping,map in a list data pill>>. For List<Objects>, select either: 
-... *Dynamic List* to create multiple items in the list. Use a list pill to reference the number of items created. Then, map the fields of the elements of the list.
-... *Static List*, and then initialize the list with as many items as you need. If you do not add any items, the list is empty by default.
+** `String`, `Number`, `Boolean`, `Date`, or `DateTime`, you can enter a value manually, select any existing data pill (including variables) from your flow, select a <<create-a-picklist-mapping,Picklist Mapping>> (for `String` variables) or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression.
+** `List`, you can add items to the start or the end of the list or replace the existing list with a new list. For primitive list types (`String`, `Number`, `Boolean`, `Date`, or `DateTime`), you can create a list statically using the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] or <<create-a-picklist-mapping,map in a list data pill>>. For List<Objects>, select either: 
+*** *Dynamic List* to create multiple items in the list. Use a list pill to reference the number of items created. Then, map the fields of the elements of the list.
+*** *Static List*, and then initialize the list with as many items as you need. If you do not add any items, the list is empty by default.
 
 
 [[create-a-picklist-mapping]]

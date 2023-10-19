@@ -15,8 +15,6 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 //* You can now define a primitive list by mapping a `List<Object>` data pill to a primitive list value within your flow. 
 
-
-
 == October 13, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]

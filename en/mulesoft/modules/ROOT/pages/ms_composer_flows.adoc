@@ -435,7 +435,6 @@ The properties and values appear in the *JSON Schema* window.
 . Optionally, to add variables in the JSON Schema, enter them in the window.
 . Click *Apply*. 
 +
-The *Create Variables* window displays one or more new variables added to the flow. 
 . Optionally, to modify the variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
 
 === Initialize a Variable 

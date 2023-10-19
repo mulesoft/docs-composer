@@ -352,7 +352,7 @@ To access the *Variable* step:
 The *Variable* step appears. 
 
 [[create-a-variable-using-the-visual-editor]]
-=== Create a Variable Using the Visual Editor 
+=== Create a Variable by Using the Visual Editor 
 
 To create one or more new variables using the *Visual Editor* window: 
 

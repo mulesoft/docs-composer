@@ -1,11 +1,19 @@
 = MuleSoft Composer Release Notes
-:page-revdate: October 13, 2023
+:page-revdate: October 19, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
+
+== October 19, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When defining a variable, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your `List` variable using dynamic or static list mappings. 
+
+* You can now define a primitive list by mapping a `List<Object>` data pill to a primitive list value within your flow. 
 
 == October 13, 2023
 

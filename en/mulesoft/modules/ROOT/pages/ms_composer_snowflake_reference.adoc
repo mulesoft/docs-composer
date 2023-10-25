@@ -69,7 +69,7 @@ include::_partials/trigger-definition.adoc[]
 
 On New Row::
 
-Returns all new rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
+Returns all new rows of a table based on the highest watermark value every 15 seconds. If the watermark value of a new row is lower than the highest watermark value, the new row is discarded. If the watermark value of a new row is higher than the highest watermark value, the new row is picked up and the watermark is set to the new highest value. Provide a value for the following fields:
 
 * *Table*
 * *Created date column*: The following column data types are available for this field:
@@ -80,7 +80,7 @@ Returns all new rows of a table based on a watermark every 15 seconds. Provide a
 
 On New or Updated Row::
 
-Returns all new or updated rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
+Returns all new or updated rows of a table based on the highest watermark value between *Created date column* and *Last modified date column* every 15 seconds. If the watermark value of a new or updated row is lower than the highest watermark value, the new or updated row is discarded. If the watermark value of a new or updated row is higher than the highest watermark value, the new or updated row is picked up and the watermark is set to the new highest value. Provide a value for the following fields:
 
 * *Table*
 * *Created date column*: The following column data types are available for this field:

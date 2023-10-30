@@ -94,9 +94,17 @@ To add output fields:
 +
 .. Click *Add Output Fields*.
 .. In the *Label* field, enter a unique name for the output field. The name must begin with a letter. Avoid including spaces in this field since spaces are escaped and replaced with x20.
-.. In the *Data Type* dropdown, select the data type you want to use for the output field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, and `DateTime`.
+.. In the *Data Type* dropdown, select the data type you want to use for the output field. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, and `DateTime`. If you select *List*, in the *List Item Type* field, select:
+*** *String*, *Number*, or *Boolean* to return a list that contains primitive data types 
+*** *Object* to return a list of objects, for example, the output of the *Get Records* action
 .. Click *Apply*.
 .. Once output fields are added, you can then map data pills, custom expressions, or plain text. For example, map an input field to the output field.
+
+*** `String`, `Number`, `Boolean`, `Date`, or `DateTime`, a value is required. You can enter a value manually, select any existing data pill (including variables) from your flow, select a <<create-a-picklist-mapping,Picklist Mapping>> (for `String` variables) or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. 
+*** `List`, a value is required. You can enter a value manually. For primitive list types (`String`, `Number`, `Boolean`, `Date`, or `DateTime`), you can create a list statically using the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] or <<create-a-picklist-mapping,map in a list data pill>>. For List<Objects>, select either: 
+**** *Dynamic List* to create multiple items in the list. Use a list pill to reference the number of items created. Then, map the fields of the elements of the list.
+**** *Static List*, and then initialize the list with as many items as you need. If you do not add any items, the list is empty by default.
+
 .. Optionally to change the output fields, click *Add Output Fields* to open the editor to edit the output fields.
 . Complete the flow. 
 +

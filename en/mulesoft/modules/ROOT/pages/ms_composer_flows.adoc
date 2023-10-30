@@ -494,7 +494,7 @@ The *Update Variable* step appears.
 
 
 [[create-a-picklist-mapping]]
-=== Create a Picklist Mapping
+== Create a Picklist Mapping
 
 Using Picklist Mapping, you can map data from one application to the corresponding data needed by another application and then reuse those mappings in different flows in your organization. This enables you to connect two applications that have different values for similar fields and to align the values in those fields across applications. You can then determine how the possible values of an output field (data pill) map to the possible values of an input field.
 
@@ -524,7 +524,7 @@ In this example, the *Status* field in a case in Salesforce is mapped to the *St
 When mapping source data fields:
 
 * The source field must be a data pill with a fixed list of values.
-* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field or any string field.
+* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field or any string field. 
 * If any other unmapped value from the source system is found, the default mapping specifies the value in the target system . If you do not specify a default value, the original value from the source field is passed to the target field.
 * The mapping is stored at the organization level and can be reused across flows.
 * The mapping must have a unique name.

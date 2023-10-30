@@ -326,7 +326,7 @@ The *Custom Expression Editor* supports the following `List` formulas and operat
 
 `joinBy([Mr, Max, Mule], emptyString()) = MrMaxMule`|list separator 
 
-Note that you cannot build a list manually to include `joinBy` as a parameter to the function. You must use a `List` data pill. 
+Note that you can use a `List` data pill, a function that returns a list (such as `splitBy`), or a list that you build manually using [ ] as a parameter to the function.
 
  |list: List<String>
 
@@ -340,8 +340,6 @@ This filters out the matching string from the returned list. The separator can m
  |`splitBy(Hello-Composer, -) = [Hello, Composer]` 
 
 `splitBy(192.88.99.0, .) = [192, 88, 99, 0]` |text separator 
-
-Note that you cannot build a list manually to include `splitBy` as a parameter to the function. You must use a `List` data pill. 
 
  |text: String
 

@@ -81,7 +81,14 @@ Unlike the *Visual Editor*, the *Sample JSON Editor* supports objects, arrays, a
 The count of the of input fields you added appears next to *Input Fields*, displaying one or more new input fields added to the flow.
 .. Optionally, to change the input fields, click *Add Input Fields* to open the *Sample JSON Editor* to edit the input fields.
 +
-. Optionally, add output fields. If specified, output fields are returned as the JSON response. For example, if there is an `Opportunity ID` input field, you can add `{"opportunityId": "<id>"}` as an output field. 
+. Optionally, add output fields. If specified, output fields are returned as the JSON response. For example, if there is an `Opportunity ID` input field, you can add the value of the ID as an output field, in which the following JSON response is returned with a 200 status code:
++
+[source,JSON]
+----
+{
+"opportunityId": "<id>"
+}
+----
 +
 To add output fields: 
 +
@@ -146,8 +153,10 @@ Once the client secret is reset, the previous client secret no longer works. You
 After creating an invocable flow in Composer, you can invoke it from an external system: 
 
 * <<invoke-a-composer-flow-from-flow-builder>>
+* <<invoke-a-composer-flow-from-flow-orchestration>>
 * <<invoke-a-composer-flow-from-another-composer-flow>>
 * <<invoke-a-composer-flow-from-an-apex-callout>>
+* <<invoke-a-composer-flow-from-a-curl-command>>
 
 [[invoke-a-composer-flow-from-flow-builder]]
 === Invoke a Composer Flow from Flow Builder
@@ -252,6 +261,54 @@ For example, if your invocable flow returns an opportunity ID, you can use the *
 . Debug the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test_debug.htm&type=5[Debug a Flow in Flow Builder].
 . Test the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test.htm&type=5[Test a Flow]. 
 . Activate the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_distribute_activate.htm&type=5[Activate or Deactivate a Flow].  
+
+[[invoke-a-composer-flow-from-flow-orchestration]]
+=== Invoke a Composer Flow from Flow Orchestration
+
+Use Flow Orchestration to create complex multi-step processes. Invoke a Composer flow in Flow Orchestration to enhance workflow automation and increase scalability.
+
+To invoke a Composer flow from Flow Orchestration:
+
+. <<set-up-salesforce-for-invocable-flows-orch,Set up Salesforce for invocable flows>>.
+. <<set-up-flow-orchestration-for-invocable-flows,Set up Flow Orchestration for invocable flows>>.
+
+[[set-up-salesforce-for-invocable-flows-orch]]
+==== Set Up Salesforce for Invocable Flows
+
+After creating your Composer flow, set up your Salesforce org to invoke flows in Composer: 
+
+. Access your Salesforce org. 
+. Create a new set of credentials that use the same credentials that you use for Composer. 
++
+Create an external credential and a named credential. If your invocable Composer flow does not contain input fields, add a new `Content-Length` custom header that has a value of `0` in the external credential and named credential to avoid an HTTP 411 response. 
++
+To create an external credential and a named credential:
++
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
+.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
+.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
+
++
+Note that you must add the *Automated Process* user to the *Permission Sets* assignments. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.perm_sets_mass_assign.htm&type=5[Assign a Permission Set to Multiple Users]. 
+
+. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
+
+[[set-up-flow-orchestration-for-invocable-flows]]
+==== Set Up Flow Orchestration for Invocable Flows
+
+After setting up Salesforce for invocable flows, you can call the Composer flow from Flow Orchestration:
+
+. First, <<set-up-flow-builder-for-invocable-flows, set up Flow Builder for invocable flows>> before setting up Flow Orchestration.
+. Click *New Flow* > *All + Templates* > *Flow Orchestration*. Select either *Autolaunched Orchestration (No Trigger)* or *Record-Triggered Orchestration* and click *Create*.
+.. If you select *Record-Triggered Orchestration*, select the object, configure the trigger, and set entry conditions. Click *Save*.
+. Click *+* to add a new element and then click *Stage*.
+. Enter a value for the *Label* and *API Name* fields and select a condition. 
+. Click *Add Step* and click *Background Step*. 
+. Enter a value for the *Label* and *API Name* fields and select a condition and an action. 
+. Select the *Contains external callouts or pause elements* checkbox.  
+. Click *Save*.
+. Click *Activate*. 
 
 [[invoke-a-composer-flow-from-another-composer-flow]]
 === Invoke a Composer Flow from Another Composer Flow 
@@ -374,6 +431,34 @@ trigger OpportunityUpdate on Opportunity (after update) {
 ----
 +
 For more information about Apex callout limits and limitations, refer to https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_timeouts.htm[Callout Limits and Limitations]. For more information about Apex, refer to https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dev_guide.htm[Apex Developer Guide]. 
+
+[[invoke-a-composer-flow-from-a-curl-command]]
+=== Invoke a Composer Flow from a cURL Command
+
+You can invoke a Composer flow through a cURL command. Because each invocable Composer flow generates a public URL, you can use the URL to invoke the flow from your terminal. 
+
+Invoking a Composer flow from a cURL command is beneficial because cURL commands can be used in scripts or code to automate business cases. cURL commands are also generally easy to share, modify, and test.
+
+For example, suppose there is a flow that calculates some basic math and also returns a string. The flow takes three input values (`a`, `b`, and `Message`) and returns five output values (`Output caption`, `Quotient`, `Product`, `Difference`, and `Sum`). The following cURL command invokes the Composer flow, in which `<url>` is the flow URL and `<token>` is the Base64 encoding of the client ID concatenated with a colon followed by the client secret: 
+
+----
+curl "<url>" -H "Authorization: Basic <token>" -X POST --data '
+{ "a": 100, "b": 30, "Message": "Basic Math Ops" }
+' -H "Content-Type: application/json"
+----
+
+The example response is:
+
+[source,JSON]
+----
+{
+  "Output caption": "Basic Math Ops",
+  "Quotient": 3.333333333333333333333333333333333,
+  "Product": 3000,
+  "Difference": 70,
+  "Sum": 130
+}
+----
 
 == Troubleshooting 
 

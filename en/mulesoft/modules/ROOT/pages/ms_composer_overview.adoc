@@ -5,6 +5,7 @@ endif::[]
 ifeval::["{product}"=="mulesoft"]
 = MuleSoft Composer
 endif::[]
+:page-notice-banner-message: When accessing the documentation from inside the product, the version of documentation that corresponds to the product, either MuleSoft Composer for Salesforce or MuleSoft Composer, appears.
 
 ifeval::["{product}"=="salesforce"]
 MuleSoft Composer for Salesforce (Composer) makes it easy to build process automation for

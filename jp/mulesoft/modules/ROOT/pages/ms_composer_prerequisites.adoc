@@ -160,7 +160,7 @@ API を Anypoint Platform から Mulesoft Composer for Salesforce に共有す�
 ** API は、基本認証、ベアラートークン、またはクライアント ID とクライアントシークレットを組み合わせた API キーを使用している。
 ** API に API Manager の ​*[Consumer Endpoint (コンシューマエンドポイント)]*​ 項目の値がある。
 
-* コンポーザ組織が ​<<connect-composer-to-anypoint-platform​,​Anypoint 組織にリンク>>​されている。
+* コンポーザ組織が ​<<connect-composer-to-anypoint-platform,​Anypoint 組織にリンク>>​されている。
 * 公開インターネットから API にアクセスできる。
 * API が​xref:exchange::to-share-api-asset-to-portal.adoc[公開ポータル]​にパブリッシュされている。
 
@@ -452,7 +452,7 @@ API を Anypoint Platform から MuleSoft Composer に共有する前に、次�
 ** API は、基本認証、ベアラートークン、またはクライアント ID とクライアントシークレットを組み合わせた API キーを使用している。
 ** API に API Manager の ​*[Consumer Endpoint (コンシューマエンドポイント)]*​ 項目の値がある。
 
-* コンポーザ組織が ​<<connect-composer-to-anypoint-platform​,​Anypoint 組織にリンク>>​されている。
+* コンポーザ組織が ​<<connect-composer-to-anypoint-platform,​Anypoint 組織にリンク>>​されている。
 * 公開インターネットから API にアクセスできる。
 * API が​xref:exchange::to-share-api-asset-to-portal.adoc[公開ポータル]​にパブリッシュされている。
 

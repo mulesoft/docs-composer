@@ -31,8 +31,8 @@ Salesforce Marketing Cloud Connector を使用するには、最初に API イ�
 *[Set Server-to-Server (サーバ間を設定)]*​ セクションが表示されます。
 
 . *[Set Server-to-Server (サーバ間を設定)]*​ セクションの ​*[Channels (チャネル)]*​ で、次の横にあるチェックボックスをオンにします。
-.. *[Email (メール)]*​ 列: *[Read (参照)]*​、​*[Write (更新)]*​, ​*[Send (送信)]*
-.. *[SMS]*​ 列: *[Read (参照)]*​、​*[Write (更新)]*​, ​*[Send (送信)]*
+.. *[Email (メール)]*​ 列: *[Read (参照)]*​、​*[Write (更新)]*, ​*[Send (送信)]*
+.. *[SMS]*​ 列: *[Read (参照)]*​、​*[Write (更新)]*, ​*[Send (送信)]*
 
 . *[Save (保存)]*​ をクリックします。 +
 API インテグレーションパッケージが作成され、メールおよび SMS コミュニケーションの権限が設定されます。

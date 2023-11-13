@@ -113,6 +113,10 @@ To add a trigger condition:
 
 To add more trigger conditions, click *Add Condition*.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

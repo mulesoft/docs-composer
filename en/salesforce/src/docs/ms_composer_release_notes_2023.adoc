@@ -10,7 +10,9 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for Mule
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-In Salesforce Connector, a new field, *Polling Frequency*, is required for triggers.  Using this field, you can now select how often a trigger polls for changes within your flow.
+* In Salesforce Connector, a new field, *Polling Frequency*, is required for triggers.  Using this field, you can now select how often a trigger polls for changes within your flow.
+
+* You can now search for templates (by template name, connector name, or template description) and filter templates (by use case category or connector).
 
 == October 31, 2023
 

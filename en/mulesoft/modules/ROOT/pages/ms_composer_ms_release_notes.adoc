@@ -1,5 +1,5 @@
 = MuleSoft Composer Release Notes
-:page-revdate: November 13, 2023
+:page-revdate: November 14, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -7,11 +7,15 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
-== November 13, 2023
+== November 14, 2023
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* In Salesforce Connector, a new field, *Polling Frequency*, is required for triggers.  Using this field, you can now select how often a trigger polls for changes within your flow.
+* For triggers in Salesforce Connector, the *Polling Frequency* field is now required. This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
+
+== November 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now search for templates (by template name, connector name, or template description) and filter templates (by use case category or connector).
 

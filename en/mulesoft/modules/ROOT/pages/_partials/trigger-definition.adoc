@@ -1,4 +1,4 @@
-Each flow starts with either a _scheduler_ or a _trigger_. Schedulers are set to a default frequency of 15 minutes; however, you can select the frequency that works best for your flow. Triggers, such as "each time a new record is created", are defined by you and provide multiple options related to the data in your system.
+Each flow starts with either a _scheduler_ or a _trigger_. Schedulers are set to a default frequency of 15 minutes. Triggers, such as "each time a new record is created", are defined by you and provide multiple options related to the data in your system.
 
 Triggers use a polling process to actively check for new updates from an external system. The polling frequency is 15 seconds. 
 

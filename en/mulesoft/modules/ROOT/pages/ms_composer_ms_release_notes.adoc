@@ -1,5 +1,5 @@
 = MuleSoft Composer Release Notes
-:page-revdate: November 15, 2023
+:page-revdate: November 20, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -11,7 +11,7 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* A new page, *Connections*, is available in the navigation pane. Using this page, you can easily view connections, view the flows currently using each connection, delete connections, and modify the names of connections. 
+* A new page, *Connections*, is available in the navigation pane. Using this page, you can easily view connections, see which flows currently use each connection, delete connections, and edit the names of connections. 
 
 == November 15, 2023
 

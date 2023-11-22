@@ -209,6 +209,19 @@ Your trigger is named automatically. All triggers are named by combining the eve
 
 * Click *Save*.
 
+ifeval::["{product}"=="mulesoft"]
+//This is currently only for MS Composer 
+== Access the Connections Page 
+
+The *Connections* page enables you to: 
+
+* Select a connection to view all of the flows currently using that connection. 
+* <<delete-a-connection,Delete a connection>>. 
+* Change the name of a connection. 
+
+To access the *Connections* page, from the *Composer* home page, click *Connections* in the navigation pane. 
+endif::[]
+
 [[change-a-connection]]
 == Change a Connection
 
@@ -252,6 +265,7 @@ To repair a connection:
 . Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
 . Click *Repair*.
 
+[[delete-a-connection]]
 == Delete a Connection
 
 If you no longer need a specific connection, you can delete it.

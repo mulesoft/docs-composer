@@ -23,7 +23,7 @@ The username and password that you used to log in to Snowflake.
 
 Account Name::
 
-The account name that is provided when registering for the Snowflake account.
+The account name that is provided when registering for the Snowflake account. The account name is in the `<OrgId>-<AccountId>` format. 
 
 Warehouse::
 

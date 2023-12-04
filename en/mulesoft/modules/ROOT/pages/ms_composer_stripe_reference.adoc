@@ -31,6 +31,10 @@ New refund::
 
 Executes when a new refund is created.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

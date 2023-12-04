@@ -54,6 +54,10 @@ New or Updated Estimate::
 
 Triggers when an estimate is created or when an existing estimate is updated.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

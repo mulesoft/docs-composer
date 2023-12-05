@@ -28,6 +28,10 @@ New or updated task::
 
 Fires when a task is created or an existing task is updated.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

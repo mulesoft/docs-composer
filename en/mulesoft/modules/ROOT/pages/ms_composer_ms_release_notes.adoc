@@ -1,11 +1,29 @@
 = MuleSoft Composer Release Notes
-:page-revdate: December 1, 2023
+:page-revdate: December 5, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
+
+== December 5, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* For triggers in the following connectors, the *Polling Frequency* field is now required: 
+
+** Asana 
+** Box 
+** Gmail
+** Google Big Query
+** Google Sheets
+** Hubspot
+** Jira
+** Marketo
+** Netsuite
++ 
+This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
 
 == December 1, 2023
 

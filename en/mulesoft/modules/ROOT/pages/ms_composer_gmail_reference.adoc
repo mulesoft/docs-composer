@@ -35,6 +35,10 @@ If you don't specify a  https://developers.google.com/gmail/api/guides/labels[fi
 +
 For example, use `in:inbox` to limit the trigger to new messages in the inbox
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

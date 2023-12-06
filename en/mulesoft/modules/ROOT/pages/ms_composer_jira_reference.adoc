@@ -50,6 +50,10 @@ Update issue with Standard Fields only was updated or created::
 
 Checks for updated or created issues with Standard fields in Jira.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

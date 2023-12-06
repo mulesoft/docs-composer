@@ -31,6 +31,10 @@ On New or Updated Record::
 
 Triggers when a new Company or Contact record is created or updated. 
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

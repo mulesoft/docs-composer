@@ -83,6 +83,10 @@ On New Records::
 
 A new record is created in NetSuite.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

@@ -77,6 +77,10 @@ Returns all new or updated rows of a table based on a watermark every 15 seconds
 ** DATE
 ** DATETIME
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

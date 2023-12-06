@@ -26,6 +26,10 @@ On new file in folder::
 
 Triggers when a new folder is added. Provide a value for *Folder ID*.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

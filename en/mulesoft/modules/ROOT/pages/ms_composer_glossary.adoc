@@ -2,7 +2,6 @@
 ifeval::["{product}"=="salesforce"]
 = MuleSoft Composer for Salesforce Glossary
 endif::[]
-
 ifeval::["{product}"=="mulesoft"]
 = MuleSoft Composer Glossary
 endif::[]

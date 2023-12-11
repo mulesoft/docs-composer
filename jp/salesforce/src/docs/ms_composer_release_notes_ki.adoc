@@ -1,6 +1,34 @@
-= MuleSoft Composer for Salesforce の既知の問題
+= MuleSoft Composer for Salesforce の既知の問題と制限事項
 
-次のリストに、Composer for Salesforce の既知の問題を示します。リストは、問題が発生した日付順になっています。
+次のリストに、Composer for Salesforce の既知の問題と制限事項を示します。リストは、既知の問題または制限事項が発生した日付順になっています。
+
+== 2023/05/31
+
+=== SAP S/4HANA Cloud
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|アクションまたはトリガを追加するときに、​*[Service (サービス)]*​ 項目のドロップダウンメニューが空で表示され、コネクタ設定を完了できない場合がある。
+
+同様に、設定中に​`「Retrieving metadata for the step failed (ステップのメタデータの取得失敗)」`​エラーが発生する可能性がある。 | これは断続的に発生する問題であり、しばらくすると解決されるはずです。 | W-13527982
+|===
+
+== 2023/03/22
+
+=== Google BigQuery
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|ID
+
+|String (文字列) または Date (日付) データ型の入力パラメータ値は、式エディタを使用して、単一引用符で囲んで指定する必要があります。 | W-12696210
+|===
 
 == 2022 年 8 月 3 日
 
@@ -111,21 +139,6 @@ a|Chrome ブラウザで、​*[デベロッパーツール]*​ をクリック
 
 . NetSuite 接続を再確立します。エラーが引き続き表示される場合は、サポートにお問い合わせください。
  |なし
-
-|===
-
-== 2021 年 7 月 19 日
-
-//include::_partials/servicenow-ki.adoc[]
-=== ServiceNow
-
-[%header%autowidth.spread]
-
-|===
-
-|既知の問題|回避策 |ID
-
-|ServiceNow Connector - Mule 4 では標準テーブルのみがサポートされる。 | なし |なし
 
 |===
 

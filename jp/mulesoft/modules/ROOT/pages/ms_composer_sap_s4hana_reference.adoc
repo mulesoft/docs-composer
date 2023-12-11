@@ -1,0 +1,81 @@
+= SAP S/4HANA Cloud Connector リファレンス
+
+SAP S/4HANA は、アプリケーションと IT インフラストラクチャのセキュリティ、アセットの運用とメンテナンス、ビジネスの計画と統合、物流と注文の履行などに使用されるエンタープライズリソースプランニング (ERP) ソフトウェアです。このコネクタは、SAP S/4HANA OData API に基づいています。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name (接続表示名)::
+
+この接続の詳細を把握するのに役立つ接続名を入力します。
+1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。そのため、この接続を他の接続と簡単に区別できる名前を付けると役立ちます。
++
+接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+
+Base URL (ベース URL)::
+
+SAP S/4HANA インスタンスの URL (例: `\https://{YourInstance}.s4hana.ondemand.com`​)。
+
+Username (ユーザ名)::
+
+SAP S/4HANA にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+SAP S/4HANA にログインするために使用する OAuth パスワード。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+On New or Updated Entity (新規または更新済みエンティティ)::
+
+レコードサブタイプの新しいオブジェクトが作成または更新されたときにトリガされます。次の項目の値を指定します。
+
+* *Service (サービス)*
+* *Entity type (エンティティ種別)*
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create Entity::
+
+指定されたレコードタイプのレコードを作成します。次の項目の値を指定します。
+
+* *Service (サービス)*
+* *Entity type (エンティティ種別)*
+* *Entity (エンティティ)*
+
+Get Entity::
+
+指定されたレコードタイプのレコードを取得します。次の項目の値を指定します。
+
+* *Service (サービス)*
+* *Entity type (エンティティ種別)*
+* *Entity key (エンティティキー)*
+
+Update Entity::
+
+指定されたレコードタイプのレコードを更新します。次の項目の値を指定します。
+
+* *Service (サービス)*
+* *Entity type (エンティティ種別)*
+* *Entity (エンティティ)*
+
+Delete Entity::
+
+指定されたレコードタイプのレコードを削除します。次の項目の値を指定します。
+
+* *Service (サービス)*
+* *Entity type (エンティティ種別)*
+* *Entity key (エンティティキー)*
+
+== カスタム項目
+
+MuleSoft Composer を使用して、SAP S/4HANA レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+
+include::_partials/see-also.adoc[]
+
+

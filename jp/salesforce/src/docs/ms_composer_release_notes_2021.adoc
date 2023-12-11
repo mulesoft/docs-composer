@@ -4,7 +4,7 @@ MuleSoft Composer for Salesforce を使用して、コネクテッドエクス�
 
 新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
 
-日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題」]​を参照してください。
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題と制限事項」]​を参照してください。
 
 == 2021 年 12 月 21 日
 
@@ -143,7 +143,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* コネクタでオブジェクトのリストのマッピングの制限が引き上げられました。選択したオブジェクトのリストの項目だけでなく、任意の最上位項目をマッピングできるようになりました。
+* コネクタでオブジェクトのリストのマッピングの制限が引き上げられました。選択したオブジェクトのリストの項目だけでなく、任意の最上位項目をマップできるようになりました。
 
 == 2021 年 10 月 21 日
 

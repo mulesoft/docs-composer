@@ -17,7 +17,7 @@ API key (API キー)::
 * ユーザが制限された API キーを使用してよりきめ細かい権限を実現します。
 * すべての API 要求が HTTPS を通じて行われていることを確認します。
 
-https://stripe.com/docs/connect/oauth-reference[Stripe Connect]​ では OAuth 認証がサポートされますが、Stripe ではサポートされません。Stripe での OAuth 認証についての詳細は、 https://www.similartech.com/compare/stripe-vs-stripe-connect を参照してください。
+https://stripe.com/docs/connect/oauth-reference[Stripe Connect]​ では OAuth 認証がサポートされますが、Stripe ではサポートされません。Stripe での OAuth 認証についての詳細は、&#8203;https://www.similartech.com/compare/stripe-vs-stripe-connect を参照してください。
 
 == トリガ
 
@@ -61,5 +61,9 @@ Find customer::
 Create product::
 
 新しい Product オブジェクトを作成します。次の項目は必須です: *Name (名前)*​。
+
+== カスタム項目 
+
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、Stripe レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
 
 include::_partials/see-also.adoc[]

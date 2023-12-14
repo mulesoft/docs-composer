@@ -35,6 +35,10 @@ Note that *ServiceNow Time Zone* must be set to the same time zone as your Servi
 
 NOTE: To view custom or extended parent tables in ServiceNow Connector, select the *Allow access to this table via web services* and *Allow configuration* options in the table definition.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

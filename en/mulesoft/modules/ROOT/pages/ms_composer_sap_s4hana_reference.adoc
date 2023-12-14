@@ -38,6 +38,10 @@ Triggers when a new object of the record subtype is created or updated. Provide 
 * *Service*
 * *Entity type*
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

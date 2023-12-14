@@ -78,6 +78,10 @@ RPA Process Execution Completed::
 
 Create listeners that check the status of a specific RPA process. When the RPA process finishes the execution, the polling trigger processes the configured activities in the Composer flow. Note that you must select whether you want listeners for _successful_ or _failed_ executions. You cannot receive notifications for both.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

@@ -54,6 +54,10 @@ Checks for a new or updated invoice. Provide a value for the following fields:
 * *Invoice type*
 * *Invoice status*
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

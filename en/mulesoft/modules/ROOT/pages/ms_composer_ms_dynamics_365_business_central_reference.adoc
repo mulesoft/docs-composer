@@ -43,6 +43,10 @@ On New or Updated Customer::
 
 Checks for a new or updated customer. Provide a value for *Company*.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

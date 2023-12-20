@@ -59,6 +59,10 @@ New or updated object::
 
 This trigger checks for a new or updated object in Workday Financial Management. A value is required in the following field: *Object*.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 Get Worker Details by ID::

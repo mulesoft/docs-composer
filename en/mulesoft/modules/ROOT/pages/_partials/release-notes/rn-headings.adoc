@@ -1,4 +1,5 @@
 // Headings for rn-template
+
 // tag::whatsNew[]
 = What's New
 // end::whatsNew[]

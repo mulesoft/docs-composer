@@ -108,6 +108,10 @@ Provide a value for the following fields:
 ** TIMESTAMP
 ** TIMESTAMP_NTZ
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

@@ -25,6 +25,10 @@ On New Message::
 
 When this trigger fires, new messages are available for subsequent steps. To use this trigger, you must add the Composer app to the specific channel you want to use. For more information, see the https://slack.com/help/articles/202035138-Add-apps-to-your-Slack-workspace[Slack documentation^]. 
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

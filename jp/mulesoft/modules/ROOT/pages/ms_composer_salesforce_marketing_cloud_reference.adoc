@@ -90,4 +90,8 @@ Send SMS (SMS を送信)::
 * Contact Key (連絡先キー)
 * Recipient’s Phone Number (受信者の電話番号)
 
+== カスタム項目 
+
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、Salesforce Marketing Cloud レコードで設定したアクションとトリガの標準項目値にアクセスできます。
+
 include::_partials/see-also.adoc[]

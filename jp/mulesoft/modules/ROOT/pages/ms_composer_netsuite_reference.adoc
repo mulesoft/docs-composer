@@ -29,11 +29,7 @@ include::_partials/netsuite-connection-details.adoc[]
 
 === NetSuite 接続の確立
 
-MuleSoft Composer を使用して NetSuite 接続を確立するには、次が必要です。
-
-* `perform integration tasks`​ のための「MuleSoft Composer User (Mulesoft Composer ユーザ)」権限セット。
-
-* NetSuite 内の関連付けられた顧客の内部 ID を保存する Salesforce 内の取引先。カスタム項目 ​*[NetSuite ID]*​ が組織の取引先オブジェクトに作成されていることを確認する必要があります。
+MuleSoft Composer を使用して NetSuite 接続を確立するには、NetSuite 内の関連付けられた顧客の内部 ID を保存する Salesforce 内の取引先が必要です。カスタム項目 ​*[NetSuite ID]*​ が組織の取引先オブジェクトに作成されていることを確認する必要があります。
 
 === NetSuite 権限の設定
 
@@ -109,10 +105,16 @@ Delete Record::
 
 Get Records::
 
-特定の検索条件に基づいて最大 500 個のレコードのリストを返します。次の項目は必須です。
+指定された検索条件に基づいて最大 500 個のレコードのリストを返します。
 
-* Object type (オブジェクト種別)
-* Filter records (レコードを絞り込む)
++
+image::images/get-records-netsuite.png[クエリビルダー UI、500]
++
+* アクションで取得する項目は ​*[Result fields (結果項目)]*​ セクションで選択できます。
+* 1 つ以上の条件を追加して、​*[Criteria (条件)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。
+* *[How Many Records to Retrieve (取得するレコードの数)]*​ セクションで ​*[All records (すべてのレコード)]*​ を選択すると、条件に一致するレコードのリストを取得できます。​*[All records (すべてのレコード)]*​ オプションはデフォルトで選択されています。リストから単一レコードにアクセスする場合は、​xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each ループ]​をフローに追加する必要があります。 
+* 一意の識別子で検索を絞り込んだ場合は、​*[How Many Records to Retrieve (取得するレコードの数)]*​ セクションで ​*[Only the first record (最初のレコードのみ)]*​ を選択すると、単一レコードが返されます。単一レコードが返されると、検索の出力が​_リスト_​から​_単一_​レコードに変更されます。​*Get records*​ アクションは、すべてのレコードを検索し、リストの最初のレコードのみを返します。 +
+以前に ​*[All records (すべてのレコード)]*​ を選択し、その後選択を ​*[Only the first record (最初のレコードのみ)]*​ に変更した場合、既存のフローのデータピルが無効になる可能性があります。   
 
 == レコードタイプ
 
@@ -121,7 +123,7 @@ Get Records::
 [%header%autowidth.spread]
 |===
 
-|Record Type (レコードタイプ) |トリガ |アクション
+|レコードタイプ |トリガ |アクション
 
 |BILLING_SCHEDULE | |X
 |CASH_SALE |X |X

@@ -2,13 +2,25 @@
 
 Jira は、開発を改善するためにユーザが商品の課題を計画、追跡、リリース、報告できるようにサポートする強力なプロジェクト管理ツールおよびチケットシステムです。
 
-コンポーザで Jira Connector を使用するには、​_[Administrator Jira (Jira システム管理者)]_​ グローバル権限が必要です。詳細は  https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira のドキュメント]​を参照してください。
+コンポーザで Jira Connector を使用するには、​_[Administrator Jira (Jira システム管理者)]_​ グローバル権限が必要です。詳細は  https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira のドキュメント^]​を参照してください。
 
 == Connections (接続)
 
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
+
+Organization Site URL (組織サイト URL)::
+
+接続する Sandbox または本番環境を含む Jira 組織の URL を入力します。​*[Organization Site URL (組織サイト URL)]*​ 項目に値を指定しない場合、接続では Atlassian API の ​`/resources`​ エンドポイントにリストされている最初の URL が使用されます。接続でデフォルトの組織ではなく特定の組織を使用する場合は、接続ごとに ​*[Organization Site URL (組織サイト URL)]*​ 項目を設定します。Jira 組織についての詳細は、 https://support.atlassian.com/organization-administration/docs/get-started-with-an-atlassian-organization/[Jira のドキュメント^]​を参照してください。 
++
+Atlassian アカウント経由で Jira 組織に接続する手順は、次のとおりです。 
+
+. *[Connect to your Jira Account (Jira アカウントに接続)]*​ ウィンドウの ​*[Organization Site URL (組織サイト URL)]*​ 項目に、Jira 組織の URL を入力します。例: `+https://orgname.atlassian.net+`​。  
+. *[Connect (接続)]*​ をクリックします。 +
+Atlassian ウィンドウが表示され、Composer が Atlassian アカウントへのアクセスを要求していることが示されます。 
+. ウィンドウの ​*[Authorize for site (サイトを認証)]*​ ドロップダウンで、使用する組織を選択し、​*[Accept (同意)]*​ をクリックします。 +
+これで、Composer が Jira 組織に接続されました。  
 
 Username (ユーザ名)::
 
@@ -124,5 +136,23 @@ Upload attachment to an issue::
 == カスタム項目
 
 MuleSoft Composer を使用して、Jira の課題で設定したアクションおよびトリガの標準項目やカスタム項目の値にアクセスできます。
+
+以下のリストコンポーネントを含むカスタム項目は現在サポートされていません。
+
+* Text fields (multi-line) (テキスト項目 (複数行))
+* Labels (ラベル)
+* Checkboxes (チェックボックス)
+* Radio buttons (ラジオボタン)
+* Select lists (multiple-choice) (選択リスト (複数選択))
+* Select lists (cascading) (選択リスト (カスケード))
+
+== 標準項目
+
+現時点では、以下の標準項目はサポートされていない。 
+
+* *Affects version (影響バージョン)*
+* *Fix version (修正バージョン)*
+* *Environment (環境)*
+* *Component (コンポーネント)*
 
 include::_partials/see-also.adoc[]

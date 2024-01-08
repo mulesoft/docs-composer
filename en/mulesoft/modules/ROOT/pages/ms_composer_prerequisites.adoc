@@ -493,7 +493,7 @@ The *Request access* window appears.
 
 === Share an API Instance with a Single-Tenant Anypoint Platform Organization
 
-You can connect a single-tenant Anypoint Platform organization to Composer for API Sharing. Using API Sharing, you can expand the connectivity to more systems, have more control over both API management and governance, and consume complex APIs built in Anypoint Platform.
+You can connect a single-tenant, Anypoint Platform organization to Composer for API Sharing. Using API Sharing, you can expand the connectivity to more systems, have more control over both API management and governance, and consume complex APIs built in Anypoint Platform.
 
 To enable API sharing for a single-tenant organization: 
 

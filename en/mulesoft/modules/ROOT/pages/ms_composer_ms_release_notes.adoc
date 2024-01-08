@@ -23,7 +23,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 + 
 This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
 
-* API Sharing is now available for single-tenant, Anypoint Platform organizations in Composer. API sharing is limited to the Exchange API Asset in the same Anypoint organization. This enables Composer to expand the connectivity to more systems, to have more control over both API management and governance, and to consume complex APIs built in Anypoint Platform.
+* API Sharing is now available for single-tenant, Anypoint Platform organizations in Composer. API Sharing is limited to the Exchange API Asset in the same Anypoint organization. This enables Composer to expand the connectivity to more systems, to have more control over both API management and governance, and to consume complex APIs built in Anypoint Platform.
 
 
 == December 6, 2023

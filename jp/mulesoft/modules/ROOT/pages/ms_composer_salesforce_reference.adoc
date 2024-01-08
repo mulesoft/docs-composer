@@ -26,7 +26,7 @@ Salesforce では、各ユーザが一度に 5 件までの接続アプリケー
 
 この問題を回避するために、可能であれば、ユーザおよび Salesforce 組織ごとに 1 件の接続のみを作成するようにしてください。
 
-Salesforce 接続アプリケーションと認証についての詳細は、 https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm を参照してください。
+Salesforce 接続アプリケーションと認証についての詳細は、&#8203;https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm を参照してください。
 
 === IP 制限の緩和
 
@@ -86,11 +86,11 @@ include::_partials/trigger-definition.adoc[]
 
 New record::
 
-10 分おきに新規レコードをチェックします。
+15 秒おきに新規レコードをチェックします。
 
 New or updated record::
 
-10 分おきに指定されたオブジェクト種別の新規または更新済みレコードをチェックします。
+15 秒おきに指定されたオブジェクト種別の新規または更新済みレコードをチェックします。
 
 Deleted record::
 
@@ -125,19 +125,19 @@ Update record::
 
 Get records::
 
-指定した検索語に一致するすべてのレコードを返します。
+指定した条件に一致するすべてのレコードを返します。
 +
-image::images/query-builder.png[クエリビルダー UI、500]
+image::images/get-records-salesforce.png[クエリビルダー UI、500]
 +
 * アクションで取得する項目は ​*[Result fields (結果項目)]*​ セクションで選択できます。
-* 1 つ以上の条件を追加して、​*[Filter records (レコードを絞り込む)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。
-* 返されるレコードの並び替え順は [Sort records (レコードを並び替え)] セクションで制御できます。レコードは指定した項目の昇順または降順で並び替えることができます。
+* 1 つ以上の条件を追加して、​*[Criteria (条件)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。
+* 返されるレコードの並び替え順は ​*[Sort records (レコードを並び替え)]*​ セクションで制御できます。レコードは指定した項目の昇順または降順で並び替えることができます。 
+* *[How Many Records to Retrieve (取得するレコードの数)]*​ セクションで ​*[All records (すべてのレコード)]*​ を選択すると、条件に一致するレコードのリストを取得できます。​*[All records (すべてのレコード)]*​ オプションはデフォルトで選択されています。リストから単一レコードにアクセスする場合は、​xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each ループ]​をフローに追加する必要があります。 
+* 一意の識別子で検索を絞り込んだ場合は、​*[How Many Records to Retrieve (取得するレコードの数)]*​ セクションで ​*[Only the first record (最初のレコードのみ)]*​ を選択すると、単一レコードが返されます。単一レコードが返されると、検索の出力が​_リスト_​から​_単一_​レコードに変更されます。​*Get records*​ アクションは、すべてのレコードを検索し、リストの最初のレコードのみを返します。 +
+以前に ​*[All records (すべてのレコード)]*​ を選択し、その後選択を ​*[Only the first record (最初のレコードのみ)]*​ に変更した場合、既存のフローのデータピルが無効になる可能性があります。   
 
-*Get records*​ アクションから返されたレコードを追加するときは、​xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each ループ]​をフローに追加する必要があります。
-
-*Get Records*​ がフローのステップであり、項目レベルの暗号化が有効で暗号化された項目での絞り込みを行おうとしている場合は、次の文字列操作のみがサポートされます: `equals`​、​`not equals`​、または空。項目レベルの暗号化では ​`contains`​、​`starts with`​、または ​`ends with`​ はサポートされません。
-
-項目レベルの暗号化についての詳細は、 https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce ドキュメント]​を参照してください。
++
+*Get Records*​ がフローのステップであり、項目レベルの暗号化が有効で暗号化された項目での絞り込みを行おうとしている場合は、次の文字列操作のみがサポートされます: `equals`​、​`not equals`​、または空。項目レベルの暗号化では ​`contains`​、​`starts with`​、または ​`ends with`​ はサポートされません。項目レベルの暗号化についての詳細は、 https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce ドキュメント]​を参照してください。
 
 Create or update record::
 

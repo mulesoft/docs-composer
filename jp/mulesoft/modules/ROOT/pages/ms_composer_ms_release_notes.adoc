@@ -1,10 +1,149 @@
-= MuleSoft Composer リリースノート:page-revdate: 2023 年 4 月 17 日
+= MuleSoft Composer リリースノート
+:page-revdate: 2023 年 6 月 8 日
 
 MuleSoft Composer を使用すると、コネクテッドエクスペリエンスをすばやく構築できます。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
 
 新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
 
-日付別の既知の問題のリストは、​xref:ms_composer_ms_release_notes_ki.adoc[「MuleSoft Composer の既知の問題」]​を参照してください。
+日付別の既知の問題と制限事項のリストは、​xref:ms_composer_ms_release_notes_ki.adoc[「MuleSoft Composer の既知の問題と制限事項」]​を参照してください。
+
+== 2023/06/08
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で、カスタム項目が意図どおりに表示されるようになりました。|W-13552619
+|===
+
+== 2023/06/06
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|*fromStringToDateTime*​ 関数は、意図したとおりにタイムゾーンを保持するようになりました。アクティブなフローは、非アクティブ化されたときにこの変更が適用されます。非アクティブなフローではエラーが表示されるため、数式の形式パラメータを手動で ​`uuuu-MM-dd'T'HH:mm:ssz`​ に変更する必要があります。|W-13488568
+|===
+
+== 2023/06/03
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で、​RETURN_AUTHORIZATION​ レコードタイプのカスタム項目が意図どおりに表示されるようになりました。|W-13484699
+|===
+
+== 2023/05/31
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである SAP S/4HANA Cloud に接続できるようになりました。 
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|QuickBooks Connector には、入力パラメータの強化された実装 (入力パラメータが指定されていないか ​`null`​ の場合のマッピングの改善など) が含まれるようになりました。|W-13280661
+|NetSuite Connector で、カスタム項目が意図どおりに表示されるようになりました。|W-13222742、W-13304252、W-13481333
+|===
+
+== 2023/05/25
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* トリガまたはアクションを追加するときに、​*[System Action (システムアクション)]*​ウィンドウと ​*[System Event (システムイベント)]*​ ウィンドウの新しい検索バーを使用して、フローで使用するコネクタまたは共有 API の特定の名前を入力できるようになりました。
+
+== 2023/05/24
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Sage Intacct Connector の、​*[New or Updated Customer (新規または更新済み顧客)]*​ トリガで、正しいウォーターマーク時間パターンが使用され、要求処理時のエラーが防止されるようになりました。|W-13119901
+|===
+
+== 2023/05/17
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、無効な組織サイト URL がある場合の例外メッセージがより明確になりました。|W-13143023
+|===
+
+== 2023/05/12
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Salesforce Connector で、カスタムメタデータオブジェクトは意図したとおりに、​*Create new record*​、​*Update record*​、および ​*Create or update record*​ アクションのメタデータキーとして表示されなくなりました。|W-13182376
+|===
+
+== 2023/05/09
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Sage Connector は、セッションタイムアウトが発生した場合に自動的に再接続するようになりました。|W-13003862
+|===
+
+== 2023/05/08
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Salesforce Connector および NetSuite Connector の ​*Get records*​ アクションで、新しいオプション ​*[Only the first record (最初のレコードのみ)]*​ が有効になりました。このオプションを使用すると、検索条件で一意の識別子を使用して単一レコードを返すことができます。選択されている場合、​*Get records*​ アクションは、選択された条件を満たすすべてのレコードを検索し、リスト内の条件を満たす最初のレコードを返します。 
+
+== 2023/05/05
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|タイムアウトによるメタデータの読み込みエラーを解決するために、NetSuite Connector の API からメタデータを取得する要求が最適化されるようになりました。 |W-12411817
+|===
+
+== 2023/05/03
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Jira Connector の接続を作成するときに、省略可能な新しい項目 ​*[Organization Site URL (組織サイト URL)]*​ が表示されます。​*[Organization Site URL (組織サイト URL)]*​ 項目では、接続する Sandbox または本番環境を含む Jira 組織の URL を入力できます。
+
+== 2023/04/25
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Snowflake Connector は、無効な特殊文字をチェックすることでアカウント名を検証するようになりました。 |W-12598991
+|NetSuite Connector で、​*Get Records*​ アクションは ​*OTHER_CHARGE_SALE_ITEM*​ レコードタイプを適切にサポートするようになりました。 |W-13001785
+|===
+
+== 2023/04/20
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|HTTP Connector のエラーメッセージは、より正確なエラー種別が表示されるようになりました。 |W-12483461
+|REST Consumer Connector の ​*[Operation Values (操作値)]*​ 項目に値を入力するときに、値が必要であることを示すエラーが発生しなくなりました。 |W-12648223
+|Rest Consumer Connector は、API 共有の使用中に ​*[Client Secret (クライアントシークレット)]*​ および ​*[Client ID (クライアント ID)]*​ 項目に指定された値を適切に認識するようになりました。 |W-12601570
+|===
 
 == 2023 年 4 月 17 日
 
@@ -135,7 +274,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** *「Composer Administrator (コンポーザ管理者)」*​権限では、​*[Settings (設定)]*​ ページにアクセスして、メール設定や API 共有を管理できます。
 ** *「Composer User (コンポーザユーザ)」*​権限では、フローの作成と管理など、コンポーザ機能全体にアクセスできます。
 
-* *「Composer Administrator (Composer 管理者)」*​権限セットを持つユーザが ​*[Settings (設定)]*​ ページを使用できるようになりました。  このページでは、メール通知設定を表示および編集できます。
+* *「Composer Administrator (Composer 管理者)」*​権限セットを持つユーザが ​*[Settings (設定)]*​ ページを使用できるようになりました。このページでは、メール通知設定を表示および編集できます。
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 
@@ -356,7 +495,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |ServiceNow Connector で、作業負荷の高いシナリオで突然切断されることはなくなりました。 | W-12035222
 |ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、componentorg.apache.commons ライブラリがバージョン 1.10.0 にアップグレードされました。| W-11913979
 |ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、org.springframework ライブラリがバージョン 5.3.20 にアップグレードされました。 | W-12150392
-|Salesforce Connector で、トリガと ​*Get records*​  アクションでブールパラメータの ​`isTrue`​ および ​`isFalse`​ 演算子がサポートされるようになりました。 | W-11752116
+|Salesforce Connector で、トリガと ​*Get records*​ アクションでブールパラメータの ​`isTrue`​ および ​`isFalse`​ 演算子がサポートされるようになりました。 | W-11752116
 |Salesforce Connector で、​*Delete record*​ アクションは ​`Retrieving metadata for the step failed. Try saving and refreshing the page.`​ (ステップのメタデータの取得に失敗しました。ページを保存して更新してみてください) エラーを誤ってスローしなくなりました。 | W-12211471
 |Salesforce Connector で、ウォーターマークが適切に使用されていない場合に、トリガでデータが失われる可能性がなくなりました。 | W-12128874
 |Jira Connector で、報告されたセキュリティの脆弱性に対処するために、com.fasterxml.jackson.core ライブラリがバージョン 2.14.1 にアップグレードされました。 |W-11933499

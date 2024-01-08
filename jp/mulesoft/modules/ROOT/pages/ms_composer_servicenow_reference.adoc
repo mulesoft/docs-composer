@@ -55,4 +55,8 @@ ServiceNow で選択されたレコードタイプのテーブルの既存のレ
 * *Table name (テーブル名)*
 * *Sys ID (システム ID)*
 
+== カスタム項目 
+
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、ServiceNow レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+
 include::_partials/see-also.adoc[]

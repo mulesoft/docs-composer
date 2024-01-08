@@ -119,4 +119,8 @@ Get Invoices::
 
 //* Field: *Contact persons*
 
+== カスタム項目 
+
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、Xero レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+
 include::_partials/see-also.adoc[]

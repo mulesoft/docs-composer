@@ -4,14 +4,14 @@
 
 |===
 
-|既知の問題|回避策 |ID
+|既知の問題/制限|回避策 |ID
 
 a|現時点では、以下の標準項目はサポートされていない。 +
 
 ** *Affects version (影響バージョン)*​
 ** *Fix version (修正バージョン)*​
 ** *Environment (環境)*​
-** *Component (コンポーネント)*
+** *Component (コンポーネント)*​
 
 | なし |なし
 
@@ -22,7 +22,7 @@ a|以下のリストコンポーネントを含むカスタム項目が表示さ
 ** *Checkboxes (チェックボックス)*​
 ** *Radio Buttons (ラジオボタン)*​
 ** *Select list (multiple-choice) (選択リスト (複数選択))*​
-** *Select list (cascading) (選択リスト (カスケード))*
+** *Select list (cascading) (選択リスト (カスケード))*​
 
 | なし |なし
 

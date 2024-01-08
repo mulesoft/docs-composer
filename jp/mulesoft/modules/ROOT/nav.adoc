@@ -1,7 +1,7 @@
 * xref:ms_composer_overview.adoc[MuleSoft Composer]
 
 * xref:ms_composer_ms_release_notes.adoc[リリースノート]
-** xref:ms_composer_ms_release_notes_ki.adoc[既知の問題]
+** xref:ms_composer_ms_release_notes_ki.adoc[既知の問題と制限事項]
 
 * xref:ms_composer_prerequisites.adoc[はじめに]
 ** xref:ms_composer_about_flows.adoc[コンポーザのしくみ]
@@ -33,6 +33,7 @@
 ** xref:ms_composer_sage_intacct_reference.adoc[Sage Intacct]
 ** xref:ms_composer_salesforce_reference.adoc[Salesforce]
 ** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]
+** xref:ms_composer_sap_s4hana_reference.adoc[SAP S/4HANA Cloud]
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]
 ** xref:ms_composer_slack_reference.adoc[Slack]
 ** xref:ms_composer_snowflake_reference.adoc[Snowflake]

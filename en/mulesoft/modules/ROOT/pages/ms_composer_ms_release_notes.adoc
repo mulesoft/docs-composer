@@ -1,5 +1,5 @@
 = MuleSoft Composer Release Notes
-:page-revdate: December 14, 2023
+:page-revdate: January 8, 2023
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -7,17 +7,17 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
-//== DATE - make sure to update the date, the revdate, and add this to the other RN doc 
+== January 8, 2024
 
-//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-//* For triggers in the following connectors, the *Polling Frequency* field is now required: 
+* For triggers in the following connectors, the *Polling Frequency* field is now required: 
 
-//** Microsoft Dynamics 365 Business Central  
-//** Workday 
-//** Xero
-//+ 
-//This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
+** Microsoft Dynamics 365 Business Central  
+** Workday 
+** Xero
++ 
+This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
 
 == December 14, 2023
 

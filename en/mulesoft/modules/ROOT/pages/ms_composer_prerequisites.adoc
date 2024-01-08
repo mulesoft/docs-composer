@@ -20,7 +20,7 @@ IP addresses used by Composer are dynamic, therefore MuleSoft can't provide a li
 * You must relax any IP restrictions for the connections that you create to data sources and data targets. Instructions are included in the setup section of this topic.
 * Composer does not currently support mobile platforms.
 
-=== Browser Requirements:
+=== Browser Requirements
 
 * Don't use incognito mode or private browsers to access Composer.
 * Composer uses Salesforce Canvas and therefore has the same browser requirements as Canvas. For Safari browsers, this means you must uncheck the *Prevent cross-site tracking* option in Safari security preferences.
@@ -239,7 +239,7 @@ After you purchase MuleSoft Composer, it automatically creates a MuleSoft Compos
 
 After you successfully connect, you then invite users to access that MuleSoft Composer org.
 
-=== Access MuleSoft Composer as for the First Time:
+=== Access MuleSoft Composer as for the First Time
 
 As your organization's primary administrator, follow these steps to initiate your MuleSoft Composer org:
 
@@ -279,6 +279,7 @@ Information about the users' invitations appear. In the menu:
 .. If the invitation to that user is older than 14 days and is about to expire, if you want to resend it, click *Resend Invite*.
 .. If you want to revoke the invitation to that user, click *Revoke Invite*.
 
+[[admin-manage-users]]
 == Admin: Manage Users
 
 As administrator, you are responsible for managing your MuleSoft Composer users to meet your organization’s business needs. The following user management tasks are available:
@@ -468,7 +469,8 @@ Before sharing APIs from Anypoint Platform to MuleSoft Composer, ensure that:
 
 * Composer organizations are <<connect-composer-to-anypoint-platform,linked to Anypoint organizations>>.
 * The API must be accessible from the public internet.
-* The API must be published to a xref:exchange::to-share-api-asset-to-portal.adoc[public portal].
+//* The API must be published to a xref:exchange::to-share-api-asset-to-portal.adoc[public portal].
+//1/8/24 - This has been removed as far as we know as per Sai Phang - leaving this here just in case we need to readd the content. 
 
 For more information on how to connect externally available APIs, refer to xref:ms_composer_rest_consumer_reference.adoc[Rest Consumer Connector].
 
@@ -488,6 +490,20 @@ The *Request access* window appears.
 . In the *Request access* window, click *Request access*.
 
 . Open MuleSoft Composer and then open the flow to ensure that the shared API appears in the *Shared Apps* section of the canvas.
+
+=== Share an API Instance with a Single-Tenant Anypoint Platform Organization
+
+You can connect a single-tenant, Anypoint Platform organization to Composer for API Sharing. Using API Sharing, you can expand the connectivity to more systems, have more control over both API management and governance, and consume complex APIs built in Anypoint Platform.
+
+To enable API sharing for a single-tenant organization: 
+
+. <<api-sharing,Ensure that the shared API appears in the *Shared Apps* section of the canvas>> and that you have the <<admin-manage-users,Composer Super User>> role.
+. In the Composer *Home* page, click *Settings*.
++
+The *Account* page appears.
+. Expand the *Shared APIs* section in the *General* tab and click the radio button to enable API Sharing for a single-tenant organization. 
++
+A Client App named _Composer_ is created within the organization. If a Client App named _Composer_ already exists, manually select the Client App to which you want to grant access from the drop-down menu. 
 
 === Disconnect Composer Connection to Anypoint Platform
 

@@ -1,5 +1,5 @@
 = MuleSoft Composer Release Notes
-:page-revdate: January 8, 2024
+:page-revdate: January 9, 2024
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -7,7 +7,7 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
-== January 8, 2024
+== January 9, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 

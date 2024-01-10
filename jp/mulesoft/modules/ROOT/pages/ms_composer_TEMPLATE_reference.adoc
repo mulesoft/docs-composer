@@ -1,0 +1,48 @@
+= <ConnectorName> Connector リファレンス
+
+<Intro information>
+
+[NOTE]
+これはテストメモです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+<Connector> にログインするために使用するユーザ名。
+
+Password (パスワード)::
+
+<Connector> にログインするために使用するパスワード。
+
+<Field>::
+
+<Details>。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+<Field>::
+
+<Details>。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+<Field>::
+
+<Details>。
+
+== オブジェクト
+
+<Field>::
+
+<Details>。
+
+include::_partials/see-also.adoc[]

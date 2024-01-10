@@ -38,6 +38,10 @@ Monitors one sheet within a spreadsheet and triggers when a row is created or up
 * Header rows excluded
 * Trigger works with My Drive, not Team Drive
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

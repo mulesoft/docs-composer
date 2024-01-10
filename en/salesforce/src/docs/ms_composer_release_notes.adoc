@@ -1,4 +1,7 @@
 = Release Notes for MuleSoft Composer for Salesforce
 
+
+* xref:ms_composer_release_notes_2023.adoc[Release Notes 2023]
 * xref:ms_composer_release_notes_2022.adoc[Release Notes 2022]
 * xref:ms_composer_release_notes_2021.adoc[Release Notes 2021]
+* xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations]

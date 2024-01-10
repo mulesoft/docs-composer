@@ -11,6 +11,8 @@ Some examples of templates include:
 * Cloud-specific templates, such as Service Cloud or Revenue Cloud
 * Connector-specific templates, such as Salesforce, ServiceNow, NetSuite, or Jira
 
+You can search for templates (by template name, connector name, or template description) and filter templates (by use case category or connector).
+
 For more information about how to create a new flow from template, refer to xref:ms_composer_flows.adoc#create-a-new-flow-from-template[Create a New Flow From Template].
 
 == Customizing Your Template

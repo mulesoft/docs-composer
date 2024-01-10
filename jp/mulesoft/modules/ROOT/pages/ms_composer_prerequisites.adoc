@@ -1,0 +1,515 @@
+ifeval::["{product}"=="salesforce"]
+= MuleSoft Composer for Salesforce: はじめに
+endif::[]
+ifeval::["{product}"=="mulesoft"]
+= MuleSoft Composer: はじめに
+endif::[]
+
+コンポーザをセットアップする前に、記載された要件を満たしていることを確認します。その後、セットアップを行ってコンポーザの使用を開始することができます。
+
+ifeval::["{product}"=="salesforce"]
+== 要件と制限事項
+
+* コンポーザをセットアップする組織は、Salesforce Unlimited Edition、Enterprise Edition、または Performance Edition の組織である必要があります。Sandbox 組織では設定できません。
+* 組織でサポートされる同時ユーザの最大数は 25 です。
+* 組織では Lightning が有効になっている必要があります。
+* 組織用の個別の Mulesoft Composer ライセンスを購入する必要があります。
+* 会社のネットワークに厳格なファイアウォールやブロックされている IP アドレスのリストがある場合、ネットワーク管理者は、許可されているアドレスのリストに ​`*.mulesoft.com`​ を追加する必要があります。
++
+コンポーザで使用される IP アドレスは動的なため、Mulesoft では IP アドレスのリストを提供できません。
+* データ取得元とデータ取得先に対して作成した接続の IP 制限を緩和する必要があります。手順は、このトピックの設定セクションに含まれます。
+* 現在、コンポーザではモバイルプラットフォームはサポートされていません。
+
+=== ブラウザ要件:
+
+* コンポーザへのアクセスにシークレットモードや非公開のブラウザを使用しないでください。
+* コンポーザでは Salesforce キャンバスが使用されるため、キャンバスと同じブラウザ要件があります。つまり、Safari ブラウザの場合、Safari セキュリティ設定で ​*[サイト越えトラッキングを防ぐ]*​ オプションをオフにする必要があります。
+* Firefox または Chrome を使用する場合、サードパーティ Cookie を許可する必要があります。
+* 別のシステムへの接続を作成する場合、各接続のコンポーザリファレンスセクションに記載された要件と制限を確認します。
+* 日付値を含むコンポーザ項目では YYYY-MM-DDThh:mmZ 形式が使用されます。
+
+== コンポーザのセットアップ
+
+コンポーザを使用できるようにするには、Salesforce システム管理者はコンポーザをセットアップする必要があります。このセットアップには、インストール、権限の割り当て、Salesforce 組織設定のいくつかの調整が含まれます。
+
+=== コンポーザ設定ページを見つける
+
+. Salesforce 組織にシステム管理者としてログインします。
+. [設定] 歯車アイコンをクリックして、​*[設定]*​ を選択します。
+. 検索バーに「​`composer`​」と入力します。
+. 検索結果から ​*[MuleSoft Composer]*​ を選択します。
++
+検索結果でコンポーザが見つからない場合は、組織用のコンポーザのライセンスを購入する必要がある可能性があります。
+
+次に、コンポーザをインストールし、Salesforce 組織にいくつかの調整を加えて、コンポーザが適切に機能するようにします。
+
+=== システム管理者: セッション設定を調整する
+
+. Salesforce コンポーザサイドバーで ​*[Settings (設定)]*​ > ​*[Security (セキュリティ)]*​ > ​*[Session Settings (セッション設定)]*​ をクリックします。
+. *[Sessions Settings (セッション設定)]*​ ページの ​*[Session Settings (セッション設定)]*​ サブセクションで、​*[Lock sessions to the IP address from which they originated (ログイン時の IP アドレスとセッションをロックする)]*​ チェックボックスをオフにします。
+. *[Save (保存)]*​ をクリックします。
+
+=== システム管理者: コンポーザをインストールして Salesforce 組織設定を調整する
+
+. *[Mulesoft Composer の管理パッケージをインストール]*​ セクションで、​*[管理パッケージをインストール]*​ をクリックします。
++
+インストールが完了すると、追加のステップが表示されます。システム管理者がインストールを実行すると、コンポーザ権限セットが自動的に付与されます。
+
+. *[Change the Type of Permitted Users (許可されているユーザの種別を変更)]*​ セクションで ​*[Open Settings (設定を開く)]*​ をクリックし、コンポーザ用の Salesforce 接続アプリケーションページを起動して、2 個の設定を変更します。
+   .. *[許可されているユーザ]*​ ドロップダウンで、​*[管理者が承認したユーザは事前承認済み]*​ を選択します。
+   .. *[IP 制限の緩和]*​ ドロップダウンで、​*[IP 制限の緩和]*​ を選択します。
+   .. 変更を保存します。
+
+. *[Configure MuleSoft Services (MuleSoft サービスを設定)]*​ セクションで、​*[Initiate Configuration (設定を開始)]*​ をクリックします。
++
+Salesforce 証明書は 1 年後に期限切れになります。期限切れの証明書を更新するには、​*[Initiate Configuration (設定を開始)]*​ をクリックします。
++
+MuleSoft で、コンポーザ専用の環境を提供するための Anypoint Platform のインスタンスが作成および設定されます。
+. *[Assign Users to MuleSoft Composer (ユーザへの MuleSoft Composer の割り当て)]*​ セクションで、​*[Assign Users (ユーザの割り当て)]*​ ボタンをクリックして、Salesforce の ​*[権限セット]*​ ページに直接移動します。
+   .. *[Composer User (コンポーザユーザ)]*​ または ​*[Composer Administrator (コンポーザ管理者)]*​ をクリックします。
+   ... *「Composer User (コンポーザユーザ)」*​権限では、フローの作成と管理など、コンポーザ機能全体にアクセスできます。 
+   ... *「Composer Administrator (コンポーザ管理者)」*​権限では、​*[Settings (設定)]*​ ページにアクセスして、メール設定や API 共有を管理できます。 
+   .. *[Manage Assignments (割り当ての管理)]*​ をクリックして、​*[Add Assignments (割り当てを追加)]*​ をクリックします。
+   .. コンポーザの使用権限を受け取る各ユーザの横にあるチェックボックスをオンにします。
+   .. *[Add (追加)]*​ をクリックします。この権限セットの割り当てまたは取り消しはいつでも行うことできます。
+. *[Launch MuleSoft Composer (MuleSoft Composer を起動)]*​ セクションで、​*[Launch (起動)]*​ ボタンをクリックしてコンポーザを開始します。
+
+コンポーザが適切に設定されました。アプリケーションランチャーで「コンポーザ」を検索し、コンポーザを開始することができます。
+
+1 つのライセンスを使用して 2 つの Salesforce 組織間でデータを同期できます。コンポーザをセットアップする場合、フローを作成するプライマリ組織を選択し、その組織のコンポーザ内で 1 つ以上の他の Salesforce 組織への接続を作成できます。
+
+== ユーザ: コンポーザへのアクセス権を確認する
+
+コンポーザをインストールした Salesforce システム管理者でない場合、コンポーザアプリケーションへのアクセス権があることを確認します。
+
+. Salesforce 組織でアプリケーションランチャーを開きます。
+. 検索バーに「​`composer`​」と入力します。
+. 検索結果から ​*[MuleSoft Composer]*​ を選択します。
++
+検索結果に ​*[MuleSoft Composer]*​ が表示されない場合、Salesforce 組織用のコンポーザを購入する必要があるか、コンポーザにアクセスする権限がない可能性があります。
+
+コンポーザページが表示されたら、最初のフローを作成する準備が整っています。コンポーザを使用する前に詳細を確認する場合は、このセクションの他のトピックを参照してください。
+
+== フローの失敗通知の有効化
+
+システム管理者はメールを介したフローの失敗通知を有効にできます。有効になっていると、15 分ごとまたはフローの実行時に実行をチェックします。フローが失敗すると、コンポーザはフローのオーナーにメールを送信します。
+
+注意:
+
+* 同じエラーに対して最大 4 個の連続するメールが送信されます。
+* フローのエラーログは 24 時間ごとにリセットされます。
+* エラーログはフローが実行されている間のみ実行されます。
+
+メール通知を有効にする手順は、次のとおりです。
+
+. コンポーザの ​*[Home (ホーム)]*​ ページで、​*[Settings (設定)]*​ をクリックします。 +
+*[Account (アカウント)]*​ ページが表示されます。 
+. サイドバーで ​*[Email Notification (メール通知)]*​ をクリックします。
+. *[Receive email notifications when flows fail to run (フローの実行が失敗した場合にメール通知を受信)]*​ 行で、メール通知を有効にするようにボタンを切り替えます。
+
+[[connect-composer-to-anypoint-platform]]
+== Anypoint Platform へのコンポーザの接続
+
+MuleSoft Composer for Salesforce と Anypoint Platform の両方を使用している組織は 2 つの製品を接続できます。
+
+Anypoint Platform に MuleSoft Composer for Salesforce をリンクする手順は、次のとおりです。
+
+. MuleSoft Composer for Salesforce のページの一番上にある ​*[Settings (設定)]*​ をクリックします。
+
+. *[Account (アカウント)]*​ セクションで、​*[Organization ID (組織 ID)]*​ 項目の値をコピーします。
+
+. MuleSoft Composer for Salesforce に接続する Anypoint Platform 組織にログインします。 +
+*[Anypoint Platform]*​ ページが表示されます。
+
+. ナビゲーションペインで、​xref:access-management::managing-your-account.adoc[*[Access Management (アクセス管理)]*]​ をクリックします。 +
+*[Access Management (アクセス管理)]*​ ページが表示されます。
+
+. *[Access Management (アクセス管理)]*​ ページで、​*[Composer Sync (コンポーザ同期)]*​ をクリックします。​*[Composer Sync (コンポーザ同期)]*​ ボタンが使用できない場合は、​*[Try New Features (新機能を試す)]*​ をクリックしてボタンを有効化してください。 +
+*[Add Composer Organization (コンポーザ組織を追加)]*​ ウィンドウが表示されます。
+
+. *[Add Composer Organization (コンポーザ組織を追加)]*​ ウィンドウの ​*[Organization ID (組織 ID)]*​ 項目で、MuleSoft Composer for Salesforce の ​*[Account (アカウント)]*​ ページからコピーした​*組織 ID*​ を貼り付けて、​*[Add (追加)]*​ をクリックします。
+
+. MuleSoft Composer for Salesforce を開き、ページを更新します。
+
+. MuleSoft Composer for Salesforce のナビゲーションペインで、​*[Settings (設定)]*​ > ​*[Account (アカウント)]*​ をクリックします。 +
+*[Account (アカウント)]*​ ページが表示され、Anypoint Platform からのリンク要求が表示されます。
+
+. *[Review and Confirm (レビューと確認)]*​ をクリックします。
+
+. *[Access Token (アクセストークン)]*​ セクションで、​*[Authenticate in Anypoint (Anypoint で認証)]*​ をクリックします。 +
+Anypoint Platform ログインページが表示されます。
+
+. Anypoint Platform にログインします。Anypoint Platform にログインするユーザが​xref:2.x@api-manager::access-client-app-id-task[クライアントアプリケーションを作成するための正しい権限]​を持っていることを確認してください。
+
+. *[Client App (クライアントアプリケーション)]*​ セクションで、​*[Create Client App (クライアントアプリケーションを作成)]*​ をクリックします。 +
+これで、コンポーザ組織が Anypoint 組織にリンクされました。
+
+[[api-sharing]]
+== API 共有
+
+MuleSoft Anypoint Platform ユーザは、Mulesoft Composer for Salesforce フローでのコンシューム用に Anypoint Platform で管理されている外部で利用可能な API をビジネスユーザと共有できるようになりました。
+
+API を Anypoint Platform から Mulesoft Composer for Salesforce に共有する前に、次のことを確認してください。
+
+* 組織で API 管理に Anypoint Platform を使用している。
+* Anypoint 組織で​xref:2.x@api-manager::configure-multiple-credential-providers.adoc#how-using-multiple-external-client-providers-works[外部クライアントプロバイダ]​を使用していない。
+* 現在、Anypoint 組織に「Composer」という名前のクライアントアプリケーションがない。
+* 組織に API Manager によって管理された以下に準拠する ​xref:exchange::to-create-an-asset.adoc#create-an-api-asset[REST API]​ がある。
+
+** API 仕様は、RAML または OpenAPI のいずれかを使用している。
+** API は、基本認証、ベアラートークン、またはクライアント ID とクライアントシークレットを組み合わせた API キーを使用している。
+** API に API Manager の ​*[Consumer Endpoint (コンシューマエンドポイント)]*​ 項目の値がある。
+
+* コンポーザ組織が ​<<connect-composer-to-anypoint-platform,​Anypoint 組織にリンク>>​されている。
+* 公開インターネットから API にアクセスできる。
+* API が​xref:exchange::to-share-api-asset-to-portal.adoc[公開ポータル]​にパブリッシュされている。
+
+外部で使用可能な API を接続する方法についての詳細は、​xref:ms_composer_rest_consumer_reference.adoc[「Rest Consumer Connector リファレンス」]​を参照してください。
+
+=== API インスタンスをコンポーザと共有する
+
+Anypoint API Manager で API を管理する場合、それらの API を MuleSoft Composer for Salesforce と共有できます。
+
+API インスタンスを MuleSoft Composer for Salesforce と共有する手順は、次のとおりです。
+
+. xref:2.x@api-manager::create-instance-task.adoc[Anypoint Platform で API インスタンスを作成]​します。
+
+. Anypoint Platform のナビゲーションペインで、​*[Exchange]*​ をクリックします。
+
+. リストで、共有する API インスタンスを見つけて ​*[Request access (アクセス権を要求)]*​ をクリックし、MuleSoft Composer for Salesforce によって作成されたクライアントアプリケーションをクリックします。 +
+*[Request access (アクセス権を要求)]*​ ウィンドウが表示されます。
+
+. *[Request access (アクセス権を要求)]*​ ウィンドウで、​*[Request access (アクセス権を要求)]*​ をクリックします。
+
+. MuleSoft Composer for Salesforce を開き、フローを開いて、共有 API がキャンバスの ​*[Shared Apps (共有アプリケーション)]*​ セクションに表示されていることを確認します。
+
+=== Anypoint Platform へのコンポーザ接続を切断する
+
+MuleSoft Composer for Salesforce から Anypoint Platform への接続を切断できます。ただし、この接続を削除しても、既存の設定は削除されません。
+
+Anypoint Platform への MuleSoft Composer for Salesforce 接続を切断する手順は、次のとおりです。
+
+. 切断する MuleSoft Composer for Salesforce への接続を含む Anypoint Platform 組織にログインします。 +
+*[Anypoint Platform]*​ ページが表示されます。
+
+. ナビゲーションペインで、​xref:access-management::managing-your-account.adoc[*[Access Management (アクセス管理)]*]​ をクリックします。 +
+*[Access Management (アクセス管理)]*​ ページが表示されます。
+
+. ナビゲーションペインで、​*[Connected Apps (接続アプリケーション)]*​ をクリックします。 +
+*[Connected Apps (接続アプリケーション)]*​ ページが表示されます。
+
+. 単一 API へのコンポーザのアクセスを削除する場合は、必要に応じて、​*[Connected Apps (接続アプリケーション)]*​ ページで API のオプションボタンをクリックしてから ​*[Remove (削除)]*​ をクリックします。
+
+. *[Owned Apps (所有アプリケーション)]*​ タブで、​*[Composer API Sharing (コンポーザ API 共有)]*​ の横にあるオプションボタンをクリックして、​*[Delete (削除)]*​ をクリックします。 +
+これで、MuleSoft Composer for Salesforce が Anypoint Platform から切断されました。
+
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+== 要件と制限事項
+
+* 組織でサポートされる同時ユーザの最大数は 25 です。
+* Anypoint Platform ライセンスとは別に販売されている MuleSoft Composer ライセンスを購入する必要があります。
+* 会社のネットワークに厳格なファイアウォールやブロックされている IP アドレスのリストがある場合、ネットワーク管理者は、許可されているアドレスのリストに ​`*.mulesoft.com`​ を追加する必要があります。
++
+コンポーザで使用される IP アドレスは動的なため、Mulesoft では IP アドレスのリストを提供できません。
+* コンポーザの設定手順で説明されているように、データ取得元とデータ取得先に対して作成した接続の IP 制限を緩和する必要があります。
+* 現在、コンポーザではモバイルプラットフォームはサポートされていません。
+
+=== ブラウザ要件:
+* コンポーザへのアクセスにシークレットモードや非公開のブラウザを使用しないでください。
+* Firefox または Chrome を使用する場合、サードパーティ Cookie を許可します。
+* 別のシステムに接続する場合、その接続に適用される要件と制限に従います。
+* 日付値を含むコンポーザ項目では ​_YYYY-MM-DDThh:mmZ_​ 形式が使用されます。
+
+== コンポーザのセットアップ
+
+MuleSoft Composer を購入したら、MuleSoft Composer 組織が自動的に作成され、歓迎メールを受信します。これで、MuleSoft Composer に初めてアクセスできます。
+
+正常に接続したら、その MuleSoft Composer 組織にアクセスするユーザを招待します。
+
+=== 初めて MuleSoft Composer にアクセスします。
+
+組織のプライマリシステム管理者として、次の手順に従って MuleSoft Composer 組織を開始します。
+
+. 自分のメールアカウントにログインし、MuleSoft Composer からの歓迎メールを見つけて、​*[Accept invitation (招待を受け入れる)]*​ をクリックします。
+. *[Create account (アカウントを作成)]*​ フォームで、パスワードを含む必須項目を入力します。パスワードは 8 文字以上で、大文字、小文字、数字がそれぞれ 1 つ以上含まれている必要があります。
+. *[Create account (アカウントを作成)]*​ をクリックします。
+. 作成したユーザ名とパスワードを使用して Mulesoft Composer にログインします。
+. *[Register a Verification Method (検証方法を登録)]*​ で検証方法を選択し、手順に従って多要素認証をセットアップしたら、​*[Connect (接続)]*​ をクリックします。 +
+Mulesoft Composer 概要ページが表示されます。
+
+=== Mulesoft Composer にアクセスするユーザを招待
+
+システム管理者ログイン情報を使用して MuleSoft Composer 組織にアクセスしたら、組織のユーザを新しい MuleSoft Composer アカウントに招待します。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Users (ユーザ)]*​ をクリックします。
+. *[Users (ユーザ)]*​ ページで、​*[Add Users (ユーザを追加)]*​ をクリックします。
+. *[Invite New Users (新規ユーザを招待)]*​ ウィンドウで、名前をカンマで区切って、招待するユーザのメールアドレスを入力します。
+. このユーザグループに適用する権限を選択し、​*[Invite (招待)]*​ をクリックします。
++
+次の権限を使用できます。
+
+* *Builder (ビルダー)*​: グループのすべてのユーザがフローを作成および管理できます。
+* *Administrator (管理者)*​: グループのすべてのユーザがユーザの招待と管理に加えてフローの作成と管理ができます。
++
+招待されたユーザは MuleSoft Composer の歓迎メールを受信します。
+
+=== 受け入れ保留中の招待の監視
+
+ユーザを招待したら、まだ受け入れられていない保留中の各招待を監視できます。
+
+保留中の招待を監視する手順は、次のとおりです。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Users (ユーザ)]*​ をクリックします。
+. *[Users (ユーザ)]*​ ページで ​*[Pending Invitations (保留中の招待)]*​ タブを選択します。 +
+ユーザの招待に関する情報が表示されます。メニュー:
+.. 監視するユーザ招待の右にあるオプションアイコンをクリックします。
+.. このユーザへの招待を送信してから 14 日を超えており、招待がまもなく期限切れになる場合、招待を再送信するには ​*[Resend Invite (招待を再送信)]*​ をクリックします。
+.. このユーザへの招待を取り消すには、​*[Revoke Invite (招待を取り消し)]*​ をクリックします。
+
+== システム管理者: ユーザを管理する
+
+システム管理者は、組織のビジネスニーズを満たすように Mulesoft Composer を管理する責任があります。使用可能なユーザ管理タスクは次のとおりです。
+
+* ユーザロールの変更
+* ユーザパスワードのリセット
+* ユーザの多要素認証 (MFA) 方法のリセット
+* ユーザの削除
+
+=== ユーザロールの変更
+
+ユーザのロールを変更する手順は、次のとおりです。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Users (ユーザ)]*​ をクリックします。
+. *[Users (ユーザ)]*​ ページで、ユーザのメールアドレスの横にあるオプションアイコンをクリックして、​*[Manage (管理)]*​ をクリックします。 +
+ユーザのページが表示されます。
+. *[Permissions (権限)]*​ タブを選択します。
+. ユーザの権限設定を選択し、​*[Save (保存)]*​ をクリックします。
+
+=== ユーザパスワードのリセット
+
+ユーザのパスワードをリセットする手順は、次のとおりです。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Users (ユーザ)]*​ をクリックします。
+. *[Users (ユーザ)]*​ ページで、ユーザのメールアドレスの横にあるオプションアイコンをクリックして、​*[Reset Password (パスワードをリセット)]*​ をクリックします。 +
+MuleSoft Composer の MFA 設定のリセット手順が記載されたメールがユーザに送信されます。
+
+=== ユーザの多要素認証 (MFA) 方法のリセット
+
+ユーザの MFA 方法をリセットする手順は、次のとおりです。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Users (ユーザ)]*​ をクリックします。
+. *[Users (ユーザ)]*​ ページで、ユーザのメールアドレスの横にあるオプションアイコンをクリックして、​*[Reset Multi-factor Auth (多要素認証をリセット)]*​ をクリックします。 +
+MuleSoft Composer のパスワードのリセット手順が記載されたメールがユーザに送信されます。
+
+=== ユーザの削除
+
+ユーザを削除する手順は、次のとおりです。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Users (ユーザ)]*​ をクリックします。
+. *[Users (ユーザ)]*​ ページで、ユーザのメールアドレスの横にあるオプションアイコンをクリックして、​*[Delete (削除)]*​ をクリックします。 +
+ユーザの削除は元に戻すことができないことを警告するメッセージが表示されます。
+. *[Delete (削除)]*​ をクリックします。
+
+=== 複数の ID プロバイダ (IDP) の有効化
+
+システム管理者は、組織の ID プロバイダ (IDP) をユーザが追加できるようにすることができます。注意:
+
+* MuleSoft Composer から IDP ユーザが削除された後、そのユーザが IDP を使用して MuleSoft Composer にログインすると、ユーザプロファイルは ​`Disabled`​ 状態に復元されます。ユーザが再度認証できるようにするには、状態を ​`Enabled`​ に切り替えます。
+* *[Users (ユーザ)]*​ ページを介した新規ユーザの作成は無効にできません。
+* IDP ユーザを削除しても、そのユーザによりアクティブ化されたフローは停止できません。
+* MuleSoft Composer が Okta で OpenID Connect SSO プロバイダとして動的に登録されている場合、Okta では MuleSoft Composer の名前は「Anypoint Platform」です。
+
+MuleSoft での ID 管理についての詳細は、​xref:access-management::external-identity.adoc[アクセス管理]​のドキュメントを参照してください。
+
+OpenID Connect (OIDC) IDP を有効にする手順は、次のとおりです。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Multiple IDP (複数の IDP)]*​ をクリックします。
+. *[Identity Provider (ID プロバイダ)]*​ ページで、​*[Add Identity Provider (ID プロバイダを追加)]*​ > ​*[OpenID Connect]*​ をクリックします。
+. *[New Identity Provider (新規 ID プロバイダ)]*​ ページで、必須項目に入力します。
++
+* *Name (名前)*​: この IDP のニックネーム。
+* *Client Registration URL (クライアント登録 URL)*​: ID プロバイダのクライアントアプリケーションを動的に登録するための URL。この項目は、​*[Dynamic Registration (動的登録)]*​ が選択された場合に表示されます。
+* *Authentication Header (認証ヘッダー)*​: サーバを認証するためのログイン情報を提供するヘッダー。このヘッダーは、プロバイダが認証済みのクライアントに対する登録要求を制限している場合に必須です。この項目は、​*[Dynamic Registration (動的登録)]*​ が選択された場合に表示されます。
+* *Client ID (クライアント ID)*​: 手動で作成したクライアントアプリケーションに対して指定した一意の識別子。この項目は、​*[Manual Registration (手動登録)]*​ が選択された場合に表示されます。
+* *Client Secret (クライアントシークレット)*​: ID プロバイダで MuleSoft Composer 組織を認証するためのパスワードまたはシークレット。この項目は、​*[Manual Registration (手動登録)]*​ が選択された場合に表示されます。
+* *OpenID Connect Issuer (OpenID Connect 発行者)*​: OpenID プロバイダの場所。ほとんどのプロバイダでは、​`.well-known/openid-configuration`​ が発行者に追加され、OpenID Connect 仕様のメタデータ URL が生成されます。OpenID プロバイダが Salesforce の場合、​`issuer`​ の値を指定する必要があります。
+* *Authorize URL (認証 URL)*​: ユーザが OpenID Connect クライアントアプリケーションを認証してユーザの ID へのアクセスを許可する URL。
+* *Token URL (トークン URL)*​: 安全な JSON Web トークンでエンコードされたユーザの ID を提供する URL。
+* *User Info URL (ユーザ情報 URL)*​: ユーザプロファイル情報をクライアントアプリケーションに返す URL。
+
+. *[Advanced Settings (詳細設定)]*​ を展開し、必要に応じて以下の値を入力します。
++
+* *Group Scope (グループスコープ)*​: グループクレームを要求するための OIDC スコープ。
+* *Group Attribute JSON Data Expression (グループ属性の JSON データ式)*​: ユーザ情報または ID トークンからグループを選択するために使用する JSONata 式。結果は文字列の配列である必要があります。
+* *[Disable server certificate validation (サーバ証明書の検証を無効化)]*​ チェックボックス: OpenID クライアント管理インスタンスで自己署名証明書または内部認証機関によって署名される証明書が表示される場合にサーバ証明書の検証を無効にするには、これをオンにします。
+
+. *[Save (保存)]*​ をクリックします。
+. MuleSoft Composer からログアウトし、​*[New Identity Provider (新規 ID プロバイダ)]*​ ページで入力したサインオン URL に移動します。次に、ID プロバイダを通じてログインして設定をテストします。
+
+SAML 2.0 IDP を有効にする手順は、次のとおりです。
+
+SAML 2.0 のファイルベースの設定はサポートされていません。
+
+. MuleSoft Composer サイドバーで ​*[Settings (設定)]*​ をクリックし、​*[Multiple IDP (複数の IDP)]*​ をクリックします。
+. *[Identity Provider (ID プロバイダ)]*​ ページで、​*[Add Identity Provider (ID プロバイダを追加)]*​ > ​*[SAML 2.0]*​ をクリックします。
+. *[New Identity Provider (新規 ID プロバイダ)]*​ ページで、必須項目に入力します。
++
+* *Name (名前)*​: この IDP のニックネームを入力します。
+* *Sign On URL (サインオン URL)*​: IDP から提供されたサインイン用のリダイレクト URL。 例: `\https://example.com/sso/saml`​。
+* *Sign Off URL (サインオフ URL)*​: サインアウト要求をリダイレクトするための URL。これにより、ユーザが MuleSoft Composer からサインアウトすると同時に、SAML ユーザの状況が ​`signed out`​ に設定されます。
+* *Issuer (発行者)*​: SAML アサーションを送信する ID プロバイダインスタンスの ID。
+* *Public Key (公開鍵)*​: SAML アサーションに署名するために ID プロバイダによって提供される公開鍵。これは SAML 応答の ​`X509Certificate`​ 値です。
+* *Audience (オーディエンス)*​: MuleSoft Composer 組織を識別する任意の文字列値。この文字列の通常の値は ​`<organizationDomain>.composer.mulesoft.com`​ です。
+* *Single Sign On Initiation (シングルサインオンの開始)*​: MuleSoft Composer、ID プロバイダ (Okta など)、またはその両方で SSO を開始できるかどうかを指定します。
+
+** *[Service Provider Only (サービスプロバイダのみ)]*​ オプションでは、Mulesoft Composer のみが SSO を開始できます。
+** *[Identity Provider Only (ID プロバイダのみ)]*​ オプションでは、外部 ID プロバイダのみが SSO を開始できます。
+** *[Both (両方)]*​ オプションでは、Mulesoft Composer または外部 ID プロバイダが SSO を開始できます。 +
+新しく設定された ID プロバイダ設定の場合、この設定のデフォルト値は ​*[Both (両方)]*​ です。
+
+. *[Advanced Settings (詳細設定)]*​ を展開し、必要に応じて以下の値を入力します。
++
+* *Username Attribute (ユーザ名属性)*​: ユーザの名前にマップされる SAML ​`AttributeStatements`​ の項目名。値が設定されていない場合は、SAML ​`Subject`​ の ​`NameID`​ 属性が使用されます (注意: これは SAML ​`AttributeStatements`​ の外部となります)。
+* *First Name Attribute (名属性)*​: `First Name`​ にマップされる SAML ​`AttributeStatements`​ の項目名。
+* *Last Name Attribute (姓属性)*​: `Last Name`​ にマップされる SAML ​`AttributeStatements`​ の項目名。
+* *Email Attribute (メール属性)*​: `Email`​ にマップされる SAML ​`AttributeStatements`​ の項目名。
+* *Group Attribute (グループ属性)*​: `Group`​ にマップされる SAML ​`AttributeStatements`​ の項目名。
+* *[Require encrypted SAMl assertions (暗号化された SAML アサーションが必須)]*​ チェックボックス。有効化されている場合は、IDP から送信される SAML アサーションが暗号化されていて、前提条件に記述されているガイドラインに準拠している必要があります。
+
+. *[Save (保存)]*​ をクリックします。
+. MuleSoft Composer からログアウトし、​*[New Identity Provider (新規 ID プロバイダ)]*​ ページで入力したサインオン URL に移動します。次に、ID プロバイダを通じてログインして設定をテストします。
+
+== フローの失敗通知の有効化
+
+システム管理者はメールを介したフローの失敗通知を有効にできます。有効になっていると、15 分ごとまたはフローの実行時に実行をチェックします。フローが失敗すると、コンポーザはフローのオーナーにメールを送信します。
+
+注意:
+
+* 同じエラーに対して最大 4 個の連続するメールが送信されます。
+* フローのエラーログは 24 時間ごとにリセットされます。
+* エラーログはフローが実行されている間のみ実行されます。
+
+メール通知を有効にする手順は、次のとおりです。
+
+. コンポーザの ​*[Home (ホーム)]*​ ページで、​*[Settings (設定)]*​ をクリックします。 +
+*[Account (アカウント)]*​ ページが表示されます。 
+. サイドバーで ​*[Email Notification (メール通知)]*​ をクリックします。
+. *[Receive email notifications when flows fail to run (フローの実行が失敗した場合にメール通知を受信)]*​ 行で、メール通知を有効にするようにボタンを切り替えます。
+
+[[connect-composer-to-anypoint-platform]]
+== Anypoint Platform へのコンポーザの接続
+
+MuleSoft Composer と Anypoint Platform の両方を使用している組織は 2 つの製品を接続できます。
+
+Anypoint Platform にコンポーザをリンクする手順は、次のとおりです。
+
+. MuleSoft Composer のナビゲーションペインで、​*[Settings (設定)]*​ > ​*[Account (アカウント)]*​ をクリックします。 +
+*[Account (アカウント)]*​ ページが表示されます。
+
+. *[Account (アカウント)]*​ ページで、​*[Organization ID (組織 ID)]*​ 項目の値をコピーします。
+
+. MuleSoft Composer に接続する Anypoint Platform 組織にログインします。 +
+*[Anypoint Platform]*​ ページが表示されます。
+
+. ナビゲーションペインで、​xref:access-management::managing-your-account.adoc[*[Access Management (アクセス管理)]*]​ をクリックします。 +
+*[Access Management (アクセス管理)]*​ ページが表示されます。
+
+. *[Access Management (アクセス管理)]*​ ページで、​*[Composer Sync (コンポーザ同期)]*​ をクリックします。​*[Composer Sync (コンポーザ同期)]*​ ボタンが使用できない場合は、​*[Try New Features (新機能を試す)]*​ をクリックしてボタンを有効化してください。 +
+*[Add Composer Organization (コンポーザ組織を追加)]*​ ウィンドウが表示されます。
+
+. *[Add Composer Organization (コンポーザ組織を追加)]*​ ウィンドウの ​*[Organization ID (組織 ID)]*​ 項目で、MuleSoft Composer の ​*[Account (アカウント)]*​ ページからコピーした​*組織 ID*​ を貼り付けて、​*[Add (追加)]*​ をクリックします。
+
+. MuleSoft Composer を開き、ページを更新します。
+
+. MuleSoft Composer のナビゲーションペインで、​*[Settings (設定)]*​ > ​*[Account (アカウント)]*​ をクリックします。 +
+*[Account (アカウント)]*​ ページが表示され、Anypoint Platform からのリンク要求が表示されます。
+
+. *[Review and Confirm (レビューと確認)]*​ をクリックします。
+
+. *[Access Token (アクセストークン)]*​ セクションで、​*[Authenticate in Anypoint (Anypoint で認証)]*​ をクリックします。 +
+Anypoint Platform ログインページが表示されます。
+
+. Anypoint Platform にログインします。Anypoint Platform にログインするユーザが​xref:2.x@api-manager::access-client-app-id-task[クライアントアプリケーションを作成するための正しい権限]​を持っていることを確認してください。
+
+. *[Client App (クライアントアプリケーション)]*​ セクションで、​*[Create Client App (クライアントアプリケーションを作成)]*​ をクリックします。 +
+これで、コンポーザ組織が Anypoint 組織にリンクされました。
+
+[[api-sharing]]
+== API 共有
+
+MuleSoft Anypoint Platform ユーザは、MuleSoft Composer フローでのコンシューム用に Anypoint Platform で管理されている外部で利用可能な API をビジネスユーザと共有できます。
+
+API を Anypoint Platform から MuleSoft Composer に共有する前に、次のことを確認してください。
+
+* 組織で API 管理に Anypoint Platform を使用している。
+* Anypoint 組織で​xref:2.x@api-manager::configure-multiple-credential-providers.adoc#how-using-multiple-external-client-providers-works[外部クライアントプロバイダ]​を使用していない。
+* 現在、Anypoint 組織に「Composer」という名前のクライアントアプリケーションがない。
+* 組織に API Manager によって管理された以下に準拠する ​xref:exchange::to-create-an-asset.adoc#create-an-api-asset[REST API]​ がある。
+
+** API 仕様は、RAML または OpenAPI のいずれかを使用している。
+** API は、基本認証、ベアラートークン、またはクライアント ID とクライアントシークレットを組み合わせた API キーを使用している。
+** API に API Manager の ​*[Consumer Endpoint (コンシューマエンドポイント)]*​ 項目の値がある。
+
+* コンポーザ組織が ​<<connect-composer-to-anypoint-platform,​Anypoint 組織にリンク>>​されている。
+* 公開インターネットから API にアクセスできる。
+* API が​xref:exchange::to-share-api-asset-to-portal.adoc[公開ポータル]​にパブリッシュされている。
+
+外部で使用可能な API を接続する方法についての詳細は、​xref:ms_composer_rest_consumer_reference.adoc[「Rest Consumer Connector リファレンス」]​を参照してください。
+
+=== API インスタンスをコンポーザと共有する
+
+Anypoint API Manager で API を管理する場合、それらの API を MuleSoft Composer と共有できます。
+
+API インスタンスを MuleSoft Composer と共有する手順は、次のとおりです。
+
+. xref:2.x@api-manager::create-instance-task.adoc[Anypoint Platform で API インスタンスを作成]​します。
+
+. Anypoint Platform のナビゲーションペインで、​*[Exchange]*​ をクリックします。
+
+. リストで、共有する API インスタンスを見つけて ​*[Request access (アクセス権を要求)]*​ をクリックし、MuleSoft Composer によって作成されたクライアントアプリケーションをクリックします。 +
+*[Request access (アクセス権を要求)]*​ ウィンドウが表示されます。
+
+. *[Request access (アクセス権を要求)]*​ ウィンドウで、​*[Request access (アクセス権を要求)]*​ をクリックします。
+
+. MuleSoft Composer を開き、フローを開いて、共有 API がキャンバスの ​*[Shared Apps (共有アプリケーション)]*​ セクションに表示されていることを確認します。
+
+=== Anypoint Platform へのコンポーザ接続を切断する
+
+MuleSoft Composer から Anypoint Platform への接続を切断できます。ただし、この接続を削除しても、既存の設定は削除されません。
+
+Anypoint Platform への MuleSoft Composer 接続を切断する手順は、次のとおりです。
+
+. 切断する MuleSoft Composer への接続を含む Anypoint Platform 組織にログインします。 +
+*[Anypoint Platform]*​ ページが表示されます。
+
+. ナビゲーションペインで、​xref:access-management::managing-your-account.adoc[*[Access Management (アクセス管理)]*]​ をクリックします。 +
+*[Access Management (アクセス管理)]*​ ページが表示されます。
+
+. ナビゲーションペインで、​*[Connected Apps (接続アプリケーション)]*​ をクリックします。 +
+*[Connected Apps (接続アプリケーション)]*​ ページが表示されます。
+
+. 単一 API へのコンポーザのアクセスを削除する場合は、必要に応じて、​*[Connected Apps (接続アプリケーション)]*​ ページで API のオプションボタンをクリックしてから ​*[Remove (削除)]*​ をクリックします。
+
+. *[Owned Apps (所有アプリケーション)]*​ タブで、​*[Composer API Sharing (コンポーザ API 共有)]*​ の横にあるオプションボタンをクリックして、​*[Delete (削除)]*​ をクリックします。 +
+これで、MuleSoft Composer が Anypoint Platform から切断されました。
+
+endif::[]
+
+ifeval::["{product}"=="salesforce"]
+== 関連リソース
+
+* xref:ms_composer_overview.adoc[概要]
+* xref:ms_composer_reference.adoc[Composer Connector リファレンス]
+* https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
+* https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_framework_supported_browsers.htm[Salesforce キャンバスのブラウザサポート]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+== 関連リソース
+
+* xref:ms_composer_overview.adoc[概要]
+* xref:ms_composer_reference.adoc[Composer Connector リファレンス]
+* https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[ナレッジ記事]
+endif::[]

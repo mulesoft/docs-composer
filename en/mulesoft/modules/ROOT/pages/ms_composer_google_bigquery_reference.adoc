@@ -1,0 +1,112 @@
+= Google BigQuery Connector Reference
+
+Google BigQuery is a cloud data warehouse that enables customers to store and access their data while also offering tooling to run real-time analytics across datasets. 
+
+== Before You Begin   
+
+To use Google BigQuery Connector, you must have a https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google Workspace] account. Connections from Composer to personal Google accounts are not permitted. 
+
+When you connect to your Google Workspace account, a message appears indicating that the Composer is an https://support.google.com/cloud/answer/7454865?hl=en[unverified app]. This behavior is expected. To bypass this message and use the connector, on the *Google hasn’t verified this app* dialog, click *Advanced* > *Use anyway*.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies this connection from others.
++
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Project ID::
+
+The project ID from Google BigQuery.
+
+Username::
+
+The OAuth username that you use to log into Google BigQuery.
+
+Password::
+
+The OAuth password that you use to log into Google BigQuery.
+
+== Data Types
+
+The following data types are supported by Google BigQuery Connector:
+
+* INT64
+* BIGNUMERIC
+* BOOL
+* BYTES
+* DATE
+* DATETIME
+* FLOAT64
+* JSON
+* NUMERIC
+* STRING
+* TIME
+* TIMESTAMP
+
+== Triggers
+
+include::_partials/trigger-definition.adoc[]
+
+On New Row Source::
+
+Returns all new rows of a table based on a watermark every 15 seconds. Provide a value for the following fields: 
+
+* *Dataset name*
+* *Table name*
+* *New Watermark Column*: The following column data types are available for this field: 
+** DATE
+** DATETIME
+
+On New or Updated Row Source::
+
+Returns all new or updated rows of a table based on a watermark every 15 seconds. Provide a value for the following fields: 
+
+* *Dataset name*
+* *Table name*
+* *New Watermark Column*: The following column data types are available for this field: 
+** DATE
+** DATETIME
+* *Update Watermark Column*: The following column data types are available for this field: 
+** DATE
+** DATETIME
+
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Insert Rows::
+
+Updates a table by inserting one or more rows into the table. Provide a value for *SQL string*.
+
+Update Rows::
+
+Updates a set of rows. Provide a value for *SQL string*.
+
+Delete Rows::
+
+Deletes a set of rows. Provide a value for *SQL string*.
+
+Select Rows::
+
+Retrieves a set of rows. Provide a value for *SQL string*.
+
+== Input Parameters
+
+Query statements can include parameter values by adding `:` before the parameter name, such as `Select field from dataset.table where field = :param1`. You can define a value for the parameter in the *Input Parameters* section. For example, if you define `param1` as `12345`, the query statement is `Select field from dataset.table where field = 12345`.
+
+You must define a value for the parameter as either a literal string or an output value from previous actions. Note that input parameter values of String or date data types must be provided between single quotes using the expression editor. For literal strings, add the single quotes to the value in the editor, such as `’12345’`. For an output value from previous actions, select the custom expression option, add the single quotes to the custom expression in the editor, and apply the changes, such as `’Field From Previous Step’`.
+
+*Google BigQuery™ is a trademark of Google LLC.*
+
+include::_partials/see-also.adoc[]

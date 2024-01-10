@@ -14,6 +14,41 @@ The *Setup* page appears.
 The *Installed Packages* page appears.
 .
 
+To use the Salesforce Marketing Cloud Connector, you must first create an API Integration package and set permissions for email and SMS communication.
+
+== Create an API Integration Package and Set Permissions
+
+To create a package and set the permissions:
+
+. In Composer, click the gear icon in the upper right corner. +
+The *Setup* page appears.
+
+. On the left navigation pane, under *Platform Tools*, click *Apps* > *Packaging* > *Installed Packages*. +
+The *Installed Packages* page appears.
+
+. In the upper-right corner of the *Installed Packages* page, click *New*. +
+The *Package Details* window appears.
+
+. In the *Package Details* window, complete the following fields:
+.. *Name*: Enter a unique name for the new package.
+.. *Description*: Enter a description of the package.
+
+. Click *Save*. +
+The *Summary* page appears displaying the details of the new package.
+
+. In the *Summary* page, click *Add Component*. +
+The *Add Component* window appears.
+
+. In the *Add Component* window, select *API Integration* > *Server-to-Server*. +
+The *Set Server-to-Server* section appears.
+
+. In the *Set Server-to-Server* section, under *Channels*, select the checkboxes next to the following:
+.. In the *Email* column: *Read*, *Write*, *Send*
+.. In the *SMS* column: *Read*, *Write*, *Send*
+
+. Click *Save*. +
+The API Integration package is created and the permissions for email and SMS communication are set.
+
 == Connections
 
 To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with that system's required credentials. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
@@ -67,5 +102,9 @@ Sends an SMS to the customer using a specific template. Provide a value for the 
 * SMS Definition
 * Contact Key
 * Recipient’s Phone Number
+
+== Custom Fields 
+
+Custom fields are not supported. Using MuleSoft Composer, you can access standard field values for actions and triggers that you set in the Salesforce Marketing Cloud record.
 
 include::_partials/see-also.adoc[]

@@ -8,34 +8,60 @@ Some details of how to work with data in a flow are specific to the data source 
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
++
+To validate and test connectivity, Workday Connector uses a `Performance_Management` service with the `Get_Degrees` operation. You must ensure that your service account has the required permissions to operate on that service:
++
+[%header%autowidth.spread]
+|===
+|Security Policy|Domain/Functional Areas|Permitted Security Groups
+|Set Up: Skills and Experience |Worker Profile and Skills a| * HR Administrator
+* HR System
+* Implementers
+* Job and Position Administrator
+* Learning Management System
+| |Implementation| Implementers
+|Special OX Web Services|Implementation|
+|===
 
 Tenant Name::
 
-The name or ID of your Workday tenant
+The name or ID of your Workday tenant.
 +
 For example, if the URL where you log into Workday is `na.workday.com/wday/authgwy/global-modern/`, then your tenant name is `global-modern`.
++
+To obtain the tenant name from the sandbox:
+
+. View the upper left corner of the page, in which the tenant details are displayed in the format `Sandbox Type - Tenant Name`.
 
 User Name::
 
 The username that you use to log in to Workday.
-+
-For Composer to successfully authenticate a Workday user account, the Workday user requires full user roles. Composer does not authenticate API User roles.
 
 Password::
 
 The password that you use to log in to Workday.
-+
-For Composer to successfully authenticate a Workday user account, the Workday user requires full user roles. Composer does not authenticate API User roles.
 
 Host Name::
 
 The host name of your Workday instance. For example, `wd2-impl-services1.workday.com`.
++
+To find your host name:
+
+. Log into Workday via the web interface.
+. In the search box, type `Public Web Service` and then select *Public Web Service* from the search results.
+. Click on *...* and select *Web Service > View WSDL*. Check `soapbind:address` to ensure you are using the correct host name, for example, `<soapbind:address location=”https://hostname/ccx/.... />`. 
 
 == Triggers
+
+include::_partials/trigger-definition.adoc[]
 
 New or updated object::
 
 This trigger checks for a new or updated object in Workday Financial Management. A value is required in the following field: *Object*.
+
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
 
 == Actions
 
@@ -90,5 +116,9 @@ The following object types are available:
     ** PROJECT
     ** SALES_ITEM
     ** WORKER
+
+== Custom Fields 
+
+Custom fields are not supported. Using MuleSoft Composer, you can access standard field values for actions and triggers that you set in the Workday record.
 
 include::_partials/see-also.adoc[]

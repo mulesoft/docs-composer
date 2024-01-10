@@ -1,8 +1,848 @@
 = MuleSoft Composer Release Notes
+:page-revdate: January 9, 2024
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
 New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
+
+See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
+
+== January 9, 2024
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* For triggers in the following connectors, the *Polling Frequency* field is now required: 
+
+** Microsoft Dynamics 365 Business Central  
+** Workday 
+** Xero
++ 
+This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
+
+== December 14, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* For triggers in the following connectors, the *Polling Frequency* field is now required: 
+
+** MuleSoft RPA  
+** Sage Intacct 
+** SAP S/4HANA Cloud
+** ServiceNow
+** Slack
+** Snowflake
+** Zendesk
++ 
+This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
+
+* API Sharing is now available for single-tenant, Anypoint Platform organizations in Composer. API Sharing is limited to the Exchange API Asset in the same Anypoint organization. This enables Composer to expand the connectivity to more systems, to have more control over both API management and governance, and to consume complex APIs built in Anypoint Platform.
+
+
+== December 6, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* For triggers in the following connectors, the *Polling Frequency* field is now required: 
+
+** Asana 
+** Box 
+** Gmail
+** Google Big Query
+** Google Sheets
+** Hubspot
+** Jira
+** Marketo
+** Netsuite
++ 
+This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
+
+== December 1, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* For triggers in QuickBooks Online Connector and Stripe Connector, the *Polling Frequency* field is now required. This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
+
+== November 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* A new page, *Connections*, is available in the navigation pane. Using this page, you can easily view connections, see which flows currently use each connection, delete connections, and edit the names of connections. 
+
+== November 15, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Salesforce Connector now supports Salesforce API v59.0.
+
+== November 14, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* For triggers in Salesforce Connector, the *Polling Frequency* field is now required. This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
+
+== November 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now search for templates (by template name, connector name, or template description) and filter templates (by use case category or connector).
+
+== October 31, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When selecting outputs for an Invocable Flow, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your List variable using dynamic or static list mappings.
+
+== October 19, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When defining a variable, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your `List` variable using dynamic or static list mappings. 
+
+* You can now define a primitive list by mapping a `List<Object>` data pill to a primitive list value within your flow. 
+
+* You now have the option to change connections for all steps (at the flow level) instead of individually changing connections for each step. 
+
+== October 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Implemented backend changes in HubSpot Connector to support Mule Runtime 4.5.0. | W-14224733
+|===
+
+== October 5, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|SAP S/4HANA Cloud Connector no longer throws a null error when retrieving metadata for some entity types. | W-13568493, W-14194111
+|===
+
+== October 4, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Using typeahead, you can now create a list of primitive data types statically by using [ ] in the *Custom Expression Editor*, for example, [\name1@gmail.com, \name2@gmail.com].
+* You can now use a statically-built list as an input parameter in the `joinBy` function.
+
+== October 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|If the access token fails to refresh in a flow, you are now informed about the issue. You can now see the error in *Run History* and in an email notification (if opted-in). You must restart the flow to benefit from this fixed issue. | W-13628406
+|===
+
+== September 21, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Picklist Mapping is now enabled for all string fields. Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This enables you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
+
+* You can now specify output fields in your invocable Composer flow so that these output fields are returned in the response payload to the system that triggers the invocable Composer flow.
+
+== August 25, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, file transfer from Jira to Salesforce now works as intended. | W-13632302
+|===
+
+== August 17, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, the `Unable to retrieve custom Fields from Netsuite for customizationId customSegment` metadata error is no longer thrown when using a NetSuite org that does not have custom segments enabled. | W-13896697
+|===
+
+== August 16, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Salesforce Connector now displays errors when object or field permissions are removed. | W-13625323
+|===
+
+== August 7, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In the *Custom Expression Editor*, you can now update any `List<Primitive>` (for example, `List<String>` or `List<Number>`) and manually build a list using commas and the typeahead feature. You cannot build the list in-line; however, you can select an existing `List` data pill of that data type to build your list. 
+
+* The following `List` functions are now available for the *Custom Expression Editor*: 
+** `joinBy`: Merges a list into a single string value and uses the provided string as a separator between each item in the list.
+** `splitBy`: Splits a string into a list of strings based on a separating string that matches part of the input string.
+
+== July 31, 2023 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now invoke a Composer flow from external systems, such as Flow Builder, Flow Orchestration, another Composer flow, an Apex callout, or a cURL command. This feature enables deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
+
+== July 27, 2023 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* To enhance connectivity, you can now use OAuth 2.0 Client Credentials to create a connection in Composer to MuleSoft RPA Connector. 
+
+== July 14, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Stripe Connector, the *On New Refund* trigger now outputs the following fields:
+
+** *Balance Transaction*
+** *Payment Intent*
+** *Charge ID*
+
+== July 12, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, design metadata errors are now shown to the user. | W-13587716
+|===
+
+== July 10, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* To improve discoverability, you can now refresh the value providers and other fields in a step within your flow by clicking the refresh button on the step header. This button appears when you hover above the refresh button for the step.
+
+== July 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following enhancements appear on the *Flow Details* page: 
+** The *Last Triggered* field now appears in the heading of the *Flow Details* page. This field displays the last time that a flow was triggered. Refreshing the *Flow Details* page also refreshes the value in the *Last Triggered* field. 
+** The *Reference ID* field now appears in the *Run History* section. For Event triggers, the value in this field is the corresponding *Record ID*. For events triggered by the Scheduler, a unique *Execution ID* value is created for the run instance. 
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In RPA Connector, the *RPA Process Execution Completed* trigger no longer fails every few seconds with an `UNKNOWN ERROR` message. |  W-13697777
+|===
+
+== June 28, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In RPA Connector, if a connection exception occurs, the *RPA Process Execution Completed* trigger now reconnects. | W-13280827
+|===
+
+== June 27, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now define a variable as temporary storage in your flow and use it as a data pill. Defining a variable enables you to complete certain use cases like aggregating calculations and storing values. You define variables locally within a flow and use them anywhere within that flow. 
+
+== June 26, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, custom fields are now visible in projects with no issues created. | W-13498207
+|===
+
+== June 21, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Salesforce Connector now properly displays required DateTime fields. | W-13606652
+|===
+
+== June 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Custom Expression Editor* now supports typeahead. You can now type math operators in the *Custom Expression Editor* and select them using the Enter key, Tab key, or mouse with typeahead. You no longer need to toggle the operator tab and manually select the math operator from the list.
+
+== June 15, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The Error Handler is now generally available. You can use this feature to watch for errors in connection or logic in specific steps of your flow and then designate logic to handle the errors that may occur.
+
+== June 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, the *Get records* action no longer throws an error when the value of a condition contains an apostrophe.|W-13192901
+|===
+
+== June 8, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, custom fields now appear as intended.|W-13552619
+|===
+
+== June 6, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|The *fromStringToDateTime* function now preserves the timezone as intended. Active flows receive this change when they are deactivated. Inactive flows show an error and you must manually change the format parameter of the formula to `uuuu-MM-dd'T'HH:mm:ssz`.|W-13488568
+|===
+
+== June 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, custom fields now appear as intended for the RETURN_AUTHORIZATION record type.|W-13484699
+|===
+
+== May 31, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: SAP S/4HANA Cloud. 
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|QuickBooks Connector now includes an enhanced implementation for input parameters, such as better mapping when input parameters are not specified or are `null`.|W-13280661
+|In NetSuite Connector, custom fields now appear as intended.|W-13222742, W-13304252, W-13481333
+|===
+
+== May 25, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When adding a trigger or an action, you can now use the new search bar in the *System Action* and *System Event* windows to enter the specific name of a connector or shared API to use in your flow.
+
+== May 24, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Sage Intacct Connector, the *New or Updated Customer* trigger now uses the correct watermark time pattern, which prevents errors in processing the request.|W-13119901
+|===
+
+== May 17, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the exception message is now more clear when there is an invalid organization site URL.|W-13143023
+|===
+
+== May 12, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, custom metadata objects are no longer shown as metadata keys for the *Create new record*, *Update record*, and *Create or update record* actions as intended.|W-13182376
+|===
+
+== May 9, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Sage Connector now automatically reconnects when there is a session timeout.|W-13003862
+|===
+
+== May 8, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* A new option, *Only the first record*, is now enabled for the *Get records* action in Salesforce and NetSuite Connectors. Using this option, you can return a single record by using a unique identifier in your search criteria. When selected, the *Get records* action searches for all records that meet the selected criteria and returns the first record in the list that meets the criteria. 
+
+== May 5, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|To resolve metadata load errors caused by timeouts, requests to retrieve metadata from the API in NetSuite Connector are now optimized. |W-12411817
+|===
+
+== May 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* An optional new field, *Organization Site URL*, appears when creating a connection for Jira Connector. The *Organization Site URL* field enables you to enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect.
+
+== April 25, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Snowflake Connector now validates account names by checking for invalid special characters. |W-12598991
+|In NetSuite Connector, the *Get Records* action now correctly supports the *OTHER_CHARGE_SALE_ITEM* record type. |W-13001785
+|===
+
+== April 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Error messages in HTTP Connector now display more precise error types. |W-12483461
+|When you complete the *Operation Values* field in REST Consumer Connector, an error indicating that a value is required no longer occurs. |W-12648223
+|Rest Consumer Connector now properly recognizes the values provided in the *Client Secret* and *Client ID* fields while using API Sharing. |W-12601570
+|===
+
+== April 17, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The Error Handler (Beta) is now available. You can use this feature to watch for errors in connection or logic in specific steps of your flow and then designate logic to handle the errors that may occur.
+
+== April 12, 2023 
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Custom Expression Editor* now supports the following `string` functions:
+** `emptyString`
+** `substring`
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In QuickBooks Online Connector, an exception with an unknown description no longer occurs when custom fields are not specified. |W-12724854
+|===
+
+== April 11, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Xero Connector, fixed the issue in which a flow using the *Create or Update Invoice* object was not triggered when testing. |W-12670939
+|===
+
+== April 4, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the *Get issues* action now works as intended when the *Type* field contains a whitespace. |W-12760964
+|===
+
+== April 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following actions are now available for Slack Connector:
+** *Add users to channel*
+** *Create channel*
+** *Send direct message to multiple users*
+
+== March 28, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If a connector update or bug fix may cause interruptions to your flows, you now receive an email describing these updates and outlining which flows you should stop and reactivate to avoid flow failures.
+
+== March 24, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In NetSuite Connector, the log on time metadata is now registered to each record. 
+
+* In NetSuite Connector, the metadata for the *File* object is now available for the *Create Actions* record. 
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, the *Get Records* action no longer returns the incorrect record for the *LOT_NUMBERED_ASSEMBLY_ITEM* record type. |W-12473442
+|In NetSuite Connector, the *USER_ERROR: Invalid log in attempt* error no longer occurs.|W-12619973
+|In NetSuite Connector, the *Name* field no longer appears in write operations. |W-12428757
+|In NetSuite Connector, the *Type* dropdown in the *Get Records* action no longer causes a *NETSUITE_SOAP_FAULT* error. |W-12572300
+|The NetSuite Connector no longer fails to parse the *com.sun.xml.internal.stream.events.EndElementEvent* error response. |W-12573323
+|===
+
+== March 23, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Previously, boolean fields that supported expressions rendered as either text fields or as picklists. All boolean fields that support expressions now render as a hybrid field that supports both text fields and picklists. Additionally, if you manually enter `true` or `false` into a text field, the field automatically selects the corresponding dropdown value regardless of letter case. 
+
+* When hovering over data type icons for fields, informational tooltips now appear.
+
+== March 22, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Google BigQuery. 
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== March 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now import a flow as a JSON file by clicking the wrench icon and selecting *Import*. The import flows feature is in open beta.
+
+== March 9, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Salesforce Connector, the *Run History* page now displays detailed error log information to enable effective troubleshooting. Error logs now include the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. 
+
+== March 2, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Fixed the issue in Jira Connector that occurred when there was a discrepancy between data providers containing the field `project` in their parameters. |W-12270412
+|===
+
+== February 27, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If a Composer connector supports a default value for a field, that value now appears and is selected in the Composer UI; however, the user can choose to override the default value.
+
+== February 21, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *Composer Administrator* permission set is now available. After the installation of Composer, the system administrator can assign the following permissions to users: 
+** The *Composer Administrator* has access to the *Settings* page and can manage email preferences and API Sharing.
+** The *Composer User* has general access to Composer functionality such as building and managing flows.
+
+* The *Settings* page is now available for those with the *Composer Administrator* permission set. On this page, you can view and edit email notification settings.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Fixed the possible null pointer exception that sometimes occurred when custom fields were not specified. |W-12572592
+|===
+
+== February 17, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Gmail Connector, the *On New Email* trigger and the *Send email* action now support attachments.
+* The *Get Attachments* action is now available for Gmail Connector.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Zendesk Connector, the external ID value is now represented as a string instead of a number as per the Zendesk API. |W-12360287
+|===
+
+== February 15, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Tableau Connector, the native libraries were upgraded to address reported security vulnerabilities. |W-11453219
+|===
+
+== February 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In HTTP Connector, the correct payload is now sent when a top-level array is defined in the API specification endpoint. |W-12373559
+|===
+
+== February 8, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Now, when you open a flow, all steps aside from *If/Else Blocks* and *For Each Loops* are collapsed to provide a navigable outline of the flow. |W-12515426
+|===
+
+== February 7, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Rest Consumer Connector, the correct payload is now sent when a top-level array is defined in the API specification endpoint. |W-12373559
+|===
+
+== February 6, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now connect to a new system: Sage Intacct. 
++
+See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
+
+== February 3, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following enhancements have been made for Microsoft Dynamics 365 Business Central Connector:
+** The *Create Sales Order* action now enables users to create a list of sales order lines within the sales order object.
+** The *Update Sales Order* action now enables users to update a list of sales order lines in addition to the sales order object.
+** The *Get Sales Orders* action now enables users to retrieve sales order lines corresponding to a filtered list of sales orders.
+** The *On New or Updated Sales Order* trigger now checks for new or updated sales order lines in addition to new or updated sales orders.
+** If you use a *Display Name* for the company, the *Display Name* is now populated in the *Company ID* dropdown instead of the *Company Name*.
+
+== February 1, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the metadata output for the `labels` property now returns an array of strings instead of an array of empty objects. |W-11899482
+|In Jira Connector, the *Retrieve attachment* action now shows the detailed error message returned by the Jira endpoint. |W-12282452
+|===
+
+== January 30, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Quickbooks Online Connector now supports custom fields for actions and triggers.
+
+* The following actions are now available for Quickbooks Online Connector:
+** *Create Estimate*
+** *Get Estimate*
+** *Update Estimate*
+
+* The following triggers are now available for Quickbooks Online Connector:
+** *On New Estimate*
+** *On New or Updated Estimate*
+
+== January 26, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, metadata load logging is now enhanced. |W-12412287, W-12244102
+|In NetSuite Connector, records now show custom segments as intended. |W-12244102
+|===
+
+== January 20, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The following record types are now available for NetSuite Connector:
+** BILLING_SCHEDULE
+** CLASSIFICATION
+** GIFT_CERTIFICATE_ITEM
+** INVENTORY_ADJUSTMENT
+** ITEM_RECEIPT
+** LOT_NUMBERED_ASSEMBLY_ITEM
+** OTHER_CHARGE_PURCHASE_ITEM
+** OTHER_CHARGE_RESALE_ITEM
+** OTHER_CHARGE_SALE_ITEM
+** SERIALIZED_ASSEMBLY_ITEM
+** SERIALIZED_INVENTORY_ITEM
+** TRANSFER_ORDER
+
+== January 16, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Snowflake Connector, the *Select Rows* action now includes enhanced sample data resolution.
+
+== January 13, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+
+* The following record types are now available for NetSuite Connector:
+** ITEM_FULFILLMENT
+** ITEM_GROUP
+** KIT_ITEM
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue |ID
+|In NetSuite Connector, `NullFieldsList` is no longer included in the metadata. |W-12029245
+|In NetSuite Connector, *External ID* is now shown in custom fields when creating or updating a record. |W-11951099
+|In NetSuite Connector, errors are no longer overridden when warnings are present. |W-12165594
+|===
+
+== January 12, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector now supports the following pagination type for fields: *Offset*.
+
+== January 11, 2023
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* ServiceNow Connector now supports the Tokyo release.
+
+== December 23, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Salesforce Connector, the *Upload file* and *Download file* actions no longer incorrectly throw a `NullPointerException` when using an OAuth 2.0 connection. | W-12236769
+|===
+
+== December 15, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* The *On New Message* trigger is once again available for Slack Connector. The following enhancements have been made to the trigger:
+
+** The *Created* field now supports a date picker.
+** The *Limit* field now supports only numeric values.
+** The *Limit* field now defaults to `100`.
+** Messages returned by the trigger now appear in ascending order by time.
+
+* In Slack Connector, the *Conversation ID* field has been renamed to *Conversation Name*. Additionally, this field is now supported by a dropdown.
+
+== December 14, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* If you attempt to use a data pill in a scope where the value could be null or empty, a message alerting the user now appears.
+
+== December 13, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In Salesforce Connector, Composer logging now includes enhanced error codes and messages when the API returns `ApiFault` errors.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In ServiceNow Connector, the *New/Updated Record* trigger now picks up messages for all appropriate timestamps.| W-12176039
+|In ServiceNow Connector, sudden disconnections in high workload scenarios no longer occur. | W-12035222
+|In ServiceNow Connector, the componentorg.apache.commons library is upgraded to version 1.10.0 to address reported security vulnerabilities.| W-11913979
+|In ServiceNow Connector, the org.springframework library is upgraded to version 5.3.20 to address reported security vulnerabilities. | W-12150392
+|In Salesforce Connector, the triggers and the *Get records* action now support the `isTrue` and `isFalse` operators for boolean parameters. | W-11752116
+|In Salesforce Connector, the *Delete record* action no longer incorrectly throws a `Retrieving metadata for the step failed. Try saving and refreshing the page.` error. | W-12211471
+|In Salesforce Connector, the triggers no longer have a potential data loss when the watermark is not used properly. | W-12128874
+|In Jira Connector, the com.fasterxml.jackson.core library is upgraded to version 2.14.1 to address reported security vulnerabilities. |W-11933499
+|In Jira Connector, the org.apache.commons-text library is upgraded to version 1.10.0 to address reported security vulnerabilities. |W-12004679
+|===
+
+== December 12, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Zendesk Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4.1 to address reported security vulnerabilities.| W-11933496
+|In Zendesk Connector, the connection no longer breaks when Zendesk triggers are idle for long durations when deployed on CloudHub.| W-12040415
+|===
+
+== December 7, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Previously, if a deactivated flow was reactivated, that flow would erroneously pick up events that occurred while the flow was deactivated. Now, when a flow is deactivated, the object store data for that flow is erased so that the flow will start fresh upon reactivation. |W-12120985
+|===
+
+== November 29, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* In HTTP Connector, the OAuth 2.0 Authorization Code Grant connection provider now supports the ability to set custom request headers for *Token Exchange*, *Token Refresh*, and *Token Revoke*.
++
+Some systems, such as Fortnox and QuickBooks, require sending credentials as request headers during the OAuth dance. With custom request headers, you can now connect to these systems using HTTP Connector.
+
+== November 21, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* All users now have permission to view and manage all flows within your organizations.
+
+
+== November 17, 2022
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* When an error occurs, the *Run History* page now provides the step name, step number, connector type, and the error message to enable you to troubleshoot issues within your flow.
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In NetSuite Connector, mapping now works properly when the same custom list field is between multiple items in one record. |W-12041041
+|===
 
 == November 8, 2022
 
@@ -11,23 +851,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * You can now connect to two new systems: Marketo and Snowflake. +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == November 3, 2022
 
@@ -51,23 +874,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |When connected to Shopify, HTTP Connector flow tests no longer run indefinitely and return errors. |W-11821763, W-11819981
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == November 1, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -77,23 +883,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Issue Resolution |ID
 |In Slack Connector, the *On New Message* trigger has been disabled and is no longer available. |W-11972430
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == October 31, 2022
 
@@ -126,6 +915,8 @@ Templates are patterns that you can leverage to build a flow. All of the steps a
 
 * You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance using the new *Download file* and *Upload file* actions.
 
+* To facilitate MuleSoft Automation, the subscription pricing method has been reevaluated for MuleSoft Composer. To enable this enhancement, a new menu, *Usage Summary*, has been added to the navigation pane. On the *Usage Summary* page, you can view your monthly tasks and credit usage per flow for your organization.
+
 * The following new actions are now available for Jira Connector:
 
 ** *Create project*
@@ -149,23 +940,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Jira Connector, the number of Jira projects that appeared in a dropdown was limited. Now, all Jira projects are retrieved in the dropdown. |W-11912169
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == October 27, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -177,23 +951,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * In RPA Connector, you can now connect directly to your RPA Organization to see your processes by clicking the *Create an invokable run config from MuleSoft RPA* button when you are connected to your RPA organization and no processes appear in the dropdown for the *RPA Process* field.
 
 * In RPA Connector, when you select the *RPA Process* dropdown, the values that appear are now listed in the following format: *<category> / <process name>*. For example, *Claims / Check for updates*.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == October 26, 2022
 
@@ -216,23 +973,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Stripe Connector, fixed security vulnerability found in `componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2`. |W-11853409
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == October 20, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -244,23 +984,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** *Persona Addresses*
 ** *Supervisor Organization Chain*
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == October 17, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -271,45 +994,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Jira Connector, in the *Get Issue in Jira* action, removed the unnecessary *Select Fields* button. |W-11649482
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == October 13, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now export a flow as a JSON file to share your flow with Support for troubleshooting purposes by clicking the wrench icon and selecting *Export*.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == October 12, 2022
 
@@ -321,45 +1010,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
  ** LEAD
  ** PROSPECT
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == October 10, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In RPA Connector, the JSON Sanitizer has been implemented to prevent JSON injection.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == October 7, 2022
 
@@ -370,23 +1025,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Issue Resolution |ID
 |Fixed the issue in which the *Run History* page in Composer unnecessarily displayed an error and sent an email notification for an expired access token. Now the error does not appear and no email is sent. To implement this fix, deactivate and then reactivate your flow. |W-11649482
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == October 6, 2022
 
@@ -400,45 +1038,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Google Sheets Connector, the com.fasterxml.jackson.core library is upgraded to version 2.13.4. |W-11719209
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == September 29, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The OAuth 2.0 Authorization Code grant for authentication in HTTP Connector now supports customizing the *Authorization Header Name*, *Authorization Header Value Prefix*, and *Authorization Header Custom Value Prefix* fields for the Authorization Header.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == September 9, 2022
 
@@ -453,23 +1057,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Issue Resolution |ID
 |Fixed the issue in NetSuite Connector in which the CURRENCY and CURRENCY_RATE objects did not work for the *Get Records* action. |W-11722063
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == September 6, 2022
 
@@ -489,45 +1076,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Fixed the issue in Quickbooks Connector where Sample Data output returned more than one record, even in the case of arrays that are nested fields. |W-11388800
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == August 31, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Picklist Mapping is now enabled for fields in an action that supports Pick from List. Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This allows you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == August 29, 2022
 
@@ -540,23 +1093,6 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 * Data Pill Search is now available. You can use this feature to find where a particular data pill is used in your flow.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == August 19, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -566,23 +1102,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Issue Resolution |ID
 |In ServiceNow Connector, the *Read Timeout* field is updated from 5 seconds to 15 seconds to avoid timeouts on large tables. |W-11601586
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == August 8, 2022
 
@@ -604,23 +1123,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
-
 == August 3, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -628,23 +1130,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * You can now connect a new system: MuleSoft Robotic Process Automation (RPA).
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window. However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-include::_partials/rpa-ki.adoc[]
 
 == August 2, 2022
 
@@ -663,21 +1148,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
 == July 29, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -687,21 +1157,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 * You can now connect a new system: Salesforce Marketing Cloud Connector.
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that no flows use that connection. If flows use that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
 
 == July 28, 2022
 
@@ -725,22 +1180,6 @@ Required fields can be removed only by deselecting them within the modal.
 * Flows based on a scheduler now have access to the scheduler's current and previous timestamps.
 * NetSuite Connector now supports exponential retries, which prevent concurrency limit errors.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
-
 == July 27, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -752,21 +1191,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 Note that the objects will appear in all caps and with underscores.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
 == July 13, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
@@ -776,41 +1200,17 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** Used in inactive flows, a list containing the name and count of inactive flows using this connection appears. Deleting this connection will affect the listed flows. If you reopen the inactive flow, you must select a new connection.
 ** Used in active and inactive flows, a list containing the name, count, and status of active and inactive flows using this connection appears. If you choose to delete the connection, secondary confirmation appears. Prior to deleting the connection, Composer will first attempt to stop the flows.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-==== Composer Platform
-
-[%header%autowidth.spread]
-
-|===
-
-|Known Issue|Workaround |ID
-
-|When deleting a connection, Composer ensures that there are no flows using that connection. If there are flows using that connection, they appear in a list in the *Delete Connection* window.  However, in rare cases, flows created or edited before July 12, 2022 might not appear in the list. | |
-|===
-
-include::_partials/workday-ki.adoc[]
-
 == June 28, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In NetSuite Connector and Salesforce Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
 == June 21, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Organizations that use both MuleSoft Composer and Anypoint Platform can now connect the two organizations through Access Management.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
 
 == June 6, 2022
 
@@ -826,20 +1226,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-
 == May 31, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In NetSuite Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
 
 == May 20, 2022
 
@@ -854,11 +1245,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |===
 
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
-
 == May 17, 2022
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
@@ -871,11 +1257,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Fixed the issue in Slack Connector in which a null pointer exception occurred after cleaning up markup in a plain text string. |W-11031313
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
-
 
 == May 11, 2022
 
@@ -891,10 +1272,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In ServiceNow Connector, patched security vulnerability in dependency `org.springframework : spring-context : 5.2.7.RELEASE`. |W-11001899
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
 
 == May 5, 2022
 
@@ -919,10 +1296,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |Fixed the null pointer exception issue that occurred in NetSuite Connector using a trigger that had been previously modified to select a custom object. |W-10995359
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
 
 == April 29, 2022
 
@@ -955,10 +1328,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |In Jira Connector, pagination is now enabled to fetch all assignable users in the *Reporter* and *Assignee* fields when using the *Create issue with custom fields* action. |W-10934109
 
 |===
-
-include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-include::_partials/workday-ki.adoc[]
 
 == April 28, 2022
 
@@ -1326,20 +1695,6 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 MuleSoft Composer is generally available.
-
-//include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
-
-//[%header,cols="2,1", width="70”]
-//|===
-//|Issue|ID
-//|Message Flows now appear in chronological order. |SE-12345
-//|Batch jobs no longer hang while using persistent queues. |SE-54321
-//|`NullPointerException` errors no longer occur when using HTTP Connector inside a connector built with XML SDK. |SE-18335
-//|===
-
-//include::_partials/release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+3]
-
-//include::_partials/release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
 
 == Related Resources
 * https://help.mulesoft.com/s/[MuleSoft Help Center]

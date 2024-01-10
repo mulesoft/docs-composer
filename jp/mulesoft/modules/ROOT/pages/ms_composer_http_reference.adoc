@@ -1,0 +1,696 @@
+= HTTP Connector リファレンス
+
+HTTP Connector は、専用のコネクタで現在サポートされていないクラウドアプリケーションを接続します。HTTP Connector を使用して、コンポーザで現在サポートされていないシステムに接続し、コンポーネントでサポートされていないシステムの機能を拡張します。HTTP Connector for Composer は、 https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP]​ 1.1 を使用して JSON データを処理します。
+
+== Connections (接続)
+
+システムに接続するには、システムがデータの取得元であるか、データの取得先であるかに関係なく、そのシステムの必要なログイン情報を使用して接続を作成する必要があります。通常、フロー内の異なるシステムに接続し、接続が必要になるたびに各接続を再利用できます。
+
+次の接続情報を入力します。
+
+include::_partials/connection-name.adoc[]
+
+ベース URL::
+
+接続で使用するクラウドアプリケーションのデフォルトの場所の URL。
+
+Authorization (認証)::
+
+次の認証オプションを使用できます。
+
+* *OAuth 2.0 Client Credentials (OAuth 2.0 クライアントログイン情報)*​ +
+  OAuth 2.0 クライアントログイン情報では、ユーザ定義パスからアクセストークンが取得されます。次の項目の値を指定します。
+  ** *Base URL (ベース URI)*
+  ** *Client ID (クライアント ID)*
+  ** *Client Secret (クライアントシークレット)*
+  ** *Token URL (トークン URL)*
+
+* *API キー*​ +
+  API キーは、ユーザを明示的に定義せずにアプリケーションに接続します。このキーをすべての要求に追加する必要があります。クラウドアプリケーションは、要求元を識別して認証を完了します。次の項目の値を指定します。
+  ** *Base URL (ベース URI)*
+  ** *Name (名前)*
+  ** *値*
+  ** *Sent As (送信形式)*​: 次のいずれかの値を選択します。
+    *** *Header (ヘッダー)*​: 選択した場合、コンポーザは ​`Name: Value`​ というヘッダーを要求に追加します。
+    *** *Query Parameter (クエリパラメータ)*​: 選択した場合、コンポーザは ​`Name=Value`​ というクエリパラメータを要求に追加します。
+
+* *基本認証*​ +
+  基本認証メソッドを使用すると、HTTP ユーザエージェントは HTTP 要求を行うときにユーザ名とパスワードを指定できます。次の項目の値を指定します。
+  ** *Base URL (ベース URI)*
+  ** *Username (ユーザ名)*
+  ** *Password (パスワード)*
+
+* *ベアラートークン認証*​
+  ベアラートークン認証は、​`Bearer`​ という値とトークンが含まれる ​`Authorization`​ というヘッダーを要求ごとに送信する認証プロセスです。次の項目の値を指定します。
+  ** *Base URL (ベース URI)*
+  ** *Token (トークン)*
+
+=== OAuth 2.0 を使用したコンポーザでの対象システムの接続
+
+HTTP Connector を使用すると、 https://auth0.com/intro-to-iam/what-is-oauth-2/#grant-types-in-oauth-20[OAuth 2.0 認証コード許可^]​との接続を確立して、認証を有効にすることができます。この認証により、Salesforce、Gmail、Outlook 365 などの他のアプリケーションによってホストされるリソースにアクセスできるようになります。
+
+接続を確立する前に、対象システムで OAuth クライアントを作成する必要があります。OAuth クライアントを作成するプロセスは、各対象システムによって異なります。
+
+次の表に、OAuth クライアントを使用して対象システムに接続する場合の設定例と必須項目の詳細を示します。
+
+==== Fortnox
+
+NOTE: 異なるフローで同じ​*クライアント ID*​ と​*クライアントシークレット*​を使用するには、同じコンポーザ接続を使用し、1 分あたりに許可される要求数を考慮します。別のコンポーザ接続を使用するには、別の Fortnox 環境を使用します。
+
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.13+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Fort Nox at admin@1342287+` | これはユーザである必要があります。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)` | この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://api.fortnox.se+` |
+|*Client ID (クライアント ID)* | `NmE4OTUzY2...` |
+|*Client Secret (クライアントシークレット)* |`wMTUtZWV...` |
+|*Scopes (スコープ)* | `+companyinformation+`| すべての使用可能なスコープについては、 https://developer.fortnox.se/general/authentication[「OAuth 2.0 Scopes for Fortnox APIs (Fortnox API の OAuth 2.0 スコープ)」^]​を参照してください。
+|*Authorization URL (認証 URL)* | `+https://apps.fortnox.se/oauth-v1/auth+` | Fortnox アカウントで作成されたアプリケーションでコールバック URL を登録する必要があります。Fortnox では、アプリケーションごとに 1 つのコールバック URL しか指定できないため、異なる環境のコールバック URL を指定するには、異なるアプリケーションを作成する必要があります。
+|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
+a|パラメータ 1:
+
+* *Key (キー)*​: `access_type`​
+* *Value (値)*​: `offline` |
+
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://apps.fortnox.se/oauth-v1/token+` |
+|*Token Exchange Headers (トークンエクスチェンジヘッダー)*
+a|パラメータ 1:
+
+* *Key (キー)*​: `Authorization`​
+* *Value (値)*​: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
+
+Fortnox では、​`Basic CREDENTIALS`​ 形式の Basic 認証ヘッダーが必要です。CREDENTIALS は、コロンで区切られた​*クライアント ID*​ と​*クライアントシークレット*​の Base64 エンコーディングです。次に例を示します。
+
+* *Client ID (クライアント ID)*​: `8VurtMGDTeAI`​
+* *Client Secret (クライアントシークレット)*​: `yFKwme8LEQ`​
+* *Credentials (ログイン情報)*​: `OFZ1cnRNR0RUZUFJOnlGS3dtZThMRVE=`
+
+詳細は、 https://developer.fortnox.se/general/authentication[「認証」]​を参照してください。
+
+|*Token Refresh URL (トークン更新 URL)* | `+https://apps.fortnox.se/oauth-v1/token+` |
+|*Token Refresh Headers (トークン更新ヘッダー)*
+a|パラメータ 1:
+
+* *Key (キー)*​: `Authorization`​
+* *Value (値)*​: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
+
+Fortnox では、​`Basic CREDENTIALS`​ 形式の Basic 認証ヘッダーが必要です。CREDENTIALS は、コロンで区切られた​*クライアント ID*​ と​*クライアントシークレット*​の Base64 エンコーディングです。次に例を示します。
+
+* *Client ID (クライアント ID)*​: `8VurtMGDTeAI`​
+* *Client Secret (クライアントシークレット)*​: `yFKwme8LEQ`​
+* *Credentials (ログイン情報)*​: `OFZ1cnRNR0RUZUFJOnlGS3dtZThMRVE=`
+
+詳細は、 https://developer.fortnox.se/general/authentication[「認証」]​を参照してください。
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `+/3/companyinformation+` |
+
+|===
+
+==== Gmail
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.12+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Gmail john.smith@gmail.com connection+` | Gmail のメールアドレスを含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)` | この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://gmail.googleapis.com+` |
+|*Client ID (クライアント ID)* | `181298210352-mt5.apps.googleusercontent.com` |
+|*Client Secret (クライアントシークレット)* |`YmmkNirf6zDc512u7MvPoJebP...` |
+|*Scopes (スコープ)* | `+https://www.googleapis.com/auth/gmail.send https://www.googleapis.com/auth/gmail.readonly+`| すべての使用可能なスコープについては、 https://developers.google.com/identity/protocols/oauth2/scopes[「OAuth 2.0 Scopes for Google APIs (Google API の OAuth 2.0 スコープ)」^]​を参照してください。
+|*Authorization URL (認証 URL)* | `+https://accounts.google.com/o/oauth2/v2/auth+` |
+|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
+a|パラメータ 1:
+
+* *Key (キー)*​: `access_type`​
+* *Value (値)*​: `offline`​
+
+パラメータ 2:
+
+* *Key (キー)*​: `prompt`​
+* *Value (値)*​: `consent` |
+
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://oauth2.googleapis.com/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://oauth2.googleapis.com/token+` |
+|*Token Revoke URL (トークン取り消し URL)* | `+https://oauth2.googleapis.com/revoke+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `+/gmail/v1/users/me/profile+` | 詳細は  https://developers.google.com/gmail/api[Gmail API ドキュメント]​を参照してください。
+
+|===
+
+==== Google カレンダー
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.12+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Calendar at john.smith@gmail.com+`| Gmail のメールアドレスを含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://www.googleapis.com/calendar+` |
+|*Client ID (クライアント ID)* | `181298210352-mt5.apps.googleusercontent.com` |
+|*Client Secret (クライアントシークレット)* | `YmmkNirf6zDc512u7MvPoJebP...` |
+|*Scopes (スコープ)*
+a|
+* `+https://www.googleapis.com/auth/calendar.events+`​
+* `+https://www.googleapis.com/auth/calendar.readonly+` | すべての使用可能なスコープについては、 https://developers.google.com/identity/protocols/oauth2/scopes[「OAuth 2.0 Scopes for Google APIs (Google API の OAuth 2.0 スコープ)」^]​を参照してください。
+|*Authorization URL (認証 URL)* |`+https://accounts.google.com/o/oauth2/v2/auth+` |
+|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
+a|パラメータ 1:
+
+* *Key (キー)*​: `access_type`​
+* *Value (値)*​: `offline`​
+
+パラメータ 2:
+
+* *Key (キー)*​: `prompt`​
+* *Value (値)*​: `consent` |
+
+|*Token Exchange URL (トークンエクスチェンジ URL)* |`+https://oauth2.googleapis.com/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://oauth2.googleapis.com/token+` |
+|*Token Revoke URL (トークン取り消し URL)* | `+https://oauth2.googleapis.com/revoke+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `/v3/users/me/settings` | 詳細は、 https://developers.google.com/calendar/api[Google カレンダー API^]​ ドキュメントを参照してください。
+
+|===
+
+==== Google スプレッドシート
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.12+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* |`+Google Sheets at john.smith@gmail.com+` | Gmail のメールアドレスを含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* |`+https://www.googleapis.com+` |
+|*Client ID (クライアント ID)* |`181298210352-mt5.apps.googleusercontent.com` |
+|*Client Secret (クライアントシークレット)* | `YmmkNirf6zDc512u7MvPoJebP...` |
+|*Scopes (スコープ)* a|
+
+* `+https://www.googleapis.com/auth/spreadsheets+`​
+* `+https://www.googleapis.com/auth/drive.readonly+`​
+* `+https://www.googleapis.com/auth/drive.metadata.readonly+`​
+
+| 詳細は、 https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive の「API 固有の承認および認証情報」^]​ドキュメントを参照してください。
+
+|*Authorization URL (認証 URL)* | `+https://accounts.google.com/o/oauth2/v2/auth+` |
+|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
+a|パラメータ 1:
+
+* *Key (キー)*​: `access_type`​
+* *Value (値)*​: `offline`​
+
+パラメータ 2:
+
+* *Key (キー)*​: `prompt`​
+* *Value (値)*​: `consent` |
+
+|*Token Exchange URL (トークンエクスチェンジ URL)* |`+https://oauth2.googleapis.com/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://oauth2.googleapis.com/token+` |
+|*Token Revoke URL (トークン取り消し URL)* | `+https://oauth2.googleapis.com/revoke+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* |`/drive/v3/about?fields=user` | 詳細は、 https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive の「API 固有の承認および認証情報」^]​ドキュメントを参照してください。
+
+|===
+
+==== HubSpot
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.10+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `Hubspot Composer DEMO org (Hubspot コンポーザデモ組織)` | Hubspot 組織名を含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* |`+https://api.hubapi.com/+` |
+|*Client ID (クライアント ID)* |`63ddf8b7-c7b0-40f9-804...` | 詳細は  https://developers.hubspot.com/docs/api/working-with-oauth[HubSpot ドキュメント^]​を参照してください。
+|*Client Secret (クライアントシークレット)* |`2100f863-944c-433c-a...` |
+|*Scopes (スコープ)* a|
+
+* `settings.users.read`​
+* `crm.lists.read`​
+* `settings.users.teams.read`​
+* `crm.schemas.contacts.read` |
+
+|*Authorization URL (認証 URL)* | `+https://app.hubspot.com/oauth/authorize+` |
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://api.hubapi.com/oauth/v1/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://api.hubapi.com/oauth/v1/token+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* a|
+
+* `contacts/v1/lists/all/contacts/all?count=1`
+* `+https://api.hubapi.com/application/settings/test/v1/actions/accounts-fetch+`​
+
+ |詳細は、 https://developers.hubspot.com/docs/api/oauth-quickstart-guide[Hubspot OAuth 2.0^]​ ドキュメントを参照してください。
+
+|===
+
+==== Jira
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.11+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Jira at ocs.citizen.demo@gmail.com (STG)+` | Gmail のメールアドレスを含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)` | この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://api.atlassian.com/ex/jira/077bc6b6-f2ab-4cd6-a694-c469cb2d058d/rest/api/3+` | この項目の値は、​*[Base URL (ベース URL)]*​ 項目の ​*[Tenant ID (テナント ID)]*​ パラメータである Jira アカウントの​*クラウド ID*​ です。
+|*Client ID (クライアント ID)* | `SgPehF9AZ5ECD63iUJpG2aPO3j9qNvXM` |
+|*Client Secret (クライアントシークレット)* |`Yf8q-wbEJjeJIhx5iuE-BiydpL1oCj7wVy2gaoYDEMCe4xwWO_Q2vbjyJg6rGmD7L` |
+|*Scopes (スコープ)* a|
+
+* `offline_access`​
+* `read:jira-work`​
+* `manage:jira-project`​
+* `read:jira-user`​
+* `write:jira-work` |
+
+|*Authorization URL (認証 URL)* | `+https://auth.atlassian.com/authorize+` | Jira アカウントを作成するときに、コールバック URL を登録する必要があります。  そのため、これらのログイン情報はステージング環境でのみ機能します。
+|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
+a|パラメータ 1:
+
+* *Key (キー)*​: `audience`​
+* *Value (値)*​: `api.atlassian.com`​
+
+パラメータ 2:
+
+* *Key (キー)*​: `prompt`​
+* *Value (値)*​: `consent` |
+
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://auth.atlassian.com/oauth/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://auth.atlassian.com/oauth/token+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `+/myself+` |
+
+|===
+
+==== Microsoft Teams
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.10+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `My Microsoft Teams (Microsoft Teams 接続)` | Microsoft Teams インスタンス名を含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://graph.microsoft.com+` |
+|*Client ID (クライアント ID)* | `1c325c1c-8fd5-419f-85dc-a69cc2f30a21` |
+|*Client Secret (クライアントシークレット)* | `+P8M8Q~nAXXckZeqGxR-gE3WJIOsw~rIkjdG8jc7G+` |
+|*Scopes (スコープ)* a|
+
+* `+https://graph.microsoft.com/Mail.Read+`​
+* `+https://graph.microsoft.com/User.Read+`​
+* `offline_access` |
+|*Authorization URL (認証 URL)* | `+https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/authorize+` | テナント ID 値:
+`+https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/authorize+`
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `/v1.0/me` |
+
+|===
+
+==== Outlook 365
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.10+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `My Outlook 365 connection (Outlook 365 接続)`| Outlook インスタンス名を含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* |`+https://graph.microsoft.com+` |
+|*Client ID (クライアント ID)* | `1c325c1c-8fd5-419f-85dc-a69cc2f30a21` |
+|*Client Secret (クライアントシークレット)* | `+P8M8Q~nAXXckZeqGxR-gE3WJIOsw~rIkjdG8jc7G+` |
+|*Scopes (スコープ)* a|
+
+* `+https://graph.microsoft.com/Mail.Read+`​
+* `+https://graph.microsoft.com/User.Read+`​
+* `offline_access` |
+
+|*Authorization URL (認証 URL)* |`+https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/authorize+` |
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://login.microsoftonline.com/9d7ee99b-dadd-4dfa-9bba-323e2f1f63b3/oauth2/v2.0/token+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* a|
+
+`/v1.0/me`​
+
+または
+
+`/v1.0/me/mailfolders/inbox/messages?$select=subject,from,receivedDateTime&$top=25&$orderby=receivedDateTime%20DESC` |
+
+|===
+
+==== Procore (本番環境)
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.10+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `Procore Demo Org (Procore デモ組織)` |
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* |`+https://api.procore.com+` |
+|*Client ID (クライアント ID)* | `43a4c94b7e225ad7a8d99cb4a0ae0de26efa298…` |
+|*Client Secret (クライアントシークレット)* | `e84ee4db2f944a7b585ca110ac20793b5e6c0…` |
+|*Authorization URL (認証 URL)* | `+https://login.procore.com/oauth/authorize+` |
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://login.procore.com/oauth/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://login.procore.com/oauth/token+` |
+|*Token Revoke URL (トークン取り消し URL)* | `+https://login.procore.com/oauth/revoke+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | ``/rest/v1.0/me`` |
+
+|===
+
+==== Procore (Sandbox 環境)
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.10+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `Procore Sandbox Demo Org (Procore Sandbox デモ組織)` |
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* |`+https://sandbox.procore.com+` |
+|*Client ID (クライアント ID)* | `43a4c94b7e225ad7a8d99cb4a0ae0de26efa298…` |
+|*Client Secret (クライアントシークレット)* | `e84ee4db2f944a7b585ca110ac20793b5e6c0…` |
+|*Authorization URL (認証 URL)* | `+https://login-sandbox.procore.com/oauth/authorize+` |
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://login-sandbox.procore.com/oauth/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://login-sandbox.procore.com/oauth/token+` |
+|*Token Revoke URL (トークン取り消し URL)* | `+https://login-sandbox.procore.com/oauth/revoke+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | ``/rest/v1.0/me`` |
+
+|===
+
+==== QuickBooks
+
+NOTE: QuickBooks はデフォルトで HTML を返すため、要求に ​`Accept: application/json`​ HTTP ヘッダーを追加します。
+
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.14+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+My QuickBooks connection (QuickBooks 接続)+` |
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)` | この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://sandbox-quickbooks.api.intuit.com+` | QuickBooks アカウントで、レルム ID または会社 ID を確認します。例: `4620816365253449610`​。
+|*Client ID (クライアント ID)* | `ABOCnl9CHHDDpZ0RASkhadwSVBa1...` |
+|*Client Secret (クライアントシークレット)* |`qwDPs7K1huLWn2ZfdeVHQgpyYr...` |
+|*Scopes (スコープ)* | `+com.intuit.quickbooks.accounting+`| スコープについての詳細は、QuickBooks アカウントを確認してください。QuickBooks アカウントを作成すると、使用する必要がある URL に応じて 2 つのスコープが生成されます。
+|*Authorization URL (認証 URL)* | `+https://appcenter.intuit.com/connect/oauth2+` | アプリケーション設定で QuickBooks アカウントにコールバック URL を登録する必要があります。QuickBooks では複数のコールバック URL を登録できるため、すべての環境に対して 1 つのアプリケーションを作成できます。
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer+` |
+|*Token Exchange Headers (トークンエクスチェンジヘッダー)*
+a|パラメータ 1:
+
+* *Key (キー)*​
+* *値* |
+
+|*Token Refresh URL (トークン更新 URL)* | `+https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer+` |
+|*Token Refresh Headers (トークン更新ヘッダー)*
+a|パラメータ 1:
+
+* *Key (キー)*​
+* *値* |
+
+|*Token Revoke URL (トークン取り消し URL)* | `+https://developer.api.intuit.com/v2/oauth2/tokens/revoke+` |
+|*Token Revoke Headers (トークン取り消しヘッダー)*
+a|パラメータ 1:
+
+* *Key (キー)*​
+* *値* |
+
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `+/v3/company/{realmId}/companyinfo/{realmId}+` |
+
+|===
+
+==== Salesforce
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.12+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `My Salesforce Acme connection (Salesforce Acme 接続)` | Salesforce インスタンス名を含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* |`+https://<instance>.my.salesforce.com+` |
+|*Client ID (クライアント ID)* | `3MVG9kBt168mda_.aAARdkSYhzS6mkIA5bVzvid_ppcSV44vtKUFV3J` | この項目の値は、​*[Salesforce Connected App Client ID (Salesforce 接続アプリケーションクライアント ID)]*​ です。
+|*Client Secret (クライアントシークレット)* | `620187E2CD2DAEF6725AA404EADDFD8FECB390FA854DB637B95E186` | この項目の値は、​*[Salesforce Connected App Secret (Salesforce 接続アプリケーションシークレット)]*​ です。
+|*Scopes (スコープ)* | `完全な refresh_token` |
+|*Authorization URL (認証 URL)* | `+https://login.salesforce.com/services/oauth2/authorize+` |
+|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
+a|
+
+* *Key (キー)*​: `prompt`​
+* *値*​: `login consent` |
+
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://login.salesforce.com/services/oauth2/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://login.salesforce.com/services/oauth2/token+` |
+|*Token Revoke URL (トークン取り消し URL)* | `+https://login.salesforce.com/services/oauth2/revoke+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | ``/services/data/v55.0/`` | 詳細は、 https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_code.htm[『Salesforce REST API 開発者ガイド』^]​ドキュメントを参照してください。
+
+|===
+
+==== Shopify
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.9+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Shopify at my.account@example.com (QA)+` | 詳細は  https://partners.shopify.com/[Shopify パートナープログラム]​を参照してください。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)` | この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://myowndevelopmentstore1.myshopify.com+` |
+|*Client ID (クライアント ID)* | `04bad9ea727686d3a61a47cc23772587` |
+|*Client Secret (クライアントシークレット)* |`668ca7383d2558aa9f4270550a4dff62` |
+|*Scopes (スコープ)* a|
+
+* `write_customers`​
+* `write_orders`​
+* `write_products` |
+
+|*Authorize Header (認証ヘッダー)* a|
+
+* *認証ヘッダー名*​: `X-Shopify-Access-Token`​
+* *Authorization Header Value Prefix (認証ヘッダー値プレフィックス)*​: `Bearer Prefix`​
+* *Authorization Header Custom Value Prefix (認証ヘッダーカスタム値プレフィックス)*​: なし |
+
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://myowndevelopmentstore1.myshopify.com/admin/oauth/access_token+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `+/admin/api/2022-07/shop.json+` |
+
+|===
+
+==== Slack
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.11+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `My Slack inspiration workspace connection (Slack インスピレーションワークスペース接続)`| Slack ワークスペース名を含めると、リストから接続を特定するのに役立ちます。
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://<my-workspace>.slack.com+` |
+|*Client ID (クライアント ID)* | `3806739369586.3819433415633` | `この項目の値は、​*[Slack App Client ID (Slack アプリケーションクライアント ID)]*​ です。`
+|*Client Secret (クライアントシークレット)* | `d1cc08d9b2bf8573fa10e43f458d51a9` | `この項目の値は、​*[Slack App Secret (Slack アプリケーションシークレット)]*​ です。`
+|*Scopes (スコープ)* | `chat:write` |
+|*Authorization URL (認証 URL)* | `+https://slack.com/oauth/v2/authorize+` |
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://slack.com/api/oauth.v2.access+` |
+|*Token Refresh URL (トークン更新 URL)* | | この項目の値は空白のままにします。
+|*Token Revoke URL (トークン取り消し URL)* | `+https://slack.com/api/auth.revoke+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.2+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `/api/api.test` |
+
+|===
+
+==== Xero
+[%header%autowidth.spread]
+
+|===
+
+|Step (ステップ) |項目 |値の例。 |注記
+.11+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `Xero Demo Company (US) connection (Xero デモ会社 (US) 接続)`|
+|*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
+|*Base URL (ベース URI)* | `+https://api.xero.com/+` |
+|*Client ID (クライアント ID)* | `1AAE161E43B448C2A17B59` |
+|*Client Secret (クライアントシークレット)* | `aMLNRJr3-oAaFtQOx1B-uf19qT` |
+|*Scopes (スコープ)* a|
+* `offline_access`​
+** `openid`​
+** `profile`​
+** `email`​
+* `accounting.transactions`​
+* `accounting.attachments`​
+* `accounting.reports.read`​
+* `accounting.settings`​
+* `accounting.contacts`​
+* `accounting.journals.read` | 詳細は、 https://developer.xero.com/documentation/guides/oauth2/scopes[Xero Developer^]​ ドキュメントを参照してください。
+|*Authorization URL (認証 URL)* | `+https://login.xero.com/identity/connect/authorize+` |
+|*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://identity.xero.com/connect/token+` |
+|*Token Refresh URL (トークン更新 URL)* | `+https://identity.xero.com/connect/token+` |
+|*Token Revoke URL (トークン取り消し URL)* | `+https://identity.xero.com/connect/revocation+` |
+|*Access Token Expired Code (アクセストークン期限切れコード)* | `401` |
+.3+|HTTP 接続をテスト |*Request Method (要求方法)* | `Get` |
+|*Request Path (要求パス)* | `/api.xro/2.0/Users`​
+
+a|詳細は、Xero ドキュメントを参照してください。
+
+* https://developer.xero.com/documentation/guides/oauth2/overview/[Xero の OAuth 2.0]
+* https://developer.xero.com/documentation/guides/oauth2/auth-flow[Xero の標準認証コードフロー^]
+
+|*Request Path Headers (要求パスヘッダー)*
+a|
+
+* *Key (キー)*​: `Xero-Tenant-Id`​
+* *Value (値)*​: `4268faf8-82a2-44e2-8ea2-4ec8f6ea3a26`​
+
+a| 詳細は、次のページを参照してください。
+
+* https://api-explorer.xero.com/accounting/users/getusers[Xero ログイン^]
+* https://developer.xero.com/documentation/guides/oauth2/auth-flow[Xero の標準認証コードフロー^]
+
+|===
+
+==== OAuth 2.0 認証コード接続の設定
+
+HTTP Connector を使用して OAuth 2.0 認証コード接続を作成する場合、接続を確立するための追加情報を提供する必要があります。
+
+OAuth 2.0 接続を確立する手順は、次のとおりです。
+
+. フローを開くか、新しいフローを作成します。
+. トリガを選択するか、スケジューラを使用します。
+. アクションの HTTP 接続をクリックまたは作成します。
+. *[Connect to your HTTP Account (HTTP アカウントに接続)]*​ ウィンドウの ​*[Authorization Type (認証種別)]*​ 項目で、​*[OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)]*​ を選択し、次の項目に値を入力します。
+.. *Authorization URL (認証 URL)*​: OAuth 2.0 フローを開始する URL。
+.. *Authorization URL Query Parameters (認証 URL クエリパラメータ)*​: URL の疑問符の後に表示されるキー-値ペア。
++
+OAuth 認証コード許可種別では、認証要求はクエリパラメータとしてデータを送信します。  コンポーザはこれらのクエリパラメータを自動的に処理しますが、追加のパラメータが役立つ場合があります。たとえば、Google API では、更新トークンを発行するために ​`access_token=offline`​ が必要です。このパラメータがないと、接続は 1 時間後に期限切れになります。
+.. *Token Exchange URL (トークンエクスチェンジ URL)*​: 認証コードをアクセストークンと交換できる URL。
+* 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+** *Key (キー)*
+** *値*
+.. *Token Refresh URL (トークン更新 URL) (省略可能)*​: トークンを更新できる URL。この項目は、アプリケーションが一定期間後にトークンを期限切れとしてマークした場合にのみ適用されます。
+* 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+** *Key (キー)*
+** *値*
+.. *Token Revoke URL (トークン取り消し URL) (省略可能)*​: トークンを取り消したり削除したりできる URL。
+* 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+** *Key (キー)*
+** *値*
+. *[Next (次へ)]*​ をクリックします。 +
+OAuth 2.0 認証コード接続が設定されます。これで、接続をテストできます。
+
+
+=== 接続をテストする
+
+接続方法を確立したら、接続をテストできます。他のコネクタはコンポーザによってバックグラウンドで自動的にテストされますが、HTTP Connector はテストする必要があります。テストで使用するページを決定できます。接続は後で編集できないため、接続のテストは重要です。
+
+接続をテストするには、次の項目の値を入力します。
+
+* *Request Method (要求方法)*
+* *Request Path (要求パス)*​: この項目の値はベース URL に対して相対的です。
+* *Request Headers (リクエストヘッダー)*
+  ** *Key (キー)*
+  ** *値*
+* *Request Body (リクエストボディ)*​: このオプションは、HTTP メソッドが POST で、要求メッセージの本文である場合に表示されます。
+
+*[Connect (接続)]*​ をクリックして接続をテストします。接続が正常に作成されたことを示すメッセージ (応答コード ​`200`​) またはエラーが発生したことを示すメッセージが表示されます。
+
+データを処理するためにトークンをエクスチェンジすることがアプリケーションで求められる場合、ユースケースごとにトークンを作成する必要があります。たとえば、Salesforce Marketing Cloud では、フロー 1 の最初のステップでトークンが生成され、このトークンがフロー 2 の同様のステップで無効になる可能性があるため、これが必要になります。
+
+== HTTP Connector の項目
+
+HTTP Connector に適用される項目は、次のとおりです。
+
+[%header%autowidth.spread]
+
+|===
+
+|名前 |型 |説明
+
+|*Relative URL (相対 URL)* |String (文字列) |ベースパスを考慮しない、要求の対象の URL。
+
+|*Action (アクション)* |String (文字列) |要求の種別。​*[Request (要求)]*​ と ​*[Paginated Request (ページ分割された要求)]*​ のいずれかを選択する必要があります。
+
+
+|*HTTP メソッド* |String (文字列) a|要求の HTTP メソッド。次の HTTP メソッドを使用できます。
+
+* *GET*​: サーバから情報を取得します。
+* *POST*​: サーバに情報を送信します。
+* *PUT*​: サーバの既存のレコードの情報を更新します。
+* *PATCH*​: サーバの既存のレコードの特定のデータを更新します。
+* *DELETE*​: サーバの既存のレコードの情報を削除します。
+
+|*Path (パス)* |String (文字列) |アクセスするサーバの特定のリソースを識別します。
+
+|*Header (ヘッダー)* |Object (オブジェクト) |ユーザやサーバが HTTP 要求または応答で追加情報を渡すことができるようにします。大文字と小文字を区別しない名前 (キー)、コロン、値の順で構成されます。ヘッダーを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
+
+*POST*​、​*PUT*​、​*PATCH*​、または ​*DELETE*​ メソッドを指定してリクエストボディを追加する場合は、​*Content-Type: application/json*​ ヘッダーを追加する必要があります。一部の API では ​*Content-Type: application/json*​ ヘッダーで必要な項目名が異なるため、接続された API でこの項目名を確認してください。
+
+|*Query Parameters (クエリパラメータ)* |Object (オブジェクト) |要求に含めるクエリパラメータ。クエリパラメータを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
+
+|*Example Request (サンプル要求)* |String (文字列) |JSON 形式のサンプル要求。この項目の値を入力すると、コンポーザはサンプルを解析して、その項目を推定します。その後、その項目を使用してデータを入力し、要求の操作を設定できます。
+
+|*Example Response (サンプル応答)* |String (文字列) |JSON 形式のサンプル応答。この項目の値を入力すると、コンポーザはサンプル JSON ペイロードを解析して、JSON 項目に一致するデータピルを提供します。
+
+|*Array Path (配列パス)* |String (文字列) |JSON 配列へのパス。​*[Array Path (配列パス)]*​ 項目の値はデフォルトで選択されていますが、ドロップダウンから別の値を選択できます。この値が表示されるのは、​*[Action (アクション)]*​ 項目の値が ​*[Paginated Request (ページ分割された要求)]*​ に設定されている場合のみです。
+
+|*Pagination Type (ページネーション種別)* |String (文字列) a|要求のページネーションの種別。次のページネーション種別が使用できます。
+
+* *Link Header (リンクヘッダー)*​: この値を選択する場合は、​*[Link Relation (リンクリレーション)]*​ 項目の値を指定します。
+* *Marker (マーカー)*​: この値を選択する場合は、次の項目の値を指定します。 +
+  ** *Marker Parameter Name (マーカーのパラメータ名)*​
+  ** *Next Marker Expression (次のマーカー式)*​
+* *Next URL (次の URL)*​: この値を選択する場合は、​*[Next URL Expression (次の URL 式)]*​ 項目の値を指定します。
+* *Offset (オフセット)*​: この値を選択する場合は、​*[Offset Parameter Name (オフセットのパラメータ名)]*​ 項目の値を指定します。
+* *Page Number (ページ番号)*​: この値を選択する場合は、​*[Page Number Parameter Name (ページ番号のパラメータ名)]*​ 項目の値を指定します。
+
+|*Maximum Number of Pages (ページの最大数)* |Number (数値) |要求で API から返されるページの最大数。
+
+|===
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+HTTP の要求::
+*[Action (アクション)]*​ 項目で ​*[Request (要求)]*​ が選択されている場合、HTTP の要求によって応答ペイロードの項目が返されます。次の項目では、値は必須です。
+
+* *Action (アクション)*
+* *HTTP メソッド*
+* *Path (パス)*
+* *Example Response (サンプル応答)*
+* 必要に応じて ​*[Add Query Parameters (クエリパラメータを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+  ** *Key (キー)*
+  ** *値*
+* 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+  ** *Key (キー)*
+  ** *値*
+
+HTTP のページ分割された要求::
+*[Action (アクション)]*​ 項目で ​*[Paginated Request (ページ分割された要求)]*​ が選択されている場合、ページ分割された HTTP 要求が開始されます。ページ分割された要求により、以降のフローステップが For Each ループで使用できる項目のリストが返されます。コンポーザでは、自動的にページネーション設定を使用して API からデータがフェッチされます。次の項目では、値は必須です。
+
+* *Action (アクション)*
+* *HTTP メソッド*
+* *Path (パス)*
+* *Example Response (サンプル応答)*
+* *Array Path (配列パス)*
+* *Pagination Type (ページネーション種別)*
+* 必要に応じて ​*[Add Query Parameters (クエリパラメータを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+  ** *Key (キー)*
+  ** *値*
+* 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+  ** *Key (キー)*
+  ** *値*
+
+include::_partials/see-also.adoc[]

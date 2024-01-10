@@ -1,0 +1,409 @@
+= フローの数式のビルド
+
+コンポーザでデータを操作するには、​_式_​をビルドして​_関数_​を適用します。​*カスタム式エディタ*​を使用して、関数と数学演算子を含む式を作成します。このエディタを使用して、単語を切り捨てたり、語句を大文字にしたり、日付を設定したりします。
+
+フローの数式をビルドするときは、次の点に注意してください。
+
+//More content may be added - to be determined later
+* 関数をネストして、関数の別の関数コールの入力パラメータを使用できます。
+* コンポーザで使用される Composer 関数は、 https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave]​ を使用してビルドされます。
+* Composer 関数は、空白スペースを数式内の空白スペース文字として処理します。
+
+=== 文字列関数
+
+*カスタム式エディタ*​は、次の ​`string`​ 数式と演算子をサポートしています。
+
+[%header%autowidth.spread]
+|===
+
+|関数名 |説明 |例 |パラメータ定義 |入力データ型パラメータ |出力データ型
+
+|lower | 指定された文字列を小文字で返します。 |`lower(COMPOSER) = composer` |なし |text: String |String (文字列)
+
+|upper |指定された文字列を大文字で返します。 |`upper(composer) = COMPOSER` |なし |text: String |String (文字列)
+
+|capitalize |文字列内の各単語の先頭を大文字にします。さらに、単語間のアンダースコアを削除し、先頭が大文字の単語の前にスペースを挿入します。
+|`capitalize(name) = Name` +
+
+`capitalize(firstName) = First Name` +
+
+`capitalize(customer_first_name) = Customer First Name` +
+|なし |text: String |String (文字列)
+
+|trim |文字列の先頭と末尾に空白スペースがあれば、それを削除します。
+|`trim(<long example text>) = this example long text` |なし |text: String |String (文字列)
+
+|first |文字列の先頭からの指定文字数の文字を返します。この数が文字列内の文字数以上の場合、この関数では文字列全体を返します。 |`first(Hello Composer!, 5) = Hello` |なし |text: String +
+
+numCharacters: Number |String (文字列)
+
+|last (最後) |テキスト文字列の末尾からの指定文字数の文字を返します。 |`last(Hello Composer!, 9) = Composer!` |なし |text: String +
+
+numCharacters: Number|String (文字列)
+
+|substitute |リテラル検索文字列に一致するすべてのサブ文字列を指定された置換文字列に置き換えます。置換は、文字列の先頭から末尾に向かって行われます。たとえば、文字列 ​`aaa`​ 内の ​`aa`​ を ​`b`​ に置き換えた結果は ​`ab`​ ではなく ​`ba`​ です。 |`substitute(Composer, o, O) = COmpOser` +
+
+`substitute(Composer, a, Example) = Composer`​
+
+|なし |text: String +
+
+target: String +
+
+replacement: String |String (文字列)
+
+|fromStringToBoolean |文字列入力値をブール値に変換します。 |`fromStringToBoolean(true) = true` +
+
+`fromStringToBoolean(FALSE) = false` +
+
+`fromStringToBoolean(TrUe) = true` +
+|なし |text: String |Boolean (ブール)
+
+|fromStringToDate |文字列入力値を日付値に変換します。形式とロケールを受け入れます。形式パラメータは、入力文字列の形式を表します。 +
+
+デフォルトの形式は ​`uuuu-MM-dd`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。
+
+|`fromStringToDate(2021-03-15, uuuu-MM-dd, en-US) = 2021-03-15` +
+
+`fromStringToDate(2021/15/03, uuuu/dd/MM, en-US) = 2021-03-15`
+|Format (形式): 形式パラメータは、入力文字列の形式を表します。このパラメータでは、ISO-8601 に基づいた Java 文字パターンを受け入れます。​`2011-12-03`​ などの日付値の形式は ​`uuuu-MM-dd`​ となります。 +
+
+Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。
+
+|text: String +
+
+format: String +
+
+locale: String +
+|Date (日付)
+
+|fromStringToDateTime |文字列入力値を日時値に変換します。
+形式とロケールを受け入れます。形式パラメータは、入力文字列の形式を表します。
+デフォルトの形式は ​`uuuu-MM-dd'T'HH:mm:ssz`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。 |`fromStringToDateTime(2021-03-15T23:57:59Z,uuuu-MM-dd'T'HH:mm:ssz,US) =  2021-03-15T23:57:59Z` +
+
+`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz,en-US) = 2021-03-15T23:57:59Z`​
+
+|Format (形式): 形式パラメータは、入力文字列の形式を表します。このパラメータでは、ISO-8601 に基づいた Java 文字パターンを受け入れます。​`2011-12-03T10:15:30.000000+01:00`​ などの日時値の形式は ​`uuuu-MM-dd HH:mm:ssz`​ となります。 +
+
+Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。
+
+ |text: String +
+
+format: String +
+locale: String |DateTime (日時)
+
+|fromStringToNumber |文字列入力値を数値に変換します。 |`fromStringToNumber(1) = 1` +
+
+`fromStringToNumber(0.05) = 0.05` |
+なし |text: String |Number (数値)
+
+|emptyString | 空の文字列を返します。 +
+
+emptyString 関数は、他の関数への入力パラメータとしての使用など、空の文字列が必要な場合に使用できます。 |`-` |`-` | String (文字列)|
+
+
+|substring |指定された ​`from`​ インデックスの文字から ​`until`​ インデックスの前の最後の文字までのサブ文字列を返します。 | `substring(Hello Composer, 6, 14) = Composer` |なし | text: String
+from: Number
+until: Number | String (文字列)
+
+|===
+
+`string`​ 項目では、演算子リストから選択した ​`number`​ 式を使用できます。ただし、式は括弧で囲む必要があります。たとえば、演算子リストから ​`+`​ が選択されている場合、​`abc(9+9)`​ を入力できます。この文字列は ​`abc18`​ として表示されます。
+
+=== 数値関数
+
+*カスタム式エディタ*​では、演算子リストから選択された数学演算子 (+、-、*、または /) は、文字列として入力および解決された演算子とは異なります。たとえば、エントリ ​`9+9`​ は ​`18`​ ではなく文字列とみなされます。数学演算子を使用するには、演算子リストから選択するか、​xref:keyboard-shortcuts[キーボードショートカット]​を使用します。
+
+*カスタム式エディタ*​は、次の ​`number`​ 数式と演算子をサポートしています。
+
+[%header%autowidth.spread]
+|===
+
+|関数名 |説明 |例 |パラメータ定義 |入力データ型パラメータ |出力データ型
+
+|round |数値を最も近い整数に丸めます。 |`round(1.2) = 1` +
+
+`round(4.6) = 5` +
+
+`round(3.5) = 4` |なし |number: Number |Number (数値)
+
+|ceil |数値を最も近い整数に切り上げます。 |`ceil(1.2) = 2` +
+
+`ceil(3) = 3` |なし |number: Number |Number (数値)
+
+|floor |数値を最も近い整数に切り捨てます。 |`floor(2.2) = 2` +
+
+`floor(3) = 3` |なし |number: Number |Number (数値)
+
+|abs |数値の絶対値を返します。 |`abs(-3.4) = 3.4` +
+
+`abs(2) = 2` |なし |number: Number |Number (数値)
+
+|fromNumberToString |数値 (整数または小数) を文字列値に変換します。 |`fromNumberToString(1) = 1` +
+
+`fromNumberToString(0.05) = 0.05` |なし |number: Number |String (文字列)
+
+|fromNumberToDateTime |数値入力値を日時値に変換します。ミリ秒または秒を単位として使用します。デフォルト単位は秒です。 |`fromDateTimeToNumber(1443743879, seconds) = 2015-10-01T23:57:59Z` +
+
+`fromDateTimeToNumber(1443743879000, milliseconds) = 2015-10-01T23:57:59Z` |Unit (単位): 変換に使用する時間の単位: 「milliseconds (ミリ秒)」または「seconds (秒)」。デフォルト単位は「seconds (秒)」です。 |unit: String |DateTime (日時)
+
+|===
+
+=== 日付関数
+
+*カスタム式エディタ*​で、​`date`​ および ​`dateTime`​ データピルは入力としてのみ使用できます。日付を手動で入力することはできません。
+
+*カスタム式エディタ*​は、次の ​`date`​ および ​`dateTime`​ 数式と演算子をサポートしています。
+
+[%header%autowidth.spread]
+|===
+
+|関数名 |説明 |例 |パラメータ定義 |入力データ型パラメータ |出力データ型
+
+|today |今日の日付を日付種別として返します。 |`today() = 2021-03-15` |なし | なし |Date (日付)
+
+|now |現在の日付と時刻で日時値を返します。 |`now() = 2021-03-15T18:23:20` |なし | なし |DateTime (日時)
+
+|addDays |指定された日数を増分または減分した日付値を作成して返します。 |`addDays(today(), 3) = 2021-03-18` +
+
+`addDays(2021-03-15, -4) = 2021-03-11` |なし |date: Date +
+
+numDays: number |Date (日付)
+
+|addDays |指定された日数を増分または減分した日時値を作成して返します。
+|`addDays(now(), 3) = 2021-03-18T18:23:20` +
+
+`addDays(2021-03-15T18:23:20, 3) = 2021-03-18T18:23:20` |なし |dateTime: DateTime +
+
+numDays: number |DateTime (日時)
+
+|addMonths |指定された月数を増分または減分した日付値を作成して返します。 |`addMonths(today(), 3) = 2021-06-15` +
+
+`addMonths(2021-03-15, -4) = 2020-12-15` |なし |date: Date +
+
+numMonths: number |Date (日付)
+
+|addMonths |指定された月数を増分または減分した日時値を作成して返します。 |`addMonths(now(), 3) = 2021-06-15T18:23:20` +
+
+`addMonths(2021-03-15T18:23:20, -4) = 2020-12-15T18:23:20` |なし |dateTime: DateTime +
+
+numMonths: number |DateTime (日時)
+
+|addYears |指定された年数を増分または減分した日付値を作成して返します。 |`addYears(today(), 1) = 2022-03-15` +
+
+`addYears(2021-03-15, -1) = 2020-03-15` |なし |date: Date +
+
+numYears: number |Date (日付)
+
+|addYears |指定された年数を増分または減分した日時値を作成して返します。
+|`addYears(now(), 3) = 2024-03-15T18:23:20` +
+
+`addYears(2021-03-15T18:23:20, -1) = 2020-03-15T18:23:20` |なし |dateTime: DateTime +
+
+numYears: number |DateTime (日時)
+
+|addHours |指定された時間数を増分または減分した日時値を作成して返します。 |`addHours(now(), 1) = 2021-03-15T23:23:20` +
+
+`addHours(2021-03-15T22:23:20, 3) = 2021-03-16T01:23:20` +
+
+`addHours(2021-03-15T22:23:20, -4) = 2021-03-15T18:23:20` |なし |dateTime: DateTime +
+
+numHours: number |DateTime (日時)
+
+|addMinutes |指定された分数を増分または減分した日時値を作成して返します。
+|`addMinutes(now(), 5) = 2021-03-15T18:33:20` +
+
+`addMinutes(2021-03-15T23:45:00,15) = 2021-03-16T00:00:00` +
+
+`addMinutes(2021-03-15T18:23:20, -30) = 2021-03-15T17:53:20`
+|なし |dateTime: DateTime +
+
+numMinutes: number |DateTime (日時)
+
+|addSeconds |指定された秒数を増分または減分した日時値を作成して返します。 |`addSeconds(now(), 30) = 2021-03-15T18:23:50` +
+
+`addSeconds(2021-03-15T23:45:00,15) = 2021-03-15T23:45:30` +
+
+`addSeconds(2021-03-15T18:23:20, -30) = 2021-03-15T18:22:50`
+|なし |dateTime: DateTime +
+
+numSeconds: number |DateTime (日時)
+
+|beginningOfHour |入力内の時刻値を指定された時間の開始に変更する新しい日時値を返します。入力内の分および秒は 00:00 に変更されます。 |`beginningOfHour(2021-03-15T18:23:20) = 2021-03-15T18:00:00` |なし |dateTime: DateTime |DateTime (日時)
+
+|beginningOfDay |入力内の時刻値を指定された日の開始に変更する新しい日時値を返します。入力内の時間、分、秒は 00:00:00 に変更されます。 |`beginningOfDay(2021-03-15T18:23:20) = 2021-03-15T00:00:00` |なし |dateTime: DateTime |DateTime (日時)
+
+|beginningOfWeek |入力の日の値を指定された週の初日の開始に変更する新しい日付値を返します。この関数では、日曜日を週の初日として扱います。 |`beginningOfWeek(2021-03-15) = 2021-03-14` +
+
+`beginningOfWeek(today()) = 2021-03-14` |なし |date: Date |Date (日付)
+
+|beginningOfWeek |入力の日の値と時刻値を指定された週の初日の開始に変更する新しい日時値を返します。この関数では、日曜日を週の初日として扱います。
+|`beginningOfWeek(2021-03-15T18:23:20) = 2021-03-14T00:00:00` +
+
+`beginningOfWeek(now()) = 2021-03-14T00:00:00` |なし |dateTime: DateTime |DateTime (日時)
+
+|beginningOfMonth |入力の日の値を指定された月の初日に変更する新しい日付値を返します。 |`beginningOfMonth(2021-11-15) = 2021-11-01` +
+
+`beginningOfMonth(today()) = 2021-03-01` |なし |date: Date |Date (日付)
+
+|beginningOfMonth |入力の日の値を指定された月の初日に変更する新しい日時値を返します。入力内の日時は ​`01T00:00:00`​ に変更されます。 |`beginningOfMonth(2021-03-15T18:23:20) = 2021-03-01T00:00:00` +
+
+`beginningOfMonth(now()) = 2021-03-01T00:00:00` |なし |dateTime: DateTime |DateTime (日時)
+
+|beginningOfYear |入力の日の値を指定された年の初日に変更する新しい日付値を返します。 |`beginningOfYear(2021-11-15) = 2021-01-01` +
+
+`beginningOfYear(today()) = 2021-01-01` |なし |date: Date |Date (日付)
+
+|beginningOfYear |入力の月と日の値を指定された年の初日に変更する新しい日時値を返します。時刻値も ​`00:00:00`​ に設定します。入力内の月、日、時刻は ​`01-01T00:00:00`​ に変更されます。 |`beginningOfYear(2021-03-15T18:23:20) = 2021-01-01T00:00:00` +
+
+`beginningOfYear(now()) = 2021-01-01T00:00:00` |なし |dateTime: DateTime |DateTime (日時)
+
+|daysBetween |2 つの日付間の日数を返します。終了日の値が開始日の値よりも前の場合、この 2 つの日付間の日数に等しい負数が返されます。 |`daysBetween(2020-03-15, 2021-03-15) = 365`|なし |from: Date +
+
+to: Date |Number (数値)
+
+|daysBetween |2 つの日時値間の日数を返します。終了日の値が開始日の値よりも前の場合、この 2 つの日時値間の日数に等しい負数が返されます。 |`daysBetween(2020-03-15T18:23:20, 2021-03-15T02:23:20) = 365` |なし |from: DateTime +
+
+to: DateTime |Number (数値)
+
+|month |日付入力の月の数値を返します。 |`month(2021-03-15) = 3` |なし |date: Date |Number (数値)
+
+|month |日時入力の月の数値を返します。 |`month(2021-03-15T18:23:20) = 3` |なし |dateTime: DateTime |Number (数値)
+
+|year |日付入力の年の数値を返します。 |`year(2021-03-15) = 2021` |なし |date: Date |Number (数値)
+
+|year |日時入力の年の数値を返します。 |`year(2021-03-15T18:23:20) = 2021` |なし |dateTime: DateTime |Number (数値)
+
+|fromDateToString |日付入力値を文字列値に変換します。形式とロケールを受け入れます。形式パラメータは、出力文字列の必須形式を表します。デフォルトの形式は ​`uuuu-MM-dd`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。 |`fromDateToString(2021-03-15, uuuu-dd-MM, en-US) = 2021-15-03` +
+
+`fromDateToString(2021-03-15, uuuu/MM/dd, en-US) = 2021/03/15` +
+
+`fromDateToString(2021-03-15, eeee, dd MMMM, ES) = lunes, 15 marzo` |Format (形式): 日付で使用する ISO-8601 形式。出力文字列の目的の形式を表します。たとえば、このパラメータでは Java 8 の java.time.format に基づいた文字パターンを受け入れます。デフォルト形式は ​`uuuu-MM-dd`​ です。 +
+
+Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。​`eeee`​ や ​`MMMM`​ などの翻訳可能な形式を渡すと、ロケール (​`ES`​ など) は対応する数値をローカライズ済みの文字列に変換します。 |date: Date +
+
+format: String +
+
+locale: String |String (文字列)
+
+|fromDateTimeToString |日時入力値を文字列値に変換します。形式とロケールを受け入れます。形式パラメータは、出力文字列の目的の形式を表します。デフォルトの形式は ​`uuuu-MM-dd'T'HH:mm:ssz`​ で、デフォルトのロケールは en-US です。ただし、これらのデフォルトは変更できます。 |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ssz, en-US) = 2021-03-15T23:57:59Z` +
+
+`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format (形式): 日時で使用する ISO-8601 形式。出力文字列の目的の形式を表します。たとえば、このパラメータでは Java 8 の java.time.format に基づいた文字パターンを受け入れます。デフォルト形式は ​`uuuu-MM-dd'T'HH:mm:ssz`​ です。
+ +
+
+Locale (ロケール): 使用する省略可能な ISO 3166 国コード (​`en-US`​、​`AR`​、​`ES`​ など)。​`eeee`​ や ​`MMMM`​ などの翻訳可能な形式を渡すと、ロケール (​`ES`​ など) は対応する数値をローカライズ済みの文字列に変換します。 |dateTime: DateTime +
+
+format: String +
+
+locale: String |String (文字列)
+
+|fromDateTimeToNumber |日時入力値を数値に変換します。数値は、選択した単位に応じてミリ秒または秒になります。デフォルト単位は秒です。 |`fromDateTimeToNumber(2015-10-01T23:57:59Z, seconds) = 1443743879` +
+
+`fromDateTimeToNumber(2015-10-01T23:57:59Z, milliseconds) = 1443743879000` |Unit (単位): 変換に使用する時間の単位: 「milliseconds (ミリ秒)」または「seconds (秒)」。デフォルト単位は「seconds (秒)」です。 |dateTime: DateTime +
+
+unit: String |Number (数値)
+
+|fromDateToDateTime |日付入力値を日時に変換します。これは、時刻の追加によって行われます。デフォルトの時刻は T00:00:00Z です。すべての手動入力は UTC で解釈されます。 |`fromDateToDateTime(2021-03-15, T00:00:00Z) = 2021-03-15T00:00:00Z` +
+
+`fromDateToDateTime(2021-03-15, T23:57:59Z) = 2021-03-15T23:57:59Z` |なし |date: Date +
+
+time: String |DateTime (日時)
+
+|===
+
+[[data-types]]
+== データ型
+
+コンポーザ項目が値として受け入れることができる値は、​_データ型_​です。コンポーザでは、次のデータ型を使用できます。
+
+[%header%autowidth.spread]
+
+|===
+
+|データ型 |定義
+
+|Array (配列) | 同じデータ型の一定数のコンポーネントのコレクションを提供します。
+
+|Boolean (ブール) | `true`​ または ​`false`​ に評価されます。
+
+|Date (日付) | 年、月、日を ​`yyyy-MM-dd`​ として保存します。
+
+|DateTime (日時) | グリニッジ標準時 (GMT) を基準としたタイムゾーン内の日時を保存します。タイムゾーンには、時刻値に記号 ​`+`​ を含めるか、日付値に ​`-`​ 記号を含める必要があります。たとえば、マカオのタイムゾーンでの 2019 年 6 月 1 日午後 12 時 30 分は ​`2019-06-01T12:30:00+08:00`​ として表されます。
+
+// |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
+
+|List (リスト) | *[Get Records (レコードの取得)]*​ アクションの出力など、オブジェクトのリストを返します。
+//and list of strings like the *to* field in Gmail Connector
+
+
+|Number (数値) | 1.40129846432481707e-45 ～ 3.40282346638528860e+38 の範囲の浮動小数点数または整数のいずれかを保存します。
+
+|Object (オブジェクト) | 他のデータ型をプロパティ (​`boolean`​、​`date`​、​`number`​ など) として含めることができる複合データ型を指します。
+
+|String (文字列) | テキスト、​`number`​ データ型ではない数値、または両方の組み合わせ (​`94u0sfjlk*(f!`​lkkjd​`, `​18005555555​`, or `​Fred` など) を保存します。
+
+|===
+
+[[keyboard-shortcuts]]
+== サポートされるキーボードショートカット
+
+*カスタム式エディタ*​では、数学演算子のキーボードショートカットを使用できます。数学演算子を挿入するときは、​*Control + Shift + <+、(, )、または *>*​ のいずれかを押します​*。たとえば、演算子を入力するには、*​Ctrl + Shift + * を押します。
+
+*/*​ と ​*-*​ の場合、Shift キーは必要ありません。たとえば、​*/*​ を挿入するには、​*Control + /*​ を押します。
+
+== カスタム式エディタにアクセスする
+
+*カスタム式エディタ*​にアクセスする手順は、次のとおりです。
+
+. *[Composer Flows (コンポーザフロー)]*​ タブから、フローを開きます。
+. *[編集]*​ をクリックします。
+. アクション項目、クエリビルダーの値、または ​*[If/Else Block (If/Else ブロック)]*​ コントロールの値で、ドロップダウンメニューから ​*[Custom Expression fx (カスタム式 fx)]*​ を選択します。 +
+*カスタム式エディタ*​が表示されます。
+//screenshot once in staging
+
+[[add-custom-expression-to-an-action]]
+== アクションにカスタム式を追加する
+
+カスタム式を追加するときは、​*[Custom Expression Editor (カスタム式エディタ)]*​ ウィンドウの要素の上にカーソルを置き、役立つ提案やアプリケーション内サポートを含むコンテキストポップオーバーをトリガします。
+
+アクションにカスタム式を追加する手順は、次のとおりです。
+
+. *カスタム式エディタ*​の左ペインで、次のいずれかのタブをクリックします。
+.. *Function (関数)*​: 関数を表示または検索
+.. *Data (データ)*​: 項目またはデータピルを表示または検索
+.. *Operator (演算子)*​: 演算子を表示または検索
+. 左ペインから、カスタム式の使用可能な関数、項目、データピル、または演算子を選択します。 +
+右ペインの ​*[<項目名>]*​ ボックスに選択内容が表示されます。カスタム式の構文は自動的に検証されます。
+. *[<項目名>]*​ ボックスの式を別の項目で再利用する場合は、それをコピーします。
+. カスタム式を作成して検証したら、​*[Apply (適用)]*​ をクリックします。
+. *[Save (保存)]*​ をクリックします。 +
+カスタム式が項目に追加されます。
+
+== カスタム式を編集する
+
+アクション内の既存のカスタム式を編集する手順は、次のとおりです。
+
+. *[Composer Flows (コンポーザフロー)]*​ タブから、フローを開きます。
+. *[Edit (編集)]*​ をクリックします。
+. カスタム式を含むアクション項目で、鉛筆アイコンをクリックします。 +
+*カスタム式エディタ*​が表示されます。
+. *カスタム式エディタ*​の右ペインにある ​*[<項目名>]*​ ボックスで、既存のカスタム式を選択して削除するか、左ペインから項目を追加する場所にカーソルを置きます。
+. 左ペインで、使用可能な関数、項目、データピル、または演算子から選択します。 +
+右ペインの ​*[<項目名>]*​ ボックスに選択内容が表示されます。編集したカスタム式の構文は自動的に検証されます。
+. カスタム式を編集して検証したら、​*[Apply (適用)]*​ をクリックします。
+. *[Save (保存)]*​ をクリックします。 +
+カスタム式が編集されました。
+
+== カスタム式を削除する
+
+アクション内の既存のカスタム式を削除する手順は、次のとおりです。
+
+. *[Composer Flows (コンポーザフロー)]*​ タブから、フローを開きます。
+. *[Edit (編集)]*​ をクリックします。
+. カスタム式を含むアクション項目で、[X] アイコンをクリックします。 +
+カスタム式が項目から削除されます。
+. 実装でこの項目に値を含める必要がある場合は、新しいカスタム式を追加するか、ドロップダウンメニューから値を選択します。
+. *[Flow Details (フローの詳細)]*​ ページで、​*[Save (保存)]*​ をクリックします。 +
+カスタム式が削除されます。環境でカスタム式項目に値が必要な場合は、追加または選択内容が保存されます。
+
+
+include::_partials/see-also.adoc[]

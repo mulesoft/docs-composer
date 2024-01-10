@@ -1,0 +1,96 @@
+= Zuora Connector リファレンス
+
+Zuora は、商品パッケージ、プラン、価格設定に加えて、顧客の商品サブスクリプションや自動請求および支払用のアカウント作成を管理するサブスクリプション管理および経常収益サービスです。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Client ID (クライアント ID)::
+
+Zuora に登録されている OAuth クライアント ID。
+
+Client Secret (クライアントシークレット)::
+
+Zuora に登録されている OAuth クライアントシークレット。
+
+Environment (環境)::
+
+Zuora テナントのベース URI。詳細は  https://www.zuora.com/developer/api-reference/#section/Introduction/Access-to-the-API[Zuora のドキュメント]​を参照してください。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Get Account::
+
+顧客アカウントに関する情報を取得します。​*[Account Key (アカウント鍵)]*​ 項目は必須です。
+
+Create Account::
+
+支払い方法、請求先取引先責任者、および販売先取引先責任者 (省略可能) を使用して顧客アカウントを作成します。次の項目は必須です。
+
+* *Account Name (アカウント名)*
+* *Credit Card Payment Method (クレジットカード支払方法)*
+* *通貨*
+* サブスクリプションが作成されていない場合は、​*[Bill Cycle Day (請求サイクル日)]*​ 項目は必須です。
+* *Bill To Contact First Name (請求先取引先責任者の名)*
+* *Bill To Contact Last Name (請求先取引先責任者の姓)*
+* *Bill To Contact State (請求先取引先責任者の都道府県)*
+* *Bill To State Country (請求先取引先責任者の国)*
+
+Update Account::
+
+支払い方法、請求先取引先責任者、および販売先取引先責任者 (省略可能) を使用して顧客アカウントを更新します。次の項目は必須です。
+
+* *Account Key (アカウントキー)*
+* *[Auto Pay (自動支払)]*​ 項目の値が ​`true`​ に設定されている場合は、​*[Credit Card Payment Method ID (クレジットカード支払方法 ID)]*​ 項目は必須です。
+
+Create Rate Plan Charge::
+
+新しい商品の料金プランを作成、コンパイル、送信します。次の項目は必須です。
+
+* *Name (名前)*
+* *Product Rate Plan ID (商品の料金プラン ID)*
+* *Charge Model (チャージモデル)*
+* *Charge Type (チャージ種別)*
+
+* *[End Date Condition (終了日条件)]*​ 項目の値が ​`Fixed Period`​ に設定されている場合は、次の項目は必須です。
+** *Up To Periods (最大期間)*
+** *Up To Period Type (最大期間種別)*
+
+* *[Price Increase Option (価格増加オプション)]*​ 項目の値が ​`Specific Percentage Value`​ に設定されている場合は、​*[Price Increase Percentage (価格増加率)]*​ 項目は必須です。
+
+* *[Taxable (課税対象)]*​ 項目の値が ​`true`​ に設定されている場合は、次の項目は必須です。
+
+** *Tax Code (税金コード)*
+** *Tax Mode (税金モード)*
+
+* *Trigger Event (トリガイベント)*
+* *Unit of Measure (測定単位)*
+
+
+Update Product Rate Plan Charge::
+
+既存の商品料金プランチャージを更新します。次の項目は必須です。
+
+* *Product Rate Plan ID (商品の料金プラン ID)*
+* *[Billing Period (請求期間)]*​ 項目の値が ​`Specific Weeks`​ または ​`Specific Months`​ に設定されている場合は、​*[Specific Billing Period (特定の請求期間)]*​ 項目は必須です。
+
+* *[End Date Condition (終了日条件)]*​ 項目の値が ​`Fixed Period`​ に設定されている場合は、次の項目は必須です。
+** *Up To Periods (最大期間)*
+** *Up To Period Type (最大期間種別)*
+
+* *[Price Increase Option (価格増加オプション)]*​ 項目の値が ​`Specific Percentage Value`​ に設定されている場合は、​*[Price Increase Percentage (価格増加率)]*​ 項目は必須です。
+
+* *[Taxable (課税対象)]*​ 項目の値が ​`true`​ に設定されている場合は、次の項目は必須です。
+** *Tax Code (税金コード)*
+** *Tax Mode (税金モード)*
+
+== カスタム項目 
+
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、Zuora レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+
+include::_partials/see-also.adoc[]

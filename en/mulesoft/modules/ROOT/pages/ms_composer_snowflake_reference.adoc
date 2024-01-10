@@ -2,6 +2,8 @@
 
 Snowflake is a fully managed, cloud-based data warehouse solution that operates under a Software as a Service (SaaS) business model. This allows clients to store data and run analytics without the need for an on-premise solution.
 
+For more information about privileges for triggers and actions, refer to https://docs.snowflake.com/en/user-guide/security-access-control-overview[Overview of Access Control^].
+
 == Connections
 
 include::_partials/connection-definition.adoc[]
@@ -21,7 +23,7 @@ The username and password that you used to log in to Snowflake.
 
 Account Name::
 
-The account name that is provided when registering for the Snowflake account.
+The account name that is provided when registering for the Snowflake account. The account name is in the `<OrgId>-<AccountId>` format. 
 
 Warehouse::
 
@@ -69,20 +71,32 @@ include::_partials/trigger-definition.adoc[]
 
 On New Row::
 
-Returns all new rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
+Returns all new rows of a table based on the highest watermark value every 15 seconds. 
++
+If the watermark value of a new row is lower than the highest watermark value, the new row is discarded. If the watermark value of a new row is higher than the highest watermark value, the new row is picked up and the watermark is set to the new highest value. 
++
+If the flow is deactivated and reactivated manually, the watermark resets to the start time of the flow. If a start time is not specified in the flow, Composer uses the time the flow is activated as the timestamp.
++
+Provide a value for the following fields:
 
-* *Table*
+* *Table*: Note that this trigger supports views within the *Table* field.
 * *Created date column*: The following column data types are available for this field:
 ** DATE
 ** DATETIME
 ** TIMESTAMP
 ** TIMESTAMP_NTZ
 
-On New or Updated Row::
+On New Or Updated Row::
 
-Returns all new or updated rows of a table based on a watermark every 15 seconds. Provide a value for the following fields:
+Returns all new or updated rows of a table based on the highest watermark value between *Created date column* and *Last modified date column* every 15 seconds. 
++
+If the watermark value of a new or updated row is lower than the highest watermark value, the new or updated row is discarded. If the watermark value of a new or updated row is higher than the highest watermark value, the new or updated row is picked up and the watermark is set to the new highest value. 
++
+If the flow is deactivated and reactivated manually, the watermark resets to the start time of the flow. If a start time is not specified in the flow, Composer uses the time the flow is activated as the timestamp.
++
+Provide a value for the following fields:
 
-* *Table*
+* *Table*: Note that this trigger supports views within the *Table* field.
 * *Created date column*: The following column data types are available for this field:
 ** DATE
 ** DATETIME
@@ -93,6 +107,10 @@ Returns all new or updated rows of a table based on a watermark every 15 seconds
 ** DATETIME
 ** TIMESTAMP
 ** TIMESTAMP_NTZ
+
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
 
 == Actions
 

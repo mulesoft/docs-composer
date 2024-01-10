@@ -1,10 +1,40 @@
-
 = Build a Composer Flow
 
 After you collect the information described in xref:ms_composer_checklist.adoc[the preparation checklist], you can then build, xref:ms_composer_activation.adoc[activate], and xref:ms_composer_monitoring.adoc[monitor] your flows. Building a flow involves creating a new flow or cloning an existing flow; adding and testing a trigger; adding and testing each action to be performed by the flow, in the order that you want each action performed; and finally testing the completed new flow before activating it.
 
 xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to your flow.
 
+[[flow-details-page]]
+== Flow Details Page 
+
+Access the *Flow Details* page to see details about your flow:
+
+ifeval::["{product}"=="salesforce"]
+image::images/flow-details-sf.png[*Flow Details* page]
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+image::images/flow-details-ms.png[*Flow Details* page]
+endif::[]
+
+[calloutlist]
+. The name of the flow. 
+. Details about the flow:
+.. *Created On*: The date on which the flow was created in the time zone set in your browser.
+.. *Flow ID*: The ID of the flow. 
+.. *Flow Owner*: The owner of the flow. 
+.. *Last Modified*: The date on which the flow was last modified in the time zone set in your browser.
+.. *Status*: The status or the flow. The status can be either active or inactive.
+.. *Last Triggered*: The date on which the flow was most recently triggered. This field displays the last time the flow was triggered by either an Event poll or the Scheduler. 
+. The *Run History* of the flow. Composer stores up to 1000 records per flow and can include only the last two weeks of data. For example, for a flow that produces 10 records per day, you can see the Run History for the last two weeks of data (14 x 10 = 140 records). For a flow that produces 100 records per hour, you can see no more than 10 hours of the Run History. Triggering a flow via the Scheduler always creates an entry in the Run History. An entry in the Run History is only added by an Event trigger when a record is either created or updated and passes any filter condition. 
+
+.. *Start Date*: The date on which the flow started in the time zone set in your browser.
+.. *End Date*: The date on which the flow ended in the time zone set in your browser.
+.. *Status*: The status of the flow. The status can be either `SUCCESS` or `FAILED`. 
+.. *Reference ID*: The ID of the record or execution that triggered the flow. For Event triggers, the value in this field is the corresponding *Record ID*. For events triggered by the Scheduler, a unique *Execution ID* value is created for the run instance.  
+.. *Error*: If a flow fails, the error message for the failure appears. 
+. The flow actions. You can delete, clone, or view an active flow. Note that if the flow is inactive, you can edit the flow.
+. The *Run History* actions. You can refresh the *Run History* section or filter the section by specified criteria. 
 
 == Create a Flow
 
@@ -66,6 +96,72 @@ Composer copies the existing flow and opens the copy in the Flow Details page. N
 . Click *Save*.
 endif::[]
 
+== Export a Flow 
+
+To export a flow as a JSON file: 
+
+ifeval::["{product}"=="salesforce"]
+. Open an existing flow. +
+The *<Flow Name>* page appears.
+. Click *Edit*. 
+. Click the wrench icon > *Export*. +
+The flow is exported as a JSON file. 
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. Open an existing flow. +
+The *<Flow Name>* page appears.
+. Click *View*. 
+. Click the wrench icon > *Export*. +
+The flow is exported as a JSON file. 
+endif::[]
+
+== Import a Flow 
+
+To import a flow as JSON file: 
+
+ifeval::["{product}"=="salesforce"]
+. <<create-a-new-flow,Create a new flow>> or open an existing flow. +
+The *<Flow Name>* page appears.
+. Click the wrench icon > *Import - Beta*. +
+The *Select Flow* dialog box appears. 
+. Click *Select flow*. +
+Your files appear. 
+. Navigate to and select the JSON file that you want to upload and then click *Open*. +
+The selected file appears in the *Select Flow* dialog box. 
+. In the *Connect with <Connector Name>* drop down, choose an existing connection or create a new one:
+
+* Click an existing connection to select it.
+* Click *Add new <Connector Name> Connection* to create a new connection and select it. +
+
+. Click *Import Flow*. Note that importing a flow will replace the existing flow. +
+The flow is imported and appears on the *<Flow Name>* page. 
+. Click *Save*. +
+The flow is imported. 
+endif::[]
+
+ifeval::["{product}"=="mulesoft"]
+. <<create-a-new-flow,Create a new flow>> or open an existing flow. +
+The *<Flow Name>* page appears.
+. Click *View*. +
+The *<Flow Name>* page appears.
+. Click the wrench icon > *Import - Beta*. +
+The *Select Flow* dialog box appears. 
+. Click *Select flow*. +
+Your files appear. 
+. Navigate to and select the JSON file that you want to upload and then click *Open*. +
+The selected file appears in the *Select Flow* dialog box. 
+. In the *Connect with <Connector Name>* drop down, choose an existing connection or create a new one:
+
+* Click an existing connection to select it.
+* Click *Add new <Connector Name> Connection* to create a new connection and select it. +
+
+. Click *Import Flow*. Note that importing a flow will replace the existing flow. +
+The flow is imported and appears on the *<Flow Name>* page. 
+. Click *Save*. +
+The flow is imported. 
+endif::[]
+
 == Refresh a Flow
 
 When building a flow, you may need to refresh the flow to view updated data at either the object level or the field level.
@@ -93,11 +189,7 @@ After you create or clone a flow, define the trigger: the event or time interval
 To define a trigger based on an event:
 
 . Open a flow if it is not already open. The *What Should Start This Flow?* dialog is displayed.
-+
-image:images/connection-example.png[What Should Start This Flow dialog, 500]
 . Select the connector where the triggering event occurs. Your existing connections are displayed.
-+
-image:images/list-of-connections.png[List of connections, 500]
 +
 You can choose an existing connection or create a new one:
 
@@ -117,10 +209,23 @@ Your trigger is named automatically. All triggers are named by combining the eve
 
 * Click *Save*.
 
+ifeval::["{product}"=="mulesoft"]
+//This is currently only for MS Composer 
+== Access the Connections Page 
+
+The *Connections* page enables you to: 
+
+* Select a connection to view all of the flows currently using that connection. 
+* <<delete-a-connection,Delete a connection>>. 
+* Change the name of a connection. 
+
+To access the *Connections* page, from the *Composer* home page, click *Connections* in the navigation pane. 
+endif::[]
+
 [[change-a-connection]]
 == Change a Connection
 
-You can change connections in a trigger or action. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
+You can change connections in a trigger or action for all steps (at the flow level) or for individual steps. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
 
 You can only change to a connection accessing the same system type. You can't change a Workday connection to a Google Sheets connection, for example.
 
@@ -131,7 +236,23 @@ To change a connection:
 +
 image::images/change-connection.png[Change the connection control, 400]
 
-. Choose a new connection and click *Save*.
+. Change the connection to an existing connection or to a new connection.  
++
+* If you change the connection to an existing connection:
++
+.. Select the connection to change to.
+.. Optionally, if you want to change the connection for all steps that use this specific connection, select *Change all instances of XXX to XXX in this flow*. 
+.. Click *Change*.
+.. Click *Confirm*.
++
+* If you change the connection to a new connection:
++
+.. Click *Add New (Connector Name) Connection*.
+.. Enter a value for the *Connection Display Name* field.
+.. Optionally, if you want to change the connection for all steps that use this specific connection, select *Change all instances of current connection to the new connection in this flow*. 
+.. Click *Connect*.
+.. In the dialog box, log in to the system and allow access.
+
 
 == Repair a Connection
 
@@ -144,6 +265,7 @@ To repair a connection:
 . Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
 . Click *Repair*.
 
+[[delete-a-connection]]
 == Delete a Connection
 
 If you no longer need a specific connection, you can delete it.
@@ -172,15 +294,17 @@ If you don't choose a connection, you can schedule a flow to start at regular in
 To create a flow control:
 
 . In a new flow, from the *What Should Start This Flow?* dialog, look in the Flow Control section and click *Scheduler*.
-+
-image:images/connection-example.png[What Should Start This Flow dialog, 500]
 . Choose one of the time intervals, from 15 minutes to 30 days.
 +
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 . Click *Save*. +
 After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an <<create-an-if-else-block,If/Else block>> or <<create-and-test-a-for-each-loop,For Each>> loop.
 
-ifeval::["{product}"=="salesforce"]
+[[invoke-a-flow]]
+== Invoke a Flow 
+
+You can invoke a Composer flow from external systems, such as Flow Builder, Flow Orchestration, another Composer flow, an Apex callout, or a cURL command, to enable deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
+
 == Open Access for Flows
 
 All users can view or manage all flows within your org.
@@ -223,7 +347,6 @@ To manage all flows within your org:
 
 . From the *Composer Flows* tab, select a flow.
 . Click on the desired button, for example, click *Delete* to delete a flow or click *Transfer ownership* to change flow ownership (for error email notification flows only).
-endif::[]
 
 == Create an Action
 
@@ -243,7 +366,149 @@ When there are null values in custom expressions and are:
 * Fields without attributes, the null value is ignored. If the value in a required field, an error message occurs. If the value is in an optional field, the value is ignored and not sent to the connector. +
 * Fields with attributes, the value is ignored and not sent to the connector.
 
-=== Create a Picklist Mapping
+== Define a Variable
+
+You can define variables in your Composer flow. Defining a variable enables you to complete certain use cases, such as aggregating calculations and storing values. You define variables locally within a flow and use them anywhere within that flow. 
+
+[[access-the-variable-step]]
+=== Access the Variable Step 
+
+To access the *Variable* step: 
+
+. <<create-a-new-flow,Create a new flow>> or open an existing flow. +
+. In the *<Flow Name>* page, click *Edit*. 
+. Locate the position in your flow where you want to access the *Variable* step and click the plus button. 
+. In the *Next Step* window, click *Variable*. +
+The *Variable* step appears. 
+
+[[create-a-variable-using-the-visual-editor]]
+=== Create a Variable by Using the Visual Editor 
+
+To create one or more new variables using the *Visual Editor* window: 
+
+. <<access-the-variable-step,Access the *Variable* step.>> 
+. Select *Action* > *Create Variable*.
+. From the *Variable* section, click *Add Variable*. 
+. In the *Label* field, enter a unique name for the variable.
++
+The name entered is unique only to this step. You can duplicate values in the *Label* field across different Variable steps. 
+. In the *Data Type* dropdown, select the data type to use for the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean`, `Date`, `DateTime` and `List`. If you select *List*, in the *List Item Type* field, select:
+** *String*, *Number*, or *Boolean* to return a list that contains primitive data types 
+** *Object* to return a list of objects, for example, the output of the *Get Records* action
+
++
+Repeat the steps 4 and 5 until you added all the required fields for the Variable step. 
+. To add additional variables in the Visual Editor, click *Add Variable*. You can create multiple variables in each Variable step.
+. Click *Apply*. 
+. To modify the new variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
+
+
+[[create-a-variable-using-the-json-schema]]
+=== Create a Variable by Using the JSON Schema
+
+To create one or more new variables using the *JSON Schema* window: 
+
+. <<access-the-variable-step,Access the *Variable* step.>> 
+. Select *Action* > *Create Variable*.
+. In the *Variable* section, click *Create Schema*. 
+. In the *JSON Schema* window, enter the properties for the variable to create. 
++
+Note that each variable is defined within a `Properties`  object with a `Variable Unique ID`.  The `Variable Unique ID` enables the variable to be tracked within your flow. The `Variable Unique ID` can contain only alphanumeric characters, hyphens, and underscores. When using the Visual Editor, this ID is automatically generated for you.
+Each variable must specify the title and data type. To set the properties for the variable definition, complete the following: 
+
++
+//Consider turning these into tables at a later time. 
+** `Variable Label (Title)`: Display label for the variable. (Required) 
+** `Type`: Data type of the variable. The following xref:ms_composer_custom_expression_editor.adoc#data-types[data types] are supported: `String`, `Number`, `Boolean` and `Array`. 
++
+To define a `Date` or `DateTime` variable, set the data type to `String` and define the `Format` property. (Required) 
+** `Format`:  Qualifier for `String` properties that can specify additional data types not natively supported in JSON. For variables, set this value when defining `Date` or `DateTime` variables as `date` or `date-time` respectively. (Optional)
+** `Items`: Item type for `List` variables. `Items` is an object and accepts the following child properties: (Required only when defining List variables) 
+*** `Type`: Data type of the variable. The following data types are supported for List items:  `String`, `Number`, `Boolean`, and `Object`. If defining an `Object`, you must also define the properties of that `Object`. (Required)
+*** `Properties`: Child properties of an object. `Properties` is required if the `List Item Type` is set to `Object`. In the `Properties` object, each property key is the name of the property in the `Object List Item` and is set to an object that defines its data type. For more information in defining the data type of object child properties, refer to `Type` (step 4b) and `Format` (step 4c). (Optional)
+
++
+The properties and values appear in the *JSON Schema* window.  
+
++
+.Example: Properties and values in the *JSON Schema* window
+[%collapsible]
+====
+[source,JSON]
+----
+{
+"properties": {
+"var-01": {
+"type": "string",
+"title": "My String"
+},
+"var-02": {
+"type": "number",
+"title": "My Number"
+},
+"var-03": {
+"type": "boolean",
+"title": "My Boolean"
+},
+"var-04": {
+"type": "string",
+"title": "My Date",
+"format": "date"
+},
+"var-05": {
+"type": "string",
+"title": "My Datetime",
+"format": "date-time"
+}
+}
+}
+----
+====
++
+. To add variables in the JSON Schema, enter them in the window.
+. Click *Apply*. 
++
+. To modify the new variables, click *Manage Variables* to open the Visual Editor or *Edit Schema* to open the JSON Schema.
+
+=== Initialize a Variable 
+
+After creating a variable, you can initialize it:
+
+. Create a new variable by using either the <<create-a-variable-using-the-visual-editor,Visual Editor>> or the <<create-a-variable-using-the-json-schema,JSON Schema>>.
+. Complete the initial value for each variable. If variable's data type is: 
++
+** `String`, `Number`, `Boolean`, `Date`, or `DateTime`, the default value is defined under each variable. If the field is empty, the value is set to the default value for that data type. You can enter a value manually, select any existing data pill (including variables) from your flow, select a <<create-a-picklist-mapping,Picklist Mapping>> (for `String` variables) or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. 
+** `List`, the default value is defined under each variable. If the field is empty, the value is set to the default value for that data type. You can enter a value manually. For primitive list types (`String`, `Number`, `Boolean`, `Date`, or `DateTime`), you can create a list statically using the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] or <<create-a-picklist-mapping,map in a list data pill>>. For List<Objects>, select either: 
+*** *Dynamic List* to create multiple items in the list. Use a list pill to reference the number of items created. Then, map the fields of the elements of the list.
+*** *Static List*, and then initialize the list with as many items as you need. If you do not add any items, the list is empty by default.
+
++
+The variable is initialized.
+
+=== Update a Variable 
+
+==== Before You Begin
+
+If you are updating a variable with a value created from another variable, do not update them in the same step. Variables are not necessarily updated in the same order in which they are listed. To avoid unexpected behavior, update each variable in separate steps.
+
+To update one or more variables: 
+
+. <<access-the-variable-step,Access the *Variable* step.>> 
+. Select *Action* > *Update Variable*.
+. In the *Variable* section, click *Select Variables*. +
+The *Select Variables* window appears, displaying a list of all variables included in your flow before this step. 
+. Select the checkbox next to one or more variables or click *Select all <Number> variables* to select all variables in the list.
+. Click *Apply*. +
+The *Update Variable* step appears. 
+. Update the value for each variable. If the data type for the variable your selected is a: 
+** `String`, `Number`, `Boolean`, `Date`, or `DateTime`, you can enter a value manually, select any existing data pill (including variables) from your flow, select a <<create-a-picklist-mapping,Picklist Mapping>> (for `String` variables) or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression.
+** `List`, you can add items to the start or the end of the list or replace the existing list with a new list. For primitive list types (`String`, `Number`, `Boolean`, `Date`, or `DateTime`), you can create a list statically using the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] or <<create-a-picklist-mapping,map in a list data pill>>. For List<Objects>, select either: 
+*** *Dynamic List* to create multiple items in the list. Use a list pill to reference the number of items created. Then, map the fields of the elements of the list.
+*** *Static List*, and then initialize the list with as many items as you need. If you do not add any items, the list is empty by default.
+
+
+[[create-a-picklist-mapping]]
+== Create a Picklist Mapping
 
 Using Picklist Mapping, you can map data from one application to the corresponding data needed by another application and then reuse those mappings in different flows in your organization. This enables you to connect two applications that have different values for similar fields and to align the values in those fields across applications. You can then determine how the possible values of an output field (data pill) map to the possible values of an input field.
 
@@ -273,7 +538,7 @@ In this example, the *Status* field in a case in Salesforce is mapped to the *St
 When mapping source data fields:
 
 * The source field must be a data pill with a fixed list of values.
-* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field.
+* The target field must be an enumerated xref:ms_composer_custom_expression_editor.adoc#data-types[data type] field or any string field. 
 * If any other unmapped value from the source system is found, the default mapping specifies the value in the target system . If you do not specify a default value, the original value from the source field is passed to the target field.
 * The mapping is stored at the organization level and can be reused across flows.
 * The mapping must have a unique name.
@@ -282,12 +547,12 @@ When mapping source data fields:
 To map source data fields to target fields:
 
 . From the *Composer Flows* tab, open a flow and click *Edit*.
-. In an action card, in a field that supports *Pick from List*, select *Picklist Mapping* from the drop-down menu. +
+. In an action card, in a field that supports *Pick from List* or any string field, select *Picklist Mapping* from the menu. +
 The *Picklist Mapping* window appears.
-. In the *Picklist Source* section, in the *Source* field, select the value from the drop-down list that you want to  map to the value in the *Target* field, and then click *Next*.
+. In the *Picklist Source* section, in the *Source* field, select the value from the list that you want to map to the value in the *Target* field, and then click *Next*.
 . In the *Global Picklist Selection* section, create a new picklist or choose an existing picklist.
 
-=== Create a new picklist
+=== Create A New Picklist
 
 To create a new picklist:
 
@@ -296,12 +561,15 @@ To create a new picklist:
 . Optionally, in the *Description* field, enter a description for the picklist. The following description is populated automatically based on your source and target systems: +
 `This maps [Source Field Name] from [Source Connection Name] to [Target Field Name] from [Target Connection Name]`
 . In the table, select the source fields and their target mappings.
-. Optionally, to add additional field mappings, click *Add Row* and enter the source field values manually (with a row representing each value) and select the target mappings from the drop-down.
+. To add additional field mappings, click *Add Row* and if the additional field mapping is a:
+.. *Pick from List* field, enter the source field values manually (with a row representing each value) and select the target mappings from the dropdown.
+.. String field, manually define the value in the target field. 
+
 . Once you have added all applicable field mappings, click *Create Picklist*.
 . Click *Apply*. +
 The *<Picklist Name>* section appears, displaying a table of values and their mappings.
 
-=== Choose an existing picklist
+=== Choose An Existing Picklist
 
 To choose an existing picklist:
 
@@ -321,13 +589,13 @@ If you need to perform some logic before an action, select a flow control first:
 . Click *Save*.
 
 [[create-an-if-else-block]]
-=== Add an If/Else Block
+=== Add An If/Else Block
 
 You can create an If/Else block to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
 
 Branches are logic-based steps that run vertically in a flow. You can add multiple steps inside each branch. Each branch is then executed in sequential order.
 
-When adding decision steps, the values in the *Field* list are populated based on values selected when you designate the previous steps of your flow. After the *Field* value is selected, all compatible value options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and the list is populated based on the values you selected when defining the trigger. In the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
+When adding decision steps, the values in the *Field* list are populated based on values selected when you specify the previous steps of your flow. After the *Field* value is selected, all compatible value options appear in the <<supported-operators,*Operator*>> list. If the selected *Operator* requires a second data pill to complete the condition, then the *Value* field is enabled and the list is populated based on the values you selected when defining the trigger. In the *Value* field, you can either enter a value manually or you can set it using the existing data from your flow.
 
 For the purposes of comparing flows, if you initiate a date comparison when building a flow and there is no value in one of the date fields, the missing value is updated to `0001-01-01` by default.
 
@@ -339,7 +607,7 @@ The following operators are supported when building conditions in an If/Else blo
 |Function | Supported Data Type | Value Required? | Notes
 |Equals/Does not equal | All | Yes |The value in this field is case-sensitive for strings.
 |Contains/Does not contain | Array, String | Yes | None
-|Greater than/Less than |  Date, Number | Yes | In the *Date* field, the *Greater than* value is equal to a later date and the *Less than* value is equal to an earlier date.
+|Greater than/Less than | Date, Number | Yes | In the *Date* field, the *Greater than* value is equal to a later date and the *Less than* value is equal to an earlier date.
 |Greater than or equal/Less than or equal | Date, Number | Yes | In the *Date* field, the *Greater than or equal* value is equal to a later date or the current date and the *Less than or equal* value is equal to an earlier date or the current date.
 |Is empty/Is not empty |Array, String, Object | No | None
 |Starts with/Ends with | String | Yes | A string value for this field is required.
@@ -362,14 +630,14 @@ To create an If/Else block:
 [[use-custom-logic]]
 == Use Custom Logic
 
-Custom logic uses the row number for each condition in the If statement block of an If/Else statement and `OR`, `AND`, and `NOT` to create complex expressions.  When you select the custom logic option, each condition is assigned a number and you can then use that number to customize the order of operations for the conditions.
+Custom logic uses the row number for each condition in the If statement block of an If/Else statement and `OR`, `AND`, and `NOT` to create complex expressions. When you select the custom logic option, each condition is assigned a number and you can then use that number to customize the order of operations for the conditions.
 
 When using custom logic, all conditions defined must be referenced in the expression for the expression to be validated. For example, if there are three defined conditions and you enter “1 and (2 or 1)”, the expression is invalid because “3” is not referenced.
 
  Using custom logic, you can have up to 20 conditions and a condition can be referenced more than once.
 
 [[create-and-test-a-for-each-loop]]
-=== Create a For Each Loop
+== Create A For Each Loop
 
 To create a For Each Loop:
 
@@ -381,5 +649,84 @@ To create a For Each Loop:
 . After you complete the action, click *Save*.
 
 You can add logic and actions in different patterns, depending on what your flow needs to do.
+
+== Configure Error Handling 
+
+When executing a flow, you can watch for connection or logic errors in specific steps of your flow and then specify logic to handle the errors. You can also configure steps to complete additional actions or to send notifications if an error occurs.  
+
+[[access-error-handling]]
+=== Access Error Handling 
+
+To access the error handler:
+
+. <<create-a-new-flow,Create a new flow>> or open an existing flow.
+.. If you create a new flow:
+... Select the connector or system to start your flow.
+... Select and configure a trigger. 
+... Select and configure an action.
+... Directly before the step to which you want to add an error handler, click the plus button. 
+... In the *What Should Start This Flow?* window, click *Error Handler*.
+.. If you add a step to an existing flow:
+... Open your flow.
+... Directly before the step to which you want to add an error handler, click the plus button. 
+... In the *Next Step* window, click *Error Handler*. 
+
+[[watch-a-step]]
+=== Watch a Step 
+
+You can watch specific steps for connection or logic errors. If an error occurs, the flow stops normal processing and begins processing the steps in the error handler. You can add one or more steps to watch in this section.
+
+To watch a step: 
+
+. <<access-error-handling,Access the error handler in your flow>>.
+. In the *Error Handler* card, in the *Watch* section, click the plus sign and select the action to watch or drag the step to watch into the *Watch* section. +
+The selected action appears in the *Watch* section. If an error occurs, the flow moves to the actions selected in the *On Error* section.
+. To add additional actions to watch, repeat the previous step.
+
+=== Configure Composer to Handle Errors 
+
+You can configure Composer to handle errors encountered in the *Watch* section. If an error occurs in a watched action, the *On Error* section begins processing the flow based on your configuration. You can add one or more steps to run in the *On Error* section. 
+
+==== Error Handling Behavior
+
+* By default, the *On Error* section allows for one condition to be met; however, you can add as many conditions as you want in this section. 
+* When adding a new condition, the *On Error* condition field value is set to `None` by default. Leaving this value set to `None` returns any errors that may occur in the *Watch* section and processes all steps inside this *On Error* section. 
+* When a condition is met in the *On Error* section, the error handler processes the conditions in sequential order and stops once the first condition is met. After the first condition is met, any subsequent steps are skipped. If you want the process to continue, you can add an additional *On Error* section branch inside your existing *On Error* section.
+* When xref:ms_composer_test_flow.adoc[testing your flow], any errors caught by the error handler appear in the right pane of the action card. Successful steps are marked with a green check and failed steps are marked with a red X. 
+* When an error occurs in a watched action, the error information is saved as a data pill that can then be used for subsequent notification or record-updating actions. For example, if an error occurs, you can specify an action to send an email to your team containing the error information from the data pill.
+* When configuring error handling, you can establish different sequences to meet your requirements. You can: 
+** Add all steps in one error handler. +
+If you have the same *On Error* process for any errors or if you can configure multiple *On Error* processes with error conditions to handle specific types of errors, then add all steps in one error handler. As a result, if any error occurs in the step inside the *Watch* section, the remaining steps in the same *Watch* section stop.
+** Add more than one error handler in a flow. +
+You can group steps into seperate error handlers or each step can have its own error handler. This provides the flexibility to configure different steps when errors occur.
+** Place an error handler inside a For Each loop. +
+If an error occurs inside a For Each loop, adding an error handler in the for each loop allows the loop to continue past an error. To set an error handler to continue after an error occurs, in the *After running* drop down, select *Continue*.  To provide further clarity on the error, add a step to update the failed record for troubleshooting. 
+
+==== Add Steps to the On Error Section 
+
+To add steps to the *On Error* section of your flow: 
+
+. <<watch-a-step,Select a step to watch>>.
+. In the *Error Handler* card, in the *On Error* section: 
+.. In the *Conditions to run this branch* dropdown, select one of the following conditions and then enter the requested criteria: 
+*** `AND`: Meets all conditions.
+*** `OR`: Meets any conditions.
+*** `None`: Returns all errors without meeting any conditions.
+*** `Custom Logic`: Specify <<use-custom-logic,custom logic>> to meet conditions. 
+.. In the *After Running* dropdown, select: 
+*** *Stop*: After processing all steps in the *On Error* section, Composer flags errors and stops the flow. On the <<flow-details-page,*Run History*>> page, the _Status_ field of the flow shows `FAILED`. 
+*** *Continue*: After processing all steps in the *On Error* section, Composer dismisses errors and the flow continues. If no other errors occur, on the <<flow-details-page,*Run History*>> page, the _Status_ field of the flow shows `SUCCESS`.
+. If you want to add additional conditions to this *On Error* section, click *Add Condition*. 
+. If you want to look for a specific error condition and specify how it is handled within your existing *On Error* section, click *Add On Error* to add a new branch with steps. +
+When adding a branch to the *On Error* section, in the *After Running* section, select: 
+** *Continue*: Processes *On Error* steps and then continues to the next step within the parent step. 
+** *Propagate*: Processes *On Error* steps and then pushes the error to the parent error handler section. The child step then stops processing and the error handler process returns to the parent step. 
+. Optionally, in the *On Error* section, click the plus button to add steps to handle an error: 
+.. In the *Next Step* window, select *System Action*. 
+.. Select an action to complete when an error occurs. For example, add an action to send a notification email with the *Record ID* and error information to your team or update the source record with error information. 
+.. Configure the action. 
+. Save the flow. 
+. xref:ms_composer_test_flow.adoc[Test the flow].
+. xref:ms_composer_activation.adoc[Activate the flow].
 
 include::_partials/see-also.adoc[]

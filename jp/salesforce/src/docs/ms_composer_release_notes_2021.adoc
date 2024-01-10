@@ -1,0 +1,415 @@
+= MuleSoft Composer for Salesforce のリリースノート - 2021
+
+MuleSoft Composer for Salesforce を使用して、コネクテッドエクスペリエンスをすばやくビルドします。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
+
+新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
+
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題と制限事項」]​を参照してください。
+
+== 2021 年 12 月 21 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Asana とコンポーザ間の接続を確立するときにエラーが表示されていた Asana Connector の問題が修正されました。 | SE-12452
+
+|===
+
+== 2021 年 12 月 16 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Google Sheets Connector で Create/Update Row アクション使用するときに複数のデータ行を転送できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+| 問題 |ID
+
+| これまで、Google Sheets Connector では、Google スプレッドシートがトリガである場合、割り当てられたデータ型 (​`int`​ (整数) や ​` `​bool` (ブール)) に関係なく、すべての出力項目が ​`text`​ (テキスト) として返されていました。そのため、アクションでトリガデータピルをテキスト以外の項目にマップしようとすると、エラーが発生していました。現在、トリガ項目で元のデータ型が保持されるようになり、後続のアクションで適切にマップできます。 | SE-227701、COCN-575
+| スペースが含まれるドキュメントのメタデータが失敗する Google Sheets Connector の問題が修正されました。  | COCN-742
+| ライブラリの連動関係がアップグレードされました。 | |
+// | Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
+
+|===
+
+== 2021 年 12 月 9 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Xero Connector のメタデータページネーションの問題が修正されました。 | CSCA-1106
+| Xero Connector の ​*Get contact by ID*​ および ​*Search contacts*​ アクションのサンプルデータ要求が失敗する問題が修正されました。 | CSCA-1044
+| Xero API の対応する項目名に合わせて Xero Connector の項目表示ラベルが修正されました。 | CSCA-1043
+| Xero Connector の項目表示ラベルが修正されました。  | CSCA-1040
+
+|===
+
+== 2021 年 12 月 2 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で ​*[Job (ジョブ)]*​ レコードタイプがサポートされるようになりました。
+
+* NetSuite Connector で ​*Update Record*​ アクションの ​*[ID Type (ID 種別)]*​ 項目の ​*[External (外部)]*​ 値がサポートされるようになりました。
+
+* NetSuite Connector で ​*Delete Record*​ アクションの ​*[ID Type (ID 種別)]*​ 値がサポートされるようになりました。
+
+* NetSuite Connector で ​*[Assembly Item (アセンブリ項目)]*​ レコードタイプがサポートされるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| 一部のメタデータサブカテゴリが空の場合、フローでメタデータが更新されることがあります。 | SE-23496
+| 空の値が含まれるカスタム項目を処理するときの問題が修正されました。 | SE-23068
+| NetSuite XML 要求で runServerSuiteScriptAndTriggerWorkflows フラグが必要なくなりました。 | SE-22758
+| 日時カスタム項目を処理するときの問題が修正されました。 | COCN-735
+
+|===
+
+== 2021 年 12 月 1 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Jira Connector のすべての操作の入力項目でスペースがサポートされるようになりました。
+
+* Jira Connector のアクションで [​`Comment`​ (コメント)] 項目がサポートされるようになりました。
+
+== 2021 年 11 月 23 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Salesforce Connector で For Each ブロックをフローコントロールに追加するときに、For Each ブロックにオブジェクト API 参照名ではなくオブジェクト表示ラベル名が表示されます。 | COCN-745
+
+|===
+
+
+== 2021 年 11 月 8 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce を使用して、再接続が不要な更新トークンを発行することで、失われた OAuth 接続を修正できるようになりました。
+
+== 2021 年 11 月 4 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Jira Connector のアクションカードで、​*[Summary (概要)]*​ 項目が ​*[Priority (優先度)]*​ 項目の下に表示されるようになりました。 | CSCA-1055
+
+|===
+
+== 2021 年 10 月 28 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *[Composer Flows (コンポーザフロー)]*​ ページで、フローが実行に失敗した場合に、問題をトラブルシューティングできるよう、詳細なエラーメッセージが表示されるようになりました。
+
+* 新しいシステムである Zuora に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+
+== 2021 年 10 月 27 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コネクタでオブジェクトのリストのマッピングの制限が引き上げられました。選択したオブジェクトのリストの項目だけでなく、任意の最上位項目をマップできるようになりました。
+
+== 2021 年 10 月 21 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* メニューから [fx] を選択したときに表示される ​*[Custom Expression Editor (カスタム式エディタ)]*​ ウィンドウを使用してアクションのカスタム式を作成および編集できるようになりました。
+
+== 2021 年 10 月 20 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Stripe Connector で新しいアクション ​*Create Product*​ と新しいトリガ ​*New Refund*​ がサポートされるようになりました。
+
+
+== 2021 年 10 月 14 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである QuickBooks Online を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+
+== 2021 年 10 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Zendesk に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+|テスト中にエラーが発生した場合、デバッグ情報ファイルをダウンロードしてサポートに連絡できるように、手順とリンクが ​*[Test stopped unexpectedly (テストが予期せず停止した)]*​ ウィンドウに表示されるようになりました。 | CAPO-364
+
+|===
+
+== 2021 年 9 月 27 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で、ユーザは内部 ID を使用せずに指定カスタム値を使用して、値をカスタム選択リストにマップできるようになりました。
+
+== 2021 年 9 月 14 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce で、日付項目の値を選択するための ​*[Pick from Calendar (カレンダーから選択)]*​ オプションがサポートされるようになりました。
+
+== 2021 年 9 月 9 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+* ドラッグアンドドロップまたはモーダルを使用してコンポーザキャンバスのカードを再編成できるようになりました。
+
+|===
+
+|問題|ID
+
+|Salesforce Connector でサービス組織の 500 件の取引先責任者レコードを更新または作成するときに一部のレコードが処理されなかった問題が修正されました。 | COCN-446
+
+|*[Invoice (請求書)]*​ オブジェクトの Salesforce Connector で ​*Create Record*​ アクションを使用したときに ​*[Invoice (請求書)]*​ 項目が使用できなかった問題が修正されました。 | COCN-530
+
+|===
+
+== 2021 年 9 月 8 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Workday Connector で Workday R1.2021 バージョンがサポートされるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+|検証エラーの問題が修正されました。 |COCN-43、COCN-37
+
+|*[Reason (理由)]*​ 項目が表示されない原因となっていた問題が修正されました。 |COCN-600
+
+|===
+
+== 2021 年 9 月 2 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Slack Connector でテキストの書式設定にマークダウンがサポートされるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+|10,000 件を超えるチャネルが含まれるワークスペースで ​*Create Message*​ アクションを使用したときに、チャネル名を選択しても失敗しなくなりました。 |COCN-512
+
+|===
+
+== 2021 年 8 月 30 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で NetSuite Financial オブジェクトがサポートされるようになりました。この機能をサポートするために新しいレコードタイプが使用できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+|Slack Connector で、数百件のチャネルが含まれるワークスペースに接続したときに、​*Create message*​ アクション中にチャネル名を選択しても失敗しなくなりました。 |COCN-539
+
+|===
+
+== 2021 年 8 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* リストが返されるフローでステップをテストする場合、そのリストの最大項目数は 5 個です。
+
+== 2021 年 8 月 11 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 以前は、フローをテストするときに、テストはエラーで停止するか手動で終了しなかった場合、5 分後に自動的に終了していました。テスト時間が 10 分間に更新されました。
+
+* 次の Jira Connector のトリガおよびアクションの名前が変更されました。
+** トリガ
+*** *Update issue*​ が ​*Update issue with Custom Fields*​ になりました
+*** *New issue*​ が ​*New issue with Custom Fields*​ になりました
+** アクション: *Update/edit issue*​ が ​*Update issue with Custom Fields*​ になりました
+
+* Jira Connector で次のトリガおよびアクションがサポートされるようになりました。
+** トリガ
+*** *Updated issue with Standard Fields only*
+*** *New issue with Standard Fields only*
+** アクション: *Update issue with Standard Fields only*
+
+* Xero Connector で ​*Create or update contact*​ アクションの ​*[Contact persons (取引先責任者の個人)]*​ 項目がサポートされるようになりました。
+
+== 2021 年 8 月 6 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Xero Connector で ​*Create or update invoice*​ アクションがサポートされるようになりました。さらに、​*[Contact persons (取引先責任者の個人)]*​ 項目が ​*Create or update contact*​ アクションでサポートされるようになりました。
+
+== 2021 年 7 月 22 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* ドラッグアンドドロップまたはモーダルを使用してコンポーザキャンバスのカードを再編成できるようになりました。
+
+== 2021 年 7 月 15 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *Get records*​ アクションが NetSuite Connector で使用できるようになりました。このアクションでは、指定された条件に基づいて NetSuite レコードのリストを返し、カスタム検索を有効にします。
+
+== 2021 年 7 月 19 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである ServiceNow に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2021 年 7 月 15 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *Get records*​ アクションが NetSuite Connector で使用できるようになりました。このアクションでは、指定された条件に基づいて NetSuite レコードのリストを返し、カスタム検索を有効にします。
+
+== 2021 年 7 月 8 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Xero に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+* 次のトリガが Google Sheets Connector で使用できるようになりました。
+
+** New row in sheet
+** Updated row in sheet
+** New spreadsheet
+
+== 2021 年 6 月 4 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Microsoft Teams に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2021 年 7 月 1 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Jira に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+* NetSuite Connector でアクションおよびトリガにカスタムレコードタイプがサポートされるようになりました。
+
+== 2021 年 6 月 4 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Microsoft Teams に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2021 年 6 月 2 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のシステム、Asana と Twilio に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2021 年 5 月 19 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+新しいシステムである Stripe に接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+== 2021 年 5 月 6 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+*[Expand all (すべて展開)]*​ または ​*[Collapse all (すべて折りたたむ)]*​ ボタンを使用して、キャンバスですべてのカードを展開したりすべてのカードを折りたたんだりできるようになりました。
+
+== 2021 年 4 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+次のシステム、Slack と NetSuite に接続できるようになりました。
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+* 接続を作成するためのユーザインターフェースが理解しやすくなりました。
+
+== 2021 年 3 月 25 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+アクティブ化されていないフローでは、トリガステップを削除して置き換えることができます。
+
+== 2021 年 3 月 15 日
+
+MuleSoft Composer for Salesforce が正式リリースされました。

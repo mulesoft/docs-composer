@@ -72,7 +72,15 @@ include::_partials/null-values.adoc[]
 
 == Transfer Binary Files
 
-You can transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance. The recommended file size limit per transfer is 25MB and files transferred across systems cannot be truncated.
+You can transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Salesforce instances, you can download binary file content from one instance and later upload that same file content to another instance. 
+
+The following Salesforce objects support binary transfers: 
+
+* `Content` 
+* `Version Document`
+* `Attachment`
+
+The recommended file size limit per transfer is 25MB and files transferred across systems cannot be truncated.
 
 == Triggers
 
@@ -80,11 +88,11 @@ include::_partials/trigger-definition.adoc[]
 
 New record::
 
-Checks for a new record every 10 minutes.
+Checks for a new record every 15 seconds.
 
 New or updated record::
 
-Checks for new or updated records of the specified object type every 10 minutes.
+Checks for new or updated records of the specified object type every 15 seconds.
 
 Deleted record::
 
@@ -105,6 +113,10 @@ To add a trigger condition:
 
 To add more trigger conditions, click *Add Condition*.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]
@@ -119,19 +131,19 @@ Update any standard or custom record as specified by an external ID.
 
 Get records::
 
-Return all the records that match specified search terms:
+Return all the records that match specified criteria:
 +
-image::images/query-builder.png[Query builder UI, 500]
+image::images/get-records-salesforce.png[Query builder UI, 500]
 +
-* You can choose which fields that the action fetches in the *Result fields* section.
-* You can add one or more conditions to specify which types of records should be returned in the *Filter records* section. For example, you could specify that the last name begin with "B."
-* You can control the sort order of the returned records in the "Sort records" section. Records can be sorted in ascending or descending order of a field that you specify.
+* You can choose which fields the action fetches in the *Result fields* section.
+* You can add one or more conditions to specify which types of records should be returned in the *Criteria* section. For example, you could specify that the last name begin with "B."
+* You can control the sort order of the returned records in the *Sort records* section. Records can be sorted in ascending or descending order of a field that you specify. 
+* You can select *All records* in the *How Many Records to Retrieve* section to retrieve a list of records that match your criteria. The *All records* option is selected by default. If you want to access a single record from the list, you must add a xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow. 
+* If you have filtered your search with a unique identifier, you can select *Only the first record* in the *How Many Records to Retrieve* section to return a single record. Returning a single record will change the output of the search from a _list_ to a _single_ record. The *Get records* action searches for all records and returns only the first record in the list. +
+If you previously selected *All records* and then changed your selection to *Only the first record*, data pills in your existing flow could be invalidated.   
 
-When you add a record that was returned from the *Get records* action, you must add a xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each loop] to your flow.
-
-When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`.
-
-For more information on Field-Level Encryption, see the https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce documentation].
++
+When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`. For more information on Field-Level Encryption, see the https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce documentation].
 
 Create or update record::
 
@@ -149,6 +161,23 @@ Adds a file to a folder in Salesforce.
 Download file::
 
 Returns the binary contents of the specified file.
+
+== Set Error from Action Preferences
+
+If an error occurs within your flow, the error details appear on the *Run History* page. The *Run History* page displays the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. Using this information, you can troubleshoot issues within your flow. However, you can proactively set preferences in advance for handling errors that may occur.
+
+To set an error from action preference: 
+
+. Select an action. 
+. In the *If an error occurs section*, select one of the following: 
+
+.. *Stop Flow* 
+.. *Continue to next step* 
+.. *Create an error branch*
+.. *Continue to another branch* 
+
+The error from action preference is set. If an error occurs, the selected preference is enacted in the flow.  
+
 
 == Objects
 

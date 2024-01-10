@@ -25,6 +25,8 @@ Update customer information automatically across different systems that do not h
 
 When invoking short-running RPA processes from Composer, invoke a single flow by choosing the *Use response in this flow* button. The RPA execution is retrieved by the RPA step and subsequent steps can use the RPA step datapills.
 
+If the *Use the response in the same flow option* is enabled and the process takes longer than three minutes to respond, the process stops and an error message appears indicating that the polling process timed out.
+
 == Invoke Long-Running RPA Processes
 
 When invoking RPA processes from Composer, a two-flow Composer scenario is only required when the RPA process takes longer than the allowed completion timeout period, which is three minutes.
@@ -55,6 +57,19 @@ API key::
 
 The authentication code for the user. The API key is generated in the https://docs.mulesoft.com/rpa-manager/usermanagement-connect#create-an-api-key-for-a-user[RPA User Management] module.
 
+OAuth 2.0 Authorization::
+
+You can use OAuth 2.0 Client credentials to obtain an access token from a user-defined path. Provide a value for the following: 
+
+* *RPA API URL*: The URL provided by the RPA Admin creating the processes that you want to integrate with Composer. The *RPA API URL* value is the RPA Manager URL with `/rpa/api/v2` appended to the end. For example, if your RPA Manager URL is `+https://myOrg.rpa.mulesoft.com+`, then the value in the *RPA API URL* field is `+https://myOrg.rpa.mulesoft.com/rpa/api/v2+`.
+* *Client ID*: The OAuth Client ID that you use to log in to MuleSoft RPA.
+* *Client Secret*: The OAuth Client Secret that you use to log in to MuleSoft RPA.
+* *Token URL*: The URL of the endpoint that provides the access token for MuleSoft RPA. For users in the United States, enter: `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`. For users in the European Union, enter: `+https://eu1.anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
+* *Scopes*: The OAuth scopes. Enter the following OAuth scopes for full access to the RPA API: 
+** `RPA Integrator` 
+** `RPA Invocable Process`
+
+
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
@@ -62,6 +77,10 @@ include::_partials/trigger-definition.adoc[]
 RPA Process Execution Completed::
 
 Create listeners that check the status of a specific RPA process. When the RPA process finishes the execution, the polling trigger processes the configured activities in the Composer flow. Note that you must select whether you want listeners for _successful_ or _failed_ executions. You cannot receive notifications for both.
+
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
 
 == Actions
 

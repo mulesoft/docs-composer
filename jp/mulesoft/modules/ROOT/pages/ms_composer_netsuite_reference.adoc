@@ -1,0 +1,224 @@
+= NetSuite Connector リファレンス
+
+NetSuite をデータ取得元として使用している (たとえば、新しい NetSuite の連絡先を取得して Salesforce にコピーする) か、データ取得先として使用している (Salesforce の商談が完了したときに NetSuite の販売注文を作成する) かにかかわらず、フローでデータを操作する方法の詳細は、データ取得元またはデータ取得先に固有です。
+
+== 接続の詳細
+
+MuleSoft Composer を介して NetSuite に接続する場合、NetSuite で次の点を確認します。
+
+* *[Setup (設定)]*​ > ​*[Integration Management (インテグレーション管理)]*​ > ​*[Manage Integration (インテグレーションを管理)]*​ > ​*[Authentication (認証)]*​ に移動してトークンベースの認証が有効になっていることを確認します。
+* *[Setup (設定)]*​ > ​*[User/Roles (ユーザ/ロール)]*​ > ​*[Two-Factor Authentication Roles (2 要素認証ロール)]*​ に移動して、インテグレーションで使用するロールで 2 要素認証が使用されていないことを確認します。
+
+コンポーザでは NetSuite インスタンス 2020.2 以降がサポートされています。
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
++
+NetSuite には同時ユーザ (cWSU) ではなく正規ユーザ (WSU) として接続する必要があります。
+
+include::_partials/netsuite-connection-details.adoc[]
+
+//When creating a connection, note the following connection fields in NetSuite:
+
+//* *Account ID*: The *Account ID* value associated with your NetSuite instance. You can view the account ID by navigating to *Setup* > *Integration* > *SOAP Web Services Preferences*.
+//* *Consumer Key*: The *Consumer Key* value generated in NetSuite. You can generate a value for consumer key by navigating to *Setup* > *Integration* > *Manage Integrations*.
+//* *Consumer Secret*: The *Consumer Secret* value generated in NetSuite. This value is generated when generating a value for *Consumer Key*.
+//* *Token ID*: The *Token ID* value generated in NetSuite.
+//* *Token Secret*: The *Token Secret* value generated with the token ID in NetSuite.
+
+=== NetSuite 接続の確立
+
+MuleSoft Composer を使用して NetSuite 接続を確立するには、NetSuite 内の関連付けられた顧客の内部 ID を保存する Salesforce 内の取引先が必要です。カスタム項目 ​*[NetSuite ID]*​ が組織の取引先オブジェクトに作成されていることを確認する必要があります。
+
+=== NetSuite 権限の設定
+
+NetSuite データおよび NetSuite ユーザインターフェースへのアクセス権はユーザ、ロール、および権限に基づきます。
+
+ユーザ、ロール、および権限についての詳細は、 https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite ドキュメント]​を参照してください。
+
+MuleSoft では、コンポーザと NetSuite を統合するために必要な権限を持つロールを含むバンドルが提供されます。バンドルをインストールする手順は、次のとおりです。
+
+. *[Customization (カスタマイズ)] > [SuiteBundler] > [Search & Install Bundles (バンドルの検索とインストール)]*​ に移動します。
+. キーワード検索で「​`462515`​」と入力します。
+. *[MuleSoft Composer]*​ をクリックし、​*[Components (コンポーネント)]*​ タブを確認します。
+. *[Install (インストール)]*​ をクリックし、​*[Install Bundle (バンドルをインストール)]*​ をクリックします。インストールには数分かかります。
+
+バンドルをインストールしたら、ログイン情報を生成してコンポーザへの接続を設定します。ログイン情報はセキュリティ上の理由から一度しか表示されないため、ログイン情報を安全に保管してください。詳細は、NetSuite 管理者にお問い合わせください。
+
+トークンの形式でログイン情報を生成する手順は、次のとおりです。
+
+. 新しく作成した ​*MuleSoft Composer*​ ロールを目的のユーザに割り当てます。
+.. *[Setup (設定)] > [Users/Roles (ユーザ/ロール)] > [Manage Users (ユーザの管理)]*​ に移動します。
+.. インテグレーションをホストするユーザをクリックします。独自のライセンスを必要としない ​`it@company.com`​ などの一般的なアカウントを使用できます。
+. インテグレーションを作成します。
+.. *[Setup (設定)] > [Integration (インテグレーション)] > [Manage Integration (インテグレーションの管理)] > [New (新規)]*​ に移動します。
+.. インテグレーションの名前と適切な同時実行値を入力します。低い値から始めて、許可されている最大同時実行値よりも 1 ～ 2 単位低い値を使用できます。
+.. *[Token-Based Authentication (トークンベース認証)]*​ ボックスをオンにします。
+. アクセストークンを生成します。
+.. *[Setup (設定)] > [Users/Roles (ユーザ/ロール)] > [User Management (ユーザ管理)] > [Access Tokens (アクセストークン)]*​ に移動します。
+.. 前のステップで作成したインテグレーションにアプリケーションを設定します。
+.. ユーザを割り当て、​*[Save (保存)]*​ をクリックします。
+. *[Setup (設定)] > [Company (会社)] > [Company Information (会社情報)]*​ に移動して、NetSuite アカウント ID を特定します。
+
+=== サーバの SuiteScript を実行してワークフローをトリガ
+
+サーバの SuiteScript を実行してワークフローをトリガするように NetSuite 設定が定義されている場合、次の条件が必要です。
+
+* *[Audience (オーディエンス)]*​ 項目ですべてのロールが選択されている必要があります。
+* *[Execute As Role (ロールとして実行)]*​ 項目が ​`Administrator`​ に設定されている必要があります。
+* *[Log Level (ログレベル)]*​ 項目が ​`Debug`​ に設定されている必要があります。
+
+include::_partials/null-values.adoc[]
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+On Updated Records::
+
+レコードが作成されるか、既存のレコードが更新される。
+
+On New Records::
+
+新しいレコードが NetSuite に作成される。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Update Record::
+
+レコードが変更されます。
+
+Create Record::
+
+レコードが作成されます。
+
+Upsert Record::
+
+レコードが作成または更新されます。
+
+Delete Record::
+
+レコードが削除されます。
+
+Get Records::
+
+指定された検索条件に基づいて最大 500 個のレコードのリストを返します。
+
++
+image::images/get-records-netsuite.png[クエリビルダー UI、500]
++
+* アクションで取得する項目は ​*[Result fields (結果項目)]*​ セクションで選択できます。
+* 1 つ以上の条件を追加して、​*[Criteria (条件)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。
+* *[How Many Records to Retrieve (取得するレコードの数)]*​ セクションで ​*[All records (すべてのレコード)]*​ を選択すると、条件に一致するレコードのリストを取得できます。​*[All records (すべてのレコード)]*​ オプションはデフォルトで選択されています。リストから単一レコードにアクセスする場合は、​xref:ms_composer_flows.adoc#create-and-test-a-for-each-loop[For Each ループ]​をフローに追加する必要があります。 
+* 一意の識別子で検索を絞り込んだ場合は、​*[How Many Records to Retrieve (取得するレコードの数)]*​ セクションで ​*[Only the first record (最初のレコードのみ)]*​ を選択すると、単一レコードが返されます。単一レコードが返されると、検索の出力が​_リスト_​から​_単一_​レコードに変更されます。​*Get records*​ アクションは、すべてのレコードを検索し、リストの最初のレコードのみを返します。 +
+以前に ​*[All records (すべてのレコード)]*​ を選択し、その後選択を ​*[Only the first record (最初のレコードのみ)]*​ に変更した場合、既存のフローのデータピルが無効になる可能性があります。   
+
+== レコードタイプ
+
+次のレコードタイプがサポートされています。
+
+[%header%autowidth.spread]
+|===
+
+|レコードタイプ |トリガ |アクション
+
+|BILLING_SCHEDULE | |X
+|CASH_SALE |X |X
+|CASH_REFUND |X |X
+|CLASSIFICATION | |X
+|CONTACT |X |X
+|CREDIT_MEMO |X |X
+|CURRENCY | |X
+|CURRENCY_RATE | |X
+|CUSTOMER |X |X
+|CUSTOMER_DEPOSIT |X |X
+|CUSTOMER_PAYMENT |X |X
+|CUSTOMER_REFUND |X |X
+|CUSTOM_RECORD_TYPES |X |X
+|DEPARTMENT | |X
+|ESTIMATE |X |X
+|EMPLOYEE |X |X
+|GIFT_CERTIFICATE_ITEM |X |X
+|INVENTORY_ADJUSTMENT |X |X
+|INVENTORY_ITEM |X |X
+|INVOICE |X |X
+|ITEM_FULFILLMENT |X |X
+|ITEM_GROUP |X |X
+|ITEM_RECEIPT |X |X
+|JOURNAL_ENTRY |X |X
+|KIT_ITEM |X |X
+|LEAD |X |X
+|LOCATION | |X
+|LOT_NUMBERED_ASSEMBLY_ITEM |X |X
+|LOT_NUMBERED_INVENTORY_ITEM |X |X
+|NON_INVENTORY_PURCHASE_ITEM |X |X
+|NON_INVENTORY_RESALE_ITEM |X |X
+|NON_INVENTORY_SALE_ITEM |X |X
+|OPPORTUNITY |X |X
+|OTHER_CHARGE_PURCHASE_ITEM |X |X
+|OTHER_CHARGE_RESALE_ITEM |X |X
+|OTHER_CHARGE_SALE_ITEM |X |X
+|PARTNER |X |X
+|PAYMENT_ITEM |X |X
+|PRICE_LEVEL | |X
+|PROSPECT |X |X
+|PURCHASE_ORDER |X |X
+|RETURN_AUTHORIZATION |X |X
+|SALES_ORDER |X |X
+|SERIALIZED_ASSEMBLY_ITEM |X |X
+|SERIALIZED_INVENTORY_ITEM |X |X
+|SERVICE_PURCHASE_ITEM |X |X
+|SERVICE_RESALE_ITEM |X |X
+|SERVICE_SALE_ITEM |X |X
+|SUBSIDIARY | |X
+|SUPPORT_CASE |X |X
+|TIME_BILL |X |X
+|TIME_SHEET |X |X
+|TRANSFER_ORDER |X |X
+|VENDOR |X |X
+|VENDOR_BILL |X |X
+
+|===
+
+[NOTE]
+====
+CURRENCY および ​PAYMENT_ITEM​ オブジェクトは GET RECORDS アクションではサポートされていません。
+
+LEAD および PROSPECT オブジェクトは GET RECORDS アクションでのみサポートされます。LEAD および PROSPECT オブジェクトは CUSTOMER オブジェクトのサブ種別であるため、他のアクションに LEAD および PROSPECT オブジェクトを使用するには、NetSuite ドキュメントに従ってオブジェクト種別を CUSTOMER に設定し、​`entityStatus`​ の ​`internalId`​ を対応する値に設定します。
+
+DEPARTMENT、LOCATION、​PRICE_LEVEL​、SUBSIDIARY オブジェクトは GET RECORDS アクションでのみサポートされます。
+
+====
+
+== カスタム項目
+
+MuleSoft Composer を使用して、NetSuite レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+
+//== Objects
+
+//The following objects are available:
+
+//* Service Sale Item
+//* Service Purchase Item
+//* Return Authorization
+//kept but commented out the above Objects section in case I misunderstood Jan's instructions
+
+== リストオブジェクト
+
+リストオブジェクトがサポートされます。
+
+*[Get Records (レコードの取得)]*​ アクションでは、次のリストオブジェクトがサポートされます。
+
+* Department (部署)
+* Locations (場所)
+* Price Level (価格レベル)
+* Subsidiary (子会社)
+
+== カスタム選択リスト
+
+値名を使用して値をカスタム選択リストにマップできます。値をカスタム選択リストにマップするのに内部 ID は不要です。
+
+include::_partials/see-also.adoc[]

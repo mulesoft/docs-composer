@@ -1,0 +1,158 @@
+= Jira Connector リファレンス
+
+Jira は、開発を改善するためにユーザが商品の課題を計画、追跡、リリース、報告できるようにサポートする強力なプロジェクト管理ツールおよびチケットシステムです。
+
+コンポーザで Jira Connector を使用するには、​_[Administrator Jira (Jira システム管理者)]_​ グローバル権限が必要です。詳細は  https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira のドキュメント^]​を参照してください。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Organization Site URL (組織サイト URL)::
+
+接続する Sandbox または本番環境を含む Jira 組織の URL を入力します。​*[Organization Site URL (組織サイト URL)]*​ 項目に値を指定しない場合、接続では Atlassian API の ​`/resources`​ エンドポイントにリストされている最初の URL が使用されます。接続でデフォルトの組織ではなく特定の組織を使用する場合は、接続ごとに ​*[Organization Site URL (組織サイト URL)]*​ 項目を設定します。Jira 組織についての詳細は、 https://support.atlassian.com/organization-administration/docs/get-started-with-an-atlassian-organization/[Jira のドキュメント^]​を参照してください。 
++
+Atlassian アカウント経由で Jira 組織に接続する手順は、次のとおりです。 
+
+. *[Connect to your Jira Account (Jira アカウントに接続)]*​ ウィンドウの ​*[Organization Site URL (組織サイト URL)]*​ 項目に、Jira 組織の URL を入力します。例: `+https://orgname.atlassian.net+`​。  
+. *[Connect (接続)]*​ をクリックします。 +
+Atlassian ウィンドウが表示され、Composer が Atlassian アカウントへのアクセスを要求していることが示されます。 
+. ウィンドウの ​*[Authorize for site (サイトを認証)]*​ ドロップダウンで、使用する組織を選択し、​*[Accept (同意)]*​ をクリックします。 +
+これで、Composer が Jira 組織に接続されました。  
+
+Username (ユーザ名)::
+
+Jira にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Jira にログインするために使用する OAuth パスワード。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New issue with Custom Fields::
+
+Jira で作成されたカスタム項目を使用して新しい課題をチェックします。
+
+New issue with Standard Fields only::
+
+Jira で作成された標準項目を使用して新しい課題をチェックします。
+
+Update issue with Custom Fields was updated or created::
+
+Jira のカスタム項目を使用して更新または作成された課題をチェックします。
+
+Update issue with Standard Fields only was updated or created::
+
+Jira の標準項目を使用して更新または作成された課題をチェックします。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create issue with custom fields::
+
+選択されたプロジェクト内に新しい課題を作成します。次の項目の値を指定します。
+
+* *Project (プロジェクト)*
+* *Key (キー)*
+* *Summary (概要)*
+* *Type (型)*
+* *Status (状況)*
+* *Priority (優先度)*
+
+Update issue with custom fields::
+
+指定されたカスタム項目の値を更新します。次の項目の値を指定します。
+
+* *Issue ID or Key (課題 ID またはキー)*
+* *Notify Users (ユーザに通知)*
+
+Update issue with standard fields only::
+
+指定された標準項目値を更新します。次の項目の値を指定します。
+
+* *Issue ID or Key (課題 ID またはキー)*
+* *Notify Users (ユーザに通知)*
+
+Assign user to issue::
+
+指定された課題にユーザを割り当てます。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
+
+Add watcher to issue::
+
+既存の Jira の課題にウォッチャーを追加します。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
+
+Get issue::
+
+特定の課題の詳細を返します。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
+
+Add comment to issue::
+
+コメントを作成して既存の課題課題に追加します。次の項目の値を指定します。
+* *Issue ID or Key (課題 ID またはキー)*
+* *Comment Text (コメントテキスト)*
+
+Get account IDs for users::
+
+`key`​ または ​`username`​ パラメータで指定されたユーザのアカウント ID を返します。複数の ​`key`​ または ​`username`​ パラメータを指定できます。
+
+プロジェクトの作成::
+
+Jira のプロジェクトタイプテンプレートに基づいて新しいプロジェクトを作成します。次の項目の値を指定します。
+
+* *Key (キー)*
+* *Name (名前)*
+* *Lead Account ID (リードアカウント ID)*
+* *Project Type Key (プロジェクトタイプキー)*​: この項目の値は、大文字で始まり、1 つ以上の大文字または数字が続く必要があります。
+
+Get project::
+
+Jira のプロジェクトの詳細を返します。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
+
+Update project::
+
+Jira の既存のプロジェクトのプロジェクトの詳細を更新します。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
+
+Retrieve attachments for an issue::
+
+課題のすべての添付ファイルを返します。これはファイルのメタデータを返しますが、ファイルのコンテンツは返しません。ファイルは、アップロードされた日付順に並び替えられます。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
+
+Retrieve attachment::
+
+指定された添付ファイルの未加工ファイルへの URL リダイレクトを返します。​*[Attachment ID (添付ファイル ID)]*​ の値を指定します。
+
+Upload attachment to an issue::
+
+添付ファイルを Jira の課題にアップロードします。次の項目の値を指定します。
+
+* *Issue ID or Key (課題 ID またはキー)*
+* *File Name (ファイル名)*
+
+== カスタム項目
+
+MuleSoft Composer を使用して、Jira の課題で設定したアクションおよびトリガの標準項目やカスタム項目の値にアクセスできます。
+
+以下のリストコンポーネントを含むカスタム項目は現在サポートされていません。
+
+* Text fields (multi-line) (テキスト項目 (複数行))
+* Labels (ラベル)
+* Checkboxes (チェックボックス)
+* Radio buttons (ラジオボタン)
+* Select lists (multiple-choice) (選択リスト (複数選択))
+* Select lists (cascading) (選択リスト (カスケード))
+
+== 標準項目
+
+現時点では、以下の標準項目はサポートされていない。 
+
+* *Affects version (影響バージョン)*
+* *Fix version (修正バージョン)*
+* *Environment (環境)*
+* *Component (コンポーネント)*
+
+include::_partials/see-also.adoc[]

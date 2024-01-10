@@ -28,6 +28,10 @@ New or updated task::
 
 Fires when a task is created or an existing task is updated.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]
@@ -45,5 +49,9 @@ Returns the completed and updated task record.
 Add comment to card::
 
 Comment on a task to ask questions, provide extra information, or to offer insight. The comment appears on the card.
+
+== Custom Fields 
+
+Custom fields are not supported. Using MuleSoft Composer, you can access standard field values for actions and triggers that you set in the Asana record.
 
 include::_partials/see-also.adoc[]

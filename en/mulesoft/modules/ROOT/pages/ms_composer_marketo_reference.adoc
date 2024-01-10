@@ -32,6 +32,10 @@ New Lead::
 
 Returns a list of new lead activities after a given datetime.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

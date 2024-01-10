@@ -1,0 +1,83 @@
+= Box Connector リファレンス
+
+Box は、汎用の SaaS エンタープライズコンテンツ管理システムです。組織は Box を使用して、ドキュメント、画像、ビデオ、その他のさまざまなファイルを安全に管理し、コラボレーションします。
+
+== Connections (接続)
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Username (ユーザ名)::
+
+Box にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Box にログインするために使用する OAuth パスワード。
+
+include::_partials/binary-data.adoc[]
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+On new file in folder (フォルダ内の新しいファイル)::
+
+新規フォルダが追加されたときにトリガされます。​*[Folder ID (フォルダ ID)]*​ の値を指定します。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Add file to folder using URL (URL を使用してフォルダにファイルを追加)::
+
+公開され共有されていいる URL で参照される Box のフォルダにファイルを追加します。次の項目の値を指定します。
+
+* *Folder ID (フォルダ ID)*
+* *Source URL (ソース URL)*
+
+Upload File::
+
+Box のフォルダにファイルを追加します。次の項目の値を指定します。
+
+* *File Name (ファイル名)*
+* *File contents (ファイルコンテンツ)*
+* *Folder ID (フォルダ ID)*
+* *Existing File ID (既存のファイル ID)*
+
+Download file (ファイルをダウンロード)::
+
+指定されたファイルとバージョンのバイナリコンテンツを返します。次の項目の値を指定します。
+
+* *File ID (ファイル ID)*
+* *Version (バージョン)*
+
+Create folder (フォルダの作成)::
+
+Box 構造内にフォルダを作成します。次の項目の値を指定します。
+
+* *Parent Folder ID (親フォルダ ID)*
+* *Folder name (フォルダ名)*
+
+Create file metadata (ファイルメタデータの作成)::
+
+Box のファイルにメタデータテンプレートを入力して、ファイルメタデータを作成します。次の項目の値を指定します。
+
+* *File ID (ファイル ID)*
+* *Metadata template (メタデータテンプレート)*
+
++
+チェックボックスなどの複数選択項目のデータ型は、コンポーザには表示されません。
+
+Update file metadata (ファイルのメタデータの更新)::
+
+Box のファイルに対する既存のメタデータテンプレートを更新することで、ファイルのメタデータを更新します。次の項目の値を指定します。
+
+* *File ID (ファイル ID)*
+* *Metadata template (メタデータテンプレート)*
+
++
+チェックボックスなどの複数選択項目のデータ型は、コンポーザには表示されません。
+
+include::_partials/see-also.adoc[]

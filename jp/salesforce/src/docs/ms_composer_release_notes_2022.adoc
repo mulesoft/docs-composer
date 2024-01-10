@@ -1,0 +1,908 @@
+= MuleSoft Composer for Salesforce のリリースノート - 2022
+
+MuleSoft Composer for Salesforce を使用して、コネクテッドエクスペリエンスをすばやくビルドします。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
+
+新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
+
+//* Fixed the issue in Workday Connector in which the the *Create Worker* action returned a value for *Applicant Reference ID* but not for *Employee Reference*.
+//| Fixed an issue in NetSuite Connector in which creating custom fields on the *Contact* object with the type `document` did not return results. | COCN-752
+//| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
+//* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
+
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題と制限事項」]​を参照してください。
+
+== 2022 年 12 月 23 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Salesforce Connector で OAuth 2.0 接続を使用しているときに、​*Upload file*​ および ​*Download file*​ アクションで ​`NullPointerException`​ が誤ってスローされることはなくなりました。 | W-12236769
+|===
+
+== 2022 年 12 月 15 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *[On New Message (新規メッセージ)]*​ トリガが再び Slack Connector に使用できるようになりました。トリガには次の機能強化が加えられています。
+
+** *[Created (作成済み)]*​ 項目で日付ピッカーがサポートされるようになりました。
+** *[Limit (制限)]*​ 項目では数値のみがサポートされるようになりました。
+** *[Limit (制限)]*​ 項目のデフォルト値が ​`100`​ になりました。
+** トリガから返されるメッセージが時刻の昇順に表示されるようになりました。
+
+* Slack Connector で、​*[Conversation ID (会話 ID)]*​ 項目の名前が ​*[Conversation Name (会話名)]*​ に変更されました。さらに、この項目がドロップダウンでもサポートされるようになりました。
+
+== 2022 年 12 月 14 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 値が null または空の可能性があるスコープでデータピルを使用しようとすると、ユーザに警告するメッセージが表示されるようになりました。
+
+
+== 2022 年 12 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Salesforce Connector で、API が ​`ApiFault`​ エラーを返したときに、コンポーザのログに拡張されたエラーコードとメッセージが含まれるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|ServiceNow Connector で、​*New/Updated Record*​ トリガはすべて適切なタイムスタンプのメッセージを取得するようになりました。| W-12176039
+|ServiceNow Connector で、作業負荷の高いシナリオで突然切断されることはなくなりました。 | W-12035222
+|ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、componentorg.apache.commons ライブラリがバージョン 1.10.0 にアップグレードされました。| W-11913979
+|ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、org.springframework ライブラリがバージョン 5.3.20 にアップグレードされました。 | W-12150392
+|Salesforce Connector で、トリガと ​*Get records*​ アクションでブールパラメータの ​`isTrue`​ および ​`isFalse`​ 演算子がサポートされるようになりました。 | W-11752116
+|Salesforce Connector で、​*Delete record*​ アクションは ​`Retrieving metadata for the step failed. Try saving and refreshing the page.`​ (ステップのメタデータの取得に失敗しました。ページを保存して更新してみてください) エラーを誤ってスローしなくなりました。 | W-12211471
+|Salesforce Connector で、ウォーターマークが適切に使用されていない場合に、トリガでデータが失われる可能性がなくなりました。 | W-12128874
+|Jira Connector で、報告されたセキュリティの脆弱性に対処するために、com.fasterxml.jackson.core ライブラリがバージョン 2.14.1 にアップグレードされました。 |W-11933499
+|Jira Connector で、報告されたセキュリティの脆弱性に対処するために、org.apache.commons-text ライブラリがバージョン 1.10.0 にアップグレードされました。 |W-12004679
+|===
+
+
+== 2022 年 12 月 12 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Zendesk Connector で、報告されたセキュリティの脆弱性に対処するために、com.fasterxml.jackson.core ライブラリがバージョン 2.13.4.1 にアップグレードされました。| W-11933496
+|Zendesk Connector で、CloudHub にデプロイされているときに Zendesk トリガが長時間アイドル状態になっても、接続は切断されなくなりました。| W-12040415
+|===
+
+
+== 2022 年 12 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|以前は、非アクティブ化されたフローが再度アクティブ化された場合、そのフローは、フローが非アクティブ化されている間に発生したイベントを誤って取得していました。フローが非アクティブ化されると、そのフローのオブジェクトストアデータが消去され、再アクティベーション時にそのフローが最初から開始されるようになりました。 |W-12120985
+|===
+
+
+== 2022 年 11 月 29 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector で、OAuth 2.0 認証コード許可接続プロバイダは ​*Token Exchange (トークンエクスチェンジ)*​、​*Token Refresh (トークン更新)*​、​*Token Revoke (トークン取り消し)*​ のカスタムリクエストヘッダーを設定する機能をサポートするようになりました。
++
+Fortnox や QuickBooks などの一部のシステムでは、OAuth ダンス中にリクエストヘッダーとしてログイン情報を送信する必要があります。カスタムリクエストヘッダーで、HTTP Connector を使用してこれらのシステムに接続できるようになりました。
+
+
+== 2022 年 11 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* エラーが発生したときに、​*[Run History (実行履歴)]*​ ページにステップ名、ステップ番号、コネクタタイプ、エラーメッセージが表示されるようになり、フロー内の問題をトラブルシューティングできるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で、同じカスタムリスト項目が 1 つのレコード内の複数の項目間にある場合、マッピングが適切に機能するようになりました。 |W-12041041
+|===
+
+
+== 2022 年 11 月 8 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Marketo と Snowflake の 2 つの新しいシステムに接続できるようになりました。 +
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+
+== 2022 年 11 月 3 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+** DEPARTMENT
+** LOCATION
+** PRICE_LEVEL
+** SUBSIDIARY
+
+* HTTP Connector で、OAuth2 認証コード接続プロバイダの接続テストが有効になりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|NetSuite Connector で、報告されたセキュリティの脆弱性に対処するために、Jackson Databind ライブラリがバージョン 2.13.4.2 にアップグレードされました。 |W-11963381
+|Jira に接続するときに、エラーが発生した場合に HTTP Connector がエラーメッセージを取得するようになりました。以前は、エラーは Jira ログにのみ記録されていました。  |W-11816468
+|Shopify に接続するときに、HTTP Connector フローテストが無期限に実行されエラーが返されることはなくなりました。 |W-11821763、W-11819981
+|===
+
+
+== 2022 年 11 月 1 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|Slack Connector で、​*On New Message*​ トリガが無効になり、使用できなくなりました。 |W-11972430
+|===
+
+
+== 2022 年 10 月 31 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* テンプレートから新しいフローを作成できるようになりました。このリリースには、次のテンプレートのサポートが含まれています。
+** Create Or Update Jira Issue for Associated Change Request in Salesforce (Salesforce の関連付けられた変更要求に対する Jira の課題を作成または更新)
+** Create Or Update Jira Issue for Associated Work Plan in Salesforce (Salesforce の関連付けられた作業プランに対する Jira の課題を作成または更新)
+** Create Or Update Jira Issue for Associated Work Step in Salesforce (Salesforce の関連付けられた作業ステップに対する Jira の課題を作成または更新)
+** Create Change Request in Salesforce for Associated Jira Issue (関連付けられた Jira の課題に対する Salesforce の変更要求を作成)
+** Update Change Request in Salesforce for Associated Jira Issue (関連付けられた Jira の課題に対する Salesforce の変更要求を更新)
+** Create Work Plan in Salesforce for Associated Jira Issue (関連付けられた Jira の課題に対する Salesforce の作業プランを作成)
+** Update Work Plan in Salesforce for Associated Jira Issue (関連付けられた Jira の課題に対する Salesforce の作業プランを更新)
+** Create Work Step in Salesforce for Associated Jira Issue (関連付けられた Jira の課題に対する Salesforce の作業ステップを作成)
+** Update Work Step in Salesforce for Associated Jira Issue (関連付けられた Jira の課題に対する Salesforce の作業ステップを更新)
+** Create or Update Incident and Asset for Associated ServiceNow Incident (関連付けられた ServiceNow インシデントに対するインシデントとアセットを作成または更新)
+** Create or Update ServiceNow Incident for Associated Incident in Salesforce (Salesforce の関連付けられたインシデントに対する ServiceNow インシデントを作成または更新)
+** Create Configuration Item for Associated Incident Asset in Salesforce (Salesforce の関連付けられたインシデントアセットに対する設定項目を作成)
+** Create or Update Netsuite Credit Memo for Associated Posted Credit Memo in Salesforce (Salesforce の関連付けられた転記済みクレジットメモに対する Netsuite クレジットメモを作成または更新)
+** Create or Update Netsuite Customer for Associated Account in Salesforce (Salesforce の関連付けられた取引先に対する NetSuite 顧客を作成または更新)
+** Create or Update Netsuite Customer Payment for Associated Processed Payment in Salesforce (Salesforce の関連付けられた処理済み支払に対する Netsuite 顧客支払を作成または更新)
+** Create or Update NetSuite Inventory Item for Associated Active Product in Salesforce (Salesforce の関連付けられたアクティブな商品に対する NetSuite 在庫品目を作成または更新)
+** Create or Update Netsuite Invoice for Associated Posted Invoice in Salesforce (Salesforce の関連付けられた転記済み請求書に対する Netsuite 請求書を作成または更新)
+** Create or Update Netsuite Sales Order for Associated Activated Order in Salesforce (Salesforce の関連付けられたアクティブ化済み注文に対する Netsuite 販売注文を作成または更新)
+
++
+テンプレートは、フローをビルドするために活用できるパターンです。すべてのステップと項目のマッピングは事前に定義されているため、テンプレートを選択し、使用されるさまざまなコネクタの不足情報 (接続シークレットなど) を入力して、後でカスタマイズ可能なフローを作成できます。テンプレートは事前ビルド済みのフローであるため、アクセスに対する壁が低く、フローをアクティブ化するまでの時間が短縮されるだけでなく、フローのベストプラクティスも含まれています。
+
+* コンポーザフロー内からデータピルを使用して、項目入力としてバイナリファイルを転送できるようになりました。たとえば、Salesforce インスタンス間でファイルの同期を維持する場合、​*Download file*​ アクションと ​*Upload file*​ アクションを使用して、あるインスタンスからバイナリファイルコンテンツをダウンロードし、後でその同じファイルコンテンツを別のインスタンスにアップロードできます。
+
+* MuleSoft Automation を促進するために、MuleSoft Composer for Salesforce のサブスクリプション価格設定方法が再評価されました。この機能強化を有効にするために、新しいタブ ​*[Usage Summary (利用状況概要)]*​ が Mulesoft Composer for Salesforce ランディングページに追加されました。​*[Usage Summary (利用状況概要)]*​ タブでは、組織のフローごとに毎月のタスクとクレジットの利用状況を確認できます。
+
+* 次の新規アクションが Jira Connector で使用できるようになりました。
+
+** *Create project*
+** *Get project*
+** *Update project*
+** *List attachments*
+** *Upload attachments*
+** *Get attachments*
+
+* 次のトリガが Jira Connector で使用できるようになりました。
+
+** *Issue updated with Custom Fields*​ は、​*Issue with Custom Fields was updated or created*​ に名前が変更されました
+** *Issue updated with Standard Fields only*​ は、​*Issue with Standard Fields only was updated or created*​ に名前が変更されました
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、結果の絞り込みが削除され、項目が選択されているときにテストは失敗しなくなりました。 |W-11510054
+|Jira Connector で、ドロップダウンに表示される Jira プロジェクトの数は制限されていました。すべての Jira プロジェクトがドロップダウンで取得されるようになりました。 |W-11912169
+|===
+
+
+== 2022 年 10 月 27 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* アクションを作成するときの条件ステートメントや If/Else ステートメントで、​`and`​、​`or`​、​`not`​ などのカスタムロジックを追加できるようになりました。
+
+* RPA Connector で、RPA プロセスを呼び出さずに、サンプルデータを使用して RPA プロセスをテストできるようになりました。
+
+* RPA Connector で、RPA 組織に接続済みで ​*[RPA Process (RPA プロセス)]*​ 項目のドロップダウンにプロセスが表示されない場合、​*[Create an invokable run config from MuleSoft RPA (MuleSoft RPA から呼び出し可能な実行設定を作成)]*​ ボタンをクリックして、RPA 組織に直接接続してプロセスを表示できるようになりました。
+
+* RPA Connector で、​*[RPA Process (RPA プロセス)]*​ ドロップダウンを選択すると、表示される値が ​*<カテゴリ> / <プロセス名>*​ 形式でリストされるようになりました。例: *Claims (クレーム) / Check for updates (更新の確認)*​。
+
+
+== 2022 年 10 月 26 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次の新規トリガが HubSpot Connector で使用できるようになりました。
+
+** *On New Records*
+** *On New or Updated Record*
+
+* HubSpot Connector で、ツールチップが更新され、トリガとアクションの両方が改善されました。
+
+* Stripe Connector で、​*Find Customer*​ アクションは動的メタデータをサポートするようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|Stripe Connector で、​`componentcom.fasterxml.jackson.core : jackson-databind : 2.13.2.2`​ で見つかったセキュリティの脆弱性が修正されました。 |W-11853409
+|===
+
+
+== 2022 年 10 月 20 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Workday Connector で、​*On New or Updated Records*​ トリガと ​*Get Worker Details ID*​ アクションで Workday API からの複雑なオブジェクトの配列値を有効にする次の項目を ​*WORKER*​ オブジェクトで使用できるようになりました。
+
+** *Email Addresses (メールアドレス)*
+** *Job Addresses (勤務先住所)*
+** *Persona Addresses (ペルソナ住所)*
+** *Supervisor Organization Chain (スーパーバイザ組織チェーン)*
+
+
+== 2022 年 10 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|Jira Connector で、​*Get Issue in Jira*​ アクションの不要な ​*[Select Fields (項目を選択)]*​ ボタンが削除されました。 |W-11649482
+|===
+
+
+== 2022 年 10 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* レンチアイコンをクリックして ​*[Export (エクスポート)]*​ を選択することで、フローを JSON ファイルとしてエクスポートして、トラブルシューティングの目的でフローをサポートと共有できるようになりました。
+
+
+== 2022 年 10 月 12 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* for each ループで選択した文字列のリストをループする場合、ループ内の複数のカードで 1 つの文字列値を使用できるようになりました。
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+ ** PARTNER
+ ** LEAD
+ ** PROSPECT
+
+
+== 2022 年 10 月 10 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* RPA Connector で、JSON インジェクションを防ぐために JSON サニタイザが実装されました。
+
+
+== 2022 年 10 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|コンポーザの ​*[Run History (実行履歴)]*​ ページにエラーが不必要に表示され、期限切れのアクセストークンに関するメール通知が送信される問題が修正されました。このエラーは表示されず、メールは送信されないようになりました。この修正を実装するには、フローを無効にしてから再度アクティブ化します。 |W-11649482
+|===
+
+
+== 2022 年 10 月 6 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|MUnit テスト中に ​`InterruptedException`​ が発生していた Google Sheets Connector の問題が修正されました。 |W-10887516
+|ヘッダーのない最初の列に値が含まれている場合に、​*Create row*​ アクションが正しく機能しない Google Sheets Connector の問題が修正されました。 |W-10933097
+|Google Sheets Connector で、com.fasterxml.jackson.core ライブラリがバージョン 2.13.4 にアップグレードされました。 |W-11719209
+|===
+
+
+== 2022 年 9 月 29 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector での認証用の OAuth 2.0 認証コード許可で、認証ヘッダーの ​*[Authorization Header Name (認証ヘッダー名)]*​、​*[Authorization Header Value Prefix (認証ヘッダー値プレフィックス)]*​、および ​*[Authorization Header Custom Value Prefix (認証ヘッダーカスタム値プレフィックス)]*​ 項目のカスタマイズがサポートされるようになりました。
+
+
+== 2022 年 9 月 9 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* HTTP Connector で、認証用の OAuth 2.0 認証コード許可がサポートされるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|NetSuite Connecto の ​*Get Records*​ アクションで CURRENCY および ​CURRENCY_RATE​ オブジェクトが機能しない問題が修正されました。 |W-11722063
+|===
+
+
+== 2022 年 9 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|他のユーザが作成した一部のフローをユーザがアクティブ化または削除できない問題が修正されました。 |W-11668733
+|===
+
+
+== 2022 年 9 月 6 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コンポーザフロー内からデータピルを使用して、項目入力としてバイナリファイルを転送できるようになりました。たとえば、Box インスタンス間でファイルの同期を維持する場合、あるインスタンスからバイナリファイルコンテンツをダウンロードし、後でその同じファイルコンテンツを別のインスタンスにアップロードできます。
+* HTTP Connector で報告されたセキュリティの脆弱性に対処するために、​`jackson.databind`​ ライブラリがバージョン 2.13.4 にアップグレードされました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|OCS 接続でテスト接続が更新をトリガしなかった HTTP Connector の問題が修正されました。 |W-11469764
+|Shopify からの OAuth 2.0 更新トークンが無効であった HTTP Connector の問題が修正されました。 |W-11437322
+|エスケープシーケンス (復帰の ​`\r`​ など) を含む項目が正しく解析されない HTTP Connector の問題が修正されました。 |W-11072611
+|ネストされた項目である配列の場合でも、サンプルデータ出力が複数のレコードを返す Quickbooks Connector の問題が修正されました。 |W-11388800
+|===
+
+
+== 2022 年 8 月 31 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* [Pick from List (リストから選択)] をサポートするアクションの項目で選択リストマッピングが有効になりました。選択リストマッピングを使用すると、あるアプリケーションのデータを別のアプリケーションで必要な対応するデータにマップできます。これにより、類似した項目で異なる値が含まれる 2 つのアプリケーションを接続し、それらの項目の値をアプリケーション間で調整できます。出力項目 (データピル) の可能な値が入力項目の可能な値にどのようにマップされるかを決定できます。フロー間でマッピングを再利用できます。
+
+
+== 2022 年 8 月 29 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Microsoft Dynamics 365 Business Central を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+* データピル検索が使用できるようになりました。この機能を使用して、特定のデータピルがフローで使用されている場所を確認できます。
+
+
+== 2022 年 8 月 19 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|問題 |ID
+|ServiceNow Connector で、大規模なテーブルでのタイムアウトを回避するために ​*[Read Timeout (読み取りタイムアウト)]*​ 項目が 5 ～ 15 秒ごとに更新される。 |W-11601586
+|===
+
+
+== 2022 年 8 月 15 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 組織内のすべてのフローを表示および管理する権限をすべてのユーザが持つようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|NetSuite Connector で、​`[Account ID (アカウント ID)]`​ 項目で小文字の値が使用されている接続が失敗しなくなりました。 |W-11469671
+
+|===
+
+
+== 2022 年 8 月 8 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のレコードタイプが NetSuite Connector で使用できるようになりました。
+ ** SERVICE_RESALE_ITEM
+ ** TIME_SHEET
+ ** TIME_BILL
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|NetSuite Connector で、​`[Account ID (アカウント ID)]`​ 項目で小文字の値が使用されている接続が失敗しなくなりました。 |W-11469671
+
+|===
+
+
+== 2022 年 8 月 3 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである MuleSoft Robotic Process Automation (RPA) を接続できるようになりました。
++
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+
+== 2022 年 8 月 2 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Salesforce Connector で、トリガの条件を指定できるようになりました。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|表示ラベルが ServiceNow Connector で正しく大文字化されるようになりました。 |W-10575461
+
+|===
+
+
+
+== 2022 年 7 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 接続を削除すると、選択した接続を使用しているアクティブなフローと非アクティブなフローのリストが表示されるようになりました。このリストを使用して、接続の状況に応じて、異なる操作を実行します。
+** どのフローでも使用されていない場合、接続を削除できます。
+** 非アクティブなフローで使用されている場合、この接続を使用している非アクティブなフローの名前と数が記載されたリストが表示されます。この接続を削除すると、リストに記載されたフローの影響します。非アクティブなフローを再び開いた場合は、新しい接続を選択する必要があります。
+** アクティブなフローと非アクティブなフローで使用されている場合、この接続を使用しているアクティブなフローと非アクティブなフローの名前、数、状況が記載されたリストが表示されます。接続を削除することを選択すると、再度の確認が表示されます。接続を削除する前に、コンポーザで最初にフローの停止が試みられます。
+
+
+
+== 2022 年 6 月 28 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector と Salesforce Connector で、空の項目値はデフォルトで無視されます。空の値をクリアするには、​`[Clear on Null Values (null 値でクリア)]`​ オプションを選択できるようになりました。
+
+
+
+== 2022 年 6 月 6 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|Workday Connector で、ユーザが ​`Performance_Management`​ サービスにアクセスできない場合でも接続検証に成功するようになりました。 |W-11193505
+|Spring Framework ライブラリを ​`org.springframework:spring-context:5.3.18`​ から ​`org.springframework:spring-context:5.3.20`​ にアップグレードすることで、Workday Connector の報告されていたセキュリティの脆弱性が修正されました。 |W-11195299
+
+|===
+
+
+
+== 2022 年 5 月 31 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* NetSuite Connector で、空の項目値はデフォルトで無視されます。空の値をクリアするには、​`[Clear on Null Values (null 値でクリア)]`​ オプションを選択できるようになりました。
+
+
+
+== 2022 年 5 月 20 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|*[Description (説明)]*​ 項目に空白値があると無効な入力エラーが返される Jira Connector の問題が修正されました。 |W-11107531
+
+|===
+
+
+
+== 2022 年 5 月 17 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|プレーンテキスト文字列のマークアップをクリーンアップすると null ポインタ例外が発生する Slack Connector の問題が修正されました。 |W-11031313
+
+|===
+
+
+
+== 2022 年 5 月 11 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|ServiceNow Connector で、WebService でアクセスできるすべてのテーブルのメタデータが自動的に読み込まれるようになりました。 |W-10919969
+|ServiceNow Connector で、連動関係のセキュリティの脆弱性にパッチ (​`org.springframework : spring-beans : 5.3.17`​) が適用されました。 |W-10981860
+|ServiceNow Connector で、連動関係のセキュリティの脆弱性にパッチ (​`org.springframework : spring-context : 5.2.7.RELEASE`​) が適用されました。 |W-11001899
+
+|===
+
+
+
+== 2022 年 5 月 5 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のオブジェクトが NetSuite Connector で使用できるようになりました。
+
+** Service Item for Sale
+** Service Item for Purchase
+** Return Authorization
+
+オブジェクトはすべて大文字で表示され、アンダースコアが付けられます。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+|カスタムオブジェクトを選択するために以前に変更されたトリガを使用する場合に NetSuite Connector で発生する null ポインタ例外の問題が修正されました。 |W-10995359
+
+|===
+
+
+
+
+== 2022 年 4 月 29 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+Workday 財務管理サービスを有効にするために次のアクションが Workday Connector に追加されました。
+
+* *Create Object*
+* *Update Object*
+* *Get Object*
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+
+|file (ファイル) データ型の値が含まれる項目を絞り込むことができない Workday Connector の問題が修正されました。 | W-10574439 COCN-667
+
+|Workday Connector で、​*Job Requisition*​ アクションを編集するときに ​*[Position Time Type (役職時間種別)]*​ 項目をリストとして選択するか、データピルとして設定できるようになりました。 | W-10574489 COCN-605
+
+|Workday Connector の API から汎用エラーメッセージが返されるときに、コンポーザに有益なエラーメッセージが表示されるようになりました。 | W-10574413 COCN-705
+
+|Workday Connector の検証エラーメッセージがより具体的なコンテンツになるように改善されました。 | W-10574467 COCN-632
+
+|Workday Connector の ​*Create Worker*​ アクションで ​*[Position Title (肩書)]*​、​*[Supervisory Organization (監督組織)]*​、​*[Location (場所)]*​ 項目が省略可能になりました。ただし、​*Position*​ オブジェクトで ​*[Location (場所)]*​ 値が設定されていない場合、​*[Location (場所)]*​ 項目は必須です。この項目がないと、Create Worker API 操作に失敗します。 | W-10574483 COCN-612
+
+|Jira Connector でページネーションが有効になり、​*Create issue with custom fields*​ アクションを使用するときに ​*[Reporter (報告者)]*​ および ​*[Assignee (割り当て先)]*​ 項目ですべての割り当て可能なユーザをフェッチできるようになりました。 |W-10934109
+
+|===
+
+
+
+
+== 2022 年 4 月 28 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである HTTP を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+
+
+== 2022 年 4 月 26 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 有効になっていると、15 分ごとまたはフローの実行時に実行をチェックします。フローが失敗すると、コンポーザはフローのオーナーにメールを送信します。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題 |ID
+
+|JIRA Connector で、引用符が含まれる文字列値を ​*[Description (説明)]*​ 項目に入力しても、無効な JSON 解析要求が発生しないくなりました。  | W-11037529
+
+|===
+
+
+
+== 2022 年 4 月 22 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Google スプレッドシートおよび Slack Connector で、特定のトリガ、アクション、項目にマウスポインタを置いて、アプリケーション内コンテキストヘルプを表示できるようになりました。
+
+
+
+== 2022 年 4 月 18 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* *カスタム式エディタ*​で、数式を使用してデータ型を変換し、正確に書式設定できるようになりました。
+
+
+
+== 2022 年 4 月 12 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| *Update Job Requisition*​ アクションの ​*[Currency (通貨)]*​ および ​*[Pay Plan (支払プラン)]*​ 項目の値がアルファベット順に並び替えられない Workday Connector の問題が修正されました。  | W-10663753
+
+|===
+
+
+
+== 2022 年 4 月 4 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Google カレンダーを接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+
+
+== 2022 年 3 月 31 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 新しいシステムである Gmail を接続できるようになりました。
++
+
+各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| *Create Row*​ アクションの空のリスト項目に関する Google Sheets Connector のエラーメッセージが更新されました。  | W-10574328
+| ヘッダーのない列にヘッダーのある次の列のヘッダーが正しく割り当てられない Google Sheets Connector の問題が修正されました。 | W-10899109
+
+|===
+
+
+
+
+== 2022 年 3 月 28 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 次のオブジェクトが NetSuite Connector で使用できるようになりました。
+
+** Vendor
+** Vendor Bill
+** Purchase Order
+
+
+
+== 2022 年 3 月 23 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Xero Connector で ​*On New or Update Invoice*​ トリガおよび ​*Get Invoices*​ アクションを使用できるようになりました。
+
+
+
+== 2022 年 3 月 22 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* コンポーザで​*カスタム式エディタ*​を使用して式を作成し、関数を適用できるようになりました。このリリースでは、基本的な算術演算子と関数 (string、date、number など) がサポートされています。
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| 項目値にスペースが含まれているとフロートリガがアクティブ化されない Jira Connector の問題が修正されました。 | W-10830185、W-10824255
+
+|===
+
+
+
+== 2022 年 3 月 14 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| デフォルト値が設定されていないブール項目が含まれているオブジェクトでメタデータが返されない Salesforce Connector の問題が修正されました。 | W-10808550
+
+|===
+
+
+
+== 2022 年 3 月 9 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| アクセストークンを削除した後に ​*[Session Management (セッション管理)]*​ ページで残りのアクセストークンが更新されない Salesforce Connector の問題が修正されました。 | W-10718676
+
+|===
+
+
+
+== 2022 年 3 月 2 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Zendesk Connector で ​*Get Organization by ID*​ アクションを使用できるようになりました。このアクションは、指定された ID 検索条件に基づいて組織を返します。
+
+
+
+== 2022 年 2 月 21 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| *[Type of Record (レコードタイプ)]*​ 項目が ​`NON_INVENTORY_SALE_ITEM`​ に設定されているトリガで他のレコードタイプのデータが返される NetSuite Connector の問題が修正されました。 | W-10674134
+
+|===
+
+
+
+== 2022 年 2 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* Stripe Connector の ​*Create Product*​ アクションで ​*[Images (画像)]*​ 項目が使用できるようになりました。この項目では、アクションに追加される最大 8 個の画像の URL をアタッチできます。
+
+* QuickBooks Connector の ​*Create Invoice*​ アクションで次の項目が使用できるようになりました。
+
+** *Transaction Tax Code (トランザクション税コード)*
+** *Item Tax Code (品目税コード)*
+
+
+
+== 2022 年 1 月 27 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* 日時ピッカーを使用できるようになりました。データ型が ​`date`​ (日付) または ​`time`​ (時刻) の項目で ​*[Pick from Calendar (カレンダーから選択)]*​ または ​*[Search Data Pills (データピルを検索)]*​ を実行できるようになりました。日付ピッカーでは、デフォルトでコンポーザ組織設定に設定されたタイムゾーンを使用します。
+
+* *[Flow Details (フロー詳細)]*​ ページで、​*[Created on (作成日)]*​ と ​*[Last Modified (最終更新日)]*​ の日付がコンポーザ組織に設定されたタイムゾーンで表示されるようになりました。
+
+* エラーが発生したときにエラーに関する追加情報がある場合、エラーメッセージの ​*[More details (詳細)]*​ リンクをクリックできます。​*[Error (エラー)]*​ ウィンドウで、問題をトラブルシューティングしたり ​*[Trace ID (追跡 ID)]*​ をコピーしてサポートに提供したりできます。​*[Contact MuleSoft Support Team (MuleSoft サポートチームに問い合わせる)]*​ ボタンをクリックしてサポートに直接問い合わせることもできます。
+
+
+
+== 2022 年 1 月 25 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| Google Sheets Connector の ​*Update row*​ アクションでデータピルが ​*[Row number (行番号)]*​ 項目の入力として受け入れられません。 | COCN-910
+
+|===
+
+
+
+== 2022 年 1 月 19 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| ライブラリの連動関係がアップグレードされました。 | COCN-873
+
+|===
+
+
+
+== 2022 年 1 月 13 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| ライブラリの連動関係がアップグレードされました。 | COCN-894
+
+|===
+
+
+
+== 2022 年 1 月 7 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* MuleSoft Composer for Salesforce で、​`list of strings`​ データピルがサポートされるようになりました。文字、日付、ブール、数値を項目に入力できるようになりました。一致する文字列のリストがドロップダウンで返されます。
+
+
+
+
+== 2022 年 1 月 5 日
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+
+|===
+
+|問題|ID
+
+| NetSuite Connector のメタデータの解決が失敗し、空のエラーメッセージが表示される問題が修正されました。このエラーが発生しなくなりました。 | COCN-875
+
+|===

@@ -1,0 +1,74 @@
+= Rest Consumer Connector Reference
+
+Rest Consumer Connector connects externally available APIs managed in Anypoint that are not currently supported through dedicated connectors. Use Rest Consumer Connector to consume these APIs in a Composer flow to create integrations that span beyond out-of-the-box connectors.
+
+Rest Consumer Connector does not automatically appear in the list of connectors to use in your flow. To use Rest Consumer Connector, you must first connect your Composer org to your Anypoint org. For more information, refer to xref:ms_composer_prerequisites.adoc#connect-composer-to-anypoint-platform[Connect Composer to Anypoint Platform] and xref:ms_composer_prerequisites.adoc#api-sharing[API Sharing].
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+Connection Display Name::
+
+Enter a connection name that will help you remember the details of this connection.
+You can reuse connections multiple times in a single flow, and in more than one flow,
+and the credentials are hidden after you create the connection. Therefore, it's helpful
+to provide a name that easily identifies this connection from others.
++
+Only you can see the connection. Other users in your Composer app must create their own connections.
+
+Authorization Type::
+
+The following authorization types are available:
+
+* *API Key* +
+  The API Key connects to applications without explicitly defining a user. You must add this key to all requests, and the cloud application identifies the origin of the request and completes the authorization. Provide a value for the following fields:
+  ** *Base URL*
+  ** *Name*
+  ** *Value*
+  ** *Sent As*: Select one of the following values:
+    *** *Header*: If selected, Composer adds the following header to the request: `Name: Value`.
+    *** *Query Parameter*: If selected, Composer adds the following query parameter to the request: `Name=Value`.
+  ** *Client ID*: This field is used for gateway authentication, which occurs before connected API authentication.
+  ** *Client Secret*: This field is used for gateway authentication, which occurs before connected API authentication.
+
+* *Basic Authentication* +
+  The Basic Authentication method enables an HTTP user agent to provide a username and password when making an HTTP request. Provide a value for the following fields:
+  ** *Base URL*
+  ** *Username*
+  ** *Password*
+  ** *Client ID*: This field is used for gateway authentication, which occurs before connected API authentication.
+  ** *Client Secret*: This field is used for gateway authentication, which occurs before connected API authentication.
+
+* *Bearer Token Authorization* +
+  Bearer Token Authorization is the authentication process that sends a header named `Authorization` with a value of `Bearer` and a token with every request. Provide a value for the following fields:
+  ** *Base URL*
+  ** *Token*
+  ** *Client ID*: This field is used for gateway authentication, which occurs before connected API authentication.
+  ** *Client Secret*: This field is used for gateway authentication, which occurs before connected API authentication.
+
+Base URL::
+
+The default location URL for the cloud application that the connection uses.
+
+== Actions
+
+include::_partials/action-definition.adoc[]
+
+Request::
+When *Request* is selected in the *Action* field, a request in Rest Consumer returns the fields of the response payload. A value is required for the following fields:
+
+* *Action*
+* *Operation*
+* *Input Fields*: You can select from a static list or use a dynamic list from a data pill based on the previous step.
+** Optionally, if you click *URI Params*, provide a value for the *Ticket* field.
+** Optionally, if you click *Additional Headers*, provide a value for the following fields:
+*** *Key*
+*** *Value*
+** Optionally, if you click *Additional Query Parameters*, provide a value for the following fields:
+*** *Key*
+*** *Value*
+* *Custom Request Body*: This field is used for overriding the structure of the request body from the API specification.
+* *Custom Response Body*: This field is used for overriding the structure of the response body from the API specification.
+
+include::_partials/see-also.adoc[]

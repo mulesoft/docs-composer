@@ -1,0 +1,114 @@
+= Microsoft Dynamics 365 Business Central Connector リファレンス
+
+Microsoft Dynamics 365 Business Central は、セールス、マーケティング、購入、在庫、製造、物流の統合された管理方法を提供する ERP ツールです。Microsoft Dynamics 365 Business Central には、取引先責任者、やりとり、セグメント、商談、マーケティングキャンペーンを管理するための CRM ツールの限定セットも含まれています。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+接続名::
+
+この接続の詳細を把握するのに役立つ接続名を入力します。
+1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。そのため、この接続を他の接続と簡単に区別できる名前を付けると役立ちます。
++
+接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+
+Username (ユーザ名)::
+
+Microsoft Dynamics 365 Business Central にログインするために使用する OAuth ユーザ名。
+
+Password (パスワード)::
+
+Microsoft Dynamics 365 Business Central にログインするために使用する OAuth パスワード。
+
+== Triggered (トリガ)
+
+include::_partials/trigger-definition.adoc[]
+
+On New or Updated Sales Order (新規または更新済み販売注文)::
+
+新規または更新済み販売注文または新規または更新済み販売注文明細行をチェックします。​*[Company (会社)]*​ の値を指定します。
+
+On New or Updated Item (新規または更新済み項目)::
+
+新規または更新済み項目をチェックします。​*[Company (会社)]*​ の値を指定します。
+
+On New or Updated Customer (新規または更新済み顧客)::
+
+新規または更新済み顧客をチェックします。​*[Company (会社)]*​ の値を指定します。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create Sales Order::
+
+販売注文と、指定されている場合は販売注文明細行のリストを作成します。次の項目の値を指定します。
+
+* *Company (会社)*
+* *Customer Number (顧客番号)*
+
+Update Sales Order::
+
+販売注文と、指定されている場合は販売注文明細行のリストを更新します。次の項目の値を指定します。
+
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
+* *ETag*
+
+Get Sales Orders::
+
+絞り込み済みの販売注文のリストと、対応する販売注文明細行を取得します。​*[Company (会社)]*​ の値を指定します。
+
+顧客の作成::
+
+1 人の顧客を作成します。​*[Company (会社)]*​ の値を指定します。
+
+Update Customer::
+
+1 人の顧客を更新します。次の項目の値を指定します。
+
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
+* *ETag*
+
+Get Customers::
+
+絞り込まれた顧客のリストを取得します。​*[Company (会社)]*​ の値を指定します。
+
+Create Item::
+
+1 件の項目を作成します。​*[Company (会社)]*​ の値を指定します。
+
+Update Item::
+
+1 件の項目を更新します。次の項目の値を指定します。
+
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
+* *ETag*
+
+Get Items::
+
+絞り込まれた項目のリストを取得します。​*[Company (会社)]*​ の値を指定します。
+
+Create Item Variant::
+
+1 件の項目バリエーションを作成します。次の項目の値を指定します。
+
+* *Company (会社)*
+* *Code (コード)*
+
+Update Item Variant::
+
+1 件の項目バリエーションを更新します。次の項目の値を指定します。
+
+* *Company (会社)*
+* *Entity ID (エンティティ ID)*
+* *ETag*
+
+Get Item Variants::
+
+絞り込まれた項目バリエーションのリストを取得します。​*[Company (会社)]*​ の値を指定します。
+
+include::_partials/see-also.adoc[]

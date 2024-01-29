@@ -41,33 +41,33 @@
         },
         {
           "file" : "ms_composer_flows.adoc",
-          "title": "Build a Flow",
+          "title": "Configuring and Managing Flows",
           "topics": [
           {
             "file" : "ms_composer_build_a_flow_using_templates.adoc",
-            "title": "Build a Flow Using Templates"
+            "title": "Building a Flow Using Templates"
           }
           ]
         },
         {
           "file" : "ms_composer_custom_expression_editor.adoc",
-          "title": "Build Formulas for Flows"
+          "title": "Building Formulas for Flows"
         },
         {
           "file" : "ms_composer_invocable_flows.adoc",
-          "title": "Invoke a Composer Flow"
+          "title": "Invoking a Composer Flow"
         },
         {
           "file" : "ms_composer_test_flow.adoc",
-          "title": "Test a Flow"
+          "title": "Testing a Flow"
         },
         {
           "file" : "ms_composer_activation.adoc",
-          "title": "Activate a Flow"
+          "title": "Activating a Flow"
         },
         {
           "file" : "ms_composer_monitoring.adoc",
-          "title": "Monitor a Flow"
+          "title": "Monitoring a Flow"
         },
         {
           "file" : "ms_composer_reference.adoc",

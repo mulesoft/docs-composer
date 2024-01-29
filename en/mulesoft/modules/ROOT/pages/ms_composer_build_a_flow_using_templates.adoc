@@ -1,4 +1,4 @@
-= Build a Flow Using Templates
+= Building a Flow Using Templates
 
 You can create a new flow from a template.
 

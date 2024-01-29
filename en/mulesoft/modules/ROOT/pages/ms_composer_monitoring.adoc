@@ -1,4 +1,4 @@
-= Monitor a Composer Flow
+= Monitoring a Composer Flow
 
 After activation, you can monitor active Composer flows.
 

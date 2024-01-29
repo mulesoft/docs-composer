@@ -1,4 +1,4 @@
-= Test a Composer Flow
+= Testing a Composer Flow
 
 By testing as you build your flow, you can ensure that each step and each field mapping in your flow is working as expected before activation. Frequent validation provides near real-time feedback about the success of your flow and enables you to fix errors as you build.
 

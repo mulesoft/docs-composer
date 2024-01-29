@@ -1,4 +1,4 @@
-= Invoke a Composer Flow 
+= Invoking a Composer Flow 
 
 Invoke a Composer flow from external systems to enable deeper interoperability and integrated capabilities across Salesforce. You can also authenticate every invocable flow for a secure and protected automation experience, create API-compatible invocable actions for seamless integration with diverse systems and applications, and build powerful automations by leveraging the built-in support for input and output fields.
 

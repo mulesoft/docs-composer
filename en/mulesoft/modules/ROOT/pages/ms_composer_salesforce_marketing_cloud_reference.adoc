@@ -4,6 +4,17 @@ Salesforce Marketing Cloud is a marketing platform that supports capabilities su
 
 To use the Salesforce Marketing Cloud Connector, you must first create an API Integration package and set permissions for email and SMS communication.
 
+//== Create Package and Permissions
+
+//To use the Salesforce Marketing Cloud Connector, you must first create packages and permissions. 
+
+//To create packages and permissions:
+
+//. In Composer, click the gear icon in the upper right corner. +
+//The *Setup* page appears.
+//.  In the navigation pane, under *Platform Tools*, click *Apps* > *Packaging* > *Installed Packages*. +
+//The *Installed Packages* page appears.
+
 == Create an API Integration Package and Set Permissions
 
 To create a package and set the permissions:

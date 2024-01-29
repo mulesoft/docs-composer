@@ -1,0 +1,33 @@
+= MuleSoft Automation Package 
+
+The https://www.mulesoft.com/automation-pricing-new[MuleSoft Automation Package] enables you to log in to Anypoint Platform to access MuleSoft Composer and xref:rpa-home::index.adoc[MuleSoft Robotic Process Automation (RPA)]. With the MuleSoft Automation Package, MuleSoft Composer now has everything you need to connect apps and create automations.  
+
+
+With the MuleSoft Automation Package, the following Anypoint Platform features are available to Composer users: 
+
+* xref:access-management::audit-logging.adoc[Anypoint Audit Logging]
+* xref:exchange::index.adoc[Anypoint Exchange] 
+* xref:visualizer::index.adoc[Anypoint Visualizer] 
+* xref:monitoring::index.adoc[Anypoint Monitoring] 
+
+== Access Composer with MuleSoft Automation Package 
+
+To access Composer with the MuleSoft Automation package, first grant access to users and then log in to Anypoint Platform and open Composer.
+
+=== Admin: Grant Access to Composer Users 
+
+To access Composer via Anypoint Platform, the Anypoint Admin must first: 
+
+. Create an xref:access-management::managing-your-account.adoc[Anypoint Platform Account] for the users.
+. Grant one of the following xref:ms_composer_prerequisites.adoc#change-user-roles[roles] to each user:  
+.. *Composer Base User*: This user can create and manage their own flows. 
+.. *Composer Super User*: This user can create and manage their own flows. Additionally, this user can take ownership and manage any flows in the Anypoint Composer org. The xref:ms_composer_automation_credits.adoc[Usage Summary] is  only available to those with the Composer Super User role.
+
+=== Access Composer with the MuleSoft Automation Package  
+
+To access Composer with the MuleSoft Automation Package: 
+
+. Log in to xref:anypoint-code-builder::log-in-anypoint-platform.adoc[Anypoint Platform]. 
+. On the *Anypoint Platform* page, click *Go to Composer*.  
+
+include::_partials/see-also.adoc[]

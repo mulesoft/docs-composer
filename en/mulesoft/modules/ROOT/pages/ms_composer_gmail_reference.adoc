@@ -27,18 +27,17 @@ The OAuth password that you use to log in to Google.
 
 include::_partials/trigger-definition.adoc[]
 
-New email::
+On New Email::
 
-If you don't specify a  https://developers.google.com/gmail/api/guides/labels[filter^], this trigger fires on all emails (received, sent, or drafts).
+If you don't specify a  https://developers.google.com/gmail/api/guides/labels[filter^], this trigger fires on all emails (received, sent, or drafts). To specify a filter, the following field is required:
+
+* Filter Criteria
 +
-The following fields are supported:
+For example, use `in:inbox` to limit the trigger to new messages in the inbox
 
-* From
-* Id
-* SenderName
-* Subject
-* To
-* Body > Value 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
 
 == Actions
 
@@ -51,6 +50,19 @@ Sends an email. The following fields are required:
 * To
 * Subject
 * Body
+
++
+
+To send an email with attachments, the following additional fields are required:
+
+* Attachment content
+* Attachment name
+
+Get Attachments::
+
+Retrieves all attachments from an email. Images that are attached to an email using the clip icon are considered attachments, but images that are dragged into the body of an email are considered embedded images and not attachments. The following field is required:
+
+* Message Id
 
 The Google Gmail connector's use and transfer to any other application of information received from Google APIs is subject to the https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes[Google API Services User Data Policy], including the Limited Use requirements.
 

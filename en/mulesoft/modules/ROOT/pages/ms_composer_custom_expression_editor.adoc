@@ -9,7 +9,7 @@ When building formulas for a flow, keep in mind that:
 * Composer functions used in Composer are built using https://docs.mulesoft.com/dataweave/2.3/dw-operators[DataWeave].
 * Composer functions treat empty spaces as empty space characters in a formula.
 
-=== String Functions
+== String Functions
 
 The *Custom Expression Editor* supports the following `string` formulas and operators:
 
@@ -78,9 +78,9 @@ locale: String +
 
 |fromStringToDateTime |Transforms a string input value into a dateTime value.
 Accepts a format and locale. The format parameter represents the format of the input string.
-The default format is `uuuu-MM-dd'T'HH:mm:ss'Z` and the default locale is en-US; however, these defaults can be modified. |`fromStringToDateTime(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z,US) =  2021-03-15T23:57:59Z` +
+The default format is `uuuu-MM-dd'T'HH:mm:ssz` and the default locale is en-US; however, these defaults can be modified. |`fromStringToDateTime(2021-03-15T23:57:59Z,uuuu-MM-dd'T'HH:mm:ssz,US) =  2021-03-15T23:57:59Z` +
 
-`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz, en-US) = 2021-03-15T23:57:59Z`
+`fromStringToDateTime(2021-03-15 23:57:59Z,uuuu-MM-dd HH:mm:ssz,en-US) = 2021-03-15T23:57:59Z`
 
 |Format: The format parameter represents the format of the input string. This parameter accepts Java character patterns based on ISO-8601. A DateTime value, such as `2011-12-03T10:15:30.000000+01:00`, has the format `uuuu-MM-dd HH:mm:ssz`. +
 
@@ -96,13 +96,22 @@ locale: String |DateTime
 `fromStringToNumber(0.05) = 0.05` |
 NA |text: String |Number
 
+|emptyString | Returns an empty string. +
+
+You can use the emptyString function wherever an empty string is needed, including as an input parameter in other functions. |`-` |`-` | String|
+
+
+|substring |Returns a substring that spans from the character at the specified `from` index to the last character before the `until` index. | `substring(Hello Composer, 6, 14) = Composer` |N/A | text: String
+from: Number
+until: Number | String
+
 |===
 
 It is important to note that in a `string` field, you can use `number` expressions selected from the operator list; however, the expressions must be enclosed within parentheses. For example, you can enter `abc(9+9)` where the `+` is selected from the operator list. This string renders as `abc18`.
 
-=== Number Functions
+== Number Functions
 
-In the *Custom Expression Editor*, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or use xref:keyboard-shortcuts[keyboard shortcuts].
+In the *Custom Expression Editor*, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or type and select them using the Enter key, Tab key, or mouse with typeahead. 
 
 The *Custom Expression Editor* supports the following `number` formulas and operators:
 
@@ -139,7 +148,7 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 
 |===
 
-=== Date Functions
+== Date Functions
 
 In the *Custom Expression Editor*, `date` and `dateTime` data pills can only be used as inputs. You cannot enter the dates manually.
 
@@ -276,10 +285,10 @@ format: String +
 
 locale: String |String
 
-|fromDateTimeToString |Transforms a dateTime input value into a string value. Accepts a format and locale. The format parameter represents the desired format of the output string. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z`
- and the default locale is en-US; however, these defaults can be modified. |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ss'Z, en-US) = 2021-03-15T23:57:59Z` +
+|fromDateTimeToString |Transforms a dateTime input value into a string value. Accepts a format and locale. The format parameter represents the desired format of the output string. The default format is `uuuu-MM-dd'T'HH:mm:ssz`
+ and the default locale is en-US; however, these defaults can be modified. |`fromDateTimeToString(2021-03-15T23:57:59Z, uuuu-MM-dd'T'HH:mm:ssz, en-US) = 2021-03-15T23:57:59Z` +
 
-`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format: The ISO-8601 formatting to use on the DateTime. It represents the desired format of the output string. For example, this parameter accepts character patterns based on the Java 8 java.time.format. The default format is `uuuu-MM-dd'T'HH:mm:ss'Z`.
+`fromDateTimeToString(2021-03-15T23:57:59Z, MMMM dd, ES) = marzo 15` |Format: The ISO-8601 formatting to use on the DateTime. It represents the desired format of the output string. For example, this parameter accepts character patterns based on the Java 8 java.time.format. The default format is `uuuu-MM-dd'T'HH:mm:ssz`.
  +
 
 Locale: Optional ISO 3166 country code to use, such as `en-US`, `AR`, or `ES`. When you pass a translatable format, such as `eeee` and `MMMM`, a locale (such as `ES`) transforms the corresponding numeric values to a localized string. |dateTime: DateTime +
@@ -302,6 +311,43 @@ time: String |DateTime
 
 |===
 
+== List Functions
+
+The *Custom Expression Editor* supports the following `List` formulas and operators:
+
+[%header%autowidth.spread]
+|===
+
+|Function Name |Description |Example |Parameter Definition |Input Data Type Parameters |Output Data Type
+
+|joinBy | Merges a list into a single string value and uses the provided string as a separator between each item in the list. |`joinBy([a, b, c], ,] = a, b, c` 
+
+`joinBy([Hello, Composer] , - ) = Hello-Composer` 
+
+`joinBy([Mr, Max, Mule], emptyString()) = MrMaxMule`|list separator 
+
+Note that you can use a `List` data pill, a function that returns a list (such as `splitBy`), or a list that you build manually using [ ] as a parameter to the function.
+
+ |list: List<String>
+
+separator: String
+ |String
+
+|splitBy | Splits a string into a list of strings based on a separating string that matches part of the input string.
+
+This filters out the matching string from the returned list. The separator can match any character in the input. 
+
+ |`splitBy(Hello-Composer, -) = [Hello, Composer]` 
+
+`splitBy(192.88.99.0, .) = [192, 88, 99, 0]` |text separator 
+
+ |text: String
+
+separator: String
+ |List<String>
+|===
+
+
 [[data-types]]
 == Data Types
 
@@ -313,8 +359,6 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 |Data Type |Definition
 
-|Array | Provides a collection of a fixed number of components of the same data type.
-
 |Boolean | Evaluates to `true` or `false`.
 
 |Date | Stores a year, month, and day as `yyyy-MM-dd`.
@@ -323,9 +367,9 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 // |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
 
-|List | Returns a list of objects, for example, the output of the *Get Records* action.
-//and list of strings like the *to* field in Gmail Connector
+|List<Object> | Returns a list of objects, for example, the output of the *Get Records* action.
 
+|List<Primitive> | Returns a list containing primitive data types. The following item data types are available: `Boolean`, `Date`, `DateTime`, `Integer`, `Number`, and `String`. 
 
 |Number | Stores either a floating-point number in the range of 1.40129846432481707e-45 to 3.40282346638528860e+38 or an integer.
 
@@ -335,12 +379,6 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 |===
 
-[[keyboard-shortcuts]]
-== Supported Keyboard Shortcuts
-
-The *Custom Expression Editor*  enables you to use keyboard shortcuts for mathematical operators. When inserting mathematical operators, press one of *Control + Shift + <+, (, ), or *>*. For example, to enter a operator, press *Control + Shift +*.
-
-For */* and *-*, the Shift key is not required. For example, to insert a */*, you can press *Control + /*.
 
 == Access the Custom Expression Editor
 

@@ -1,0 +1,251 @@
+= Sage Intacct Connector リファレンス
+
+Sage Intacct は、重要な財務プロセスを作成および自動化し、ビジネスパフォーマンスをリアルタイムで可視化する、クラス最高のエンタープライズリソースプランニングソリューションです。
+
+== 前提条件
+
+Sage Intacct Connector をコンポーザを統合するには、最初に Sage Intacct で次の操作を完了する必要があります。
+
+* https://developer.intacct.com/web-services/[Web サービスのサブスクリプション]​を Sage Intacct の ​*[Subscription (サブスクリプション)]*​ セクションで有効化する。​*Web サービスのサブスクリプション*​は、コンポーザが Sage Intacct API と連携するために必要です。
+* https://developer.intacct.com/web-services/[会社の​*送信者 ID*​ を Sage Intacct の ​*[Web Services Authorizations (Web サービス認証)]*]​ セクションに追加する。Sage Intacct は、​*送信者 ID*​ でコンポーザを識別します。使用する Sage Intacct インスタンスで Mulesoft ​*送信者 ID*​ を認証する必要があります。
+* Sage Intacct への接続に https://developer.intacct.com/api/company-console/roles/[必要な権限を作成して割り当てる]​。アカウントのセキュリティを保証するため、権限はコンポーザからアクセスする必要があるモジュールに制限してください。Sage Intacct で次の操作を行います。
+** ロールベースの権限を使用している場合は、ロールを作成し、新しいロールに必要な権限を付与して、そのロールに割り当てる Sage Intacct Web サービスアカウントを作成します。
+** サブスクリプションベースの権限を使用している場合は、Web サービスアカウントを作成して、​*[Subscription (サブスクリプション)]*​ セクションでロールに権限を割り当てます。
++
+また、Quote-to-Cash 用に、​*Order Entry (注文入力)*​ モジュールの権限を有効化します。
+
+== 接続
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Company ID (会社 ID)::
+
+顧客の会社 ID。Sage Intacct インスタンスの ID を入力します。詳細は、 https://developer.intacct.com/web-services/[Sage Intacct のドキュメント]​を参照してください。
+
+User ID (ユーザ ID)::
+
+Sage Intacct にログインするために使用するユーザ ID。
+
+User Password (ユーザパスワード)::
+
+Sage Intacct にログインするために使用するパスワード。
+
+Entity ID (エンティティ ID)::
+
+接続する Sage Intacct エンティティ。エンティティレベルで接続する場合は​*エンティティ ID*​ を入力します。組織のトップレベルに接続する場合は、この項目を空白のままにしておきます。詳細は、 https://developer.intacct.com/api/company-console/api-sessions/[Sage Intacct のドキュメント]​を参照してください。
+
+== トリガ
+
+include::_partials/trigger-definition.adoc[]
+
+New Customer (新規顧客)::
+
+新規の顧客レコードをチェックします。
+
+New or Updated Customer (新規または更新済み顧客)::
+
+新規または更新済みの顧客レコードをチェックします。
+
+New Order (新規注文)::
+
+新規の注文レコードをチェックします。
+
+New or Updated Order (新規または更新済み注文)::
+
+新規または更新済みの注文レコードをチェックします。
+
+== アクション
+
+include::_partials/action-definition.adoc[]
+
+Create Attachment (添付ファイルの作成)::
+
+新しい添付ファイルレコードを作成します。Sage Intacct では、添付ファイルとはファイルを含むエンティティです。添付ファイルオブジェクトは、空白またはファイルを含みます。レコードの作成時に添付ファイルにファイルを追加することも、後で添付ファイルを追加することもできます。次の値を指定します。
+* *Attachment Name (添付ファイル名)*
+* *Folder (フォルダ)*
+* 添付ファイルにファイルを追加する場合は、ファイルのソースとしてリストを使用して、次の項目の値を指定します。
+** *File Binary Data (ファイルバイナリデータ)*
+** *File Extension (ファイル拡張子)*
+** *File Name (ファイル名)*
+
+Update Attachment (添付ファイルの更新)::
+
+添付ファイルレコードを更新します。添付ファイルを更新する場合は、添付ファイルのプロパティを更新したり、リストから新しいファイルを追加したりできます。​*[Attachment ID (添付ファイル ID)]*​ の値を指定します。
+
+Get Attachments (添付ファイルを取得)::
+
+添付ファイルレコードのリストを返します。リストを絞り込むには、​*[Attachment ID (添付ファイル ID)]*​、​*[Attachment Name (添付ファイル名)]*​、または ​*[Folder Name (フォルダ名)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+
+Create Attachment Folder (添付ファイルフォルダの作成)::
+
+添付ファイルの新しいフォルダを作成します。​*[Name (名前)]*​ の値を指定します。
+
+Get Attachment Folders (添付ファイルフォルダの取得)::
+
+添付ファイルフォルダのリストを返します。リストを絞り込むには、​*[Folder Name (フォルダ名)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+
+Create Customer (顧客の作成)::
+
+新しい顧客レコードを作成します。次の値を指定します。
+
+* *Customer ID (顧客 ID)*
+* *Primary Contact (主連絡先)*
+* *Print As (名前を付けて印刷)*
+
+Update Customer::
+
+顧客レコードを更新します。​*[ID]*​ の値を指定します。
+
+Get Customer (顧客の取得)::
+
+顧客レコードのリストを返します。リストを絞り込むには、​*[Customer ID (顧客 ID)]*​ または ​*[Customer Name (顧客名)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+
+Delete Customer (顧客の削除)::
+
+顧客レコードを削除します。​*[Customer ID (顧客 ID)]*​ の値を指定します。
+
+Create Order (注文の作成)::
+
+新しい注文レコードを作成して ​*[Key (キー)]*​ 項目の値を返します。次の値を指定します。
+
+* *Order Type (注文種別)*
+* *Date Created (作成日付)*
+* *Transaction Currency (トランザクション通貨)*
+* *Base Currency (基本通貨)*
+* *Exchange Rate Type (換算レート種別)*
+* *[Entries (入力)]*​ > ​*[Sotransitem (Order line items) (Sotransitem (注文品目))]*​ セクションで、次の値を入力します。
+  ** *Sotransitem (Order line items) List (Sotransitem (注文品目) リスト)*​ 
+  ** *Item ID (項目 ID)*
+  ** *Quantity (数量)*
+  ** *Location ID (場所 ID)*​ 
+  +
+*[Location ID (場所 ID)]*​ 項目は、場所の説明の前に付いている数値によって決定されます。たとえば、場所 ID が ​`100-United States`​ である場合は、​*[Location ID (場所 ID)]*​ 項目に ​`100`​ と入力します。
+
+  ** *Price (価格)*
+  ** *Unit (単位)*
+  ** 注文に在庫種別項目が含まれる場合や在庫項目と非在庫項目が混在している場合は、​*[Warehouse ID (ウェアハウス ID)]*​ の値を指定します。
+
+Update Order (注文の更新)::
+
+注文レコードを更新します。
++
+既存の注文の品目を更新したり並べ替えたりすると、品目の順序が変わることがあります。たとえば、Sage Intacct UI で品目を 2 行目から 3 行目にドラッグすると、品目の順序が変わります。間違った Sage Intacct 品目の同期を回避するには、発生する可能性がある品目順序の変更を考慮する必要があります。​*[Update Order (注文の更新)]*​ アクションを実行する前に、現在の ​*[Line Number (行番号)]*​ 値を取得して、Sage Intacct 内のカスタム項目に保存します。既存の注文から品目を削除するには、​*[Delete Order Line Item (注文品目の削除)]*​ アクションを使用します。 +
+次の値を指定します。
+
+* *Document ID (ドキュメント ID)*​ 
++
+*[Document ID (ドキュメント ID)]*​ 値は、​*[Create Order (注文の作成)]*​ アクションから返される ​*[Key (キー)]*​ 値です。
+
+*  注文に追加する品目に対して、​*[Entries (入力)]*​ > [Sotransitem (Order line items) (Sotransitem (注文品目))]* セクションで、次の値を入力します。
+** *Sotransitem (Order line items) List (Sotransitem (注文品目) リスト)*
+** *Line Number (行番号)*
++
+この項目が空白または null 値である場合は、項目が作成されます。値を指定すると、項目はスキップされます。作成する項目の ​*[Line Number (行番号)]*​ 項目にマッピングされているデータピルが空で、更新する項目の値が指定されている場合、値がある項目が作成され、残りの項目は無視されます。 
+
+** *Item ID (項目 ID)*
+** *Quantity (数量)*
+** *Location ID (場所 ID)*​ 
++
+*[Location ID (場所 ID)]*​ 項目は、場所の説明の前に付いている数値によって決定されます。たとえば、場所 ID が ​`100-United States`​ である場合は、​*[Location ID (場所 ID)]*​ 項目に ​`100`​ と入力します。
+
+** *Price (価格)*
+** *Unit (単位)*
+** 注文に在庫種別項目が含まれる場合や在庫項目と非在庫項目が混在している場合は、​*[Warehouse ID (ウェアハウス ID)]*​ の値を指定します。 +
+
+*  注文で更新する品目に対して、​*[Entries (入力)]*​ > ​*[Updatesotransitem (Order line items) (Updatesotransitem (注文品目))]*​ セクションで、次の値を入力します。
+** *Updatesotransitem (Order line items) List (Updatesotransitem (注文品目) リスト)*
+** *Line Number (行番号)*
++
+この項目が空白または null 値である場合は、項目が更新されます。値を指定すると、項目はスキップされます。更新する項目の ​*[Line Number (行番号)]*​ 項目にマッピングされているデータピルが空で、作成する項目の値が指定されている場合、値がある項目が更新され、残りの項目は無視されます。 
+
+** *Item ID (項目 ID)*
+** *Quantity (数量)*
+** *Location ID (場所 ID)*​ 
++
+*[Location ID (場所 ID)]*​ 項目は、場所の説明の前に付いている数値によって決定されます。たとえば、場所 ID が ​`100-United States`​ である場合は、​*[Location ID (場所 ID)]*​ 項目に ​`100`​ と入力します。
+
+** *Price (価格)*
+** *Unit (単位)*
+** 注文に在庫種別項目が含まれる場合や在庫項目と非在庫項目が混在している場合は、​*[Warehouse ID (ウェアハウス ID)]*​ の値を指定します。 +
+Delete Order Line Item (注文品目の削除)::
+
+注文品目を削除します。​*[Line Item ID (Record Number) (品目 ID (レコード番号))]*​ の値を指定します。
+
+Get Order (注文の取得)::
+
+注文レコードのリストを返します。リストを絞り込むには、​*[Order ID (注文 ID)]*​、​*[Customer ID (顧客 ID)]*​、または ​*[Document ID (ドキュメント ID)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。 
++
+*[Document ID (ドキュメント ID)]*​ 値は、​*[Create Order (注文の作成)]*​ アクションから返される ​*[Key (キー)]*​ 値です。
+
+Delete Order (注文の削除)::
+
+注文レコードを削除します。​*[Order ID (注文 ID)]*​ の値を指定します。
+
+Create Product (商品の作成)::
+
+新しい商品レコードを作成し、​*[Item ID (項目 ID)]*​ と ​*[Record Number (レコード番号)]*​ を返します。次の値を指定します。
+* *Item ID (項目 ID)*
+* *Name (名前)*
+* *Item Type (項目種別)*
+
+Update Product (商品の更新)::
+
+商品レコードを更新します。​*[Item ID (項目 ID)]*​ の値を指定します。
+
+Get Products (商品の取得)::
+
+商品レコードのリストを返します。リストを絞り込むには、​*[Item ID (項目 ID)]*​、​*[Name (名前)]*​、または ​*[Item Type (項目種別)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+
+Delete Product (商品の削除)::
+
+商品レコードを削除します。​*[Product ID (商品 ID)]*​ の値を指定します。
+
+Create Price List (価格リストの作成)::
+
+新しい価格リストレコードを作成します。次の値を指定します。
+* *Type (種別)*
+* *Price List Name (価格リスト名)*
+
+Update Price List (価格リストの更新)::
+
+価格リストレコードを更新します。次の値を指定します。
+* *Type (種別)*
+* *Price List Name (価格リスト名)*
+
+Get Price Lists (価格リストの取得)::
+
+価格リストレコードのリストを返します。リストを絞り込むには、​*[Type (種別)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+
+Delete Price List (価格リストの削除)::
+
+価格リストレコードを削除します。​*[Price List ID (価格リスト ID)]*​ の値を指定します。
+
+Create Price List Price List (価格リストエントリの作成)::
+
+価格リストの新しい価格リストエントリレコードを作成して、​*[Key (キー)]*​ 値を返します。次の値を指定します。
+* *Price List ID (価格リスト ID)*
+* *Start Date (開始日)*
+* *End Date (終了日)*
+* *Fixed (固定)*
+* *Value (値)*
+* *Value Type (値のデータ型)*
+
+Update Price List Price List (価格リストエントリの更新)::
+
+価格リストエントリレコードを更新します。​*[Record Number (レコード番号)]*​ の値を指定します。
+
+Get Price List Price List (価格リストエントリの取得)::
+
+価格リストエントリレコードのリストを返します。リストを絞り込むには、​*[Entry ID (エントリ ID)]*​、​*[Price List ID (価格リスト ID)]*​、または ​*[Item ID (項目 ID)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+
+Delete Price List Price List (価格リストエントリの削除)::
+
+価格リストエントリレコードを削除します。​*[Price List Entry ID (価格リストエントリ ID)]*​ の値を指定します。
+
+== カスタム項目
+
+コンポーザフローの自動化でカスタム項目が必要な場合は、 https://developer.intacct.com/customization-services/#custom-fields[Sage Intacct のドキュメント]​を参照してください。
+
+include::_partials/see-also.adoc[]

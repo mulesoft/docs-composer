@@ -10,10 +10,16 @@
           "title": "リリースノート",
           "topics": [
             {
+              "file": "ms_composer_release_notes_2023.adoc"
+            },
+            {
               "file": "ms_composer_release_notes_2022.adoc"
             },
             {
               "file": "ms_composer_release_notes_2021.adoc"
+            },
+            {
+              "file": "ms_composer_release_notes_ki.adoc"
             }
           ]
         },
@@ -32,7 +38,13 @@
         },
         {
           "file": "ms_composer_flows.adoc",
-          "title": "フローのビルド"
+          "title": "フローのビルド",
+          "topics": [
+            {
+              "file": "ms_composer_build_a_flow_using_templates.adoc",
+              "title": "テンプレートを使用したフローのビルド"
+            }
+          ]
         },
         {
           "file": "ms_composer_custom_expression_editor.adoc",
@@ -67,6 +79,10 @@
               "title": "Gmail"
             },
             {
+              "file": "ms_composer_google_bigquery_reference.adoc",
+              "title": "Google BigQuery"
+            },
+            {
               "file": "ms_composer_google_calendar_reference.adoc",
               "title": "Google カレンダー"
             },
@@ -87,6 +103,10 @@
               "title": "Jira"
             },
             {
+              "file": "ms_composer_marketo_reference.adoc",
+              "title": "Marketo"
+            },
+            {
               "file": "ms_composer_ms_dynamics_365_business_central_reference.adoc",
               "title": "Microsoft Dynamics 365 Business Central"
             },
@@ -103,8 +123,16 @@
               "title": "QuickBooks Online"
             },
             {
+              "file": "ms_composer_rest_consumer_reference.adoc",
+              "title": "REST コンシューマ"
+            },
+            {
               "file": "ms_composer_rpa_reference.adoc",
               "title": "MuleSoft RPA"
+            },
+            {
+              "file": "ms_composer_sage_intacct_reference.adoc",
+              "title": "Sage Intacct"
             },
             {
               "file": "ms_composer_salesforce_reference.adoc",
@@ -115,12 +143,20 @@
               "title": "Salesforce Marketing Cloud"
             },
             {
+              "file": "ms_composer_sap_s4hana_reference.adoc",
+              "title": "SAP S/4HANA Cloud"
+            },
+            {
               "file": "ms_composer_servicenow_reference.adoc",
               "title": "ServiceNow"
             },
             {
               "file": "ms_composer_slack_reference.adoc",
               "title": "Slack"
+            },
+            {
+              "file": "ms_composer_snowflake_reference.adoc",
+              "title": "Snowflake"
             },
             {
               "file": "ms_composer_stripe_reference.adoc",
@@ -151,6 +187,10 @@
               "title": "Zuora"
             }
           ]
+        },
+        {
+          "file": "ms_composer_automation_credits.adoc",
+          "title": "MuleSoft Automation のクレジット"
         },
         {
           "file": "ms_composer_glossary.adoc",

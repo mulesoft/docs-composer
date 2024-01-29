@@ -1,7 +1,7 @@
 * xref:ms_composer_overview.adoc[MuleSoft Composer]
 
 * xref:ms_composer_ms_release_notes.adoc[Release Notes]
-** xref:ms_composer_ms_release_notes_ki.adoc[Known Issues]
+** xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations]
 
 * xref:ms_composer_prerequisites.adoc[Getting Started]
 ** xref:ms_composer_about_flows.adoc[How Composer Works]
@@ -9,6 +9,7 @@
 * xref:ms_composer_flows.adoc[Build a Flow]
 ** xref:ms_composer_build_a_flow_using_templates.adoc[Build a Flow Using Templates]
 * xref:ms_composer_custom_expression_editor.adoc[Build Formulas for Flows]
+* xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow]
 * xref:ms_composer_test_flow.adoc[Test a Flow]
 * xref:ms_composer_activation.adoc[Activate a Flow]
 * xref:ms_composer_monitoring.adoc[Monitor a Flow]
@@ -17,6 +18,7 @@
 ** xref:ms_composer_asana_reference.adoc[Asana]
 ** xref:ms_composer_box_reference.adoc[Box]
 ** xref:ms_composer_gmail_reference.adoc[Gmail]
+** xref:ms_composer_google_bigquery_reference.adoc[Google BigQuery]
 ** xref:ms_composer_google_calendar_reference.adoc[Google Calendar]
 ** xref:ms_composer_googlesheets_reference.adoc[Google Sheets]
 ** xref:ms_composer_http_reference.adoc[HTTP]
@@ -29,8 +31,10 @@
 ** xref:ms_composer_quickbooks_reference.adoc[QuickBooks Online]
 ** xref:ms_composer_rpa_reference.adoc[MuleSoft RPA]
 ** xref:ms_composer_rest_consumer_reference.adoc[Rest Consumer]
+** xref:ms_composer_sage_intacct_reference.adoc[Sage Intacct]
 ** xref:ms_composer_salesforce_reference.adoc[Salesforce]
 ** xref:ms_composer_salesforce_marketing_cloud_reference.adoc[Salesforce Marketing Cloud]
+** xref:ms_composer_sap_s4hana_reference.adoc[SAP S/4HANA Cloud]
 ** xref:ms_composer_servicenow_reference.adoc[ServiceNow]
 ** xref:ms_composer_slack_reference.adoc[Slack]
 ** xref:ms_composer_snowflake_reference.adoc[Snowflake]
@@ -43,4 +47,5 @@
 ** xref:ms_composer_zuora_reference.adoc[Zuora]
 
 * xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits]
+* xref:ms_composer_hyperautomation.adoc[MuleSoft Automation Package]
 * xref:ms_composer_glossary.adoc[Glossary]

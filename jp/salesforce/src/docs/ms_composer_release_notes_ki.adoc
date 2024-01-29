@@ -1,0 +1,297 @@
+= MuleSoft Composer for Salesforce の既知の問題と制限事項
+
+次のリストに、Composer for Salesforce の既知の問題と制限事項を示します。リストは、既知の問題または制限事項が発生した日付順になっています。
+
+== 2023/05/31
+
+=== SAP S/4HANA Cloud
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|アクションまたはトリガを追加するときに、​*[Service (サービス)]*​ 項目のドロップダウンメニューが空で表示され、コネクタ設定を完了できない場合がある。
+
+同様に、設定中に​`「Retrieving metadata for the step failed (ステップのメタデータの取得失敗)」`​エラーが発生する可能性がある。 | これは断続的に発生する問題であり、しばらくすると解決されるはずです。 | W-13527982
+|===
+
+== 2023/03/22
+
+=== Google BigQuery
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|ID
+
+|String (文字列) または Date (日付) データ型の入力パラメータ値は、式エディタを使用して、単一引用符で囲んで指定する必要があります。 | W-12696210
+|===
+
+== 2022 年 8 月 3 日
+
+//include::_partials/rpa-ki.adoc[]
+=== RPA
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|既存のフローが構築されたものとは異なる RPA に接続している場合、現在の RPA プロセスが新しい組織のプロセスに自動的にマップされない。
+
+a| 次の手順を実行します。
+
+. フローでステップを削除します。
+. フローでステップを再追加します。
+. プロセスリストを更新します。
+. 新しいプロセスを選択します。
+| なし
+
+|RPA から JSON を取得するときに、リストをサポートするコネクタにオブジェクトのリストを渡すことができる。たとえば、NetSuite に作業指示品目のリストを渡すことができます。 |なし | なし。
+
+|RPA から JSON を取得するときに、リストの反復処理時にリストのプリミティブ値を使用できない。たとえば、文字列のリストを反復処理できますが、生成された値を使用しては何もできません。 |なし |なし
+
+|===
+
+== 2022 年 7 月 13 日
+
+//include::_partials/platform-ki-July22.adoc[]
+=== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|接続を削除すると、その接続を使用するフローが存在しないことがコンポーザによって確認される。その接続を使用するフローが存在する場合は、​*[Delete Connection (接続を削除)]*​ ウィンドウのリストに表示されます。  ただし、ごくまれに、2022 年 7 月 12 日より前に作成または編集されたフローがリストに表示されない場合があります。 | |
+|===
+
+== 2022 年 4 月 29 日
+
+//include::_partials/workday-ki.adoc[]
+=== Workday
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|*Invoice*​ オブジェクトで、金額のデータ型 ​`number`​ を含むすべての項目が文字列として送信される。 | カスタム式エディタを使用すると、型キャスト関数 ​`fromStringToNumber`​ を使用して、データ型を ​`string`​ から ​`number`​ に変更できます。次に例を示します。 +
+
+`Unit Cost=fromStringToNumber(Sales Price)` + |
+
+|===
+
+== 2022 年 4 月 28 日
+
+//include::_partials/http-ki.adoc[]
+=== HTTP
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|*[Example Request (要求の例)]*​ 項目のテキストを変更した後に、​*[HTTP Request (HTTP 要求)]*​ 項目がクリアされない。 |アクションを再ビルドします。 |W-11052290
+
+|一部の API エンドポイントは入力としてリストが要求される。コンポーザでは、別のリストからのリストの作成のみがサポートされる。 |リストを返す前のステップをフローに追加し、それを HTTP 要求で必要なリストのベースとして使用します。 |
+
+|接続をテストするときに、​*[Request Method (要求メソッド)]*​ 項目が ​`GET`​ に設定されている場合でも ​*[Request Body (リクエストボディ)]*​ 項目が表示される。 |なし |
+
+|===
+
+== 2022 年 1 月 5 日
+
+//include::_partials/netsuite-ki.adoc[]
+=== NetSuite
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|フローのテスト中にコンポーザでエラーが発生する。
+a|Chrome ブラウザで、​*[デベロッパーツール]*​ をクリックして ​*[ネットワーク]*​ をクリックします。Chrome の ​*[ネットワーク]*​ タブで、もう一度フローをテストします。​`INSUFFICIENT PERMISSIONS`​ エラーが発生した場合、次の手順を完了します。 +
+
+. NetSuite で、ロール設定にアクセスします。
+. *[Permissions (権限)]*​ をクリックし、​*[Setup (設定)]*​ をクリックします。
+. 以下の権限が ​*[Full (フル)]*​ に設定されていいることを確認します。
+
+** Control SuiteScript and Workflow Triggers in Web Service Request (Web サービス要求での SuiteScript およびワークフロートリガの制御)
+** SOAP Web Service (SOAP Web サービス)
+** User Access Tokens (ユーザアクセストークン)
+** Custom Body Fields (カスタム本文項目)
+** Custom Column Fields (カスタム列項目)
+** Custom Entity (カスタムエンティティ)
+** Custom Item Fields (カスタムアイテム項目)
+** Custom Item Number Fields (カスタムアイテム番号項目)
+** Custom Lists (カスタムリスト)
+** Custom Record Types (カスタムレコードタイプ)
+** Custom Transaction Fields (カスタムトランザクション項目)
+
+. NetSuite 接続を再確立します。エラーが引き続き表示される場合は、サポートにお問い合わせください。
+ |なし
+
+|===
+
+== 2021 年 7 月 1 日
+
+//include::_partials/jira-ki.adoc[]
+=== Jira
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+a|現時点では、以下の標準項目はサポートされていない。 +
+
+** *Affects version (影響バージョン)*​
+** *Fix version (修正バージョン)*​
+** *Environment (環境)*​
+** *Component (コンポーネント)*​
+
+| なし |なし
+
+a|以下のリストコンポーネントを含むカスタム項目が表示されない。 +
+
+** *Text field (multi-line) (テキスト項目 (複数行))*​
+** *Labels (ラベル)*​
+** *Checkboxes (チェックボックス)*​
+** *Radio Buttons (ラジオボタン)*​
+** *Select list (multiple-choice) (選択リスト (複数選択))*​
+** *Select list (cascading) (選択リスト (カスケード))*​
+
+| なし |なし
+
+|*[Status (状況)]*​ 項目で、​*[In Progress (進行中)]*​ の値が 2 回表示されることがある。 |なし |なし
+
+|Jira でケースを作成した後に、​*[Update issue (問題を更新)]*​ アクションで ​*[Reporter (報告者)]*​ 項目の値が更新されない。さらに、​*[Update issue (問題を更新)]*​ アクションが成功するには、この項目の値を空白にする必要がある。 |*[Reporter (報告者)]*​ 項目の値を更新するには、Jira でケースレコードを手動で更新します。 |なし
+
+|カスタム項目が表示されない。 |接続を削除し、Jira アカウントを再認証して、Jira 接続をリセットします。 |なし
+
+|問題を作成するときに、出力メタデータで 400 エラーが発生する場合がある。 | このエラーは無視してください。 |なし
+
+|===
+
+== 2021 年 6 月 2 日
+
+//include::_partials/platform-ki.adoc[]
+=== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|別のタブでフローを編集していないのに、​*[Already editing somewhere? (すでにどこかで編集していますか?)]*​ ダイアログが表示される。 | コンポーザからログアウトしてから、もう一度ログインして作業を再開します。 |CAPO-47
+
+|*[Custom Expression Editor (カスタム式エディタ)]*​ で ​*[fromDateToTime]*​ または ​*[fromStringToDateTime]*​ 関数を使用すると、返される値が 1 日ずれる。たとえば、「​`04/27/2022 T00:00:00Z`​」と入力すると、返される値が ​`4/26/2022 5:00:00 PM`​ になる。 | |
+|===
+
+== 2021 年 5 月 19 日
+
+//include::_partials/slack-ki.adoc[]
+=== Slack
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|Slack の ​*[Create Message (メッセージを作成)]*​ アクションを選択すると、公開チャネルのみが表示される。 | なし |CCONN-765
+
+|===
+
+== 2021 年 4 月 13 日
+
+=== NetSuite
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+|NetSuite データピルがテキストも含まれる Slack メッセージで使用されていると、Slack フローへの NetSuite のテストが失敗します。 |なし。 |CPLAT-1288
+|ユーザが NetSuite の ​*Update Record*​ アクションで項目のマッピングを完了していない場合は、テストが開始されません。 |なし。 |CPLAT-1292
+|===
+
+== 2021 年 3 月 15 日
+
+=== コンポーザプラットフォーム
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+|*[Recently Viewed (最近参照したデータ)]*​ リストページに ​*[New Flow (新規フロー)]*​ ボタンが表示されない場合は、​*[All (すべて)]*​ ページに切り替えてください。 |なし。 |CAPP-1625
+|コンポーザに最初にログインしたときに ​*[Home (ホーム)]*​ ページコンテンツではなく空白領域が表示された場合は、ブラウザの Cookie をクリアして再読み込みしてください。 |なし。 |CAPP-2051
+|作成後に、トリガまたはアクションから ​*[Add Connection (接続を追加)]*​ ボタンにアクセスできません。 a|接続を同じシステム種別の新しい接続に変更する手順は、次のとおりです。 +
+
+. フローの最後にアクションを追加します。これにより、​*[Add Connection (接続を追加)]*​ ボタンが表示されます。
+. 新しい接続を作成します。
+. 追加したアクションを削除します。
+. 新しい接続に変更するトリガまたはアクションで、変更アイコン (3 つのドット) をクリックします。
+. *[Change Connection (接続を変更)]*​ をクリックします。新しい接続がリストされます。
+|
+|トリガを作成したら、そのステップを削除できなくなります。 a|たとえば Salesforce から Workday に切り替えるなど、データ取得元を変更するには、新しいフローを作成します。
+
+同じデータ取得元のインスタンスを変更するが、そのソースの接続がまだ存在していない場合は、次の手順を実行します。 +
+
+. フローの最後にアクションを追加します。このアクションで、必要な接続を作成します。
+. アクションを削除します。
+. トリガを開いて ​*[Change Connection (接続を変更)]*​ を使用して新しい接続に変更します。 |CAPP-1550
+|Salesforce アクション ​*Get records*​ の一環として、[Date (日付)] 項目に基づいて照会することはできません。 |なし。 |CPLAT-1126
+
+|===
+
+//include::_partials/google-sheets-ki.adoc[]
+=== Google スプレッドシート
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|Google スプレッドシートワークシートの名前にスペースが含まれていると、テスト中にエラーが発生する可能性があります。 |スペースを削除して、テストを再実行してくださいい。 |CCONN-735
+
+|===
+
+//include::_partials/salesforce-ki.adoc[]
+=== Salesforce
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|コンポーザで、ユーザオブジェクトの一部の必須 Boolean 項目の値が設定されない。関連するステップでそれらの値を設定する必要があります。 |なし |CAPP-2009
+
+|===
+
+//include::_partials/tableau-ki.adoc[]
+=== Tableau
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題|回避策 |ID
+
+|同じ Tableau データ取得元には 1 つのフローしか追加できない。コンポーザ外の複数のフローまたはアプリケーションがほぼ同時にデータ取得元にアクセスすると、Composer エラーが発生する。 | なし |CCONN-714
+
+|===

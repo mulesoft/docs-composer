@@ -1,4 +1,7 @@
 = MuleSoft Composer for Salesforce のリリースノート
 
+
+* xref:ms_composer_release_notes_2023.adoc[リリースノート 2023]
 * xref:ms_composer_release_notes_2022.adoc[リリースノート 2022]
 * xref:ms_composer_release_notes_2021.adoc[リリースノート 2021]
+* xref:ms_composer_release_notes_ki.adoc[既知の問題と制限事項]

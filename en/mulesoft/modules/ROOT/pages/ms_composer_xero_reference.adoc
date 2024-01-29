@@ -20,7 +20,11 @@ The OAuth password that you use to log in to Xero.
 
 == Triggers
 
-include::_partials/trigger-definition.adoc[]
+Each flow starts with either a _scheduler_ or a _trigger_. Schedulers are set to a default frequency of 15 minutes. Triggers, such as "each time a new record is created", are defined by you and provide multiple options related to the data in your system.
+
+Triggers use a polling process to actively check for new updates from an external system. The polling frequency five minutes. 
+
+This system provides the following trigger options:
 
 New or updated Contact::
 
@@ -50,6 +54,10 @@ Checks for a new or updated invoice. Provide a value for the following fields:
 * *Invoice type*
 * *Invoice status*
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]
@@ -75,7 +83,7 @@ Returns a single contact record based on the ID value. Provide a value for the f
 
 Create or update invoice::
 
-Creates or updates an invoice record. Provide a value for the following fields:
+Creates or updates an invoice record. Only direct columns within Invoice are supported. Provide a value for the following fields:
 
 * *Organization*
 * *Invoice type*
@@ -114,5 +122,9 @@ Returns new or updated invoice records. Provide a value for *Organization*.
 The Action: *Create or update invoice* object is available.
 
 //* Field: *Contact persons*
+
+== Custom Fields 
+
+Custom fields are not supported. Using MuleSoft Composer, you can access standard field values for actions and triggers that you set in the Xero record.
 
 include::_partials/see-also.adoc[]

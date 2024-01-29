@@ -32,6 +32,10 @@ New/updated user::
 
 Fires when a new user is created or an existing user is updated in Zendesk.
 
+=== Polling Frequency 
+
+include::_partials/polling-frequency.adoc[]
+
 == Actions
 
 include::_partials/action-definition.adoc[]

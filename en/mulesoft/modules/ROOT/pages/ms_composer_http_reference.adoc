@@ -2,6 +2,7 @@
 
 HTTP Connector connects cloud applications that are not currently supported through dedicated connectors. Use HTTP Connector to connect to systems that Composer does not currently support to extend the capabilities of the systems that Composer does support. HTTP Connector for Composer uses https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP] 1.1 to handle JSON data.
 
+[[connections]]
 == Connections
 
 To connect to a system, whether it is a source of data or the target where you are sending data, you must create a connection with the required credentials of that system. You typically connect to different systems within a flow and can reuse each connection every time you need to connect.
@@ -590,7 +591,7 @@ Under the OAuth Authorization Code Grant type, the authorization request sends d
 . Click *Next*. +
 The OAuth 2.0 Authorization Code Connection is configured. You can now test the connection.
 
-
+[[test-the-connection]]
 === Test the Connection
 
 After you establish a connection method, you can test the connection. While Composer tests other connectors  automatically in the background, you must test HTTP Connector. You can decide which page to use for the test. Testing the connection is important because you cannot edit the connection later.
@@ -618,12 +619,12 @@ The following fields are applicable for HTTP Connector:
 
 |Name |Type |Description
 
-|Relative URL |String |URL for the target of the request without considering the base path.
+|*Relative URL* |String |URL for the target of the request without considering the base path.
 
-|Action |String |The type of request. You must choose between *Request* or *Paginated Request*.
+|*Action* |String |The type of request. You must choose between *Request* or *Paginated Request*.
 
 
-|HTTP Method |String a|The HTTP method for the request. The following HTTP methods are available:
+|*HTTP Method* |String a|The HTTP method for the request. The following HTTP methods are available:
 
 * *GET*: Retrieves information from the server.
 * *POST*: Sends information to the server.
@@ -634,6 +635,10 @@ The following fields are applicable for HTTP Connector:
 |*Path* |String |Identifies the specific resource in the server that you want to access.
 
 |*Headers* |Object |Allows you and the server to pass additional information with an HTTP request or response. Consists of its case-insensitive name (key) followed by a colon, and then followed by its value. If you add headers, you must provide values for the *Key* and *Value* fields.
+
+If you specify a *POST*, *PUT*, *PATCH*, or *DELETE* method and you add a request body, you must add the *Content-Type: application/json* header. Check the connected API for the desired field name for the *Content-Type: application/json* header since some APIs require different names for this header.
+
+If the header is *Content-Type: application/json*, then the minimum valid JSON ({}, [], "") is required as part of the request body.
 
 |*Query Parameters* |Object |Query parameters to include in the request. If you add query parameters, you must provide values for the *Key* and *Value* fields.
 

@@ -46,19 +46,19 @@
             {
               "file" : "ms_composer_using_a_flow_and_creating_trigger.adoc",
               "title": "Using a Flow and Creating a Trigger"
-            }
+            },
             {
               "file" : "ms_composer_connecting_a_flow.adoc",
               "title": "Connecting a Flow"
-            }
+            },
             {
               "file" : "ms_composer_scheduling_polling_invoking_flow.adoc",
               "title": "Scheduling, Polling, or Invoking a Flow"
-            }
+            },
             {
               "file" : "ms_composer_using_actions_in_a_flow.adoc",
-              "title": "Using Actions in a Flow"
-            }
+              "ti,tle": "Using Actions in a Flow"
+            },
             {
             "file" : "ms_composer_build_a_flow_using_templates.adoc",
             "title": "Building a Flow Using Templates"
@@ -67,24 +67,24 @@
         },
         {
           "file" : "ms_composer_custom_expression_editor.adoc",
-          "title": "Building Formulas for Flows"
+          "title": "Building Formulas for Flows",
           "topics": [
            {
               "file" : "ms_composer_using_a_flow_and_creating_trigger.adoc",
               "title": "Using a Flow and Creating a Trigger"
-            }
+            },
             {
               "file" : "ms_composer_connecting_a_flow.adoc",
               "title": "Connecting a Flow"
-            }
+            },
             {
               "file" : "ms_composer_scheduling_polling_invoking_flow.adoc",
               "title": "Scheduling, Polling, or Invoking a Flow"
-            }
+            },
             {
               "file" : "ms_composer_using_actions_in_a_flow.adoc",
               "title": "Using Actions in a Flow"
-            }
+            },
             {
             "file" : "ms_composer_build_a_flow_using_templates.adoc",
             "title": "Building a Flow Using Templates"

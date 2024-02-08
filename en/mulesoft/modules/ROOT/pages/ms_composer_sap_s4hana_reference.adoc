@@ -17,7 +17,7 @@ Only you can see the connection. Other users in your Composer app must create th
 
 Base URL::
 
-The URL for your SAP S/4HANA instance, for example: `https://{YourInstance}-api.s4hana.cloud.sap`.
+The URL for your SAP S/4HANA instance, for example, `\https://{YourInstance}-api.s4hana.cloud.sap`.
 
 Username::
 

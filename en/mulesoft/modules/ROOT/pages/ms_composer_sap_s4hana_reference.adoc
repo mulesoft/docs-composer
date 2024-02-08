@@ -17,15 +17,15 @@ Only you can see the connection. Other users in your Composer app must create th
 
 Base URL::
 
-The URL for your SAP S/4HANA instance, for example, `\https://{YourInstance}.s4hana.ondemand.com`.
+The URL for your SAP S/4HANA instance, for example, `\https://{YourInstance}-api.s4hana.cloud.sap`.
 
 Username::
 
-The OAuth username that you use to log in to SAP S/4HANA.
+The username that you use to log in to SAP S/4HANA.
 
 Password::
 
-The OAuth password that you use to log in to SAP S/4HANA.
+The password that you use to log in to SAP S/4HANA.
 
 == Triggers
 

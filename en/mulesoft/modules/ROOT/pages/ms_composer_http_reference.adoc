@@ -9,7 +9,7 @@ To connect to a system, whether it is a source of data or the target where you a
 
 Provide the following connection information:
 
-NOTE: The response timeout is 10 seconds and cannot be changed.
+NOTE: The HTTP response timeout is 10 seconds and cannot be changed.
 
 include::_partials/connection-name.adoc[]
 

@@ -7,7 +7,12 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
-//To enhance automation and integration, you can now publish your activated Composer Flows to a trusted Salesforce organization. 
+//== February 14, 2024
+
+//include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+//A beta feature is now available to enhance automation and integration which allows you to publish your activated Composer Flows to a trusted Salesforce organization.  
+ 
 == January 9, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

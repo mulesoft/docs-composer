@@ -468,10 +468,7 @@ The example response is:
 }
 ----
 
-//* xref:access-management::audit-logging.adoc[Anypoint Audit Logging]
-
-
-//ifeval::["{product}"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 == Publish the Flow to Salesforce or an Anypoint Organization
 
 After activating your flow, you can publish the flow to your Salesforce organization. You must have the xref:rpa-home::ms-automation-credits-usage-types.adoc[Automation Starter or Automation Advanced subscription package] to use this service. 
@@ -499,16 +496,16 @@ A message indicates the flow is activated and published to the selected Salesfor
 After publishing your flow from MuleSoft Composer, view your flow in Salesforce: 
 
 . Log in to your Salesforce organization.
-. In the header, click  (Setup) > *Setup*. 
+. In the header, click  image:setup_icon.png[Setup] > *Setup*. 
 . In the navigation pane, navigate to or search for *Mulesoft* > *Services*. 
 . Reopen the flow in MuleSoft Composer and, in the *Credentials* window, note the value in the *URL* field.
 . In the *Imported Mulesoft Services* section, in the *MuleSoft Service Name* column, locate and click the link that matches the value in the *URL* field from the previous step.
-. In the *Service* section, click the link in the *Named Credentials* field. 
+. In the *Service* section, click the link in the https://help.salesforce.com/s/articleView?language=en_US&id=sf.nc_named_creds_and_ext_creds.htm&type=5[*Named Credentials*] field. 
 . Click the link in the *External Credential* field. 
 +
 The flow information appears. 
-. You can now map users to the permission set for the flow. 
-//endif::[]
+. You can now map users to the https://help.salesforce.com/s/articleView?id=release-notes.rn_security_map_principals_to_permsets.htm&release=244&type=5[permission set] for the flow. 
+endif::[]
 
 == Troubleshooting 
 

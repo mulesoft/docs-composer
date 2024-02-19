@@ -517,7 +517,7 @@ If a Composer flow requires input fields and the external system does not pass t
 
 === Invalid Credentials 
 
-If a Composer flow has invalid credentials, an HTTP 401 response occurs.
+If a Composer flow has invalid credentials, an HTTP 401 response occurs. 
 
 include::_partials/see-also.adoc[]
 * https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder[Trail: Build Flows with Flow Builder]

@@ -496,7 +496,7 @@ A message indicates the flow is activated and published to the selected Salesfor
 After publishing your flow from MuleSoft Composer, view your flow in Salesforce: 
 
 . Log in to your Salesforce organization.
-. In the header, click image:images/setup_icon.png[Setup] > *Setup*. 
+. In the header, click image:images/setup_icon.png[Setup, 200] > *Setup*. 
 . In the navigation pane, navigate to or search for *Mulesoft* > *Services*. 
 . Reopen the flow in MuleSoft Composer and, in the *Credentials* window, note the value in the *URL* field.
 . In the *Imported Mulesoft Services* section, in the *MuleSoft Service Name* column, locate and click the link that matches the value in the *URL* field from the previous step.

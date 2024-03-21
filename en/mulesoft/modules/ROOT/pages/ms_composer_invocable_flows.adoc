@@ -468,6 +468,45 @@ The example response is:
 }
 ----
 
+ifeval::["{product}"=="mulesoft"]
+== Publish the Flow to Salesforce or an Anypoint Organization
+
+After activating your flow, you can publish the flow to your Salesforce organization. You must have the xref:rpa-home::ms-automation-credits-usage-types.adoc[Automation Starter or Automation Advanced subscription package] to use this service. 
+
+=== Publish a Composer Flow from MuleSoft Composer (Beta)
+
+To publish a MuleSoft Composer flow to your Salesforce organization: 
+
+. Ensure that your MuleSoft Anypoint Platform organization is connected to your Salesforce organization:  
++
+* xref:access-management::external-organization-access.adoc[Access External Organizations in MuleSoft]
+* https://help.salesforce.com/s/articleView?language=en_US&id=sf.external_services_manage_your_mulesoft_anypoint_platform_connection.htm&type=5[Connect to MuleSoft Anypoint Platform in Salesforce]
+. xref:ms_composer_activation.adoc[Activate the flow]. 
+. After activation, click the *Flow Controls* button that appears. 
+. In the *Flow Credentials* window, click *Publish* in the *Salesforce Invocable Actions* section. 
++
+A message indicates the flow is activated and published to the selected Salesforce organization. When the flow is published to your organization, the process:
++
+* Generates a URL for the flow. 
+* Enables External services. 
+* Creates an empty permission set. 
+
+=== View a Published MuleSoft Composer Flow in Salesforce (Beta)
+
+After publishing your flow from MuleSoft Composer, view your flow in Salesforce: 
+
+. Log in to your Salesforce organization.
+. In the header, click image:images/setup_icon.png[Setup, 20] > *Setup*. 
+. In the navigation pane, navigate to or search for *Mulesoft* > *Services*. 
+. Reopen the flow in MuleSoft Composer and, in the *Credentials* window, note the value in the *URL* field.
+. In the *Imported Mulesoft Services* section, in the *MuleSoft Service Name* column, locate and click the link that matches the value in the *URL* field from the previous step.
+. In the *Service* section, click the link in the https://help.salesforce.com/s/articleView?language=en_US&id=sf.nc_named_creds_and_ext_creds.htm&type=5[*Named Credentials*] field. 
+. Click the link in the *External Credential* field. 
++
+The flow information appears. 
+. You can now map users to the https://help.salesforce.com/s/articleView?id=release-notes.rn_security_map_principals_to_permsets.htm&release=244&type=5[permission set] for the flow. 
+endif::[]
+
 == Troubleshooting 
 
 When an external system successfully invokes a Composer flow, an HTTP 200 response occurs. To troubleshoot invocable flows, become familiar with the information about interpreting commonly thrown exception messages.
@@ -478,7 +517,7 @@ If a Composer flow requires input fields and the external system does not pass t
 
 === Invalid Credentials 
 
-If a Composer flow has invalid credentials, an HTTP 401 response occurs.
+If a Composer flow has invalid credentials, an HTTP 401 response occurs. 
 
 include::_partials/see-also.adoc[]
 * https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder[Trail: Build Flows with Flow Builder]

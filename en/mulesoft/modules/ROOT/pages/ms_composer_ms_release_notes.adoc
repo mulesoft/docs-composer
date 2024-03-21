@@ -1,5 +1,5 @@
 = MuleSoft Composer Release Notes
-:page-revdate: January 9, 2024
+:page-revdate: March 21, 2024
 
 Use MuleSoft Composer to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
 
@@ -7,6 +7,28 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
+== March 21, 2024
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* You can now view descriptions of connector actions and triggers directly under their respective names.  
+
+= March 15, 2024
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|After an access token expires, Salesforce Marketing Cloud Connector now properly refreshes the access token.| W-14979479
+|===
+
+== February 26, 2024
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+
+* A beta feature is now available to enhance automation and integration which allows you to publish your activated Composer Flows to a trusted Salesforce organization.  
+ 
 == January 9, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

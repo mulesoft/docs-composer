@@ -13,7 +13,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * You can now view descriptions of connector actions and triggers directly under their respective names.  
 
-= March 15, 2024
+== March 15, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 

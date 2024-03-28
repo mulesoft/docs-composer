@@ -3,7 +3,7 @@
 Tableau をデータ取得先として使用します。たとえば、Salesforce データを既存の Tableau hyper ファイルにプッシュできます。
 フローでのデータの操作方法の一部の詳細は、データ取得先に固有です。
 
-== コンポーザの Tableau 要件
+== コンポーザーの Tableau 要件
 
 * Tableau Online または Tableau Server に接続できます。
 * Tableau のインスタンスは、インターネット向けに公開されていてバージョン 2019.4 以上である必要があります。
@@ -14,7 +14,7 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Tableau server URI (Tableau サーバ URI)::
+Tableau server URI (Tableau サーバー URI)::
 
 この URI は、通常ログインするドメインです (例: `\https://[region].online.tableau.com`​)。
 
@@ -30,15 +30,15 @@ Site (サイト)::
 
 サイト ID とも呼ばれるサイト属性。
 +
-これは、ログイン後にブラウザの URL バーで ​`/site`​ の後に表示される URL の最初の部分です。 Tableau Online に接続する場合は、サイト属性を指定する必要があります。
+これは、ログイン後にブラウザーの URL バーで ​`/site`​ の後に表示される URL の最初の部分です。 Tableau Online に接続する場合は、サイト属性を指定する必要があります。
 +
-たとえば、ブラウザの URL に ​`\https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks`​ と表示された場合、​*[Site (サイト)]*​ 値は ​`MarketingTeam`​ になります。
+たとえば、ブラウザーの URL に ​`\https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks`​ と表示された場合、​*[Site (サイト)]*​ 値は ​`MarketingTeam`​ になります。
 
 Tableau での認証についての詳細は、​`https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`​ を参照してください。
 
 === 制限事項
 
-同じ Tableau データ取得元には 1 つのフローしか追加できない。コンポーザ外の複数のフローまたはアプリケーションでほぼ同時にデータ取得元にアクセスした場合、コンポーザエラーが発生します。
+同じ Tableau データ取得元には 1 つのフローしか追加できない。コンポーザー外の複数のフローまたはアプリケーションでほぼ同時にデータ取得元にアクセスした場合、コンポーザーエラーが発生します。
 //CCONN-714, copied from tableau reference
 
 === トークンの期間
@@ -50,9 +50,9 @@ Tableau には、接続に影響する個人アクセストークンに対する
 
 //TODO Get details on "expression-to-stop-revocation" from Gaston
 
-== トリガ
+== トリガー
 
-Tableau が含まれるフローにはスケジューラまたは他のコネクタを使用する必要があります。イベントトリガは使用できません。
+Tableau が含まれるフローにはスケジューラーまたは他のコネクタを使用する必要があります。イベントトリガーは使用できません。
 
 == アクション
 
@@ -62,11 +62,11 @@ Add Data to Data Source::
 
 既存の Tableau データ取得元に新しいデータを追加します。
 +
-* 各データ取得元について 2 つの情報 (Tableau プロジェクト ID とデータ取得元 ID) を指定する必要があります。これらの情報は、それぞれオープンプロジェクトの URL とデータ取得元から取得できます。これらの情報を入力すると、コンポーザに ID ではなくプロジェクト名とソース名が表示されます。
+* 各データ取得元について 2 つの情報 (Tableau プロジェクト ID とデータ取得元 ID) を指定する必要があります。これらの情報は、それぞれオープンプロジェクトの URL とデータ取得元から取得できます。これらの情報を入力すると、コンポーザーに ID ではなくプロジェクト名とソース名が表示されます。
 * 使用するデータ取得元はパブリッシュして、hyper ファイルに公開接続する必要があります。
 +
 hyper ファイルは Tableau Desktop (​*[Connect To a File (ファイルに接続)] -> _hyper-file name_*​) を使用するか、REST API または ​`tabcmd`​ を通じて ​`.hyper`​ ファイルをパブリッシュすることで作成できます。CSV ファイルや Excel ファイルなどのライブデータ取得元にアクセスしたり、Tableau で定義されたスケジュールに従って定期的に更新されるデータ取得元にアクセスしたりすることはできません。
-* フローで行った変更が Tableau サーバに表示されるまでに要する時間は、hyper ファイルのサイズに応じて異なります。
+* フローで行った変更が Tableau サーバーに表示されるまでに要する時間は、hyper ファイルのサイズに応じて異なります。
 
 入力しているデータ取得元に ​`Time`​ 項目があるが日付が含まれていない場合、Tableau ではデータ取得元に ​`30/12/1899`​ として日付値が保存されます。
 

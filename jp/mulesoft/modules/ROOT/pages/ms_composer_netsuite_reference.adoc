@@ -7,15 +7,15 @@ NetSuite をデータ取得元として使用している (たとえば、新し
 MuleSoft Composer を介して NetSuite に接続する場合、NetSuite で次の点を確認します。
 
 * *[Setup (設定)]*​ > ​*[Integration Management (インテグレーション管理)]*​ > ​*[Manage Integration (インテグレーションを管理)]*​ > ​*[Authentication (認証)]*​ に移動してトークンベースの認証が有効になっていることを確認します。
-* *[Setup (設定)]*​ > ​*[User/Roles (ユーザ/ロール)]*​ > ​*[Two-Factor Authentication Roles (2 要素認証ロール)]*​ に移動して、インテグレーションで使用するロールで 2 要素認証が使用されていないことを確認します。
+* *[Setup (設定)]*​ > ​*[User/Roles (ユーザー/ロール)]*​ > ​*[Two-Factor Authentication Roles (2 要素認証ロール)]*​ に移動して、インテグレーションで使用するロールで 2 要素認証が使用されていないことを確認します。
 
-コンポーザでは NetSuite インスタンス 2020.2 以降がサポートされています。
+コンポーザーでは NetSuite インスタンス 2020.2 以降がサポートされています。
 
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 +
-NetSuite には同時ユーザ (cWSU) ではなく正規ユーザ (WSU) として接続する必要があります。
+NetSuite には同時ユーザー (cWSU) ではなく正規ユーザー (WSU) として接続する必要があります。
 
 include::_partials/netsuite-connection-details.adoc[]
 
@@ -33,37 +33,37 @@ MuleSoft Composer を使用して NetSuite 接続を確立するには、NetSuit
 
 === NetSuite 権限の設定
 
-NetSuite データおよび NetSuite ユーザインターフェースへのアクセス権はユーザ、ロール、および権限に基づきます。
+NetSuite データおよび NetSuite ユーザーインターフェースへのアクセス権はユーザー、ロール、および権限に基づきます。
 
-ユーザ、ロール、および権限についての詳細は、 https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite ドキュメント]​を参照してください。
+ユーザー、ロール、および権限についての詳細は、 https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N284861.html[NetSuite ドキュメント]​を参照してください。
 
-MuleSoft では、コンポーザと NetSuite を統合するために必要な権限を持つロールを含むバンドルが提供されます。バンドルをインストールする手順は、次のとおりです。
+MuleSoft では、コンポーザーと NetSuite を統合するために必要な権限を持つロールを含むバンドルが提供されます。バンドルをインストールする手順は、次のとおりです。
 
 . *[Customization (カスタマイズ)] > [SuiteBundler] > [Search & Install Bundles (バンドルの検索とインストール)]*​ に移動します。
 . キーワード検索で「​`462515`​」と入力します。
 . *[MuleSoft Composer]*​ をクリックし、​*[Components (コンポーネント)]*​ タブを確認します。
 . *[Install (インストール)]*​ をクリックし、​*[Install Bundle (バンドルをインストール)]*​ をクリックします。インストールには数分かかります。
 
-バンドルをインストールしたら、ログイン情報を生成してコンポーザへの接続を設定します。ログイン情報はセキュリティ上の理由から一度しか表示されないため、ログイン情報を安全に保管してください。詳細は、NetSuite 管理者にお問い合わせください。
+バンドルをインストールしたら、ログイン情報を生成してコンポーザーへの接続を設定します。ログイン情報はセキュリティ上の理由から一度しか表示されないため、ログイン情報を安全に保管してください。詳細は、NetSuite 管理者にお問い合わせください。
 
 トークンの形式でログイン情報を生成する手順は、次のとおりです。
 
-. 新しく作成した ​*MuleSoft Composer*​ ロールを目的のユーザに割り当てます。
-.. *[Setup (設定)] > [Users/Roles (ユーザ/ロール)] > [Manage Users (ユーザの管理)]*​ に移動します。
-.. インテグレーションをホストするユーザをクリックします。独自のライセンスを必要としない ​`it@company.com`​ などの一般的なアカウントを使用できます。
+. 新しく作成した ​*MuleSoft Composer*​ ロールを目的のユーザーに割り当てます。
+.. *[Setup (設定)] > [Users/Roles (ユーザー/ロール)] > [Manage Users (ユーザーの管理)]*​ に移動します。
+.. インテグレーションをホストするユーザーをクリックします。独自のライセンスを必要としない ​`it@company.com`​ などの一般的なアカウントを使用できます。
 . インテグレーションを作成します。
 .. *[Setup (設定)] > [Integration (インテグレーション)] > [Manage Integration (インテグレーションの管理)] > [New (新規)]*​ に移動します。
 .. インテグレーションの名前と適切な同時実行値を入力します。低い値から始めて、許可されている最大同時実行値よりも 1 ～ 2 単位低い値を使用できます。
 .. *[Token-Based Authentication (トークンベース認証)]*​ ボックスをオンにします。
 . アクセストークンを生成します。
-.. *[Setup (設定)] > [Users/Roles (ユーザ/ロール)] > [User Management (ユーザ管理)] > [Access Tokens (アクセストークン)]*​ に移動します。
+.. *[Setup (設定)] > [Users/Roles (ユーザー/ロール)] > [User Management (ユーザー管理)] > [Access Tokens (アクセストークン)]*​ に移動します。
 .. 前のステップで作成したインテグレーションにアプリケーションを設定します。
-.. ユーザを割り当て、​*[Save (保存)]*​ をクリックします。
+.. ユーザーを割り当て、​*[Save (保存)]*​ をクリックします。
 . *[Setup (設定)] > [Company (会社)] > [Company Information (会社情報)]*​ に移動して、NetSuite アカウント ID を特定します。
 
-=== サーバの SuiteScript を実行してワークフローをトリガ
+=== サーバーの SuiteScript を実行してワークフローをトリガー
 
-サーバの SuiteScript を実行してワークフローをトリガするように NetSuite 設定が定義されている場合、次の条件が必要です。
+サーバーの SuiteScript を実行してワークフローをトリガーするように NetSuite 設定が定義されている場合、次の条件が必要です。
 
 * *[Audience (オーディエンス)]*​ 項目ですべてのロールが選択されている必要があります。
 * *[Execute As Role (ロールとして実行)]*​ 項目が ​`Administrator`​ に設定されている必要があります。
@@ -71,7 +71,7 @@ MuleSoft では、コンポーザと NetSuite を統合するために必要な�
 
 include::_partials/null-values.adoc[]
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
@@ -82,6 +82,10 @@ On Updated Records::
 On New Records::
 
 新しいレコードが NetSuite に作成される。
+
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
 
 == アクション
 
@@ -123,7 +127,7 @@ image::images/get-records-netsuite.png[クエリビルダー UI、500]
 [%header%autowidth.spread]
 |===
 
-|レコードタイプ |トリガ |アクション
+|レコードタイプ |トリガー |アクション
 
 |BILLING_SCHEDULE | |X
 |CASH_SALE |X |X
@@ -195,7 +199,7 @@ DEPARTMENT、LOCATION、​PRICE_LEVEL​、SUBSIDIARY オブジェクトは GET
 
 == カスタム項目
 
-MuleSoft Composer を使用して、NetSuite レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+MuleSoft Composer を使用して、NetSuite レコードで設定したアクションとトリガーのカスタム項目値にアクセスできます。
 
 //== Objects
 

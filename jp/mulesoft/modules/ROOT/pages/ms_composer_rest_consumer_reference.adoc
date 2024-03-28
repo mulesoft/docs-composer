@@ -1,8 +1,8 @@
 = REST Consumer Connector リファレンス
 
-Rest Consumer Connector は、専用のコネクタで現在サポートされていない、Anypoint で管理される外部で使用可能な API を接続します。Rest Consumer Connector を使用してこれらの API をコンポーザフローで使用し、標準のコネクタ以外を含むインテグレーションを作成します。
+Rest Consumer Connector は、専用のコネクタで現在サポートされていない、Anypoint で管理される外部で使用可能な API を接続します。Rest Consumer Connector を使用してこれらの API をコンポーザーフローで使用し、標準のコネクタ以外を含むインテグレーションを作成します。
 
-Rest Consumer Connector は、フローで使用するコネクタのリストに自動的には表示されません。Rest Consumer Connector を使用するには、最初にコンポーザ組織を Anypoint 組織に接続する必要があります。詳細は、​xref:ms_composer_prerequisites.adoc#connect-composer-to-anypoint-platform[「Anypoint Platform へのコンポーザの接続」]​と​xref:ms_composer_prerequisites.adoc#api-sharing[「API 共有」]​を参照してください。
+Rest Consumer Connector は、フローで使用するコネクタのリストに自動的には表示されません。Rest Consumer Connector を使用するには、最初にコンポーザー組織を Anypoint 組織に接続する必要があります。詳細は、​xref:ms_composer_prerequisites.adoc#connect-composer-to-anypoint-platform[「Anypoint Platform へのコンポーザーの接続」]​と​xref:ms_composer_prerequisites.adoc#api-sharing[「API 共有」]​を参照してください。
 
 == 接続
 
@@ -13,27 +13,27 @@ Connection Display Name (接続表示名)::
 この接続の詳細を把握するのに役立つ接続名を入力します。
 1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。そのため、この接続を他の接続と簡単に区別できる名前を付けると役立ちます。
 +
-接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+接続は自分にのみ表示されます。コンポーザーアプリケーションの他のユーザーは、独自の接続を作成する必要があります。
 
 Authorization Type (認証種別)::
 
 次の認証種別を使用できます。
 
 * *API キー*​ +
-  API キーは、ユーザを明示的に定義せずにアプリケーションに接続します。このキーをすべての要求に追加する必要があります。クラウドアプリケーションは、要求元を識別して認証を完了します。次の項目の値を指定します。
+  API キーは、ユーザーを明示的に定義せずにアプリケーションに接続します。このキーをすべての要求に追加する必要があります。クラウドアプリケーションは、要求元を識別して認証を完了します。次の項目の値を指定します。
   ** *Base URL (ベース URI)*
   ** *Name (名前)*
   ** *値*
   ** *Sent As (送信形式)*​: 次のいずれかの値を選択します。
-    *** *Header (ヘッダー)*​: 選択した場合、コンポーザは ​`Name: Value`​ というヘッダーを要求に追加します。
-    *** *Query Parameter (クエリパラメータ)*​: 選択した場合、コンポーザは ​`Name=Value`​ というクエリパラメータを要求に追加します。
+    *** *Header (ヘッダー)*​: 選択した場合、コンポーザーは ​`Name: Value`​ というヘッダーを要求に追加します。
+    *** *Query Parameter (クエリパラメーター)*​: 選択した場合、コンポーザーは ​`Name=Value`​ というクエリパラメーターを要求に追加します。
   ** *Client ID (クライアント ID)*​: この項目は、接続された API 認証の前に行われるゲートウェイ認証に使用されます。
   ** *Client Secret (クライアントシークレット)*​: この項目は、接続された API 認証の前に行われるゲートウェイ認証に使用されます。
 
 * *基本認証*​ +
-  基本認証メソッドを使用すると、HTTP ユーザエージェントは HTTP 要求を行うときにユーザ名とパスワードを指定できます。次の項目の値を指定します。
+  基本認証メソッドを使用すると、HTTP ユーザーエージェントは HTTP 要求を行うときにユーザー名とパスワードを指定できます。次の項目の値を指定します。
   ** *Base URL (ベース URI)*
-  ** *Username (ユーザ名)*
+  ** *Username (ユーザー名)*
   ** *Password (パスワード)*
   ** *Client ID (クライアント ID)*​: この項目は、接続された API 認証の前に行われるゲートウェイ認証に使用されます。
   ** *Client Secret (クライアントシークレット)*​: この項目は、接続された API 認証の前に行われるゲートウェイ認証に使用されます。
@@ -59,11 +59,11 @@ Request (要求)::
 * *Action (アクション)*
 * *Operation (操作)*
 * *Input Fields (入力項目)*​: 前のステップに基づいて、静的リストから選択するか、データピルからの動的リストを使用できます。
-** 必要に応じて ​*[URI Params (URI パラメータ)]*​ をクリックした場合、​*[Ticket (チケット)]*​ 項目の値を入力する必要があります。
+** 必要に応じて ​*[URI Params (URI パラメーター)]*​ をクリックした場合、​*[Ticket (チケット)]*​ 項目の値を入力する必要があります。
 ** 必要に応じて ​*[Additional Headers (追加ヘッダー)]*​ をクリックした場合、次の項目の値を入力する必要があります。
 *** *Key (キー)*
 *** *値*
-** 必要に応じて ​*[Additional Query Parameters (追加クエリパラメータ)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+** 必要に応じて ​*[Additional Query Parameters (追加クエリパラメーター)]*​ をクリックした場合、次の項目の値を入力する必要があります。
 *** *Key (キー)*
 *** *値*
 * *Custom Request Body (カスタムリクエストボディ)*​: この項目は、API 仕様からのリクエストボディの構造を上書きするために使用されます。

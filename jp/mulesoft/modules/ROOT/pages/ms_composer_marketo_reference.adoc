@@ -1,6 +1,6 @@
 = Marketo Connector リファレンス
 
-Marketo は、マーケティング担当者、役員、営業担当がリードを獲得、育成、理解するのに役立つマーケティングオートメーションソフトウェアです。Marketo は、マーケティングオートメーション、メールマーケティング、リード管理、収益属性をユーザに提供します。
+Marketo は、マーケティング担当者、役員、営業担当がリードを獲得、育成、理解するのに役立つマーケティングオートメーションソフトウェアです。Marketo は、マーケティングオートメーション、メールマーケティング、リード管理、収益属性をユーザーに提供します。
 
 == 接続
 
@@ -24,13 +24,17 @@ REST API Endpoint (REST API エンドポイント)::
 
 Marketo インスタンスのベース URL。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
 New Lead (新規リード)::
 
 指定された日時以降の新しいリードの活動のリストを返します。
+
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
 
 == アクション
 

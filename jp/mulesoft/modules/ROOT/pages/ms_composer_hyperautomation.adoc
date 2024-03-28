@@ -1,0 +1,33 @@
+= MuleSoft Automation パッケージ 
+
+https://www.mulesoft.com/automation-pricing-new[MuleSoft Automation パッケージ]​を使用すると、Anypoint Platform にログインして MuleSoft Composer や ​xref:rpa-home::index.adoc[MuleSoft Robotic Process Automation (RPA)]​ にアクセスできます。MuleSoft Automation パッケージにより、アプリケーションの接続や自動化の作成に必要なすべてが MuleSoft Composer に含まれます。  
+
+
+MuleSoft Automation パッケージでは、コンポーザーユーザーは次の Anypoint Platform 機能を使用できます。 
+
+* xref:access-management::audit-logging.adoc[Anypoint 監査ログ]
+* xref:exchange::index.adoc[Anypoint Exchange] 
+* xref:visualizer::index.adoc[Anypoint Visualizer] 
+* xref:monitoring::index.adoc[Anypoint Monitoring] 
+
+== MuleSoft Automation パッケージを使用したコンポーザーへのアクセス 
+
+MuleSoft Automation パッケージを使用してコンポーザーにアクセスするには、まずユーザーにアクセス権を付与し、Anypoint Platform にログインしてコンポーザーを開きます。
+
+=== システム管理者: コンポーザーユーザーにアクセス権を付与する 
+
+Anypoint Platform を介してコンポーザーにアクセスするには、Anypoint 管理者はまず次の作業を行う必要があります。 
+
+. ユーザーの ​xref:access-management::managing-your-account.adoc[Anypoint Platform アカウント]​を作成します。
+. 次のいずれかの​xref:ms_composer_prerequisites.adoc#change-user-roles[ロール]​を各ユーザーに付与します。  
+.. *Composer Base User (コンポーザー基本ユーザー)*​: このユーザーは各自のフローを作成および管理できます。 
+.. *Composer Super User (コンポーザースーパーユーザー)*​: このユーザーは各自のフローを作成および管理できます。また、このユーザーは所有権を取得したり、Anypoint Composer 組織のフローを管理したりできます。​xref:ms_composer_automation_credits.adoc[[Usage Summary (利用状況概要)]]​ は、「Composer Super User (コンポーザースーパーユーザー)」ロールを持つユーザーのみが使用できます。
+
+=== MuleSoft Automation パッケージを使用してコンポーザーにアクセスする  
+
+MuleSoft Automation パッケージを使用してコンポーザーにアクセスする手順は、次のとおりです。 
+
+. xref:anypoint-code-builder::log-in-anypoint-platform.adoc[Anypoint Platform]​ にログインします。 
+. *[Anypoint Platform]*​ ページで、​*[Go to Composer (コンポーザーに移動)]*​ をクリックします。  
+
+include::_partials/see-also.adoc[]

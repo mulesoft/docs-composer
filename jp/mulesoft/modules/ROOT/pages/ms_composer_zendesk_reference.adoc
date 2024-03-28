@@ -16,7 +16,7 @@ Zendesk にログインするために使用する接続表示名。
 
 Zendesk にログインするために使用するベース URI。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
@@ -30,7 +30,7 @@ Zendesk で新しい組織が作成されるか既存の組織が更新された
 
 New/updated user::
 
-Zendesk で新しいユーザが作成されるか既存のユーザが更新されたときに起動します。
+Zendesk で新しいユーザーが作成されるか既存のユーザーが更新されたときに起動します。
 
 == アクション
 
@@ -60,7 +60,7 @@ Create or update an organization::
 
 Create or update a user::
 
-新しいユーザを作成するか、既存のユーザを更新します。次の項目の値を指定します。
+新しいユーザーを作成するか、既存のユーザーを更新します。次の項目の値を指定します。
 
 * *ID type (ID 種別)*​
 * *Name (名前)*
@@ -75,6 +75,6 @@ Get Organization by ID::
 
 Search users::
 
-指定された条件に基づいてユーザを検索し、これらの条件に一致するユーザのリストを返します。
+指定された条件に基づいてユーザーを検索し、これらの条件に一致するユーザーのリストを返します。
 
 include::_partials/see-also.adoc[]

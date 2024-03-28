@@ -11,9 +11,9 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-<Connector> にログインするために使用するユーザ名。
+<Connector> にログインするために使用するユーザー名。
 
 Password (パスワード)::
 
@@ -23,7 +23,7 @@ Password (パスワード)::
 
 <Details>。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 

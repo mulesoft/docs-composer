@@ -10,49 +10,53 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-QuickBooks Online にログインするために使用する OAuth ユーザ名。
+QuickBooks Online にログインするために使用する OAuth ユーザー名。
 
 Password (パスワード)::
 
 QuickBooks Online にログインするために使用する OAuth パスワード。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
 New Invoice::
 
-新しい請求書が作成されたときにトリガします。
+新しい請求書が作成されたときにトリガーします。
 
 New or Update Invoice (新規または更新済み請求書)::
 
-請求書が作成されたとき、または既存の請求書が更新されたときにトリガします。
+請求書が作成されたとき、または既存の請求書が更新されたときにトリガーします。
 
 New Customer::
 
-新しい顧客が作成されたときにトリガします。
+新しい顧客が作成されたときにトリガーします。
 
 New or Updated Customer (新規または更新済み顧客)::
 
-顧客が作成されたとき、または既存の顧客が更新されたときにトリガします。
+顧客が作成されたとき、または既存の顧客が更新されたときにトリガーします。
 
 New Item::
 
-新しい項目が作成されたときにトリガします。
+新しい項目が作成されたときにトリガーします。
 
 New or Updated Item (新規または更新済み項目)::
 
-項目が作成されたとき、または既存の項目が更新されたときにトリガします。
+項目が作成されたとき、または既存の項目が更新されたときにトリガーします。
 
 New Estimate (新規見積)::
 
-見積が作成されたときにトリガします。
+見積が作成されたときにトリガーします。
 
 New or Updated Estimate (新規または更新済み見積)::
 
-見積が作成されたとき、または既存の見積が更新されたときにトリガします。
+見積が作成されたとき、または既存の見積が更新されたときにトリガーします。
+
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
 
 == アクション
 
@@ -149,7 +153,7 @@ Create Estimate (見積の作成)::
 見積レコードを作成します。次の項目の値を指定します。
 
 * *Customer ID*
-* *Estimate Parameters (見積パラメータ)*
+* *Estimate Parameters (見積パラメーター)*
 
 Get Estimate (見積の取得)::
 
@@ -159,12 +163,12 @@ Update Estimate (見積の更新)::
 
 見積レコードを更新します。次の項目の値を指定します。
 * *Estimate ID (見積 ID)*
-* *Estimate Parameters (見積パラメータ)*
+* *Estimate Parameters (見積パラメーター)*
 
 == カスタム項目
 
-MuleSoft Composer を使用して、Quickbooks Online レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+MuleSoft Composer を使用して、Quickbooks Online レコードで設定したアクションとトリガーのカスタム項目値にアクセスできます。
 
-QuickBooks Online API は、​`string`​ 型で作成されている最初の 3 つのカスタム項目のみを返します。それ以降の string 型のカスタム項目と、他のデータ型 (​`date`​ や ​`picklist`​ など) の項目は、コンポーザでは書き込み可能な項目ではありません。詳細は、 https://developer.intuit.com/app/developer/qbo/docs/workflows/create-custom-fields[Quickbooks Online のドキュメント]​を参照してください。
+QuickBooks Online API は、​`string`​ 型で作成されている最初の 3 つのカスタム項目のみを返します。それ以降の string 型のカスタム項目と、他のデータ型 (​`date`​ や ​`picklist`​ など) の項目は、コンポーザーでは書き込み可能な項目ではありません。詳細は、 https://developer.intuit.com/app/developer/qbo/docs/workflows/create-custom-fields[Quickbooks Online のドキュメント]​を参照してください。
 
 include::_partials/see-also.adoc[]

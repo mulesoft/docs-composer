@@ -280,7 +280,7 @@ Information about the users' invitations appear. In the menu:
 .. If you want to revoke the invitation to that user, click *Revoke Invite*.
 
 [[admin-manage-users]]
-== Admin: Manage Users
+== Manage Users
 
 As administrator, you are responsible for managing your MuleSoft Composer users to meet your organization’s business needs. The following user management tasks are available:
 
@@ -325,7 +325,7 @@ To delete a user:
 A message appears, warning you that deleting a user cannot be undone.
 . Click *Delete*.
 
-//== Admin: Resolve Expiring Certificates
+//== Resolve Expiring Certificates
 
 //As an administrator, you will need to renew Salesforce certificates every twelve months.
 
@@ -334,6 +334,7 @@ A message appears, warning you that deleting a user cannot be undone.
 //. In the MuleSoft Composer sidebar, click *Settings* and then click *Users*.
 //. In the *Configure MuleSoft Services* row, click *Initiate Configuration*. +
 //The Salesforce Certificate is renewed.
+
 === Enable Multiple Identification Providers (IDP)
 
 As an administrator, you can enable users to add identity providers (IDPs) for their organization. Note that:

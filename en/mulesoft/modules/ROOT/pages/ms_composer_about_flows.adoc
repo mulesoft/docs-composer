@@ -165,7 +165,7 @@ You can add up to 20 conditions per branch and as many actions per branch as you
 
 Be careful how you order your If statements. The action specified by the first branch whose conditions are met is the only action performed in the If/Else block.
 
-== Test Each Step
+== Test 
 
 You can test your work after every trigger and action. As you test, you can add or delete triggers, actions, and flow controls. You can also change the connection you use in triggers or actions to another connection of the same system type.
 

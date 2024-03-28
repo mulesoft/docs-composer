@@ -10,16 +10,16 @@ include::_partials/connection-name.adoc[]
 
 API key (API キー)::
 
-この項目の値はスペシャリストコネクタの ​`Authorization`​ 項目にマップされ、Stripe でユーザ名として機能します。API への認証は、HTTP 基本認証を使用して実行されます。API キーはユーザ名であり、パスワードは不要です。API キーは  https://stripe.com/docs/api/authentication[[Stripe Dashboard (Stripe ダッシュボード)]]​ で確認できます。Stripe API では、次の動作になります。
+この項目の値はスペシャリストコネクタの ​`Authorization`​ 項目にマップされ、Stripe でユーザー名として機能します。API への認証は、HTTP 基本認証を使用して実行されます。API キーはユーザー名であり、パスワードは不要です。API キーは  https://stripe.com/docs/api/authentication[[Stripe Dashboard (Stripe ダッシュボード)]]​ で確認できます。Stripe API では、次の動作になります。
 
 * API キーを使用して要求を認証します。
 * プレフィックス ​`sk_test_`​ を持つテストモードキーと、プレフィックス ​`sk_live_`​ を持つライブモードの秘密鍵を指定します。
-* ユーザが制限された API キーを使用してよりきめ細かい権限を実現します。
+* ユーザーが制限された API キーを使用してよりきめ細かい権限を実現します。
 * すべての API 要求が HTTPS を通じて行われていることを確認します。
 
 https://stripe.com/docs/connect/oauth-reference[Stripe Connect]​ では OAuth 認証がサポートされますが、Stripe ではサポートされません。Stripe での OAuth 認証についての詳細は、&#8203;https://www.similartech.com/compare/stripe-vs-stripe-connect を参照してください。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
@@ -30,6 +30,10 @@ New charge::
 New refund::
 
 新しい返金が作成されたときに実行します。
+
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
 
 == アクション
 
@@ -64,6 +68,6 @@ Create product::
 
 == カスタム項目 
 
-カスタム項目はサポートされていません。MuleSoft Composer を使用して、Stripe レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、Stripe レコードで設定したアクションとトリガーのカスタム項目値にアクセスできます。
 
 include::_partials/see-also.adoc[]

@@ -4,11 +4,11 @@ Sage Intacct は、重要な財務プロセスを作成および自動化し、�
 
 == 前提条件
 
-Sage Intacct Connector をコンポーザを統合するには、最初に Sage Intacct で次の操作を完了する必要があります。
+Sage Intacct Connector をコンポーザーを統合するには、最初に Sage Intacct で次の操作を完了する必要があります。
 
-* https://developer.intacct.com/web-services/[Web サービスのサブスクリプション]​を Sage Intacct の ​*[Subscription (サブスクリプション)]*​ セクションで有効化する。​*Web サービスのサブスクリプション*​は、コンポーザが Sage Intacct API と連携するために必要です。
-* https://developer.intacct.com/web-services/[会社の​*送信者 ID*​ を Sage Intacct の ​*[Web Services Authorizations (Web サービス認証)]*]​ セクションに追加する。Sage Intacct は、​*送信者 ID*​ でコンポーザを識別します。使用する Sage Intacct インスタンスで Mulesoft ​*送信者 ID*​ を認証する必要があります。
-* Sage Intacct への接続に https://developer.intacct.com/api/company-console/roles/[必要な権限を作成して割り当てる]​。アカウントのセキュリティを保証するため、権限はコンポーザからアクセスする必要があるモジュールに制限してください。Sage Intacct で次の操作を行います。
+* https://developer.intacct.com/web-services/[Web サービスのサブスクリプション]​を Sage Intacct の ​*[Subscription (サブスクリプション)]*​ セクションで有効化する。​*Web サービスのサブスクリプション*​は、コンポーザーが Sage Intacct API と連携するために必要です。
+* https://developer.intacct.com/web-services/[会社の​*送信者 ID*​ を Sage Intacct の ​*[Web Services Authorizations (Web サービス認証)]*]​ セクションに追加する。Sage Intacct は、​*送信者 ID*​ でコンポーザーを識別します。使用する Sage Intacct インスタンスで Mulesoft ​*送信者 ID*​ を認証する必要があります。
+* Sage Intacct への接続に https://developer.intacct.com/api/company-console/roles/[必要な権限を作成して割り当てる]​。アカウントのセキュリティを保証するため、権限はコンポーザーからアクセスする必要があるモジュールに制限してください。Sage Intacct で次の操作を行います。
 ** ロールベースの権限を使用している場合は、ロールを作成し、新しいロールに必要な権限を付与して、そのロールに割り当てる Sage Intacct Web サービスアカウントを作成します。
 ** サブスクリプションベースの権限を使用している場合は、Web サービスアカウントを作成して、​*[Subscription (サブスクリプション)]*​ セクションでロールに権限を割り当てます。
 +
@@ -24,11 +24,11 @@ Company ID (会社 ID)::
 
 顧客の会社 ID。Sage Intacct インスタンスの ID を入力します。詳細は、 https://developer.intacct.com/web-services/[Sage Intacct のドキュメント]​を参照してください。
 
-User ID (ユーザ ID)::
+User ID (ユーザー ID)::
 
-Sage Intacct にログインするために使用するユーザ ID。
+Sage Intacct にログインするために使用するユーザー ID。
 
-User Password (ユーザパスワード)::
+User Password (ユーザーパスワード)::
 
 Sage Intacct にログインするために使用するパスワード。
 
@@ -36,7 +36,7 @@ Entity ID (エンティティ ID)::
 
 接続する Sage Intacct エンティティ。エンティティレベルで接続する場合は​*エンティティ ID*​ を入力します。組織のトップレベルに接続する場合は、この項目を空白のままにしておきます。詳細は、 https://developer.intacct.com/api/company-console/api-sessions/[Sage Intacct のドキュメント]​を参照してください。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
@@ -64,7 +64,7 @@ Create Attachment (添付ファイルの作成)::
 
 新しい添付ファイルレコードを作成します。Sage Intacct では、添付ファイルとはファイルを含むエンティティです。添付ファイルオブジェクトは、空白またはファイルを含みます。レコードの作成時に添付ファイルにファイルを追加することも、後で添付ファイルを追加することもできます。次の値を指定します。
 * *Attachment Name (添付ファイル名)*
-* *Folder (フォルダ)*
+* *Folder (フォルダー)*
 * 添付ファイルにファイルを追加する場合は、ファイルのソースとしてリストを使用して、次の項目の値を指定します。
 ** *File Binary Data (ファイルバイナリデータ)*
 ** *File Extension (ファイル拡張子)*
@@ -76,15 +76,15 @@ Update Attachment (添付ファイルの更新)::
 
 Get Attachments (添付ファイルを取得)::
 
-添付ファイルレコードのリストを返します。リストを絞り込むには、​*[Attachment ID (添付ファイル ID)]*​、​*[Attachment Name (添付ファイル名)]*​、または ​*[Folder Name (フォルダ名)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+添付ファイルレコードのリストを返します。リストを絞り込むには、​*[Attachment ID (添付ファイル ID)]*​、​*[Attachment Name (添付ファイル名)]*​、または ​*[Folder Name (フォルダー名)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
 
-Create Attachment Folder (添付ファイルフォルダの作成)::
+Create Attachment Folder (添付ファイルフォルダーの作成)::
 
-添付ファイルの新しいフォルダを作成します。​*[Name (名前)]*​ の値を指定します。
+添付ファイルの新しいフォルダーを作成します。​*[Name (名前)]*​ の値を指定します。
 
-Get Attachment Folders (添付ファイルフォルダの取得)::
+Get Attachment Folders (添付ファイルフォルダーの取得)::
 
-添付ファイルフォルダのリストを返します。リストを絞り込むには、​*[Folder Name (フォルダ名)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
+添付ファイルフォルダーのリストを返します。リストを絞り込むには、​*[Folder Name (フォルダー名)]*​ の値を指定します。リスト全体を返すには、これらの項目を空白のままにしておきます。
 
 Create Customer (顧客の作成)::
 
@@ -246,6 +246,6 @@ Delete Price List Price List (価格リストエントリの削除)::
 
 == カスタム項目
 
-コンポーザフローの自動化でカスタム項目が必要な場合は、 https://developer.intacct.com/customization-services/#custom-fields[Sage Intacct のドキュメント]​を参照してください。
+Sage Intacct インスタンスで定義されている場合、Sage Intacct Connector for Composer でカスタム項目の追加がサポートされます。Sage Intacct カスタム項目の追加についての詳細は、 https://developer.intacct.com/customization-services/#custom-fields[Sage Intacct のドキュメント]​を参照してください。
 
 include::_partials/see-also.adoc[]

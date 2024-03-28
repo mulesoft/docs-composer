@@ -1,5 +1,14 @@
 = Scheduling, Polling, or Innvoking a Flow 
 
+When managing how your flow operates, you can:
+
+* <<schedule-a-flow,Schedule a flow>>.
+* <<poll-a-flow,Poll a flow>>.
+* <<invoke-a-flow,Invoke a flow>>.
+
+Additionally, all users can <<open-access-for-flows,view or manage all flows within your org.>>
+
+[[schedule-a-flow]]
 == Schedule a Flow
 
 If you don't choose a connection, you can schedule a flow to start at regular intervals.
@@ -11,13 +20,19 @@ To create a flow control:
 +
 image::images/connection-scheduler.png[New trigger with time interval, 500]
 . Click *Save*. +
-After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an <<create-an-if-else-block,If/Else block>> or <<create-and-test-a-for-each-loop,For Each>> loop.
+After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an xref:ms_composer_using_actions_in_a_flow.adoc#create-an-if-else-block[If/Else block] or xref:ms_composer_using_actions_in_a_flow.adoc#create-and-test-a-for-each-loop[For Each loop].
+
+[[poll-a-flow]]
+== Poll a Flow 
+
+Content TBD
 
 [[invoke-a-flow]]
 == Invoke a Flow 
 
 You can invoke a Composer flow from external systems, such as Flow Builder, Flow Orchestration, another Composer flow, an Apex callout, or a cURL command, to enable deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
 
+[[open-access-for-flows]]
 == Open Access for Flows
 
 All users can view or manage all flows within your org.

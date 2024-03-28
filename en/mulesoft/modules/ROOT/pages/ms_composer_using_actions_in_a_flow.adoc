@@ -27,7 +27,7 @@ You can define variables in your Composer flow. Defining a variable enables you 
 
 To access the *Variable* step: 
 
-. <<create-a-new-flow,Create a new flow>> or open an existing flow. +
+. xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[Create a new flow] or open an existing flow. +
 . In the *<Flow Name>* page, click *Edit*. 
 . Locate the position in your flow where you want to access the *Variable* step and click the plus button. 
 . In the *Next Step* window, click *Variable*. +

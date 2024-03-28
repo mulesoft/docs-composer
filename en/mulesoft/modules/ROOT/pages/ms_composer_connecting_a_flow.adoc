@@ -4,9 +4,13 @@ ifeval::["{product}"=="mulesoft"]
 //This is currently only for MS Composer 
 == Access the Connections Page 
 
+To access the *Connections* page, from the *Composer* home page, click *Connections* in the navigation pane. 
+
 The *Connections* page enables you to: 
 
 * Select a connection to view all of the flows currently using that connection. 
+* <<change-a-connection,Change a connection>>.
+*<<repair-a-connection,Repair a connection>>.
 * <<delete-a-connection,Delete a connection>>. 
 * Change the name of a connection. 
 
@@ -44,7 +48,7 @@ image::images/change-connection.png[Change the connection control, 400]
 .. Click *Connect*.
 .. In the dialog box, log in to the system and allow access.
 
-
+[[repair-a-connection]]
 == Repair a Connection
 
 If your OAuth connection is lost, you can repair the connection by refreshing the access token.

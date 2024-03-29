@@ -34,7 +34,7 @@ This is the first portion of the URL that appears after `/site` in the browser U
 +
 For example, if you see `\https://10ay.online.tableau.com/#/site/MarketingTeam/workbooks` in your browser URL, the *Site* value is `MarketingTeam`.
 
-For more information about authentication in Tableau, see `https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm`.
+For more information about authentication in Tableau, see the https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm[Tableau documentation].
 
 === Limitations
 

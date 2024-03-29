@@ -15,9 +15,7 @@
 ** xref:ms_composer_build_a_flow_using_templates.adoc[Building a Flow Using Templates]
 
 * xref:ms_composer_custom_expression_editor.adoc[Building Formulas for Flows]
-** xref:ms_composer_supported_data_types_and_formulas.adoc[Supported Data Types and Formulas]
-** xref:ms_composer_using_custom_expression_editor.adoc[Using the Custom Expression Editor]
-
+* xref:ms_composer_supported_data_types_and_formulas.adoc[Supported Data Types and Formulas]
 * xref:ms_composer_invocable_flows.adoc[Invoking a Composer Flow]
 * xref:ms_composer_test_flow.adoc[Testing a Flow]
 * xref:ms_composer_activation.adoc[Activating a Flow]

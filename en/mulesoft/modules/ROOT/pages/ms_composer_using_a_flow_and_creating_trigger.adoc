@@ -1,5 +1,7 @@
 = Using a Flow and Creating a Trigger
 
+You can use Composer to address integration problems in your organization by building and configuring flows. In Composer, a _trigger_ is the flow’s sequence of actions. This is the first step of a flow. Prior to creating a trigger, you must first create, clone, or import a flow. 
+
 == Create a Flow
 
 You can create a new flow (from scratch or from template) or clone an existing flow.

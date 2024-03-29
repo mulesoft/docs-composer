@@ -1,5 +1,7 @@
 = Connecting a Flow 
 
+A _connection_ in Composer is a configuration that uses a connector and associated user or system credentials to connect to a system. You can use connections at different steps to perform specific tasks, such as connecting to a system, checking for triggers, and retrieving or manipulating data. 
+
 ifeval::["{product}"=="mulesoft"]
 //This is currently only for MS Composer 
 == Access the Connections Page 

@@ -1,5 +1,7 @@
 = Using Actions in a Flow 
 
+An _action_ step in a Composer flow performs a task in a system. An action might extract data from a system, manipulate data, or send a notification in a system.
+
 == Create an Action
 
 To create an action:

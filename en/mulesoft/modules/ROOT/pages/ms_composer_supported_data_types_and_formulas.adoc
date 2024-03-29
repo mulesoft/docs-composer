@@ -1,5 +1,13 @@
 = Supported Data Types and Formulas 
 
+In MuleSoft Composer, the following data types and formulas are supported: 
+
+* <<data-types,Data Types>>
+* <<string-functions,String Functions>>
+* <<number-functions,Number Functions>>
+* <<date-functions,Date Functions>>
+* <<list-functions,List Functions>>
+
 [[data-types]]
 == Data Types
 
@@ -31,6 +39,7 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 |===
 
+[[string-functions]]
 == String Functions
 
 The *Custom Expression Editor* supports the following `string` formulas and operators:
@@ -131,6 +140,7 @@ until: Number | String
 
 It is important to note that in a `string` field, you can use `number` expressions selected from the operator list; however, the expressions must be enclosed within parentheses. For example, you can enter `abc(9+9)` where the `+` is selected from the operator list. This string renders as `abc18`.
 
+[[number-functions]]
 == Number Functions
 
 In the *Custom Expression Editor*, a mathematical operator (+,-,*, or /) selected from the operator list is different from an operator typed and resolved as a string character. For example, the entry `9+9` is considered a string rather than `18`. To use mathematical operators, select them from the operator list or type and select them using the Enter key, Tab key, or mouse with typeahead. 
@@ -170,6 +180,7 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 
 |===
 
+[[date-functions]]
 == Date Functions
 
 In the *Custom Expression Editor*, `date` and `dateTime` data pills can only be used as inputs. You cannot enter the dates manually.
@@ -333,6 +344,7 @@ time: String |DateTime
 
 |===
 
+[[list-functions]]
 == List Functions
 
 The *Custom Expression Editor* supports the following `List` formulas and operators:

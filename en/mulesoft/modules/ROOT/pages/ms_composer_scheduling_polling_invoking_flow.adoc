@@ -25,7 +25,6 @@ After creating the trigger, add one or more actions to the flow. To apply logic 
 [[poll-a-flow]]
 == Poll a Flow 
 
-Composer polls the flow and checks for changes every 10 minutes.
 This feature enables Composer to check the status of a flow for changes every 10 minutes. After polling the flow, the polling trigger starts processing changes. This functionality is useful for retrieving results that take a long time to finish and are not suitable for synchronous consumption. 
 
 [[invoke-a-flow]]

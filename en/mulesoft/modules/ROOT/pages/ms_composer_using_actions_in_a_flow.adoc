@@ -311,17 +311,17 @@ When executing a flow, you can watch for connection or logic errors in specific 
 
 To access the error handler:
 
-. <<create-a-new-flow,Create a new flow>> or open an existing flow.
-.. If you create a new flow:
-... Select the connector or system to start your flow.
-... Select and configure a trigger. 
-... Select and configure an action.
-... Directly before the step to which you want to add an error handler, click the plus button. 
-... In the *What Should Start This Flow?* window, click *Error Handler*.
-.. If you add a step to an existing flow:
-... Open your flow.
-... Directly before the step to which you want to add an error handler, click the plus button. 
-... In the *Next Step* window, click *Error Handler*. 
+xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[Create a new flow] or open an existing flow.
+. If you create a new flow:
+.. Select the connector or system to start your flow.
+.. Select and configure a trigger. 
+.. Select and configure an action.
+.. Directly before the step to which you want to add an error handler, click the plus button. 
+.. In the *What Should Start This Flow?* window, click *Error Handler*.
+. If you add a step to an existing flow:
+.. Open your flow.
+.. Directly before the step to which you want to add an error handler, click the plus button. 
+.. In the *Next Step* window, click *Error Handler*. 
 
 [[watch-a-step]]
 === Watch a Step 
@@ -366,8 +366,8 @@ To add steps to the *On Error* section of your flow:
 *** `None`: Returns all errors without meeting any conditions.
 *** `Custom Logic`: Specify <<use-custom-logic,custom logic>> to meet conditions. 
 .. In the *After Running* dropdown, select: 
-*** *Stop*: After processing all steps in the *On Error* section, Composer flags errors and stops the flow. On the <<flow-details-page,*Run History*>> page, the _Status_ field of the flow shows `FAILED`. 
-*** *Continue*: After processing all steps in the *On Error* section, Composer dismisses errors and the flow continues. If no other errors occur, on the <<flow-details-page,*Run History*>> page, the _Status_ field of the flow shows `SUCCESS`.
+*** *Stop*: After processing all steps in the *On Error* section, Composer flags errors and stops the flow. On the xref:ms-composer-flows.adoc#flow-details-page[*Run History*] page, the _Status_ field of the flow shows `FAILED`. 
+*** *Continue*: After processing all steps in the *On Error* section, Composer dismisses errors and the flow continues. If no other errors occur, on the xref:ms-composer-flows.adoc#flow-details-page[*Run History*] page, the _Status_ field of the flow shows `SUCCESS`.
 . If you want to add additional conditions to this *On Error* section, click *Add Condition*. 
 . If you want to look for a specific error condition and specify how it is handled within your existing *On Error* section, click *Add On Error* to add a new branch with steps. +
 When adding a branch to the *On Error* section, in the *After Running* section, select: 

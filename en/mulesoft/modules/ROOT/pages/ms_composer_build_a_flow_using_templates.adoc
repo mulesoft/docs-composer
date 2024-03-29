@@ -13,7 +13,7 @@ Some examples of templates include:
 
 You can search for templates (by template name, connector name, or template description) and filter templates (by use case category or connector).
 
-For more information about how to create a new flow from template, refer to xref:ms_composer_using_a_flow_and_creating_trigger.adoc.adoc#create-a-new-flow-from-template[Create a New Flow From Template].
+For more information about how to create a new flow from template, refer to xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-new-flow-from-template[Create a New Flow From Template].
 
 Since you will likely need to further customize your flow from a template, consider the following recommendations and guidelines when encountering messages while customizing your flow from a template.
 

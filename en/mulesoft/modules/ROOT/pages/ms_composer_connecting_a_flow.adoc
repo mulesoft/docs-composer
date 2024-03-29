@@ -10,7 +10,7 @@ The *Connections* page enables you to:
 
 * Select a connection to view all of the flows currently using that connection. 
 * <<change-a-connection,Change a connection>>.
-*<<repair-a-connection,Repair a connection>>.
+* <<repair-a-connection,Repair a connection>>.
 * <<delete-a-connection,Delete a connection>>. 
 * Change the name of a connection. 
 
@@ -67,7 +67,7 @@ If you no longer need a specific connection, you can delete it.
 
 To delete a connection:
 
-. <<create-a-new-flow,Create a new flow>> or add a step to an existing flow.
+. xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[Create a new flow] or add a step to an existing flow.
 . If you create a new flow:
  .. Select the connector or system to start your flow.
  .. In the *What Should Start This Flow?* window, click the gear icon.

@@ -31,7 +31,8 @@
           "title": "Getting Started",
           "topics": [
           {
-          "file"  : "ms_composer_about_flows.adoc"
+          "file"  : "ms_composer_about_flows.adoc",
+          "title": "How Composer Works"
           },
           {
           "file" : "ms_composer_checklist.adoc",
@@ -142,6 +143,10 @@
               "title": "Microsoft Teams"
             },
             {
+              "file" : "ms_composer_rpa_reference.adoc",
+              "title": "MuleSoft RPA"
+            },
+            {
               "file" : "ms_composer_netsuite_reference.adoc",
               "title": "NetSuite"
             },
@@ -153,11 +158,7 @@
               "file" : "ms_composer_rest_consumer_reference.adoc",
               "title": "Rest Consumer"
             },
-            {
-              "file" : "ms_composer_rpa_reference.adoc",
-              "title": "MuleSoft RPA"
-            },
-            {
+                        {
               "file" : "ms_composer_sage_intacct_reference.adoc",
               "title": "Sage Intacct"
             },

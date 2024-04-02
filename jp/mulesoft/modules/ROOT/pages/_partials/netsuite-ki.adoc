@@ -6,16 +6,16 @@
 
 |既知の問題|回避策 |ID
 
-|フローのテスト中にコンポーザでエラーが発生する。
-a|Chrome ブラウザで、​*[デベロッパーツール]*​ をクリックして ​*[ネットワーク]*​ をクリックします。Chrome の ​*[ネットワーク]*​ タブで、もう一度フローをテストします。​`INSUFFICIENT PERMISSIONS`​ エラーが発生した場合、次の手順を完了します。 +
+|フローのテスト中にコンポーザーでエラーが発生する。
+a|Chrome ブラウザーで、​*[デベロッパーツール]*​ をクリックして ​*[ネットワーク]*​ をクリックします。Chrome の ​*[ネットワーク]*​ タブで、もう一度フローをテストします。​`INSUFFICIENT PERMISSIONS`​ エラーが発生した場合、次の手順を完了します。 +
 
 . NetSuite で、ロール設定にアクセスします。
 . *[Permissions (権限)]*​ をクリックし、​*[Setup (設定)]*​ をクリックします。
 . 以下の権限が ​*[Full (フル)]*​ に設定されていいることを確認します。
 
-** Control SuiteScript and Workflow Triggers in Web Service Request (Web サービス要求での SuiteScript およびワークフロートリガの制御)
+** Control SuiteScript and Workflow Triggers in Web Service Request (Web サービス要求での SuiteScript およびワークフロートリガーの制御)
 ** SOAP Web Service (SOAP Web サービス)
-** User Access Tokens (ユーザアクセストークン)
+** User Access Tokens (ユーザーアクセストークン)
 ** Custom Body Fields (カスタム本文項目)
 ** Custom Column Fields (カスタム列項目)
 ** Custom Entity (カスタムエンティティ)

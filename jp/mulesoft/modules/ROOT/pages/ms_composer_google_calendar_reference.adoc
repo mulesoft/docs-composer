@@ -8,9 +8,9 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-Google にログインするために使用する OAuth ユーザ名。
+Google にログインするために使用する OAuth ユーザー名。
 
 Password (パスワード)::
 

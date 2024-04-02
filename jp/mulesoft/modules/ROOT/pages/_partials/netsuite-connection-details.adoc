@@ -6,13 +6,13 @@ Account (アカウント)::
 
 *[Setup (設定)] > [Integration (インテグレーション)] > [SOAP Web Services Preferences (SOAP Web サービスプリファレンス)]*​ にアクセスすることで、NetSuite インスタンスにリストされるアカウント ID。この値は文字と数値の文字列です (例: `TESTME1234567`​)。
 
-Consumer Key (コンシューマキー)::
+Consumer Key (コンシューマーキー)::
 
-*[Setup (設定)] > [Integration (インテグレーション)] > [Manage Integrations (インテグレーションの管理)]*​ にアクセスすることで、NetSuite で生成されたコンシューマキー。
+*[Setup (設定)] > [Integration (インテグレーション)] > [Manage Integrations (インテグレーションの管理)]*​ にアクセスすることで、NetSuite で生成されたコンシューマーキー。
 
-Consumer Secret (コンシューマシークレット)::
+Consumer Secret (コンシューマーシークレット)::
 
-コンシューマキーと共に NetSuite で生成されたコンシューマシークレット。
+コンシューマーキーと共に NetSuite で生成されたコンシューマーシークレット。
 
 Token ID (トークン ID)::
 

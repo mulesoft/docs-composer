@@ -1,8 +1,8 @@
 = Jira Connector リファレンス
 
-Jira は、開発を改善するためにユーザが商品の課題を計画、追跡、リリース、報告できるようにサポートする強力なプロジェクト管理ツールおよびチケットシステムです。
+Jira は、開発を改善するためにユーザーが商品の課題を計画、追跡、リリース、報告できるようにサポートする強力なプロジェクト管理ツールおよびチケットシステムです。
 
-コンポーザで Jira Connector を使用するには、​_[Administrator Jira (Jira システム管理者)]_​ グローバル権限が必要です。詳細は  https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira のドキュメント^]​を参照してください。
+コンポーザーで Jira Connector を使用するには、​_[Administrator Jira (Jira システム管理者)]_​ グローバル権限が必要です。詳細は  https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira のドキュメント^]​を参照してください。
 
 == Connections (接続)
 
@@ -22,15 +22,15 @@ Atlassian ウィンドウが表示され、Composer が Atlassian アカウン�
 . ウィンドウの ​*[Authorize for site (サイトを認証)]*​ ドロップダウンで、使用する組織を選択し、​*[Accept (同意)]*​ をクリックします。 +
 これで、Composer が Jira 組織に接続されました。  
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-Jira にログインするために使用する OAuth ユーザ名。
+Jira にログインするために使用する OAuth ユーザー名。
 
 Password (パスワード)::
 
 Jira にログインするために使用する OAuth パスワード。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
@@ -49,6 +49,10 @@ Jira のカスタム項目を使用して更新または作成された課題を
 Update issue with Standard Fields only was updated or created::
 
 Jira の標準項目を使用して更新または作成された課題をチェックします。
+
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
 
 == アクション
 
@@ -70,22 +74,14 @@ Update issue with custom fields::
 指定されたカスタム項目の値を更新します。次の項目の値を指定します。
 
 * *Issue ID or Key (課題 ID またはキー)*
-* *Notify Users (ユーザに通知)*
+* *Notify Users (ユーザーに通知)*
 
 Update issue with standard fields only::
 
 指定された標準項目値を更新します。次の項目の値を指定します。
 
 * *Issue ID or Key (課題 ID またはキー)*
-* *Notify Users (ユーザに通知)*
-
-Assign user to issue::
-
-指定された課題にユーザを割り当てます。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
-
-Add watcher to issue::
-
-既存の Jira の課題にウォッチャーを追加します。​*[Issue ID or Key (課題 ID またはキー)]*​ の値を入力します。
+* *Notify Users (ユーザーに通知)*
 
 Get issue::
 
@@ -96,10 +92,6 @@ Add comment to issue::
 コメントを作成して既存の課題課題に追加します。次の項目の値を指定します。
 * *Issue ID or Key (課題 ID またはキー)*
 * *Comment Text (コメントテキスト)*
-
-Get account IDs for users::
-
-`key`​ または ​`username`​ パラメータで指定されたユーザのアカウント ID を返します。複数の ​`key`​ または ​`username`​ パラメータを指定できます。
 
 プロジェクトの作成::
 
@@ -114,9 +106,9 @@ Get project::
 
 Jira のプロジェクトの詳細を返します。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
 
-Update project::
+Retrieve project::
 
-Jira の既存のプロジェクトのプロジェクトの詳細を更新します。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
+Jira の既存のプロジェクトのプロジェクトの詳細を取得します。​*[Project ID (プロジェクト ID)]*​ または ​*[Key (キー)]*​ の値を指定します。
 
 Retrieve attachments for an issue::
 
@@ -126,16 +118,16 @@ Retrieve attachment::
 
 指定された添付ファイルの未加工ファイルへの URL リダイレクトを返します。​*[Attachment ID (添付ファイル ID)]*​ の値を指定します。
 
-Upload attachment to an issue::
+Upload an attachment for an issue::
 
-添付ファイルを Jira の課題にアップロードします。次の項目の値を指定します。
+Jira の課題の添付ファイルをアップロードします。次の項目の値を指定します。
 
 * *Issue ID or Key (課題 ID またはキー)*
 * *File Name (ファイル名)*
 
 == カスタム項目
 
-MuleSoft Composer を使用して、Jira の課題で設定したアクションおよびトリガの標準項目やカスタム項目の値にアクセスできます。
+MuleSoft Composer を使用して、Jira の課題で設定したアクションおよびトリガーの標準項目やカスタム項目の値にアクセスできます。
 
 以下のリストコンポーネントを含むカスタム項目は現在サポートされていません。
 

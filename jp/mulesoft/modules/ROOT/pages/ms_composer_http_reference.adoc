@@ -1,7 +1,8 @@
 = HTTP Connector リファレンス
 
-HTTP Connector は、専用のコネクタで現在サポートされていないクラウドアプリケーションを接続します。HTTP Connector を使用して、コンポーザで現在サポートされていないシステムに接続し、コンポーネントでサポートされていないシステムの機能を拡張します。HTTP Connector for Composer は、 https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP]​ 1.1 を使用して JSON データを処理します。
+HTTP Connector は、専用のコネクタで現在サポートされていないクラウドアプリケーションを接続します。HTTP Connector を使用して、コンポーザーで現在サポートされていないシステムに接続し、コンポーネントでサポートされていないシステムの機能を拡張します。HTTP Connector for Composer は、 https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference#http-1-1[HTTP]​ 1.1 を使用して JSON データを処理します。
 
+[[connections]]
 == Connections (接続)
 
 システムに接続するには、システムがデータの取得元であるか、データの取得先であるかに関係なく、そのシステムの必要なログイン情報を使用して接続を作成する必要があります。通常、フロー内の異なるシステムに接続し、接続が必要になるたびに各接続を再利用できます。
@@ -19,25 +20,25 @@ Authorization (認証)::
 次の認証オプションを使用できます。
 
 * *OAuth 2.0 Client Credentials (OAuth 2.0 クライアントログイン情報)*​ +
-  OAuth 2.0 クライアントログイン情報では、ユーザ定義パスからアクセストークンが取得されます。次の項目の値を指定します。
+  OAuth 2.0 クライアントログイン情報では、ユーザー定義パスからアクセストークンが取得されます。次の項目の値を指定します。
   ** *Base URL (ベース URI)*
   ** *Client ID (クライアント ID)*
   ** *Client Secret (クライアントシークレット)*
   ** *Token URL (トークン URL)*
 
 * *API キー*​ +
-  API キーは、ユーザを明示的に定義せずにアプリケーションに接続します。このキーをすべての要求に追加する必要があります。クラウドアプリケーションは、要求元を識別して認証を完了します。次の項目の値を指定します。
+  API キーは、ユーザーを明示的に定義せずにアプリケーションに接続します。このキーをすべての要求に追加する必要があります。クラウドアプリケーションは、要求元を識別して認証を完了します。次の項目の値を指定します。
   ** *Base URL (ベース URI)*
   ** *Name (名前)*
   ** *値*
   ** *Sent As (送信形式)*​: 次のいずれかの値を選択します。
-    *** *Header (ヘッダー)*​: 選択した場合、コンポーザは ​`Name: Value`​ というヘッダーを要求に追加します。
-    *** *Query Parameter (クエリパラメータ)*​: 選択した場合、コンポーザは ​`Name=Value`​ というクエリパラメータを要求に追加します。
+    *** *Header (ヘッダー)*​: 選択した場合、コンポーザーは ​`Name: Value`​ というヘッダーを要求に追加します。
+    *** *Query Parameter (クエリパラメーター)*​: 選択した場合、コンポーザーは ​`Name=Value`​ というクエリパラメーターを要求に追加します。
 
 * *基本認証*​ +
-  基本認証メソッドを使用すると、HTTP ユーザエージェントは HTTP 要求を行うときにユーザ名とパスワードを指定できます。次の項目の値を指定します。
+  基本認証メソッドを使用すると、HTTP ユーザーエージェントは HTTP 要求を行うときにユーザー名とパスワードを指定できます。次の項目の値を指定します。
   ** *Base URL (ベース URI)*
-  ** *Username (ユーザ名)*
+  ** *Username (ユーザー名)*
   ** *Password (パスワード)*
 
 * *ベアラートークン認証*​
@@ -45,7 +46,7 @@ Authorization (認証)::
   ** *Base URL (ベース URI)*
   ** *Token (トークン)*
 
-=== OAuth 2.0 を使用したコンポーザでの対象システムの接続
+=== OAuth 2.0 を使用したコンポーザーでの対象システムの接続
 
 HTTP Connector を使用すると、 https://auth0.com/intro-to-iam/what-is-oauth-2/#grant-types-in-oauth-20[OAuth 2.0 認証コード許可^]​との接続を確立して、認証を有効にすることができます。この認証により、Salesforce、Gmail、Outlook 365 などの他のアプリケーションによってホストされるリソースにアクセスできるようになります。
 
@@ -55,29 +56,29 @@ HTTP Connector を使用すると、 https://auth0.com/intro-to-iam/what-is-oaut
 
 ==== Fortnox
 
-NOTE: 異なるフローで同じ​*クライアント ID*​ と​*クライアントシークレット*​を使用するには、同じコンポーザ接続を使用し、1 分あたりに許可される要求数を考慮します。別のコンポーザ接続を使用するには、別の Fortnox 環境を使用します。
+NOTE: 異なるフローで同じ​*クライアント ID*​ と​*クライアントシークレット*​を使用するには、同じコンポーザー接続を使用し、1 分あたりに許可される要求数を考慮します。別のコンポーザー接続を使用するには、別の Fortnox 環境を使用します。
 
 [%header%autowidth.spread]
 
 |===
 
 |Step (ステップ) |項目 |値の例。 |注記
-.13+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Fort Nox at admin@1342287+` | これはユーザである必要があります。
+.13+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Fort Nox at admin@1342287+` | これはユーザーである必要があります。
 |*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)` | この項目の値は固定です。
 |*Base URL (ベース URI)* | `+https://api.fortnox.se+` |
 |*Client ID (クライアント ID)* | `NmE4OTUzY2...` |
 |*Client Secret (クライアントシークレット)* |`wMTUtZWV...` |
 |*Scopes (スコープ)* | `+companyinformation+`| すべての使用可能なスコープについては、 https://developer.fortnox.se/general/authentication[「OAuth 2.0 Scopes for Fortnox APIs (Fortnox API の OAuth 2.0 スコープ)」^]​を参照してください。
 |*Authorization URL (認証 URL)* | `+https://apps.fortnox.se/oauth-v1/auth+` | Fortnox アカウントで作成されたアプリケーションでコールバック URL を登録する必要があります。Fortnox では、アプリケーションごとに 1 つのコールバック URL しか指定できないため、異なる環境のコールバック URL を指定するには、異なるアプリケーションを作成する必要があります。
-|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
-a|パラメータ 1:
+|*Authorization URL Query Parameters (認証 URL クエリパラメーター)*
+a|パラメーター 1:
 
 * *Key (キー)*​: `access_type`​
 * *Value (値)*​: `offline` |
 
 |*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://apps.fortnox.se/oauth-v1/token+` |
 |*Token Exchange Headers (トークンエクスチェンジヘッダー)*
-a|パラメータ 1:
+a|パラメーター 1:
 
 * *Key (キー)*​: `Authorization`​
 * *Value (値)*​: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
@@ -92,7 +93,7 @@ Fortnox では、​`Basic CREDENTIALS`​ 形式の Basic 認証ヘッダーが
 
 |*Token Refresh URL (トークン更新 URL)* | `+https://apps.fortnox.se/oauth-v1/token+` |
 |*Token Refresh Headers (トークン更新ヘッダー)*
-a|パラメータ 1:
+a|パラメーター 1:
 
 * *Key (キー)*​: `Authorization`​
 * *Value (値)*​: `Basic NmE4OTUzY2MtMTk2Zi00MjZiLTgwMTUtZWVjMjY1OWI1MzAx` a|
@@ -123,13 +124,13 @@ Fortnox では、​`Basic CREDENTIALS`​ 形式の Basic 認証ヘッダーが
 |*Client Secret (クライアントシークレット)* |`YmmkNirf6zDc512u7MvPoJebP...` |
 |*Scopes (スコープ)* | `+https://www.googleapis.com/auth/gmail.send https://www.googleapis.com/auth/gmail.readonly+`| すべての使用可能なスコープについては、 https://developers.google.com/identity/protocols/oauth2/scopes[「OAuth 2.0 Scopes for Google APIs (Google API の OAuth 2.0 スコープ)」^]​を参照してください。
 |*Authorization URL (認証 URL)* | `+https://accounts.google.com/o/oauth2/v2/auth+` |
-|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
-a|パラメータ 1:
+|*Authorization URL Query Parameters (認証 URL クエリパラメーター)*
+a|パラメーター 1:
 
 * *Key (キー)*​: `access_type`​
 * *Value (値)*​: `offline`​
 
-パラメータ 2:
+パラメーター 2:
 
 * *Key (キー)*​: `prompt`​
 * *Value (値)*​: `consent` |
@@ -159,13 +160,13 @@ a|
 * `+https://www.googleapis.com/auth/calendar.events+`​
 * `+https://www.googleapis.com/auth/calendar.readonly+` | すべての使用可能なスコープについては、 https://developers.google.com/identity/protocols/oauth2/scopes[「OAuth 2.0 Scopes for Google APIs (Google API の OAuth 2.0 スコープ)」^]​を参照してください。
 |*Authorization URL (認証 URL)* |`+https://accounts.google.com/o/oauth2/v2/auth+` |
-|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
-a|パラメータ 1:
+|*Authorization URL Query Parameters (認証 URL クエリパラメーター)*
+a|パラメーター 1:
 
 * *Key (キー)*​: `access_type`​
 * *Value (値)*​: `offline`​
 
-パラメータ 2:
+パラメーター 2:
 
 * *Key (キー)*​: `prompt`​
 * *Value (値)*​: `consent` |
@@ -199,13 +200,13 @@ a|パラメータ 1:
 | 詳細は、 https://developers.google.com/drive/api/guides/api-specific-auth[Google Drive の「API 固有の承認および認証情報」^]​ドキュメントを参照してください。
 
 |*Authorization URL (認証 URL)* | `+https://accounts.google.com/o/oauth2/v2/auth+` |
-|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
-a|パラメータ 1:
+|*Authorization URL Query Parameters (認証 URL クエリパラメーター)*
+a|パラメーター 1:
 
 * *Key (キー)*​: `access_type`​
 * *Value (値)*​: `offline`​
 
-パラメータ 2:
+パラメーター 2:
 
 * *Key (キー)*​: `prompt`​
 * *Value (値)*​: `consent` |
@@ -225,7 +226,7 @@ a|パラメータ 1:
 |===
 
 |Step (ステップ) |項目 |値の例。 |注記
-.10+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `Hubspot Composer DEMO org (Hubspot コンポーザデモ組織)` | Hubspot 組織名を含めると、リストから接続を特定するのに役立ちます。
+.10+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `Hubspot Composer DEMO org (Hubspot コンポーザーデモ組織)` | Hubspot 組織名を含めると、リストから接続を特定するのに役立ちます。
 |*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)`| この項目の値は固定です。
 |*Base URL (ベース URI)* |`+https://api.hubapi.com/+` |
 |*Client ID (クライアント ID)* |`63ddf8b7-c7b0-40f9-804...` | 詳細は  https://developers.hubspot.com/docs/api/working-with-oauth[HubSpot ドキュメント^]​を参照してください。
@@ -259,7 +260,7 @@ a|パラメータ 1:
 |Step (ステップ) |項目 |値の例。 |注記
 .11+|HTTP アカウントに接続する |*Connection Display Name (接続表示名)* | `+Jira at ocs.citizen.demo@gmail.com (STG)+` | Gmail のメールアドレスを含めると、リストから接続を特定するのに役立ちます。
 |*Authorization Type (認証種別)*| `OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)` | この項目の値は固定です。
-|*Base URL (ベース URI)* | `+https://api.atlassian.com/ex/jira/077bc6b6-f2ab-4cd6-a694-c469cb2d058d/rest/api/3+` | この項目の値は、​*[Base URL (ベース URL)]*​ 項目の ​*[Tenant ID (テナント ID)]*​ パラメータである Jira アカウントの​*クラウド ID*​ です。
+|*Base URL (ベース URI)* | `+https://api.atlassian.com/ex/jira/077bc6b6-f2ab-4cd6-a694-c469cb2d058d/rest/api/3+` | この項目の値は、​*[Base URL (ベース URL)]*​ 項目の ​*[Tenant ID (テナント ID)]*​ パラメーターである Jira アカウントの​*クラウド ID*​ です。
 |*Client ID (クライアント ID)* | `SgPehF9AZ5ECD63iUJpG2aPO3j9qNvXM` |
 |*Client Secret (クライアントシークレット)* |`Yf8q-wbEJjeJIhx5iuE-BiydpL1oCj7wVy2gaoYDEMCe4xwWO_Q2vbjyJg6rGmD7L` |
 |*Scopes (スコープ)* a|
@@ -271,13 +272,13 @@ a|パラメータ 1:
 * `write:jira-work` |
 
 |*Authorization URL (認証 URL)* | `+https://auth.atlassian.com/authorize+` | Jira アカウントを作成するときに、コールバック URL を登録する必要があります。  そのため、これらのログイン情報はステージング環境でのみ機能します。
-|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
-a|パラメータ 1:
+|*Authorization URL Query Parameters (認証 URL クエリパラメーター)*
+a|パラメーター 1:
 
 * *Key (キー)*​: `audience`​
 * *Value (値)*​: `api.atlassian.com`​
 
-パラメータ 2:
+パラメーター 2:
 
 * *Key (キー)*​: `prompt`​
 * *Value (値)*​: `consent` |
@@ -408,21 +409,21 @@ NOTE: QuickBooks はデフォルトで HTML を返すため、要求に ​`Acce
 |*Authorization URL (認証 URL)* | `+https://appcenter.intuit.com/connect/oauth2+` | アプリケーション設定で QuickBooks アカウントにコールバック URL を登録する必要があります。QuickBooks では複数のコールバック URL を登録できるため、すべての環境に対して 1 つのアプリケーションを作成できます。
 |*Token Exchange URL (トークンエクスチェンジ URL)* | `+https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer+` |
 |*Token Exchange Headers (トークンエクスチェンジヘッダー)*
-a|パラメータ 1:
+a|パラメーター 1:
 
 * *Key (キー)*​
 * *値* |
 
 |*Token Refresh URL (トークン更新 URL)* | `+https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer+` |
 |*Token Refresh Headers (トークン更新ヘッダー)*
-a|パラメータ 1:
+a|パラメーター 1:
 
 * *Key (キー)*​
 * *値* |
 
 |*Token Revoke URL (トークン取り消し URL)* | `+https://developer.api.intuit.com/v2/oauth2/tokens/revoke+` |
 |*Token Revoke Headers (トークン取り消しヘッダー)*
-a|パラメータ 1:
+a|パラメーター 1:
 
 * *Key (キー)*​
 * *値* |
@@ -446,7 +447,7 @@ a|パラメータ 1:
 |*Client Secret (クライアントシークレット)* | `620187E2CD2DAEF6725AA404EADDFD8FECB390FA854DB637B95E186` | この項目の値は、​*[Salesforce Connected App Secret (Salesforce 接続アプリケーションシークレット)]*​ です。
 |*Scopes (スコープ)* | `完全な refresh_token` |
 |*Authorization URL (認証 URL)* | `+https://login.salesforce.com/services/oauth2/authorize+` |
-|*Authorization URL Query Parameters (認証 URL クエリパラメータ)*
+|*Authorization URL Query Parameters (認証 URL クエリパラメーター)*
 a|
 
 * *Key (キー)*​: `prompt`​
@@ -568,13 +569,13 @@ HTTP Connector を使用して OAuth 2.0 認証コード接続を作成する場
 OAuth 2.0 接続を確立する手順は、次のとおりです。
 
 . フローを開くか、新しいフローを作成します。
-. トリガを選択するか、スケジューラを使用します。
+. トリガーを選択するか、スケジューラーを使用します。
 . アクションの HTTP 接続をクリックまたは作成します。
 . *[Connect to your HTTP Account (HTTP アカウントに接続)]*​ ウィンドウの ​*[Authorization Type (認証種別)]*​ 項目で、​*[OAuth 2.0 Authorization Code (OAuth 2.0 認証コード)]*​ を選択し、次の項目に値を入力します。
 .. *Authorization URL (認証 URL)*​: OAuth 2.0 フローを開始する URL。
-.. *Authorization URL Query Parameters (認証 URL クエリパラメータ)*​: URL の疑問符の後に表示されるキー-値ペア。
+.. *Authorization URL Query Parameters (認証 URL クエリパラメーター)*​: URL の疑問符の後に表示されるキー-値ペア。
 +
-OAuth 認証コード許可種別では、認証要求はクエリパラメータとしてデータを送信します。  コンポーザはこれらのクエリパラメータを自動的に処理しますが、追加のパラメータが役立つ場合があります。たとえば、Google API では、更新トークンを発行するために ​`access_token=offline`​ が必要です。このパラメータがないと、接続は 1 時間後に期限切れになります。
+OAuth 認証コード許可種別では、認証要求はクエリパラメーターとしてデータを送信します。  コンポーザーはこれらのクエリパラメーターを自動的に処理しますが、追加のパラメーターが役立つ場合があります。たとえば、Google API では、更新トークンを発行するために ​`access_token=offline`​ が必要です。このパラメーターがないと、接続は 1 時間後に期限切れになります。
 .. *Token Exchange URL (トークンエクスチェンジ URL)*​: 認証コードをアクセストークンと交換できる URL。
 * 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
 ** *Key (キー)*
@@ -590,10 +591,10 @@ OAuth 認証コード許可種別では、認証要求はクエリパラメー�
 . *[Next (次へ)]*​ をクリックします。 +
 OAuth 2.0 認証コード接続が設定されます。これで、接続をテストできます。
 
-
+[[test-the-connection]]
 === 接続をテストする
 
-接続方法を確立したら、接続をテストできます。他のコネクタはコンポーザによってバックグラウンドで自動的にテストされますが、HTTP Connector はテストする必要があります。テストで使用するページを決定できます。接続は後で編集できないため、接続のテストは重要です。
+接続方法を確立したら、接続をテストできます。他のコネクタはコンポーザーによってバックグラウンドで自動的にテストされますが、HTTP Connector はテストする必要があります。テストで使用するページを決定できます。接続は後で編集できないため、接続のテストは重要です。
 
 接続をテストするには、次の項目の値を入力します。
 
@@ -625,23 +626,25 @@ HTTP Connector に適用される項目は、次のとおりです。
 
 |*HTTP メソッド* |String (文字列) a|要求の HTTP メソッド。次の HTTP メソッドを使用できます。
 
-* *GET*​: サーバから情報を取得します。
-* *POST*​: サーバに情報を送信します。
-* *PUT*​: サーバの既存のレコードの情報を更新します。
-* *PATCH*​: サーバの既存のレコードの特定のデータを更新します。
-* *DELETE*​: サーバの既存のレコードの情報を削除します。
+* *GET*​: サーバーから情報を取得します。
+* *POST*​: サーバーに情報を送信します。
+* *PUT*​: サーバーの既存のレコードの情報を更新します。
+* *PATCH*​: サーバーの既存のレコードの特定のデータを更新します。
+* *DELETE*​: サーバーの既存のレコードの情報を削除します。
 
-|*Path (パス)* |String (文字列) |アクセスするサーバの特定のリソースを識別します。
+|*Path (パス)* |String (文字列) |アクセスするサーバーの特定のリソースを識別します。
 
-|*Header (ヘッダー)* |Object (オブジェクト) |ユーザやサーバが HTTP 要求または応答で追加情報を渡すことができるようにします。大文字と小文字を区別しない名前 (キー)、コロン、値の順で構成されます。ヘッダーを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
+|*Header (ヘッダー)* |Object (オブジェクト) |ユーザーやサーバーが HTTP 要求または応答で追加情報を渡すことができるようにします。大文字と小文字を区別しない名前 (キー)、コロン、値の順で構成されます。ヘッダーを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
 
 *POST*​、​*PUT*​、​*PATCH*​、または ​*DELETE*​ メソッドを指定してリクエストボディを追加する場合は、​*Content-Type: application/json*​ ヘッダーを追加する必要があります。一部の API では ​*Content-Type: application/json*​ ヘッダーで必要な項目名が異なるため、接続された API でこの項目名を確認してください。
 
-|*Query Parameters (クエリパラメータ)* |Object (オブジェクト) |要求に含めるクエリパラメータ。クエリパラメータを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
+ヘッダーが ​*Content-Type: application/json*​ の場合、リクエストボディの一部として有効な JSON ({}、[]、"") が最低限必要です。
 
-|*Example Request (サンプル要求)* |String (文字列) |JSON 形式のサンプル要求。この項目の値を入力すると、コンポーザはサンプルを解析して、その項目を推定します。その後、その項目を使用してデータを入力し、要求の操作を設定できます。
+|*Query Parameters (クエリパラメーター)* |Object (オブジェクト) |要求に含めるクエリパラメーター。クエリパラメーターを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
 
-|*Example Response (サンプル応答)* |String (文字列) |JSON 形式のサンプル応答。この項目の値を入力すると、コンポーザはサンプル JSON ペイロードを解析して、JSON 項目に一致するデータピルを提供します。
+|*Example Request (サンプル要求)* |String (文字列) |JSON 形式のサンプル要求。この項目の値を入力すると、コンポーザーはサンプルを解析して、その項目を推定します。その後、その項目を使用してデータを入力し、要求の操作を設定できます。
+
+|*Example Response (サンプル応答)* |String (文字列) |JSON 形式のサンプル応答。この項目の値を入力すると、コンポーザーはサンプル JSON ペイロードを解析して、JSON 項目に一致するデータピルを提供します。
 
 |*Array Path (配列パス)* |String (文字列) |JSON 配列へのパス。​*[Array Path (配列パス)]*​ 項目の値はデフォルトで選択されていますが、ドロップダウンから別の値を選択できます。この値が表示されるのは、​*[Action (アクション)]*​ 項目の値が ​*[Paginated Request (ページ分割された要求)]*​ に設定されている場合のみです。
 
@@ -649,11 +652,11 @@ HTTP Connector に適用される項目は、次のとおりです。
 
 * *Link Header (リンクヘッダー)*​: この値を選択する場合は、​*[Link Relation (リンクリレーション)]*​ 項目の値を指定します。
 * *Marker (マーカー)*​: この値を選択する場合は、次の項目の値を指定します。 +
-  ** *Marker Parameter Name (マーカーのパラメータ名)*​
+  ** *Marker Parameter Name (マーカーのパラメーター名)*​
   ** *Next Marker Expression (次のマーカー式)*​
 * *Next URL (次の URL)*​: この値を選択する場合は、​*[Next URL Expression (次の URL 式)]*​ 項目の値を指定します。
-* *Offset (オフセット)*​: この値を選択する場合は、​*[Offset Parameter Name (オフセットのパラメータ名)]*​ 項目の値を指定します。
-* *Page Number (ページ番号)*​: この値を選択する場合は、​*[Page Number Parameter Name (ページ番号のパラメータ名)]*​ 項目の値を指定します。
+* *Offset (オフセット)*​: この値を選択する場合は、​*[Offset Parameter Name (オフセットのパラメーター名)]*​ 項目の値を指定します。
+* *Page Number (ページ番号)*​: この値を選択する場合は、​*[Page Number Parameter Name (ページ番号のパラメーター名)]*​ 項目の値を指定します。
 
 |*Maximum Number of Pages (ページの最大数)* |Number (数値) |要求で API から返されるページの最大数。
 
@@ -670,7 +673,7 @@ HTTP の要求::
 * *HTTP メソッド*
 * *Path (パス)*
 * *Example Response (サンプル応答)*
-* 必要に応じて ​*[Add Query Parameters (クエリパラメータを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+* 必要に応じて ​*[Add Query Parameters (クエリパラメーターを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
   ** *Key (キー)*
   ** *値*
 * 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
@@ -678,7 +681,7 @@ HTTP の要求::
   ** *値*
 
 HTTP のページ分割された要求::
-*[Action (アクション)]*​ 項目で ​*[Paginated Request (ページ分割された要求)]*​ が選択されている場合、ページ分割された HTTP 要求が開始されます。ページ分割された要求により、以降のフローステップが For Each ループで使用できる項目のリストが返されます。コンポーザでは、自動的にページネーション設定を使用して API からデータがフェッチされます。次の項目では、値は必須です。
+*[Action (アクション)]*​ 項目で ​*[Paginated Request (ページ分割された要求)]*​ が選択されている場合、ページ分割された HTTP 要求が開始されます。ページ分割された要求により、以降のフローステップが For Each ループで使用できる項目のリストが返されます。コンポーザーでは、自動的にページネーション設定を使用して API からデータがフェッチされます。次の項目では、値は必須です。
 
 * *Action (アクション)*
 * *HTTP メソッド*
@@ -686,7 +689,7 @@ HTTP のページ分割された要求::
 * *Example Response (サンプル応答)*
 * *Array Path (配列パス)*
 * *Pagination Type (ページネーション種別)*
-* 必要に応じて ​*[Add Query Parameters (クエリパラメータを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
+* 必要に応じて ​*[Add Query Parameters (クエリパラメーターを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。
   ** *Key (キー)*
   ** *値*
 * 必要に応じて ​*[Add Headers (ヘッダーを追加)]*​ をクリックした場合、次の項目の値を入力する必要があります。

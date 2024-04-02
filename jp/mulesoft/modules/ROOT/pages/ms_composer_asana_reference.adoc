@@ -12,21 +12,25 @@ include::_partials/connection-name.adoc[]
 
 定期的に使用していない場合、古い接続が期限切れになることがあります。Asana によって、接続が有効な時間が設定されます。
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-Asana にログインするために使用する OAuth ユーザ名。
+Asana にログインするために使用する OAuth ユーザー名。
 
 Password (パスワード)::
 
 Asana にログインするために使用する OAuth パスワード。
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
 New or updated task (新規または更新されたタスク)::
 
 タスクが作成されたとき、または既存のタスクが更新されたときに起動します。
+
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
 
 == アクション
 
@@ -36,7 +40,7 @@ Create new task (新規タスクの作成)::
 
 新しいタスクレコードを作成します。
 +
-新しいタスクレコードを作成する場合、ユーザ ID とタスク ID の両方の値をソースシステムに保存し、それをタスクレコードの更新時に使用します。
+新しいタスクレコードを作成する場合、ユーザー ID とタスク ID の両方の値をソースシステムに保存し、それをタスクレコードの更新時に使用します。
 
 Update task (タスクの更新)::
 
@@ -48,6 +52,6 @@ Update task (タスクの更新)::
 
 == カスタム項目 
 
-カスタム項目はサポートされていません。MuleSoft Composer を使用して、Asana レコードで設定したアクションとトリガの標準項目値にアクセスできます。
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、Asana レコードで設定したアクションとトリガーの標準項目値にアクセスできます。
 
 include::_partials/see-also.adoc[]

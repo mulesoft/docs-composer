@@ -4,7 +4,7 @@ MuleSoft Composer for Salesforce を使用して、コネクテッドエクス�
 
 新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
 
-日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題と制限事項」]​を参照してください。
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題」]​を参照してください。
 
 == 2021 年 12 月 21 日
 
@@ -16,7 +16,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 |問題|ID
 
-| Asana とコンポーザ間の接続を確立するときにエラーが表示されていた Asana Connector の問題が修正されました。 | SE-12452
+| Asana とコンポーザー間の接続を確立するときにエラーが表示されていた Asana Connector の問題が修正されました。 | SE-12452
 
 |===
 
@@ -34,7 +34,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 | 問題 |ID
 
-| これまで、Google Sheets Connector では、Google スプレッドシートがトリガである場合、割り当てられたデータ型 (​`int`​ (整数) や ​` `​bool` (ブール)) に関係なく、すべての出力項目が ​`text`​ (テキスト) として返されていました。そのため、アクションでトリガデータピルをテキスト以外の項目にマップしようとすると、エラーが発生していました。現在、トリガ項目で元のデータ型が保持されるようになり、後続のアクションで適切にマップできます。 | SE-227701、COCN-575
+| これまで、Google Sheets Connector では、Google スプレッドシートがトリガーである場合、割り当てられたデータ型 (​`int`​ (整数) や ​` `​bool` (ブール)) に関係なく、すべての出力項目が ​`text`​ (テキスト) として返されていました。そのため、アクションでトリガーデータピルをテキスト以外の項目にマップしようとすると、エラーが発生していました。現在、トリガー項目で元のデータ型が保持されるようになり、後続のアクションで適切にマップできます。 | SE-227701、COCN-575
 | スペースが含まれるドキュメントのメタデータが失敗する Google Sheets Connector の問題が修正されました。  | COCN-742
 | ライブラリの連動関係がアップグレードされました。 | |
 // | Fixed an issue in the Asana connector in which an error appeared when establishing a connection between Asana and Composer. | SE-12452
@@ -132,7 +132,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* *[Composer Flows (コンポーザフロー)]*​ ページで、フローが実行に失敗した場合に、問題をトラブルシューティングできるよう、詳細なエラーメッセージが表示されるようになりました。
+* *[Composer Flows (コンポーザーフロー)]*​ ページで、フローが実行に失敗した場合に、問題をトラブルシューティングできるよう、詳細なエラーメッセージが表示されるようになりました。
 
 * 新しいシステムである Zuora に接続できるようになりました。
 +
@@ -143,19 +143,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* コネクタでオブジェクトのリストのマッピングの制限が引き上げられました。選択したオブジェクトのリストの項目だけでなく、任意の最上位項目をマップできるようになりました。
+* コネクタでオブジェクトのリストのマッピングの制限が引き上げられました。選択したオブジェクトのリストの項目だけでなく、任意の最上位項目をマッピングできるようになりました。
 
 == 2021 年 10 月 21 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* メニューから [fx] を選択したときに表示される ​*[Custom Expression Editor (カスタム式エディタ)]*​ ウィンドウを使用してアクションのカスタム式を作成および編集できるようになりました。
+* メニューから [fx] を選択したときに表示される ​*[Custom Expression Editor (カスタム式エディター)]*​ ウィンドウを使用してアクションのカスタム式を作成および編集できるようになりました。
 
 == 2021 年 10 月 20 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* Stripe Connector で新しいアクション ​*Create Product*​ と新しいトリガ ​*New Refund*​ がサポートされるようになりました。
+* Stripe Connector で新しいアクション ​*Create Product*​ と新しいトリガー ​*New Refund*​ がサポートされるようになりました。
 
 
 == 2021 年 10 月 14 日
@@ -192,7 +192,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* NetSuite Connector で、ユーザは内部 ID を使用せずに指定カスタム値を使用して、値をカスタム選択リストにマップできるようになりました。
+* NetSuite Connector で、ユーザーは内部 ID を使用せずに指定カスタム値を使用して、値をカスタム選択リストにマップできるようになりました。
 
 == 2021 年 9 月 14 日
 
@@ -206,7 +206,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 [%header%autowidth.spread]
 
-* ドラッグアンドドロップまたはモーダルを使用してコンポーザキャンバスのカードを再編成できるようになりました。
+* ドラッグアンドドロップまたはモーダルを使用してコンポーザーキャンバスのカードを再編成できるようになりました。
 
 |===
 
@@ -286,14 +286,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * 以前は、フローをテストするときに、テストはエラーで停止するか手動で終了しなかった場合、5 分後に自動的に終了していました。テスト時間が 10 分間に更新されました。
 
-* 次の Jira Connector のトリガおよびアクションの名前が変更されました。
-** トリガ
+* 次の Jira Connector のトリガーおよびアクションの名前が変更されました。
+** トリガー
 *** *Update issue*​ が ​*Update issue with Custom Fields*​ になりました
 *** *New issue*​ が ​*New issue with Custom Fields*​ になりました
 ** アクション: *Update/edit issue*​ が ​*Update issue with Custom Fields*​ になりました
 
-* Jira Connector で次のトリガおよびアクションがサポートされるようになりました。
-** トリガ
+* Jira Connector で次のトリガーおよびアクションがサポートされるようになりました。
+** トリガー
 *** *Updated issue with Standard Fields only*
 *** *New issue with Standard Fields only*
 ** アクション: *Update issue with Standard Fields only*
@@ -310,7 +310,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-* ドラッグアンドドロップまたはモーダルを使用してコンポーザキャンバスのカードを再編成できるようになりました。
+* ドラッグアンドドロップまたはモーダルを使用してコンポーザーキャンバスのカードを再編成できるようになりました。
 
 == 2021 年 7 月 15 日
 
@@ -340,7 +340,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-* 次のトリガが Google Sheets Connector で使用できるようになりました。
+* 次のトリガーが Google Sheets Connector で使用できるようになりました。
 
 ** New row in sheet
 ** Updated row in sheet
@@ -362,7 +362,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-* NetSuite Connector でアクションおよびトリガにカスタムレコードタイプがサポートされるようになりました。
+* NetSuite Connector でアクションおよびトリガーにカスタムレコードタイプがサポートされるようになりました。
 
 == 2021 年 6 月 4 日
 
@@ -402,13 +402,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-* 接続を作成するためのユーザインターフェースが理解しやすくなりました。
+* 接続を作成するためのユーザーインターフェースが理解しやすくなりました。
 
 == 2021 年 3 月 25 日
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
-アクティブ化されていないフローでは、トリガステップを削除して置き換えることができます。
+アクティブ化されていないフローでは、トリガーステップを削除して置き換えることができます。
 
 == 2021 年 3 月 15 日
 

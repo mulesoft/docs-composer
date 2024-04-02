@@ -10,9 +10,9 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-Microsoft 365 にログインするために使用するユーザ名。
+Microsoft 365 にログインするために使用するユーザー名。
 
 Password (パスワード)::
 
@@ -24,7 +24,7 @@ include::_partials/action-definition.adoc[]
 
 Send message to channel (チャネルへのメッセージの送信)::
 
-特定の Microsoft Teams チャネルのメンバーであるすべてのユーザにメッセージを送信します。次の項目は必須です。
+特定の Microsoft Teams チャネルのメンバーであるすべてのユーザーにメッセージを送信します。次の項目は必須です。
 
 * Team ID (チーム ID)
 * Channel ID (チャネル ID)

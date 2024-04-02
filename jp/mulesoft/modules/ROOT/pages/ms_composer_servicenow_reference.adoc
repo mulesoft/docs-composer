@@ -8,22 +8,22 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-接続を作成できるのは、ServiceNow ​`soap_admin`​ ロールを持つユーザのみです。詳細は、ServiceNow ヘルプを参照してください: https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958
+接続を作成できるのは、ServiceNow ​`soap_admin`​ ロールを持つユーザーのみです。詳細は、ServiceNow ヘルプを参照してください: https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958
 
 Instance URL (インスタンス URL)::
 
 ServiceNow インスタンスの URL または ID。
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-ServiceNow にログインするために使用するユーザ名。
+ServiceNow にログインするために使用するユーザー名。
 
 Password (パスワード)::
 
 ServiceNow にログインするために使用するパスワード。
 
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
@@ -32,6 +32,8 @@ New or updated record (新規または更新済みレコード)::
 ServiceNow ​`record_type`​ テーブルで新規または更新済みレコードをチェックします。​*[Table name (テーブル名)]*​ の値を指定します。
 +
 *[ServiceNow Time Zone (ServiceNow タイムゾーン)]*​ は、ServiceNow インスタンスと同じタイムゾーンに設定する必要があることに注意してください。
+
+NOTE: ServiceNow Connector のカスタムまたは拡張親テーブルを表示するには、テーブル定義で ​*[Allow access to this table via web services (Web サービスを介したこのテーブルへのアクセスを許可)]*​ と ​*[Allow configuration (設定を許可)]*​ を選択します。
 
 == アクション
 
@@ -55,8 +57,10 @@ ServiceNow で選択されたレコードタイプのテーブルの既存のレ
 * *Table name (テーブル名)*
 * *Sys ID (システム ID)*
 
+NOTE: ServiceNow Connector のカスタムまたは拡張親テーブルを表示するには、テーブル定義で ​*[Allow access to this table via web services (Web サービスを介したこのテーブルへのアクセスを許可)]*​ と ​*[Allow configuration (設定を許可)]*​ を選択します。
+
 == カスタム項目 
 
-カスタム項目はサポートされていません。MuleSoft Composer を使用して、ServiceNow レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、ServiceNow レコードで設定したアクションとトリガーのカスタム項目値にアクセスできます。
 
 include::_partials/see-also.adoc[]

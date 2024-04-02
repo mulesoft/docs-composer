@@ -1,7 +1,7 @@
 = Workday Connector リファレンス
 
 Workday をデータ取得元またはデータ取得先として使用します。
-フローでのデータの操作方法の一部の詳細は、データ取得元またはデータ取得先、および選択した特定のトリガまたはアクションに固有です。
+フローでのデータの操作方法の一部の詳細は、データ取得元またはデータ取得先、および選択した特定のトリガーまたはアクションに固有です。
 
 == Connections (接続)
 
@@ -9,7 +9,7 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 +
-接続を検証およびテストするために、Workday Connector は ​`Get_Degrees`​ 操作で ​`Performance_Management`​ サービスを使用します。そのサービスで操作を実行する権限がサービスアカウントにあることを確認してください。
+接続を検証およびテストするために、Workday Connector は ​`Get_Degrees`​ 操作で ​`Performance_Management` サービスを使用します。そのサービスで操作を実行する権限がサービスアカウントにあることを確認してください。
 +
 [%header%autowidth.spread]
 |===
@@ -33,9 +33,9 @@ Sandbox からテナント名を取得する手順は、次のとおりです。
 
 . ページの左上を確認します。そこにテナントの詳細が​`「Sandbox 種別- テナント名」`​の形式で表示されています。
 
-User Name (ユーザ名)::
+User Name (ユーザー名)::
 
-Workday にログインするために使用するユーザ名。
+Workday にログインするために使用するユーザー名。
 
 Password (パスワード)::
 
@@ -51,13 +51,13 @@ Workday インスタンスのホスト名。例: `wd2-impl-services1.workday.com
 . 検索ボックスに​`「Public Web Service」`​ (公開 Web サービス) と入力し、検索結果から ​*[Public Web Service (公開 Web サービス)]*​ を選択します。
 . *[...]*​ をクリックし、​*[Web Service (Web サービス)] > [View WSDL (WSDL を表示)]*​ を選択します。​`soapbind:address`​ をチェックして、正しいホスト名 (例: `<soapbind:address location=”https://hostname/ccx/.... />`​) を使用していることを確認します。 
 
-== トリガ
+== トリガー
 
 include::_partials/trigger-definition.adoc[]
 
 New or updated object::
 
-このトリガでは、Workday 財務管理で新規または更新済みオブジェクトをチェックします。次の項目では値が必須です: *Object (オブジェクト)*​。
+このトリガーでは、Workday 財務管理で新規または更新済みオブジェクトをチェックします。次の項目では値が必須です: *Object (オブジェクト)*​。
 
 == アクション
 
@@ -99,7 +99,7 @@ Get Object::
 
 次のオブジェクト種別が使用できます。
 
-* トリガ
+* トリガー
     ** JOB_REQUISITIONS
     ** WORKER
 
@@ -112,9 +112,5 @@ Get Object::
     ** PROJECT
     ** SALES_ITEM
     ** WORKER
-
-== カスタム項目 
-
-カスタム項目はサポートされていません。MuleSoft Composer を使用して、Workday レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
 
 include::_partials/see-also.adoc[]

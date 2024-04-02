@@ -4,9 +4,9 @@ Google BigQuery は、データを保管してアクセスするためのウェ�
 
 == 始める前に   
 
-Google BigQuery Connector を使用するには、 https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google ワークスペース]​のアカウントが必要です。コンポーザから個人の Google アカウントへの接続は許可されません。 
+Google BigQuery Connector を使用するには、 https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google ワークスペース]​のアカウントが必要です。コンポーザーから個人の Google アカウントへの接続は許可されません。 
 
-Google ワークスペースのアカウントに接続すると、コンポーザが https://support.google.com/cloud/answer/7454865?hl=en[未確認のアプリケーション]​であることを示すメッセージが表示されます。これは想定される動作です。このメッセージをバイパスしてコネクタを使用するには、​*「このアプリは Google で確認されていません」*​のダイアログで ​*[詳細]*​ ​*> [[プロジェクト名](安全ではないページ) に移動] > [許可]*​ をクリックします。
+Google ワークスペースのアカウントに接続すると、コンポーザーが https://support.google.com/cloud/answer/7454865?hl=en[未確認のアプリケーション]​であることを示すメッセージが表示されます。これは想定される動作です。このメッセージをバイパスしてコネクタを使用するには、​*「このアプリは Google で確認されていません」*​のダイアログで ​*[詳細]*​ ​*> [[プロジェクト名](安全ではないページ) に移動] > [許可]*​ をクリックします。
 
 == 接続
 
@@ -17,15 +17,15 @@ Connection Display Name (接続表示名)::
 この接続の詳細を把握するのに役立つ接続名を入力します。
 1 つのフローおよび複数のフローで接続を複数回再利用できます。接続の作成後、ログイン情報は非表示になります。そのため、この接続を他の接続と簡単に区別できる名前を付けると役立ちます。
 +
-接続は自分にのみ表示されます。コンポーザアプリケーションの他のユーザは、独自の接続を作成する必要があります。
+接続は自分にのみ表示されます。コンポーザーアプリケーションの他のユーザーは、独自の接続を作成する必要があります。
 
 Project ID (プロジェクト ID)::
 
 Google BigQuery から取得したプロジェクト ID。
 
-Username (ユーザ名)::
+Username (ユーザー名)::
 
-Google BigQuery にログインするために使用する OAuth ユーザ名。
+Google BigQuery にログインするために使用する OAuth ユーザー名。
 
 Password (パスワード)::
 
@@ -48,7 +48,7 @@ Google BigQuery では、次のデータ型がサポートされています。
 * TIME
 * TIMESTAMP
 
-== Triggers (トリガ)
+== Triggers (トリガー)
 
 include::_partials/trigger-definition.adoc[]
 
@@ -75,6 +75,10 @@ On New or Updated Row Source (新規または更新済み行のソース)::
 ** DATE
 ** DATETIME
 
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
+
 == アクション
 
 include::_partials/action-definition.adoc[]
@@ -95,11 +99,11 @@ Select Rows::
 
 行のセットを取得します。​*[SQL string (SQL 文字列)]*​ の値を指定します。
 
-== Input Parameters (入力パラメータ)
+== Input Parameters (入力パラメーター)
 
-クエリステートメントにパラメータ値を含めるには、​`:`​ に続けてパラメータ名を指定します (例: `Select field from dataset.table where field = :param1`​)。パラメータの値は ​*[Input Parameters (入力パラメータ)]*​ セクションで定義します。たとえば、​`param1`​ の値を ​`12345`​ として定義すると、このクエリステートメントは ​`Select field from dataset.table where field = 12345`​ として解釈されます。
+クエリステートメントにパラメーター値を含めるには、​`:`​ に続けてパラメーター名を指定します (例: `Select field from dataset.table where field = :param1`​)。パラメーターの値は ​*[Input Parameters (入力パラメーター)]*​ セクションで定義します。たとえば、​`param1`​ の値を ​`12345`​ として定義すると、このクエリステートメントは ​`Select field from dataset.table where field = 12345`​ として解釈されます。
 
-パラメータの値は、リテラル文字列、または先行するアクションの出力値として定義する必要があります。String (文字列) または Date (日付) データ型の入力パラメータ値は、式エディタを使用して、単一引用符で囲んで指定する必要があります。リテラル文字列の場合は、エディタで単一引用符を ​`’12345’`​ のように値に追加します。先行するアクションからの出力値の場合は、カスタム式オプションを選択し、エディタでカスタム式を ​`’Field From Previous Step’`​ のように単一引用符で囲んで、変更を適用します。
+パラメーターの値は、リテラル文字列、または先行するアクションの出力値として定義する必要があります。String (文字列) または Date (日付) データ型の入力パラメーター値は、式エディターを使用して、単一引用符で囲んで指定する必要があります。リテラル文字列の場合は、エディターで単一引用符を ​`’12345’`​ のように値に追加します。先行するアクションからの出力値の場合は、カスタム式オプションを選択し、エディターでカスタム式を ​`’Field From Previous Step’`​ のように単一引用符で囲んで、変更を適用します。
 
 *Google BigQuery™ は Google LLC の商標です。*
 

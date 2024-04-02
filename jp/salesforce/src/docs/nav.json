@@ -123,10 +123,6 @@
               "title": "QuickBooks Online"
             },
             {
-              "file": "ms_composer_rest_consumer_reference.adoc",
-              "title": "REST コンシューマ"
-            },
-            {
               "file": "ms_composer_rpa_reference.adoc",
               "title": "MuleSoft RPA"
             },
@@ -141,10 +137,6 @@
             {
               "file": "ms_composer_salesforce_marketing_cloud_reference.adoc",
               "title": "Salesforce Marketing Cloud"
-            },
-            {
-              "file": "ms_composer_sap_s4hana_reference.adoc",
-              "title": "SAP S/4HANA Cloud"
             },
             {
               "file": "ms_composer_servicenow_reference.adoc",

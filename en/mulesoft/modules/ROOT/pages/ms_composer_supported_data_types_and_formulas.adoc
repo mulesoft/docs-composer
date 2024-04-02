@@ -21,7 +21,7 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 |Boolean | Evaluates to `true` or `false`.
 
-|Date | Stores a year, month, and day as `yyyy-MM-dd`.
+|Date | Stores a year, month, and day as `yyyy-MM-dd`. All date values are in Coordinated Universal Time (UTC).
 
 |DateTime | Stores a date and time within a time zone relative to Greenwich Mean Time (GMT). A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`.
 

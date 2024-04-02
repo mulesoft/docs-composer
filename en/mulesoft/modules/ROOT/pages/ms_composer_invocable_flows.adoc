@@ -24,7 +24,7 @@ Create an invocable Composer flow so that you can invoke it later from an extern
 To configure an invocable Composer flow:
 
 . Access Composer.
-. xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
+. xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[Create a new flow from scratch].
 . In the *What Should Start This Flow?* dialog, in the *Interaction* section, click *Invoke* to create an invocable flow. 
 +
 The *Trigger: Invoke this flow from an external system via HTTP POST Request* trigger appears. 
@@ -100,15 +100,15 @@ To add output fields:
 .. Click *Apply*.
 .. Once output fields are added, you can then map data pills, custom expressions, or plain text. For example, map an input field to the output field.
 
-*** `String`, `Number`, `Boolean`, `Date`, or `DateTime`, a value is required. You can enter a value manually, select any existing data pill (including variables) from your flow, select a xref:ms_composer_flows.adoc#create-a-picklist-mapping[Picklist Mapping] (for `String` variables) or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. 
-*** `List`, a value is required. You can enter a value manually. For primitive list types (`String`, `Number`, `Boolean`, `Date`, or `DateTime`), you can create a list statically using the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] or xref:ms_composer_flows.adoc#create-a-picklist-mapping[map in a list data pill]. For List<Objects>, select either: 
+*** `String`, `Number`, `Boolean`, `Date`, or `DateTime`, a value is required. You can enter a value manually, select any existing data pill (including variables) from your flow, select a xref:ms_composer_using_actions_in_a_flow.adoc#create-a-picklist-mapping[Picklist Mapping] (for `String` variables) or you can select the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] to create a custom expression. 
+*** `List`, a value is required. You can enter a value manually. For primitive list types (`String`, `Number`, `Boolean`, `Date`, or `DateTime`), you can create a list statically using the xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*Custom Expression Editor*] or xref:ms_composer_using_actions_in_a_flow.adoc#create-a-picklist-mapping[map in a list data pill]. For List<Objects>, select either: 
 **** *Dynamic List* to create multiple items in the list. Use a list pill to reference the number of items created. Then, map the fields of the elements of the list.
 **** *Static List*, and then initialize the list with as many items as you need. If you do not add any items, the list is empty by default.
 
 .. Optionally to change the output fields, click *Add Output Fields* to open the editor to edit the output fields.
 . Complete the flow. 
 +
-For example, configure system actions for the flow, define variables, or create flow controls as described in xref:ms_composer_flows.adoc[Build a Composer Flow]. 
+For example, configure system actions for the flow, define variables, or create flow controls as described in xref:ms_composer_flows.adoc[Configuring and Managing Flows]. 
 . Click *Save*.
 
 To delete an invocable step from your flow: 
@@ -325,7 +325,7 @@ You can create an invocable flow in Composer and invoke it from another Composer
 
 To invoke a Composer flow from another Composer flow:
 
-. xref:ms_composer_flows.adoc#create-a-new-flow[Create a new flow from scratch].
+. xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[Create a new flow from scratch].
 . Click *+* > *System Event* and select *HTTP*.
 . Configure your HTTP connection.
 +

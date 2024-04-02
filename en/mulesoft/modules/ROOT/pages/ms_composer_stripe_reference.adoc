@@ -17,7 +17,7 @@ The value in this field maps to the `Authorization` field in the specialist conn
 * Allows users to use restricted API keys for granular permissions.
 * Ensures that all API requests are made via HTTPS.
 
-https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth authentication, but Stripe does not. For more information on OAuth authentication in Stripe, see https://www.similartech.com/compare/stripe-vs-stripe-connect.
+https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth authentication, but Stripe does not. For more information on OAuth authentication in Stripe, see the https://www.similartech.com/compare/stripe-vs-stripe-connect[Stripe documentation].
 
 == Triggers
 
@@ -52,7 +52,7 @@ Note that best practice dictates that the value in the Customer ID field should 
 
 +
 
-For more information on the *Create Charge* action in Stripe, see https://stripe.com/docs/api/charges/create.
+For more information on the *Create Charge* action in Stripe, see the https://stripe.com/docs/api/charges/create[Stripe documentation].
 
 Create customer::
 

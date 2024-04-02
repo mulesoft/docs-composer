@@ -28,7 +28,7 @@ revokes tokens from the oldest to the most recently created, without notice, unt
 
 If possible, create only one connection per user per Salesforce org to avoid this issue.
 
-For more about Salesforce connected apps and authorization, see https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm.
+For more about Salesforce connected apps and authorization, see the https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm[Salesforce documentation].
 
 === Relaxed IP Restrictions
 

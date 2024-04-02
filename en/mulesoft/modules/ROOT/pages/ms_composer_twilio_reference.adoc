@@ -45,7 +45,7 @@ Initiates a phone call. Values are required in the following fields:
 
 * *TwiML URL*: The value in this field is the URL that hosts a set of TwiML instructions.
 +
-For more information on TwiML, see the Twilio documentation: https://www.twilio.com/docs/voice/twiml.
+For more information on TwiML, see the https://www.twilio.com/docs/voice/twiml[Twilio documentation].
 
 == Custom Fields 
 

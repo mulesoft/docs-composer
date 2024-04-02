@@ -1,0 +1,87 @@
+= Connecting a Flow 
+
+A _connection_ in Composer is a configuration that uses a connector and associated user or system credentials to connect to a system. You can use connections at different steps to perform specific tasks, such as connecting to a system, checking for triggers, and retrieving or manipulating data. 
+
+ifeval::["{product}"=="mulesoft"]
+//This is currently only for MS Composer 
+== Access the Connections Page 
+
+To access the *Connections* page, from the *Composer* home page, click *Connections* in the navigation pane. 
+
+The *Connections* page enables you to: 
+
+* Select a connection to view all of the flows currently using that connection. 
+* <<change-a-connection,Change a connection>>.
+* <<repair-a-connection,Repair a connection>>.
+* <<delete-a-connection,Delete a connection>>. 
+* Change the name of a connection. 
+
+To access the *Connections* page, from the *Composer* home page, click *Connections* in the navigation pane. 
+endif::[]
+
+[[change-a-connection]]
+== Change a Connection
+
+You can change connections in a trigger or action for all steps (at the flow level) or for individual steps. For example, you can create a flow using connections to a Salesforce sandbox org, and then after your flow testing is complete, you can change the connection in your trigger and actions to use a production org.
+
+You can only change to a connection accessing the same system type. You can't change a Workday connection to a Google Sheets connection, for example.
+
+To change a connection:
+
+. Open the flow.
+. Click the change icon in the trigger or action that connects to a sandbox:
++
+image::images/change-connection.png[Change the connection control, 400]
+
+. Change the connection to an existing connection or to a new connection.  
++
+* If you change the connection to an existing connection:
++
+.. Select the connection to change to.
+.. Optionally, if you want to change the connection for all steps that use this specific connection, select *Change all instances of XXX to XXX in this flow*. 
+.. Click *Change*.
+.. Click *Confirm*.
++
+* If you change the connection to a new connection:
++
+.. Click *Add New (Connector Name) Connection*.
+.. Enter a value for the *Connection Display Name* field.
+.. Optionally, if you want to change the connection for all steps that use this specific connection, select *Change all instances of current connection to the new connection in this flow*. 
+.. Click *Connect*.
+.. In the dialog box, log in to the system and allow access.
+
+[[repair-a-connection]]
+== Repair a Connection
+
+If your OAuth connection is lost, you can repair the connection by refreshing the access token.
+
+To repair a connection:
+
+. Open the flow.
+. Click *Edit*.
+. Click the change icon in the trigger or action that requires repair, and then click *Change Connection*.
+. Click *Repair*.
+
+[[delete-a-connection]]
+== Delete a Connection
+
+If you no longer need a specific connection, you can delete it.
+
+To delete a connection:
+
+. xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[Create a new flow] or add a step to an existing flow.
+. If you create a new flow:
+ .. Select the connector or system to start your flow.
+ .. In the *What Should Start This Flow?* window, click the gear icon.
+. If you add a step to an existing flow:
+ .. Select the connector or system to start your flow.
+ .. In the *Next Step* window, click the gear icon.
+. In the *Manage <Connector Name> Connections* window, next to the connection that you want to delete, click the trashcan. +
+A message appears ensuring that you want to delete the selected connection. A window appears, displaying a list of flows currently using that connection. If the connection is: +
+* Not used in any flows, you can delete the connection.
+* Used in inactive flows, a list containing the name and count of inactive flows using this connection appears. Deleting this connection will affect the listed flows. If you reopen the inactive flow, you must <<change-a-connection,select a new connection>>.
+* Used in active and inactive flows, a list containing the name, count, and status of active and inactive flows using this connection appears. If you choose to delete the connection, secondary confirmation appears. Prior to deleting the connection, Composer will first attempt to stop the flows.
+. Click *Delete*. +
+The connection is deleted.
+
+include::_partials/see-also.adoc[]

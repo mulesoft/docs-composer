@@ -165,7 +165,7 @@ You can add up to 20 conditions per branch and as many actions per branch as you
 
 Be careful how you order your If statements. The action specified by the first branch whose conditions are met is the only action performed in the If/Else block.
 
-== Test Each Step
+== Test 
 
 You can test your work after every trigger and action. As you test, you can add or delete triggers, actions, and flow controls. You can also change the connection you use in triggers or actions to another connection of the same system type.
 
@@ -189,9 +189,9 @@ ifeval::["{product}"=="mulesoft"]
 * xref:ms_composer_prerequisites.adoc[MuleSoft Composer: Getting Started]
 endif::[]
 
-* xref:ms_composer_flows.adoc[Build and Test a Flow]
-* xref:ms_composer_activation.adoc[Activate a Flow]
-* xref:ms_composer_monitoring.adoc[Monitor a Flow]
+* xref:ms_composer_flows.adoc[Configuring and Managing Flows]
+* xref:ms_composer_activation.adoc[Activating a Flow]
+* xref:ms_composer_monitoring.adoc[Monitoring a Flow]
 
 ifeval::["{product}"=="salesforce"]
 * https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[Knowledge Articles]

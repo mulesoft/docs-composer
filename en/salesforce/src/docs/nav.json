@@ -31,7 +31,8 @@
           "title": "Getting Started",
           "topics": [
           {
-          "file"  : "ms_composer_about_flows.adoc"
+          "file"  : "ms_composer_about_flows.adoc",
+          "title": "How Composer Works"
           },
           {
           "file" : "ms_composer_checklist.adoc",
@@ -43,7 +44,23 @@
           "file" : "ms_composer_flows.adoc",
           "title": "Configuring and Managing Flows",
           "topics": [
-          {
+            {
+              "file" : "ms_composer_using_a_flow_and_creating_trigger.adoc",
+              "title": "Using a Flow and Creating a Trigger"
+            },
+            {
+              "file" : "ms_composer_connecting_a_flow.adoc",
+              "title": "Connecting a Flow"
+            },
+            {
+              "file" : "ms_composer_scheduling_polling_invoking_flow.adoc",
+              "title": "Scheduling, Polling, or Invoking a Flow"
+            },
+            {
+              "file" : "ms_composer_using_actions_in_a_flow.adoc",
+              "ti,tle": "Using Actions in a Flow"
+            },
+            {
             "file" : "ms_composer_build_a_flow_using_templates.adoc",
             "title": "Building a Flow Using Templates"
           }
@@ -52,6 +69,10 @@
         {
           "file" : "ms_composer_custom_expression_editor.adoc",
           "title": "Building Formulas for Flows"
+         },
+         {
+          "file" : "ms_composer_supported_data_types_and_formulas.adoc",
+          "title": "Supported Data Types and Formulas"
         },
         {
           "file" : "ms_composer_invocable_flows.adoc",
@@ -122,6 +143,10 @@
               "title": "Microsoft Teams"
             },
             {
+              "file" : "ms_composer_rpa_reference.adoc",
+              "title": "MuleSoft RPA"
+            },
+            {
               "file" : "ms_composer_netsuite_reference.adoc",
               "title": "NetSuite"
             },
@@ -133,11 +158,7 @@
               "file" : "ms_composer_rest_consumer_reference.adoc",
               "title": "Rest Consumer"
             },
-            {
-              "file" : "ms_composer_rpa_reference.adoc",
-              "title": "MuleSoft RPA"
-            },
-            {
+                        {
               "file" : "ms_composer_sage_intacct_reference.adoc",
               "title": "Sage Intacct"
             },

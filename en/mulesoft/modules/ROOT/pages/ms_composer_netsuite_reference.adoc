@@ -89,7 +89,13 @@ include::_partials/polling-frequency.adoc[]
 
 == Actions
 
-include::_partials/action-definition.adoc[]
+//include::_partials/action-definition.adoc[] Removing partial to add note 
+
+After you connect to a system and define the trigger or configure a scheduler, you define the actions that the flow performs, such as copying a record from Workday to Salesforce. The actions you can perform depend on which system you are connected to.
+
+Note that Composer does not store the user's local timezone; therefore, when a value is entered in a `DateTime` field, Composer assumes that the `DateTime` value entered is in UTC format. A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`. 
+
+This system provides the following actions:
 
 Update Record::
 

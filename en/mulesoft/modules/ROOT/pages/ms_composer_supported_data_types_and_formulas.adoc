@@ -23,7 +23,7 @@ The value that a Composer field can accept for a value is a _data type_. In Comp
 
 |Date | Stores a year, month, and day as `yyyy-MM-dd`.
 
-|DateTime | Stores a date and time within a time zone relative to Coordinated Universal Time (UTC). Composer does not store the user's local timezone; therefore, when a `DateTime` value is entered in this field, Composer assumes that the `DateTime` value entered is in UTC format. A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`.
+|DateTime | Stores a date and time within a time zone relative to Coordinated Universal Time (UTC). Composer does not store the user's local timezone; therefore, when a `DateTime` value is entered in this field, Composer assumes that the `DateTime` value entered is in UTC format. A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`. Note that when using the `today()` function, the value for `Date` is returned in UTC. Additionally, if the date is _not_ entered in UTC, Composer will automatically convert the date to UTC format which may or may not be accurate for the user's local time zone which could affect the resulting logic.
 
 // |Integer | Stores whole numbers that range from -2,147,483,647 to 2,147,483,647. An integer has no decimal point.
 
@@ -185,7 +185,7 @@ The *Custom Expression Editor* supports the following `number` formulas and oper
 
 In the *Custom Expression Editor*, `date` and `dateTime` data pills can only be used as inputs. You cannot enter the dates manually.
 
-Note that Composer does not store the user's local timezone; therefore, when a value is entered in a `DateTime` field, Composer assumes that the `DateTime` value entered is in UTC format. A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`. 
+Note that Composer does not store the user's local timezone; therefore, when a value is entered in a `DateTime` field, Composer assumes that the `DateTime` value entered is in UTC format. A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`. Additionally, if the date is _not_ entered in UTC, Composer will automatically convert the date to UTC format which may or may not be accurate for the user's local time zone which could affect the resulting logic.
 
 The *Custom Expression Editor* supports the following `date` and `dateTime` formulas and operators:
 

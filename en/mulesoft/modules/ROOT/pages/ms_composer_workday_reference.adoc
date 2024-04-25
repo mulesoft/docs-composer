@@ -65,6 +65,8 @@ include::_partials/polling-frequency.adoc[]
 
 == Actions
 
+include::_partials/action-definition.adoc[]
+
 Get Worker Details by ID::
 
 This action returns the worker details corresponding to the employee's `Workday ID` that you supply.

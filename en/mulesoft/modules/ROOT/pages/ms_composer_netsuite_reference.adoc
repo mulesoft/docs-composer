@@ -91,7 +91,7 @@ include::_partials/polling-frequency.adoc[]
 
 //include::_partials/action-definition.adoc[] Removing partial to add note 
 
-After you connect to a system and define the trigger or configure a scheduler, you define the actions that the flow performs, such as copying a record from Workday to Salesforce. The actions you can perform depend on which system you are connected to.
+After you connect to a system and define the trigger or configure a scheduler, you define the actions that the flow performs. For example, you can copy a record between different systems, such as Workday and Salesforce. The actions you can perform depend on which system you are connected to.
 
 Note that Composer does not store the user's local timezone; therefore, when a value is entered in a `DateTime` field, Composer assumes that the `DateTime` value entered is in UTC format. A time zone must include either the symbol `+` in the time value or the symbol `-` in the date value. For example, 12:30 p.m. on June 1, 2019, in the Macau time zone is represented as `2019-06-01T12:30:00+08:00`. Additionally, if the date is _not_ entered in UTC, Composer will automatically convert the date to UTC format which may or may not be accurate for the user's local time zone which could affect the resulting logic. For more information, see the https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1521451348.html#bridgehead_4725944921[Netsuite Documentation].
 

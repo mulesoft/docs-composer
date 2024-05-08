@@ -53,6 +53,7 @@
 ** xref:ms_composer_zendesk_reference.adoc[Zendesk]
 ** xref:ms_composer_zuora_reference.adoc[Zuora]
 
-* xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits]
-* xref:ms_composer_hyperautomation.adoc[MuleSoft Automation Package]
+* xref:ms_composer_hyperautomation.adoc[Automation Credits Usage and Rates]
+** xref:ms_composer_automation_credits_2.adoc [MuleSoft Automation Credits 2.0]
+** xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits 1.0]
 * xref:ms_composer_glossary.adoc[Glossary]

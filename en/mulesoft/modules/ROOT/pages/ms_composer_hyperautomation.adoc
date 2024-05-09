@@ -27,7 +27,7 @@ For more information on usage and pricing metrics, see xref:general::pricing-met
 
 == Monthly Account Summary Emails
 
-Salesforce sends usage-based billing reports to every MuleSoft IDP customer on the 10th of each month. By default, Salesforce sends these emails to the account's billing contact. 
+Salesforce sends usage-based billing reports to every MuleSoft Composer customer on the 10th of each month. By default, Salesforce sends these emails to the account's billing contact. 
 
 For additional information about the reports, the list of recipients, and other details, see the https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^].
 

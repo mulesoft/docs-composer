@@ -2,6 +2,8 @@
 
 HubSpot offers a full platform of marketing, sales, customer service, and CRM software, as well as methodology, resources, and support, to help businesses grow.
 
+NOTE: You can sync to HubSpot Company and Contact objects only. 
+
 == Connections
 
 include::_partials/connection-definition.adoc[]

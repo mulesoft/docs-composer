@@ -1,14 +1,35 @@
-= MuleSoft Automation Package 
+= Automation Credits Usage and Rates
 
-The https://www.mulesoft.com/automation-pricing-new[MuleSoft Automation Package] enables you to log in to Anypoint Platform to access MuleSoft Composer and xref:rpa-home::index.adoc[MuleSoft Robotic Process Automation (RPA)]. With the MuleSoft Automation Package, MuleSoft Composer now has everything you need to connect apps and create automations.  
+Your MuleSoft Automation subscription plan includes a quota of Automation Credits that depletes as you create and execute automations.
 
+Credit usage rates differ for different subscription plans. Refer to the article that corresponds to your subscription plan as shown in the following table: 
 
-With the MuleSoft Automation Package, the following Anypoint Platform features are available to Composer users: 
+[%header%autowidth.spread,cols="a,a]
+|===
+| Subscription Plan | Conversion Rate Sheet
+a| 
+* Automation Starter
+* Automation Advanced 
+* Automation for vCore/Core
+* Additional Automation Credits
+.^| xref:ms_composer_automation_credits_2.adoc[MuleSoft Automation Credits 2.0]
+a|
+* MuleSoft - Automation
+* MuleSoft - Automation - (Gold, Platinum, Titanium Edition)
+* MuleSoft - Automation for Salesforce
+* MuleSoft - Automation for Salesforce - (Gold, Platinum, Titanium Edition)
+* MuleSoft - Automation - Additional Credits (100)
+* MuleSoft - Automation - Additional Credits (100) - (Gold, Platinum, Titanium)
+.^| xref:ms_composer_automation_credits.adoc[MuleSoft Automation Credits 1.0]
+|===
 
-* xref:access-management::audit-logging.adoc[Anypoint Audit Logging]
-* xref:exchange::index.adoc[Anypoint Exchange] 
-* xref:visualizer::index.adoc[Anypoint Visualizer] 
-* xref:monitoring::index.adoc[Anypoint Monitoring] 
+For more information on usage and pricing metrics, see xref:general::pricing-metrics.adoc#metrics-collected-in-anypoint-platform[Metrics Collected in Anypoint Platform].
+
+== Monthly Account Summary Emails
+
+Salesforce sends usage-based billing reports to every MuleSoft Composer customer on the 10th of each month. By default, Salesforce sends these emails to the account's billing contact. 
+
+For additional information about the reports, the list of recipients, and other details, see the https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^].
 
 == Access Composer with MuleSoft Automation Package 
 

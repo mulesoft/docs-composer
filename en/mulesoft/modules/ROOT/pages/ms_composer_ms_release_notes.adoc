@@ -34,7 +34,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |After an access token expires, Salesforce Marketing Cloud Connector now properly refreshes the access token.| W-14979479
 |===
 
-== February 28, 2024
+== March 11, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
 

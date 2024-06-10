@@ -34,6 +34,27 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 |After an access token expires, Salesforce Marketing Cloud Connector now properly refreshes the access token.| W-14979479
 |===
 
+== March 11, 2024
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, you can now create new connections in Composer as intended.| W-15070963
+|===
+
+== February 28, 2024
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Microsoft Dynamics 365 Business Central Connector no longer incorrectly fails with an `Invalid Connection` error when creating a connection.| W-14824218
+|===
+
+
 == February 26, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]

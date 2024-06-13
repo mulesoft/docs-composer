@@ -9,6 +9,8 @@ To send a Microsoft Teams message using MuleSoft Composer, you must have an acti
 include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
++
+You must disable the admin consent workflow because Composer does not support it.
 
 Username::
 

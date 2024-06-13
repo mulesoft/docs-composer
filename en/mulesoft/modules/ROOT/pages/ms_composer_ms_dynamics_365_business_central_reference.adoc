@@ -14,6 +14,8 @@ and the credentials are hidden after you create the connection. Therefore, it's 
 to provide a name that easily identifies this connection from others.
 +
 Only you can see the connection. Other users in your Composer app must create their own connections.
++
+You must disable the admin consent workflow because Composer does not support it.
 
 Base URI::
 

@@ -8,7 +8,7 @@ MuleSoft Composer for Salesforce を使用して、コネクテッドエクス�
 
 == 2021 年 12 月 21 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -22,11 +22,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 12 月 16 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Google Sheets Connector で Create/Update Row アクション使用するときに複数のデータ行を転送できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -43,7 +43,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 12 月 9 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -60,7 +60,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 12 月 2 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * NetSuite Connector で ​*[Job (ジョブ)]*​ レコードタイプがサポートされるようになりました。
 
@@ -70,7 +70,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * NetSuite Connector で ​*[Assembly Item (アセンブリ項目)]*​ レコードタイプがサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -87,7 +87,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 12 月 1 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Jira Connector のすべての操作の入力項目でスペースがサポートされるようになりました。
 
@@ -95,7 +95,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 11 月 23 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -110,13 +110,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 11 月 8 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * MuleSoft Composer for Salesforce を使用して、再接続が不要な更新トークンを発行することで、失われた OAuth 接続を修正できるようになりました。
 
 == 2021 年 11 月 4 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -130,7 +130,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 10 月 28 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * *[Composer Flows (コンポーザーフロー)]*​ ページで、フローが実行に失敗した場合に、問題をトラブルシューティングできるよう、詳細なエラーメッセージが表示されるようになりました。
 
@@ -141,26 +141,26 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 10 月 27 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * コネクタでオブジェクトのリストのマッピングの制限が引き上げられました。選択したオブジェクトのリストの項目だけでなく、任意の最上位項目をマッピングできるようになりました。
 
 == 2021 年 10 月 21 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * メニューから [fx] を選択したときに表示される ​*[Custom Expression Editor (カスタム式エディター)]*​ ウィンドウを使用してアクションのカスタム式を作成および編集できるようになりました。
 
 == 2021 年 10 月 20 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Stripe Connector で新しいアクション ​*Create Product*​ と新しいトリガー ​*New Refund*​ がサポートされるようになりました。
 
 
 == 2021 年 10 月 14 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 新しいシステムである QuickBooks Online を接続できるようになりました。
 +
@@ -170,13 +170,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 10 月 7 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 新しいシステムである Zendesk に接続できるようになりました。
 +
 各コネクタについての詳細は、​xref:ms_composer_reference.adoc[製品ドキュメント]​を参照してください。
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -190,19 +190,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 9 月 27 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * NetSuite Connector で、ユーザーは内部 ID を使用せずに指定カスタム値を使用して、値をカスタム選択リストにマップできるようになりました。
 
 == 2021 年 9 月 14 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * MuleSoft Composer for Salesforce で、日付項目の値を選択するための ​*[Pick from Calendar (カレンダーから選択)]*​ オプションがサポートされるようになりました。
 
 == 2021 年 9 月 9 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -220,11 +220,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 9 月 8 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Workday Connector で Workday R1.2021 バージョンがサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -240,11 +240,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 9 月 2 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Slack Connector でテキストの書式設定にマークダウンがサポートされるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -258,11 +258,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 8 月 30 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * NetSuite Connector で NetSuite Financial オブジェクトがサポートされるようになりました。この機能をサポートするために新しいレコードタイプが使用できるようになりました。
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -276,13 +276,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == 2021 年 8 月 17 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * リストが返されるフローでステップをテストする場合、そのリストの最大項目数は 5 個です。
 
 == 2021 年 8 月 11 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 以前は、フローをテストするときに、テストはエラーで停止するか手動で終了しなかった場合、5 分後に自動的に終了していました。テスト時間が 10 分間に更新されました。
 
@@ -302,25 +302,25 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 8 月 6 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Xero Connector で ​*Create or update invoice*​ アクションがサポートされるようになりました。さらに、​*[Contact persons (取引先責任者の個人)]*​ 項目が ​*Create or update contact*​ アクションでサポートされるようになりました。
 
 == 2021 年 7 月 22 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * ドラッグアンドドロップまたはモーダルを使用してコンポーザーキャンバスのカードを再編成できるようになりました。
 
 == 2021 年 7 月 15 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * *Get records*​ アクションが NetSuite Connector で使用できるようになりました。このアクションでは、指定された条件に基づいて NetSuite レコードのリストを返し、カスタム検索を有効にします。
 
 == 2021 年 7 月 19 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 新しいシステムである ServiceNow に接続できるようになりました。
 +
@@ -328,13 +328,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 7 月 15 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * *Get records*​ アクションが NetSuite Connector で使用できるようになりました。このアクションでは、指定された条件に基づいて NetSuite レコードのリストを返し、カスタム検索を有効にします。
 
 == 2021 年 7 月 8 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 新しいシステムである Xero に接続できるようになりました。
 +
@@ -348,7 +348,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 6 月 4 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 新しいシステムである Microsoft Teams に接続できるようになりました。
 +
@@ -356,7 +356,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 7 月 1 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 新しいシステムである Jira に接続できるようになりました。
 +
@@ -366,7 +366,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 6 月 4 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 新しいシステムである Microsoft Teams に接続できるようになりました。
 +
@@ -374,7 +374,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 6 月 2 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 次のシステム、Asana と Twilio に接続できるようになりました。
 +
@@ -382,7 +382,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 5 月 19 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 新しいシステムである Stripe に接続できるようになりました。
 +
@@ -390,13 +390,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 5 月 6 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 *[Expand all (すべて展開)]*​ または ​*[Collapse all (すべて折りたたむ)]*​ ボタンを使用して、キャンバスですべてのカードを展開したりすべてのカードを折りたたんだりできるようになりました。
 
 == 2021 年 4 月 13 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 次のシステム、Slack と NetSuite に接続できるようになりました。
 
@@ -406,7 +406,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == 2021 年 3 月 25 日
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 アクティブ化されていないフローでは、トリガーステップを削除して置き換えることができます。
 

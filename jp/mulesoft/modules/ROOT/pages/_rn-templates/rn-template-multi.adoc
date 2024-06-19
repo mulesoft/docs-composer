@@ -6,9 +6,9 @@
 
 *<ReleaseDate>*​
 
-include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+3]
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+2]
 
 ////
 
@@ -21,7 +21,7 @@ Change the table entries as needed
 |===
 ////
 
-include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 ////
 Change the table entries as needed

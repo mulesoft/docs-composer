@@ -9,7 +9,7 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 == May 17, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -20,13 +20,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 21, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now view descriptions of connector actions and triggers directly under their respective names.  
 
 == March 15, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -36,7 +36,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 11, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -46,7 +46,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 28, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -57,13 +57,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 26, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * A beta feature is now available to enhance automation and integration which allows you to publish your activated Composer Flows to a trusted Salesforce organization.  
  
 == January 9, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * For triggers in the following connectors, the *Polling Frequency* field is now required: 
 
@@ -75,7 +75,7 @@ This field enables you to select how often Composer makes a request to the under
 
 == December 14, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * For triggers in the following connectors, the *Polling Frequency* field is now required: 
 
@@ -94,7 +94,7 @@ This field enables you to select how often Composer makes a request to the under
 
 == December 6, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * For triggers in the following connectors, the *Polling Frequency* field is now required: 
 
@@ -112,43 +112,43 @@ This field enables you to select how often Composer makes a request to the under
 
 == December 1, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * For triggers in QuickBooks Online Connector and Stripe Connector, the *Polling Frequency* field is now required. This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
 
 == November 20, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * A new page, *Connections*, is available in the navigation pane. Using this page, you can easily view connections, see which flows currently use each connection, delete connections, and edit the names of connections. 
 
 == November 15, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Salesforce Connector now supports Salesforce API v59.0.
 
 == November 14, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * For triggers in Salesforce Connector, the *Polling Frequency* field is now required. This field enables you to select how often Composer makes a request to the underling system API to look for changes to records in active flows.
 
 == November 13, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now search for templates (by template name, connector name, or template description) and filter templates (by use case category or connector).
 
 == October 31, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When selecting outputs for an Invocable Flow, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your List variable using dynamic or static list mappings.
 
 == October 19, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When defining a variable, the `List<Primitive>` and `List<Object>` data types are now available. Additionally, you can append or prepend items to your `List` variable using dynamic or static list mappings. 
 
@@ -158,7 +158,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == October 13, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -168,7 +168,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 5, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -178,14 +178,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 4, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Using typeahead, you can now create a list of primitive data types statically by using [ ] in the *Custom Expression Editor*, for example, [\name1@gmail.com, \name2@gmail.com].
 * You can now use a statically-built list as an input parameter in the `joinBy` function.
 
 == October 3, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -195,7 +195,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == September 21, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Picklist Mapping is now enabled for all string fields. Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This enables you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
 
@@ -203,7 +203,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == August 25, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -213,7 +213,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 17, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -223,7 +223,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 16, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -233,7 +233,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 7, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In the *Custom Expression Editor*, you can now update any `List<Primitive>` (for example, `List<String>` or `List<Number>`) and manually build a list using commas and the typeahead feature. You cannot build the list in-line; however, you can select an existing `List` data pill of that data type to build your list. 
 
@@ -243,19 +243,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == July 31, 2023 
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now invoke a Composer flow from external systems, such as Flow Builder, Flow Orchestration, another Composer flow, an Apex callout, or a cURL command. This feature enables deeper interoperability and integrated capabilities across Salesforce. For more information, refer to xref:ms_composer_invocable_flows.adoc[Invoke a Composer Flow].
 
 == July 27, 2023 
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * To enhance connectivity, you can now use OAuth 2.0 Client Credentials to create a connection in Composer to MuleSoft RPA Connector. 
 
 == July 14, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Stripe Connector, the *On New Refund* trigger now outputs the following fields:
 
@@ -265,7 +265,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == July 12, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -275,19 +275,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == July 10, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * To improve discoverability, you can now refresh the value providers and other fields in a step within your flow by clicking the refresh button on the step header. This button appears when you hover above the refresh button for the step.
 
 == July 3, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following enhancements appear on the *Flow Details* page: 
 ** The *Last Triggered* field now appears in the heading of the *Flow Details* page. This field displays the last time that a flow was triggered. Refreshing the *Flow Details* page also refreshes the value in the *Last Triggered* field. 
 ** The *Reference ID* field now appears in the *Run History* section. For Event triggers, the value in this field is the corresponding *Record ID*. For events triggered by the Scheduler, a unique *Execution ID* value is created for the run instance. 
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -297,7 +297,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == June 28, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -307,13 +307,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == June 27, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now define a variable as temporary storage in your flow and use it as a data pill. Defining a variable enables you to complete certain use cases like aggregating calculations and storing values. You define variables locally within a flow and use them anywhere within that flow. 
 
 == June 26, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -323,7 +323,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == June 21, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -333,19 +333,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == June 20, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *Custom Expression Editor* now supports typeahead. You can now type math operators in the *Custom Expression Editor* and select them using the Enter key, Tab key, or mouse with typeahead. You no longer need to toggle the operator tab and manually select the math operator from the list.
 
 == June 15, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The Error Handler is now generally available. You can use this feature to watch for errors in connection or logic in specific steps of your flow and then designate logic to handle the errors that may occur.
 
 == June 13, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -355,7 +355,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == June 8, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -365,7 +365,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == June 6, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -375,7 +375,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == June 3, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -385,13 +385,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 31, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: SAP S/4HANA Cloud. 
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -402,13 +402,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 25, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When adding a trigger or an action, you can now use the new search bar in the *System Action* and *System Event* windows to enter the specific name of a connector or shared API to use in your flow.
 
 == May 24, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -418,7 +418,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 17, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -428,7 +428,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 12, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -438,7 +438,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 9, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -448,13 +448,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 8, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * A new option, *Only the first record*, is now enabled for the *Get records* action in Salesforce and NetSuite Connectors. Using this option, you can return a single record by using a unique identifier in your search criteria. When selected, the *Get records* action searches for all records that meet the selected criteria and returns the first record in the list that meets the criteria. 
 
 == May 5, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -464,13 +464,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 3, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * An optional new field, *Organization Site URL*, appears when creating a connection for Jira Connector. The *Organization Site URL* field enables you to enter the URL of the Jira organization containing the sandbox or production environment to which you want to connect.
 
 == April 25, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -481,7 +481,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 20, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -493,19 +493,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 17, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The Error Handler (Beta) is now available. You can use this feature to watch for errors in connection or logic in specific steps of your flow and then designate logic to handle the errors that may occur.
 
 == April 12, 2023 
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *Custom Expression Editor* now supports the following `string` functions:
 ** `emptyString`
 ** `substring`
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -515,7 +515,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 11, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -525,7 +525,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 4, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -535,7 +535,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 3, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following actions are now available for Slack Connector:
 ** *Add users to channel*
@@ -544,19 +544,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == March 28, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * If a connector update or bug fix may cause interruptions to your flows, you now receive an email describing these updates and outlining which flows you should stop and reactivate to avoid flow failures.
 
 == March 24, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In NetSuite Connector, the log on time metadata is now registered to each record. 
 
 * In NetSuite Connector, the metadata for the *File* object is now available for the *Create Actions* record. 
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -570,7 +570,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 23, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Previously, boolean fields that supported expressions rendered as either text fields or as picklists. All boolean fields that support expressions now render as a hybrid field that supports both text fields and picklists. Additionally, if you manually enter `true` or `false` into a text field, the field automatically selects the corresponding dropdown value regardless of letter case. 
 
@@ -578,7 +578,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == March 22, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: Google BigQuery. 
 +
@@ -586,19 +586,19 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == March 13, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now import a flow as a JSON file by clicking the wrench icon and selecting *Import*. The import flows feature is in open beta.
 
 == March 9, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Salesforce Connector, the *Run History* page now displays detailed error log information to enable effective troubleshooting. Error logs now include the date and time on which the error occurred, an explanation of the error, and the location within the flow where the error occurred. 
 
 == March 2, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -608,13 +608,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 27, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * If a Composer connector supports a default value for a field, that value now appears and is selected in the Composer UI; however, the user can choose to override the default value.
 
 == February 21, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *Composer Administrator* permission set is now available. After the installation of Composer, the system administrator can assign the following permissions to users: 
 ** The *Composer Administrator* has access to the *Settings* page and can manage email preferences and API Sharing.
@@ -622,7 +622,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The *Settings* page is now available for those with the *Composer Administrator* permission set. On this page, you can view and edit email notification settings.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -632,12 +632,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 17, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Gmail Connector, the *On New Email* trigger and the *Send email* action now support attachments.
 * The *Get Attachments* action is now available for Gmail Connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -647,7 +647,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 15, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -657,7 +657,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 13, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -667,7 +667,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 8, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -677,7 +677,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 7, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -687,7 +687,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 6, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: Sage Intacct. 
 +
@@ -695,7 +695,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == February 3, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following enhancements have been made for Microsoft Dynamics 365 Business Central Connector:
 ** The *Create Sales Order* action now enables users to create a list of sales order lines within the sales order object.
@@ -706,7 +706,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == February 1, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -717,7 +717,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == January 30, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Quickbooks Online Connector now supports custom fields for actions and triggers.
 
@@ -732,7 +732,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == January 26, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -743,7 +743,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == January 20, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following record types are now available for NetSuite Connector:
 ** BILLING_SCHEDULE
@@ -761,13 +761,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == January 16, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Snowflake Connector, the *Select Rows* action now includes enhanced sample data resolution.
 
 == January 13, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 
 * The following record types are now available for NetSuite Connector:
@@ -775,7 +775,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** ITEM_GROUP
 ** KIT_ITEM
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -787,19 +787,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == January 12, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * HTTP Connector now supports the following pagination type for fields: *Offset*.
 
 == January 11, 2023
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * ServiceNow Connector now supports the Tokyo release.
 
 == December 23, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -809,7 +809,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 15, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *On New Message* trigger is once again available for Slack Connector. The following enhancements have been made to the trigger:
 
@@ -822,17 +822,17 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == December 14, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * If you attempt to use a data pill in a scope where the value could be null or empty, a message alerting the user now appears.
 
 == December 13, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Salesforce Connector, Composer logging now includes enhanced error codes and messages when the API returns `ApiFault` errors.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -850,7 +850,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 12, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -861,7 +861,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 7, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -871,7 +871,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == November 29, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In HTTP Connector, the OAuth 2.0 Authorization Code Grant connection provider now supports the ability to set custom request headers for *Token Exchange*, *Token Refresh*, and *Token Revoke*.
 +
@@ -879,18 +879,18 @@ Some systems, such as Fortnox and QuickBooks, require sending credentials as req
 
 == November 21, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * All users now have permission to view and manage all flows within your organizations.
 
 
 == November 17, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When an error occurs, the *Run History* page now provides the step name, step number, connector type, and the error message to enable you to troubleshoot issues within your flow.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -900,7 +900,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == November 8, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to two new systems: Marketo and Snowflake. +
 
@@ -908,7 +908,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == November 3, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following record types are now available for NetSuite Connector:
 ** DEPARTMENT
@@ -918,7 +918,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In HTTP Connector, connectivity tests for the OAuth2 Authorization Code Connection Provider are now enabled.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -930,7 +930,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == November 1, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -940,7 +940,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 31, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now create new flows from templates. This release includes support for the following templates:
 ** Create Or Update Jira Issue for Associated Change Request in Salesforce
@@ -985,7 +985,7 @@ Templates are patterns that you can leverage to build a flow. All of the steps a
 ** *Issue updated with Custom Fields* has been renamed to *Issue with Custom Fields was updated or created*
 ** *Issue updated with Standard Fields only* was renamed to *Issue with Standard Fields only was updated or created*
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -996,7 +996,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 27, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now add custom logic, such as `and`, `or`, or `not`, in conditional statements when building an action and in If/Else statements.
 
@@ -1008,7 +1008,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == October 26, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following new triggers are now available for HubSpot Connector:
 
@@ -1019,7 +1019,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * In Stripe Connector, the *Find Customer* action now supports dynamic metadata.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -1029,7 +1029,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 20, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Workday Connector, in the *On New or Updated Records* trigger and the *Get Worker Details ID* action, the following fields, which enable array values of complex objects from Workday APIs, are now available for the *WORKER* object:
 
@@ -1040,7 +1040,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == October 17, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -1050,13 +1050,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 13, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now export a flow as a JSON file to share your flow with Support for troubleshooting purposes by clicking the wrench icon and selecting *Export*.
 
 == October 12, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When looping over a selected list of strings in a for each loop, you can now use a single string value across multiple cards in the loop.
 * The following record types are now available for NetSuite Connector:
@@ -1066,13 +1066,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == October 10, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In RPA Connector, the JSON Sanitizer has been implemented to prevent JSON injection.
 
 == October 7, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -1082,7 +1082,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 6, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -1094,17 +1094,17 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == September 29, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The OAuth 2.0 Authorization Code grant for authentication in HTTP Connector now supports customizing the *Authorization Header Name*, *Authorization Header Value Prefix*, and *Authorization Header Custom Value Prefix* fields for the Authorization Header.
 
 == September 9, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * HTTP Connector now supports the OAuth 2.0 Authorization Code grant for authentication.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -1114,12 +1114,12 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == September 6, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now transfer binary files as field inputs using data pills from within your Composer flow. For example, when keeping files in sync between Box instances, you can download binary file content from one instance and later upload that same file content to another instance.
 * The `jackson.databind` library is upgraded to version 2.13.4 to address reported security vulnerabilities for HTTP Connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -1132,13 +1132,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 31, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Picklist Mapping is now enabled for fields in an action that supports Pick from List. Using Picklist Mapping, you can map data from one application with the corresponding data needed by another application. This allows you to connect two applications that have different values for a similar field and to align the values in those fields across applications. You can determine how the possible values of an output field (data pill) map to the possible values of an input field. You can reuse the mapping across flows.
 
 == August 29, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect a new system: Microsoft Dynamics 365 Business Central.
 +
@@ -1149,7 +1149,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == August 19, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -1159,14 +1159,14 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 8, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following record types are now available for NetSuite Connector:
  ** SERVICE_RESALE_ITEM
  ** TIME_SHEET
  ** TIME_BILL
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1179,7 +1179,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 3, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect a new system: MuleSoft Robotic Process Automation (RPA).
 +
@@ -1187,11 +1187,11 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == August 2, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Salesforce Connector, you can now specify conditions for triggers.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1204,7 +1204,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == July 29, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *On New Message* trigger is now available for Slack Connector.
 
@@ -1214,7 +1214,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == July 28, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect a new system: HubSpot.
 +
@@ -1236,7 +1236,7 @@ Required fields can be removed only by deselecting them within the modal.
 
 == July 27, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following objects are now available for NetSuite Connector:
 ** Currency
@@ -1247,7 +1247,7 @@ Note that the objects will appear in all caps and with underscores.
 
 == July 13, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When deleting a connection, a list of active and inactive flows using the selected connection now appears. Using this list, if the connection is:
 ** Not used in any flows, you can delete the connection.
@@ -1256,19 +1256,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == June 28, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In NetSuite Connector and Salesforce Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
 
 == June 21, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Organizations that use both MuleSoft Composer and Anypoint Platform can now connect the two organizations through Access Management.
 
 == June 6, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1282,13 +1282,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 31, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In NetSuite Connector, empty field values are ignored by default. To clear empty values, you can now select the `Clear on Null Values` option.
 
 == May 20, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1301,7 +1301,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 17, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1314,7 +1314,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 11, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1329,7 +1329,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == May 5, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following objects are now available for NetSuite Connector:
 
@@ -1340,7 +1340,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 [NOTE]
 The objects will appear in all caps and with underscores.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1353,7 +1353,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 29, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following actions were added to Workday Connector to enable Workday Financial Management:
 
@@ -1361,7 +1361,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 ** *Update Object*
 ** *Get Object*
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1385,7 +1385,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 28, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect a new system: HTTP.
 +
@@ -1399,11 +1399,11 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == April 26, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When enabled, checks run every 15 minutes on running flows. If any flow fails, Composer sends an email to the owner of the flow.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1417,13 +1417,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 22, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In the Google Sheets and Slack Connectors, you can now hover over certain triggers, actions, and fields to view in-app contextual help.
 
 == April 18, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Using the *Custom Expression Editor*, you can now use formulas to transform data from one data type to another and format it accurately.
 
@@ -1438,7 +1438,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == April 12, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1452,7 +1452,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == April 4, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect a new system: Google Calendar.
 +
@@ -1461,14 +1461,14 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == March 31, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect a new system: Gmail.
 +
 
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1483,7 +1483,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 28, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The following objects are now available for NetSuite Connector:
 
@@ -1493,17 +1493,17 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == March 23, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *On New or Update Invoice* trigger and the *Get Invoices* action are now available for Xero Connector.
 
 == March 22, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now use the *Custom Expressions Editor* to build expressions and apply functions in Composer. This release supports basic math operators and basic functions such as string, date, and number.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1517,7 +1517,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 14, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1531,7 +1531,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 9, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1545,13 +1545,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 2, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *Get Organization by ID* action is now available for Zendesk Connector. This action returns an organization based on specified ID search criteria.
 
 == February 21, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1565,7 +1565,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 7, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Stripe Connector, in the *Create Product* action, the *Images* field is now available. This field enables you to add the URL of to up to eight images that are then attached to the action.
 
@@ -1576,7 +1576,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == January 27, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The Date Time picker is now available. You can either *Pick from Calendar* or *Search Data Pills* in fields with the data type `date` or `time`. The Date Time Picker uses the time zone set in your browser by default.
 
@@ -1586,7 +1586,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == January 25, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1600,7 +1600,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == January 19, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1614,7 +1614,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == January 13, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1628,13 +1628,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == January 7, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * MuleSoft Composer now supports the `list of strings` data pill. You can now type characters, dates, booleans, or numbers into a field and a list of matching strings is returned in a dropdown.
 
 == January 5, 2022
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1648,7 +1648,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 21, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1662,11 +1662,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 16, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Google Sheets Connector, when using the Create/Update Row action, you can now transfer multiple rows of data.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1683,7 +1683,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 9, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1700,7 +1700,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 2, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * NetSuite Connector now supports the *Job* record type.
 
@@ -1714,7 +1714,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * Actions in Jira Connector now support the `Comment` field.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1731,7 +1731,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == November 23, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -1746,7 +1746,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == November 5, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 MuleSoft Composer is generally available.
 

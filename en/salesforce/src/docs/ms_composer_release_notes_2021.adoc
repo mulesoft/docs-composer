@@ -8,7 +8,7 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for Mule
 
 == December 21, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -22,11 +22,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 16, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * In Google Sheets Connector, when using the Create/Update Row action, you can now transfer multiple rows of data.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -43,7 +43,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 9, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -60,7 +60,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 2, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * NetSuite Connector now supports the *Job* record type.
 
@@ -70,7 +70,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 * The NetSuite connector now supports the *Assembly Item* record type.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -87,7 +87,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == December 1, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Jira Connector now supports spaces in input fields for all operations.
 
@@ -95,7 +95,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == November 23, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -110,13 +110,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == November 8, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * MuleSoft Composer for Salesforce now enables you to repair a lost OAuth connection by issuing refresh tokens that do not require you to reconnect.
 
 == November 4, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -130,7 +130,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == October 28, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * On the *Composer Flows* page, if a flow fails to execute, a detailed error message now appears to help you troubleshoot the issue.
 
@@ -141,26 +141,26 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == October 27, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Restrictions for mapping a list of objects have been lifted in the connectors. You can now map any top-level field, not just fields coming from the list of objects you've selected.
 
 == October 21, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now create and edit your custom expressions in actions with the *Custom Expression Editor* window that appears when selecting 'fx' from the menu.
 
 == October 20, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Stripe Connector now supports a new action, *Create Product*, and a new trigger, *New Refund*.
 
 
 == October 14, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect a new system: QuickBooks Online.
 +
@@ -170,13 +170,13 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == October 7, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: Zendesk.
 +
 See xref:ms_composer_reference.adoc[the product documentation] for details about each connector.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -190,19 +190,19 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == September 27, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * NetSuite Connector now allows users to map values to custom picklists, using the named custom value, without the use of internal IDs.
 
 == September 14, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * MuleSoft Composer for Salesforce now supports the *Pick from Calendar* option for selecting values in date fields.
 
 == September 9, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -220,11 +220,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == September 8, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Workday Connector now supports the Workday R1.2021 version.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -240,11 +240,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == September 2, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Slack Connector now supports markdown for text formatting.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -258,11 +258,11 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 30, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * NetSuite Connector now supports NetSuite Financial objects. To support this feature, new record types are now available.
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 
@@ -276,13 +276,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == August 17, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * When testing a step in a flow in which a list is returned, the maximum number of items in that list is five.
 
 == August 11, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Previously, when testing a flow, testing automatically ended after five minutes if not halted by an error or manually terminated. The test duration has been updated to ten minutes.
 
@@ -302,25 +302,25 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
 
 == August 6, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * Xero Connector now supports the *Create or update invoice* action. Additionally, the *Contact persons* field is now supported in the *Create or update contact* action.
 
 == July 22, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now use drag-and-drop or a modal to rearrange cards on the Composer canvas.
 
 == July 15, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *Get records* action is now available for NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
 == July 19, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: ServiceNow.
 +
@@ -328,13 +328,13 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == July 15, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * The *Get records* action is now available for NetSuite Connector. This action returns a list of NetSuite records based on specified criteria and enables custom search.
 
 == July 8, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: Xero.
 +
@@ -348,7 +348,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == June 4, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: Microsoft Teams.
 +
@@ -356,7 +356,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == July 1, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: Jira.
 +
@@ -366,7 +366,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == June 4, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to a new system: Microsoft Teams.
 +
@@ -374,7 +374,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == June 2, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now connect to the following systems: Asana and Twilio.
 +
@@ -382,7 +382,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == May 19, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 You can now connect to a new system: Stripe.
 +
@@ -390,13 +390,13 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == May 6, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 You can now expand all cards or collapse all cards on the canvas using the *Expand all* or the *Collapse all* button.
 
 == April 13, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 You can now connect to the following systems: Slack and NetSuite.
 
@@ -406,7 +406,7 @@ See xref:ms_composer_reference.adoc[the product documentation] for details about
 
 == March 25, 2021
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 You can delete and replace a trigger step in any unactivated flow.
 

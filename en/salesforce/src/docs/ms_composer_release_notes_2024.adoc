@@ -8,7 +8,7 @@ See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for Mule
 
 == May 17, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -19,13 +19,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 21, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now view descriptions of connector actions and triggers directly under their respective names.  
 
 == March 15, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -35,7 +35,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == March 11, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -45,7 +45,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == February 28, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -55,7 +55,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+3
 
 == January 9, 2024
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+3]
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * For triggers in the following connectors, the *Polling Frequency* field is now required: 
 

@@ -128,7 +128,7 @@ If you previously selected *All records* and then changed your selection to *Onl
 
 == Record Types
 
-Note that when selecting a record type, the `Netsuite: Retrieving metadata for the step failed` error sometimes occurs. For more information, see the https://issues.salesforce.com/issue/a028c00000zHtne/mulesoft-composer-fails-with-netsuite-retrieving-metadata-for-the-step-failed-after-3-minute-wait[knowledge article].
+When selecting a record type, if there is a large amount of metadata, the metadata resolver cannot parse the data within the three-minute limit required by Composer and the `Netsuite: Retrieving metadata for the step failed` error sometimes occurs. For more information, see the https://issues.salesforce.com/issue/a028c00000zHtne/mulesoft-composer-fails-with-netsuite-retrieving-metadata-for-the-step-failed-after-3-minute-wait[knowledge article].
 
 The following record types are supported:
 

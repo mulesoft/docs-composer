@@ -128,7 +128,7 @@ If you previously selected *All records* and then changed your selection to *Onl
 
 == Record Types
 
-The following record types are supported.
+The following record types are supported:
 
 [%header%autowidth.spread]
 |===

@@ -2,6 +2,21 @@
 
 The following list displays known issues and limitations for MuleSoft Composer. The list is sorted by the date in which the known issue or limitation appeared.
 
+== May 7, 2024
+
+=== NetSuite 
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|When selecting a record type, if there is a large amount of metadata, the metadata resolver cannot parse the data within the three-minute time limit required by Composer and the `Netsuite: Retrieving metadata for the step failed` error sometimes occurs. 
+|For more information, see the https://issues.salesforce.com/issue/a028c00000zHtne/mulesoft-composer-fails-with-netsuite-retrieving-metadata-for-the-step-failed-after-3-minute-wait[knowledge article].
+|W-15586159  
+|===
+
 == October 31, 2023
 
 === Composer Platform 

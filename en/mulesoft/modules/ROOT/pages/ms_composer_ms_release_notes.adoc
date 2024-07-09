@@ -7,6 +7,16 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
+== July 9, 2024
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Workday Connector, testing a flow that has an error handler containing a Workday connection no longer gets stuck in the processing status and incorrectly fails with the `Test failed because of external errors. Please try again.` error.| W-15239656
+|===
+
 == May 17, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]

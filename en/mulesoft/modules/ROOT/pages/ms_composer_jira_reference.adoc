@@ -146,6 +146,7 @@ Custom fields containing the following list components are not currently support
 * Radio buttons
 * Select lists (multiple-choice)
 * Select lists (cascading)
+* User picker 
 
 == Standard Fields
 

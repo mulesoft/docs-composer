@@ -10,11 +10,11 @@ xref:ms_composer_test_flow.adoc[Test] each trigger and action as you add it to y
 Access the *Flow Details* page to see details about your flow:
 
 ifeval::["{product}"=="salesforce"]
-image::images/flow-details-sf.png[*Flow Details* page]
+image::images/flow-details-sf.png["The Flow Details page in MuleSoft Composer for Salesforce"]
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-image::images/flow-details-ms.png[*Flow Details* page]
+image::images/flow-details-ms.png["The Flow Details page in MuleSoft Composer"]
 endif::[]
 
 [calloutlist]

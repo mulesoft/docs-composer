@@ -54,7 +54,7 @@ To change a connection:
 . Open the flow.
 . Click the change icon in the trigger or every action that connects to a sandbox:
 +
-image::images/change-connection.png[Change the connection control, 500]
+image::images/change-connection.png["A button that says Change the Connection", 500]
 . Choose a new connection and save your changes.
 
 === Salesforce Sandbox and Production Orgs
@@ -133,7 +133,7 @@ Get records::
 
 Return all the records that match specified criteria:
 +
-image::images/get-records-salesforce.png[Query builder UI, 500]
+image::images/get-records-salesforce.png["Get Records example action configuration for Salesforce Connector", 500]
 +
 * You can choose which fields the action fetches in the *Result fields* section.
 * You can add one or more conditions to specify which types of records should be returned in the *Criteria* section. For example, you could specify that the last name begin with "B."

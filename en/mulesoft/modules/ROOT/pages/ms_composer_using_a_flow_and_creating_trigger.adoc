@@ -137,7 +137,7 @@ To refresh a object:
 . Open the flow.
 . Click the refresh icon in the upper right corner of the trigger or action card that you want to refresh.
 +
-image:images/composer_refresh_card.png[Refreshing an object]
+image:images/composer_refresh_card.png["Refresh button for objects"]
 The cache for the object type is cleared and the new data is retrieved.
 
 To refresh a field:
@@ -145,7 +145,7 @@ To refresh a field:
 . Open the flow.
 . Click the refresh icon in the bottom left corner of the trigger or action card.
 +
-image:images/composer_refresh_field.png[Refreshing a field]
+image:images/composer_refresh_field.png["Refresh button for fields"]
 The cache for the field is cleared. The new value providers for the field are retrieved.
 
 == Create a Flow Trigger
@@ -165,7 +165,7 @@ You can rename or delete connections from this dialog by clicking the gear icon.
 
 . After you choose a connection, the trigger step displays:
 +
-image:images/trigger-definition.png[Trigger step, 600]
+image:images/trigger-definition.png["Trigger definition step", 600]
 +
 Your trigger is named automatically. All triggers are named by combining the event or operation with the system name. For example, "On new record in Salesforce".
 

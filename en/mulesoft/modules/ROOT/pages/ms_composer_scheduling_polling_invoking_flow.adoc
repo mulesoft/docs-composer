@@ -18,7 +18,7 @@ To create a flow control:
 . In a new flow, from the *What Should Start This Flow?* dialog, look in the Flow Control section and click *Scheduler*.
 . Choose one of the time intervals, from 15 minutes to 30 days.
 +
-image::images/connection-scheduler.png[New trigger with time interval, 500]
+image::images/connection-scheduler.png["A dropdown menu with a list of time intervals, including 15 minutes, 30 minutes, 45 minutes, 1 hour, 5 hours, and 1 day", 500]
 . Click *Save*. +
 After creating the trigger, add one or more actions to the flow. To apply logic to an action, prepend it with an xref:ms_composer_using_actions_in_a_flow.adoc#create-an-if-else-block[If/Else block] or xref:ms_composer_using_actions_in_a_flow.adoc#create-and-test-a-for-each-loop[For Each loop].
 

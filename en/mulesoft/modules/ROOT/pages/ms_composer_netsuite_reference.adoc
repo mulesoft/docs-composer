@@ -118,7 +118,7 @@ Get Records::
 Returns a list of up to 500 records based on specified search criteria:
 
 +
-image::images/get-records-netsuite.png[Query builder UI, 500]
+image::images/get-records-netsuite.png["Get Records example action configuration for NetSuite Connector", 500]
 +
 * You can choose which fields the action fetches in the *Result fields* section.
 * You can add one or more conditions to specify which types of records should be returned in the *Criteria* section. For example, you could specify that the last name begin with "B."

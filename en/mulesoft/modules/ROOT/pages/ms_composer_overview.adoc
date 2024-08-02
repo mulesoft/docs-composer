@@ -31,7 +31,7 @@ You choose when to trigger the flow: when something happens, like a change to a 
 
 Imagine that a regional Slack user-group tracks its local members in a spreadsheet. Slack users register with the national organization first. Since the national office uses Salesforce to track membership, automatically pushing new members to the regional sheet would save everyone a lot of time. Using Composer, the Salesforce admin can create a single flow that automatically performs this task in near real-time.
 
-image::images/overview1.png[Keeping data in sync between data silos, 600]
+image::images/overview1.png["A workflow that describes keeping user information up to date between data silos", 600]
 
 This simple flow can be expanded to perform more complex actions, such as writing to different sheets based on
 the zip code of the new user or propagating changes for existing users.
@@ -109,7 +109,7 @@ ifeval::["{product}"=="salesforce"]
 
 Access the home page to start using Composer for your business needs:
 
-image::images/overview-page-sf.png[Mulesoft Composer Home]
+image::images/overview-page-sf.png["Mulesoft Composer for Salesforce Home page"]
 
 [calloutlist]
 . *Home*: View the Composer home page.
@@ -124,7 +124,7 @@ ifeval::["{product}"=="mulesoft"]
 
 Access the home page to start using Composer for your business needs:
 
-image::images/overview-page-ms.png[Mulesoft Composer Home]
+image::images/overview-page-ms.png["Mulesoft Composer Home page"]
 
 [calloutlist]
 . *Overview*: View the Composer home page.

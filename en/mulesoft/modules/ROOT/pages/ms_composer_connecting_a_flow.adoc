@@ -31,7 +31,7 @@ To change a connection:
 . Open the flow.
 . Click the change icon in the trigger or action that connects to a sandbox:
 +
-image::images/change-connection.png[Change the connection control, 400]
+image::images/change-connection.png["A button that says Change the Connection", 400]
 
 . Change the connection to an existing connection or to a new connection.  
 +

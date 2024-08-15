@@ -640,7 +640,7 @@ The following fields are applicable for HTTP Connector:
 
 If you specify a *POST*, *PUT*, *PATCH*, or *DELETE* method and you add a request body, you must add the *Content-Type: application/json* header. Check the connected API for the desired field name for the *Content-Type: application/json* header since some APIs require different names for this header.
 
-If the header is *Content-Type: application/json*, then the minimum valid JSON ({}, [], "") is required as part of the request body.
+If the header is *Content-Type: application/json*, then the minimum valid JSON ({}, "") is required as part of the request body. Note that [] is not supported at the root of the request body.
 
 |*Query Parameters* |Object |Query parameters to include in the request. If you add query parameters, you must provide values for the *Key* and *Value* fields.
 

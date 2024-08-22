@@ -15,8 +15,8 @@ If you don't choose a connection, you can schedule a flow to start at regular in
 
 To create a flow control:
 
-. In a new flow, from the *What Should Start This Flow?* dialog, look in the Flow Control section and click *Scheduler*.
-. Choose one of the time intervals, from 15 minutes to 30 days.
+. In a new flow, from the *What Should Start This Flow?* dialog, look in the Flow Control section and click *Scheduler*. 
+. Choose one of the time intervals, from 15 minutes to 30 days. If you select an interval that is a day or more, the scheduler runs once per day interval; however, it may not run at the same time each day. 
 +
 image::images/connection-scheduler.png["A dropdown menu with a list of time intervals, including 15 minutes, 30 minutes, 45 minutes, 1 hour, 5 hours, and 1 day", 500]
 . Click *Save*. +

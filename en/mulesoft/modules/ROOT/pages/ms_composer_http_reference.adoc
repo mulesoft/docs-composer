@@ -644,9 +644,9 @@ If the header is *Content-Type: application/json*, then the minimum valid JSON (
 
 |*Query Parameters* |Object |Query parameters to include in the request. If you add query parameters, you must provide values for the *Key* and *Value* fields.
 
-|*Example Request* |String |An example request in JSON format. If you provide a value for this field, Composer parses the example to deduce its fields. The fields are then available for entering data to configure the request operation.
+|*Example Request* |String |An example request in JSON format. If you provide a value for this field, Composer parses the example to deduce its fields. The fields are then available for entering data to configure the request operation. To view the fields Composer deduced from the example, click *Select Additional Fields*. The example JSON value provided in this field _must_ be different than the value provided in the *Example Response* field.
 
-|*Example Response* |String |An example response in JSON format. If you provide a value for this field, Composer parses the example JSON payload and provides data pills that match the JSON fields.
+|*Example Response* |String |An example response in JSON format. If you provide a value for this field, Composer parses the example JSON payload and provides data pills that match the JSON fields. To view the fields Composer deduced from the example, click *Select Additional Fields*. The example JSON value provided in this field _must_ be different than the value provided in the *Example Request* field. 
 
 |*Array Path* |String |The path to the JSON array. The value from the *Array Path* field is selected by default, but a different value can be selected from the dropdown. This value only appears if the value in the *Action* field is set to *Paginated Request*.
 

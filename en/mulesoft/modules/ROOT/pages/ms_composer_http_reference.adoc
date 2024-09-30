@@ -557,7 +557,7 @@ a|
 * *Key*: `Xero-Tenant-Id`
 * *Value*: `4268faf8-82a2-44e2-8ea2-4ec8f6ea3a26`
 
-a| For more information, see the the following:
+a| For more information, see the following:
 
 * https://api-explorer.xero.com/accounting/users/getusers[Xero login^]
 * https://developer.xero.com/documentation/guides/oauth2/auth-flow[Standard authorization code flow for Xero^]

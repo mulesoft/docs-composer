@@ -4,7 +4,7 @@ MuleSoft Composer for Salesforce を使用して、コネクテッドエクス�
 
 新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
 
-//* Fixed the issue in Workday Connector in which the the *Create Worker* action returned a value for *Applicant Reference ID* but not for *Employee Reference*.
+//* Fixed the issue in Workday Connector in which the *Create Worker* action returned a value for *Applicant Reference ID* but not for *Employee Reference*.
 //| Fixed an issue in NetSuite Connector in which creating custom fields on the *Contact* object with the type `document` did not return results. | COCN-752
 //| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.

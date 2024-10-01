@@ -96,7 +96,7 @@ This action updates an existing object in Workday Financial Management. Provide 
 
 Get Object::
 
-This action returns an existing object in Workday Financial Management. Provide a value for the the following fields:
+This action returns an existing object in Workday Financial Management. Provide a value for the following fields:
 
 * *Object*
 * *ID*

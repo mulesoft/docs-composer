@@ -33,7 +33,7 @@ flow:: An automated process that connects to a system and then performs actions 
 * *step*: A trigger, or one or more actions. Steps include the logic needed to decide whether to perform the step or skip it. A step optionally includes a connection different from the initial trigger.
 * *trigger*: The first step of every flow, a trigger is something that starts the automated process defined in a flow. A trigger is either an event such as "a new record is created," or a specified point in time. Time-based triggers are called schedulers. The first step of every flow is a trigger.
 
-if/else:: A logic option that allows you to to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
+if/else:: A logic option that allows you to set conditions and execute actions only when specific criteria are met. This enables you to create flows that cover more than one linear branch, without the need to create separate flows.
 
 logic:: The circumstances or requirements that must be met before an action is taken: if/else statements or for-each statements. Insert logic into steps as needed to ensure actions are taken only on the data that should be acted on, not on all the data returned.
 

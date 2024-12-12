@@ -10,7 +10,9 @@ Some details of how to work with data in a flow are specific to the data source 
 +
 When you connect to your Google Workspace account, a message appears indicating that the Composer is an https://support.google.com/cloud/answer/7454865?hl=en[unverified app]. This behavior is expected. To bypass this message and use the connector, on the *Google hasn’t verified this app* dialog, click *Advanced* > *Use anyway*.
 
-* Google Sheets Connector requires https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[third-party app access] to access restricted data in Google. Before using the connector, your Google Workspace administrator must add the following client ID/app ID to the list of configured apps to create OAuth connections with Composer: `250037406766-pm8dppphhfm9ugr6rtmdk1unrr48oi3h.apps.googleusercontent.com`
+* Google Sheets Connector requires https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[third-party app access] to access restricted data in Google. Before using the connector, your Google Workspace administrator must add the following client ID/app ID to the list of configured apps to create OAuth connections with Composer: 
++
+`250037406766-pm8dppphhfm9ugr6rtmdk1unrr48oi3h.apps.googleusercontent.com`
 
 == Connections
 

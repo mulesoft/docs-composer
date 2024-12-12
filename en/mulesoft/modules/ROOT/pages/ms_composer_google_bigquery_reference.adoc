@@ -8,7 +8,7 @@ Google BigQuery is a cloud data warehouse that enables customers to store and ac
 +
 When you connect to your Google Workspace account, a message appears indicating that the Composer is an https://support.google.com/cloud/answer/7454865?hl=en[unverified app]. This behavior is expected. To bypass this message and use the connector, on the *Google hasn’t verified this app* dialog, click *Advanced* > *Use anyway*.
 
-* Google BigQuery Connector requires https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[third-party app access] to access restricted data in Google. Before using the connector, your Google Workspace administrator must add the following client ID/app ID to the list of configured apps to create OAuth connections with Composer: 
+* Google BigQuery Connector requires third-party app access to access restricted data in Google. Before using the connector, your Google Workspace administrator must https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[add one of the following client IDs to the list of configured apps^] to create OAuth connections with Composer:
 +
 `292130641403-rlgmr379unk36nuvpba0sd1u3u9c6vap.apps.googleusercontent.com`
 

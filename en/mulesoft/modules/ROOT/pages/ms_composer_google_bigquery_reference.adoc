@@ -4,9 +4,13 @@ Google BigQuery is a cloud data warehouse that enables customers to store and ac
 
 == Before You Begin   
 
-To use Google BigQuery Connector, you must have a https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google Workspace] account. Connections from Composer to personal Google accounts are not permitted. 
-
+* To use Google BigQuery Connector, you must have a https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google Workspace] account. Connections from Composer to personal Google accounts are not permitted. 
++
 When you connect to your Google Workspace account, a message appears indicating that the Composer is an https://support.google.com/cloud/answer/7454865?hl=en[unverified app]. This behavior is expected. To bypass this message and use the connector, on the *Google hasn’t verified this app* dialog, click *Advanced* > *Use anyway*.
+
+* Google BigQuery Connector requires third-party app access to access restricted data in Google. Before using the connector, your Google Workspace administrator must https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[add the following client ID to the list of configured apps^] to create OAuth connections with Composer:
++
+`292130641403-rlgmr379unk36nuvpba0sd1u3u9c6vap.apps.googleusercontent.com`
 
 == Connections
 
@@ -53,6 +57,8 @@ The following data types are supported by Google BigQuery Connector:
 == Triggers
 
 include::_partials/trigger-definition.adoc[]
+
+NOTE: For the given project ID, US-based datasets are retrieved.
 
 On New Row Source::
 

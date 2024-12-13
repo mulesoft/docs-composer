@@ -4,6 +4,12 @@ Use Google Sheets as a data source (get a new Google Sheet row and send a Slack 
 or a data target (get a new Salesforce contact and turn it into a row in a Google Sheet).
 Some details of how to work with data in a flow are specific to the data source or data target, and also change depending on the specific trigger or actions you choose.
 
+== Before You Begin   
+
+Google Sheets Connector requires third-party app access to access restricted data in Google. Before using the connector, your Google Workspace administrator must https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[add the following client ID to the list of configured apps^] to create OAuth connections with Composer:
++
+`250037406766-pm8dppphhfm9ugr6rtmdk1unrr48oi3h.apps.googleusercontent.com`
+
 == Connections
 
 include::_partials/connection-definition.adoc[]

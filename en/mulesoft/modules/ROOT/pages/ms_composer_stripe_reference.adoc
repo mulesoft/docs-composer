@@ -17,7 +17,7 @@ The value in this field maps to the `Authorization` field in the specialist conn
 * Allows users to use restricted API keys for granular permissions.
 * Ensures that all API requests are made via HTTPS.
 
-https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth authentication, but Stripe does not. For more information on OAuth authentication in Stripe, see the https://www.similartech.com/compare/stripe-vs-stripe-connect[Stripe documentation].
+https://stripe.com/docs/connect/oauth-reference[Stripe Connect] supports OAuth authentication, but Stripe does not. For more information on OAuth authentication in Stripe, see the Stripe documentation.
 
 == Triggers
 

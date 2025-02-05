@@ -195,12 +195,12 @@ Create an external credential and a named credential. If your invocable Composer
 +
 To create an external credential and a named credential:
 +
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
 
-. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
+. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=platform.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 
 [[set-up-flow-builder-for-invocable-flows]]
 ==== Set Up Flow Builder for Invocable Flows 
@@ -266,9 +266,9 @@ For example, if your invocable flow returns an opportunity ID, you can use the *
 
 . Save the flow. Enter a *Flow Label* and *Flow API Name*. 
 . Click *Save*.
-. Debug the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test_debug.htm&type=5[Debug a Flow in Flow Builder].
-. Test the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_test.htm&type=5[Test a Flow]. 
-. Activate the flow as described in https://help.salesforce.com/s/articleView?id=sf.flow_distribute_activate.htm&type=5[Activate or Deactivate a Flow].  
+. Debug the flow as described in https://help.salesforce.com/s/articleView?id=platform.flow_test_debug.htm&type=5[Debug a Flow in Flow Builder].
+. Test the flow as described in https://help.salesforce.com/s/articleView?id=platform.flow_concepts_testing.htm&type=5[Test a Flow]. 
+. Activate the flow as described in https://help.salesforce.com/s/articleView?id=platform.flow_distribute_activate.htm&type=5[Activate or Deactivate a Flow].  
 
 [[invoke-a-composer-flow-from-flow-orchestration]]
 === Invoke a Composer Flow from Flow Orchestration
@@ -292,15 +292,15 @@ Create an external credential and a named credential. If your invocable Composer
 +
 To create an external credential and a named credential:
 +
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential].  
 
 +
-Note that you must add the *Automated Process* user to the *Permission Sets* assignments. For more information, refer to https://help.salesforce.com/s/articleView?id=sf.perm_sets_mass_assign.htm&type=5[Assign a Permission Set to Multiple Users]. 
+Note that you must add the *Automated Process* user to the *Permission Sets* assignments. For more information, refer to https://help.salesforce.com/s/articleView?id=platform.perm_sets_manage_assignments.htm&type=5[Assign a Permission Set to Multiple Users]. 
 
-. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
+. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=platform.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 
 [[set-up-flow-orchestration-for-invocable-flows]]
 ==== Set Up Flow Orchestration for Invocable Flows
@@ -378,12 +378,12 @@ Create an external credential and a named credential. If your invocable Composer
 +
 To create an external credential and a named credential:
 +
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
-.. https://help.salesforce.com/s/articleView?id=sf.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
-.. https://help.salesforce.com/s/articleView?id=sf.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential]. 
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_create_edit_custom_auth_ext_cred.htm&type=5[Create and edit a custom authentication external credential].
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_enable_ext_cred_principal.htm&type=5[Enable external credential principals].
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_custom_headers_basic_auth.htm&type=5[Use basic authentication with named credentials].  
+.. https://help.salesforce.com/s/articleView?id=xcloud.nc_create_edit_named_credential.htm&type=5[Create and edit a named credential].  
 
-. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=sf.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
+. Register your external service by copying the API specification from the Composer flow as described in https://help.salesforce.com/s/articleView?id=platform.external_services_register_json.htm&type=5[Paste the JSON-formatted Schema Into Your Browser]. 
 
 [[use-apex-classes-to-trigger-invocable-flows]]
 ==== Use Apex Classes to Trigger Invocable Flows
@@ -480,7 +480,7 @@ To publish a MuleSoft Composer flow to your Salesforce organization:
 . Ensure that your MuleSoft Anypoint Platform organization is connected to your Salesforce organization:  
 +
 * xref:access-management::external-organization-access.adoc[Access External Organizations in MuleSoft]
-* https://help.salesforce.com/s/articleView?language=en_US&id=sf.external_services_manage_your_mulesoft_anypoint_platform_connection.htm&type=5[Connect to MuleSoft Anypoint Platform in Salesforce]
+* https://help.salesforce.com/s/articleView?id=platform.external_services_manage_your_mulesoft_anypoint_platform_connection.htm&type=5[Connect to MuleSoft Anypoint Platform in Salesforce]
 . xref:ms_composer_activation.adoc[Activate the flow]. 
 . After activation, click the *Flow Controls* button that appears. 
 . In the *Flow Credentials* window, click *Publish* in the *Salesforce Invocable Actions* section. 
@@ -500,7 +500,7 @@ After publishing your flow from MuleSoft Composer, view your flow in Salesforce:
 . In the navigation pane, navigate to or search for *Mulesoft* > *Services*. 
 . Reopen the flow in MuleSoft Composer and, in the *Credentials* window, note the value in the *URL* field.
 . In the *Imported Mulesoft Services* section, in the *MuleSoft Service Name* column, locate and click the link that matches the value in the *URL* field from the previous step.
-. In the *Service* section, click the link in the https://help.salesforce.com/s/articleView?language=en_US&id=sf.nc_named_creds_and_ext_creds.htm&type=5[*Named Credentials*] field. 
+. In the *Service* section, click the link in the https://help.salesforce.com/s/articleView?id=xcloud.nc_named_creds_and_ext_creds.htm&type=5[*Named Credentials*] field. 
 . Click the link in the *External Credential* field. 
 +
 The flow information appears. 

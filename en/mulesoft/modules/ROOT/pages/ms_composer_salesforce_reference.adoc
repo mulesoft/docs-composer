@@ -28,7 +28,7 @@ revokes tokens from the oldest to the most recently created, without notice, unt
 
 If possible, create only one connection per user per Salesforce org to avoid this issue.
 
-For more about Salesforce connected apps and authorization, see the https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm[Salesforce documentation].
+For more about Salesforce connected apps and authorization, see the https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_request_manage.htm&type=5[Salesforce documentation].
 
 === Relaxed IP Restrictions
 
@@ -143,7 +143,7 @@ image::images/get-records-salesforce.png["Get Records example action configurati
 If you previously selected *All records* and then changed your selection to *Only the first record*, data pills in your existing flow could be invalidated.   
 
 +
-When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`. For more information on Field-Level Encryption, see the https://help.salesforce.com/s/articleView?id=sf.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce documentation].
+When *Get Records* is a step in your flow, if Field-Level Encryption is enabled and you're trying to filter on an encrypted field, only the following string operators are supported: `equals`, `not equals`, or empty. Field-Level Encryption doesn't support `contains`, `starts with`, or `ends with`. For more information on Field-Level Encryption, see the https://help.salesforce.com/s/articleView?id=mktg.mc_overview_field_level_encryption_limitiations.htm&type=5[Salesforce documentation].
 
 Create or update record::
 

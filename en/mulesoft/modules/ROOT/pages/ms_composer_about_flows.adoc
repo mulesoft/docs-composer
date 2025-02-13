@@ -3,7 +3,7 @@
 A flow defines the automated processes between two or more systems. Think of it as the schema for an entire automation process. For example, you can automate any of these actions with Composer:
 
 * Copy all new records in one Salesforce org and replicate them in another.
-* Create employee records or job requisitions in Workday, and populate some of the fields with data from another system.
+* Create employee  records or job requisitions in Workday, and populate some of the fields with data from another system.
 //* Send a Slack message every time a Google Sheet is updated.
 * Check a source of data every fifteen minutes, and if the data changed, copy those changes to a Tableau data source.
 

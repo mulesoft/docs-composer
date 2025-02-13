@@ -1,13 +1,12 @@
 = MuleSoft Automation Credits 1.0
 
-Your MuleSoft Automation subscription plan includes a quota of Automation Credits that you can use with MuleSoft Composer, MuleSoft IDP, MuleSoft RPA, or a combination of these products. As you use processes to create automations, your total credit quota is depleted.
-
+Your MuleSoft Automation subscription plan includes a quota of Automation Credits that depletes as you create and execute automations. You can use Automation Credits with MuleSoft Composer, MuleSoft IDP, MuleSoft RPA, Salesforce Flow Orchestration, MuleSoft for Flow: Integration, or a combination of these products. 
 The following table shows the conversion rate between Automation Credits and different activities:
 
-[%header%autowidth.spread,cols=".^a,.^a,.^a]
+[%header%autowidth.spread,cols=".^a,.^a,.^a,.^a,.^a]
 |===
-| RPA Bot Minutes | RPA API Calls | Composer Tasks |IDP Document Pages
-| 1 MuleSoft Automation Credit = 2 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50 | 1 MuleSoft Automation Credit = 6
+| RPA Bot Minutes | RPA API Calls | Composer Tasks | Flow Orchestration Runs | IDP Document Pages | Integration Tasks
+| 1 = 80 Automation Credits | 1 = 2 Automation Credits | 1 = 2 Automation Credits | 1 = 100 Automation Credits | 1 = 25 Automation Credits | 1 = 2 Automation Credits
 |===
 
 You can use any combination of these activities, which aggregate over the term of your subscription (not per session), and are then converted to credits as shown. Then, the credits are deducted from your assigned quota for the subscription period.

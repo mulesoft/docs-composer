@@ -9,7 +9,7 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 +
-接続を検証およびテストするために、Workday Connector は ​`Get_Degrees`​ 操作で ​`Performance_Management` サービスを使用します。そのサービスで操作を実行する権限がサービスアカウントにあることを確認してください。
+接続を検証およびテストするために、Workday Connector は ​`Get_Degrees`​ 操作で ​`Performance_Management`​ サービスを使用します。そのサービスで操作を実行する権限がサービスアカウントにあることを確認してください。
 +
 [%header%autowidth.spread]
 |===
@@ -59,7 +59,13 @@ New or updated object::
 
 このトリガーでは、Workday 財務管理で新規または更新済みオブジェクトをチェックします。次の項目では値が必須です: *Object (オブジェクト)*​。
 
+=== Polling Frequency (ポーリング頻度) 
+
+include::_partials/polling-frequency.adoc[]
+
 == アクション
+
+include::_partials/action-definition.adoc[]
 
 Get Worker Details by ID::
 
@@ -112,5 +118,9 @@ Get Object::
     ** PROJECT
     ** SALES_ITEM
     ** WORKER
+
+== カスタム項目 
+
+カスタム項目はサポートされていません。MuleSoft Composer を使用して、Workday レコードで設定したアクションとトリガーのカスタム項目値にアクセスできます。
 
 include::_partials/see-also.adoc[]

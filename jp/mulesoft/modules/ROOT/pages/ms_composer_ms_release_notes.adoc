@@ -1,11 +1,107 @@
 = MuleSoft Composer リリースノート
-:page-revdate: 2023 年 12 月 6 日
+:page-revdate: 2024/03/21
+
 
 MuleSoft Composer を使用すると、コネクテッドエクスペリエンスをすばやく構築できます。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
 
 新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
 
 日付別の既知の問題と制限事項のリストは、​xref:ms_composer_ms_release_notes_ki.adoc[「MuleSoft Composer の既知の問題と制限事項」]​を参照してください。
+
+== 2024/07/09
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Workday Connector で、Workday 接続が含まれるエラーハンドラーのあるフローをテストしても、[processing (処理中)] 状況のままになって、「​`Test failed because of external errors. Please try again. (外部エラーのためテストに失敗しました。もう一度お試しください。)`​」というエラーで誤って失敗したりすることがなくなりました。| W-15239656
+|===
+
+== 2024/05/17
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で在庫レコードのカスタム値の取得に失敗しなくなりました。| W-15138793
+|NetSuite Connector の ​*[Get Records (レコードの取得)]*​ アクションで、複数の選択リストが含まれる項目の値の​`内部 ID`​ が返されるようになりました。 | W-15194262 
+|===
+
+== 2024/03/21
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* コネクタアクションとトリガーの説明がそれぞれの名前の直下に表示されるようになりました。  
+
+== 2024/03/15
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|アクセストークンが期限切れになった後に、Salesforce Marketing Cloud Connector でアクセストークンが適切に更新されるようになりました。| W-14979479
+|===
+
+== 2024/03/11
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、意図したとおりにコンポーザーの新しい接続を作成できるようになりました。| W-15070963
+|===
+
+== 2024/02/28
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Microsoft Dynamics 365 Business Central Connector で、接続の作成時に ​`[Invalid Connection (無効な接続)]`​ エラーで誤って失敗しなくなりました。| W-14824218
+|===
+
+
+== 2024/02/26
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* ベータ機能を使用して、自動化とインテグレーションを強化できるようになりました。これにより、アクティブ化されたコンポーザーフローを信頼できる Salesforce 組織にパブリッシュできます。  
+
+== 2024/01/09
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* 次のコネクタのトリガーで ​*[Polling Frequency (ポーリング頻度)]*​ 項目が必須になりました。 
+
+** Microsoft Dynamics 365 Business Central  
+** Workday 
+** Xero
++ 
+この項目により、アクティブなフローのレコードの変更を検索するためにコンポーザーが基盤となるシステム API に対して要求を実行する頻度を選択できます。
+
+== 2023/12/14
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* 次のコネクタのトリガーで ​*[Polling Frequency (ポーリング頻度)]*​ 項目が必須になりました。 
+
+** MuleSoft RPA  
+** Sage Intacct 
+** SAP S/4HANA Cloud
+** ServiceNow
+** Slack
+** Snowflake
+** Zendesk
++ 
+この項目により、アクティブなフローのレコードの変更を検索するためにコンポーザーが基盤となるシステム API に対して要求を実行する頻度を選択できます。
+
+* コンポーザーのシングルテナントの Anypoint Platform 組織で API 共有を使用できるようになりました。API 共有は、同じ Anypoint 組織の Exchange API アセットに制限されます。これにより、コンポーザーは接続をより多くのシステムに拡張したり、API 管理とガバナンスの両方をより詳細に制御したり、Anypoint Platform に組み込まれた複雑な API をコンシュームしたりできます。
+
 
 == 2023/12/06
 
@@ -265,7 +361,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 [%header%autowidth.spread]
 |===
 |問題の解決 |ID
-|Salesforce Connector で、条件の値にアポストロフィが含まれていても ​*[Get records (レコードを取得)]*​ アクションでエラーがスローされなくなりました。|W-13192901
+|Salesforce Connector で、条件の値にアポストロフィーが含まれていても ​*[Get records (レコードを取得)]*​ アクションでエラーがスローされなくなりました。|W-13192901
 |===
 
 == 2023/06/08
@@ -319,7 +415,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 
 include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* トリガーまたはアクションを追加するときに、​*[System Action (システムアクション)]*​ウィンドウと ​*[System Event (システムイベント)]*​ ウィンドウの新しい検索バーを使用して、フローで使用するコネクタまたは共有 API の特定の名前を入力できるようになりました。
+* トリガーまたはアクションを追加するときに、​*[System Action (システムアクション)]*​ ウィンドウと ​*[System Event (システムイベント)]*​ ウィンドウの新しい検索バーを使用して、フローで使用するコネクタまたは共有 API の特定の名前を入力できるようになりました。
 
 == 2023/05/24
 
@@ -757,7 +853,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 |ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、componentorg.apache.commons ライブラリがバージョン 1.10.0 にアップグレードされました。| W-11913979
 |ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、org.springframework ライブラリがバージョン 5.3.20 にアップグレードされました。 | W-12150392
 |Salesforce Connector で、トリガーと ​*Get records*​ アクションでブールパラメーターの ​`isTrue`​ および ​`isFalse`​ 演算子がサポートされるようになりました。 | W-11752116
-|Salesforce Connector で、​*Delete record*​ アクションは ​`Retrieving metadata for the step failed. Try saving and refreshing the page.`​ (ステップのメタデータの取得に失敗しました。ページを保存して更新してみてください) エラーを誤ってスローしなくなりました。 | W-12211471
+|Salesforce Connector で、​*Delete record*​ アクションが「​`Retrieving metadata for the step failed. Try saving and refreshing the page. (ステップのメタデータの取得に失敗しました。ページを保存して更新してみてください)`​」というエラーを誤ってスローすることはなくなりました。 | W-12211471
 |Salesforce Connector で、ウォーターマークが適切に使用されていない場合に、トリガーでデータが失われる可能性がなくなりました。 | W-12128874
 |Jira Connector で、報告されたセキュリティの脆弱性に対処するために、com.fasterxml.jackson.core ライブラリがバージョン 2.14.1 にアップグレードされました。 |W-11933499
 |Jira Connector で、報告されたセキュリティの脆弱性に対処するために、org.apache.commons-text ライブラリがバージョン 1.10.0 にアップグレードされました。 |W-12004679
@@ -1024,7 +1120,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 [%header%autowidth.spread]
 |===
 |問題の解決 |ID
-|NetSuite Connecto の ​*Get Records*​ アクションで CURRENCY および ​CURRENCY_RATE​ オブジェクトが機能しない問題が修正されました。 |W-11722063
+|NetSuite Connector の ​*Get Records*​ アクションで CURRENCY および ​CURRENCY_RATE​ オブジェクトが機能しない問題が修正されました。 |W-11722063
 |===
 
 == 2022 年 9 月 6 日

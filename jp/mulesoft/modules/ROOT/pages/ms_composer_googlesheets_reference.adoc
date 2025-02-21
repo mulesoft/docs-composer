@@ -3,6 +3,12 @@
 Google スプレッドシートをデータ取得元として使用するか (例: 新しい Google スプレッドシート行を取得し、行の情報が含まれる Slack メッセージを送信する)、データ取得先として使用します (例: 新しい Salesforce 取引先責任者を取得し、Google スプレッドシートの行に変換する)。
 フローのデータの操作方法のいくつかの詳細は、データ取得元またはデータ取得先に固有です。また、選択した特定のトリガーまたはアクションに応じて変わります。
 
+== 始める前に   
+
+Google Sheets Connector では、Google の制限されたデータにアクセスするために、サードパーティアプリケーションのアクセス権が必要です。コネクタを使用する前に、Google ワークスペース管理者は、 https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[設定されたアプリケーションのリストに次のクライアント ID を追加^]​して、コンポーザーとの OAuth 接続を作成する必要があります。
++
+`250037406766-pm8dppphhfm9ugr6rtmdk1unrr48oi3h.apps.googleusercontent.com`
+
 == Connections (接続)
 
 include::_partials/connection-definition.adoc[]

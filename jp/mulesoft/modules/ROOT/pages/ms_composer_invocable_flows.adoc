@@ -6,17 +6,17 @@
 
 コンポーザーフローを呼び出す手順は、次のとおりです。
 
-. <<create-an-invocable-composer-flow, 呼び出し可能コンポーザーフローを作成します>>​。 
-. <<invoke-the-composer-flow-from-an-external-system,外部システムからコンポーザーフローを呼び出し>>​ます。
+. <<create-an-invocable-composer-flow,呼び出し可能コンポーザーフローを作成する>>​。 
+. <<invoke-the-composer-flow-from-an-external-system,外部システムからコンポーザーフローを呼び出す>>​。
 
 [[create-an-invocable-composer-flow]]
 == 呼び出し可能コンポーザーフローを作成する
 
 呼び出し可能コンポーザーフローを作成して、後で外部システムから呼び出すことができるようにします。
 
-. <<configure-your-invocable-composer-flow,呼び出し可能コンポーザーフローを設定します>>​。
-. <<test-your-invocable-composer-flow,呼び出し可能コンポーザーフローをテストします>>​。
-. <<activate-your-invocable-composer-flow,呼び出し可能コンポーザーフローをアクティブ化します>>​。
+. <<configure-your-invocable-composer-flow,呼び出し可能コンポーザーフローを設定する>>​。
+. <<test-your-invocable-composer-flow,呼び出し可能コンポーザーフローをテストする>>​。
+. <<activate-your-invocable-composer-flow,呼び出し可能コンポーザーフローをアクティブ化する>>​。
 
 [[configure-your-invocable-composer-flow]]
 === 呼び出し可能コンポーザーフローを設定する
@@ -24,7 +24,7 @@
 呼び出し可能コンポーザーフローを設定する手順は、次のとおりです。
 
 . コンポーザーにアクセスします。
-. xref:ms_composer_flows.adoc#create-a-new-flow[新しいフローを最初から作成]​します。
+. xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[新しいフローを最初から作成]​します。
 . *[What Should Start This Flow? (このフローを開始する要素)]*​ ダイアログの ​*[Interaction (インタラクション)]*​ セクションで、​*[Invoke (呼び出し)]*​ をクリックして呼び出し可能フローを作成します。 
 +
 *[Trigger: Invoke this flow from an external system via HTTP POST Request (トリガー: 外部システムから HTTP POST 要求を介してこのフローを呼び出す)]*​ トリガーが表示されます。 
@@ -100,15 +100,15 @@
 .. *[Apply (適用)]*​ をクリックします。
 .. 出力項目が追加されたら、データピル、カスタム式、またはプレーンテキストをマップできます。たとえば、入力項目を出力項目にマップします。
 
-*** `[String (文字列)]`​、​`[Number (数値)]`​、​`[Boolean (ブール)]`​、​`[Date (日付)]`​、​`[DateTime (日時)]`​ の場合、値は必須です。手動で値を入力したり、フローから既存データピル (変数など) を選択したり、​<<create-a-picklist-mapping,選択リストマッピング>>​ (​`文字列`​変数の場合) を選択したり、​xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*カスタム式エディター*]​を選択してカスタム式を作成したりできます。 
-*** `[List (リスト)]`​ の場合は、値は必須です。値を手動で入力できます。プリミティブリスト型 (​`[String (文字列)]`​、​`[Number (数値)]`​、​`[Boolean (ブール)]`​、​`[Date (日付)]`​、または ​`[DateTime (日時)]`​) の場合、​xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*カスタム式エディター*]​または​<<create-a-picklist-mapping,リストデータピルのマップ>>​を使用して静的にリストを作成できます。List<Objects> の場合、次のいずれかを選択します。 
+*** `[String (文字列)]`​、​`[Number (数値)]`​、​`[Boolean (ブール)]`​、​`[Date (日付)]`​、​`[DateTime (日時)]`​ の場合、値は必須です。手動で値を入力したり、フローから既存データピル (変数など) を選択したり、​xref:ms_composer_using_actions_in_a_flow.adoc#create-a-picklist-mapping[選択リストマッピング]​ (​`文字列`​変数の場合) を選択したり、​xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*カスタム式エディター*]​を選択してカスタム式を作成したりできます。 
+*** `[List (リスト)]`​ の場合は、値は必須です。値を手動で入力できます。プリミティブリスト型 (​`[String (文字列)]`​、​`[Number (数値)]`​、​`[Boolean (ブール)]`​、​`[Date (日付)]`​、または ​`[DateTime (日時)]`​) の場合、​xref:ms_composer_custom_expression_editor.adoc#add-custom-expression-to-an-action[*カスタム式エディター*]​または​xref:ms_composer_using_actions_in_a_flow.adoc#create-a-picklist-mapping[リストデータピルのマップ]​を使用して静的にリストを作成できます。List<Objects> の場合、次のいずれかを選択します。 
 **** リストの複数の項目を作成するための ​*[Dynamic List (動的リスト)]*​。リストピルを使用して、作成された項目の数を参照します。次に、リストの要素の項目をマップします。
 **** *[Static List (静的リスト)]*​。その後、必要な数の項目が含まれるリストを初期化します。項目を追加しない場合、デフォルトでリストは空になります。
 
 .. 出力項目を変更するには、​*[Add Output Fields (出力項目を追加)]*​ をクリックしてエディターを開き、出力項目を編集します。
 . フローを完了します。 
 +
-たとえば、​xref:ms_composer_flows.adoc[「コンポーザーフローの構築」]​で説明されているように、フローのシステムアクションを設定したり、変数を定義したり、フローコントロールを作成したりします。 
+たとえば、​xref:ms_composer_flows.adoc[「フローの設定と管理」]​で説明されているように、フローのシステムアクションを設定したり、変数を定義したり、フローコントロールを作成したりします。 
 . *[Save (保存)]*​ をクリックします。
 
 フローから呼び出し可能ステップを削除する手順は、次のとおりです。 
@@ -180,8 +180,8 @@ Flow Builder から直接コンポーザーフローを呼び出して、1 行�
 
 Flow Builder からコンポーザーフローを呼び出す手順は、次のとおりです。
 
-. <<set-up-salesforce-for-invocable-flows,呼び出し可能フロー用に Salesforce をセットアップします>>​。
-. <<set-up-flow-builder-for-invocable-flows,呼び出し可能フロー用に Flow Builder をセットアップします>>​。
+. <<set-up-salesforce-for-invocable-flows,呼び出し可能フロー用に Salesforce をセットアップする>>​。
+. <<set-up-flow-builder-for-invocable-flows,呼び出し可能フロー用に Flow Builder をセットアップする>>​。
 
 [[set-up-salesforce-for-invocable-flows]]
 ==== 呼び出し可能フロー用に Salesforce をセットアップする
@@ -260,7 +260,7 @@ Flow Builder からコンポーザーフローを呼び出す手順は、次の�
 
 . 出力が含まれるコンポーザーフローを呼び出す場合、Salesforce フローで呼び出し可能フローの出力を使用できます。
 +
-たとえば、呼び出し可能フローで商談 ID が返される場合、​*[レコードを更新]*​ フロー要素を使用してこの商談 ID を任意のレコード項目に割り当てることができます。​*[取引先レコードの項目値を設定]*​ セクションの ​*[値]*​ 項目ドロップダウンで、​`[ActionName からの出力] > [200] > [<使用可能な出力値>]`​ オプションを選択すると、呼び出し可能フローの出力を使用できます。​`ActionName`​ はステップ 9 の表示ラベルまたは API 参照名で、​`[<使用可能な出力値>]`​ は、外部サービスに追加された API 仕様に基づいて解釈されたフローの出力です。次に、​*[項目]*​項目で、更新するレコードの任意の項目を選択できます。
+たとえば、呼び出し可能フローで商談 ID が返される場合、​*[レコードを更新]*​ フロー要素を使用してこの商談 ID を任意のレコード項目に割り当てることができます。​*[取引先レコードの項目値を設定]*​ セクションの ​*[値]*​ 項目ドロップダウンで、​`[ActionName からの出力] > [200] > [<使用可能な出力値>]`​ オプションを選択すると、呼び出し可能フローの出力を使用できます。​`ActionName`​ はステップ 9 の表示ラベルまたは API 参照名で、​`[<使用可能な出力値>]`​ は、外部サービスに追加された API 仕様に基づいて解釈されたフローの出力です。次に、​*[項目] *​項目で、更新するレコードの任意の項目を選択できます。
 
 
 . フローを保存します。​*[フローの表示ラベル]*​ と ​*[フローの API 参照名]*​ を入力します。 
@@ -276,8 +276,8 @@ Flow Builder からコンポーザーフローを呼び出す手順は、次の�
 
 フローオーケストレーションからコンポーザーフローを呼び出す手順は、次のとおりです。
 
-. <<set-up-salesforce-for-invocable-flows-orch,呼び出し可能フロー用に Salesforce をセットアップします>>​。
-. <<set-up-flow-orchestration-for-invocable-flows,呼び出し可能フロー用にフローオーケストレーションをセットアップします>>​。
+. <<set-up-salesforce-for-invocable-flows-orch,呼び出し可能フロー用に Salesforce をセットアップする>>​。
+. <<set-up-flow-orchestration-for-invocable-flows,呼び出し可能フロー用にフローオーケストレーションをセットアップする>>​。
 
 [[set-up-salesforce-for-invocable-flows-orch]]
 ==== 呼び出し可能フロー用に Salesforce をセットアップする
@@ -324,7 +324,7 @@ Composer の呼び出し可能フローを作成し、別のコンポーザー�
 
 別のコンポーザーフローからコンポーザーフローを呼び出す手順は、次のとおりです。
 
-. xref:ms_composer_flows.adoc#create-a-new-flow[新しいフローを最初から作成]​します。
+. xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[新しいフローを最初から作成]​します。
 . *[+]*​ > ​*[System Event (システムイベント)]*​ をクリックし、​*[HTTP]*​ を選択します。
 . HTTP 接続を設定します。
 +
@@ -362,8 +362,8 @@ Apex クラスから Apex コールアウトを使用してコンポーザーフ
 
 Apex コールアウトからコンポーザーフローを呼び出す手順は、次のとおりです。
 
-. <<set-up-salesforce-for-invocable-flows-apex,呼び出し可能フロー用に Salesforce をセットアップします>>​。
-. <<use-apex-classes-to-trigger-invocable-flows,Apex クラスを使用して呼び出し可能フローをトリガーします>>​。
+. <<set-up-salesforce-for-invocable-flows-apex,呼び出し可能フロー用に Salesforce をセットアップする>>​。
+. <<use-apex-classes-to-trigger-invocable-flows,Apex クラスを使用して呼び出し可能フローをトリガーする>>​。
 
 [[set-up-salesforce-for-invocable-flows-apex]]
 ==== 呼び出し可能フロー用に Salesforce をセットアップする
@@ -467,6 +467,45 @@ curl "<url>" -H "Authorization: Basic <token>" -X POST --data '
 }
 ----
 
+ifeval::["{product}"=="mulesoft"]
+== Salesforce または Anypoint 組織へのフローのパブリッシュ
+
+フローをアクティブ化したら、フローを Salesforce 組織にパブリッシュできます。このサービスを使用するには、​xref:rpa-home::ms-automation-credits-usage-types.adoc[Automation Starter または Automation Advanced サブスクリプションパッケージ]​が必要です。 
+
+=== MuleSoft Composer からコンポーザーフローをパブリッシュする (ベータ)
+
+MuleSoft Composer フローを Salesforce 組織にパブリッシュする手順は、次のとおりです。 
+
+. MuleSoft Anypoint Platform 組織が Salesforce 組織に接続されていることを確認します。  
++
+* xref:access-management::external-organization-access.adoc[MuleSoft で外部組織にアクセスする]
+* https://help.salesforce.com/s/articleView?language=en_US&id=sf.external_services_manage_your_mulesoft_anypoint_platform_connection.htm&type=5[Salesforce で MuleSoft Anypoint Platform に接続する]
+. xref:ms_composer_activation.adoc[フローをアクティブ化]​します。 
+. アクティブ化したら、表示される ​*[Flow Controls (フローコントロール)]*​ ボタンをクリックします。 
+. *[Flow Credentials (フローログイン情報)]*​ ウィンドウの ​*[Salesforce Invocable Actions (Salesforce 呼び出し可能アクション)]*​ セクションで、​*[Publish (パブリッシュ)]*​ をクリックします。 
++
+フローがアクティブ化されて、選択された Salesforce 組織にパブリッシュされたことを示すメッセージが表示されます。フローが組織にパブリッシュされたら、プロセスで以下の作業が行われます。
++
+* フローの URL を生成する。 
+* 外部サービスを有効にする。 
+* 空の権限セットを作成する。 
+
+=== Salesforce でパブリッシュされた MuleSoft Composer フローを表示する (ベータ)
+
+MuleSoft Composer からフローをパブリッシュしたら、Salesforce でフローを表示します。 
+
+. Salesforce 組織にログインします。
+. ヘッダーで、​image:images/setup_icon.png["セットアップのアイコン", 20]​ > ​*[設定]*​ をクリックします。 
+. ナビゲーションペインで、​*[Mulesoft]*​ > ​*[サービス]*​ に移動するか、検索します。 
+. MuleSoft Composer のフローを再度開き、​*[ログイン情報]*​ ウィンドウで、​*[URL]*​ 項目の値を書き留めます。
+. *[インポートされた MuleSoft サービス]*​ セクションの ​*[MuleSoft サービス名]*​ 列で、前のステップの ​*[URL]*​ 項目の値と一致するリンクを見つけてクリックします。
+. *[サービス]*​ セクションで、 https://help.salesforce.com/s/articleView?language=en_US&id=sf.nc_named_creds_and_ext_creds.htm&type=5[*[指定ログイン情報]*]​ 項目内のリンクをクリックします。 
+. *[外部ログイン情報]*​ 項目内のリンクをクリックします。 
++
+フロー情報が表示されます。 
+. これで、ユーザーをフローの https://help.salesforce.com/s/articleView?id=release-notes.rn_security_map_principals_to_permsets.htm&release=244&type=5[権限セット]​にマップできます。 
+endif::[]
+
 == トラブルシューティング 
 
 外部システムからコンポーザーフローが正常に呼び出されると、HTTP 200 応答が返されます。呼び出し可能フローをトラブルシューティングするには、スローされる一般的な例外メッセージの解釈について理解しておく必要があります。
@@ -477,7 +516,7 @@ curl "<url>" -H "Authorization: Basic <token>" -X POST --data '
 
 === ログイン情報が無効 
 
-コンポーザーフローに無効なログイン情報がある場合、HTTP 401 応答が返されます。
+コンポーザーフローに無効なログイン情報がある場合、HTTP 401 応答が返されます。 
 
 include::_partials/see-also.adoc[]
 * https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder[トレイル: Flow Builder を使用したフローの作成]

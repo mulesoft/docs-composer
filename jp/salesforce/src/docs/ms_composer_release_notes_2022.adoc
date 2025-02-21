@@ -9,7 +9,7 @@ MuleSoft Composer for Salesforce を使用して、コネクテッドエクス�
 //| Fixed an issue in NetSuite Connector in which nested fields containing the `list` type failed. | COCN-726
 //* Composer now supports the static creation of lists. You can now dynamically complete fields that are enabled for lists even if those fields do not have an existing list to map to in the flow.
 
-日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題」]​を参照してください。
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題と制限事項」]​を参照してください。
 
 == 2022 年 12 月 23 日
 
@@ -56,8 +56,8 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 |ServiceNow Connector で、作業負荷の高いシナリオで突然切断されることはなくなりました。 | W-12035222
 |ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、componentorg.apache.commons ライブラリがバージョン 1.10.0 にアップグレードされました。| W-11913979
 |ServiceNow Connector で、報告されたセキュリティの脆弱性に対処するために、org.springframework ライブラリがバージョン 5.3.20 にアップグレードされました。 | W-12150392
-|Salesforce Connector で、トリガーと ​*Get records*​  アクションでブールパラメーターの ​`isTrue`​ および ​`isFalse`​ 演算子がサポートされるようになりました。 | W-11752116
-|Salesforce Connector で、​*Delete record*​ アクションは ​`Retrieving metadata for the step failed. Try saving and refreshing the page.`​ (ステップのメタデータの取得に失敗しました。ページを保存して更新してみてください) エラーを誤ってスローしなくなりました。 | W-12211471
+|Salesforce Connector で、トリガーと ​*Get records*​ アクションでブールパラメーターの ​`isTrue`​ および ​`isFalse`​ 演算子がサポートされるようになりました。 | W-11752116
+|Salesforce Connector で、​*Delete record*​ アクションが「​`Retrieving metadata for the step failed. Try saving and refreshing the page. (ステップのメタデータの取得に失敗しました。ページを保存して更新してみてください)`​」というエラーを誤ってスローすることはなくなりました。 | W-12211471
 |Salesforce Connector で、ウォーターマークが適切に使用されていない場合に、トリガーでデータが失われる可能性がなくなりました。 | W-12128874
 |Jira Connector で、報告されたセキュリティの脆弱性に対処するために、com.fasterxml.jackson.core ライブラリがバージョン 2.14.1 にアップグレードされました。 |W-11933499
 |Jira Connector で、報告されたセキュリティの脆弱性に対処するために、org.apache.commons-text ライブラリがバージョン 1.10.0 にアップグレードされました。 |W-12004679
@@ -219,7 +219,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * RPA Connector で、RPA 組織に接続済みで ​*[RPA Process (RPA プロセス)]*​ 項目のドロップダウンにプロセスが表示されない場合、​*[Create an invokable run config from MuleSoft RPA (MuleSoft RPA から呼び出し可能な実行設定を作成)]*​ ボタンをクリックして、RPA 組織に直接接続してプロセスを表示できるようになりました。
 
-* RPA Connector で、​*[RPA Process (RPA プロセス)]*​ ドロップダウンを選択すると、表示される値が ​*<カテゴリ> / <プロセス名>*​ 形式でリストされるようになりました。例 : *Claims (クレーム) / Check for updates (更新の確認)*​。
+* RPA Connector で、​*[RPA Process (RPA プロセス)]*​ ドロップダウンを選択すると、表示される値が ​*<カテゴリ> / <プロセス名>*​ 形式でリストされるようになりました。例: *Claims (クレーム) / Check for updates (更新の確認)*​。
 
 
 == 2022 年 10 月 26 日
@@ -334,7 +334,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 [%header%autowidth.spread]
 |===
 |問題 |ID
-|NetSuite Connecto の ​*Get Records*​ アクションで CURRENCY および ​CURRENCY_RATE​ オブジェクトが機能しない問題が修正されました。 |W-11722063
+|NetSuite Connector の ​*Get Records*​ アクションで CURRENCY および ​CURRENCY_RATE​ オブジェクトが機能しない問題が修正されました。 |W-11722063
 |===
 
 

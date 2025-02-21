@@ -26,7 +26,7 @@ Salesforce では、各ユーザーが一度に 5 件までの接続アプリケ
 
 この問題を回避するために、可能であれば、ユーザーおよび Salesforce 組織ごとに 1 件の接続のみを作成するようにしてください。
 
-Salesforce 接続アプリケーションと認証についての詳細は、&#8203;https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm を参照してください。
+Salesforce 接続アプリケーションと認証についての詳細は、 https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm[Salesforce ドキュメント]​を参照してください。
 
 === IP 制限の緩和
 
@@ -52,7 +52,7 @@ Salesforce への接続で IP 制限を緩和する手順は、次のとおり�
 . フローを開きます。
 . トリガー、または Sandbox に接続するすべてのアクションの変更アイコンをクリックします。
 +
-image::images/change-connection.png[接続コントロールの変更, 500]
+image::images/change-connection.png["[Change the Connection (接続を変更)] ボタン", 500]
 . 新しい接続を選択し、変更内容を保存します。
 
 === Salesforce の Sandbox 組織と本番組織
@@ -131,7 +131,7 @@ Get records::
 
 指定した条件に一致するすべてのレコードを返します。
 +
-image::images/get-records-salesforce.png[クエリビルダー UI、500]
+image::images/get-records-salesforce.png["Salesforce Connector の [Get Records (レコードの取得)] サンプルアクション設定", 500]
 +
 * アクションで取得する項目は ​*[Result fields (結果項目)]*​ セクションで選択できます。
 * 1 つ以上の条件を追加して、​*[Criteria (条件)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。

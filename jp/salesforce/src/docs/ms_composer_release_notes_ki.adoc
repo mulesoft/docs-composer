@@ -2,6 +2,36 @@
 
 次のリストに、MuleSoft Composer for Salesforce の既知の問題と制限事項を示します。リストは、既知の問題または制限事項が発生した日付順になっています。
 
+== 2024/08/19
+
+=== Salesforce
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|Salesforce Connector で、ループの次の要素を処理するときに ​`[SALESFORCE:CONNECTIVITY Failed to get next element (SALESFORCE:CONNECTIVITY で次の要素を取得できませんでした)]`​ エラーがスローされることがあります。
+|フローを再実行して取得できなかったイベントをキャッチします。詳細は、 https://issues.salesforce.com/issue/a028c00000zLDsc/[「known issue (既知の問題)」]​を参照してください。
+|W-16418279
+|===
+
+== 2024/05/07
+
+=== NetSuite 
+
+[%header%autowidth.spread]
+
+|===
+
+|既知の問題 |回避策 |ID
+
+|レコードタイプを選択するときに、大量のメタデータがあると、メタデータリゾルバーがコンポーザーで求められる 3 分の時間制限内にデータを解析できず、​`[Netsuite: Retrieving metadata for the step failed (Netsuite: ステップのメタデータの取得に失敗しました)]`​ エラーが発生することがあります。 
+|詳細は、 https://issues.salesforce.com/issue/a028c00000zHtne/mulesoft-composer-fails-with-netsuite-retrieving-metadata-for-the-step-failed-after-3-minute-wait[ナレッジ記事]​を参照してください。
+|W-15586159  
+|===
+
 == 2023/10/31
 
 === コンポーザープラットフォーム 

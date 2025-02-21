@@ -1,23 +1,23 @@
-= コンポーザーフローを監視する
+= コンポーザーフローの監視
 
 アクティブ化すると、アクティブなコンポーザーフローを監視できます。
 
-ifeval::["​{product}​"=="salesforce"]
+ifeval::["{product}"=="salesforce"]
 . コンポーザーのホームページで、​*[Composer Flows (コンポーザーフロー)]*​ をクリックします。
 . *[All (すべて)]*​ ビューで、[Flow Details (フローの詳細)] ページを表示するフローの名前をクリックします。
 
 [Flow Details (フローの詳細)] ページには、フローの実行履歴 (各フローの実行時間や実行が成功したかどうか) が表示されます。
 
-image::images/success-monitoring.png[フローの実行履歴の画像, 600]
+image::images/success-monitoring.png["MuleSoft Composer for Salesforce のフロー実行履歴とその他のフローの詳細", 600]
 endif::[]
 
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 . サイドバーから、​*[Flows (フロー)]*​ をクリックします。
 . フローの詳細ページを表示するフローの名前をクリックします。
 
 フローの詳細ページには、各フローの実行時間や実行が成功したかどうかが表示されます。
 
-image::images/success-monitoring-ms.png[フローの実行履歴の画像, 600]
+image::images/success-monitoring-ms.png["MuleSoft Composer のフロー実行履歴とその他のフローの詳細", 600]
 endif::[]
 
 

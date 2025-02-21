@@ -1,6 +1,4 @@
-:product: mulesoft
 ifeval::["{product}"=="salesforce"]
-
 = Mulesoft Composer for Salesforce
 endif::[]
 ifeval::["{product}"=="mulesoft"]
@@ -30,7 +28,7 @@ endif::[]
 
 地域の Slack ユーザーグループがその地域のメンバーをスプレッドシートで追跡するとします。まず Slack ユーザーを全国組織に登録します。全国オフィスでは Salesforce を使用してメンバーシップを追跡しているため、新しいメンバーを地域のシートに自動的にプッシュすると、すべてのユーザーの多くの時間が節約されます。Salesforce システム管理者はコンポーザーを使用して、このタスクをほぼリアルタイムで自動的に実行する 1 つのフローを作成できます。
 
-image::images/overview1.png[データサイロ間のデータの同期の維持、600]
+image::images/overview1.png["データサイロ間でユーザー情報を最新に保つワークフロー", 600]
 
 この簡単なフローを拡張してより複雑なアクションを実行できます。たとえば、新規ユーザーの郵便番号に基づいて異なるシートに書き込んだり、既存のユーザーの変更を伝播したりできます。
 
@@ -48,7 +46,7 @@ Quote-to-Cash プロセスの自動化とストリーミングによって効率
 
 * *Salesforce から Salesforce*
 +
-複数のSalesforce 組織を接続して、組織間でデータを同期します。たとえば、1 つの Salesforce 
+複数の Salesforce 組織を接続して、組織間でデータを同期します。たとえば、1 つの Salesforce 
 組織でオブジェクトを作成または更新し、変更内容を他の Salesforce 組織に同期します。 
 詳細は、Trailhead モジュールの https://trailhead.salesforce.com/content/learn/modules/data-sync-between-orgs-with-mulesoft-composer[「MuleSoft Composer を使用した組織間でのオートメーション^」]​を参照してください。 
 
@@ -104,14 +102,14 @@ ifeval::["{product}"=="salesforce"]
 
 ホームページにアクセスして、ビジネスニーズに合わせてコンポーザーの使用を開始します。
 
-image::images/overview-page-sf.png[Mulesoft Composer ホーム]
+image::images/overview-page-sf.png["Mulesoft Composer for Salesforce ホームページ"]
 
 [calloutlist]
 . *Home (ホーム)*​: コンポーザーホームページが表示されます。
 . *Templates (テンプレート)*​: xref:ms_composer_build_a_flow_using_templates.adoc[事前ビルド済みのコンポーザーテンプレート]​を活用して、フローをビルドします。
 . *Composer Flows (コンポーザーフロー)*​: xref:ms_composer_flows.adoc[フロー]​を作成、テスト、アクティブ化、監視します。
 . *Usage Summary (利用状況概要)*​: 組織の​xref:ms_composer_automation_credits.adoc[フローごとに毎月のタスクとクレジットの利用状況]​が表示されます。
-. *Create New Flow (新規フローを作成)*​: xref:ms_composer_flows.adoc#create-a-flow[最初から、またはテンプレートから]​新しいフローを作成します。
+. *Create New Flow (新規フローを作成)*​: xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[最初から、またはテンプレートから]​新しいフローを作成します。
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
@@ -119,7 +117,7 @@ ifeval::["{product}"=="mulesoft"]
 
 ホームページにアクセスして、ビジネスニーズに合わせてコンポーザーの使用を開始します。
 
-image::images/overview-page-ms.png[Mulesoft Composer ホーム]
+image::images/overview-page-ms.png["Mulesoft Composer ホームページ"]
 
 [calloutlist]
 . *Overview (概要)*​: コンポーザーホームページが表示されます。
@@ -127,7 +125,7 @@ image::images/overview-page-ms.png[Mulesoft Composer ホーム]
 . *Usage Summary (利用状況概要)*​: 組織の​xref:ms_composer_automation_credits.adoc[フローごとに毎月のタスクとクレジットの利用状況]​が表示されます。
 . *Templates (テンプレート)*​: xref:ms_composer_build_a_flow_using_templates.adoc[事前ビルド済みのコンポーザーテンプレート]​を活用して、フローをビルドします。
 . *Help (ヘルプ)*​: コンポーザーについて学習したり、製品ドキュメントを調べたり、MuleSoft コミュニティに参加したり、ヘルプセンターにアクセスしたりできます。
-. *Create New Flow (新規フローを作成)*​: xref:ms_composer_flows.adoc#create-a-flow[最初から、またはテンプレートから]​新しいフローを作成します。
+. *Create New Flow (新規フローを作成)*​: xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[最初から、またはテンプレートから]​新しいフローを作成します。
 
 endif::[]
 

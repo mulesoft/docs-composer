@@ -4,6 +4,15 @@ Jira は、開発を改善するためにユーザーが商品の課題を計画
 
 コンポーザーで Jira Connector を使用するには、​_[Administrator Jira (Jira システム管理者)]_​ グローバル権限が必要です。詳細は  https://support.atlassian.com/jira-work-management/docs/manage-permissions/[Jira のドキュメント^]​を参照してください。
 
+//When using custom fields in Jira Connector, the following field types are supported:
+
+//* Float
+//* Select
+//* Date Picker
+//* Date/Time Picker
+//* URL
+//* Epic Label
+//* Text Field
 == Connections (接続)
 
 include::_partials/connection-definition.adoc[]
@@ -137,6 +146,7 @@ MuleSoft Composer を使用して、Jira の課題で設定したアクション
 * Radio buttons (ラジオボタン)
 * Select lists (multiple-choice) (選択リスト (複数選択))
 * Select lists (cascading) (選択リスト (カスケード))
+* User picker (ユーザーピッカー) 
 
 == 標準項目
 

@@ -1,0 +1,76 @@
+= MuleSoft Composer for Salesforce のリリースノート - 2024
+
+MuleSoft Composer for Salesforce を使用して、コネクテッドエクスペリエンスをすばやくビルドします。開発リソースがデータのロック解除、アプリケーションの統合、および真の顧客価値を作り出すビジネスプロセスの自動化を行うのを待機する必要はありません。
+
+新しいバージョンがリリースされると自動的に使用できるようになります。新しいバージョンに移行するためにタスクを実行する必要はありません。
+
+日付別の既知の問題のリストについては、​xref:ms_composer_release_notes_ki.adoc[「MuleSoft Composer for Salesforce の既知の問題と制限事項」]​を参照してください。
+
+== 2024/07/09
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Workday Connector で、Workday 接続が含まれるエラーハンドラーのあるフローをテストしても、[processing (処理中)] 状況のままになって、「​`Test failed because of external errors. Please try again. (外部エラーのためテストに失敗しました。もう一度お試しください。)`​」というエラーで誤って失敗したりすることがなくなりました。| W-15239656
+|===
+
+== 2024/05/17
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|NetSuite Connector で在庫レコードのカスタム値の取得に失敗しなくなりました。| W-15138793
+|NetSuite Connector の ​*[Get Records (レコードの取得)]*​ アクションで、複数の選択リストが含まれる項目の値の​`内部 ID`​ が返されるようになりました。 | W-15194262 
+|===
+
+== 2024/03/21
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* コネクタアクションとトリガーの説明がそれぞれの名前の直下に表示されるようになりました。  
+
+== 2024/03/15
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|アクセストークンが期限切れになった後に、Salesforce Marketing Cloud Connector でアクセストークンが適切に更新されるようになりました。| W-14979479
+|===
+
+== 2024/03/11
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Jira Connector で、意図したとおりにコンポーザーの新しい接続を作成できるようになりました。| W-15070963
+|===
+
+== 2024/02/28
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|問題の解決 |ID
+|Microsoft Dynamics 365 Business Central Connector で、接続の作成時に ​`[Invalid Connection (無効な接続)]`​ エラーで誤って失敗しなくなりました。| W-14824218
+|===
+
+== 2024/01/09
+
+include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* 次のコネクタのトリガーで ​*[Polling Frequency (ポーリング頻度)]*​ 項目が必須になりました。 
+
+** Microsoft Dynamics 365 Business Central  
+** Workday 
+** Xero
++ 
+この項目により、アクティブなフローのレコードの変更を検索するためにコンポーザーが基盤となるシステム API に対して要求を実行する頻度を選択できます。

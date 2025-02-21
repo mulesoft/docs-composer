@@ -76,6 +76,6 @@ To manage all flows within your org:
 . From the *Composer Flows* tab, select a flow.
 . Click on the desired button, for example, click *Delete* to delete a flow or click *Transfer ownership* to change flow ownership (for error email notification flows only).
 
-When automating complex processes, be aware that flows with many steps can encounter numerous issues. To enhance automation efficiency, promote reusability, and ensure clarity for the entire organization, we recommend breaking down the process into logical sub-flows and invoking these sub-flows from a parent flow. As a best practice, when logical sub-flows are feasible,xref:ms_composer_invocable_flows.adoc#invoke-a-composer-flow-from-another-composer-flow[invoke a Composer flow from another Composer flow] to create and integrate sub-flows.
+When automating complex processes, be aware that flows with many steps can encounter numerous issues. To enhance automation efficiency, promote reusability, and ensure clarity for the entire organization, we recommend breaking down the process into logical sub-flows and invoking these sub-flows from a parent flow. As a best practice, when logical sub-flows are feasible, xref:ms_composer_invocable_flows.adoc#invoke-a-composer-flow-from-another-composer-flow[invoke a Composer flow from another Composer flow] to create and integrate sub-flows.
 
 include::_partials/see-also.adoc[]

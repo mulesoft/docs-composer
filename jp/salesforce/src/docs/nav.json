@@ -1,192 +1,228 @@
 {
-  "description": "MuleSoft Composer for Salesforce ドキュメントセット",
-  "topics": [
+  "description" : "MuleSoft Composer for Salesforce documentation set",
+  "topics" : [
     {
-      "file": "ms_composer_overview.adoc",
-      "title": "Mulesoft Composer for Salesforce",
-      "topics": [
+      "file" : "ms_composer_overview.adoc",
+      "title": "MuleSoft Composer for Salesforce",
+      "topics" : [
         {
-          "file": "ms_composer_release_notes.adoc",
-          "title": "リリースノート",
+        "file" : "ms_composer_release_notes.adoc",
+        "title" : "Release Notes",
+        "topics" : [
+         {
+          "file" : "ms_composer_release_notes_2024.adoc"
+        },
+          {
+          "file" : "ms_composer_release_notes_2023.adoc"
+        },
+          {
+          "file" : "ms_composer_release_notes_2022.adoc"
+        },
+          {
+          "file" : "ms_composer_release_notes_2021.adoc"
+        },
+        {
+        "file" : "ms_composer_release_notes_ki.adoc"
+      }
+        ]
+      },
+        {
+          "file" : "ms_composer_prerequisites.adoc",
+          "title": "Getting Started",
           "topics": [
-            {
-              "file": "ms_composer_release_notes_2023.adoc"
-            },
-            {
-              "file": "ms_composer_release_notes_2022.adoc"
-            },
-            {
-              "file": "ms_composer_release_notes_2021.adoc"
-            },
-            {
-              "file": "ms_composer_release_notes_ki.adoc"
-            }
+          {
+          "file"  : "ms_composer_about_flows.adoc",
+          "title": "How Composer Works"
+          },
+          {
+          "file" : "ms_composer_checklist.adoc",
+          "title": "Preparation Checklist"
+          }
           ]
         },
         {
-          "file": "ms_composer_prerequisites.adoc",
-          "title": "はじめに",
+          "file" : "ms_composer_flows.adoc",
+          "title": "Configuring and Managing Flows",
           "topics": [
             {
-              "file": "ms_composer_about_flows.adoc"
+              "file" : "ms_composer_using_a_flow_and_creating_trigger.adoc",
+              "title": "Using a Flow and Creating a Trigger"
             },
             {
-              "file": "ms_composer_checklist.adoc",
-              "title": "準備チェックリスト"
-            }
+              "file" : "ms_composer_connecting_a_flow.adoc",
+              "title": "Connecting a Flow"
+            },
+            {
+              "file" : "ms_composer_scheduling_polling_invoking_flow.adoc",
+              "title": "Scheduling, Polling, or Invoking a Flow"
+            },
+            {
+              "file" : "ms_composer_using_actions_in_a_flow.adoc",
+              "ti,tle": "Using Actions in a Flow"
+            },
+            {
+            "file" : "ms_composer_build_a_flow_using_templates.adoc",
+            "title": "Building a Flow Using Templates"
+          }
           ]
         },
         {
-          "file": "ms_composer_flows.adoc",
-          "title": "フローのビルド",
-          "topics": [
+          "file" : "ms_composer_custom_expression_editor.adoc",
+          "title": "Building Formulas for Flows"
+         },
+         {
+          "file" : "ms_composer_supported_data_types_and_formulas.adoc",
+          "title": "Supported Data Types and Formulas"
+        },
+        {
+          "file" : "ms_composer_invocable_flows.adoc",
+          "title": "Invoking a Composer Flow"
+        },
+        {
+          "file" : "ms_composer_test_flow.adoc",
+          "title": "Testing a Flow"
+        },
+        {
+          "file" : "ms_composer_activation.adoc",
+          "title": "Activating a Flow"
+        },
+        {
+          "file" : "ms_composer_monitoring.adoc",
+          "title": "Monitoring a Flow"
+        },
+        {
+          "file" : "ms_composer_reference.adoc",
+          "title": "Composer Connector Reference",
+          "topics" : [
             {
-              "file": "ms_composer_build_a_flow_using_templates.adoc",
-              "title": "テンプレートを使用したフローのビルド"
-            }
-          ]
-        },
-        {
-          "file": "ms_composer_custom_expression_editor.adoc",
-          "title": "フローの数式のビルド"
-        },
-        {
-          "file": "ms_composer_test_flow.adoc",
-          "title": "フローのテスト"
-        },
-        {
-          "file": "ms_composer_activation.adoc",
-          "title": "フローのアクティブ化"
-        },
-        {
-          "file": "ms_composer_monitoring.adoc",
-          "title": "フローの監視"
-        },
-        {
-          "file": "ms_composer_reference.adoc",
-          "title": "Composer Connector リファレンス",
-          "topics": [
-            {
-              "file": "ms_composer_asana_reference.adoc",
+              "file" : "ms_composer_asana_reference.adoc",
               "title": "Asana"
             },
             {
-              "file": "ms_composer_box_reference.adoc",
+              "file" : "ms_composer_box_reference.adoc",
               "title": "Box"
             },
             {
-              "file": "ms_composer_gmail_reference.adoc",
+              "file" : "ms_composer_gmail_reference.adoc",
               "title": "Gmail"
             },
             {
-              "file": "ms_composer_google_bigquery_reference.adoc",
+              "file" : "ms_composer_google_bigquery_reference.adoc",
               "title": "Google BigQuery"
             },
             {
-              "file": "ms_composer_google_calendar_reference.adoc",
-              "title": "Google カレンダー"
+              "file" : "ms_composer_google_calendar_reference.adoc",
+              "title": "Google Calendar"
             },
             {
-              "file": "ms_composer_googlesheets_reference.adoc",
-              "title": "Google スプレッドシート"
+              "file" : "ms_composer_googlesheets_reference.adoc",
+              "title": "Google Sheets"
             },
             {
-              "file": "ms_composer_http_reference.adoc",
+              "file" : "ms_composer_http_reference.adoc",
               "title": "HTTP"
             },
             {
-              "file": "ms_composer_hubspot_reference.adoc",
+              "file" : "ms_composer_hubspot_reference.adoc",
               "title": "HubSpot"
             },
             {
-              "file": "ms_composer_jira_reference.adoc",
+              "file" : "ms_composer_jira_reference.adoc",
               "title": "Jira"
             },
             {
-              "file": "ms_composer_marketo_reference.adoc",
+              "file" : "ms_composer_marketo_reference.adoc",
               "title": "Marketo"
             },
             {
-              "file": "ms_composer_ms_dynamics_365_business_central_reference.adoc",
+              "file" : "ms_composer_ms_dynamics_365_business_central_reference.adoc",
               "title": "Microsoft Dynamics 365 Business Central"
             },
             {
-              "file": "ms_composer_ms_teams_reference.adoc",
+              "file" : "ms_composer_ms_teams_reference.adoc",
               "title": "Microsoft Teams"
             },
             {
-              "file": "ms_composer_netsuite_reference.adoc",
-              "title": "NetSuite"
-            },
-            {
-              "file": "ms_composer_quickbooks_reference.adoc",
-              "title": "QuickBooks Online"
-            },
-            {
-              "file": "ms_composer_rpa_reference.adoc",
+              "file" : "ms_composer_rpa_reference.adoc",
               "title": "MuleSoft RPA"
             },
             {
-              "file": "ms_composer_sage_intacct_reference.adoc",
+              "file" : "ms_composer_netsuite_reference.adoc",
+              "title": "NetSuite"
+            },
+            {
+              "file" : "ms_composer_quickbooks_reference.adoc",
+              "title": "QuickBooks Online"
+            },
+            {
+              "file" : "ms_composer_rest_consumer_reference.adoc",
+              "title": "Rest Consumer"
+            },
+                        {
+              "file" : "ms_composer_sage_intacct_reference.adoc",
               "title": "Sage Intacct"
             },
             {
-              "file": "ms_composer_salesforce_reference.adoc",
+              "file" : "ms_composer_salesforce_reference.adoc",
               "title": "Salesforce"
             },
             {
-              "file": "ms_composer_salesforce_marketing_cloud_reference.adoc",
+              "file" : "ms_composer_salesforce_marketing_cloud_reference.adoc",
               "title": "Salesforce Marketing Cloud"
             },
             {
-              "file": "ms_composer_servicenow_reference.adoc",
+              "file" : "ms_composer_sap_s4hana_reference.adoc",
+              "title": "SAP S/4HANA Cloud"
+            },
+            {
+              "file" : "ms_composer_servicenow_reference.adoc",
               "title": "ServiceNow"
             },
             {
-              "file": "ms_composer_slack_reference.adoc",
+              "file" : "ms_composer_slack_reference.adoc",
               "title": "Slack"
             },
             {
-              "file": "ms_composer_snowflake_reference.adoc",
+              "file" : "ms_composer_snowflake_reference.adoc",
               "title": "Snowflake"
             },
             {
-              "file": "ms_composer_stripe_reference.adoc",
+              "file" : "ms_composer_stripe_reference.adoc",
               "title": "Stripe"
             },
             {
-              "file": "ms_composer_tableau_reference.adoc",
+              "file" : "ms_composer_tableau_reference.adoc",
               "title": "Tableau"
             },
             {
-              "file": "ms_composer_twilio_reference.adoc",
+              "file" : "ms_composer_twilio_reference.adoc",
               "title": "Twilio"
             },
             {
-              "file": "ms_composer_workday_reference.adoc",
+              "file" : "ms_composer_workday_reference.adoc",
               "title": "Workday"
             },
             {
-              "file": "ms_composer_xero_reference.adoc",
+              "file" : "ms_composer_xero_reference.adoc",
               "title": "Xero"
             },
             {
-              "file": "ms_composer_zendesk_reference.adoc",
+              "file" : "ms_composer_zendesk_reference.adoc",
               "title": "Zendesk"
             },
             {
-              "file": "ms_composer_zuora_reference.adoc",
+              "file" : "ms_composer_zuora_reference.adoc",
               "title": "Zuora"
             }
           ]
         },
         {
-          "file": "ms_composer_automation_credits.adoc",
-          "title": "MuleSoft Automation のクレジット"
+          "file" : "ms_composer_automation_credits.adoc",
+          "title": "MuleSoft Automation Credits"
         },
         {
-          "file": "ms_composer_glossary.adoc",
-          "title": "用語集"
+          "file" : "ms_composer_glossary.adoc",
+          "title": "Glossary"
         }
       ]
     }

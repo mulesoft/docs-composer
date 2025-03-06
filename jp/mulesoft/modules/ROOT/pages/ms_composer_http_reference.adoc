@@ -9,6 +9,8 @@ HTTP Connector は、専用のコネクタで現在サポートされていな�
 
 次の接続情報を入力します。
 
+NOTE: HTTP 応答タイムアウトは 60 秒で、変更できません。
+
 include::_partials/connection-name.adoc[]
 
 ベース URL::
@@ -555,7 +557,7 @@ a|
 * *Key (キー)*​: `Xero-Tenant-Id`​
 * *Value (値)*​: `4268faf8-82a2-44e2-8ea2-4ec8f6ea3a26`​
 
-a| 詳細は、次のページを参照してください。
+a| 詳細は、以下を参照してください。
 
 * https://api-explorer.xero.com/accounting/users/getusers[Xero ログイン^]
 * https://developer.xero.com/documentation/guides/oauth2/auth-flow[Xero の標準認証コードフロー^]
@@ -638,13 +640,13 @@ HTTP Connector に適用される項目は、次のとおりです。
 
 *POST*​、​*PUT*​、​*PATCH*​、または ​*DELETE*​ メソッドを指定してリクエストボディを追加する場合は、​*Content-Type: application/json*​ ヘッダーを追加する必要があります。一部の API では ​*Content-Type: application/json*​ ヘッダーで必要な項目名が異なるため、接続された API でこの項目名を確認してください。
 
-ヘッダーが ​*Content-Type: application/json*​ の場合、リクエストボディの一部として有効な JSON ({}、[]、"") が最低限必要です。
+ヘッダーが ​*Content-Type: application/json*​ の場合、リクエストボディの一部として有効な JSON ({}、"") が最低限必要です。[] は、リクエストボディのルートではサポートされていません。
 
 |*Query Parameters (クエリパラメーター)* |Object (オブジェクト) |要求に含めるクエリパラメーター。クエリパラメーターを追加する場合、​*[Key (キー)]*​ および ​*[Value (値)]*​ 項目の値を入力する必要があります。
 
-|*Example Request (サンプル要求)* |String (文字列) |JSON 形式のサンプル要求。この項目の値を入力すると、コンポーザーはサンプルを解析して、その項目を推定します。その後、その項目を使用してデータを入力し、要求の操作を設定できます。
+|*Example Request (サンプル要求)* |String (文字列) |JSON 形式のサンプル要求。この項目の値を入力すると、コンポーザーはサンプルを解析して、その項目を推定します。その後、その項目を使用してデータを入力し、要求の操作を設定できます。コンポーザーによってサンプルから推定された項目を表示するには、​*[Select Additional Fields (追加項目を選択)]*​ をクリックします。この項目で指定されたサンプル JSON 値は、​*[Example Response (サンプル応答)]*​ 項目で指定された値とは異なっている​_必要_​があります。
 
-|*Example Response (サンプル応答)* |String (文字列) |JSON 形式のサンプル応答。この項目の値を入力すると、コンポーザーはサンプル JSON ペイロードを解析して、JSON 項目に一致するデータピルを提供します。
+|*Example Response (サンプル応答)* |String (文字列) |JSON 形式のサンプル応答。この項目の値を入力すると、コンポーザーはサンプル JSON ペイロードを解析して、JSON 項目に一致するデータピルを提供します。コンポーザーによってサンプルから推定された項目を表示するには、​*[Select Additional Fields (追加項目を選択)]*​ をクリックします。この項目で指定されたサンプル JSON 値は、​*[Example Request (サンプル要求)]*​ 項目で指定された値とは異なっている​_必要_​があります。 
 
 |*Array Path (配列パス)* |String (文字列) |JSON 配列へのパス。​*[Array Path (配列パス)]*​ 項目の値はデフォルトで選択されていますが、ドロップダウンから別の値を選択できます。この値が表示されるのは、​*[Action (アクション)]*​ 項目の値が ​*[Paginated Request (ページ分割された要求)]*​ に設定されている場合のみです。
 

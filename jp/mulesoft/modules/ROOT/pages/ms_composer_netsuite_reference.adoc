@@ -89,7 +89,13 @@ include::_partials/polling-frequency.adoc[]
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+//include::_partials/action-definition.adoc[] Removing partial to add note 
+
+システムに接続してトリガーを定義するか、スケジューラーを設定した後に、フローが実行するアクションを定義します。たとえば、異なるシステム間 (Workday と Salesforce など) でレコードをコピーできます。実行できるアクションは、接続しているシステムによって異なります。
+
+コンポーザーではユーザーのローカルタイムゾーンが保存されないため、​`DateTime`​ 項目に値が入力されると、入力された ​`DateTime`​ 値は UTC 形式であると想定されます。タイムゾーンには、時刻値に記号 ​`+`​ を含めるか、日付値に ​`-`​ 記号を含める必要があります。たとえば、マカオのタイムゾーンの 2019 年 6 月 1 日午後 12:30 は、​`2019-06-01T12:30:00+08:00`​ として表されます。また、日付が UTC で入力されて​_いない_​場合、コンポーザーによって自動的に日付が UTC 形式に変換されます。これはユーザーのローカルタイムゾーンとして正しい場合もあれば、正しくない場合もあるため、結果のロジックに影響する可能性があります。詳細は、 https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1521451348.html#bridgehead_4725944921[NetSuite ドキュメント]​を参照してください。
+
+このシステムでは次のアクションが提供されます。
 
 Update Record::
 
@@ -112,7 +118,7 @@ Get Records::
 指定された検索条件に基づいて最大 500 個のレコードのリストを返します。
 
 +
-image::images/get-records-netsuite.png[クエリビルダー UI、500]
+image::images/get-records-netsuite.png["NetSuite Connector の [Get Records (レコードの取得)] サンプルアクション設定", 500]
 +
 * アクションで取得する項目は ​*[Result fields (結果項目)]*​ セクションで選択できます。
 * 1 つ以上の条件を追加して、​*[Criteria (条件)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。

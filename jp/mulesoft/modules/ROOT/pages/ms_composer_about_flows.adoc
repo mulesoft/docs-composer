@@ -18,7 +18,7 @@
 
 次の例は、接続を使用するトリガーを示しています。
 
-image::images/trigger-example.png[トリガーの例, 500]
+image::images/trigger-example.png["Salesforce トリガーの設定例", 500]
 
 * *[Trigger (トリガー)]*​ はトリガーの名前で、ユーザーが指定した名前です。
 * *[Salesforce Org HQ (Salesforce 組織 HQ)]*​ は、このトリガーがデータ取得元として使用する接続の名前です。
@@ -38,7 +38,7 @@ image::images/trigger-example.png[トリガーの例, 500]
 
 イベントによるフローのトリガーは接続を使用して行われ、時間のスケジュールによるトリガーはスケジューラーを使用して行われます。
 
-image::images/connection-example.png[接続ダイアログの例, 400]
+image::images/connection-example.png["フローをトリガーできるシステムのリストを表示する接続ダイアログ", 400]
 
 ==== 接続を使用したフローのトリガー
 
@@ -61,7 +61,7 @@ image::images/connection-example.png[接続ダイアログの例, 400]
 
 接続を使用してフローをトリガーする代わりに、​*[Scheduler (スケジューラー)]*​ コントロールを使用して、フローをトリガーする期間を作成できます。
 
-image::images/connection-scheduler.png[期間を使用した新しいトリガー, 500]
+image::images/connection-scheduler.png["15 分、30 分、45 分、1 時間、5 時間、1 日などの時間間隔のリストが表示されているドロップダウンメニュー", 500]
 
 == アクション
 
@@ -69,11 +69,11 @@ image::images/connection-scheduler.png[期間を使用した新しいトリガ�
 
 ただし、アクションの前にフローコントロールを開始することもできます。
 
-image:images/create-an-action.png[[Add Action (アクションを追加)] ダイアログ, 400]
+image:images/create-an-action.png["アクションを追加するダイアログ", 400]
 
 次の例では、アクションの上部のバナーに表示されているように、Salesforce システム管理者がアクションを作成して名前を付け、Google スプレッドシートへの接続を選択しています。システム管理者はアクションも定義しました。この場合、スプレッドシートに新しい行を作成し、フロートリガーからいくつかの項目を入力します (各新規取引先責任者レコード)。
 
-image::images/action-step1.png[アクション例, 600]
+image::images/action-step1.png["スプレッドシートの新しい行を作成するためのサンプルアクション設定のステップ", 600]
 
 * *[Action (アクション)]*​ は、実行するタスクです。選択できるアクションは、選択した接続によって異なります。
 +
@@ -83,11 +83,11 @@ image::images/action-step1.png[アクション例, 600]
 
 * *[Columns (列)]*​ は、トリガー項目をスプレッドシートの列にマップする領域です。他の領域と同様に、この領域はシステムによって異なります。この例では、​*[Add Columns (列を追加)]*​ をクリックして、リストされたスプレッドシートのすべての列を表示し、ここで操作する列を選択します。
 +
-image::images/action-step2.png[アクション例, 600]
+image::images/action-step2.png["スプレッドシート列の項目を入力するためのサンプルアクション設定のステップ", 600]
 +
 操作する列を選択し、トリガーで取得した項目または前のアクションを次のようにマップします。
 +
-image::images/action-step3.png[アクション例, 600]
+image::images/action-step3.png["項目をマップするためのサンプルアクション設定のステップ", 600]
 +
 トリガーによって提供された項目を選択したスプレッドシートの行にマップします。この例では、​*[Email]*​、​*[FirstName]*​、​*[LastName]*​ が Google スプレッドシートの列 ​*[Email (メール)]*​、​*[First Name (名)]*​、​*[Last Name (姓)]*​ にマップされます。アクションまたはトリガー接続で取得されたすべての項目をマップする必要はありません。
 +
@@ -95,7 +95,7 @@ image::images/action-step3.png[アクション例, 600]
 
 これは完全なアクションで、テストする準備ができています。
 
-image::images/action-overview.png[アクション例, 600]
+image::images/action-overview.png["サンプルアクション設定のすべてのステップ", 600]
 
 Google スプレッドシートの項目にマップされる Salesforce の項目は、項目 (または接続によっては他のリソース) に含まれる可能性があるすべてのコンテナであるデータピルです。
 
@@ -119,7 +119,7 @@ Google スプレッドシートの項目にマップされる Salesforce の項�
 
 For Each ループは、リスト内の各レコードに対して実行されます。たとえば、フローが Salesforce から一連の取引先責任者を取得する場合、リスト全体をループして各レコードを Google スプレッドシートの行にコピーできます。
 
-image::images/for-each-example.png[For Each の例, 500]
+image::images/for-each-example.png["For Each ループが含まれるサンプルアクション設定", 500]
 
 *[Input list (入力リスト)]*​ は、前のアクションで使用可能なレコードのリストから選択されます。この例では、前のアクションで 1 つの取引先に関連付けられたすべての取引先責任者レコードが取得されました。
 
@@ -129,7 +129,7 @@ image::images/for-each-example.png[For Each の例, 500]
 
 If/Else ブロックは 1 つのレコードを取り、指定した条件を満たしているかどうかを確認します。満たしている場合、実行するアクションを定義します。
 
-image::images/if-else-example.png[If Else の例, 500]
+image::images/if-else-example.png["If Else ブロックが含まれるサンプルアクション設定", 500]
 
 この例では、1 つの If 分岐のみが示されています。レコードの電話番号が ​`702`​ で始まる場合、名と姓が Google スプレッドシートの行にコピーされます。レコードが条件を満たさない場合、1 つの分岐しかないため、アクションは実行されず、フローは次のアクションに進みます。
 
@@ -137,7 +137,7 @@ image::images/if-else-example.png[If Else の例, 500]
 
 If ステートメントの順序に注意してください。条件が満たされた最初の分岐によって指定されたアクションは、If/Else ブロックで実行される唯一のアクションです。
 
-== 各ステップのテスト
+== テスト 
 
 すべてのトリガーとアクションの後に作業をテストできます。テストするときに、トリガー、アクション、フローコントロールを追加または削除できます。トリガーまたはアクションで使用する接続を同じシステム種別の別の接続に変更することもできます。
 
@@ -145,30 +145,30 @@ If ステートメントの順序に注意してください。条件が満た�
 
 == 関連リソース
 
-ifeval::["​{product}​"=="salesforce"]
+ifeval::["{product}"=="salesforce"]
 * xref:ms_composer_overview.adoc[Mulesoft Composer for Salesforce: 概要]
 endif::[]
 
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 * xref:ms_composer_overview.adoc[MuleSoft Composer: 概要]
 endif::[]
 
-ifeval::["​{product}​"=="salesforce"]
+ifeval::["{product}"=="salesforce"]
 * xref:ms_composer_prerequisites.adoc[MuleSoft Composer for Salesforce: はじめに]
 endif::[]
 
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 * xref:ms_composer_prerequisites.adoc[MuleSoft Composer: はじめに]
 endif::[]
 
-* xref:ms_composer_flows.adoc[フローのビルドとテスト]
+* xref:ms_composer_flows.adoc[フローの設定と管理]
 * xref:ms_composer_activation.adoc[フローのアクティブ化]
 * xref:ms_composer_monitoring.adoc[フローの監視]
 
-ifeval::["​{product}​"=="salesforce"]
+ifeval::["{product}"=="salesforce"]
 * https://help.salesforce.com/s/search-result?language=en_US&f%3A%40sflanguage=%5Bes%5D&sort=relevancy&f%3A%40sfkbdccategoryexpanded=%5BAll%5D&t=allResultsTab#t=allResultsTab&sort=date%20descending&f:@objecttype=%5BKBKnowledgeArticle%5D&f:@sflanguage=%5Ben_US%5D&f:@sfkbdccategoryexpanded=%5BAll,MuleSoft%20Composer%5D[ナレッジ記事]
 endif::[]
 
-ifeval::["​{product}​"=="mulesoft"]
+ifeval::["{product}"=="mulesoft"]
 * https://help.mulesoft.com/s/global-search/%40uri#t=SalesforceArticle&f:@sfdcproduct=%5BMuleSoft%20Composer%5D[ナレッジ記事]
 endif::[]

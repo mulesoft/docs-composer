@@ -4,9 +4,13 @@ Google BigQuery は、データを保管してアクセスするためのウェ�
 
 == 始める前に   
 
-Google BigQuery Connector を使用するには、 https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google ワークスペース]​のアカウントが必要です。コンポーザーから個人の Google アカウントへの接続は許可されません。 
-
+* Google BigQuery Connector を使用するには、 https://support.google.com/a/users/answer/9389764?hl=en&ref_topic=9296556&sjid=17545113492625404882-NA[Google ワークスペース]​のアカウントが必要です。コンポーザーから個人の Google アカウントへの接続は許可されません。 
++
 Google ワークスペースのアカウントに接続すると、コンポーザーが https://support.google.com/cloud/answer/7454865?hl=en[未確認のアプリケーション]​であることを示すメッセージが表示されます。これは想定される動作です。このメッセージをバイパスしてコネクタを使用するには、​*「このアプリは Google で確認されていません」*​のダイアログで ​*[詳細]*​ ​*> [[プロジェクト名](安全ではないページ) に移動] > [許可]*​ をクリックします。
+
+* Google BigQuery Connector では、Google の制限されたデータにアクセスするために、サードパーティアプリケーションのアクセス権が必要です。コネクタを使用する前に、Google ワークスペース管理者は、 https://support.google.com/a/answer/7281227#trustorlimit&zippy=%2Cmanage-access-to-apps-trusted-limited-or-blocked[設定されたアプリケーションのリストに次のクライアント ID を追加^]​して、コンポーザーとの OAuth 接続を作成する必要があります。
++
+`292130641403-rlgmr379unk36nuvpba0sd1u3u9c6vap.apps.googleusercontent.com`
 
 == 接続
 
@@ -51,6 +55,8 @@ Google BigQuery では、次のデータ型がサポートされています。
 == Triggers (トリガー)
 
 include::_partials/trigger-definition.adoc[]
+
+NOTE: 特定のプロジェクト ID では、US ベースのデータセットが取得されます。
 
 On New Row Source (新規行のソース)::
 

@@ -472,7 +472,7 @@ ifeval::["{product}"=="mulesoft"]
 == Publish the Flow to Salesforce or an Anypoint Organization
 
 After activating your flow, you can publish the flow to your Salesforce organization. You must have the xref:rpa-home::ms-automation-credits-usage-types.adoc[Automation Starter or Automation Advanced subscription package] to use this service. 
-image::2025-03-26T16-45-45-651Z.png[] 
+
 == Troubleshooting 
 
 When an external system successfully invokes a Composer flow, an HTTP 200 response occurs. To troubleshoot invocable flows, become familiar with the information about interpreting commonly thrown exception messages.

@@ -124,6 +124,8 @@ include::_partials/action-definition.adoc[]
 Create new record::
 
 Create a standard or custom record.
++
+While creating a new record, any rules associated with the record are triggered as per the user's role.
 
 Update record::
 

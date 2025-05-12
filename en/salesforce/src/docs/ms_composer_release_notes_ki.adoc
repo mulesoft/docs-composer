@@ -13,7 +13,7 @@ The following list displays known issues and limitations for MuleSoft Composer f
 |Known Issue |Workaround |ID
 
 |In Salesforce Connector, the `SALESFORCE:CONNECTIVITY Failed to get next element` error is sometimes thrown when processing the next element of the loop.
-|Rerun the flow to catch the missed events. For more information, refer to the https://issues.salesforce.com/issue/a028c00000zLDsc/[known issue].
+|Rerun the flow to catch the missed events. For more information, refer to the https://help.salesforce.com/s/issue?id=a028c00000zLDsc[known issue].
 |W-16418279
 |===
 
@@ -28,7 +28,7 @@ The following list displays known issues and limitations for MuleSoft Composer f
 |Known Issue |Workaround |ID
 
 |When selecting a record type, if there is a large amount of metadata, the metadata resolver cannot parse the data within the three-minute time limit required by Composer and the `Netsuite: Retrieving metadata for the step failed` error sometimes occurs. 
-|For more information, see the https://issues.salesforce.com/issue/a028c00000zHtne/mulesoft-composer-fails-with-netsuite-retrieving-metadata-for-the-step-failed-after-3-minute-wait[knowledge article].
+|For more information, see the https://help.salesforce.com/s/issue?id=a028c00000zHtne[knowledge article].
 |W-15586159  
 |===
 

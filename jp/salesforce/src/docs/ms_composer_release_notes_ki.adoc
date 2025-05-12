@@ -13,7 +13,7 @@
 |既知の問題 |回避策 |ID
 
 |Salesforce Connector で、ループの次の要素を処理するときに ​`[SALESFORCE:CONNECTIVITY Failed to get next element (SALESFORCE:CONNECTIVITY で次の要素を取得できませんでした)]`​ エラーがスローされることがあります。
-|フローを再実行して取得できなかったイベントをキャッチします。詳細は、 https://issues.salesforce.com/issue/a028c00000zLDsc/[「known issue (既知の問題)」]​を参照してください。
+|フローを再実行して取得できなかったイベントをキャッチします。詳細は、 https://help.salesforce.com/s/issue?id=a028c00000zLDsc[「known issue (既知の問題)」]​を参照してください。
 |W-16418279
 |===
 
@@ -28,7 +28,7 @@
 |既知の問題 |回避策 |ID
 
 |レコードタイプを選択するときに、大量のメタデータがあると、メタデータリゾルバーがコンポーザーで求められる 3 分の時間制限内にデータを解析できず、​`[Netsuite: Retrieving metadata for the step failed (Netsuite: ステップのメタデータの取得に失敗しました)]`​ エラーが発生することがあります。 
-|詳細は、 https://issues.salesforce.com/issue/a028c00000zHtne/mulesoft-composer-fails-with-netsuite-retrieving-metadata-for-the-step-failed-after-3-minute-wait[ナレッジ記事]​を参照してください。
+|詳細は、 https://help.salesforce.com/s/issue?id=a028c00000zHtne[ナレッジ記事]​を参照してください。
 |W-15586159  
 |===
 

@@ -1,7 +1,11 @@
 * xref:ms_composer_overview.adoc[Overview]
 
-* xref:ms_composer_ms_release_notes.adoc[Release Notes]
-** xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations]
+* xref:ms_composer_release_notes.adoc[Release Notes]
+** xref:ms_composer_release_notes_2024.adoc[Release Notes 2024]
+** xref:ms_composer_release_notes_2023.adoc[Release Notes 2023]
+** xref:ms_composer_release_notes_2022.adoc[Release Notes 2022]
+** xref:ms_composer_release_notes_2021.adoc[Release Notes 2021]
+** xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations]
 
 * xref:ms_composer_prerequisites.adoc[Getting Started]
 ** xref:ms_composer_about_flows.adoc[How Composer Works]

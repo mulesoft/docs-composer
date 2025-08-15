@@ -1,1 +1,0 @@
-../../../mulesoft/modules/ROOT/pages/ms_composer_zendesk_reference.adoc

@@ -1,5 +1,8 @@
 name: composer
 title: Composer
 version: ~
+asciidoc: 
+  attributes:
+    product: mulesoft
 nav:
 - modules/ROOT/nav.adoc

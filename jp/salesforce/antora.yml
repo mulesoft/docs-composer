@@ -1,0 +1,8 @@
+name: composer-salesforce
+title: Composer for Salesforce
+version: ~
+asciidoc: 
+  attributes: 
+    product: salesforce
+nav:
+- modules/ROOT/nav.adoc

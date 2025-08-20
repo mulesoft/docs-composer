@@ -9,6 +9,9 @@
         "file" : "ms_composer_release_notes.adoc",
         "title" : "Release Notes",
         "topics" : [
+        {
+          "file" : "ms_composer_release_notes_2025.adoc"
+        },
          {
           "file" : "ms_composer_release_notes_2024.adoc"
         },

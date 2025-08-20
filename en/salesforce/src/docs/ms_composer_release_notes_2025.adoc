@@ -1,0 +1,17 @@
+= Release Notes for MuleSoft Composer for Salesforce - 2025
+
+Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
+
+New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
+
+See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
+
+== August 20, 2025
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In QuickBooks Connector, the *Create Estimate* action no longer fails when the *Expiration Date* and *Due Date* field values are provided in the flow.| W-18116231
+|===

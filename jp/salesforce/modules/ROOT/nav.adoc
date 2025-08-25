@@ -1,7 +1,11 @@
 * xref:ms_composer_overview.adoc[概要]
 
-* xref:ms_composer_ms_release_notes.adoc[リリースノート]
-** xref:ms_composer_ms_release_notes_ki.adoc[既知の問題と制限事項]
+* xref:ms_composer_release_notes.adoc[リリースノート]
+** xref:ms_composer_release_notes_2024.adoc[リリースノート - 2024]
+** xref:ms_composer_release_notes_2023.adoc[リリースノート -  2023]
+** xref:ms_composer_release_notes_2022.adoc[リリースノート - 2022]
+** xref:ms_composer_release_notes_2021.adoc[リリースノート - 2021]
+** xref:ms_composer_release_notes_ki.adoc[既知の問題と制限事項]
 
 * xref:ms_composer_prerequisites.adoc[はじめに]
 ** xref:ms_composer_about_flows.adoc[コンポーザーのしくみ]

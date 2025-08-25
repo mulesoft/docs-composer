@@ -1,0 +1,1 @@
+../../../../mulesoft/modules/ROOT/pages/ms_composer_build_a_flow_using_templates.adoc

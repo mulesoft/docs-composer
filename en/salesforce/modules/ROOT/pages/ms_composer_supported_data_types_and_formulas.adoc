@@ -1,0 +1,1 @@
+../../../../mulesoft/modules/ROOT/pages/ms_composer_supported_data_types_and_formulas.adoc

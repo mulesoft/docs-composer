@@ -1,1 +1,0 @@
-../../../mulesoft/modules/ROOT/pages/ms_composer_using_a_flow_and_creating_trigger.adoc

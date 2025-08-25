@@ -1,1 +1,0 @@
-../../../mulesoft/modules/ROOT/pages/ms_composer_sap_s4hana_reference.adoc

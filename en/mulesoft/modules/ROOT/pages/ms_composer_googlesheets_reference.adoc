@@ -42,7 +42,7 @@ Monitors one sheet within a spreadsheet and triggers when a row is created or up
 
 * Sheets limited to 10,000 rows
 * Header rows excluded
-* Trigger works with My Drive, not Team Drive
+* Trigger works with My Drive, not Shared Drive
 
 === Polling Frequency 
 

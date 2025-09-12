@@ -2,6 +2,21 @@
 
 The following list displays known issues and limitations for MuleSoft Composer. The list is sorted by the date in which the known issue or limitation appeared.
 
+== September 12, 2025
+
+=== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|Composer's functionality may be subject to various limitations related to the external systems and their respective https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_gov_limits.htm[APIs] that it utilizes for data retrieval. Composer is primarily intended for processing simpler and more lightweight datasets. It is important to understand that there is no single, rigid limit, and the specific thresholds will vary depending on each individual use case.
+|For use cases requiring greater control, advanced logic, or larger datasets, users should consider https://docs.mulesoft.com/anypoint-code-builder/[Anypoint Code Builder].
+|W-19176552
+|===
+
 == August 19, 2024
 
 === Salesforce

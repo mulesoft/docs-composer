@@ -13,7 +13,7 @@ The following list displays known issues and limitations for MuleSoft Composer. 
 |Known Issue |Workaround |ID
 
 |Composer's functionality may be subject to various limitations related to the external systems and their respective limits used in data retrieval. Composer is primarily intended for processing simpler and more lightweight datasets. It is important to understand that there is no single, rigid limit and that specific thresholds vary depending on each individual use case. For example, the following limits apply to https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_gov_limits.htm[Salesforce Connector].
-|For use cases requiring greater control, advanced logic, or larger datasets, users should consider https://docs.mulesoft.com/anypoint-code-builder/[Anypoint Code Builder].
+|For use cases requiring greater control, advanced logic, or larger datasets, users should consider xref:anypoint-code-builder::index.adoc[Anypoint Code Builder].
 |W-19176552
 |===
 

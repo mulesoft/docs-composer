@@ -7,7 +7,7 @@ The following table shows the conversion rate between Automation Credits and dif
 [%header%autowidth.spread,cols=".^a,.^a,.^a]
 |===
 | RPA Bot Minutes | RPA API Calls | Composer Tasks | IDP Document Pages
-| 1 MuleSoft Automation Credit = 2 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50 | 1 MuleSoft Automation Credit = 6
+| 1 MuleSoft Automation Credit = 2 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50 | 1 MuleSoft Automation Credit = 5
 |===
 
 You can use any combination of these activities, which aggregate over the term of your subscription (not per session), and are then converted to credits as shown. Then, the credits are deducted from your assigned quota for the subscription period.

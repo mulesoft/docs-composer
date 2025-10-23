@@ -5,11 +5,8 @@ A quantity of Automation Credits is included with certain MuleSoft Services, wit
 [%header%autowidth.spread,cols=".^a,.^a,.^a]
 |===
 | RPA Bot Minutes | RPA API Calls | Composer Tasks | IDP Document Pages
-| 1 MuleSoft Automation Credit = 2 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50 | 1 MuleSoft Automation Credit = 6
+| 1 MuleSoft Automation Credit = 2 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50 | 1 MuleSoft Automation Credit = 5
 |===
-
-[IMPORTANT]
-Beginning October 24, 2025, the multiplier for IDP Document Page will change to `1 MuleSoft Automation Credit = 5 IDP Document Pages`.
 
 You can use any combination of these activities, which aggregate over the term of your subscription (not per session), and are then converted to credits as shown. Then, the credits are deducted from your assigned quota for the subscription period.
 

@@ -1,23 +1,17 @@
 ifeval::["{product}"=="salesforce"]
-= MuleSoft Composer for Salesforce
+= Building Process Automation with MuleSoft Composer for Salesforce
 endif::[]
 ifeval::["{product}"=="mulesoft"]
-= MuleSoft Composer
+= Building Process Automation with MuleSoft Composer
 endif::[]
 :page-notice-banner-message: When accessing the documentation from inside the product, the version of documentation that corresponds to the product, either MuleSoft Composer for Salesforce or MuleSoft Composer, appears.
 
 ifeval::["{product}"=="salesforce"]
-MuleSoft Composer for Salesforce (Composer) makes it easy to build process automation for
-data, using clicks instead of code from within your Salesforce org.
-When you create a secure process to connect the information stored in different systems, you build a real-time,
-integrated view of your customers and your business.
+MuleSoft Composer for Salesforce (Composer) automates data integration between systems using a no-code interface within your Salesforce org. You connect different applications and synchronize data in real-time, creating a unified view of customers and business operations without writing code.
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-MuleSoft Composer (Composer) makes it easy to build process automation for
-data, using clicks instead of code.
-When you create a secure process to connect the information stored in different systems, you build a real-time,
-integrated view of your customers and your business.
+MuleSoft Composer (Composer) automates data integration between systems using a no-code, visual interface. You connect different applications and synchronize data in real-time, creating a unified view of customers and business operations without technical expertise.
 endif::[]
 
 To automate processes with Composer, you build a flow that contains every step in the process:

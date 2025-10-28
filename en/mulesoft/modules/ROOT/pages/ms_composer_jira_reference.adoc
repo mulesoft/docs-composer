@@ -1,6 +1,6 @@
 = Jira Connector Reference
 
-Jira is a powerful project management tool and ticketing system used to help users plan, track, release, and report product issues in order to improve development.
+MuleSoft Composer's Jira Connector automates issue tracking and project management workflows between Jira and other systems. You can create, update, and retrieve Jira issues automatically, sync project data across applications, and streamline support case escalation. The connector supports both standard and custom fields, enabling comprehensive integration with your existing Jira projects and workflows.
 
 To use Jira Connector with Composer, you must have the _Administrator Jira_ global permission.
 

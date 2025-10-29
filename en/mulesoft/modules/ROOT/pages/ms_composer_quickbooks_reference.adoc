@@ -1,6 +1,6 @@
 = Quickbooks Online Connector Reference
 
-QuickBooks Online provides cloud-based accounting software that enables organizations to manage core business processes, ERP financials, e-commerce, inventory, and more.
+MuleSoft Composer's QuickBooks Online Connector automates financial data synchronization between QuickBooks and other business systems. You can create, update, and retrieve accounting records, sync customer and vendor information, and streamline financial reporting workflows. The connector integrates seamlessly with QuickBooks Online's API to keep your financial data accurate and up to date across all applications.
 
 QuickBooks Online Connector uses https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/minor-versions[API minor version 62].
 

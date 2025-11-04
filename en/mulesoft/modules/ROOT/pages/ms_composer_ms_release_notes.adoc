@@ -7,6 +7,26 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
+== October 7, 2025
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Jira Connector now correctly processes search results for triggers by removing the *total* field from parsing. | W-19586865
+|===
+
+== September 18, 2025
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|In Jira Connector, the `/rest/api/3/search/jql` endpoint is used instead of the `/rest/api/3/search` endpoint. | W-19470768
+|===
+
 == July 9, 2024
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]

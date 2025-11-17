@@ -7,6 +7,24 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
+== November 17, 2025
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+a|In Xero Connector, the *On New or Updated Invoice* trigger now accepts the following values in the *Invoice Type* field: 
+
+* `ACCPAYCREDIT` (Accounts Payable Credit Note)
+* `ACCRECCREDIT` (Accounts Receivable Credit Note)
+* `APOVERPAYMENT` (Accounts Payable Overpayment)
+* `APPREPAYMENT` (Accounts Payable Prepayment)
+* `AROVERPAYMENT` (Accounts Receivable Overpayment)
+* `ARPREPAYMENT` (Accounts Receivable Prepayment)
+| W-19889137
+|===
+
 == October 29, 2025
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]

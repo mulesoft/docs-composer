@@ -7,7 +7,7 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer] for a list of known issues and limitations by date.
 
-== November 7, 2025
+== November 17, 2025
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 

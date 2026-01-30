@@ -8,6 +8,9 @@ A quantity of Automation Credits is included with certain MuleSoft Services, wit
 | 1 = 80 Automation Credits | 1 = 2 Automation Credits | 1 = 2 Automation Credits | 1 = 100 Automation Credits | 1 = 30 Automation Credits | 1 = 2 Automation Credits
 |===
 
+[IMPORTANT]
+Beginning February 18, 2026, Flow Orchestration will be free for customers in Enterprise and higher editions. For customers in other editions, the https://help.salesforce.com/s/articleView?id=platform.flow_considerations_limit.htm&type=5[General Flow Limits] will apply.
+
 To learn more about how Flex Credits are consumed, and when other types of credits are consumed with generative AI features, please visit: https://help.salesforce.com/s/articleView?id=ai.generative_ai_usage.htm&type=5[Agentforce and Generative AI Usage and Billing] in Salesforce Help.
 
 include::_partials/see-also.adoc[]

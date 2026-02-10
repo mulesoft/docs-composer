@@ -29,7 +29,7 @@ include::_partials/trigger-definition.adoc[]
 
 On New Email::
 
-If you don't specify a  https://developers.google.com/gmail/api/guides/labels[filter^], this trigger fires on all emails (received, sent, or drafts). To specify a filter, the following field is required:
+If you don't specify a  https://developers.google.com/workspace/gmail/api/guides/labels[filter^], this trigger fires on all emails (received, sent, or drafts). To specify a filter, the following field is required:
 
 * Filter Criteria
 +

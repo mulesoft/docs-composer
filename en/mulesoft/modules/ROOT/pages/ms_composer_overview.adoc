@@ -141,7 +141,7 @@ ifeval::["{product}"=="salesforce"]
 
 * https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config/[Trailhead: MuleSoft Composer Installation and Configuration^]
 * https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-basics/[Trailhead: MuleSoft Composer Basics^]
-* https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[MuleSoft blog post^]
+* https://blogs.mulesoft.com/news/introducing-mulesoft-composer/[MuleSoft blog post^]
 
 == Related Resources
 
@@ -159,7 +159,7 @@ ifeval::["{product}"=="mulesoft"]
 
 == Related Resources
 
-* https://blogs.mulesoft.com/biz/news/introducing-mulesoft-composer/[Mulesoft Composer Training^]
+* https://blogs.mulesoft.com/news/introducing-mulesoft-composer/[Mulesoft Composer Training^]
 * xref:ms_composer_prerequisites.adoc[Getting Started]
 * xref:ms_composer_reference.adoc[Composer Connector Reference]
 * https://help.salesforce.com/s/[Knowledge Articles]

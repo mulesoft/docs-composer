@@ -16,7 +16,7 @@ include::_partials/connection-definition.adoc[]
 
 include::_partials/connection-name.adoc[]
 
-Only users with the ServiceNow `soap_admin` role can create connections. For more information, see the https://community.servicenow.com/community?id=community_question&sys_id=86da8b6ddb5cdbc01dcaf3231f961958[ServiceNow documentation].
+Only users with the ServiceNow `soap_admin` role can create connections. For more information, see the https://www.servicenow.com/community/itsm-forum/getting-error-quot-insufficient-rights-for-creating-new-records/m-p/704152[ServiceNow documentation].
 
 Instance URL::
 

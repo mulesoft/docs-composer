@@ -10,7 +10,7 @@ A quantity of Automation Credits is included with certain MuleSoft Services, wit
 
 You can use any combination of these activities, which aggregate over the term of your subscription (not per session), and are then converted to credits as shown. Then, the credits are deducted from your assigned quota for the subscription period.
 
-For detailed definitions and more information, see the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^].
+For detailed definitions and more information, see the https://www.salesforce.com/company/legal/mulesoft-subscription-plan/[MuleSoft Product Subscription Plans^].
 
 == Usage Summary
 

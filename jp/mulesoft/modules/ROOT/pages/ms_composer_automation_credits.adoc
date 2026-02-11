@@ -16,10 +16,11 @@ MuleSoft は、期間のすべての RPA 実行時間 (秒単位) を加算し�
 
 これらのアクティビティの任意の組み合わせを使用できますが、これらはサブスクリプションの期間中に集計され (セッションごとではありません)、ここで示しているクレジットに換算されます。続いて、クレジットがサブスクリプション期間の割り当てられたクォータから差し引かれます。
 
-詳細な定義と詳細情報は、 https://www.mulesoft.com/prod-subscription-plans[「MuleSoft Product Subscription Plans (MuleSoft 製品サブスクリプションプラン)」^]​を参照してください。
+詳細な定義と詳細情報は、 https://www.salesforce.com/company/legal/mulesoft-subscription-plan/[「MuleSoft Product Subscription Plans (MuleSoft 製品サブスクリプションプラン)」^]​を参照してください。
 
 == Usage Summary (利用状況概要)
 
 *[Usage Summary (利用状況概要)]*​ ページでは、組織のフローごとに毎月のタスクとクレジットの利用状況を確認できます。組織内のすべてのコンポーザーユーザーがこのページにアクセスできます。月次利用状況概要レポートは通常、月の締め日から 5 営業日後に入手できます。レポートは 2022 年 9 月から使用できます。
 
 include::_partials/see-also.adoc[]
+

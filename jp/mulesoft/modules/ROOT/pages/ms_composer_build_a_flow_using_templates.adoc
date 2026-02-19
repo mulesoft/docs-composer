@@ -31,4 +31,4 @@
 
 接続に出力項目 (データピル) が存在しない場合、​`「This value does not exist with your connection (この値は接続に存在しません)」`​というメッセージが表示されます。たとえば、前提条件で定義されたカスタム項目を作成する場合、テンプレートに保存されたカスタム項目の ID とインスタンスで作成されたカスタム項目の ID は (名前は同じでも) 異なるため、フローでエラーが発生します。マップされたデータピルを削除して、ドロップダウンからカスタム項目を選択できます。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

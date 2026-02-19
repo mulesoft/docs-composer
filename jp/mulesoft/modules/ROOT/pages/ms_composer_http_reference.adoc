@@ -11,7 +11,7 @@ HTTP Connector は、専用のコネクタで現在サポートされていな�
 
 NOTE: HTTP 応答タイムアウトは 60 秒で、変更できません。
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 ベース URL::
 
@@ -666,7 +666,7 @@ HTTP Connector に適用される項目は、次のとおりです。
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 HTTP の要求::
 *[Action (アクション)]*​ 項目で ​*[Request (要求)]*​ が選択されている場合、HTTP の要求によって応答ペイロードの項目が返されます。次の項目では、値は必須です。
@@ -698,4 +698,4 @@ HTTP のページ分割された要求::
   ** *Key (キー)*
   ** *値*
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

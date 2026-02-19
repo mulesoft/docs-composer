@@ -18,7 +18,7 @@
 . 新しいフローの ​*[What Should Start This Flow? (このフローを開始する要素)]*​ ダイアログから、[Flow Control (フローコントロール)] セクションを確認して、​*[Scheduler (スケジューラー)]*​ をクリックします。 
 . 15 分～ 30 日の範囲で時間間隔を選択します。1 日以上の間隔の場合、スケジューラーは各間隔内の同じ時間に実行されない可能性があります。 
 +
-image::images/connection-scheduler.png["15 分、30 分、45 分、1 時間、5 時間、1 日などの時間間隔のリストが表示されているドロップダウンメニュー", 500]
+image::connection-scheduler.png["15 分、30 分、45 分、1 時間、5 時間、1 日などの時間間隔のリストが表示されているドロップダウンメニュー", 500]
 . *[Save (保存)]*​ をクリックします。 +
 トリガーを作成したら、1 つ以上のアクションをフローに追加します。アクションにロジックを適用するには、​xref:ms_composer_using_actions_in_a_flow.adoc#create-an-if-else-block[If/Else ブロック]​または ​xref:ms_composer_using_actions_in_a_flow.adoc#create-and-test-a-for-each-loop[For Each ループ]​を追加します。
 

@@ -4,9 +4,9 @@ Box は、汎用の SaaS エンタープライズコンテンツ管理システ�
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Username (ユーザー名)::
 
@@ -16,11 +16,11 @@ Password (パスワード)::
 
 Box にログインするために使用する OAuth パスワード。
 
-include::_partials/binary-data.adoc[]
+include:composer::_partials/binary-data.adoc[]
 
 == トリガー
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 On new file in folder (フォルダー内の新しいファイル)::
 
@@ -28,11 +28,11 @@ On new file in folder (フォルダー内の新しいファイル)::
 
 === Polling Frequency (ポーリング頻度) 
 
-include::_partials/polling-frequency.adoc[]
+include:composer::_partials/polling-frequency.adoc[]
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Add file to folder using URL (URL を使用してフォルダーにファイルを追加)::
 
@@ -84,4 +84,4 @@ Box のファイルに対する既存のメタデータテンプレートを更�
 +
 チェックボックスなどの複数選択項目のデータ型は、コンポーザーには表示されません。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

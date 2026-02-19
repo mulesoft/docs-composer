@@ -4,7 +4,7 @@ SAP S/4HANA は、アプリケーションと IT インフラストラクチャ�
 
 == 接続
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
 Connection Display Name (接続表示名)::
 
@@ -27,7 +27,7 @@ SAP S/4HANA にログインするために使用する OAuth パスワード。
 
 == トリガ
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 On New or Updated Entity (新規または更新済みエンティティ)::
 
@@ -38,7 +38,7 @@ On New or Updated Entity (新規または更新済みエンティティ)::
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Create Entity::
 
@@ -76,6 +76,4 @@ Delete Entity::
 
 MuleSoft Composer を使用して、SAP S/4HANA レコードで設定したアクションとトリガのカスタム項目値にアクセスできます。
 
-include::_partials/see-also.adoc[]
-
-
+include:composer::_partials/see-also.adoc[]

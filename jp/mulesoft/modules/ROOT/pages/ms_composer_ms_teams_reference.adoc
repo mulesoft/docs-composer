@@ -6,9 +6,9 @@ MuleSoft Composer を使用して Microsoft Teams メッセージを送信する
 
 == 接続
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Username (ユーザー名)::
 
@@ -20,7 +20,7 @@ Microsoft 365 にログインするために使用するパスワード。
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Send message to channel (チャネルへのメッセージの送信)::
 
@@ -30,4 +30,4 @@ Send message to channel (チャネルへのメッセージの送信)::
 * Channel ID (チャネル ID)
 * Message (メッセージ)
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

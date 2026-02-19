@@ -28,7 +28,7 @@ endif::[]
 
 地域の Slack ユーザーグループがその地域のメンバーをスプレッドシートで追跡するとします。まず Slack ユーザーを全国組織に登録します。全国オフィスでは Salesforce を使用してメンバーシップを追跡しているため、新しいメンバーを地域のシートに自動的にプッシュすると、すべてのユーザーの多くの時間が節約されます。Salesforce システム管理者はコンポーザーを使用して、このタスクをほぼリアルタイムで自動的に実行する 1 つのフローを作成できます。
 
-image::images/overview1.png["データサイロ間でユーザー情報を最新に保つワークフロー", 600]
+image:composer::overview1.png["データサイロ間でユーザー情報を最新に保つワークフロー", 600]
 
 この簡単なフローを拡張してより複雑なアクションを実行できます。たとえば、新規ユーザーの郵便番号に基づいて異なるシートに書き込んだり、既存のユーザーの変更を伝播したりできます。
 
@@ -102,7 +102,7 @@ ifeval::["{product}"=="salesforce"]
 
 ホームページにアクセスして、ビジネスニーズに合わせてコンポーザーの使用を開始します。
 
-image::images/overview-page-sf.png["Mulesoft Composer for Salesforce ホームページ"]
+image:composer::overview-page-sf.png["Mulesoft Composer for Salesforce ホームページ"]
 
 [calloutlist]
 . *Home (ホーム)*​: コンポーザーホームページが表示されます。
@@ -117,7 +117,7 @@ ifeval::["{product}"=="mulesoft"]
 
 ホームページにアクセスして、ビジネスニーズに合わせてコンポーザーの使用を開始します。
 
-image::images/overview-page-ms.png["Mulesoft Composer ホームページ"]
+image:composer::overview-page-ms.png["Mulesoft Composer ホームページ"]
 
 [calloutlist]
 . *Overview (概要)*​: コンポーザーホームページが表示されます。

@@ -24,4 +24,4 @@
 
 NOTE: トラブルシューティングのためにサポートに連絡する必要がある場合は、レンチアイコンをクリックして ​*[Export (エクスポート)]*​ を選択することで、フローを JSON ファイルとしてエクスポートし、フローを共有できます。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

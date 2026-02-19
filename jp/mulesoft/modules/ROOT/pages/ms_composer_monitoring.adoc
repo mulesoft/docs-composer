@@ -8,7 +8,7 @@ ifeval::["{product}"=="salesforce"]
 
 [Flow Details (フローの詳細)] ページには、フローの実行履歴 (各フローの実行時間や実行が成功したかどうか) が表示されます。
 
-image::images/success-monitoring.png["MuleSoft Composer for Salesforce のフロー実行履歴とその他のフローの詳細", 600]
+image:composer::success-monitoring.png["MuleSoft Composer for Salesforce のフロー実行履歴とその他のフローの詳細", 600]
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
@@ -17,8 +17,8 @@ ifeval::["{product}"=="mulesoft"]
 
 フローの詳細ページには、各フローの実行時間や実行が成功したかどうかが表示されます。
 
-image::images/success-monitoring-ms.png["MuleSoft Composer のフロー実行履歴とその他のフローの詳細", 600]
+image:composer::success-monitoring-ms.png["MuleSoft Composer のフロー実行履歴とその他のフローの詳細", 600]
 endif::[]
 
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

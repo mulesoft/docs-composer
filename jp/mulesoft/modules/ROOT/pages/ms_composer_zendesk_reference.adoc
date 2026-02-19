@@ -4,9 +4,9 @@ Zendesk は、カスタマーサービス用のツールを提供するヘルプ
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Connection Display Name (接続表示名)::
 
@@ -18,7 +18,7 @@ Zendesk にログインするために使用するベース URI。
 
 == トリガー
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 New/updated ticket::
 
@@ -34,7 +34,7 @@ Zendesk で新しいユーザーが作成されるか既存のユーザーが更
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Create a ticket::
 
@@ -77,4 +77,4 @@ Search users::
 
 指定された条件に基づいてユーザーを検索し、これらの条件に一致するユーザーのリストを返します。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

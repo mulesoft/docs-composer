@@ -30,4 +30,4 @@ MuleSoft Automation パッケージを使用してコンポーザーにアクセ
 . xref:anypoint-code-builder::log-in-anypoint-platform.adoc[Anypoint Platform]​ にログインします。 
 . *[Anypoint Platform]*​ ページで、​*[Go to Composer (コンポーザーに移動)]*​ をクリックします。  
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

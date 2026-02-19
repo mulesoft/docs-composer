@@ -4,9 +4,9 @@ Google カレンダーは、個人およびチームの生産性向上に重点�
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Username (ユーザー名)::
 
@@ -18,7 +18,7 @@ Google にログインするために使用する OAuth パスワード。
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Create a new event::
 
@@ -44,4 +44,4 @@ Google Calendar Connector による Google API から受信した情報の使用
 
 *Google カレンダー™ は Google LLC の商標です。*​
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

@@ -8,7 +8,7 @@ MuleSoft Composer for Salesforce を使用して、コネクテッドエクス�
 
 == 2024/07/09
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+include:composer::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -18,7 +18,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 
 == 2024/05/17
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+include:composer::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -29,13 +29,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 
 == 2024/03/21
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+include:composer::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * コネクタアクションとトリガーの説明がそれぞれの名前の直下に表示されるようになりました。  
 
 == 2024/03/15
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+include:composer::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -45,7 +45,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 
 == 2024/03/11
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+include:composer::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -55,7 +55,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 
 == 2024/02/28
 
-include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+include:composer::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
@@ -65,7 +65,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 
 == 2024/01/09
 
-include::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+include:composer::_partials/release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * 次のコネクタのトリガーで ​*[Polling Frequency (ポーリング頻度)]*​ 項目が必須になりました。 
 

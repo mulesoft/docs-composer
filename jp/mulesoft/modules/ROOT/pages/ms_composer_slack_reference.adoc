@@ -5,9 +5,9 @@ Slack をデータ取得元またはデータ取得先として使用します�
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Workspace Name (ワークスペース名)::
 
@@ -19,7 +19,7 @@ Slack にログインするために使用するユーザー名とパスワー�
 
 == トリガー
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 On New Message (新規メッセージ)::
 
@@ -27,7 +27,7 @@ On New Message (新規メッセージ)::
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Send a direct message to a user::
 
@@ -102,4 +102,4 @@ Send direct message to multiple users::
 
 //When a direct message is sent, you can specify a list of attachments to include in the message.
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

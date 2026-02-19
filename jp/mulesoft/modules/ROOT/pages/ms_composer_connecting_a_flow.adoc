@@ -31,7 +31,7 @@ endif::[]
 . フローを開きます。
 . Sandbox に接続するトリガーやアクションの変更アイコンをクリックします。
 +
-image::images/change-connection.png["[Change the Connection (接続を変更)] ボタン", 400]
+image::change-connection.png["[Change the Connection (接続を変更)] ボタン", 400]
 
 . 接続を既存の接続または新しい接続に変更します。  
 +

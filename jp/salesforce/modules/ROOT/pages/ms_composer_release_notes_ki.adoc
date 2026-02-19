@@ -77,7 +77,7 @@
 
 == 2022 年 8 月 3 日
 
-//include::_partials/rpa-ki.adoc[]
+//include:composer::_partials/rpa-ki.adoc[]
 === RPA
 
 [%header%autowidth.spread]
@@ -104,7 +104,7 @@ a| 次の手順を実行します。
 
 == 2022 年 7 月 13 日
 
-//include::_partials/platform-ki-July22.adoc[]
+//include:composer::_partials/platform-ki-July22.adoc[]
 === コンポーザープラットフォーム
 
 [%header%autowidth.spread]
@@ -118,7 +118,7 @@ a| 次の手順を実行します。
 
 == 2022 年 4 月 29 日
 
-//include::_partials/workday-ki.adoc[]
+//include:composer::_partials/workday-ki.adoc[]
 === Workday
 
 [%header%autowidth.spread]
@@ -135,7 +135,7 @@ a| 次の手順を実行します。
 
 == 2022 年 4 月 28 日
 
-//include::_partials/http-ki.adoc[]
+//include:composer::_partials/http-ki.adoc[]
 === HTTP
 
 [%header%autowidth.spread]
@@ -154,7 +154,7 @@ a| 次の手順を実行します。
 
 == 2022 年 1 月 5 日
 
-//include::_partials/netsuite-ki.adoc[]
+//include:composer::_partials/netsuite-ki.adoc[]
 === NetSuite
 
 [%header%autowidth.spread]
@@ -189,7 +189,7 @@ a|Chrome ブラウザーで、​*[デベロッパーツール]*​ をクリッ
 
 == 2021 年 7 月 1 日
 
-//include::_partials/jira-ki.adoc[]
+//include:composer::_partials/jira-ki.adoc[]
 === Jira
 
 [%header%autowidth.spread]
@@ -230,7 +230,7 @@ a|以下のリストコンポーネントを含むカスタム項目が表示さ
 
 == 2021 年 6 月 2 日
 
-//include::_partials/platform-ki.adoc[]
+//include:composer::_partials/platform-ki.adoc[]
 === コンポーザープラットフォーム
 
 [%header%autowidth.spread]
@@ -246,7 +246,7 @@ a|以下のリストコンポーネントを含むカスタム項目が表示さ
 
 == 2021 年 5 月 19 日
 
-//include::_partials/slack-ki.adoc[]
+//include:composer::_partials/slack-ki.adoc[]
 === Slack
 
 [%header%autowidth.spread]
@@ -302,7 +302,7 @@ a|以下のリストコンポーネントを含むカスタム項目が表示さ
 
 |===
 
-//include::_partials/google-sheets-ki.adoc[]
+//include:composer::_partials/google-sheets-ki.adoc[]
 === Google スプレッドシート
 
 [%header%autowidth.spread]
@@ -315,7 +315,7 @@ a|以下のリストコンポーネントを含むカスタム項目が表示さ
 
 |===
 
-//include::_partials/salesforce-ki.adoc[]
+//include:composer::_partials/salesforce-ki.adoc[]
 === Salesforce
 
 [%header%autowidth.spread]
@@ -328,7 +328,7 @@ a|以下のリストコンポーネントを含むカスタム項目が表示さ
 
 |===
 
-//include::_partials/tableau-ki.adoc[]
+//include:composer::_partials/tableau-ki.adoc[]
 === Tableau
 
 [%header%autowidth.spread]

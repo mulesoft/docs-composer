@@ -435,4 +435,4 @@ time: String |DateTime (日時)
 カスタム式が削除されます。環境でカスタム式項目に値が必要な場合は、追加または選択内容が保存されます。
 
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

@@ -20,4 +20,4 @@
 プロセス自動化の主要な構成要素であるフローは、アクティブ化するまで機能しません。
 作成中に変更できるため、気軽にお試しください。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

@@ -6,7 +6,7 @@ Snowflake は、Software as a Service (SaaS) ビジネスモデルで動作す�
 
 == 接続
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
 Connection Name (接続名)::
 
@@ -65,7 +65,7 @@ Snowflake Connector では、次のデータ型がサポートされています
 
 == Triggered (トリガー)
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 On New Row::
 
@@ -108,7 +108,7 @@ On New Or Updated Row::
 
 == Actions (アクション)
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Insert Rows::
 
@@ -126,4 +126,4 @@ Select Rows::
 
 行のセットを取得します。​*[Query (クエリ)]*​ の値を指定します。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

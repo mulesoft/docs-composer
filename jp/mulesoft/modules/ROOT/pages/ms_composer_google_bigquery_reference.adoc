@@ -14,7 +14,7 @@ Google ワークスペースのアカウントに接続すると、コンポー�
 
 == 接続
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
 Connection Display Name (接続表示名)::
 
@@ -54,7 +54,7 @@ Google BigQuery では、次のデータ型がサポートされています。
 
 == Triggers (トリガー)
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 NOTE: 特定のプロジェクト ID では、US ベースのデータセットが取得されます。
 
@@ -83,11 +83,11 @@ On New or Updated Row Source (新規または更新済み行のソース)::
 
 === Polling Frequency (ポーリング頻度) 
 
-include::_partials/polling-frequency.adoc[]
+include:composer::_partials/polling-frequency.adoc[]
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Insert Rows::
 
@@ -113,4 +113,4 @@ Select Rows::
 
 *Google BigQuery™ は Google LLC の商標です。*
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

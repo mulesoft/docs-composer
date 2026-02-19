@@ -7,9 +7,9 @@
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Username (ユーザー名)::
 
@@ -25,7 +25,7 @@ Password (パスワード)::
 
 == トリガー
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 <Field>::
 
@@ -33,7 +33,7 @@ include::_partials/trigger-definition.adoc[]
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 <Field>::
 
@@ -45,4 +45,4 @@ include::_partials/action-definition.adoc[]
 
 <Details>。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

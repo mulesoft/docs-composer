@@ -6,9 +6,9 @@ QuickBooks Online Connector では、 https://developer.intuit.com/app/developer
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Username (ユーザー名)::
 
@@ -20,7 +20,7 @@ QuickBooks Online にログインするために使用する OAuth パスワー�
 
 == トリガー
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 New Invoice::
 
@@ -56,11 +56,11 @@ New or Updated Estimate (新規または更新済み見積)::
 
 === Polling Frequency (ポーリング頻度) 
 
-include::_partials/polling-frequency.adoc[]
+include:composer::_partials/polling-frequency.adoc[]
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Create Invoice::
 
@@ -171,4 +171,4 @@ MuleSoft Composer を使用して、Quickbooks Online レコードで設定し�
 
 QuickBooks Online API は、​`string`​ 型で作成されている最初の 3 つのカスタム項目のみを返します。それ以降の string 型のカスタム項目と、他のデータ型 (​`date`​ や ​`picklist`​ など) の項目は、コンポーザーでは書き込み可能な項目ではありません。詳細は、 https://developer.intuit.com/app/developer/qbo/docs/workflows/create-custom-fields[Quickbooks Online のドキュメント]​を参照してください。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

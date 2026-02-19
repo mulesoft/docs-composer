@@ -137,7 +137,7 @@ endif::[]
 . フローを開きます。
 . 更新するトリガーまたはアクションカードの右上隅にある更新アイコンをクリックします。
 +
-image:images/composer_refresh_card.png["オブジェクトの [Refresh (更新)] ボタン"]
+image::composer_refresh_card.png["オブジェクトの [Refresh (更新)] ボタン"]
 オブジェクト種別のキャッシュがクリアされて、新しいデータが取得されます。
 
 項目を更新する手順は、次のとおりです。
@@ -145,7 +145,7 @@ image:images/composer_refresh_card.png["オブジェクトの [Refresh (更新)]
 . フローを開きます。
 . トリガーまたはアクションカードの左下隅にある更新アイコンをクリックします。
 +
-image:images/composer_refresh_field.png["項目の [Refresh (更新)] ボタン"]
+image::composer_refresh_field.png["項目の [Refresh (更新)] ボタン"]
 項目のキャッシュがクリアされます。項目の新しい値プロバイダーが取得されます。
 
 == フロートリガーを作成する
@@ -165,7 +165,7 @@ image:images/composer_refresh_field.png["項目の [Refresh (更新)] ボタン"
 
 . 接続を選択したら、トリガーステップが表示されます。
 +
-image:images/trigger-definition.png["トリガー定義ステップ", 600]
+image::trigger-definition.png["トリガー定義ステップ", 600]
 +
 自動的にトリガーに名前が付けられます。どのトリガーも、イベントまたは操作とシステム名を組み合わせて名前が付けられます。たとえば、[On new record in Salesforce (Salesforce の新規レコード)] のようになります。
 

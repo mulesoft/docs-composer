@@ -4,9 +4,9 @@ Twilio は、ユーザーが通話の発信と受信を行い、テキストメ�
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Account SID (アカウント SID)::
 
@@ -18,7 +18,7 @@ Twilio にログインするために使用する認証トークン。
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Send Message::
 
@@ -47,4 +47,4 @@ Make a Phone Call::
 +
 TwiML の詳細は、Twilio のドキュメント (https://www.twilio.com/docs/voice/twiml) を参照してください。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

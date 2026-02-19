@@ -6,7 +6,7 @@ Rest Consumer Connector は、フローで使用するコネクタのリスト�
 
 == 接続
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
 Connection Display Name (接続表示名)::
 
@@ -51,7 +51,7 @@ Base URL (ベース URL)::
 
 == Actions (アクション)
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Request (要求)::
 *[Action (アクション)]*​ 項目で ​*[Request (要求)]*​ が選択されている場合、Rest Consumer の要求によって応答ペイロードの項目が返されます。次の項目では、値は必須です。
@@ -69,4 +69,4 @@ Request (要求)::
 * *Custom Request Body (カスタムリクエストボディ)*​: この項目は、API 仕様からのリクエストボディの構造を上書きするために使用されます。
 * *Custom Response Body (カスタムレスポンスボディ)*​: この項目は、API 仕様からのレスポンスボディの構造を上書きするために使用されます。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

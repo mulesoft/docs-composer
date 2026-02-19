@@ -4,11 +4,11 @@ Xero は、主に中小規模のビジネスで請求書の作成や追跡、支
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
 コンポーザーから Xero への接続を確立するには、​*[Organization (組織)]*​ 項目で接続する Xero 組織を選択する必要があります。
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Username (ユーザー名)::
 
@@ -56,7 +56,7 @@ On New or Update Invoice (新規または更新済み請求書)::
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Create or update contact::
 
@@ -123,4 +123,4 @@ Get Invoices::
 
 カスタム項目はサポートされていません。MuleSoft Composer を使用して、Xero レコードで設定したアクションとトリガーのカスタム項目値にアクセスできます。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

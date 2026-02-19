@@ -11,4 +11,4 @@ Sandbox 環境でフローを​xref:ms_composer_flows.adoc[ビルド]​して�
 
 フローがアクティブ化されたときにコンポーザーで通知されます。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

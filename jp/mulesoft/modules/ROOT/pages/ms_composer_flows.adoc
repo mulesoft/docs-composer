@@ -10,11 +10,11 @@ xref:ms_composer_checklist.adoc[準備チェックリスト]​に記載され�
 *[Flow Details (フローの詳細)]*​ ページにアクセスして、フローの詳細を確認します。
 
 ifeval::["{product}"=="salesforce"]
-image::images/flow-details-sf.png["MuleSoft Composer for Salesforce の [Flow Details (フローの詳細)] ページ"]
+image:composer::flow-details-sf.png["MuleSoft Composer for Salesforce の [Flow Details (フローの詳細)] ページ"]
 endif::[]
 
 ifeval::["{product}"=="mulesoft"]
-image::images/flow-details-ms.png["MuleSoft Composer の [Flow Details (フローの詳細)] ページ"]
+image:composer::flow-details-ms.png["MuleSoft Composer の [Flow Details (フローの詳細)] ページ"]
 endif::[]
 
 [calloutlist]
@@ -36,4 +36,4 @@ endif::[]
 . フローのアクション。アクティブなフローは削除、複製、または表示できます。非アクティブなフローは編集できませんので注意してください。
 . *[Run History (実行履歴)]*​ アクション。​*[Run History (実行履歴)]*​ セクションを更新したり、指定した条件でセクションを絞り込んだりできます。 
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

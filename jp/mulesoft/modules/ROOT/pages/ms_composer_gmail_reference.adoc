@@ -11,9 +11,9 @@ Gmail Connector では、Google の制限されたデータにアクセスする
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 Username (ユーザー名)::
 
@@ -25,7 +25,7 @@ Google にログインするために使用する OAuth パスワード。
 
 == トリガー
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 On New Email (新規メール)::
 
@@ -37,11 +37,11 @@ https://developers.google.com/gmail/api/guides/labels[検索条件^]​を指定
 
 === Polling Frequency (ポーリング頻度) 
 
-include::_partials/polling-frequency.adoc[]
+include:composer::_partials/polling-frequency.adoc[]
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Send email::
 
@@ -68,4 +68,4 @@ Google Gmail Connector による Google API から受信した情報の使用お
 
 *Gmail™ は Google LLC の商標です。*
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

@@ -5,9 +5,9 @@ Salesforce をデータ取得元 (新規の Salesforce レコードを取得し�
 
 == Connections (接続)
 
-include::_partials/connection-definition.adoc[]
+include:composer::_partials/connection-definition.adoc[]
 
-include::_partials/connection-name.adoc[]
+include:composer::_partials/connection-name.adoc[]
 
 ユーザー名とパスワード::
 
@@ -52,7 +52,7 @@ Salesforce への接続で IP 制限を緩和する手順は、次のとおり�
 . フローを開きます。
 . トリガー、または Sandbox に接続するすべてのアクションの変更アイコンをクリックします。
 +
-image::images/change-connection.png["[Change the Connection (接続を変更)] ボタン", 500]
+image:composer::change-connection.png["[Change the Connection (接続を変更)] ボタン", 500]
 . 新しい接続を選択し、変更内容を保存します。
 
 === Salesforce の Sandbox 組織と本番組織
@@ -66,7 +66,7 @@ Salesforce の Sandbox 組織および本番組織に接続できます。
 +
 Sandbox 接続を使用するすべてのトリガーおよびアクションで、忘れずに接続を Sandbox から本番に変更してください。
 
-include::_partials/null-values.adoc[]
+include:composer::_partials/null-values.adoc[]
 
 == バイナリファイルの転送
 
@@ -82,7 +82,7 @@ include::_partials/null-values.adoc[]
 
 == トリガー
 
-include::_partials/trigger-definition.adoc[]
+include:composer::_partials/trigger-definition.adoc[]
 
 New record::
 
@@ -113,11 +113,11 @@ Deleted record::
 
 === Polling Frequency (ポーリング頻度) 
 
-include::_partials/polling-frequency.adoc[]
+include:composer::_partials/polling-frequency.adoc[]
 
 == アクション
 
-include::_partials/action-definition.adoc[]
+include:composer::_partials/action-definition.adoc[]
 
 Create new record::
 
@@ -131,7 +131,7 @@ Get records::
 
 指定した条件に一致するすべてのレコードを返します。
 +
-image::images/get-records-salesforce.png["Salesforce Connector の [Get Records (レコードの取得)] サンプルアクション設定", 500]
+image:composer::get-records-salesforce.png["Salesforce Connector の [Get Records (レコードの取得)] サンプルアクション設定", 500]
 +
 * アクションで取得する項目は ​*[Result fields (結果項目)]*​ セクションで選択できます。
 * 1 つ以上の条件を追加して、​*[Criteria (条件)]*​ セクションで返されるレコードの種別を指定できます。たとえば、姓が「B」で始まることを指定することもできます。
@@ -183,4 +183,4 @@ Download file::
 
 Marketing Cloud と Commerce Cloud の一部の製品では Salesforce レコードに保存されないデータを使用しているため、Salesforce 接続では使用できません。
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]

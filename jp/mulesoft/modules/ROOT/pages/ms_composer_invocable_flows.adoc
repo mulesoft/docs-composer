@@ -495,7 +495,7 @@ MuleSoft Composer フローを Salesforce 組織にパブリッシュする手�
 MuleSoft Composer からフローをパブリッシュしたら、Salesforce でフローを表示します。 
 
 . Salesforce 組織にログインします。
-. ヘッダーで、​image:images/setup_icon.png["セットアップのアイコン", 20]​ > ​*[設定]*​ をクリックします。 
+. ヘッダーで、​image::setup_icon.png["セットアップのアイコン", 20]​ > ​*[設定]*​ をクリックします。 
 . ナビゲーションペインで、​*[Mulesoft]*​ > ​*[サービス]*​ に移動するか、検索します。 
 . MuleSoft Composer のフローを再度開き、​*[ログイン情報]*​ ウィンドウで、​*[URL]*​ 項目の値を書き留めます。
 . *[インポートされた MuleSoft サービス]*​ セクションの ​*[MuleSoft サービス名]*​ 列で、前のステップの ​*[URL]*​ 項目の値と一致するリンクを見つけてクリックします。
@@ -518,5 +518,5 @@ endif::[]
 
 コンポーザーフローに無効なログイン情報がある場合、HTTP 401 応答が返されます。 
 
-include::_partials/see-also.adoc[]
+include:composer::_partials/see-also.adoc[]
 * https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder[トレイル: Flow Builder を使用したフローの作成]

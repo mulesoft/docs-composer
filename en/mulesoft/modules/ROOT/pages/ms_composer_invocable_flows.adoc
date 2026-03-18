@@ -471,7 +471,7 @@ The example response is:
 ifeval::["{product}"=="mulesoft"]
 == Publish the Flow to Salesforce or an Anypoint Organization
 
-After activating your flow, you can publish the flow to your Salesforce organization. You must have the xref:rpa-home::ms-automation-credits-usage-types.adoc[Automation Starter or Automation Advanced subscription package] to use this service. 
+After activating your flow, you can publish the flow to your Salesforce organization. You must have the xref:general::automation-credits-usage-and-rates.adoc[Automation Starter or Automation Advanced subscription package] to use this service. 
 
 == Troubleshooting 
 

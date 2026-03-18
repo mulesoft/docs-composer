@@ -109,7 +109,7 @@ image::images/overview-page-sf.png["Mulesoft Composer for Salesforce Home page"]
 . *Home*: View the Composer home page.
 . *Templates*: Leverage xref:ms_composer_build_a_flow_using_templates.adoc[pre-built Composer templates] to build your flow.
 . *Composer Flows*: Create, test, activate, and monitor your xref:ms_composer_flows.adoc[flows].
-. *Usage Summary*: View your xref:ms_composer_automation_credits.adoc[monthly tasks and credit usage per flow] for your organization.
+. *Usage Summary*: View your xref:general::automation-credits-usage-and-rates.adoc[monthly tasks and credit usage per flow] for your organization.
 . *Create New Flow*: Create your new flow xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[from scratch or from a template].
 endif::[]
 
@@ -123,7 +123,7 @@ image::images/overview-page-ms.png["Mulesoft Composer Home page"]
 [calloutlist]
 . *Overview*: View the Composer home page.
 . *Flows*: Create, test, activate, and monitor your xref:ms_composer_flows.adoc[flows].
-. *Usage Summary*: View your xref:ms_composer_automation_credits.adoc[monthly tasks and credit usage per flow] for your organization.
+. *Usage Summary*: View your xref:general::automation-credits-usage-and-rates.adoc[monthly tasks and credit usage per flow] for your organization.
 . *Templates*: Leverage xref:ms_composer_build_a_flow_using_templates.adoc[pre-built Composer templates] to build your flow.
 . *Help*: Learn about Composer, explore the product documentation, join the MuleSoft community, or visit the Help center.
 . *Create new flow*: Create your new flow xref:ms_composer_using_a_flow_and_creating_trigger.adoc#create-a-flow[from scratch or from a template].

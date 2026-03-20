@@ -49,5 +49,5 @@ include::partial$release-notes/rn-headings.adoc[tag=upgrade,leveloffset=+3]
 
 include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+3]
 
-* https://help.mulesoft.com/s/[MuleSoft ヘルプセンター]
+* https://help.salesforce.com/s/[Salesforce ヘルプセンター]
 * https://www.mulesoft.com/support-and-services[MuleSoft サービス]

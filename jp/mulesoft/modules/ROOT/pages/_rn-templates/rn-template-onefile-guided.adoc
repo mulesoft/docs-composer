@@ -195,5 +195,5 @@ Guidelines for Upgrade:
 
 include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
 
-* https://help.mulesoft.com/s/[MuleSoft ヘルプセンター]
+* https://help.salesforce.com/s/[Salesforce ヘルプセンター]
 * https://www.mulesoft.com/support-and-services[MuleSoft サービス]

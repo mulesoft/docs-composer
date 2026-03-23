@@ -1,0 +1,18 @@
+= Release Notes for MuleSoft Composer for Salesforce - 2026
+
+Use MuleSoft Composer for Salesforce to build connected experiences faster. You don't need to wait for development resources to unlock data, integrate apps, and automate business processes that create real customer value.
+
+New versions are automatically available once they are released; you don't need to perform any tasks to move to the new version.
+
+See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
+
+== March 19, 2026
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Jira Connector now correctly updates the watermark for the triggers, and ensures to capture all subsequent new and updated issues.| W-20186115
+|In Jira Connector, all triggers now correctly update the watermark when multiple records share the same minute-level timestamp. The connector now uses cursor-based pagination to retrieve all records for a specific watermark before updating the watermark value. This prevents duplicate record retrieval and resolves issues where flows enter an indefinite waiting state.| W-21090825
+|===

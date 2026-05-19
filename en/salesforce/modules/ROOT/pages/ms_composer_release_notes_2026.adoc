@@ -6,6 +6,16 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
 
+== May 19, 2026
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|Composer now notifies customers and automatically deactivates flows that fail continuously. Deactivation uses generous configurable thresholds and applies when both conditions are met: 100 or more consecutive errors and 10 or more days of continuous failure. This addresses historically high error traffic from abandoned flows, lowers cost to serve, and reduces incident risk during Hyperforce migration by decreasing traffic by an estimated 90-95%. Customers can reactivate flows at any time.| W-22571502
+|===
+
 == March 19, 2026
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]

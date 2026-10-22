@@ -11,9 +11,9 @@ See xref:ms_composer_ms_release_notes_ki.adoc[Known Issues and Limitations for M
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
-[%header%autowidth.spread]
+[%header,cols="2a,1a"]
 |===
-|Issue Resolution a|ID
+|Issue Resolution |ID
 |ServiceNow Connector now returns an `INVALID_WSDL` error instead of parsing WSDL documents that contain any of the following:
 
 * A DOCTYPE declaration

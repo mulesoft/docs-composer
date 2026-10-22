@@ -13,7 +13,13 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 [%header%autowidth.spread]
 |===
 |Issue Resolution |ID
-|ServiceNow Connector now returns an `INVALID_WSDL` error when a ServiceNow WSDL contains a DOCTYPE declaration, an XInclude element, or an absolute WSDL or XML schema import, include, or redefine, instead of parsing the document. Relative WSDL and schema imports continue to work.
+|ServiceNow Connector now returns an `INVALID_WSDL` error instead of parsing WSDL documents that contain any of the following:
+
+* A DOCTYPE declaration
+* An XInclude element
+* An absolute import, include, or redefine reference in a WSDL or XML schema
+
+Relative WSDL and schema imports continue to work.
 |W-24541378
 |===
 

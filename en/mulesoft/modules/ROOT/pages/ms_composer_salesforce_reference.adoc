@@ -57,6 +57,18 @@ To change a connection:
 image::images/change-connection.png["A button that says Change the Connection", 500]
 . Choose a new connection and save your changes.
 
+=== Resolve an Invalid Salesforce Connection
+
+A Salesforce connection can become invalid when Salesforce certificates are renewed or generated, or when an access token expires and Composer can't refresh it. When the connection is invalid, flows that use it fail to activate, with errors such as `AccessToken expired` or `500 Internal Server Error`.
+
+NOTE: Before you change the connection, record the field mappings in each flow. For example, take screenshots so you can re-create them.
+
+. Create a Salesforce connection. Use a dedicated service account or Salesforce admin account so the connection doesn't depend on an individual user's access.
+. Open each flow that uses the old connection.
+. In the trigger and every action that uses the old connection, select the change icon, and then select the new connection. See <<Change a Connection>>.
+. Add the field mappings again. Changing the connection removes the existing mappings from the trigger and actions, and Composer doesn't restore them.
+. Save the flow, and then activate it again.
+
 === Salesforce Sandbox and Production Orgs
 
 You can connect to Salesforce sandbox and production orgs.

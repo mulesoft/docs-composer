@@ -2,6 +2,27 @@
 
 The following list displays known issues and limitations for MuleSoft Composer. The list is sorted by the date in which the known issue or limitation appeared.
 
+== October 22, 2026
+
+=== Composer Platform
+
+[%header%autowidth.spread]
+
+|===
+
+|Known Issue |Workaround |ID
+
+|When you test a flow, Composer tracks a limited number of tracking notifications for each flow execution (100 by default) to show step-by-step results. When a flow generates more notifications, Composer drops the oldest ones. As a result, early steps can appear blank or not executed even though they ran and produced data.
+
+Only the display is affected. Your flow logic runs, records are created, and the execution completes.
+
+Composer isn't designed for complex or large automations. The limitation depends on the complexity of the processing logic, not the size of the data. For example, a flow with 100 steps isn't recommended. Complex flows can result in partial debug messages, slow load times, and other performance problems.
+|If early steps in a large flow appear blank after you test it, verify the results directly, for example, by checking the records created or updated in the target system.
+
+Keep your flows smaller and more manageable. For use cases that require advanced or complex logic, consider xref:anypoint-code-builder::index.adoc[Anypoint Code Builder].
+|W-24287812
+|===
+
 == September 12, 2025
 
 === Composer Platform

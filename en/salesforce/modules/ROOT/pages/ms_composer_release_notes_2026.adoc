@@ -6,6 +6,17 @@ New versions are automatically available once they are released; you don't need 
 
 See xref:ms_composer_release_notes_ki.adoc[Known Issues and Limitations for MuleSoft Composer for Salesforce] for a list of known issues and limitations by date.
 
+== October 22, 2026
+
+include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Issue Resolution |ID
+|ServiceNow Connector now returns an `INVALID_WSDL` error when a ServiceNow WSDL contains a DOCTYPE declaration, an XInclude element, or an absolute WSDL or XML schema import, include, or redefine, instead of parsing the document. Relative WSDL and schema imports continue to work.
+|W-24541378
+|===
+
 == May 28, 2026
 
 include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]

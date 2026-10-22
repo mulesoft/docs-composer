@@ -13,7 +13,7 @@ include::_partials/release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2
 
 [%header%autowidth.spread]
 |===
-|Issue Resolution |ID
+|Issue Resolution a|ID
 |ServiceNow Connector now returns an `INVALID_WSDL` error instead of parsing WSDL documents that contain any of the following:
 
 * A DOCTYPE declaration
